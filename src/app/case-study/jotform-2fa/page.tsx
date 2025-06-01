@@ -380,7 +380,66 @@ export default function Jotform2FA() {
             </p>
           </div>
         </div>
-
+        <SectionTitle title="Event Tracking & Monitoring" />
+        <div className="SectionContent px-4 py-4 md:px-16 md:py-8 items-center justify-center text-start text-stone-900 text-lg gap-4">
+          <p>
+            To improve performance and usability, I worked with developers to
+            define <b>29 unique eventListeners</b> for 2FA-specific
+            interactions. A few examples are shown below:
+          </p>
+          <Image
+            src={'/img/twofa/TargetListener.png'}
+            className="mx-auto my-4 max-w-full h-auto"
+            alt="Jotform 2FA Configuration Events"
+            width={1200}
+            height={800}
+          />
+          <p>
+            In FullStory, I implemented <b>24 CSS selectors</b> to monitor
+            behavior within:
+          </p>
+          <br />
+          <ul className="list-disc pl-8 space-y-1">
+            <li>Security Settings</li>
+            <li>Modals & QR Screens</li>
+            <li>Recovery & Error States</li>
+            <li>Email Verification Screens</li>
+          </ul>
+          <br />
+          <p>
+            This allowed us to detect issues like <b>QR code mis-scanning </b>
+            and <b>drop-offs during setup</b>.
+          </p>
+        </div>
+        <SectionTitle title="Launch & Communication" />
+        <div className="flex flex-col md:flex-row px-4 py-4 md:px-16 md:py-8 gap-4 lg:gap-12 items-center justify-center">
+          <div className="SectionContent   items-center justify-center text-start text-stone-900 text-lg gap-4">
+            <p>
+              To drive adoption, I created a cross-platform launch strategy:
+            </p>
+            <br />
+            <ul className="list-disc pl-8 space-y-1">
+              <li>
+                {" "}
+                <b>Announcement Modal</b> on user dashboard
+              </li>
+              <li>
+                {" "}
+                <b>Email Campaign</b> to all users
+              </li>
+              <li>Feature Inclusion in the April Newsletter</li>
+              <li>
+                FullStory Dashboard to <b>monitor usage in real-time</b>
+              </li>
+              <li>
+                <b>BDM Training and Support</b> for Enterprise Clients
+              </li>
+            </ul>
+          </div>
+          <div className="VideoPlayer flex w-3/5 h-full items-center justify-center border border-stone-900 rounded-lg">
+            <video src={'/img/twofa/2fa-animation.mp4'} controls autoPlay muted loop />
+          </div>
+        </div>
         <SectionTitle title="Enterprise Customization" />
         <div className="flex flex-col md:flex-row p-4 md:px-16 md:py-8 gap-4 items-center justify-center">
           <div className="SectionContent items-center justify-center text-start text-stone-900 text-lg gap-4">
