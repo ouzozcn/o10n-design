@@ -1,83 +1,248 @@
-import type { Metadata } from 'next'
-import Button from '@/components/Button'
-import Footer from '@/components/Footer'
-import ContentCard from '@/components/ContentCard'
-import IconButton from '@/components/IconButton'
-import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
-import InfoCard from '@/components/InfoCard'
-import Menu from '@/components/Menu'
-import PageBreaker from '@/components/PageBreaker'
-import MetaInfo from '@/components/MetaInfo'
-import Hauscard from '@/components/Hauscard'
-import Tag from '@/components/Tag'
-import RowCard from '@/components/RowCard'
-import SectionTitle from '@/components/SectionTitle'
-import SwapContent from '@/components/SwapContent'
-import ThankYou from '@/components/ThankYou'
-import Link from 'next/link'
-import LanguageIcon from '@mui/icons-material/Language'
-export const metadata: Metadata = {
-  title: 'Home | O10N Design',
-  description: 'Welcome to O10N Design portfolio',
-}
+'use client';
+
+import React, { useEffect } from "react";
+import Image from "next/image";
+import { Tooltip } from "react-tooltip";
+import MenuItem from "@/components/MenuItem";
+import InfoCard from "@/components/InfoCard";
+import RowCard from "@/components/RowCard";
+import Footer from "@/components/Footer";
+import TopDivider from "@/components/TopDivider";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function Home() {
+  useEffect(() => {
+    console.info(
+      "Greetings, I m Oğuzhan, a product designer that is presently working toward a front-end learning path with the goal of serving as a bridge between developers and designers."
+    );
+  }, []);
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center gap-8 p-24">
-      <div className="z-10 max-w-5xl w-full flex flex-col items-center justify-center gap-8 text-sm">
-        <h1 className="text-4xl font-bold text-center">Welcome to O10N Design</h1>
-        <p className="text-xl text-center">
-          Design & Development Portfolio
-        </p>
-        <div className="flex flex-col items-center gap-8">
-          <Button label=" Design & Development Portfolio" to="/about" />
-          <ContentCard title="Content Card" content="This is a content card" color="lime" />
-          <IconButton type="secondary" size="medium" icon={<HomeRoundedIcon />} />
+    <div className="w-[calc(100%-4rem)] mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
+      <TopDivider />
+      <div className="flex flex-col lg:flex-row w-full">
+        <div className="w-full lg:w-auto h-full lg:h-[536px] lg:border-b border-stone-900">
           <InfoCard />
-          <Menu />
-          <PageBreaker sectionNumber={1} sectionTitle="About" />
-          <MetaInfo title="About" firstMeta="Oğuzhan Özcan" secondMeta="Product Designer" thirdMeta="Jotform" fourthMeta="2024 - Present" fifthMeta="New York, NY" />
-          <Hauscard title="Hauscard" tags={[{ label: "Tag", size: "small", type: "outline" }]} />
-          <Tag label="Tag will be here" size="small" type="red" />
-          <RowCard direction="right" cardTitle="Row Card" cardContent="This is a row card" tags={[{ label: "Tag", size: "small", type: "outline" }]} />
-          <SectionTitle title="Section Title" startIcon={<HomeRoundedIcon />} />
-          <SwapContent label="Swap Content" />
-          <ThankYou className="w-full h-auto"
-        message="Thanks for taking the time to explore this project. I hope you enjoyed the deep dive into the process, challenges, and learnings behind it."
-        exploreBlocks={[
-          <Link key="jotform-logbook" href="/ideas/jotform-logbook" className="flex-1 h-full">
-            <div className="SectionBlock h-full p-6  flex flex-col justify-start items-start gap-2 cursor-pointer bg-orange-100 hover:bg-orange-200 transition border-r border-stone-900">
-              <div className="self-stretch text-stone-900 text-lg font-medium font-sans leading-normal">
-                Jotform Logbook
-              </div>
-              <div className="self-stretch text-stone-900 text-md font-normal font-sans">
-                An internal tool for better company awareness
-              </div>
-            </div>
-          </Link>,
-          <Link key="kroma" href="/product/kroma" className="flex-1 h-full">
-            <div className="SectionBlock  h-full p-6 bg-pink-100 flex flex-col justify-start items-start gap-2 cursor-pointer hover:bg-pink-200 transition">
-              <div className="self-stretch text-stone-900 text-lg font-medium font-sans leading-normal">
-                Kroma
-              </div>
-              <div className="self-stretch text-stone-900 text-md font-normal font-sans">
-                Color Blindness Accessibility Checker for User Interfaces
-              </div>
-            </div>
-          </Link>,
-        ]}
-        simpleTabs={[
-          {
-            icon: <LanguageIcon />,
-            state: "idle",
-            to: "https://usekroma.com/",
-            className: "h-full  hover:bg-blue-100 border-r-0 ",
-          },
-        ]}
-      />
+        </div>
+        <div className="grid grid-cols-2 w-full">
+          <MenuItem
+            to="/product"
+            className="lg:h-[268px] border-stone-900"
+            title="Products"
+            svg={
+              <>
+                <Image
+                  src="/img/productIcon.svg"
+                  alt="Products Icon"
+                  width={24}
+                  height={24}
+                  data-tooltip-id="product-tooltip"
+                  data-tooltip-content="Braille letter P – represents Products"
+                  data-tooltip-place="right"
+                />
+                <Tooltip id="product-tooltip" />
+              </>
+            }
+          />
+          <MenuItem
+            to="/case-study"
+            className="lg:h-[268px] md:border-r-0"
+            title="Case Studies"
+            svg={
+              <>
+                <Image
+                  src="/img/caseStudyIcon.svg"
+                  alt="case studies"
+                  width={24}
+                  height={24}
+                  data-tooltip-id="case-study-tooltip"
+                  data-tooltip-content="Braille letters C and S – represent Case Studies"
+                  data-tooltip-place="left"
+                />
+                <Tooltip id="case-study-tooltip" />
+              </>
+            }
+          />
+          <MenuItem
+            to="/ideas"
+            className="lg:h-[268px]"
+            title="Ideas"
+            svg={
+              <>
+                <Image
+                  src="/img/ideaIcon.svg"
+                  alt="ideas"
+                  width={24}
+                  height={24}
+                  data-tooltip-id="idea-tooltip"
+                  data-tooltip-content="Braille letter I – represents Ideas"
+                  data-tooltip-place="right"
+                />
+                <Tooltip id="idea-tooltip" />
+              </>
+            }
+          />
+          <MenuItem
+            to="/experiment"
+            className="lg:h-[268px] md:border-r-0"
+            title="Experiments"
+            svg={
+              <>
+                <Image
+                  src="/img/experimentIcon.svg"
+                  alt="experiments"
+                  width={24}
+                  height={24}
+                  data-tooltip-id="experiment-tooltip"
+                  data-tooltip-content="Braille letter E – represents Experiments"
+                  data-tooltip-place="left"
+                />
+                <Tooltip id="experiment-tooltip" />
+              </>
+            }
+          />
         </div>
       </div>
-      <Footer />
-    </main>
-  )
+      <div className="flex flex-col place-items-start">
+        <RowCard
+          direction="left"
+          cardTitle="Enhancing Security Through Two-Factor Authentication"
+          cardContent="Improving user security by implementing 2FA on Jotform which resulted in a 15K+ users adopting the feature."
+          tags={[
+            {
+              label: "Case Study",
+              type: "lime",
+              size: "large",
+            },
+            {
+              label: "Security Feature",
+              type: "outline",
+              size: "large",
+            },
+          ]}
+          to="/case-study/jotform-2fa"
+          swapContent={
+            <Image
+              src="/img/thumbs/thumb-jf2fa.svg"
+              alt="Jotform 2FA"
+              width={400}
+              height={300}
+              className="w-full h-full object-contain"
+            />
+          }
+        />
+        <RowCard
+          direction="right"
+          cardTitle="Jotform Logbook | An internal tool for better company awareness"
+          cardContent="Jotform Logbook is an internal tool that helps Jotformers to be aware of what's happening in the company. It's a simple tool that helps us to be more transparent and aware of what's happening in the company."
+          tags={[
+            {
+              label: "Idea",
+              type: "purple",
+              size: "large",
+            },
+            {
+              label: "Company Awareness",
+              type: "outline",
+              size: "large",
+            },
+          ]}
+          to="/ideas/jotform-logbook"
+          swapContent={
+            <Image
+              src="/img/thumbs/thumb-logbook.svg"
+              alt="Jotform Logbook"
+              width={400}
+              height={300}
+              className="w-full h-full object-contain"
+            />
+          }
+        />
+        <RowCard
+          direction="left"
+          cardTitle="Kroma"
+          cardContent="Kroma is a free color accessibility checker for those who works on the user interface. It's the only free tool which offer limitless color accessibility checks."
+          tags={[
+            {
+              label: "Product",
+              type: "red",
+              size: "large",
+            },
+            {
+              label: "Accessibility (a11y)",
+              type: "outline",
+              size: "large",
+            },
+          ]}
+          to="/product/kroma"
+          swapContent={
+            <Image
+              src="/img/thumbs/thumb-kroma2.svg"
+              alt="Kroma"
+              width={400}
+              height={300}
+              className="w-full h-full object-contain"
+            />
+          }
+        />
+        <RowCard
+          direction="right"
+          cardTitle="Brifl: Empowering Creators with Collaborative Form Building"
+          cardContent="An open-source tool designed for designers, developers, writers, and photographers to create, share, and analyze forms seamlessly."
+          tags={[
+            {
+              label: "Idea",
+              type: "purple",
+              size: "large",
+            },
+            {
+              label: "Form Builder",
+              type: "outline",
+              size: "large",
+            },
+          ]}
+          to="/ideas/brifl"
+          swapContent={
+            <Image
+              src="/img/thumbs/thumb-brifl2.svg"
+              alt="Brifl"
+              width={400}
+              height={300}
+              className="w-full h-full object-contain"
+            />
+          }
+        />
+        <RowCard
+          direction="left"
+          cardTitle="Brifl Design System"
+          cardContent="A modular, React-friendly component library based on atomic design principles. Contains over 30 components and 200+ states and variants."
+          tags={[
+            {
+              label: "Product",
+              type: "red",
+              size: "large",
+            },
+            {
+              label: "Design System",
+              type: "outline",
+              size: "large",
+            },
+          ]}
+          to="/product/brifl-design-system"
+          swapContent={
+            <Image
+              src="/img/thumbs/thumb-briflds.svg"
+              alt="Brifl Design System"
+              width={400}
+              height={300}
+              className="w-full h-full object-contain"
+            />
+          }
+          className="border-b-0"
+        />
+        <Footer />
+        <Analytics />
+      </div>
+    </div>
+  );
 }
