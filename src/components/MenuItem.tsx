@@ -8,20 +8,21 @@ export interface MenuItemProps {
   svg?: React.ReactNode;
   className?: string;
   to?: string;
+  titleClassName?: string;
 }
 
-const MenuItem: React.FC<MenuItemProps> = ({ title, svg, className, to }) => {
+const MenuItem: React.FC<MenuItemProps> = ({ title, svg, className, to, titleClassName }) => {
   const content = (
     <div
-      className={`w-full min-h-[200px] p-8 lg:p-12 bg-neutral hover:bg-amber-200 border-b border-r border-stone-900 flex flex-col justify-between ${
+      className={`w-full min-h-[200px] p-8   lg:p-12 bg-neutral hover:bg-amber-200 border-b border-r border-stone-900 flex flex-col h-full justify-between ${
         className?.includes("flex-1") ? "!min-h-0 !p-6 h-full" : ""
       } ${className}`}
     >
-      <div className="flex items-center gap-2">{svg}</div>
+      <div className="flex items-start justify-start">{svg}</div>
       <div
-        className={`text-stone-900 items-left font-sans font-medium ${
-          className?.includes("flex-1") ? "text-2xl" : "text-2xl lg:text-[32px]"
-        }`}
+        className={`text-stone-900 font-sans font-medium self-start text-left ${
+          className?.includes("flex-1") ? "text-xl" : "text-xl lg:text-2xl"
+        } ${titleClassName}`}
       >
         {title}
       </div>
@@ -30,7 +31,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ title, svg, className, to }) => {
 
   if (to) {
     return (
-      <Link href={to} className="block">
+      <Link href={to} className="block h-full">
         {content}
       </Link>
     );

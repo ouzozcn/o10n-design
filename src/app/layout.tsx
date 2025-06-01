@@ -10,7 +10,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "O10N Design - Portfolio",
+  title: "Oguzhan Ozcan | Product Designer",
   description: "Portfolio showcasing design and development work",
   keywords: ["design", "development", "portfolio", "UX", "UI"],
   authors: [{ name: "Oğuzhan Özcan" }],

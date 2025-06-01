@@ -50,7 +50,7 @@ export const Footer: React.FC = () => {
             to="https://medium.com/@ouzozcn"
           />
           <SimpleTab
-            icon={<MailIcon sx={{ fontSize: "2rem" }} />}
+            icon={<MailIcon sx={{ fontSize: "1.5rem" }} />}
             className="border-none hover:bg-violet-200"
             state="idle"
             to="mailto:oguz@o10n.design"

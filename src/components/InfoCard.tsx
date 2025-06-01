@@ -15,8 +15,9 @@ const InfoCard: React.FC<InfoCardProps> = () => {
       <Image
         src="/assets/images/braille_logo.svg"
         alt="O and Ö letter in Braille Alphabet"
-        width={48}
-        height={48}
+        width={140}
+        height={140}
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         className="ml-2 p-4 mt-4"
         data-tooltip-id="braille-tooltip"
         data-tooltip-content="Braille letters O and Ö – initials of Oğuzhan Özcan"
