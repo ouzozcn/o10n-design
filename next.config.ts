@@ -19,6 +19,13 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizeCss: true,
   },
+  webpack: (config) => {
+    config.optimization = {
+      ...config.optimization,
+      minimize: true,
+    };
+    return config;
+  },
 };
 
 export default nextConfig;
