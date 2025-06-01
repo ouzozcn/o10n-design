@@ -14,7 +14,7 @@ export default function Contact() {
   }, []);
 
   return (
-    <div className="w-[calc(100%-4rem)] mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
+    <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
       <div className="md:sticky md:top-0 md:z-10 flex flex-col md:flex-row w-auto border-b border-stone-900 bg-theme-primary">
         <MenuItem
           to="/"
@@ -68,7 +68,7 @@ export default function Contact() {
               alt="LinkedIn Logo"
               width={24}
               height={24}
-              className="w-6 h-6"
+              className="w-6 h-6 mb-2"
             />
           </div>
           <p className="text-lg text-center text-stone-900">
@@ -82,7 +82,7 @@ export default function Contact() {
           className="ContactBox flex flex-col grow-1 p-8 md:p-16 w-full h-auto items-center justify-center font-sans bg-orange-100 hover:bg-orange-200 md:border-r border-stone-900 cursor-pointer"
         >
           <div className="flex items-center gap-4">
-            <MailIcon className="w-6 h-6" />
+            <MailIcon className="w-6 h-6 mb-2" />
           </div>
           <p className="text-lg text-center text-stone-900">Send me an email</p>
         </a>
@@ -98,7 +98,7 @@ export default function Contact() {
               alt="GitHub Logo"
               width={24}
               height={24}
-              className="w-6 h-6"
+              className="w-6 h-6 mb-2"
             />
           </div>
           <p className="text-lg text-center text-stone-900">
@@ -117,7 +117,7 @@ export default function Contact() {
               alt="Behance Logo"
               width={24}
               height={24}
-              className="w-6 h-6"
+              className="w-6 h-6 mb-2"
             />
           </div>
           <p className="text-lg text-center text-stone-900">
@@ -136,7 +136,7 @@ export default function Contact() {
               alt="Dribbble Logo"
               width={24}
               height={24}
-              className="w-6 h-6"
+              className="w-6 h-6 mb-2"
             />
           </div>
           <p className="text-lg text-center text-stone-900">

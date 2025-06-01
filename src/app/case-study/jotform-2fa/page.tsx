@@ -72,7 +72,7 @@ export default function Jotform2FA() {
   }, []);
 
   return (
-    <div className="w-[calc(100%-4rem)] mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
+    <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
       <TopDivider />
       <div className="Header sticky top-0 flex flex-row p-4 w-full h-auto md:h-[88px] border-b border-stone-900 items-center justify-start gap-4 bg-amber-50 z-10">
         <Menu />
@@ -133,12 +133,12 @@ export default function Jotform2FA() {
 
       {/* Rest of the content */}
       <div className="BodyContainer flex flex-col gap-0 font-sans">
-        <div className="px-4 py-4 md:px-16 md:py-8 text-xl text-center font-medium text-stone-900">
+        <div className="p-4 md:px-16 md:py-8 text-xl text-center font-medium text-stone-900">
           As a product designer in Jotform&apos;s Enterprise Division, I led the design and rollout of a platform-wide Two-Factor Authentication (2FA) feature—addressing 2,000+ user requests and fulfilling enterprise-grade security needs without compromising usability.
         </div>
 
         <SectionTitle title="The Challenge" />
-        <div className="flex flex-col md:flex-row gap-4 px-4 py-4 md:px-16 md:py-8 items-center justify-center">
+        <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
           <div className="SectionContent items-center justify-center text-start text-stone-900 text-lg gap-4">
             <p>
               Our goal was to improve account security with an additional layer of authentication—without creating friction or drop-off in user experience. We needed a solution that served both our individual (B2C) users and our enterprise clients with scalable and customizable options.
@@ -179,7 +179,7 @@ export default function Jotform2FA() {
         </div>
 
         <SectionTitle title="My Contributions" />
-        <div className="flex flex-col md:flex-row gap-4 px-4 py-4 md:px-16 md:py-8">
+        <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8">
           <div className="SectionContent flex w-full md:w-2/3 items-center justify-center text-center md:text-start text-stone-900 text-lg gap-4">
             <ul className="list-disc pl-8 md:pl-0 space-y-1 text-left">
               <li>Spearheaded UX design from concept to launch across Web, Mobile App, and Enterprise Servers</li>
@@ -216,7 +216,7 @@ export default function Jotform2FA() {
         </div>
 
         <SectionTitle title="Research & Strategy" />
-        <div className="SectionContent mx-16 my-8 items-center justify-center text-start text-stone-900 text-lg gap-4">
+        <div className="SectionContent p-4 md:px-16 md:py-8 items-center justify-center text-start text-stone-900 text-lg gap-4">
           <p>
             I explored authentication practices used by industry leaders (GitHub, Google, etc.) and internalized concepts such as MFA, SSO, and recovery mechanisms. I analyzed:
           </p>
@@ -278,12 +278,12 @@ export default function Jotform2FA() {
 
         <SectionTitle title="High Fidelity Designs" />
         <div className="HiFiContainer1 flex flex-col md:flex-row gap-4 md:h-[760px] items-center justify-center border-b border-stone-900">
-          <div className="SectionContent flex w-full md:w-1/3 h-full px-4 py-4 md:px-16 md:py-8 flex-col items-center justify-center text-center text-stone-900 text-lg bg-amber-100 md:border-r border-stone-900">
+          <div className="SectionContent flex w-full md:w-1/3 h-full p-4 md:px-16 md:py-8 flex-col items-center justify-center text-center text-stone-900 text-lg bg-amber-100 md:border-r border-stone-900">
             <p className="text-2xl font-bold">Flow: Enabling 2FA</p>
             <br />
             <p>Both regular and enterprise users can enable 2FA via their account settings</p>
           </div>
-          <div className="ImageSlider w-full h-auto items-center justify-center lg:max-w-4xl mx-auto px-4 py-4 md:px-16 md:py-8">
+          <div className="ImageSlider w-full h-auto items-center justify-center lg:max-w-4xl mx-auto p-4 md:px-16 md:py-8">
             <Swiper
               spaceBetween={10}
               navigation={true}
@@ -329,7 +329,7 @@ export default function Jotform2FA() {
         </div>
 
         <div className="HifiContainer2 flex flex-col md:flex-row gap-4 md:h-[760px] items-center justify-center">
-          <div className="ImageSlider w-full h-auto items-center justify-center lg:max-w-4xl mx-auto px-4 py-4 md:px-16 md:py-8">
+          <div className="ImageSlider w-full h-auto items-center justify-center lg:max-w-4xl mx-auto p-4 md:px-16 md:py-8">
             <Swiper
               spaceBetween={10}
               navigation={true}
@@ -372,7 +372,7 @@ export default function Jotform2FA() {
               ))}
             </Swiper>
           </div>
-          <div className="SectionContent flex w-full md:w-1/3 h-full px-4 py-4 md:px-16 md:py-8 flex-col items-center justify-center text-center text-stone-900 text-lg bg-lime-100 md:border-l border-stone-900">
+          <div className="SectionContent flex w-full md:w-1/3 h-full p-4 md:px-16 md:py-8 flex-col items-center justify-center text-center text-stone-900 text-lg bg-lime-100 md:border-l border-stone-900">
             <p className="text-2xl font-bold">Flow: Login with 2FA</p>
             <br />
             <p>
@@ -382,7 +382,7 @@ export default function Jotform2FA() {
         </div>
 
         <SectionTitle title="Enterprise Customization" />
-        <div className="flex flex-col md:flex-row px-4 py-4 md:px-16 md:py-8 gap-4 items-center justify-center">
+        <div className="flex flex-col md:flex-row p-4 md:px-16 md:py-8 gap-4 items-center justify-center">
           <div className="SectionContent items-center justify-center text-start text-stone-900 text-lg gap-4">
             <p>Enterprise users demanded more advanced controls:</p>
             <br />
@@ -441,7 +441,7 @@ export default function Jotform2FA() {
         </div>
 
         <SectionTitle title="After Launch: User Feedback & Iteration" />
-        <div className="SectionContent px-4 py-4 md:px-16 md:py-8 items-center justify-center text-start text-stone-900 text-lg gap-4">
+        <div className="SectionContent p-4 md:px-16 md:py-8 items-center justify-center text-start text-stone-900 text-lg gap-4">
           <p>
             I tracked <b>~15K 2FA enablements</b> post-launch, with 10K users continuing use. We uncovered two key UX issues:
           </p>
@@ -456,7 +456,7 @@ export default function Jotform2FA() {
           </ul>
         </div>
 
-        <div className="flex flex-col md:flex-row px-4 py-4 md:px-16 md:py-8 gap-4 items-center justify-center">
+        <div className="flex flex-col md:flex-row p-4 md:px-16 md:py-8 gap-4 items-center justify-center">
           <div className="IframeGraph flex h-[400px] w-full justify-center items-center">
             <iframe
               src="https://visualize.graphy.app/view/83816ffb-cf3a-4a45-aada-54b73b3a19d5"
@@ -471,7 +471,7 @@ export default function Jotform2FA() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row px-4 py-4 md:px-16 gap-4 items-center justify-center">
+        <div className="flex flex-col md:flex-row p-4 md:px-16 gap-4 items-center justify-center">
           <div className="IframeGraph flex h-auto w-full justify-center items-center">
             <iframe
               src="https://visualize.graphy.app/view/770630e2-170d-4d41-a48a-f1b08cf6283c"
@@ -481,8 +481,8 @@ export default function Jotform2FA() {
         </div>
 
         <SectionTitle title="Driving Adoption: Action-Based Triggers" />
-        <div className="flex flex-col md:flex-row px-4 py-4 md:px-16 md:py-8 gap-4 items-center justify-center">
-          <div className="SectionContent items-center justify-center text-start text-stone-900 text-lg gap-4">
+        <div className="flex flex-col md:flex-row  p-4 md:px-16 md:py-8 gap-4 items-center justify-center">
+          <div className="SectionContent md:w-1/2 items-center justify-center text-start text-stone-900 text-lg gap-4">
             <p>
               After noticing a decline in 2FA activations, I hypothesized that security-conscious users would respond better to timely nudges. I defined a set of <b>Action-Based Email Triggers</b> to promote 2FA:
             </p>
@@ -496,19 +496,19 @@ export default function Jotform2FA() {
               <li><b>hasExportedData</b> → Triggered when a user exports their data</li>
             </ul>
           </div>
-          <div className="flex justify-center">
+          <div className="flex w-1/2 justify-center">
             <Image
               src="/img/twofa/2fa-growth-mail.png"
               alt="Jotform 2FA Email Triggers"
               width={600}
               height={400}
-              className="w-full h-auto"
+              
             />
           </div>
         </div>
 
         <SectionTitle title="Summary & Impact" />
-        <div className="SectionContent px-4 py-4 md:px-16 md:py-8 items-center justify-center text-center text-stone-900 text-lg gap-4">
+        <div className="SectionContent p-4 md:px-16 md:py-8 items-center justify-center text-center text-stone-900 text-lg gap-4">
           <ul className="list-none space-y-4 mx-auto max-w-2xl">
             <li className="text-center">Rolled out Jotform&apos;s first 2FA system across Web, Mobile, and Enterprise</li>
             <li className="text-center"><b>10,000+ active 2FA users</b> post-launch within first months</li>

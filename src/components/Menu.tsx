@@ -42,11 +42,11 @@ const Menu: React.FC<MenuProps> = ({ className }) => {
               Menu
             </div>
           </div>
-          <div className="flex flex-col w-full flex-1">
+          <div className="flex flex-col w-full  flex-1">
             <MenuItem
               to="/"
               title="Home"
-              className="flex-1 w-full border-r-0 text-2xl border-stone-900"
+                className="flex-1 w-full text-2xl border-r-0"
             />
             <MenuItem
               to="/product"

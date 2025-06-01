@@ -27,6 +27,22 @@ import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import "@/styles/swiper.css";
 
+const imageConfig = {
+  hero: {
+    mobile: { width: 375, height: 200 },
+    tablet: { width: 768, height: 400 },
+    desktop: { width: 1200, height: 600 }
+  },
+  gallery: {
+    mobile: { width: 300, height: 200 },
+    desktop: { width: 1200, height: 600 }
+  },
+  thumbnail: {
+    mobile: { width: 100, height: 75 },
+    desktop: { width: 200, height: 150 }
+  }
+};
+
 export default function BriflDS() {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
   const swiperRef = useRef<SwiperType | null>(null);
@@ -70,7 +86,7 @@ export default function BriflDS() {
   }, []);
 
   return (
-    <div className="w-[calc(100%-4rem)] mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
+    <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
       <TopDivider />
       <div className="Header sticky top-0 flex p-4 w-full h-auto md:h-[88px] border-b border-stone-900 items-center justify-start gap-4 bg-amber-50 z-10">
         <Menu />
@@ -84,9 +100,11 @@ export default function BriflDS() {
         <Image
           src="/img/hero/hero-briflds.svg"
           alt="Brifl Design System Hero"
-          width={1200}
-          height={600}
+          width={imageConfig.hero.desktop.width}
+          height={imageConfig.hero.desktop.height}
+          sizes="(max-width: 768px) 375px, (max-width: 1200px) 768px, 1200px"
           className="drop-shadow-lg"
+          priority
         />
       </div>
       <div className="PageContent flex flex-col w-full h-full gap-4 p-8 border-b border-stone-900">
@@ -200,8 +218,9 @@ export default function BriflDS() {
                 <Image
                   src="/img/briflds/bds-inputs.png"
                   alt="Brifl Inputs Component"
-                  width={1200}
-                  height={600}
+                  width={imageConfig.gallery.desktop.width}
+                  height={imageConfig.gallery.desktop.height}
+                  sizes="(max-width: 768px) 300px, 1200px"
                   className="w-full h-full object-contain"
                 />
               </SwiperSlide>
@@ -209,8 +228,9 @@ export default function BriflDS() {
                 <Image
                   src="/img/briflds/bds-button.png"
                   alt="Brifl Buttons Component"
-                  width={1200}
-                  height={600}
+                  width={imageConfig.gallery.desktop.width}
+                  height={imageConfig.gallery.desktop.height}
+                  sizes="(max-width: 768px) 300px, 1200px"
                   className="w-full h-full object-contain"
                 />
               </SwiperSlide>
@@ -218,8 +238,9 @@ export default function BriflDS() {
                 <Image
                   src="/img/briflds/bds-select.png"
                   alt="Brifl Select Component"
-                  width={1200}
-                  height={600}
+                  width={imageConfig.gallery.desktop.width}
+                  height={imageConfig.gallery.desktop.height}
+                  sizes="(max-width: 768px) 300px, 1200px"
                   className="w-full h-full object-contain"
                 />
               </SwiperSlide>
@@ -227,8 +248,9 @@ export default function BriflDS() {
                 <Image
                   src="/img/briflds/bds-controls.png"
                   alt="Brifl Controls Component"
-                  width={1200}
-                  height={600}
+                  width={imageConfig.gallery.desktop.width}
+                  height={imageConfig.gallery.desktop.height}
+                  sizes="(max-width: 768px) 300px, 1200px"
                   className="w-full h-full object-contain"
                 />
               </SwiperSlide>
@@ -236,8 +258,9 @@ export default function BriflDS() {
                 <Image
                   src="/img/briflds/bds-nav.png"
                   alt="Brifl Navigation Component"
-                  width={1200}
-                  height={600}
+                  width={imageConfig.gallery.desktop.width}
+                  height={imageConfig.gallery.desktop.height}
+                  sizes="(max-width: 768px) 300px, 1200px"
                   className="w-full h-full object-contain"
                 />
               </SwiperSlide>
@@ -245,8 +268,9 @@ export default function BriflDS() {
                 <Image
                   src="/img/briflds/bds-banner.png"
                   alt="Brifl Banner Component"
-                  width={1200}
-                  height={600}
+                  width={imageConfig.gallery.desktop.width}
+                  height={imageConfig.gallery.desktop.height}
+                  sizes="(max-width: 768px) 300px, 1200px"
                   className="w-full h-full object-contain"
                 />
               </SwiperSlide>
@@ -254,8 +278,9 @@ export default function BriflDS() {
                 <Image
                   src="/img/briflds/bds-empty.png"
                   alt="Brifl Empty State Component"
-                  width={1200}
-                  height={600}
+                  width={imageConfig.gallery.desktop.width}
+                  height={imageConfig.gallery.desktop.height}
+                  sizes="(max-width: 768px) 300px, 1200px"
                   className="w-full h-full object-contain"
                 />
               </SwiperSlide>
@@ -274,8 +299,9 @@ export default function BriflDS() {
                 <Image
                   src="/img/briflds/bds-inputs.png"
                   alt="Brifl Inputs Component"
-                  width={200}
-                  height={150}
+                  width={imageConfig.thumbnail.desktop.width}
+                  height={imageConfig.thumbnail.desktop.height}
+                  sizes="(max-width: 768px) 100px, 200px"
                   className="w-full h-full object-cover rounded cursor-pointer"
                 />
               </SwiperSlide>
@@ -283,8 +309,9 @@ export default function BriflDS() {
                 <Image
                   src="/img/briflds/bds-button.png"
                   alt="Brifl Buttons Component"
-                  width={200}
-                  height={150}
+                  width={imageConfig.thumbnail.desktop.width}
+                  height={imageConfig.thumbnail.desktop.height}
+                  sizes="(max-width: 768px) 100px, 200px"
                   className="w-full h-full object-cover rounded cursor-pointer"
                 />
               </SwiperSlide>
@@ -292,8 +319,9 @@ export default function BriflDS() {
                 <Image
                   src="/img/briflds/bds-select.png"
                   alt="Brifl Select Component"
-                  width={200}
-                  height={150}
+                  width={imageConfig.thumbnail.desktop.width}
+                  height={imageConfig.thumbnail.desktop.height}
+                  sizes="(max-width: 768px) 100px, 200px"
                   className="w-full h-full object-cover rounded cursor-pointer"
                 />
               </SwiperSlide>
@@ -301,8 +329,9 @@ export default function BriflDS() {
                 <Image
                   src="/img/briflds/bds-controls.png"
                   alt="Brifl Controls Component"
-                  width={200}
-                  height={150}
+                  width={imageConfig.thumbnail.desktop.width}
+                  height={imageConfig.thumbnail.desktop.height}
+                  sizes="(max-width: 768px) 100px, 200px"
                   className="w-full h-full object-cover rounded cursor-pointer"
                 />
               </SwiperSlide>
@@ -310,8 +339,9 @@ export default function BriflDS() {
                 <Image
                   src="/img/briflds/bds-nav.png"
                   alt="Brifl Navigation Component"
-                  width={200}
-                  height={150}
+                  width={imageConfig.thumbnail.desktop.width}
+                  height={imageConfig.thumbnail.desktop.height}
+                  sizes="(max-width: 768px) 100px, 200px"
                   className="w-full h-full object-cover rounded cursor-pointer"
                 />
               </SwiperSlide>
@@ -319,8 +349,9 @@ export default function BriflDS() {
                 <Image
                   src="/img/briflds/bds-banner.png"
                   alt="Brifl Banner Component"
-                  width={200}
-                  height={150}
+                  width={imageConfig.thumbnail.desktop.width}
+                  height={imageConfig.thumbnail.desktop.height}
+                  sizes="(max-width: 768px) 100px, 200px"
                   className="w-full h-full object-cover rounded cursor-pointer"
                 />
               </SwiperSlide>
@@ -328,8 +359,9 @@ export default function BriflDS() {
                 <Image
                   src="/img/briflds/bds-empty.png"
                   alt="Brifl Empty State Component"
-                  width={200}
-                  height={150}
+                  width={imageConfig.thumbnail.desktop.width}
+                  height={imageConfig.thumbnail.desktop.height}
+                  sizes="(max-width: 768px) 100px, 200px"
                   className="w-full h-full object-cover rounded cursor-pointer"
                 />
               </SwiperSlide>
@@ -393,13 +425,25 @@ export default function BriflDS() {
           ]}
           simpleTabs={[
             {
-              icon: <Image src="/img/behance.svg" alt="Behance" width={24} height={24} />,
+              icon: <Image 
+                src="/img/behance.svg" 
+                alt="Behance" 
+                width={24} 
+                height={24}
+                sizes="24px"
+              />,
               state: "idle",
               to: "https://www.behance.net/gallery/140029891/brifl-design-system",
               className: "h-full hover:bg-blue-100",
             },
             {
-              icon: <Image src="/img/dribbble.svg" alt="Dribbble" width={24} height={24} />,
+              icon: <Image 
+                src="/img/dribbble.svg" 
+                alt="Dribbble" 
+                width={24} 
+                height={24}
+                sizes="24px"
+              />,
               state: "idle",
               to: "https://dribbble.com/shots/19824696-brifl-Design-System",
               className: "h-full hover:bg-pink-100 border-r-0",

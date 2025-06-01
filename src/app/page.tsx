@@ -10,6 +10,12 @@ import Footer from "@/components/Footer";
 import TopDivider from "@/components/TopDivider";
 import { Analytics } from "@vercel/analytics/react";
 
+const iconConfig = {
+  sm: { height: 24, sizes: "24px" },
+  md: { height: 32, sizes: "32px" },
+  lg: { height: 72, sizes: "72px" }
+};
+
 export default function Home() {
   useEffect(() => {
     console.info(
@@ -18,7 +24,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="w-[calc(100%-4rem)] mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
+    <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
       <TopDivider />
       <div className="flex flex-col lg:flex-row w-full">
         <div className="w-full lg:w-auto h-full lg:h-[536px] lg:border-b border-stone-900">
@@ -29,13 +35,16 @@ export default function Home() {
             to="/product"
             className="lg:h-[268px] border-stone-900"
             title="Products"
+            titleClassName="text-md  md:text-xl lg:text-2xl"
             svg={
               <>
                 <Image
                   src="/img/productIcon.svg"
                   alt="Products Icon"
-                  width={24}
-                  height={24}
+                  width={1}
+                  height={iconConfig.lg.height}
+                
+                  style={{ height: iconConfig.lg.height, width: "auto" }}
                   data-tooltip-id="product-tooltip"
                   data-tooltip-content="Braille letter P – represents Products"
                   data-tooltip-place="right"
@@ -46,15 +55,18 @@ export default function Home() {
           />
           <MenuItem
             to="/case-study"
-            className="lg:h-[268px] md:border-r-0"
+            className="lg:h-[268px] border-r-0"
             title="Case Studies"
+            titleClassName="text-md  md:text-xl lg:text-2xl"
             svg={
               <>
                 <Image
                   src="/img/caseStudyIcon.svg"
                   alt="case studies"
-                  width={24}
-                  height={24}
+                  width={1}
+                  height={iconConfig.lg.height}
+                
+                  style={{ height: iconConfig.lg.height, width: "auto" }}
                   data-tooltip-id="case-study-tooltip"
                   data-tooltip-content="Braille letters C and S – represent Case Studies"
                   data-tooltip-place="left"
@@ -67,13 +79,16 @@ export default function Home() {
             to="/ideas"
             className="lg:h-[268px]"
             title="Ideas"
+            titleClassName="text-md  md:text-xl lg:text-2xl"
             svg={
               <>
                 <Image
                   src="/img/ideaIcon.svg"
                   alt="ideas"
-                  width={24}
-                  height={24}
+                  width={1}
+                  height={iconConfig.lg.height}
+                
+                  style={{ height: iconConfig.lg.height, width: "auto" }}
                   data-tooltip-id="idea-tooltip"
                   data-tooltip-content="Braille letter I – represents Ideas"
                   data-tooltip-place="right"
@@ -84,15 +99,18 @@ export default function Home() {
           />
           <MenuItem
             to="/experiment"
-            className="lg:h-[268px] md:border-r-0"
+            className="lg:h-[268px] border-r-0"
             title="Experiments"
+            titleClassName="text-md  md:text-xl lg:text-2xl"
             svg={
               <>
                 <Image
                   src="/img/experimentIcon.svg"
                   alt="experiments"
-                  width={24}
-                  height={24}
+                  width={1}
+                  height={iconConfig.lg.height}
+                 
+                  style={{ height: iconConfig.lg.height, width: "auto" }}
                   data-tooltip-id="experiment-tooltip"
                   data-tooltip-content="Braille letter E – represents Experiments"
                   data-tooltip-place="left"
@@ -181,7 +199,7 @@ export default function Home() {
               alt="Kroma"
               width={400}
               height={300}
-              className="w-full h-full object-contain"
+             
             />
           }
         />
@@ -233,8 +251,8 @@ export default function Home() {
             <Image
               src="/img/thumbs/thumb-briflds.svg"
               alt="Brifl Design System"
-              width={400}
-              height={300}
+              width={600}
+              height={400}
               className="w-full h-full object-contain"
             />
           }
