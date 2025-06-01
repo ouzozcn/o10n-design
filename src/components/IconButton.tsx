@@ -1,5 +1,7 @@
+'use client';
+
 import React from "react";
-import { Link } from "react-router";
+import Link from "next/link";
 
 export type IconButtonProps = {
   type: "primary" | "secondary" | "tertiary";
@@ -35,7 +37,7 @@ const IconButton: React.FC<IconButtonProps> = ({
 
   if (to) {
     return (
-      <Link to={to} className={commonClassNames}>
+      <Link href={to} className={commonClassNames}>
         {icon}
       </Link>
     );

@@ -1,7 +1,9 @@
+'use client';
+
 import React from "react";
-import { Link, To } from "react-router";
+import Link from "next/link";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
-import "../css/custom.css";
+import "../styles/custom.css";
 
 export interface TextLinkProps {
   label: string;
@@ -15,21 +17,42 @@ const styleClasses = {
   secondary: "font-normal",
 };
 
+const isExternal = (url?: string) => url && /^https?:\/\//.test(url);
+
 const TextLink: React.FC<TextLinkProps> = ({
   label,
   to = "/",
   className,
   style = "secondary",
 }) => {
-  return (
-    <Link
-      to={to as To}
-      className={`flex items-center text-stone-900 hover:text-blue-900 font-sans  text-lg gap-1 ${styleClasses[style]} ${className}`}
-    >
+  const content = (
+    <>
       {label}
       <span className="ml-1 icon-hidden">
         <ArrowOutwardIcon fontSize="small" />
       </span>
+    </>
+  );
+
+  if (isExternal(to)) {
+    return (
+      <a
+        href={to}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`flex items-center text-stone-900 hover:text-blue-900 font-sans text-lg gap-1 ${styleClasses[style]} ${className}`}
+      >
+        {content}
+      </a>
+    );
+  }
+
+  return (
+    <Link
+      href={to}
+      className={`flex items-center text-stone-900 hover:text-blue-900 font-sans text-lg gap-1 ${styleClasses[style]} ${className}`}
+    >
+      {content}
     </Link>
   );
 };

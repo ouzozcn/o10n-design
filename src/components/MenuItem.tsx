@@ -1,5 +1,7 @@
+'use client';
+
 import React from "react";
-import { Link, To } from "react-router";
+import Link from "next/link";
 
 export interface MenuItemProps {
   title: string;
@@ -28,7 +30,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ title, svg, className, to }) => {
 
   if (to) {
     return (
-      <Link to={to} className="block">
+      <Link href={to} className="block">
         {content}
       </Link>
     );

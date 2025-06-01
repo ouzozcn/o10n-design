@@ -1,17 +1,16 @@
+'use client';
+
 import React, { useState } from "react";
-import MenuItem, { MenuItemProps } from "../components/MenuItem";
-import Button, { ButtonProps } from "../components/Button";
-import IconButton, { IconButtonProps } from "../components/IconButton";
+import MenuItem from "../components/MenuItem";
+import IconButton from "../components/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import { Link, To } from "react-router";
 
 export interface MenuProps {
-  title?: string;
   className?: string;
 }
 
-const Menu: React.FC<MenuProps> = ({ title, className }) => {
+const Menu: React.FC<MenuProps> = ({ className }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -28,7 +27,7 @@ const Menu: React.FC<MenuProps> = ({ title, className }) => {
       />
       {isOpen && (
         <div
-          className={`fixed inset-0 z-50 flex flex-col bg-amber-100 border-r border-stone-900 ${className} menu-container`}
+          className={`fixed inset-0 z-50 flex flex-col bg-amber-100 border-r border-stone-900 w-full md:w-[30%] ${className}`}
         >
           <div className="flex items-start p-3 gap-2 border-b border-stone-900">
             <div className="flex flex-row gap-2 items-center justify-center">
@@ -82,18 +81,6 @@ const Menu: React.FC<MenuProps> = ({ title, className }) => {
           </div>
         </div>
       )}
-      <style>
-        {`
-          .menu-container {
-            width: 100%;
-          }
-          @media (min-width: 768px) {
-            .menu-container {
-              width: 30%;
-            }
-          }
-        `}
-      </style>
     </>
   );
 };

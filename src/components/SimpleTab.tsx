@@ -1,4 +1,7 @@
+'use client';
+
 import React from "react";
+import Link from "next/link";
 
 export interface SimpleTabProps {
   state: "idle" | "hover" | "disabled";
@@ -13,25 +16,52 @@ const iconClasses = {
   disabled: "text-stone-500",
 };
 
+const isExternal = (url?: string) => url && /^https?:\/\//.test(url);
+
 const SimpleTab: React.FC<SimpleTabProps> = ({
   state,
   icon,
   to,
   className,
 }) => {
+  const content = (
+    <div
+      className={`flex items-center justify-center w-12 h-12 ${iconClasses[state]}`}
+    >
+      {icon}
+    </div>
+  );
+
+  if (!to) {
+    return (
+      <div
+        className={`relative flex w-full h-20 items-center justify-center border-r border-stone-900 hover:bg-amber-200 ${className}`}
+      >
+        {content}
+      </div>
+    );
+  }
+
+  if (isExternal(to)) {
+    return (
+      <a
+        href={to}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`relative flex w-full h-20 items-center justify-center border-r border-stone-900 hover:bg-amber-200 ${className}`}
+      >
+        {content}
+      </a>
+    );
+  }
+
   return (
-    <a
+    <Link
       href={to}
-      target="_blank"
-      rel="noopener noreferrer"
       className={`relative flex w-full h-20 items-center justify-center border-r border-stone-900 hover:bg-amber-200 ${className}`}
     >
-      <div
-        className={`flex items-center justify-center w-12 h-12 ${iconClasses[state]}`}
-      >
-        {icon}
-      </div>
-    </a>
+      {content}
+    </Link>
   );
 };
 

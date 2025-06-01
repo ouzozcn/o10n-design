@@ -1,3 +1,5 @@
+'use client';
+
 import React from "react";
 import SquareIcon from "@mui/icons-material/Square";
 
@@ -36,19 +38,21 @@ const ContentCard: React.FC<ContentCardProps> = ({
   color,
 }) => {
   return (
-    <div
-      className={`w-full flex flex-col border border-stone-900 ${colorClasses[color]} rounded-lg ${className}`}
+    <article
+      className={`w-full flex flex-col border border-stone-900 ${colorClasses[color]} rounded-lg transition-colors duration-200 ${className}`}
     >
-      <div className="flex items-center border-b border-stone-900">
-        <div className="h-auto inline-flex  self-stretch items-center justify-center p-4 border-r border-stone-900">
+      <header className="flex items-center border-b border-stone-900">
+        <div className="h-auto inline-flex self-stretch items-center justify-center p-4 border-r border-stone-900" aria-hidden="true">
           {icon}
         </div>
-        <div className="p-4 text-stone-900 text-2xl font-sans font-medium">
+        <h2 className="p-4 text-stone-900 text-2xl font-sans font-medium">
           {title}
-        </div>
+        </h2>
+      </header>
+      <div className="p-6 text-stone-900 text-lg font-sans">
+        {content}
       </div>
-      <div className="p-6 text-stone-900 text-lg font-sans">{content}</div>
-    </div>
+    </article>
   );
 };
 

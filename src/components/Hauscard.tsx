@@ -1,4 +1,7 @@
+'use client';
+
 import React from "react";
+import Image from "next/image";
 import Tag from "./Tag";
 import { TagProps } from "./Tag";
 
@@ -18,29 +21,32 @@ const Hauscard: React.FC<HauscardProps> = ({
   tags = [],
 }) => {
   return (
-    <div
-      className={`min-w-[695px] min-h-[400px] h-[400px] flex flex-col justify-end items-start gap-2  ${
-        hasBackgroundImage ? "" : "bg-red-200"
-      }`}
-      style={
-        hasBackgroundImage && backgroundImageUrl
-          ? {
-              backgroundImage: `url(${backgroundImageUrl})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }
-          : {}
-      }
-    >
-      <div className="bg-amber-50 w-full">{children}</div>
-      <div className="h-[147px] p-8 flex flex-col justify-start items-start gap-2">
-        <div className="w-full text-wrap text-stone-900 text-[32px] font-sans font-normal">
-          {title}
+    <div className="relative w-full min-h-[400px] h-[400px] flex flex-col justify-end items-start gap-2">
+      {hasBackgroundImage && backgroundImageUrl && (
+        <div className="absolute inset-0 z-0">
+          <Image
+            src={backgroundImageUrl}
+            alt=""
+            fill
+            className="object-cover"
+            priority
+          />
         </div>
-        <div className="flex justify-start items-center gap-4">
-          {tags.map((tagProps, index) => (
-            <Tag key={index} {...tagProps} />
-          ))}
+      )}
+      {!hasBackgroundImage && (
+        <div className="absolute inset-0 bg-red-200" />
+      )}
+      <div className="relative z-10 w-full">
+        <div className="bg-amber-50 w-full">{children}</div>
+        <div className="h-[147px] p-8 flex flex-col justify-start items-start gap-2">
+          <h2 className="w-full text-wrap text-stone-900 text-[32px] font-sans font-normal">
+            {title}
+          </h2>
+          <div className="flex flex-wrap justify-start items-center gap-4">
+            {tags.map((tagProps, index) => (
+              <Tag key={index} {...tagProps} />
+            ))}
+          </div>
         </div>
       </div>
     </div>
