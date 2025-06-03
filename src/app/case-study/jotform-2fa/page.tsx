@@ -1,7 +1,6 @@
 'use client';
 
-import React, { useRef } from "react";
-import { useEffect, useState } from "react";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -65,11 +64,7 @@ export default function Jotform2FA() {
     },
   ];
 
-  useEffect(() => {
-    console.info(
-      "Jotform 2FA Case Study: A comprehensive overview of designing and implementing Two-Factor Authentication for 25M+ users, including user flows, enterprise customization, and adoption strategies."
-    );
-  }, []);
+
 
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
@@ -139,12 +134,13 @@ export default function Jotform2FA() {
 
         <SectionTitle title="The Challenge" />
         <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-          <div className="SectionContent items-center justify-center text-start text-stone-900 text-lg gap-4">
+          <div className="SectionContent w-2/3 items-center justify-center text-start text-stone-900 text-lg gap-4">
             <p>
               Our goal was to improve account security with an additional layer of authentication—without creating friction or drop-off in user experience. We needed a solution that served both our individual (B2C) users and our enterprise clients with scalable and customizable options.
             </p>
           </div>
-          <div className="SwipeCards flex w-full items-center justify-center font-sans">
+          <div className="flex flex-col w-1/3 items-center justify-center">
+          <div className="SwipeCards   items-center justify-center font-sans">
             <Swiper
               effect={"cards"}
               grabCursor={true}
@@ -176,11 +172,16 @@ export default function Jotform2FA() {
               ))}
             </Swiper>
           </div>
+          <p className="text-md mt-[-24px] text-stone-500"><i>Tasks I worked on</i></p>
+          </div>
         </div>
 
         <SectionTitle title="My Contributions" />
         <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8">
-          <div className="SectionContent flex w-full md:w-2/3 items-center justify-center text-center md:text-start text-stone-900 text-lg gap-4">
+          <div className="SectionContent flex flex-col w-full md:w-2/3 items-center justify-center text-center md:text-start text-stone-900 text-lg gap-4">
+            <p>
+             I got chance to work on a wide range of tasks, from research to design to development to launch and growth.
+            </p>
             <ul className="list-disc pl-8 md:pl-0 space-y-1 text-left">
               <li>Spearheaded UX design from concept to launch across Web, Mobile App, and Enterprise Servers</li>
               <li>Conducted competitive and user research to align security practices with user expectations</li>
@@ -190,26 +191,26 @@ export default function Jotform2FA() {
               <li>Initiated a growth strategy to boost adoption after initial release</li>
             </ul>
           </div>
-          <div className="RoleBlocks flex flex-col md:flex-row w-full md:w-1/3 md:flex-wrap p-4 items-center justify-center gap-4">
-            <div className="flex h-16 w-full md:w-auto p-4 font-sans text-stone-900 text-lg items-center justify-center bg-lime-100 border border-stone-900 rounded-lg">
+          <div className="RoleBlocks flex flex-wrap md:flex-row w-auto md:w-1/3 md:flex-wrap p-4 items-center justify-center gap-4">
+            <div className="flex h-16 w-auto md:w-auto p-4 font-sans text-stone-900 text-lg items-center justify-center bg-lime-100 border border-stone-900 rounded-lg">
               Research
             </div>
-            <div className="flex h-16 w-full md:w-auto p-4 font-sans text-stone-900 text-lg items-center justify-center bg-teal-100 border border-stone-900 rounded-lg">
+            <div className="flex h-16 w-auto p-4 font-sans text-stone-900 text-lg items-center justify-center bg-teal-100 border border-stone-900 rounded-lg">
               Analysis
             </div>
-            <div className="flex h-16 w-full md:w-auto p-4 font-sans text-stone-900 text-lg items-center justify-center bg-orange-100 border border-stone-900 rounded-lg">
+            <div className="flex h-16 w-auto p-4 font-sans text-stone-900 text-lg items-center justify-center bg-orange-100 border border-stone-900 rounded-lg">
               Design
             </div>
-            <div className="flex h-16 w-full md:w-auto p-4 font-sans text-stone-900 text-lg items-center justify-center bg-amber-100 border border-stone-900 rounded-lg">
+            <div className="flex h-16 w-auto p-4 font-sans text-stone-900 text-lg items-center justify-center bg-amber-100 border border-stone-900 rounded-lg">
               User Testing
             </div>
-            <div className="flex h-16 w-full md:w-auto p-4 font-sans text-stone-900 text-lg items-center justify-center bg-pink-100 border border-stone-900 rounded-lg">
+            <div className="flex h-16 w-auto p-4 font-sans text-stone-900 text-lg items-center justify-center bg-pink-100 border border-stone-900 rounded-lg">
               Quality Assurance
             </div>
-            <div className="flex h-16 w-full md:w-auto p-4 font-sans text-stone-900 text-lg items-center justify-center bg-violet-100 border border-stone-900 rounded-lg">
+            <div className="flex h-16 w-auto p-4 font-sans text-stone-900 text-lg items-center justify-center bg-violet-100 border border-stone-900 rounded-lg">
               Growth
             </div>
-            <div className="flex h-16 w-full md:w-auto p-4 font-sans text-stone-900 text-lg items-center justify-center bg-green-100 border border-stone-900 rounded-lg">
+            <div className="flex h-16 w-auto p-4 font-sans text-stone-900 text-lg items-center justify-center bg-green-100 border border-stone-900 rounded-lg">
               Support
             </div>
           </div>
@@ -582,7 +583,7 @@ export default function Jotform2FA() {
           message="Thanks for taking the time to explore this project. I hope you enjoyed the deep dive into the process, challenges, and learnings behind it."
           exploreBlocks={[
             <Link key="jotform-logbook" href="/ideas/jotform-logbook" className="flex-1 h-full">
-              <div className="SectionBlock h-full p-6 flex flex-col justify-start items-start gap-2 cursor-pointer bg-orange-100 hover:bg-orange-200 transition border-r border-stone-900">
+              <div className="SectionBlock h-full p-6 flex flex-col justify-start items-start gap-2 cursor-pointer hover:bg-orange-200 transition sm:border-b lg:border-b-0 lg:border-r border-stone-900">
                 <div className="self-stretch text-stone-900 text-lg font-medium font-sans leading-normal">
                   Jotform Logbook
                 </div>
@@ -592,7 +593,7 @@ export default function Jotform2FA() {
               </div>
             </Link>,
             <Link key="kroma" href="/product/kroma" className="flex-1 h-full">
-              <div className="SectionBlock h-full p-6 bg-pink-100 flex flex-col justify-start items-start gap-2 cursor-pointer hover:bg-pink-200 transition">
+              <div className="SectionBlock h-full p-6  flex flex-col justify-start items-start gap-2 cursor-pointer hover:bg-pink-200 transition">
                 <div className="self-stretch text-stone-900 text-lg font-medium font-sans leading-normal">
                   Kroma
                 </div>

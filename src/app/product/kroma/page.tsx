@@ -136,7 +136,7 @@ export default function Kroma() {
             <MetaInfo
               title="Toolstack"
               firstMeta="Figma"
-              secondMeta="React Vite"
+              secondMeta="Vite + React"
             />
           </div>
         </div>
@@ -166,16 +166,16 @@ export default function Kroma() {
           <div className="SectionContent w-full font-normal px-4 py-4 md:px-16 md:py-8 items-center justify-center text-start text-stone-900 font-sans text-lg gap-4">
             <p>Before building Kroma, I researched various types of color blindness and discovered:</p>
             <br />
-            <ul className="list-disc space-y-2">
+            <ul className="list-disc pl-6 space-y-2">
               <li>Color blindness affects approximately 1 in 12 men (8%) and 1 in 200 women globally.</li>
               <li>Protanomaly and deuteranomaly are among the most common forms, followed by tritanomaly and total color blindness.</li>
               <li>Current design trends rely heavily on color for visual communication, often ignoring accessibility.</li>
             </ul>
           </div>
-          <div className="PageBreakerContainer w-full flex flex-col border-l border-stone-900 gap-0">
-            <div className="SectionBlock w-full p-6 bg-lime-50 flex flex-col justify-start gap-2 border-b border-stone-900">
+          <div className="PageBreakerContainer w-full flex flex-col lg:border-l border-stone-900 gap-0">
+            <div className="SectionBlock w-full p-6 bg-lime-50 flex flex-col justify-start gap-2 border-b border-t lg:border-t-0 border-stone-900">
               <div className="self-stretch text-stone-900 text-lg font-medium font-sans leading-normal">
-                1. Product Designers
+              ✻ Product Designers
               </div>
               <div className="self-stretch text-stone-900 text-md font-normal font-sans">
                 <p className="mb-4">
@@ -185,7 +185,7 @@ export default function Kroma() {
             </div>
             <div className="SectionBlock w-full p-6 bg-pink-50 flex flex-col justify-start gap-2 border-b border-stone-900">
               <div className="self-stretch text-stone-900 text-lg font-medium font-sans leading-normal">
-                2. UX/UI Designers
+              ❖ UX/UI Designers
               </div>
               <div className="self-stretch text-stone-900 text-md font-normal font-sans">
                 <p className="mb-4">
@@ -195,7 +195,7 @@ export default function Kroma() {
             </div>
             <div className="SectionBlock w-full p-6 bg-amber-50 flex flex-col justify-start gap-2 border-b border-stone-900">
               <div className="self-stretch text-stone-900 text-lg font-medium font-sans leading-normal">
-                3. Design Educators
+              ✦ Design Educators
               </div>
               <div className="self-stretch text-stone-900 text-md font-normal font-sans">
                 <p className="mb-4">
@@ -205,7 +205,7 @@ export default function Kroma() {
             </div>
             <div className="SectionBlock w-full p-6 bg-teal-50 flex flex-col justify-start gap-2">
               <div className="self-stretch text-stone-900 text-lg font-medium font-sans leading-normal">
-                4. Accessibility Testers
+              ⧗ Accessibility Testers
               </div>
               <div className="self-stretch text-stone-900 text-md font-normal font-sans">
                 <p className="mb-4">
@@ -225,7 +225,7 @@ export default function Kroma() {
               <li>Automatically generate and download simulations for: Protanomaly, Deuteranomaly, Protanopia, Tritanomaly, Deuteranopia, Tritanopia, Monochromacy, and Achromatopsia.</li>
             </ul>
           </div>
-          <div className="ColorCards flex w-full m-4">
+          <div className="ColorCards flex flex-col items-center justify-center  w-full mx-4 ">
             <div className="SwipeCards flex w-full items-center justify-center font-sans">
               <Swiper
                 effect={"cards"}
@@ -258,6 +258,7 @@ export default function Kroma() {
                 ))}
               </Swiper>
             </div>
+            <p className="text-md mt-[-24px] text-stone-500"><i>Supported Color Blindness Types</i></p>
           </div>
         </div>
 
@@ -266,7 +267,7 @@ export default function Kroma() {
           <p>We have a roadmap in place for upcoming features:</p>
         </div>
         <div className="BlockContainer flex flex-col md:flex-row h-auto font-normal items-start justify-center text-start text-stone-900 text-lg border-t border-stone-900">
-          <div className="SectionBlock w-full h-full flex-1 p-6 bg-lime-50 flex flex-col justify-start gap-2 border-r border-b lg:border-b-none border-stone-900">
+          <div className="SectionBlock w-full h-full flex-1 p-6 bg-lime-50 flex flex-col justify-start gap-2 md:border-r border-b md:border-b-0 border-stone-900">
             <div className="self-stretch justify-center text-stone-900 text-lg font-medium font-sans leading-normal">
               Phase 2:
             </div>
@@ -279,7 +280,7 @@ export default function Kroma() {
               </ul>
             </div>
           </div>
-          <div className="SectionBlock w-full flex-1 p-6 bg-pink-50 flex flex-col h-full justify-start gap-2">
+          <div className="SectionBlock w-full flex-1 p-6 bg-pink-50 flex flex-col h-full justify-start gap-2  md:border-b-0 border-stone-900">
             <div className="self-stretch justify-center text-stone-900 text-lg font-medium font-sans leading-normal">
               Phase 3:
             </div>
@@ -306,7 +307,7 @@ export default function Kroma() {
           message="Thanks for taking the time to explore this project. I hope you enjoyed the deep dive into the process, challenges, and learnings behind it."
           exploreBlocks={[
             <Link key="jotform-logbook" href="/ideas/jotform-logbook" className="flex-1 h-full">
-              <div className="SectionBlock h-full p-6 flex flex-col justify-start items-start gap-2 cursor-pointer bg-orange-100 hover:bg-orange-200 transition border-r border-stone-900">
+              <div className="SectionBlock h-full p-6 flex flex-col justify-start items-start gap-2 cursor-pointer  hover:bg-orange-200 transition sm:border-b lg:border-b-0 lg:border-r border-stone-900">
                 <div className="self-stretch text-stone-900 text-lg font-medium font-sans leading-normal">
                   Jotform Logbook
                 </div>
@@ -315,13 +316,13 @@ export default function Kroma() {
                 </div>
               </div>
             </Link>,
-            <Link key="kroma" href="/product/kroma" className="flex-1 h-full">
-              <div className="SectionBlock h-full p-6 bg-pink-100 flex flex-col justify-start items-start gap-2 cursor-pointer hover:bg-pink-200 transition">
+            <Link key="brifl" href="/ideas/brifl" className="flex-1 h-full">
+              <div className="SectionBlock h-full p-6  flex flex-col justify-start items-start gap-2 cursor-pointer hover:bg-pink-200 transition">
                 <div className="self-stretch text-stone-900 text-lg font-medium font-sans leading-normal">
-                  Kroma
+                  Brifl
                 </div>
                 <div className="self-stretch text-stone-900 text-md font-normal font-sans">
-                  Color Blindness Accessibility Checker for User Interfaces
+                  A collaborative form-building platform designed to bridge the gap between creators and clients.
                 </div>
               </div>
             </Link>,
