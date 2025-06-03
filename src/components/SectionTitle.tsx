@@ -24,12 +24,12 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
   return (
     <header className={containerClasses}>
       {startIcon && (
-        <div 
+    <div
           className="text-center text-stone-800 text-2xl font-sans font-medium"
           aria-hidden="true"
-        >
-          {startIcon}
-        </div>
+    >
+        {startIcon}
+      </div>
       )}
       <h2 className="text-center text-stone-800 text-2xl font-sans font-medium">
         {title}
