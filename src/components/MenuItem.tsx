@@ -31,7 +31,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ title, svg, className, to, titleCla
 
   if (to) {
     return (
-      <Link href={to} className="block h-full">
+      <Link href={to} className="block">
         {content}
       </Link>
     );

@@ -46,7 +46,7 @@ export default function Docs() {
         message="Thanks for taking the time to explore this project. I hope you enjoyed the deep dive into the process, challenges, and learnings behind it."
         exploreBlocks={[
           <Link key="jotform-logbook" href="/ideas/jotform-logbook" className="flex-1 h-full">
-            <div className="SectionBlock h-full p-6  flex flex-col justify-start items-start gap-2 cursor-pointer bg-orange-100 hover:bg-orange-200 transition border-r border-stone-900">
+            <div className="SectionBlock h-full p-6  flex flex-col justify-start items-start gap-2 cursor-pointer bg-orange-100 hover:bg-orange-200 transition sm:border-b lg:border-b-0 lg:border-r border-stone-900">
               <div className="self-stretch text-stone-900 text-lg font-medium font-sans leading-normal">
                 Jotform Logbook
               </div>

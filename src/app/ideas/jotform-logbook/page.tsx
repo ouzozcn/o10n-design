@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
@@ -30,11 +30,7 @@ export default function JotformLogbook() {
     setShowSecondHero(!showSecondHero);
   };
 
-  useEffect(() => {
-    console.info(
-      "📚 Welcome to Jotform Logbook - An internal collaboration platform designed to bridge the gap between teams and products. This project showcases how a centralized logging system can streamline cross-team communication and improve company-wide awareness across different departments: engineering, product, design, and marketing."
-    );
-  }, []);
+  
 
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
@@ -79,7 +75,7 @@ export default function JotformLogbook() {
       </div>
 
       <div className="BodyContainer flex flex-col gap-0 font-sans">
-        <div className="mx-16 my-8 text-xl text-center font-medium text-stone-900">
+        <div className="p-4 md:px-16 md:py-8 text-xl text-center font-medium text-stone-900">
           Jotform Logbook is an internal tool designed to enhance company
           awareness and collaboration. It allows teams to log their work in
           progress (WIP) and completed logs (LOG), track affected products,
@@ -89,7 +85,7 @@ export default function JotformLogbook() {
         </div>
 
         <SectionTitle title="Problem Discovery" />
-        <div className="SectionContent font-normal mx-16 my-8 items-center justify-center text-start text-stone-900 text-lg gap-4">
+        <div className="SectionContent font-normal p-4 md:px-16 md:py-8 items-center justify-center text-start text-stone-900 text-lg gap-4">
           <p>
             At Jotform, we face a common challenge seen in many large
             multi-product tech companies. With over 600 employees and a broad
@@ -128,7 +124,7 @@ export default function JotformLogbook() {
         </div>
 
         <SectionTitle title="Solution Approach" />
-        <div className="SectionContent font-normal mx-16 my-8 items-center justify-center text-start text-stone-900 text-lg gap-4">
+        <div className="SectionContent font-normal p-4 md:px-16 md:py-8 items-center justify-center text-start text-stone-900 text-lg gap-4">
           <p>
             To address these challenges, I initiated the design of an internal
             tool called <b>Jotform Logbook</b> — a centralized, searchable space
@@ -212,7 +208,7 @@ export default function JotformLogbook() {
       </div>
 
       <SectionTitle title="How It Works" />
-      <div className="SectionContent font-sans mx-16 my-8 items-center justify-center text-start text-stone-900 text-lg gap-4">
+      <div className="SectionContent font-sans p-4 md:px-16 md:py-8 items-center justify-center text-start text-stone-900 text-lg gap-4">
         <p>
           The design process was iterative, with frequent feedback loops and
           design iterations.
@@ -278,7 +274,7 @@ export default function JotformLogbook() {
         </div>
       </div>
 
-      <div className="SectionContent font-sans mx-16 my-8 items-center justify-center text-start text-stone-900 text-lg gap-4">
+      <div className="SectionContent font-sans p-4 md:px-16 md:py-8 items-center justify-center text-start text-stone-900 text-lg gap-4">
         <div className="flex w-full items-center justify-center">
           <div className="ImageSlider w-full items-center justify-center lg:max-w-4xl m-4">
             <Swiper
@@ -327,7 +323,7 @@ export default function JotformLogbook() {
       </div>
 
       <SectionTitle title="Result" />
-      <div className="SectionContent font-sans mx-16 my-8 items-center justify-center text-start text-stone-900 text-lg gap-4">
+      <div className="SectionContent font-sans p-4 md:px-16 md:py-8 items-center justify-center text-start text-stone-900 text-lg gap-4">
         <p>
           The Jotform Logbook fosters a culture of{" "}
           <b>transparency, accountability, and cross-team awareness.</b> It
@@ -353,7 +349,7 @@ export default function JotformLogbook() {
         message="Thanks for taking the time to explore this project. I hope you enjoyed the deep dive into the process, challenges, and learnings behind it."
         exploreBlocks={[
           <Link href="/case-study/jotform-2fa" key="2fa" className="flex-1 h-full">
-            <div className="SectionBlock h-full p-6 flex flex-col justify-start items-start gap-2 cursor-pointer bg-orange-100 hover:bg-orange-200 transition border-r border-stone-900">
+            <div className="SectionBlock h-full p-6 flex flex-col justify-start items-start gap-2 cursor-pointer hover:bg-orange-200 transition sm:border-b lg:border-b-0 lg:border-r border-stone-900">
               <div className="self-stretch text-stone-900 text-lg font-medium font-sans leading-normal">
                 Jotform 2FA
               </div>
@@ -363,7 +359,7 @@ export default function JotformLogbook() {
             </div>
           </Link>,
           <Link href="/product/kroma" key="kroma" className="flex-1 h-full">
-            <div className="SectionBlock h-full p-6 bg-pink-100 flex flex-col justify-start items-start gap-2 cursor-pointer hover:bg-pink-200 transition">
+            <div className="SectionBlock h-full p-6 flex flex-col justify-start items-start gap-2 cursor-pointer hover:bg-pink-200 transition">
               <div className="self-stretch text-stone-900 text-lg font-medium font-sans leading-normal">
                 Kroma
               </div>

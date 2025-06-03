@@ -403,7 +403,7 @@ export default function BriflDS() {
           message="Thanks for taking the time to explore this project. I hope you enjoyed the deep dive into the process, challenges, and learnings behind it."
           exploreBlocks={[
             <Link key="jotform-logbook" href="/ideas/jotform-logbook" className="flex-1 h-full">
-              <div className="SectionBlock h-full p-6 flex flex-col justify-start items-start gap-2 cursor-pointer bg-orange-100 hover:bg-orange-200 transition border-b lg:border-r lg:border-b-0 border-stone-900">
+              <div className="SectionBlock h-full p-6 flex flex-col justify-start items-start gap-2 cursor-pointer  hover:bg-orange-200 transition border-b lg:border-r lg:border-b-0 border-stone-900">
                 <div className="self-stretch text-stone-900 text-lg font-medium font-sans leading-normal">
                   Jotform Logbook
                 </div>
@@ -413,7 +413,7 @@ export default function BriflDS() {
               </div>
             </Link>,
             <Link key="kroma" href="/product/kroma" className="flex-1 h-full">
-              <div className="SectionBlock h-full p-6 bg-pink-100 flex flex-col justify-start items-start gap-2 cursor-pointer hover:bg-pink-200 transition">
+              <div className="SectionBlock h-full p-6  flex flex-col justify-start items-start gap-2 cursor-pointer hover:bg-pink-200 transition">
                 <div className="self-stretch text-stone-900 text-lg font-medium font-sans leading-normal">
                   Kroma
                 </div>
