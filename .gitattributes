@@ -1,0 +1,6 @@
+# Ignore build output
+.next/* linguist-vendored
+dist/* linguist-vendored
+out/* linguist-vendored
+storybook-static/* linguist-vendored
+node_modules/* linguist-vendored
