@@ -39,7 +39,7 @@ const RowCard: React.FC<RowCardProps> = ({
       {swapContent && (
         <div className="flex w-full h-auto justify-center items-center lg:h-full">
           <div className="max-w-[320px] md:max-w-[400px] lg:max-w-[480px] max-h-[320px] md:max-h-[400px] lg:max-h-[480px] w-full h-full flex items-center justify-center">
-            {swapContent}
+          {swapContent}
           </div>
         </div>
       )}
@@ -50,15 +50,15 @@ const RowCard: React.FC<RowCardProps> = ({
           </h2>
           {cardContent && (
             <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
-              {cardContent}
+            {cardContent}
             </p>
           )}
           {tags.length > 0 && (
-            <div className="flex justify-start items-center gap-2 flex-wrap">
-              {tags.map((tagProps, index) => (
-                <Tag key={index} {...tagProps} />
-              ))}
-            </div>
+          <div className="flex justify-start items-center gap-2 flex-wrap">
+            {tags.map((tagProps, index) => (
+              <Tag key={index} {...tagProps} />
+            ))}
+          </div>
           )}
         </div>
       </div>

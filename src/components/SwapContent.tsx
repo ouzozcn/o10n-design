@@ -23,7 +23,7 @@ const SwapContent: React.FC<SwapContentProps> = ({
     <div className={containerClasses}>
       {label && (
         <p className="self-stretch text-center text-cyan-950 text-2xl font-normal font-sans">
-          {label}
+        {label}
         </p>
       )}
     </div>

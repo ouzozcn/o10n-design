@@ -7,7 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_a64ff83fd6bd5f3"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -27,19 +30,32 @@
     "swiper": "^11.2.8"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^4.0.0",
     "@eslint/eslintrc": "^3",
+    "@storybook/addon-a11y": "^9.0.4",
+    "@storybook/addon-docs": "^9.0.4",
+    "@storybook/addon-onboarding": "^9.0.4",
+    "@storybook/addon-vitest": "^9.0.4",
+    "@storybook/nextjs-vite": "^9.0.4",
     "@svgr/webpack": "^8.1.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@vitest/browser": "^3.2.0",
+    "@vitest/coverage-v8": "^3.2.0",
     "autoprefixer": "^10.4.18",
+    "chromatic": "^12.0.0",
     "cssnano": "^7.0.7",
     "eslint": "^9",
     "eslint-config-next": "15.3.3",
+    "eslint-plugin-storybook": "^9.0.4",
+    "playwright": "^1.52.0",
     "postcss": "^8.4.35",
+    "storybook": "^9.0.4",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vitest": "^3.2.0"
   },
   "postcss": {
     "plugins": {
