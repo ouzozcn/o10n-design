@@ -106,7 +106,7 @@ export default function Home() {
               <>
                 <Image
                   src="/img/experimentIcon.svg"
-                  alt="experiments"
+                  alt="experiments logo"
                   width={1}
                   height={iconConfig.lg.height}
                  
