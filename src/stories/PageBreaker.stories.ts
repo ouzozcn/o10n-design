@@ -5,10 +5,16 @@ import { fn } from 'storybook/test';
 import PageBreaker from '../components/PageBreaker';
 
 const meta: Meta<typeof PageBreaker> = {
-  title: 'Components/PageBreaker',
+  title: 'Components/Page Breaker',
   component: PageBreaker,
-    parameters: {
+  parameters: {
     layout: 'centered',
+  },
+  argTypes: {
+    sectionNumber: { control: 'number' },
+    sectionTitle: { control: 'text' },
+    className: { control: 'text' },
+    children: { control: 'text' }
   },
   tags: ['autodocs'],
 };
@@ -20,6 +26,8 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
     args: {
       sectionNumber: 1,
-      sectionTitle: 'Section 1',
+      sectionTitle: 'I\'m a page breaker',
+    
+      children: "I will be the content of the page breaker",
     },
   };

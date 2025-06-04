@@ -34,7 +34,7 @@ const PageBreaker: React.FC<PageBreakerProps> = ({
   } group-hover:text-amber-50`;
 
   return (
-    <div className="w-full">
+    <div className={className ? className : "w-full"}>
       <div className={headerClasses} onClick={toggleOpen}>
         <div className="flex w-full justify-start items-center gap-4">
           <div className={`w-10 h-[38px] ${textClasses} text-2xl font-sans font-medium leading-[34px]`}>
