@@ -9,7 +9,6 @@ I'm a product designer currently working at Jotform, focused on creating user-ce
 
 ## Technology Stack
 
-### Current Stack
 
 - **Next.js**: React framework for building a modern, SEO-friendly, and performant website
 - **TypeScript**: Adds type safety to JavaScript, improving the development experience
@@ -17,8 +16,15 @@ I'm a product designer currently working at Jotform, focused on creating user-ce
 - **Swiper.js**: For building interactive carousels and image galleries
 - **Material UI Icons**: For consistent and scalable iconography
 - **Vercel Analytics**: For tracking user interactions and improving the website
+- **Storybook**: For building a component library and documentation
+- **Chromatic**: For visual regression testing and collaboration
+- **Hotjar**: For tracking user interactions and improving the website
+- **Google Analytics**: For tracking user interactions and improving the website
+- **Google Tag Manager**: For tracking user interactions and improving the website
+- **Google Optimize**: For tracking user interactions and improving the website
 
-### Features
+
+## Features
 
 - Server-side rendering for better SEO
 - Image optimization with Next.js Image component

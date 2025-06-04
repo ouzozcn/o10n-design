@@ -18,7 +18,7 @@ const preview: Preview = {
       },
     },
     docs: {
-      defaultName: 'Documentation',
+      defaultName: 'o10n </docs>',
     },
 
     a11y: {
@@ -37,7 +37,10 @@ const preview: Preview = {
       const StoryComponent = Story as React.ComponentType;
       return React.createElement(
         'div',
-        { className: spaceGrotesk.variable },
+        { 
+          className: spaceGrotesk.variable,
+          style: { fontFamily: 'var(--font-space-grotesk)' }
+        },
         React.createElement(
           'div',
           { style: { margin: '2em' } },
