@@ -7,7 +7,7 @@ export function Analytics() {
     <>
       {/* Google Analytics */}
       <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=482134963`}
+        src={`https://www.googletagmanager.com/gtag/js?id=G-C0CLBMC044`}
         strategy="afterInteractive"
       />
       <Script id="google-analytics" strategy="afterInteractive">
@@ -15,7 +15,7 @@ export function Analytics() {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', '482134963');
+          gtag('config', 'G-C0CLBMC044');
         `}
       </Script>
 
