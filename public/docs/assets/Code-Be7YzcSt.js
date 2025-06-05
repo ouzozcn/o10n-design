@@ -1,1 +1,0 @@
-import{j as o}from"./jsx-runtime-BiCwVeE0.js";import{c as s}from"./createSvgIcon-ButlJPGK.js";const a=s(o.jsx("path",{d:"M5 13.18v4L12 21l7-3.82v-4L12 17zM12 3 1 9l11 6 9-4.91V17h2V9z"})),r=s(o.jsx("path",{d:"M9.4 16.6 4.8 12l4.6-4.6L8 6l-6 6 6 6zm5.2 0 4.6-4.6-4.6-4.6L16 6l6 6-6 6z"}));export{r as C,a as S};
