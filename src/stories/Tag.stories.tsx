@@ -53,7 +53,7 @@ export const Lime: Story = {
   parameters: {
     docs: {
       description: {
-        story: 'A lime colored tag. Great for positive or success states!'
+        story: 'A lime colored tag. Great for positive or success states!',
       }
     }
   }
