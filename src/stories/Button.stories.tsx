@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import Button from '../components/Button';
 import AddIcon from '@mui/icons-material/Add';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
@@ -56,7 +56,7 @@ type Story = StoryObj<typeof Button>;
 
 export const Primary: Story = {
   args: {
-    label: 'Get Started',
+    label: 'I am a primary button',
     type: 'primary',
     size: 'medium',
   },
@@ -64,7 +64,7 @@ export const Primary: Story = {
 
 export const Secondary: Story = {
   args: {
-    label: 'Learn More',
+    label: 'I am a secondary button',
     type: 'secondary',
     size: 'medium',
   },
@@ -72,7 +72,7 @@ export const Secondary: Story = {
 
 export const Tertiary: Story = {
   args: {
-    label: 'Cancel',
+    label: 'I am a tertiary button',
     type: 'tertiary',
     size: 'medium',
   },
@@ -80,7 +80,7 @@ export const Tertiary: Story = {
 
 export const WithStartIcon: Story = {
   args: {
-    label: 'Add New Item',
+    label: 'I am a primary button with a start icon',
     type: 'primary',
     size: 'medium',
     startIcon: <AddIcon />,
@@ -89,7 +89,7 @@ export const WithStartIcon: Story = {
 
 export const WithEndIcon: Story = {
   args: {
-    label: 'Continue',
+    label: 'I am a primary button with an end icon',
     type: 'primary',
     size: 'medium',
     endIcon: <ArrowForwardIcon />,
@@ -98,7 +98,7 @@ export const WithEndIcon: Story = {
 
 export const Loading: Story = {
   args: {
-    label: 'Processing',
+    label: 'I am a primary button in a loading state',
     type: 'primary',
     size: 'medium',
     isLoading: true,
@@ -107,7 +107,7 @@ export const Loading: Story = {
 
 export const Disabled: Story = {
   args: {
-    label: 'Submit',
+    label: 'I am a primary button that is disabled',
     type: 'primary',
     size: 'medium',
     isDisabled: true,
@@ -116,7 +116,7 @@ export const Disabled: Story = {
 
 export const FullWidth: Story = {
   args: {
-    label: 'Download Now',
+    label: 'I am a secondary button that is full width',
     type: 'secondary',
     size: 'large',
     fullWidth: true,
@@ -126,7 +126,7 @@ export const FullWidth: Story = {
 
 export const Small: Story = {
   args: {
-    label: 'Quick Action',
+    label: 'I am a tertiary button that is small',
     type: 'tertiary',
     size: 'small',
   },
@@ -134,7 +134,7 @@ export const Small: Story = {
 
 export const Large: Story = {
   args: {
-    label: 'Sign Up Now',
+    label: 'I am a primary button that is large',
     type: 'primary',
     size: 'large',
   },
