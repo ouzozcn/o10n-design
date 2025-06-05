@@ -5,7 +5,7 @@ const customTheme = create({
   brandTitle: 'o10n </docs>',
   brandUrl: 'https://o10n.design/',
   brandImage: '/docslogo.svg',
-  fontBase: "var(--font-space-grotesk), system-ui, sans-serif",
+  fontBase: "'Space Grotesk', system-ui, sans-serif",
   fontCode: "monospace"
 });
 

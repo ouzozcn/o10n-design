@@ -1,13 +1,9 @@
 import type { Preview } from "@storybook/react";
 import React from 'react';
-import { Space_Grotesk } from "next/font/google";
 import '../src/app/globals.css';
 import customTheme from './customTheme';
 
-const spaceGrotesk = Space_Grotesk({ 
-  subsets: ["latin"],
-  variable: '--font-space-grotesk',
-});
+
 
 const preview: Preview = {
   parameters: {
@@ -39,7 +35,6 @@ const preview: Preview = {
       return React.createElement(
         'div',
         { 
-          className: spaceGrotesk.variable,
           style: { fontFamily: 'var(--font-space-grotesk)' }
         },
         React.createElement(
