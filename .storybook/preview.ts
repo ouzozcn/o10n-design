@@ -2,6 +2,7 @@ import type { Preview } from "@storybook/react";
 import React from 'react';
 import { Space_Grotesk } from "next/font/google";
 import '../src/app/globals.css';
+import customTheme from './customTheme';
 
 const spaceGrotesk = Space_Grotesk({ 
   subsets: ["latin"],
@@ -18,9 +19,9 @@ const preview: Preview = {
       },
     },
     docs: {
+      theme: customTheme,
       defaultName: 'o10n </docs>',
     },
-
     a11y: {
       config: {
         rules: [
