@@ -1,10 +1,10 @@
 'use client';
 
-import React from "react";
-import SimpleTab from "./SimpleTab";
-import TextLink from "./TextLink";
-import MailIcon from "@mui/icons-material/Mail";
-import Image from "next/image";
+import React from 'react';
+import SimpleTab from './SimpleTab';
+import TextLink from './TextLink';
+import MailIcon from '@mui/icons-material/Mail';
+import Image from 'next/image';
 
 export const Footer: React.FC = () => {
   return (
@@ -20,7 +20,9 @@ export const Footer: React.FC = () => {
         </div>
         <div className="FooterSocial flex w-auto lg:w-1/3 justify-start items-center py-4 px-4 md:px-8 gap-2">
           <SimpleTab
-            icon={<Image src="/assets/images/LinkedinLogo.svg" alt="LinkedIn" width={24} height={24} />}
+            icon={
+              <Image src="/assets/images/LinkedinLogo.svg" alt="LinkedIn" width={24} height={24} />
+            }
             className="border-none hover:bg-blue-200"
             state="idle"
             to="https://linkedin.com/in/ouzozcn/"
@@ -50,7 +52,7 @@ export const Footer: React.FC = () => {
             to="https://medium.com/@ouzozcn"
           />
           <SimpleTab
-            icon={<MailIcon sx={{ fontSize: "1.5rem" }} />}
+            icon={<MailIcon sx={{ fontSize: '1.5rem' }} />}
             className="border-none hover:bg-violet-200"
             state="idle"
             to="mailto:oguz@o10n.design"
@@ -65,15 +67,13 @@ export const Footer: React.FC = () => {
           <TextLink label="Tech Stack" to="/tech-stack" />
           <TextLink label="Contact" to="/contact" />
           <TextLink label="</docs>" to="/docs" />
+          <TextLink label="Privacy Policy" to="/privacy-policy" />
         </div>
 
         <div className="ColumnProduct flex flex-col gap-2 items-center md:items-start">
           <TextLink style="primary" label="Products" to="/product" />
           <TextLink label="Kroma" to="/product/kroma" />
-          <TextLink
-            label="Brifl Design System"
-            to="/product/brifl-design-system"
-          />
+          <TextLink label="Brifl Design System" to="/product/brifl-design-system" />
         </div>
 
         <div className="ColumnCaseStudy flex flex-col gap-2 items-center md:items-start">
