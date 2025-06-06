@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 import MenuItem from '@/components/MenuItem';
 import { Footer } from '@/components/Footer';
