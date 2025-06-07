@@ -1,30 +1,30 @@
 'use client';
 
-import React, { useRef, useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Thumbs, FreeMode, Navigation, EffectCards } from "swiper/modules";
-import type { Swiper as SwiperType } from "swiper";
-import MetaInfo from "@/components/MetaInfo";
-import Menu from "@/components/Menu";
-import Footer from "@/components/Footer";
-import SectionTitle from "@/components/SectionTitle";
-import ThankYou from "@/components/ThankYou";
-import Button from "@/components/Button";
-import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
-import TopDivider from "@/components/TopDivider";
-import LanguageIcon from "@mui/icons-material/Language";
-import ContentCard from "@/components/ContentCard";
-import AssignmentRoundedIcon from "@mui/icons-material/AssignmentRounded";
+import React, { useRef, useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Thumbs, FreeMode, Navigation, EffectCards } from 'swiper/modules';
+import type { Swiper as SwiperType } from 'swiper';
+import MetaInfo from '@/components/MetaInfo';
+import Menu from '@/components/Menu';
+import Footer from '@/components/Footer';
+import SectionTitle from '@/components/SectionTitle';
+import ThankYou from '@/components/ThankYou';
+import Button from '@/components/Button';
+import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
+import TopDivider from '@/components/TopDivider';
+import LanguageIcon from '@mui/icons-material/Language';
+import ContentCard from '@/components/ContentCard';
+import AssignmentRoundedIcon from '@mui/icons-material/AssignmentRounded';
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/effect-cards";
-import "swiper/css/navigation";
-import "swiper/css/thumbs";
-import "@/styles/swiper.css";
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/effect-cards';
+import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
+import '@/styles/swiper.css';
 
 export default function Jotform2FA() {
   const [enableThumbsSwiper, setEnableThumbsSwiper] = useState<SwiperType | null>(null);
@@ -36,35 +36,34 @@ export default function Jotform2FA() {
     title: string;
     content: string;
     icon?: React.ReactNode;
-    color: "lime" | "pink" | "amber" | "teal" | "emerald" | "red" | "cyan" | "orange";
+    color: 'lime' | 'pink' | 'amber' | 'teal' | 'emerald' | 'red' | 'cyan' | 'orange';
   }> = [
     {
-      title: "Task #1",
+      title: 'Task #1',
       icon: <AssignmentRoundedIcon />,
-      content: "Design a user-friendly 2FA experience for both B2C and B2B users.",
-      color: "lime",
+      content: 'Design a user-friendly 2FA experience for both B2C and B2B users.',
+      color: 'lime',
     },
     {
-      title: "Task #2",
+      title: 'Task #2',
       icon: <AssignmentRoundedIcon />,
-      content: "Design a management dashboard for enterprise clients.",
-      color: "pink",
+      content: 'Design a management dashboard for enterprise clients.',
+      color: 'pink',
     },
     {
-      title: "Task #3",
+      title: 'Task #3',
       icon: <AssignmentRoundedIcon />,
-      content: "Implement a recovery mechanism for users who lose access to their authenticator app.",
-      color: "teal",
+      content:
+        'Implement a recovery mechanism for users who lose access to their authenticator app.',
+      color: 'teal',
     },
     {
-      title: "Task #4",
+      title: 'Task #4',
       icon: <AssignmentRoundedIcon />,
-      content: "Monitor usage, define event tracking, and iterate on experience post-launch.",
-      color: "orange",
+      content: 'Monitor usage, define event tracking, and iterate on experience post-launch.',
+      color: 'orange',
     },
   ];
-
-
 
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
@@ -103,11 +102,7 @@ export default function Jotform2FA() {
             Designing a secure and frictionless 2FA experience for 25M Jotform users
           </div>
           <div className="MetaInfoRow flex flex-col md:flex-row w-full px-24 py-4 gap-4 lg:gap-24 justify-center items-center md:items-start text-center md:text-start">
-            <MetaInfo
-              title="My Roles"
-              firstMeta="Product Designer"
-              secondMeta="UX Researcher"
-            />
+            <MetaInfo title="My Roles" firstMeta="Product Designer" secondMeta="UX Researcher" />
             <MetaInfo
               title="Team"
               firstMeta="1 Back-end Dev"
@@ -126,53 +121,59 @@ export default function Jotform2FA() {
         </div>
       </div>
 
-      {/* Rest of the content */}
       <div className="BodyContainer flex flex-col gap-0 font-sans">
         <div className="p-4 md:px-16 md:py-8 text-xl text-center font-medium text-stone-900">
-          As a product designer in Jotform&apos;s Enterprise Division, I led the design and rollout of a platform-wide Two-Factor Authentication (2FA) feature—addressing 2,000+ user requests and fulfilling enterprise-grade security needs without compromising usability.
+          As a product designer in Jotform&apos;s Enterprise Division, I led the design and rollout
+          of a platform-wide Two-Factor Authentication (2FA) feature—addressing 2,000+ user requests
+          and fulfilling enterprise-grade security needs without compromising usability.
         </div>
 
         <SectionTitle title="The Challenge" />
         <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
           <div className="SectionContent w-2/3 items-center justify-center text-start text-stone-900 text-lg gap-4">
             <p>
-              Our goal was to improve account security with an additional layer of authentication—without creating friction or drop-off in user experience. We needed a solution that served both our individual (B2C) users and our enterprise clients with scalable and customizable options.
+              Our goal was to improve account security with an additional layer of
+              authentication—without creating friction or drop-off in user experience. We needed a
+              solution that served both our individual (B2C) users and our enterprise clients with
+              scalable and customizable options.
             </p>
           </div>
           <div className="flex flex-col w-1/3 items-center justify-center">
-          <div className="SwipeCards   items-center justify-center font-sans">
-            <Swiper
-              effect={"cards"}
-              grabCursor={true}
-              modules={[EffectCards]}
-              onSwiper={(swiper: SwiperType) => {
-                swiperRef.current = swiper;
-              }}
-              onClick={() => {
-                if (swiperRef.current) {
-                  const swiper = swiperRef.current;
-                  if (swiper.isEnd) {
-                    swiper.slideTo(0);
-                  } else {
-                    swiper.slideNext();
+            <div className="SwipeCards   items-center justify-center font-sans">
+              <Swiper
+                effect={'cards'}
+                grabCursor={true}
+                modules={[EffectCards]}
+                onSwiper={(swiper: SwiperType) => {
+                  swiperRef.current = swiper;
+                }}
+                onClick={() => {
+                  if (swiperRef.current) {
+                    const swiper = swiperRef.current;
+                    if (swiper.isEnd) {
+                      swiper.slideTo(0);
+                    } else {
+                      swiper.slideNext();
+                    }
                   }
-                }
-              }}
-            >
-              {cardContents.map((card, index) => (
-                <SwiperSlide key={index}>
-                  <ContentCard
-                    title={card.title}
-                    content={card.content}
-                    icon={card.icon}
-                    color={card.color}
-                    className="h-[250px]"
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
-          <p className="text-md mt-[-24px] text-stone-500"><i>Tasks I worked on</i></p>
+                }}
+              >
+                {cardContents.map((card, index) => (
+                  <SwiperSlide key={index}>
+                    <ContentCard
+                      title={card.title}
+                      content={card.content}
+                      icon={card.icon}
+                      color={card.color}
+                      className="h-[250px]"
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+            <p className="text-md mt-[-24px] text-stone-500">
+              <i>Tasks I worked on</i>
+            </p>
           </div>
         </div>
 
@@ -180,14 +181,28 @@ export default function Jotform2FA() {
         <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8">
           <div className="SectionContent flex flex-col w-full md:w-2/3 items-center justify-center text-center md:text-start text-stone-900 text-lg gap-4">
             <p>
-             I got chance to work on a wide range of tasks, from research to design to development to launch and growth.
+              I got chance to work on a wide range of tasks, from research to design to development
+              to launch and growth.
             </p>
             <ul className="list-disc pl-8 md:pl-0 space-y-1 text-left">
-              <li>Spearheaded UX design from concept to launch across Web, Mobile App, and Enterprise Servers</li>
-              <li>Conducted competitive and user research to align security practices with user expectations</li>
-              <li>Defined user flows and edge cases including account recovery and enforcement scenarios</li>
-              <li>Collaborated with engineering and QA teams to ensure a smooth, bug-free rollout</li>
-              <li>Monitored usage, defined event tracking, and iterated on experience post-launch</li>
+              <li>
+                Spearheaded UX design from concept to launch across Web, Mobile App, and Enterprise
+                Servers
+              </li>
+              <li>
+                Conducted competitive and user research to align security practices with user
+                expectations
+              </li>
+              <li>
+                Defined user flows and edge cases including account recovery and enforcement
+                scenarios
+              </li>
+              <li>
+                Collaborated with engineering and QA teams to ensure a smooth, bug-free rollout
+              </li>
+              <li>
+                Monitored usage, defined event tracking, and iterated on experience post-launch
+              </li>
               <li>Initiated a growth strategy to boost adoption after initial release</li>
             </ul>
           </div>
@@ -219,18 +234,22 @@ export default function Jotform2FA() {
         <SectionTitle title="Research & Strategy" />
         <div className="SectionContent p-4 md:px-16 md:py-8 items-center justify-center text-start text-stone-900 text-lg gap-4">
           <p>
-            I explored authentication practices used by industry leaders (GitHub, Google, etc.) and internalized concepts such as MFA, SSO, and recovery mechanisms. I analyzed:
+            I explored authentication practices used by industry leaders (GitHub, Google, etc.) and
+            internalized concepts such as MFA, SSO, and recovery mechanisms. I analyzed:
           </p>
           <br />
           <ul className="list-disc pl-8 space-y-1 text-left">
             <li>
-              <b>Authentication Methods:</b> Authenticator App, SMS, Security Keys, Passkeys, GitHub Mobile, Recovery Codes
+              <b>Authentication Methods:</b> Authenticator App, SMS, Security Keys, Passkeys, GitHub
+              Mobile, Recovery Codes
             </li>
             <li>
-              <b>UX Pitfalls:</b> QR code confusion, device recovery, friction points in sign-in flows
+              <b>UX Pitfalls:</b> QR code confusion, device recovery, friction points in sign-in
+              flows
             </li>
             <li>
-              <b>User Personas:</b> From casual form builders to healthcare, legal, and fintech professionals requiring HIPAA and SOC 2 compliance
+              <b>User Personas:</b> From casual form builders to healthcare, legal, and fintech
+              professionals requiring HIPAA and SOC 2 compliance
             </li>
           </ul>
           <br />
@@ -288,11 +307,14 @@ export default function Jotform2FA() {
             <Swiper
               spaceBetween={10}
               navigation={true}
-              thumbs={{ swiper: enableThumbsSwiper && !enableThumbsSwiper.destroyed ? enableThumbsSwiper : null }}
+              thumbs={{
+                swiper:
+                  enableThumbsSwiper && !enableThumbsSwiper.destroyed ? enableThumbsSwiper : null,
+              }}
               modules={[FreeMode, Navigation, Thumbs]}
               className="showcase-swiper rounded-lg mb-4"
             >
-              {[1, 2, 3, 4, 5, 6].map((num) => (
+              {[1, 2, 3, 4, 5, 6].map(num => (
                 <SwiperSlide key={num} className="h-[600px]">
                   <Image
                     src={`/img/twofa/2fa-enable-0${num}.png`}
@@ -314,7 +336,7 @@ export default function Jotform2FA() {
               modules={[FreeMode, Navigation, Thumbs]}
               className="showcase-thumbs"
             >
-              {[1, 2, 3, 4, 5, 6].map((num) => (
+              {[1, 2, 3, 4, 5, 6].map(num => (
                 <SwiperSlide key={num}>
                   <Image
                     src={`/img/twofa/2fa-enable-0${num}.png`}
@@ -334,11 +356,14 @@ export default function Jotform2FA() {
             <Swiper
               spaceBetween={10}
               navigation={true}
-              thumbs={{ swiper: loginThumbsSwiper && !loginThumbsSwiper.destroyed ? loginThumbsSwiper : null }}
+              thumbs={{
+                swiper:
+                  loginThumbsSwiper && !loginThumbsSwiper.destroyed ? loginThumbsSwiper : null,
+              }}
               modules={[FreeMode, Navigation, Thumbs]}
               className="showcase-swiper rounded-lg mb-4"
             >
-              {[1, 2, 3, 4].map((num) => (
+              {[1, 2, 3, 4].map(num => (
                 <SwiperSlide key={num} className="h-[600px]">
                   <Image
                     src={`/img/twofa/2fa-login-0${num}.png`}
@@ -360,7 +385,7 @@ export default function Jotform2FA() {
               modules={[FreeMode, Navigation, Thumbs]}
               className="showcase-thumbs"
             >
-              {[1, 2, 3, 4].map((num) => (
+              {[1, 2, 3, 4].map(num => (
                 <SwiperSlide key={num}>
                   <Image
                     src={`/img/twofa/2fa-login-0${num}.png`}
@@ -377,16 +402,17 @@ export default function Jotform2FA() {
             <p className="text-2xl font-bold">Flow: Login with 2FA</p>
             <br />
             <p>
-              After typing credentials or prompting a social login, users are prompted to enter a 2FA code. Users can choose to use an authenticator app or recovery code.
+              After typing credentials or prompting a social login, users are prompted to enter a
+              2FA code. Users can choose to use an authenticator app or recovery code.
             </p>
           </div>
         </div>
         <SectionTitle title="Event Tracking & Monitoring" />
         <div className="SectionContent px-4 py-4 md:px-16 md:py-8 items-center justify-center text-start text-stone-900 text-lg gap-4">
           <p>
-            To improve performance and usability, I worked with developers to
-            define <b>29 unique eventListeners</b> for 2FA-specific
-            interactions. A few examples are shown below:
+            To improve performance and usability, I worked with developers to define{' '}
+            <b>29 unique eventListeners</b> for 2FA-specific interactions. A few examples are shown
+            below:
           </p>
           <Image
             src={'/img/twofa/TargetListener.png'}
@@ -396,8 +422,7 @@ export default function Jotform2FA() {
             height={800}
           />
           <p>
-            In FullStory, I implemented <b>24 CSS selectors</b> to monitor
-            behavior within:
+            In FullStory, I implemented <b>24 CSS selectors</b> to monitor behavior within:
           </p>
           <br />
           <ul className="list-disc pl-8 space-y-1">
@@ -415,17 +440,15 @@ export default function Jotform2FA() {
         <SectionTitle title="Launch & Communication" />
         <div className="flex flex-col md:flex-row px-4 py-4 md:px-16 md:py-8 gap-4 lg:gap-12 items-center justify-center">
           <div className="SectionContent   items-center justify-center text-start text-stone-900 text-lg gap-4">
-            <p>
-              To drive adoption, I created a cross-platform launch strategy:
-            </p>
+            <p>To drive adoption, I created a cross-platform launch strategy:</p>
             <br />
             <ul className="list-disc pl-8 space-y-1">
               <li>
-                {" "}
+                {' '}
                 <b>Announcement Modal</b> on user dashboard
               </li>
               <li>
-                {" "}
+                {' '}
                 <b>Email Campaign</b> to all users
               </li>
               <li>Feature Inclusion in the April Newsletter</li>
@@ -447,10 +470,19 @@ export default function Jotform2FA() {
             <p>Enterprise users demanded more advanced controls:</p>
             <br />
             <ul className="list-disc pl-8 space-y-1">
-              <li>Admin toggle for <b>2FA enforcement</b></li>
-              <li>Per-user config for <b>enable / disable / reset</b></li>
-              <li><b>Custom login</b> interfaces and error handling</li>
-              <li>Special request flow for <b>2FA reset</b> (in collaboration with Legal & Support teams)</li>
+              <li>
+                Admin toggle for <b>2FA enforcement</b>
+              </li>
+              <li>
+                Per-user config for <b>enable / disable / reset</b>
+              </li>
+              <li>
+                <b>Custom login</b> interfaces and error handling
+              </li>
+              <li>
+                Special request flow for <b>2FA reset</b> (in collaboration with Legal & Support
+                teams)
+              </li>
             </ul>
             <br />
             <p>All of these were scoped and designed with compliance and scalability in mind.</p>
@@ -459,11 +491,14 @@ export default function Jotform2FA() {
             <Swiper
               spaceBetween={10}
               navigation={true}
-              thumbs={{ swiper: adminThumbsSwiper && !adminThumbsSwiper.destroyed ? adminThumbsSwiper : null }}
+              thumbs={{
+                swiper:
+                  adminThumbsSwiper && !adminThumbsSwiper.destroyed ? adminThumbsSwiper : null,
+              }}
               modules={[FreeMode, Navigation, Thumbs]}
               className="showcase-swiper rounded-lg mb-4"
             >
-              {[1, 2, 3, 4].map((num) => (
+              {[1, 2, 3, 4].map(num => (
                 <SwiperSlide key={num} className="h-[600px]">
                   <Image
                     src={`/img/twofa/2fa-admin-0${num}.png`}
@@ -485,7 +520,7 @@ export default function Jotform2FA() {
               modules={[FreeMode, Navigation, Thumbs]}
               className="showcase-thumbs"
             >
-              {[1, 2, 3, 4].map((num) => (
+              {[1, 2, 3, 4].map(num => (
                 <SwiperSlide key={num}>
                   <Image
                     src={`/img/twofa/2fa-admin-0${num}.png`}
@@ -503,7 +538,8 @@ export default function Jotform2FA() {
         <SectionTitle title="After Launch: User Feedback & Iteration" />
         <div className="SectionContent p-4 md:px-16 md:py-8 items-center justify-center text-start text-stone-900 text-lg gap-4">
           <p>
-            I tracked <b>~15K 2FA enablements</b> post-launch, with 10K users continuing use. We uncovered two key UX issues:
+            I tracked <b>~15K 2FA enablements</b> post-launch, with 10K users continuing use. We
+            uncovered two key UX issues:
           </p>
           <br />
           <ul className="list-decimal pl-8 space-y-1">
@@ -511,7 +547,8 @@ export default function Jotform2FA() {
               <b>Lost Devices</b> → Created secure, verifiable recovery process
             </li>
             <li>
-              <b>QR Confusion</b> → Redesigned QR screens to guide users to open the Authenticator App before scanning
+              <b>QR Confusion</b> → Redesigned QR screens to guide users to open the Authenticator
+              App before scanning
             </li>
           </ul>
         </div>
@@ -544,16 +581,30 @@ export default function Jotform2FA() {
         <div className="flex flex-col md:flex-row  p-4 md:px-16 md:py-8 gap-4 items-center justify-center">
           <div className="SectionContent md:w-1/2 items-center justify-center text-start text-stone-900 text-lg gap-4">
             <p>
-              After noticing a decline in 2FA activations, I hypothesized that security-conscious users would respond better to timely nudges. I defined a set of <b>Action-Based Email Triggers</b> to promote 2FA:
+              After noticing a decline in 2FA activations, I hypothesized that security-conscious
+              users would respond better to timely nudges. I defined a set of{' '}
+              <b>Action-Based Email Triggers</b> to promote 2FA:
             </p>
             <br />
             <ul className="list-disc pl-8 space-y-1">
-              <li><b>isPasswordChanged</b> → Triggered when a user changes their password</li>
-              <li><b>hasGeneratedAPIKey</b> → Triggered when a user generates an API key</li>
-              <li><b>isBackupEmailVerified</b> → Triggered when a user verifies their backup email</li>
-              <li><b>isPhoneVerified</b> → Triggered when a user verifies their phone number</li>
-              <li><b>hasEncryptedAsset</b> → Triggered when a user encrypts their form</li>
-              <li><b>hasExportedData</b> → Triggered when a user exports their data</li>
+              <li>
+                <b>isPasswordChanged</b> → Triggered when a user changes their password
+              </li>
+              <li>
+                <b>hasGeneratedAPIKey</b> → Triggered when a user generates an API key
+              </li>
+              <li>
+                <b>isBackupEmailVerified</b> → Triggered when a user verifies their backup email
+              </li>
+              <li>
+                <b>isPhoneVerified</b> → Triggered when a user verifies their phone number
+              </li>
+              <li>
+                <b>hasEncryptedAsset</b> → Triggered when a user encrypts their form
+              </li>
+              <li>
+                <b>hasExportedData</b> → Triggered when a user exports their data
+              </li>
             </ul>
           </div>
           <div className="flex w-1/2 justify-center">
@@ -562,7 +613,6 @@ export default function Jotform2FA() {
               alt="Jotform 2FA Email Triggers"
               width={600}
               height={400}
-              
             />
           </div>
         </div>
@@ -570,11 +620,19 @@ export default function Jotform2FA() {
         <SectionTitle title="Summary & Impact" />
         <div className="SectionContent p-4 md:px-16 md:py-8 items-center justify-center text-center text-stone-900 text-lg gap-4">
           <ul className="list-none space-y-4 mx-auto max-w-2xl">
-            <li className="text-center">Rolled out Jotform&apos;s first 2FA system across Web, Mobile, and Enterprise</li>
-            <li className="text-center"><b>10,000+ active 2FA users</b> post-launch within first months</li>
+            <li className="text-center">
+              Rolled out Jotform&apos;s first 2FA system across Web, Mobile, and Enterprise
+            </li>
+            <li className="text-center">
+              <b>10,000+ active 2FA users</b> post-launch within first months
+            </li>
             <li className="text-center">Adopted by 40+ Enterprise clients</li>
-            <li className="text-center"><b>95% retention rate</b> for 2FA users</li>
-            <li className="text-center">Launched a scalable recovery system and admin control interface</li>
+            <li className="text-center">
+              <b>95% retention rate</b> for 2FA users
+            </li>
+            <li className="text-center">
+              Launched a scalable recovery system and admin control interface
+            </li>
             <li className="text-center">Increased security usage through targeted growth emails</li>
           </ul>
         </div>
@@ -606,9 +664,9 @@ export default function Jotform2FA() {
           simpleTabs={[
             {
               icon: <LanguageIcon />,
-              state: "idle",
-              to: "https://www.jotform.com/blog/announcing-new-two-factor-authentication-for-your-jotform-account/?jtm_source=2024-april-regular-a__19&jtm_medium=blog&jtm_content=section_id_6_title&jtm_campaign=2024-april-newsletter",
-              className: "h-full md:border-r-0 hover:bg-emerald-100",
+              state: 'idle',
+              to: 'https://www.jotform.com/blog/announcing-new-two-factor-authentication-for-your-jotform-account/?jtm_source=2024-april-regular-a__19&jtm_medium=blog&jtm_content=section_id_6_title&jtm_campaign=2024-april-newsletter',
+              className: 'h-full md:border-r-0 hover:bg-emerald-100',
             },
           ]}
         />
