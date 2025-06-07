@@ -1,30 +1,32 @@
 'use client';
 
-import React, { useEffect, useRef, useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Thumbs, FreeMode, Navigation, EffectCards } from "swiper/modules";
-import type { Swiper as SwiperType } from "swiper";
-import Menu from "@/components/Menu";
-import Footer from "@/components/Footer";
-import ThankYou from "@/components/ThankYou";
-import SectionTitle from "@/components/SectionTitle";
-import TopDivider from "@/components/TopDivider";
-import ContentCard from "@/components/ContentCard";
-import PageBreaker from "@/components/PageBreaker";
-import MetaInfo from "@/components/MetaInfo";
-import SquareIcon from "@mui/icons-material/Square";
-import DashboardIcon from "@mui/icons-material/Dashboard";
-import SearchIcon from "@mui/icons-material/Search";
-
+import React, { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Thumbs, FreeMode, Navigation, EffectCards } from 'swiper/modules';
+import type { Swiper as SwiperType } from 'swiper';
+import Menu from '@/components/Menu';
+import Footer from '@/components/Footer';
+import ThankYou from '@/components/ThankYou';
+import SectionTitle from '@/components/SectionTitle';
+import TopDivider from '@/components/TopDivider';
+import ContentCard from '@/components/ContentCard';
+import PageBreaker from '@/components/PageBreaker';
+import MetaInfo from '@/components/MetaInfo';
+import SquareIcon from '@mui/icons-material/Square';
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import SearchIcon from '@mui/icons-material/Search';
+import ContactEmergencyRoundedIcon from '@mui/icons-material/ContactEmergencyRounded';
+import IntegrationInstructionsRoundedIcon from '@mui/icons-material/IntegrationInstructionsRounded';
+import PublicRoundedIcon from '@mui/icons-material/PublicRounded';
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/effect-cards";
-import "swiper/css/free-mode";
-import "swiper/css/navigation";
-import "swiper/css/thumbs";
-import "@/styles/swiper.css";
+import 'swiper/css';
+import 'swiper/css/effect-cards';
+import 'swiper/css/free-mode';
+import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
+import '@/styles/swiper.css';
 
 export default function Brifl() {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
@@ -32,7 +34,7 @@ export default function Brifl() {
 
   useEffect(() => {
     console.info(
-      "🎨 Welcome to brifl - A collaborative form-building platform designed to bridge the gap between creators and clients. This project showcases how specialized form tools can streamline creative workflows and improve client communication across different disciplines: design, development, writing, and photography."
+      '🎨 Welcome to brifl - A collaborative form-building platform designed to bridge the gap between creators and clients. This project showcases how specialized form tools can streamline creative workflows and improve client communication across different disciplines: design, development, writing, and photography.'
     );
   }, []);
 
@@ -40,42 +42,31 @@ export default function Brifl() {
     title: string;
     content: string;
     icon?: React.ReactNode;
-    color:
-      | "lime"
-      | "pink"
-      | "amber"
-      | "teal"
-      | "emerald"
-      | "red"
-      | "cyan"
-      | "orange";
+    color: 'lime' | 'pink' | 'amber' | 'teal' | 'emerald' | 'red' | 'cyan' | 'orange';
   }> = [
     {
-      title: "Diverse Form Blocks",
-      icon: <SquareIcon />,
-      content:
-        "Over 30 customizable blocks catering to various creative needs.",
-      color: "lime",
-    },
-    {
-      title: "Recipient Management",
+      title: 'Diverse Form Blocks',
       icon: <DashboardIcon />,
-      content: "Efficiently organize and manage form recipients.",
-      color: "pink",
+      content: 'Over 30 customizable blocks catering to various creative needs.',
+      color: 'lime',
     },
     {
-      title: "Third-Party Integrations",
-      icon: <SquareIcon />,
-      content:
-        "Seamless integration with over 20 tools for enhanced functionality.",
-      color: "teal",
+      title: 'Recipient Management',
+      icon: <ContactEmergencyRoundedIcon />,
+      content: 'Efficiently organize and manage form recipients.',
+      color: 'pink',
     },
     {
-      title: "Open-Source",
-      icon: <SquareIcon />,
-      content:
-        "Community-driven development promoting transparency and collaboration.",
-      color: "orange",
+      title: 'Third-Party Integrations',
+      icon: <IntegrationInstructionsRoundedIcon />,
+      content: 'Seamless integration with over 20 tools for enhanced functionality.',
+      color: 'teal',
+    },
+    {
+      title: 'Open-Source',
+      icon: <PublicRoundedIcon />,
+      content: 'Community-driven development promoting transparency and collaboration.',
+      color: 'orange',
     },
   ];
 
@@ -105,15 +96,11 @@ export default function Brifl() {
             brifl: Empowering Creators with Collaborative Form Building
           </div>
           <div className="PageDescription px-12 py-2 items-center justify-center text-center text-stone-900 text-lg font-normal font-sans">
-            An open-source tool designed for designers, developers, writers, and
-            photographers to create, share, and analyze forms seamlessly.
+            An open-source tool designed for designers, developers, writers, and photographers to
+            create, share, and analyze forms seamlessly.
           </div>
           <div className="MetaInfoRow flex flex-col md:flex-row w-full px-24 py-4 gap-4 lg:gap-24 justify-center items-center md:items-start">
-            <MetaInfo
-              title="My Roles"
-              firstMeta="Product Designer"
-              secondMeta="User Researcher"
-            />
+            <MetaInfo title="My Roles" firstMeta="Product Designer" secondMeta="User Researcher" />
             <MetaInfo title="Methodologies" firstMeta="Double Diamond" />
             <MetaInfo title="Timeline" firstMeta="January - December 2022" />
             <MetaInfo title="Toolstack" firstMeta="Figma" thirdMeta="maze" />
@@ -121,13 +108,11 @@ export default function Brifl() {
         </div>
       </div>
 
-      {/* Rest of the content */}
       <div className="SectionTitleContainer flex flex-col gap-0 font-sans">
         <div className="m-8 text-xl text-center font-medium text-stone-900">
-          brifl is an open-source, collaborative form-building tool tailored for
-          creators across various disciplines such as designers, developers,
-          writers. It enables users to design surveys, briefs, quizzes, and
-          polls, facilitating seamless communication and feedback.
+          brifl is an open-source, collaborative form-building tool tailored for creators across
+          various disciplines such as designers, developers, writers. It enables users to design
+          surveys, briefs, quizzes, and polls, facilitating seamless communication and feedback.
         </div>
 
         {/* Problem and Approach Section */}
@@ -136,29 +121,33 @@ export default function Brifl() {
             <SectionTitle title="Problem" />
             <div className="SectionContent font-normal m-8 items-center justify-center text-start text-stone-900 text-lg gap-4">
               <p>
-                Creators often struggle with generic form tools that lack
-                customization and fail to address specific needs, leading to
-                inefficient workflows and miscommunication.
+                Creators often struggle with generic form tools that lack customization and fail to
+                address specific needs, leading to inefficient workflows and miscommunication.
               </p>
             </div>
             <SectionTitle title="Approach" />
             <div className="SectionContent font-normal m-8 items-center justify-center text-start text-stone-900 text-lg gap-4">
               <p>
-                Develop a form-building application that offers unique blocks,
-                communication channel between form creators and respondents, and
-                recipient management.
+                Develop a form-building application that offers unique blocks, communication channel
+                between form creators and respondents, and recipient management.
               </p>
             </div>
           </div>
-          <div className="flex w-full border-t border-l border-stone-900">
-            <div className="PageImage flex w-full items-center justify-center h-auto p-4">
+          <div className="flex flex-col w-full border-t  md:border-l border-stone-900 items-center justify-center">
+            <div className="PageImage flex  w-full items-center justify-center h-auto p-4">
               <Image
                 src="/img/brifl/bri-block-samples.svg"
                 alt="Brifl Sample Blocks"
-                width={1200}
-                height={600}
-                className="align-center justify-center w-[120%]"
+                width={1}
+                height={1}
+                className="align-center justify-center w-[70%] h-auto my-4"
               />
+            </div>
+            <div className="flex w-full p-4">
+              <p className="text-stone-900 text-md text-center italic font-normal font-sans">
+                brifl offers a range of customizable niche blocks, including typography, color
+                palettes, and board.
+              </p>
             </div>
           </div>
         </div>
@@ -167,26 +156,23 @@ export default function Brifl() {
         <SectionTitle title="Market Analysis: Learning from the Big Players" />
         <div className="SectionContent font-normal m-8 items-center justify-center text-start text-stone-900 text-lg gap-4">
           <p>
-            To shape brifl&apos;s product direction, I studied popular form-building
-            tools with a strong foothold in professional workflows. The goal
-            wasn&apos;t to replicate their feature sets, but to understand how they
-            solve (or fail to solve) problems for creatives — especially in the
-            early stages of project communication.
+            To shape brifl&apos;s product direction, I studied popular form-building tools with a
+            strong foothold in professional workflows. The goal wasn&apos;t to replicate their
+            feature sets, but to understand how they solve (or fail to solve) problems for creatives
+            — especially in the early stages of project communication.
           </p>
           <br />
           <p>
-            While tools like Jotform, SurveyMonkey, and Typeform offer
-            comprehensive and enterprise-grade features, they often fall short
-            in creating a streamlined and empathetic space for creative
-            collaboration. For brifl&apos;s MVP, I made a conscious decision to
-            deprioritize complexity and instead focus on shared understanding
-            between creatives and their clients.
+            While tools like Jotform, SurveyMonkey, and Typeform offer comprehensive and
+            enterprise-grade features, they often fall short in creating a streamlined and
+            empathetic space for creative collaboration. For brifl&apos;s MVP, I made a conscious
+            decision to deprioritize complexity and instead focus on shared understanding between
+            creatives and their clients.
           </p>
           <br />
           <p>
-            The benchmark analysis also reveals opportunities for future
-            improvements — features that could be layered into brifl
-            thoughtfully and gradually, as the product evolves.
+            The benchmark analysis also reveals opportunities for future improvements — features
+            that could be layered into brifl thoughtfully and gradually, as the product evolves.
           </p>
         </div>
 
@@ -204,14 +190,8 @@ export default function Brifl() {
                   <li>Powerful widget and plugin ecosystem</li>
                   <li>Digital signature field (legal sign)</li>
                   <li>Easy form importing from existing URLs or PDFs</li>
-                  <li>
-                    Deep integrations with payment systems, CRMs, and
-                    productivity tools
-                  </li>
-                  <li>
-                    Ecosystem of other products (Jotform Tables, Apps,
-                    Approvals)
-                  </li>
+                  <li>Deep integrations with payment systems, CRMs, and productivity tools</li>
+                  <li>Ecosystem of other products (Jotform Tables, Apps, Approvals)</li>
                 </ul>
               </div>
             }
@@ -223,9 +203,7 @@ export default function Brifl() {
             content={
               <div>
                 <ul className="list-disc pl-2 space-y-1 text-left">
-                  <li>
-                    Integrated audience recruiting for surveys and research
-                  </li>
+                  <li>Integrated audience recruiting for surveys and research</li>
                   <li>A/B testing and performance analytics</li>
                   <li>Drag-and-drop editor with conditional logic</li>
                   <li>Form-as-conversation option for surveys</li>
@@ -259,16 +237,15 @@ export default function Brifl() {
         <div className="flex flex-col md:flex-row items-center justify-center">
           <div className="SectionContent flex w-full m-8 items-center justify-center text-center md:text-start text-stone-900 text-lg">
             <p>
-              Brifl empowers creators with versatile forms built from over 30
-              different block types and seamless third-party integrations, all
-              while fostering communication through unique sender-responder
-              links. It simplifies recipient management and benefits from a
+              Brifl empowers creators with versatile forms built from over 30 different block types
+              and seamless third-party integrations, all while fostering communication through
+              unique sender-responder links. It simplifies recipient management and benefits from a
               community-driven, open-source platform.
             </p>
           </div>
           <div className="SwipeCards flex w-full items-center justify-center font-sans">
             <Swiper
-              effect={"cards"}
+              effect={'cards'}
               grabCursor={true}
               modules={[EffectCards]}
               onSwiper={(swiper: SwiperType) => {
@@ -305,57 +282,47 @@ export default function Brifl() {
         <div className="flex flex-col w-full lg:flex-row gap-0">
           <div className="SectionContent w-full font-normal m-8 items-center justify-center text-start text-stone-900 font-sans text-lg gap-4">
             <p>
-              Unlike traditional form tools that target narrow user personas,
-              brifl was designed for multidisciplinary creatives who often juggle
-              multiple roles or work across different industries. To reflect this
-              diversity, I took an archetype-driven approach rather than relying
-              on rigid personas.
+              Unlike traditional form tools that target narrow user personas, brifl was designed for
+              multidisciplinary creatives who often juggle multiple roles or work across different
+              industries. To reflect this diversity, I took an archetype-driven approach rather than
+              relying on rigid personas.
             </p>
             <br />
             <p>
-              By researching online communities and conducting interviews with
-              creative professionals, I identified four key archetypes that brifl
-              aims to support: Designer, Developer, Writer, and Photographer.
+              By researching online communities and conducting interviews with creative
+              professionals, I identified four key archetypes that brifl aims to support: Designer,
+              Developer, Writer, and Photographer.
             </p>
             <br />
             <p>
-              Each of these archetypes has specific workflows and pain points that
-              current form tools fail to address — particularly around client
-              onboarding, brief gathering, and scope alignment. brifl&apos;s design
-              decisions were rooted in surfacing and solving these unmet needs.
+              Each of these archetypes has specific workflows and pain points that current form
+              tools fail to address — particularly around client onboarding, brief gathering, and
+              scope alignment. brifl&apos;s design decisions were rooted in surfacing and solving
+              these unmet needs.
             </p>
           </div>
           <div className="PageBreakerContainer w-full flex flex-col border-l border-stone-900 gap-0">
-            <PageBreaker
-              sectionNumber={1}
-              sectionTitle="🖌️ Designer"
-            >
+            <PageBreaker sectionNumber={1} sectionTitle="🖌️ Designer">
               <div className="PageBreakerContent">
                 <p className="mb-4">
-                  Designers often struggle with scattered communication and
-                  vague project expectations. brifl helps by enabling:
+                  Designers often struggle with scattered communication and vague project
+                  expectations. brifl helps by enabling:
                 </p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Reviewing existing branding or assets</li>
                   <li>Clarifying project goals, audience, and medium</li>
                   <li>Establishing project timelines early</li>
                   <li>Sharing moodboards or pre-made works</li>
-                  <li>
-                    Managing specialized briefs (e.g., for web, branding, or
-                    social)
-                  </li>
+                  <li>Managing specialized briefs (e.g., for web, branding, or social)</li>
                   <li>Centralizing Q&A threads with clients</li>
                 </ul>
               </div>
             </PageBreaker>
-            <PageBreaker
-              sectionNumber={2}
-              sectionTitle="💻 Developer"
-            >
+            <PageBreaker sectionNumber={2} sectionTitle="💻 Developer">
               <div className="PageBreakerContent">
                 <p className="mb-4">
-                  Developers need alignment with technical realities before
-                  jumping in. brifl supports this by capturing:
+                  Developers need alignment with technical realities before jumping in. brifl
+                  supports this by capturing:
                 </p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Information on existing front-end/back-end stacks.</li>
@@ -365,36 +332,25 @@ export default function Brifl() {
                 </ul>
               </div>
             </PageBreaker>
-            <PageBreaker
-              sectionNumber={3}
-              sectionTitle="✍️ Content Writer"
-            >
+            <PageBreaker sectionNumber={3} sectionTitle="✍️ Content Writer">
               <div className="PageBreakerContent">
                 <p className="mb-4">
-                  Writers are often brought in late or given limited context.
-                  brifl resolves that by asking:
+                  Writers are often brought in late or given limited context. brifl resolves that by
+                  asking:
                 </p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>What&apos;s the brand voice or tone of the content?</li>
-                  <li>
-                    Who is the content for, and what type of content is needed?
-                  </li>
+                  <li>Who is the content for, and what type of content is needed?</li>
                   <li>What product/service is being written about?</li>
-                  <li>
-                    Are there specific content requirements (length, links,
-                    keywords)?
-                  </li>
+                  <li>Are there specific content requirements (length, links, keywords)?</li>
                 </ul>
               </div>
             </PageBreaker>
-            <PageBreaker
-              sectionNumber={4}
-              sectionTitle="📷 Photographer"
-            >
+            <PageBreaker sectionNumber={4} sectionTitle="📷 Photographer">
               <div className="PageBreakerContent">
                 <p className="mb-4">
-                  Photographers need alignment on both creative and legal
-                  fronts. brifl makes room for:
+                  Photographers need alignment on both creative and legal fronts. brifl makes room
+                  for:
                 </p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Preferred style or visual direction.</li>
@@ -410,8 +366,8 @@ export default function Brifl() {
 
         {/* Design Process Section */}
         <SectionTitle title="Design Process" />
-        <div className="SectionContent flex flex-col lg:flex-row font-sans items-center justify-center text-stone-900 text-lg gap-4">
-          <div className="SectionBlocksContainer flex flex-col md:w-screen gap-0 flex-1 h-[650px] border-r border-stone-900">
+        <div className="SectionContent flex flex-col h-auto lg:flex-row font-sans items-center justify-center text-stone-900 text-lg gap-4">
+          <div className="SectionBlocksContainer flex flex-col md:w-screen gap-0  lg:min-h-[700px] border-r border-stone-900">
             <div className="SectionBlock flex-1 p-6 bg-lime-50 flex flex-col justify-start gap-2 border-b border-stone-900">
               <div className="self-stretch justify-center text-stone-900 text-lg font-medium font-sans leading-normal">
                 Information Architecture
@@ -433,8 +389,7 @@ export default function Brifl() {
                 Sketches & Wireframes
               </div>
               <div className="self-stretch justify-center text-stone-900 text-md font-normal font-sans">
-                Developed low-fidelity prototypes to visualize layout and
-                functionality.
+                Developed low-fidelity prototypes to visualize layout and functionality.
               </div>
             </div>
             <div className="SectionBlock flex-1 p-6 bg-emerald-50 flex flex-col justify-start items-start gap-2">
@@ -442,8 +397,7 @@ export default function Brifl() {
                 High-Fidelity Designs
               </div>
               <div className="self-stretch justify-center text-stone-900 text-md font-normal font-sans">
-                Created detailed designs incorporating feedback and usability
-                testing results.
+                Created detailed designs incorporating feedback and usability testing results.
               </div>
             </div>
           </div>
@@ -452,26 +406,25 @@ export default function Brifl() {
               spaceBetween={10}
               navigation={true}
               thumbs={{
-                swiper:
-                  thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
+                swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
               }}
               modules={[FreeMode, Navigation, Thumbs]}
               className="showcase-swiper rounded-lg mb-4"
             >
               {[
-                "bri-infoarch",
-                "bri-user-flow",
-                "bri-sketch",
-                "bri-wireframe-1",
-                "bri-hifi",
-                "bri-builder-Palette",
-                "bri-builder-Typography",
-                "bri-view-Palette",
+                'bri-infoarch',
+                'bri-user-flow',
+                'bri-sketch',
+                'bri-wireframe-1',
+                'bri-hifi',
+                'bri-builder-Palette',
+                'bri-builder-Typography',
+                'bri-view-Palette',
               ].map((image, index) => (
                 <SwiperSlide key={index} className="h-[600px]">
                   <Image
                     src={`/img/brifl/${image}.png`}
-                    alt={`Brifl ${image.replace("bri-", "").replace(/-/g, " ")}`}
+                    alt={`Brifl ${image.replace('bri-', '').replace(/-/g, ' ')}`}
                     width={1200}
                     height={800}
                     className="w-full h-full object-contain"
@@ -490,19 +443,19 @@ export default function Brifl() {
               className="showcase-thumbs"
             >
               {[
-                "bri-infoarch",
-                "bri-user-flow",
-                "bri-sketch",
-                "bri-wireframe-1",
-                "bri-hifi",
-                "bri-builder-Palette",
-                "bri-builder-Typography",
-                "bri-view-Palette",
+                'bri-infoarch',
+                'bri-user-flow',
+                'bri-sketch',
+                'bri-wireframe-1',
+                'bri-hifi',
+                'bri-builder-Palette',
+                'bri-builder-Typography',
+                'bri-view-Palette',
               ].map((image, index) => (
                 <SwiperSlide key={index}>
                   <Image
                     src={`/img/brifl/${image}.png`}
-                    alt={`Brifl ${image.replace("bri-", "").replace(/-/g, " ")} thumbnail`}
+                    alt={`Brifl ${image.replace('bri-', '').replace(/-/g, ' ')} thumbnail`}
                     width={200}
                     height={150}
                     className="w-full h-full object-cover rounded cursor-pointer"
@@ -517,11 +470,10 @@ export default function Brifl() {
         <SectionTitle title="Outcome: What I have learned?" />
         <div className="SectionContent font-sans m-8 items-center justify-center text-center text-stone-900 text-lg gap-4">
           <p>
-            Although brifl was never launched — primarily due to the lack of a
-            developer and my limited knowledge of JavaScript at the time — the
-            project became one of the most formative experiences in my product
-            design journey. What started as a side hustle grew into a meaningful
-            learning process, and a clear step forward in my transition toward
+            Although brifl was never launched — primarily due to the lack of a developer and my
+            limited knowledge of JavaScript at the time — the project became one of the most
+            formative experiences in my product design journey. What started as a side hustle grew
+            into a meaningful learning process, and a clear step forward in my transition toward
             systems thinking and user-centered design.
           </p>
         </div>
@@ -535,10 +487,9 @@ export default function Brifl() {
                   🧭 Problem-first approach
                 </div>
                 <div className="self-stretch justify-center text-stone-900 text-md font-normal font-sans">
-                  brifl was born out of a recurring pain I noticed among creatives
-                  — the messy, inconsistent ways they communicate with clients. It
-                  taught me that even niche, everyday problems can become the
-                  foundation of impactful product ideas.
+                  brifl was born out of a recurring pain I noticed among creatives — the messy,
+                  inconsistent ways they communicate with clients. It taught me that even niche,
+                  everyday problems can become the foundation of impactful product ideas.
                 </div>
               </div>
               <div className="SectionBlock flex-1 p-6 bg-amber-100 flex flex-col justify-start items-start gap-2 border-b border-stone-900">
@@ -546,10 +497,9 @@ export default function Brifl() {
                   🤝 First touch with the open-source community
                 </div>
                 <div className="self-stretch justify-center text-stone-900 text-md font-normal font-sans">
-                  While I couldn&apos;t develop the product myself, my intention to
-                  make it open-source connected me with like-minded people from
-                  the open-source space. It planted a seed for future
-                  collaborative projects.
+                  While I couldn&apos;t develop the product myself, my intention to make it
+                  open-source connected me with like-minded people from the open-source space. It
+                  planted a seed for future collaborative projects.
                 </div>
               </div>
               <div className="SectionBlock flex-1 p-6 bg-amber-50 flex flex-col justify-start items-start gap-2">
@@ -557,10 +507,9 @@ export default function Brifl() {
                   🧱 My first Design System
                 </div>
                 <div className="self-stretch justify-center text-stone-900 text-md font-normal font-sans">
-                  I designed a full-fledged atomic design system with foundations
-                  like typography, color, spacing, and grid — plus 30+ core
-                  components, each with necessary states and variants. This became
-                  my starting point for systems thinking in UI design.
+                  I designed a full-fledged atomic design system with foundations like typography,
+                  color, spacing, and grid — plus 30+ core components, each with necessary states
+                  and variants. This became my starting point for systems thinking in UI design.
                 </div>
               </div>
             </div>
@@ -572,10 +521,9 @@ export default function Brifl() {
                   🗣️ Real interviews with real creatives
                 </div>
                 <div className="self-stretch justify-center text-stone-900 text-md font-normal font-sans">
-                  I conducted short-form interviews with friends and colleagues
-                  across various creative disciplines. These conversations helped
-                  me form clear archetypes instead of personas and gave the
-                  product a sharper focus.
+                  I conducted short-form interviews with friends and colleagues across various
+                  creative disciplines. These conversations helped me form clear archetypes instead
+                  of personas and gave the product a sharper focus.
                 </div>
               </div>
               <div className="SectionBlock flex-1 p-6 bg-amber-50 flex flex-col justify-start items-start gap-2 border-b border-stone-900">
@@ -583,10 +531,9 @@ export default function Brifl() {
                   🖌️ Figma fluency
                 </div>
                 <div className="self-stretch justify-center text-stone-900 text-md font-normal font-sans">
-                  brifl was the first full product I designed entirely in Figma. I
-                  learned how to structure pages, components, and workflows
-                  professionally — a skill that became foundational in my later
-                  projects.
+                  brifl was the first full product I designed entirely in Figma. I learned how to
+                  structure pages, components, and workflows professionally — a skill that became
+                  foundational in my later projects.
                 </div>
               </div>
               <div className="SectionBlock flex-1 p-6 bg-amber-100 flex flex-col justify-start items-start gap-2">
@@ -594,10 +541,9 @@ export default function Brifl() {
                   🧩 Understanding diverse user flows
                 </div>
                 <div className="self-stretch justify-center text-stone-900 text-md font-normal font-sans">
-                  Designing for designers, developers, writers, and photographers
-                  pushed me to think beyond a single use case. It helped me
-                  embrace complexity and learn how to distill it into intuitive
-                  flows.
+                  Designing for designers, developers, writers, and photographers pushed me to think
+                  beyond a single use case. It helped me embrace complexity and learn how to distill
+                  it into intuitive flows.
                 </div>
               </div>
             </div>
@@ -632,15 +578,15 @@ export default function Brifl() {
           simpleTabs={[
             {
               icon: <Image src="/img/behance.svg" alt="Behance" width={24} height={24} />,
-              state: "idle",
-              to: "https://www.behance.net/gallery/158941869/brifl-Open-Source-Form-Application",
-              className: "h-full hover:bg-blue-100",
+              state: 'idle',
+              to: 'https://www.behance.net/gallery/158941869/brifl-Open-Source-Form-Application',
+              className: 'h-full hover:bg-blue-100',
             },
             {
               icon: <Image src="/img/dribbble.svg" alt="Dribbble" width={24} height={24} />,
-              state: "idle",
-              to: "https://dribbble.com/shots/19994696-brifl-open-source-form-application-landing-page",
-              className: "h-full hover:bg-pink-100 border-r-0",
+              state: 'idle',
+              to: 'https://dribbble.com/shots/19994696-brifl-open-source-form-application-landing-page',
+              className: 'h-full hover:bg-pink-100 border-r-0',
             },
           ]}
         />

@@ -1,28 +1,21 @@
 'use client';
-
-import React, { useEffect } from "react";
-import Image from "next/image";
-import { Tooltip } from "react-tooltip";
-import MenuItem from "@/components/MenuItem";
-import InfoCard from "@/components/InfoCard";
-import RowCard from "@/components/RowCard";
-import Footer from "@/components/Footer";
-import TopDivider from "@/components/TopDivider";
-import { Analytics } from "@vercel/analytics/react";
+import React from 'react';
+import Image from 'next/image';
+import { Tooltip } from 'react-tooltip';
+import MenuItem from '@/components/MenuItem';
+import InfoCard from '@/components/InfoCard';
+import RowCard from '@/components/RowCard';
+import Footer from '@/components/Footer';
+import TopDivider from '@/components/TopDivider';
+import { Analytics } from '@vercel/analytics/react';
 
 const iconConfig = {
-  sm: { height: 24, sizes: "24px" },
-  md: { height: 32, sizes: "32px" },
-  lg: { height: 72, sizes: "72px" }
+  sm: { height: 24, sizes: '24px' },
+  md: { height: 32, sizes: '32px' },
+  lg: { height: 72, sizes: '72px' },
 };
 
 export default function Home() {
-  useEffect(() => {
-    console.info(
-      "Greetings, I m Oğuzhan, a product designer that is presently working toward a front-end learning path with the goal of serving as a bridge between developers and designers."
-    );
-  }, []);
-
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
       <TopDivider />
@@ -43,8 +36,7 @@ export default function Home() {
                   alt="Products Icon"
                   width={1}
                   height={iconConfig.lg.height}
-                
-                  style={{ height: iconConfig.lg.height, width: "auto" }}
+                  style={{ height: iconConfig.lg.height, width: 'auto' }}
                   data-tooltip-id="product-tooltip"
                   data-tooltip-content="Braille letter P – represents Products"
                   data-tooltip-place="right"
@@ -65,8 +57,7 @@ export default function Home() {
                   alt="case studies"
                   width={1}
                   height={iconConfig.lg.height}
-                
-                  style={{ height: iconConfig.lg.height, width: "auto" }}
+                  style={{ height: iconConfig.lg.height, width: 'auto' }}
                   data-tooltip-id="case-study-tooltip"
                   data-tooltip-content="Braille letters C and S – represent Case Studies"
                   data-tooltip-place="left"
@@ -87,8 +78,7 @@ export default function Home() {
                   alt="ideas"
                   width={1}
                   height={iconConfig.lg.height}
-                
-                  style={{ height: iconConfig.lg.height, width: "auto" }}
+                  style={{ height: iconConfig.lg.height, width: 'auto' }}
                   data-tooltip-id="idea-tooltip"
                   data-tooltip-content="Braille letter I – represents Ideas"
                   data-tooltip-place="right"
@@ -109,8 +99,7 @@ export default function Home() {
                   alt="experiments logo"
                   width={1}
                   height={iconConfig.lg.height}
-                 
-                  style={{ height: iconConfig.lg.height, width: "auto" }}
+                  style={{ height: iconConfig.lg.height, width: 'auto' }}
                   data-tooltip-id="experiment-tooltip"
                   data-tooltip-content="Braille letter E – represents Experiments"
                   data-tooltip-place="left"
@@ -128,14 +117,14 @@ export default function Home() {
           cardContent="Improving user security by implementing 2FA on Jotform which resulted in a 15K+ users adopting the feature."
           tags={[
             {
-              label: "Case Study",
-              type: "lime",
-              size: "large",
+              label: 'Case Study',
+              type: 'lime',
+              size: 'large',
             },
             {
-              label: "Security Feature",
-              type: "outline",
-              size: "large",
+              label: 'Security Feature',
+              type: 'outline',
+              size: 'large',
             },
           ]}
           to="/case-study/jotform-2fa"
@@ -143,9 +132,9 @@ export default function Home() {
             <Image
               src="/img/thumbs/thumb-jf2fa.svg"
               alt="Jotform 2FA"
-              width={400}
-              height={300}
-              className="w-full h-full object-contain"
+              width={1}
+              height={1}
+              className="w-full h-full object-contain w-[90%]"
             />
           }
         />
@@ -155,14 +144,14 @@ export default function Home() {
           cardContent="Jotform Logbook is an internal tool that helps Jotformers to be aware of what's happening in the company. It's a simple tool that helps us to be more transparent and aware of what's happening in the company."
           tags={[
             {
-              label: "Idea",
-              type: "purple",
-              size: "large",
+              label: 'Idea',
+              type: 'purple',
+              size: 'large',
             },
             {
-              label: "Company Awareness",
-              type: "outline",
-              size: "large",
+              label: 'Company Awareness',
+              type: 'outline',
+              size: 'large',
             },
           ]}
           to="/ideas/jotform-logbook"
@@ -170,9 +159,9 @@ export default function Home() {
             <Image
               src="/img/thumbs/thumb-logbook.svg"
               alt="Jotform Logbook"
-              width={400}
-              height={300}
-              className="w-full h-full object-contain"
+              width={1}
+              height={1}
+              className="w-full h-full object-contain w-[110%]"
             />
           }
         />
@@ -182,14 +171,14 @@ export default function Home() {
           cardContent="Kroma is a free color accessibility checker for those who works on the user interface. It's the only free tool which offer limitless color accessibility checks."
           tags={[
             {
-              label: "Product",
-              type: "red",
-              size: "large",
+              label: 'Product',
+              type: 'red',
+              size: 'large',
             },
             {
-              label: "Accessibility (a11y)",
-              type: "outline",
-              size: "large",
+              label: 'Accessibility (a11y)',
+              type: 'outline',
+              size: 'large',
             },
           ]}
           to="/product/kroma"
@@ -197,9 +186,9 @@ export default function Home() {
             <Image
               src="/img/thumbs/thumb-kroma2.svg"
               alt="Kroma"
-              width={400}
-              height={300}
-             
+              width={1}
+              height={1}
+              className="w-[70%]"
             />
           }
         />
@@ -209,14 +198,14 @@ export default function Home() {
           cardContent="An open-source tool designed for designers, developers, writers, and photographers to create, share, and analyze forms seamlessly."
           tags={[
             {
-              label: "Idea",
-              type: "purple",
-              size: "large",
+              label: 'Idea',
+              type: 'purple',
+              size: 'large',
             },
             {
-              label: "Form Builder",
-              type: "outline",
-              size: "large",
+              label: 'Form Builder',
+              type: 'outline',
+              size: 'large',
             },
           ]}
           to="/ideas/brifl"
@@ -224,9 +213,9 @@ export default function Home() {
             <Image
               src="/img/thumbs/thumb-brifl2.svg"
               alt="Brifl"
-              width={400}
-              height={300}
-              className="w-full h-full object-contain"
+              width={1}
+              height={1}
+              className="w-full h-full object-contain w-[120%]"
             />
           }
         />
@@ -236,14 +225,14 @@ export default function Home() {
           cardContent="A modular, React-friendly component library based on atomic design principles. Contains over 30 components and 200+ states and variants."
           tags={[
             {
-              label: "Product",
-              type: "red",
-              size: "large",
+              label: 'Product',
+              type: 'red',
+              size: 'large',
             },
             {
-              label: "Design System",
-              type: "outline",
-              size: "large",
+              label: 'Design System',
+              type: 'outline',
+              size: 'large',
             },
           ]}
           to="/product/brifl-design-system"
