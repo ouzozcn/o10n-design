@@ -32,6 +32,12 @@ export function Analytics() {
           })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
         `}
       </Script>
+
+      {/* Dark Visitors */}
+      <Script
+        src="https://darkvisitors.com/tracker.js?project_key=0886cbbf-18b6-40d4-81ed-7ef731232680"
+        strategy="afterInteractive"
+      />
     </>
   );
-} 
+}
