@@ -1,10 +1,10 @@
 export default function StructuredData() {
-  const structuredData = {
+  const personSchema = {
     '@context': 'https://schema.org',
     '@type': 'Person',
     '@id': 'https://o10n.design/#person',
     name: 'Oğuzhan Özcan',
-    alternateName: ['Oguzhan Ozcan', 'Oğuzhan Özcan', 'Oğuz Özcan'],
+    alternateName: ['Oguzhan Ozcan', 'Oğuz Özcan'],
     jobTitle: 'Product Designer',
     worksFor: {
       '@type': 'Organization',
@@ -16,7 +16,7 @@ export default function StructuredData() {
     mainEntityOfPage: 'https://o10n.design',
     image: {
       '@type': 'ImageObject',
-      url: '/assets/images/og-image.jpg',
+      url: 'https://o10n.design/assets/images/og-image.jpg',
       width: 400,
       height: 400,
     },
@@ -44,37 +44,35 @@ export default function StructuredData() {
       'Visual Design',
       'Interaction Design',
     ],
-    hasOccupation: {
-      '@type': 'Occupation',
-      name: 'Product Designer',
-      occupationLocation: {
-        '@type': 'Place',
-        name: 'Ankara, Turkey',
-      },
-      skills: [
-        'Figma',
-        'Storybook',
-        'Chromatic',
-        'Framer',
-        'Webflow',
-        'Adobe Creative Suite',
-        'Jira',
-        'Confluence',
-        'Notion',
-        'Prototyping',
-        'User Research',
-        'HTML/CSS',
-        'JavaScript',
-        'React',
-        'Next.js',
-        'TypeScript',
-        'Tailwind CSS',
-        'Jupyter Notebooks',
-        'SQL',
-        'Git',
-        'GitHub',
-        'Google Analytics',
-      ],
+
+    skills: [
+      'Figma',
+      'Storybook',
+      'Chromatic',
+      'Framer',
+      'Webflow',
+      'Adobe Creative Suite',
+      'Jira',
+      'Confluence',
+      'Notion',
+      'Prototyping',
+      'User Research',
+      'HTML/CSS',
+      'JavaScript',
+      'React',
+      'Next.js',
+      'TypeScript',
+      'Tailwind CSS',
+      'Jupyter Notebooks',
+      'SQL',
+      'Git',
+      'GitHub',
+      'Google Analytics',
+    ],
+
+    workLocation: {
+      '@type': 'Place',
+      name: 'Ankara, Turkey',
     },
     alumniOf: [
       {
@@ -82,7 +80,6 @@ export default function StructuredData() {
         name: 'Middle East Technical University',
       },
     ],
-
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'professional',
@@ -91,10 +88,43 @@ export default function StructuredData() {
     },
   };
 
+  const professionalServiceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ProfessionalService',
+    '@id': 'https://o10n.design/#service',
+    name: 'Product Design Services',
+    description:
+      'Professional product design, UI/UX design, UX research, and design engineering services',
+    provider: {
+      '@id': 'https://o10n.design/#person',
+    },
+    areaServed: 'Worldwide',
+    serviceType: [
+      'Product Design',
+      'UI/UX Design',
+      'User Interface Design',
+      'User Experience Design',
+      'Design Systems',
+      'Frontend Development',
+      'Design Engineering',
+    ],
+    offers: {
+      '@type': 'Offer',
+      description: 'Product design, UI/UX design, UX research, and design engineering services',
+      availability: 'https://schema.org/InStock',
+    },
+  };
+
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchema) }}
+      />
+    </>
   );
 }
