@@ -4,7 +4,7 @@ export default function StructuredData() {
     '@type': 'Person',
     '@id': 'https://o10n.design/#person',
     name: 'Oğuzhan Özcan',
-    alternateName: ['Oguzhan Ozcan', 'Oğuz Özcan'],
+    alternateName: ['Oguzhan Ozcan', 'Oğuzhan Özcan', 'Oğuz Özcan'],
     jobTitle: 'Product Designer',
     worksFor: {
       '@type': 'Organization',
