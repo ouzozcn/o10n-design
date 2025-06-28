@@ -1,8 +1,5 @@
 User-agent: *
 Allow: /
 
-# Host
-Host: https://o10n.design
-
 # Sitemaps
 Sitemap: https://o10n.design/sitemap.xml
