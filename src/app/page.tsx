@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
       <h1 className="sr-only">
-        Oğuzhan Özcan - Product Designer Portfolio | Analytics and Data-Driven Design
+        Oğuzhan Özcan - Product Designer | Analytics and Data-Driven Design
       </h1>
 
       <TopDivider />
