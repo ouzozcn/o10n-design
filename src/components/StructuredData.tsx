@@ -115,49 +115,6 @@ export default function StructuredData() {
     },
   };
 
-  const websiteSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'WebSite',
-    '@id': 'https://o10n.design/#website',
-    name: 'Oğuzhan Özcan - Product Designer Portfolio',
-    description:
-      'Analytics and data-driven product designer portfolio showcasing case studies, products, and design work',
-    url: 'https://o10n.design',
-    author: {
-      '@id': 'https://o10n.design/#person',
-    },
-    publisher: {
-      '@id': 'https://o10n.design/#person',
-    },
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: {
-        '@type': 'EntryPoint',
-        urlTemplate: 'https://o10n.design/search?q={search_term_string}',
-      },
-      'query-input': 'required name=search_term_string',
-    },
-  };
-
-  const organizationSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Organization',
-    '@id': 'https://o10n.design/#organization',
-    name: 'Oğuzhan Özcan Design',
-    url: 'https://o10n.design',
-    logo: {
-      '@type': 'ImageObject',
-      url: 'https://o10n.design/assets/images/og-image.jpg',
-      width: 400,
-      height: 400,
-    },
-    founder: {
-      '@id': 'https://o10n.design/#person',
-    },
-    description:
-      'Product design and development services focused on analytics-driven design and accessibility',
-  };
-
   return (
     <>
       <script
@@ -167,14 +124,6 @@ export default function StructuredData() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
       />
     </>
   );
