@@ -20,6 +20,13 @@ export default function StructuredData() {
       width: 400,
       height: 400,
     },
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Ankara',
+      addressCountry: 'TR',
+      postalCode: '06500',
+      streetAddress: 'Üniversiteler Mah. ODTÜ Teknokent',
+    },
     sameAs: [
       'https://linkedin.com/in/ouzozcn/',
       'https://github.com/ouzozcn',
