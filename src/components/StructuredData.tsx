@@ -24,7 +24,7 @@ export default function StructuredData() {
       '@type': 'PostalAddress',
       addressLocality: 'Ankara',
       addressCountry: 'TR',
-      postalCode: '06500',
+      postalCode: '06800',
       streetAddress: 'Üniversiteler Mah. ODTÜ Teknokent',
     },
     sameAs: [
@@ -104,6 +104,14 @@ export default function StructuredData() {
       'Professional product design, UI/UX design, UX research, and design engineering services',
     provider: {
       '@id': 'https://o10n.design/#person',
+    },
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Ankara',
+      addressCountry: 'TR',
+      addressRegion: 'Ankara',
+      postalCode: '06800',
+      streetAddress: 'Üniversiteler Mah. ODTÜ Teknokent',
     },
     areaServed: 'Worldwide',
     serviceType: [
