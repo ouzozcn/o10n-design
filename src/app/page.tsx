@@ -120,7 +120,7 @@ export default function Home() {
       </div>
 
       <main className="flex flex-col place-items-start">
-        <h2 className="sr-only">Featured Projects and Work</h2>
+        <h2 className="sr-only">Featured Projects and Works</h2>
 
         <section className="w-full" aria-labelledby="security-project-heading">
           <h3 id="security-project-heading" className="sr-only">
