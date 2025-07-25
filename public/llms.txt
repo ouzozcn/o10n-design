@@ -1,0 +1,114 @@
+# o10n.design
+
+## Site Information
+- **URL**: https://o10n.design
+- **Title**: Oguzhan Ozcan | Product Designer
+- **Language**: en
+- **Last Updated**: 2025-07-25
+
+## Author
+- **Name**: Oğuzhan Özcan
+- **Role**: Product Designer at Jotform
+- **Location**: Ankara, Turkey
+- **Email**: oguz@o10n.design
+- **Website**: https://o10n.design
+
+## Site Purpose
+Personal portfolio showcasing product design, UI/UX design, design systems, and technical writing. Features case studies, experiments, and insights on design and development practices.
+
+## Content Structure
+
+### Main Sections
+- `/` - Homepage with featured work and introduction
+- `/about-me` - Professional background, expertise, and journey
+- `/case-study` - Design and development case studies
+- `/product` - Product showcases and design systems
+- `/ideas` - Design concepts and project ideas
+- `/experiment` - Design and AI experiments
+- `/writings` - Articles and technical blog posts
+- `/tech-stack` - Technologies and tools overview
+- `/docs` - Documentation and resources
+- `/contact` - Contact information and form
+
+### Featured Work
+- `/case-study/jotform-2fa` - 2FA implementation case study (15K+ user adoption)
+- `/product/brifl-design-system` - Comprehensive design system
+- `/product/kroma` - Free color accessibility checker tool
+- `/ideas/jotform-logbook` - Internal company awareness tool
+- `/experiment/solart` - Design experiment showcase
+
+### Technical Content
+- `/writings/dev-friendly-component-design` - Component design best practices
+- `/writings/using-tokens-in-figma` - Design tokens implementation guide
+
+### Legal Pages
+- `/privacy-policy` - Privacy policy
+- `/cookie-policy` - Cookie usage policy
+
+## Expertise & Skills
+
+### Design Skills
+Product Design, User Experience Design, User Interface Design, Design Systems, Visual Design, Interaction Design, Prototyping, Wireframing, User Research, Accessibility, Design Engineering
+
+### Technical Skills
+Frontend Development, UI Development, HTML/CSS, JavaScript, React, TypeScript, Next.js, Tailwind CSS
+
+### Tools & Software
+Figma, Storybook, Chromatic, Framer, Webflow, Adobe Creative Suite, Jira, Confluence, Notion, Jupyter Notebooks, SQL, Git, GitHub, Google Analytics
+
+### Management & Process
+Product Management, UX Research, Data Analytics, Design Strategy
+
+## Technical Stack
+- **Framework**: Next.js App Router with React and TypeScript, Storybook, Chromatic, HTML, CSS, JavaScript
+- **Styling**: Tailwind CSS, SASS
+- **Architecture**: Modular, server-first approach
+- **Performance**: Optimized for accessibility and performance
+- **Deployment**: Modern web standards
+
+## Schema.org Structured Data
+
+### Person
+```json
+{
+  "@type": "Person",
+  "name": "Oğuzhan Özcan",
+  "jobTitle": "Product Designer",
+  "worksFor": "Jotform",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Ankara",
+    "addressCountry": "Turkey"
+  },
+  "url": "https://o10n.design",
+  "email": "oguzhan@o10n.design"
+}
+```
+
+### Professional Service
+```json
+{
+  "@type": "ProfessionalService",
+  "name": "Product Design Services",
+  "provider": "Oğuzhan Özcan",
+  "serviceType": ["Product Design", "UI/UX Design", "Design Systems", "Frontend Development"],
+  "areaServed": "Worldwide"
+}
+```
+
+## AI Usage Guidelines
+- **Indexing**: Content may be indexed for search and discovery
+- **Summarization**: Content may be summarized while preserving key insights
+- **Attribution**: Please credit "Oğuzhan Özcan" and link to https://o10n.design
+- **Context**: Maintain professional context when referencing work
+- **Updates**: Content reflects work as of the last updated date
+
+## Key Topics
+Product Design, User Experience, Design Systems, Accessibility, Frontend Development, Design Engineering, Component Design, Design Tokens, Color Theory, User Research, Prototyping, React Development, TypeScript, Figma, Design Process, User Security, Form Design
+
+## Notable Achievements
+- Implemented 2FA system at Jotform with 15K+ user adoption
+- Created Kroma, a free color accessibility checker
+- Developed Brifl Design System
+- Published technical articles on design-development collaboration
+
