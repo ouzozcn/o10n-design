@@ -81,7 +81,7 @@ Product Management, UX Research, Data Analytics, Design Strategy
     "addressCountry": "Turkey"
   },
   "url": "https://o10n.design",
-  "email": "oguzhan@o10n.design"
+  "email": "oguz@o10n.design"
 }
 ```
 
