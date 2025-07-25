@@ -1,4 +1,4 @@
-# o10n.design
+# llms.txt
 
 ## Site Information
 - **URL**: https://o10n.design
@@ -8,10 +8,13 @@
 
 ## Author
 - **Name**: Oğuzhan Özcan
+- **Alternate Names**: Oguzhan Ozcan, Oğuz Özcan
 - **Role**: Product Designer at Jotform
-- **Location**: Ankara, Turkey
+- **Location**: Ankara, Turkey (Üniversiteler Mah. ODTÜ Teknokent, 06800)
 - **Email**: oguz@o10n.design
 - **Website**: https://o10n.design
+- **Education**: Middle East Technical University (METU)
+- **Description**: Analytics and data-driven product designer who prioritizes research-based methodologies, accessibility, user-centered designs, and developer friendliness.
 
 ## Site Purpose
 Personal portfolio showcasing product design, UI/UX design, design systems, and technical writing. Features case studies, experiments, and insights on design and development practices.
@@ -45,6 +48,13 @@ Personal portfolio showcasing product design, UI/UX design, design systems, and 
 - `/privacy-policy` - Privacy policy
 - `/cookie-policy` - Cookie usage policy
 
+## Social Media & Profiles
+- **LinkedIn**: https://linkedin.com/in/ouzozcn/
+- **GitHub**: https://github.com/ouzozcn
+- **Behance**: https://www.behance.net/oguzhanozcan
+- **Dribbble**: https://dribbble.com/ouzozcn
+- **Medium**: https://medium.com/@ouzozcn
+
 ## Expertise & Skills
 
 ### Design Skills
@@ -54,45 +64,148 @@ Product Design, User Experience Design, User Interface Design, Design Systems, V
 Frontend Development, UI Development, HTML/CSS, JavaScript, React, TypeScript, Next.js, Tailwind CSS
 
 ### Tools & Software
-Figma, Storybook, Chromatic, Framer, Webflow, Adobe Creative Suite, Jira, Confluence, Notion, Jupyter Notebooks, SQL, Git, GitHub, Google Analytics
+Figma, Storybook, Chromatic, Framer, Webflow, Adobe Creative Suite, Jira, Confluence, Notion, Prototyping Tools, Jupyter Notebooks, Git, GitHub, Google Analytics
 
 ### Management & Process
 Product Management, UX Research, Data Analytics, Design Strategy
 
 ## Technical Stack
-- **Framework**: Next.js App Router with React and TypeScript, Storybook, Chromatic, HTML, CSS, JavaScript
-- **Styling**: Tailwind CSS, SASS
+- **Framework**: Next.js App Router with React and TypeScript
+- **Styling**: Tailwind CSS
 - **Architecture**: Modular, server-first approach
 - **Performance**: Optimized for accessibility and performance
 - **Deployment**: Modern web standards
 
 ## Schema.org Structured Data
 
-### Person
+### Person Schema
 ```json
 {
+  "@context": "https://schema.org",
   "@type": "Person",
+  "@id": "https://o10n.design/#person",
   "name": "Oğuzhan Özcan",
+  "alternateName": ["Oguzhan Ozcan", "Oğuz Özcan"],
   "jobTitle": "Product Designer",
-  "worksFor": "Jotform",
+  "description": "Analytics and data-driven product designer who prioritizes research-based methodologies, accessibility, user-centered designs, and developer friendliness.",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Jotform"
+  },
+  "url": "https://o10n.design",
+  "mainEntityOfPage": "https://o10n.design",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://o10n.design/assets/images/og-image.jpg",
+    "width": 400,
+    "height": 400
+  },
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Ankara",
-    "addressCountry": "Turkey"
+    "addressCountry": "TR",
+    "postalCode": "06800",
+    "streetAddress": "Üniversiteler Mah. ODTÜ Teknokent"
   },
-  "url": "https://o10n.design",
-  "email": "oguz@o10n.design"
+  "sameAs": [
+    "https://linkedin.com/in/ouzozcn/",
+    "https://github.com/ouzozcn",
+    "https://www.behance.net/oguzhanozcan",
+    "https://dribbble.com/ouzozcn",
+    "https://medium.com/@ouzozcn"
+  ],
+  "knowsAbout": [
+    "Product Design",
+    "Design Engineering",
+    "User Experience Design",
+    "User Interface Design",
+    "UI Development",
+    "Frontend Development",
+    "Product Management",
+    "Design Systems",
+    "Accessibility",
+    "User Research",
+    "Data Analytics",
+    "Prototyping",
+    "Wireframing",
+    "Visual Design",
+    "Interaction Design"
+  ],
+  "skills": [
+    "Figma",
+    "Storybook",
+    "Chromatic",
+    "Framer",
+    "Webflow",
+    "Adobe Creative Suite",
+    "Jira",
+    "Confluence",
+    "Notion",
+    "Prototyping",
+    "User Research",
+    "HTML/CSS",
+    "JavaScript",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "Jupyter Notebooks",
+    "SQL",
+    "Git",
+    "GitHub",
+    "Google Analytics"
+  ],
+  "workLocation": {
+    "@type": "Place",
+    "name": "Ankara, Turkey"
+  },
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "Middle East Technical University"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "professional",
+    "email": "oguz@o10n.design",
+    "url": "https://o10n.design/contact"
+  }
 }
 ```
 
-### Professional Service
+### Professional Service Schema
 ```json
 {
+  "@context": "https://schema.org",
   "@type": "ProfessionalService",
+  "@id": "https://o10n.design/#service",
   "name": "Product Design Services",
-  "provider": "Oğuzhan Özcan",
-  "serviceType": ["Product Design", "UI/UX Design", "Design Systems", "Frontend Development"],
-  "areaServed": "Worldwide"
+  "description": "Professional product design, UI/UX design, UX research, and design engineering services",
+  "provider": {
+    "@id": "https://o10n.design/#person"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Ankara",
+    "addressCountry": "TR",
+    "addressRegion": "Ankara",
+    "postalCode": "06800",
+    "streetAddress": "Üniversiteler Mah. ODTÜ Teknokent"
+  },
+  "areaServed": "Worldwide",
+  "serviceType": [
+    "Product Design",
+    "UI/UX Design",
+    "User Interface Design",
+    "User Experience Design",
+    "Design Systems",
+    "Frontend Development",
+    "Design Engineering"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "description": "Product design, UI/UX design, UX research, and design engineering services",
+    "availability": "https://schema.org/InStock"
+  }
 }
 ```
 
