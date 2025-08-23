@@ -42,7 +42,6 @@ export const Footer: React.FC = () => {
           <SimpleTab
             icon={<Image src="/assets/images/dribbble.svg" alt="Dribbble" width={24} height={24} />}
             className="border-none hover:bg-pink-200"
-            a
             state="idle"
             to="https://dribbble.com/ouzozcn"
           />
