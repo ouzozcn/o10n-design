@@ -9,7 +9,7 @@ import Image from 'next/image';
 export const Footer: React.FC = () => {
   return (
     <div className="Footer flex flex-col w-full">
-      <div className="FooterTop flex flex-col md:flex-row w-full md:justify-between items-center bg-amber-100 border-t border-b border-stone-900">
+      <div className="FooterTop flex flex-col md:flex-row w-full md:justify-between items-center bg-teal-50 border-t border-b border-stone-900">
         <div className="FooterTitle flex flex-col md:flex-row gap-2 md:gap-6 p-6 pb-0 md:p-8 items-center md:items-center">
           <div className="text-stone-900 text-2xl text-center md:text-left font-normal font-sans">
             Oğuzhan Özcan
@@ -42,6 +42,7 @@ export const Footer: React.FC = () => {
           <SimpleTab
             icon={<Image src="/assets/images/dribbble.svg" alt="Dribbble" width={24} height={24} />}
             className="border-none hover:bg-pink-200"
+            a
             state="idle"
             to="https://dribbble.com/ouzozcn"
           />
@@ -60,7 +61,7 @@ export const Footer: React.FC = () => {
         </div>
       </div>
 
-      <div className="FooterSitemap flex flex-col md:flex-row py-6 px-8 md:px-32 gap-8 md:gap-0 md:justify-between items-center md:items-start border-b border-stone-900 bg-amber-200">
+      <div className="FooterSitemap flex flex-col md:flex-row py-6 px-8 md:px-32 gap-8 md:gap-0 md:justify-between items-center md:items-start border-b border-stone-900 bg-teal-100">
         <div className="ColumnHome flex flex-col gap-2 items-center md:items-start">
           <TextLink style="primary" label="Home" to="/" />
           <TextLink label="About Me" to="/about-me" />
