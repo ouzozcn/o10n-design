@@ -39,6 +39,9 @@ export default function StructuredData() {
       'Design Engineering',
       'User Experience Design',
       'User Interface Design',
+      'User Testing',
+      'Usability',
+      'A11y',
       'UI Development',
       'Frontend Development',
       'Product Management',
@@ -75,6 +78,14 @@ export default function StructuredData() {
       'Git',
       'GitHub',
       'Google Analytics',
+      'Maze',
+      'Optimal Workshop',
+      'UserZoom',
+      'UserTesting',
+      'Usability Hub',
+      'Hotjar',
+      'Google Optimize',
+      'Google Tag Manager',
     ],
 
     workLocation: {
@@ -101,7 +112,7 @@ export default function StructuredData() {
     '@id': 'https://o10n.design/#service',
     name: 'Product Design Services',
     description:
-      'Professional product design, UI/UX design, UX research, and design engineering services',
+      'Product design, UI/UX design, UX research, and design engineering services for SaaS, DaaS, PaaS products',
     provider: {
       '@id': 'https://o10n.design/#person',
     },
