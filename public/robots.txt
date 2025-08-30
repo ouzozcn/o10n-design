@@ -1,6 +1,9 @@
 # *
 User-agent: *
 Allow: /
+Disallow: /_next/
+Disallow: /api/
+Disallow: /docs/
 
 # Host
 Host: https://o10n.design
