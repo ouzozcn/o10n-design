@@ -69,9 +69,6 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  alternates: {
-    canonical: 'https://o10n.design',
-  },
   viewport: 'width=device-width, initial-scale=1',
 };
 

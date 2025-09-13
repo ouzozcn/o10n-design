@@ -1,18 +1,26 @@
-'use client';
+import type { Metadata } from 'next';
+import React from 'react';
+import MenuItem from '@/components/MenuItem';
+import RowCard from '@/components/RowCard';
+import { Footer } from '@/components/Footer';
+import Image from 'next/image';
 
-import React, { useEffect } from "react";
-import MenuItem from "@/components/MenuItem";
-import RowCard from "@/components/RowCard";
-import { Footer } from "@/components/Footer";
-import Image from "next/image";
+export const metadata: Metadata = {
+  title: 'Products | Oguzhan Ozcan',
+  description:
+    "Explore the products I've worked on including Kroma color accessibility checker and Brifl Design System. See my portfolio of design and development projects.",
+  alternates: {
+    canonical: 'https://o10n.design/product',
+  },
+  openGraph: {
+    title: 'Products | Oguzhan Ozcan',
+    description:
+      "Explore the products I've worked on including Kroma color accessibility checker and Brifl Design System. See my portfolio of design and development projects.",
+    url: 'https://o10n.design/product',
+  },
+};
 
 export default function Products() {
-  useEffect(() => {
-    console.info(
-      "Greetings, I m Oğuzhan, a product designer that is presently working toward a front-end learning path with the goal of serving as a bridge between developers and designers. "
-    );
-  }, []);
-
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
       <div className="md:sticky md:top-0 md:z-10 flex flex-col md:flex-row w-auto border-b border-stone-900 bg-theme-primary">
@@ -56,17 +64,17 @@ export default function Products() {
         <RowCard
           direction="left"
           cardTitle="Kroma | Color Blindness Accessibility Checker for User Interfaces"
-          cardContent="Kroma is a free color accessibility checker for those who works on the user interface. It&apos;s the only free tool which offer limitless color accessibility checks."
+          cardContent="Kroma is a free color accessibility checker for those who works on the user interface. It's the only free tool which offer limitless color accessibility checks."
           tags={[
             {
-              label: "Product",
-              type: "red",
-              size: "large",
+              label: 'Product',
+              type: 'red',
+              size: 'large',
             },
             {
-              label: "Accessibility (a11y)",
-              type: "outline",
-              size: "large",
+              label: 'Accessibility (a11y)',
+              type: 'outline',
+              size: 'large',
             },
           ]}
           to="/product/kroma"
@@ -89,14 +97,14 @@ export default function Products() {
           cardContent="Allowing users to manage their integrations in one place by building an integration hub which increased user retention by 40% within six months."
           tags={[
             {
-              label: "Product",
-              type: "red",
-              size: "large",
+              label: 'Product',
+              type: 'red',
+              size: 'large',
             },
             {
-              label: "Design System",
-              type: "outline",
-              size: "large",
+              label: 'Design System',
+              type: 'outline',
+              size: 'large',
             },
           ]}
           to="/product/brifl-design-system"

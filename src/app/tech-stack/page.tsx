@@ -1,16 +1,24 @@
-'use client';
+import type { Metadata } from 'next';
+import React from 'react';
+import MenuItem from '@/components/MenuItem';
+import { Footer } from '@/components/Footer';
 
-import React, { useEffect } from "react";
-import MenuItem from "@/components/MenuItem";
-import { Footer } from "@/components/Footer";
+export const metadata: Metadata = {
+  title: 'Tech Stack | Oguzhan Ozcan',
+  description:
+    'Tools I use to design, build, and ship thoughtful, accessible, and scalable digital products. Including Figma, React, TypeScript, Tailwind CSS, and more.',
+  alternates: {
+    canonical: 'https://o10n.design/tech-stack',
+  },
+  openGraph: {
+    title: 'Tech Stack | Oguzhan Ozcan',
+    description:
+      'Tools I use to design, build, and ship thoughtful, accessible, and scalable digital products. Including Figma, React, TypeScript, Tailwind CSS, and more.',
+    url: 'https://o10n.design/tech-stack',
+  },
+};
 
 export default function TechStack() {
-  useEffect(() => {
-    console.info(
-      "Greetings, I&apos;m Oğuzhan, a product designer that is presently working toward a front-end learning path with the goal of serving as a bridge between developers and designers. "
-    );
-  }, []);
-
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
       <div className="md:sticky md:top-0 md:z-10 flex flex-col md:flex-row w-auto border-b border-stone-900 bg-theme-primary">
@@ -46,8 +54,8 @@ export default function TechStack() {
           Tech Stack
         </h1>
         <h2 className="text-xl text-center font-sans text-stone-900 flex items-center justify-center">
-          Tools I use to design, build, and ship thoughtful, accessible, and
-          scalable digital products.
+          Tools I use to design, build, and ship thoughtful, accessible, and scalable digital
+          products.
         </h2>
       </div>
 
@@ -57,10 +65,9 @@ export default function TechStack() {
         </div>
         <div className="SectionContent flex flex-col grow-1 w-full h-full p-8 border-b border-stone-900 gap-4">
           <p className="text-lg font-sans">
-            My primary design tool for everything from wireframes to
-            high-fidelity UI. I use Figma not just for visuals, but for system
-            thinking — components, variants, tokens, and collaborative handoff
-            with devs.
+            My primary design tool for everything from wireframes to high-fidelity UI. I use Figma
+            not just for visuals, but for system thinking — components, variants, tokens, and
+            collaborative handoff with devs.
           </p>
         </div>
       </div>
@@ -71,8 +78,8 @@ export default function TechStack() {
         </div>
         <div className="SectionContent flex flex-col grow-1 w-full h-full p-8 border-b border-stone-900 gap-4">
           <p className="text-lg font-sans">
-            Primarily Illustrator and Photoshop for custom illustrations, vector
-            assets, image editing, and visual polish beyond UI needs.
+            Primarily Illustrator and Photoshop for custom illustrations, vector assets, image
+            editing, and visual polish beyond UI needs.
           </p>
         </div>
       </div>
@@ -83,8 +90,8 @@ export default function TechStack() {
         </div>
         <div className="SectionContent flex flex-col grow-1 w-full h-full p-8 border-b border-stone-900 gap-4">
           <p className="text-lg font-sans">
-            My go-to stack for building interactive interfaces and components. I
-            use TypeScript for safe, predictable code and better dev experience.
+            My go-to stack for building interactive interfaces and components. I use TypeScript for
+            safe, predictable code and better dev experience.
           </p>
         </div>
       </div>
@@ -95,8 +102,8 @@ export default function TechStack() {
         </div>
         <div className="SectionContent flex flex-col grow-1 w-full h-full p-8 border-b border-stone-900 gap-4">
           <p className="text-lg font-sans">
-            I prefer utility-first CSS for its scalability and speed. I also
-            define and manage custom color tokens for consistent theming.
+            I prefer utility-first CSS for its scalability and speed. I also define and manage
+            custom color tokens for consistent theming.
           </p>
         </div>
       </div>
@@ -107,9 +114,8 @@ export default function TechStack() {
         </div>
         <div className="SectionContent flex flex-col grow-1 w-full h-full p-8 border-b border-stone-900 gap-4">
           <p className="text-lg font-sans">
-            I use it to build node-based interfaces and interactive canvas
-            systems — especially for data-driven or visual workflows (like
-            Hydrogen and Growth Agent dashboards).
+            I use it to build node-based interfaces and interactive canvas systems — especially for
+            data-driven or visual workflows (like Hydrogen and Growth Agent dashboards).
           </p>
         </div>
       </div>
@@ -120,8 +126,8 @@ export default function TechStack() {
         </div>
         <div className="SectionContent flex flex-col grow-1 w-full h-full p-8 border-b border-stone-900 gap-4">
           <p className="text-lg font-sans">
-            I use Storybook to document, test, and validate React components in
-            isolation — helping design and dev stay aligned.
+            I use Storybook to document, test, and validate React components in isolation — helping
+            design and dev stay aligned.
           </p>
         </div>
       </div>
@@ -132,9 +138,8 @@ export default function TechStack() {
         </div>
         <div className="SectionContent flex flex-col grow-1 w-full h-full p-8 border-b border-stone-900 gap-4">
           <p className="text-lg font-sans">
-            For visual regression testing and design system CI/CD. I integrate
-            it with Storybook to catch UI inconsistencies before they reach
-            production.
+            For visual regression testing and design system CI/CD. I integrate it with Storybook to
+            catch UI inconsistencies before they reach production.
           </p>
         </div>
       </div>
@@ -145,9 +150,8 @@ export default function TechStack() {
         </div>
         <div className="SectionContent flex flex-col grow-1 w-full h-full p-8 border-b border-stone-900 gap-4">
           <p className="text-lg font-sans">
-            Version control, code reviews, and team collaboration. I use feature
-            branching and commit conventions to keep everything clean and
-            maintainable.
+            Version control, code reviews, and team collaboration. I use feature branching and
+            commit conventions to keep everything clean and maintainable.
           </p>
         </div>
       </div>
@@ -158,9 +162,8 @@ export default function TechStack() {
         </div>
         <div className="SectionContent flex flex-col grow-1 w-full h-full p-8 border-stone-900 gap-4">
           <p className="text-lg font-sans">
-            I analyze behavioral and product data using Python, Pandas, and
-            Matplotlib. Great for making informed design decisions with real
-            usage data.
+            I analyze behavioral and product data using Python, Pandas, and Matplotlib. Great for
+            making informed design decisions with real usage data.
           </p>
         </div>
       </div>

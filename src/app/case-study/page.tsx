@@ -1,18 +1,26 @@
-'use client';
+import type { Metadata } from 'next';
+import React from 'react';
+import MenuItem from '@/components/MenuItem';
+import RowCard from '@/components/RowCard';
+import { Footer } from '@/components/Footer';
+import Image from 'next/image';
 
-import React, { useEffect } from "react";
-import MenuItem from "@/components/MenuItem";
-import RowCard from "@/components/RowCard";
-import { Footer } from "@/components/Footer";
-import Image from "next/image";
+export const metadata: Metadata = {
+  title: 'Case Studies | Oguzhan Ozcan',
+  description:
+    'Explore my design case studies including the Jotform 2FA implementation that improved user security and resulted in 15K+ user adoptions.',
+  alternates: {
+    canonical: 'https://o10n.design/case-study',
+  },
+  openGraph: {
+    title: 'Case Studies | Oguzhan Ozcan',
+    description:
+      'Explore my design case studies including the Jotform 2FA implementation that improved user security and resulted in 15K+ user adoptions.',
+    url: 'https://o10n.design/case-study',
+  },
+};
 
 export default function CaseStudy() {
-  useEffect(() => {
-    console.info(
-      "Greetings, I m Oğuzhan, a product designer that is presently working toward a front-end learning path with the goal of serving as a bridge between developers and designers. "
-    );
-  }, []);
-
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
       <div className="md:sticky md:top-0 md:z-10 flex flex-col md:flex-row w-auto border-b border-stone-900 bg-theme-primary">
@@ -60,14 +68,14 @@ export default function CaseStudy() {
           cardContent="Improving user security by implementing 2FA on Jotform which resulted in a 15K+ users adopting the feature."
           tags={[
             {
-              label: "Case Study",
-              type: "lime",
-              size: "large",
+              label: 'Case Study',
+              type: 'lime',
+              size: 'large',
             },
             {
-              label: "Security Feature",
-              type: "outline",
-              size: "large",
+              label: 'Security Feature',
+              type: 'outline',
+              size: 'large',
             },
           ]}
           to="/case-study/jotform-2fa"

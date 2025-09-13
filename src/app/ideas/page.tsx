@@ -1,18 +1,26 @@
-'use client';
+import type { Metadata } from 'next';
+import React from 'react';
+import MenuItem from '@/components/MenuItem';
+import RowCard from '@/components/RowCard';
+import { Footer } from '@/components/Footer';
+import Image from 'next/image';
 
-import React, { useEffect } from "react";
-import MenuItem from "@/components/MenuItem";
-import RowCard from "@/components/RowCard";
-import { Footer } from "@/components/Footer";
-import Image from "next/image";
+export const metadata: Metadata = {
+  title: 'Ideas | Oguzhan Ozcan',
+  description:
+    'Explore my design ideas and concepts including Brifl collaborative form building tool and Jotform Logbook internal company awareness tool.',
+  alternates: {
+    canonical: 'https://o10n.design/ideas',
+  },
+  openGraph: {
+    title: 'Ideas | Oguzhan Ozcan',
+    description:
+      'Explore my design ideas and concepts including Brifl collaborative form building tool and Jotform Logbook internal company awareness tool.',
+    url: 'https://o10n.design/ideas',
+  },
+};
 
 export default function Ideas() {
-  useEffect(() => {
-    console.info(
-      "Greetings, I m Oğuzhan, a product designer that is presently working toward a front-end learning path with the goal of serving as a bridge between developers and designers. "
-    );
-  }, []);
-
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
       <div className="md:sticky md:top-0 md:z-10 flex flex-col md:flex-row w-auto border-b border-stone-900 bg-theme-primary">
@@ -59,9 +67,9 @@ export default function Ideas() {
           cardContent="An open-source tool designed for designers, developers, writers, and photographers to create, share, and analyze forms seamlessly."
           tags={[
             {
-              label: "Idea",
-              type: "purple",
-              size: "large",
+              label: 'Idea',
+              type: 'purple',
+              size: 'large',
             },
           ]}
           to="/ideas/brifl"
@@ -82,17 +90,17 @@ export default function Ideas() {
           className="border-b-0"
           direction="left"
           cardTitle="Jotform Logbook | An internal tool for better company awareness"
-          cardContent="Jotform Logbook is an internal tool that helps Jotformers to be aware of what&apos;s happening in the company. It&apos;s a simple tool that helps us to be more transparent and aware of what&apos;s happening in the company."
+          cardContent="Jotform Logbook is an internal tool that helps Jotformers to be aware of what's happening in the company. It's a simple tool that helps us to be more transparent and aware of what's happening in the company."
           tags={[
             {
-              label: "Idea",
-              type: "purple",
-              size: "large",
+              label: 'Idea',
+              type: 'purple',
+              size: 'large',
             },
             {
-              label: "Company Awareness",
-              type: "outline",
-              size: "large",
+              label: 'Company Awareness',
+              type: 'outline',
+              size: 'large',
             },
           ]}
           to="/ideas/jotform-logbook"
