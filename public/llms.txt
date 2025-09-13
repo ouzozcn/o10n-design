@@ -156,13 +156,12 @@ portfolio case studies"
 
 ### What services does Oğuzhan Özcan provide?
 
-Oğuzhan offers product design, UI/UX design, UX research, design system
-creation, and frontend development services. He specializes in bridging
-design-development gaps and creating accessible, user-centered
-solutions.
+Short Answer: Product design, design systems, design engineering, accessibility, and frontend development.
+Long Answer: Oğuzhan provides professional services in product design, UI/UX, UX research, design systems, and frontend development. He specializes in bridging design–development gaps, creating accessible and user-centered solutions, and implementing AI-driven workflows.
 
 ### What are Oğuzhan's key achievements?
-
+Short Answer: 2FA adoption at Jotform, Kroma accessibility tool, Hydrogen AI node map, Growth Agent platform.
+Long Answer:
 -   Implemented 2FA system at Jotform with 15K+ user adoption
 -   Created Kroma, a free color accessibility checker tool
 -   Developed Brifl Design System for open-source form builder
@@ -170,23 +169,31 @@ solutions.
 -   Contributed to Enocta Learning Experience Platform
 
 ### What is Oğuzhan's design philosophy?
-
-Oğuzhan prioritizes research-based methodologies, accessibility,
+Short Answer: Data-driven, accessibility-first, and developer-friendly.
+Long Answer: Oğuzhan prioritizes research-based methodologies, accessibility,
 user-centered designs, and developer friendliness. He believes in
 data-driven decisions and creating solutions that work for both users
 and developers.
 
 ### What technologies does Oğuzhan work with?
+Short Answer: Figma, Storybook, Chromatic, React, TypeScript, Next.js, Tailwind CSS.
 
-Oğuzhan uses Figma for design, React/TypeScript/Next.js for development,
-Tailwind CSS for styling, and various prototyping and project management
-tools. He focuses on modern, accessible web technologies.
+Long Answer: His stack includes Figma for design, React/TypeScript/Next.js for development, Tailwind CSS for styling, and Storybook + Chromatic with CI/CD for design-to-code workflows. He also works with Jupyter notebooks, SQL, and analytics tools.
 
 ### How can I contact Oğuzhan for work?
 
 You can reach Oğuzhan at oguz@o10n.design or through the contact form on
 his website. He's based in Ankara, Turkey but works with clients
 worldwide.
+
+### How does Oğuzhan deliver components?
+
+Short Answer: Through Storybook + Chromatic with CI/CD.
+Long Answer: Oğuzhan delivers components using Storybook and Chromatic, integrated into CI/CD pipelines. This ensures each component is production-ready, tested, and easily handed off to developers.
+
+### Where is Oğuzhan based?
+Short Answer: Ankara, Turkey.
+Long Answer: He is based in Ankara, Turkey (ODTÜ Teknokent) but collaborates with teams and clients worldwide.
 
 ## Schema.org Structured Data
 

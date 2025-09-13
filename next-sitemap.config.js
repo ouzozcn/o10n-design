@@ -5,16 +5,19 @@ module.exports = {
   generateIndexSitemap: false, // Generate a single sitemap instead of sitemap index
   exclude: [
     '/opengraph-image.png', // Exclude image files from sitemap
-    '/docs/**', // Exclude Storybook docs
     '/_next/**',
     '/api/**'
+  ],
+  additionalPaths: async (config) => [
+    await config.transform(config, '/llms.txt'),
+    await config.transform(config, '/llms.md'),
   ],
   robotsTxtOptions: {
     policies: [
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/_next/', '/api/', '/docs/']
+        disallow: ['/_next/', '/api/']
       }
     ],
     additionalSitemaps: [

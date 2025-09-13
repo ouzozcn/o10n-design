@@ -159,6 +159,61 @@ export default function StructuredData() {
     },
     {
       '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'What services does Oğuzhan Özcan provide?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Oğuzhan provides product design, design systems, design engineering, accessibility, and frontend development services.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: "What are Oğuzhan's key achievements?",
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'He implemented Jotform’s 2FA UX (15K+ users), created Kroma accessibility tool, built Hydrogen (AI node map), designed Growth Agent (AI sales platform), and developed Brifl Design System.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: "What is Oğuzhan's design philosophy?",
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Data-driven, accessibility-first, and developer-friendly. He bridges design and engineering with scalable, real-world solutions.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What technologies does Oğuzhan use?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'He works with Figma, Storybook, Chromatic, React, TypeScript, Next.js, Tailwind CSS, Jupyter Notebooks, and analytics tools.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How does Oğuzhan deliver components?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Through Storybook + Chromatic integrated into CI/CD pipelines, ensuring developer-ready components.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Where is Oğuzhan based?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Ankara, Turkey (ODTÜ Teknokent), collaborating globally.',
+          },
+        },
+      ],
+    },
+
+    {
+      '@context': 'https://schema.org',
       '@type': 'SoftwareApplication',
       '@id': 'https://o10n.design/#kroma',
       name: 'Kroma | Color Blindness Accessibility Checker',
