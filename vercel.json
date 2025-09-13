@@ -22,5 +22,10 @@
                 }
             ]
         }
-    ]
+    ],
+    "functions": {
+        "app/**": {
+            "maxDuration": 30
+        }
+    }
 }

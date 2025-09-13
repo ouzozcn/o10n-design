@@ -1,18 +1,26 @@
-'use client';
+import type { Metadata } from 'next';
+import React from 'react';
+import MenuItem from '@/components/MenuItem';
+import { Footer } from '@/components/Footer';
+import Image from 'next/image';
+import MailIcon from '@mui/icons-material/Mail';
 
-import React, { useEffect } from "react";
-import MenuItem from "@/components/MenuItem";
-import { Footer } from "@/components/Footer";
-import Image from "next/image";
-import MailIcon from "@mui/icons-material/Mail";
+export const metadata: Metadata = {
+  title: 'Contact | Oguzhan Ozcan',
+  description:
+    'Get in touch with Oguzhan Ozcan, Analytics and Data-Driven Product Designer. Connect on LinkedIn, send an email, or follow on social media.',
+  alternates: {
+    canonical: 'https://o10n.design/contact',
+  },
+  openGraph: {
+    title: 'Contact | Oguzhan Ozcan',
+    description:
+      'Get in touch with Oguzhan Ozcan, Analytics and Data-Driven Product Designer. Connect on LinkedIn, send an email, or follow on social media.',
+    url: 'https://o10n.design/contact',
+  },
+};
 
 export default function Contact() {
-  useEffect(() => {
-    console.info(
-      "Greetings, I&apos;m Oğuzhan, a product designer that is presently working toward a front-end learning path with the goal of serving as a bridge between developers and designers. "
-    );
-  }, []);
-
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
       <div className="md:sticky md:top-0 md:z-10 flex flex-col md:flex-row w-auto border-b border-stone-900 bg-theme-primary">
@@ -71,9 +79,7 @@ export default function Contact() {
               className="w-6 h-6 mb-2"
             />
           </div>
-          <p className="text-lg text-center text-stone-900">
-            Connect on LinkedIn
-          </p>
+          <p className="text-lg text-center text-stone-900">Connect on LinkedIn</p>
         </a>
         <a
           href="mailto:oguz@o10n.design"
@@ -101,9 +107,7 @@ export default function Contact() {
               className="w-6 h-6 mb-2"
             />
           </div>
-          <p className="text-lg text-center text-stone-900">
-            Connect on GitHub
-          </p>
+          <p className="text-lg text-center text-stone-900">Connect on GitHub</p>
         </a>
         <a
           href="https://www.behance.net/oguzhanozcan"
@@ -120,9 +124,7 @@ export default function Contact() {
               className="w-6 h-6 mb-2"
             />
           </div>
-          <p className="text-lg text-center text-stone-900">
-            Connect on Behance
-          </p>
+          <p className="text-lg text-center text-stone-900">Connect on Behance</p>
         </a>
         <a
           href="https://dribbble.com/ouzozcn"
@@ -139,9 +141,7 @@ export default function Contact() {
               className="w-6 h-6 mb-2"
             />
           </div>
-          <p className="text-lg text-center text-stone-900">
-            Connect on Dribbble
-          </p>
+          <p className="text-lg text-center text-stone-900">Connect on Dribbble</p>
         </a>
       </div>
 
