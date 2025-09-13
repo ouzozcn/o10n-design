@@ -1,4 +1,4 @@
-# llms.txt - AI Agent & LLM Optimization Guide
+# llms.txt for Oguzhan Ozcan | Product Designer & Design Engineer
 
 ## Site Information
 

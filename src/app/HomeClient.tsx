@@ -9,7 +9,8 @@ import RowCard from '@/components/RowCard';
 import Footer from '@/components/Footer';
 import TopDivider from '@/components/TopDivider';
 import { Analytics } from '@vercel/analytics/react';
-
+import GitHubCalendar from 'react-github-calendar';
+import Button from '@/components/Button';
 const iconConfig = {
   sm: { height: 24, sizes: '24px' },
   md: { height: 32, sizes: '32px' },
@@ -57,7 +58,7 @@ export default function HomeClient() {
 
           <MenuItem
             to="/case-study"
-            className="lg:h-[268px] border-stone-900"
+            className="lg:h-[268px] border-stone-900 md:border-r-0"
             title="Case Studies"
             titleClassName="text-md md:text-xl lg:text-2xl"
             svg={
@@ -101,7 +102,7 @@ export default function HomeClient() {
 
           <MenuItem
             to="/experiment"
-            className="lg:h-[268px] border-stone-900"
+            className="lg:h-[268px] border-stone-900 md:border-r-0"
             title="Experiments"
             titleClassName="text-md md:text-xl lg:text-2xl"
             svg={
@@ -143,16 +144,13 @@ export default function HomeClient() {
             ]}
             to="/product/kroma"
             swapContent={
-              <div className="relative w-full h-full min-h-[200px]">
-                <Image
-                  src="/img/thumbs/thumb-kroma2.svg"
-                  alt="Kroma Color Accessibility Checker"
-                  fill
-                  className="object-contain"
-                  priority
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
+              <Image
+                src="/img/thumbs/thumb-kroma2.svg"
+                alt="Kroma accessibility checker interface showing color contrast validation"
+                width={1}
+                height={1}
+                className="w-[70%]"
+              />
             }
           />
           <RowCard
@@ -173,20 +171,87 @@ export default function HomeClient() {
             ]}
             to="/case-study/jotform-2fa"
             swapContent={
-              <div className="relative w-full h-full min-h-[200px]">
-                <Image
-                  src="/img/thumbs/thumb-jf2fa.svg"
-                  alt="Jotform 2FA Case Study Thumbnail"
-                  fill
-                  className="object-contain"
-                  priority
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
+              <Image
+                src="/img/thumbs/thumb-jf2fa.svg"
+                alt="Jotform 2FA implementation preview showing security interface"
+                width={1}
+                height={1}
+                className="h-full object-contain w-[90%]"
+              />
+            }
+          />
+          <div className="activity__map relative flex flex-col gap-8 w-full h-auto lg:min-h-[600px] p-12 md:p-16 justify-center items-center border-b border-stone-900 hover:bg-zinc-50 transition-all duration-300">
+            <div className="text-stone-900 text-xl text-center font-sans font-normal lg:text-3xl">
+              Bridging Design & Development
+            </div>
+            <div className="text-stone-900 text-sm text-center font-normal font-sans lg:text-base">
+              As I transition from product designer to design engineer, I'm actively building my
+              technical skills through consistent coding practice. This GitHub activity
+              visualization reflects my commitment to mastering front-end development while
+              maintaining my design perspective—creating experiences that are both beautiful and
+              functionally robust.
+            </div>
+
+            <div>
+              <GitHubCalendar
+                username="ouzozcn"
+                blockSize={16}
+                blockRadius={1}
+                colorScheme="light"
+                renderBlock={(block, activity) =>
+                  React.cloneElement(block, {
+                    'data-tooltip-id': 'github-activity',
+                    'data-tooltip-html': `${activity.count} activities on ${activity.date}`,
+                  })
+                }
+                theme={{
+                  light: ['#f5f5f4', '#d6d3d1', '#78716c', '#44403c', '#1c1917'],
+                  dark: ['#383838', '#4D455D', '#7DB9B6', '#F5E9CF', '#E96479'],
+                }}
+              />
+              <Tooltip id="github-activity" />
+            </div>
+            <Button
+              label="Let's Connect on GitHub"
+              to="https://github.com/ouzozcn"
+              target="_blank"
+              type="secondary"
+              endIcon={
+                <Image src="/assets/images/github.svg" alt="GitHub" width={24} height={24} />
+              }
+              ariaLabel="Button for Oğuzhan Özcan's GitHub Profile"
+            />
+          </div>
+
+          <RowCard
+            direction="left"
+            cardTitle="Jotform Logbook | An internal tool for better company awareness"
+            cardContent="Jotform Logbook is an internal tool that helps Jotformers to be aware of what's happening in the company. It's a simple tool that helps us to be more transparent and aware of what's happening in the company."
+            tags={[
+              {
+                label: 'Idea',
+                type: 'purple',
+                size: 'large',
+              },
+              {
+                label: 'Company Awareness',
+                type: 'outline',
+                size: 'large',
+              },
+            ]}
+            to="/ideas/jotform-logbook"
+            swapContent={
+              <Image
+                src="/img/thumbs/thumb-logbook.svg"
+                alt="Jotform Logbook interface showing company updates and notifications"
+                width={1}
+                height={1}
+                className="h-full object-contain w-[110%]"
+              />
             }
           />
           <RowCard
-            direction="left"
+            direction="right"
             cardTitle="brifl: Empowering Creators with Collaborative Form Building"
             cardContent="An open-source tool designed for designers, developers, writers, and photographers to create, share, and analyze forms seamlessly."
             tags={[
@@ -198,20 +263,17 @@ export default function HomeClient() {
             ]}
             to="/ideas/brifl"
             swapContent={
-              <div className="relative w-full h-full min-h-[200px]">
-                <Image
-                  src="/img/thumbs/thumb-brifl2.svg"
-                  alt="Brifl Form Building Tool"
-                  fill
-                  className="object-contain"
-                  priority
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
+              <Image
+                src="/img/thumbs/thumb-brifl2.svg"
+                alt="Brifl form builder interface showing collaborative editing features"
+                width={1}
+                height={1}
+                className=" h-full object-contain w-[120%]"
+              />
             }
           />
           <RowCard
-            direction="right"
+            direction="left"
             cardTitle="Brifl Design System"
             cardContent="Allowing users to manage their integrations in one place by building an integration hub which increased user retention by 40% within six months."
             tags={[
