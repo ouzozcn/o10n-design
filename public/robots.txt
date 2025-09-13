@@ -4,7 +4,6 @@ Allow: /
 Disallow: /_next/
 Disallow: /api/
 
-
 # Host
 Host: https://o10n.design
 
