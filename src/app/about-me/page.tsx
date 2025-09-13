@@ -83,7 +83,7 @@ export default function AboutMe() {
           <p className="text-lg font-sans">
             You can view my resume if you like:{' '}
             <a
-              href="https://read.cv/ouzozcn"
+              href="./assets/documents/oguzhan_ozcan_curriculum_vitae.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 font-bold hover:text-blue-800 hover:underline"
