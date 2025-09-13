@@ -1,156 +1,212 @@
 export default function StructuredData() {
-  const personSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Person',
-    '@id': 'https://o10n.design/#person',
-    name: 'Oğuzhan Özcan',
-    alternateName: ['Oguzhan Ozcan', 'Oğuz Özcan'],
-    jobTitle: 'Product Designer',
-    worksFor: {
-      '@type': 'Organization',
-      name: 'Jotform',
-    },
-    description:
-      'Analytics and data-driven product designer who prioritizes research-based methodologies, accessibility, user-centered designs, and developer friendliness.',
-    url: 'https://o10n.design',
-    mainEntityOfPage: 'https://o10n.design',
-    image: {
-      '@type': 'ImageObject',
-      url: 'https://o10n.design/assets/images/og-image.jpg',
-      width: 400,
-      height: 400,
-    },
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: 'Ankara',
-      addressCountry: 'TR',
-      postalCode: '06800',
-      streetAddress: 'Üniversiteler Mah. ODTÜ Teknokent',
-    },
-    sameAs: [
-      'https://linkedin.com/in/ouzozcn/',
-      'https://github.com/ouzozcn',
-      'https://www.behance.net/oguzhanozcan',
-      'https://dribbble.com/ouzozcn',
-      'https://medium.com/@ouzozcn',
-    ],
-    knowsAbout: [
-      'Product Design',
-      'Design Engineering',
-      'User Experience Design',
-      'User Interface Design',
-      'User Testing',
-      'Usability',
-      'A11y',
-      'UI Development',
-      'Frontend Development',
-      'Product Management',
-      'Design Systems',
-      'Accessibility',
-      'User Research',
-      'Data Analytics',
-      'Prototyping',
-      'Wireframing',
-      'Visual Design',
-      'Interaction Design',
-    ],
-
-    skills: [
-      'Figma',
-      'Storybook',
-      'Chromatic',
-      'Framer',
-      'Webflow',
-      'Adobe Creative Suite',
-      'Jira',
-      'Confluence',
-      'Notion',
-      'Prototyping',
-      'User Research',
-      'HTML/CSS',
-      'JavaScript',
-      'React',
-      'Next.js',
-      'TypeScript',
-      'Tailwind CSS',
-      'Jupyter Notebooks',
-      'SQL',
-      'Git',
-      'GitHub',
-      'Google Analytics',
-      'Maze',
-      'Optimal Workshop',
-      'UserZoom',
-      'UserTesting',
-      'Usability Hub',
-      'Hotjar',
-      'Google Optimize',
-      'Google Tag Manager',
-    ],
-
-    workLocation: {
-      '@type': 'Place',
-      name: 'Ankara, Turkey',
-    },
-    alumniOf: [
-      {
+  const structuredData = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Person',
+      '@id': 'https://o10n.design/#person',
+      name: 'Oğuzhan Özcan',
+      alternateName: ['Oguzhan Ozcan', 'Oğuz Özcan'],
+      jobTitle: 'Product Designer & Design Engineer',
+      description:
+        'Research-based product designer and design engineer specializing in SaaS B2B, design systems, and AI-driven workflows. Experienced in bridging design–development gaps with developer-friendly components, scalable systems, and accessibility-first solutions.',
+      worksFor: {
+        '@type': 'Organization',
+        name: 'Jotform Enterprise',
+        url: 'https://jotform.com/enterprise',
+      },
+      url: 'https://o10n.design',
+      mainEntityOfPage: 'https://o10n.design',
+      image: {
+        '@type': 'ImageObject',
+        url: 'https://o10n.design/assets/images/og-image.jpg',
+        width: 400,
+        height: 400,
+      },
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Ankara',
+        addressCountry: 'TR',
+        postalCode: '06800',
+        streetAddress: 'ODTÜ Teknokent',
+      },
+      sameAs: [
+        'https://linkedin.com/in/ouzozcn/',
+        'https://github.com/ouzozcn',
+        'https://www.behance.net/oguzhanozcan',
+        'https://dribbble.com/ouzozcn',
+        'https://medium.com/@ouzozcn',
+      ],
+      knowsAbout: [
+        'Product Design',
+        'Design Engineering',
+        'User Experience Design',
+        'User Interface Design',
+        'Frontend Development',
+        'Design Systems',
+        'Accessibility',
+        'AI Agents',
+        'Lead Scoring',
+        'Security UX',
+        'Storybook',
+        'Chromatic',
+        'CI/CD Pipelines',
+        'Figma',
+        'React',
+        'TypeScript',
+        'Tailwind CSS',
+        'Next.js',
+      ],
+      skills: [
+        'Figma',
+        'Storybook',
+        'Chromatic',
+        'Adobe Creative Suite',
+        'Jira',
+        'Confluence',
+        'Notion',
+        'HTML/CSS',
+        'JavaScript',
+        'React',
+        'Next.js',
+        'TypeScript',
+        'Tailwind CSS',
+        'Jupyter Notebooks',
+        'SQL',
+        'Git',
+        'GitHub',
+        'Google Analytics',
+      ],
+      alumniOf: {
         '@type': 'EducationalOrganization',
         name: 'Middle East Technical University',
+        url: 'https://metu.edu.tr',
       },
-    ],
-    contactPoint: {
-      '@type': 'ContactPoint',
-      contactType: 'professional',
-      email: 'oguz@o10n.design',
-      url: 'https://o10n.design/contact',
+      contactPoint: {
+        '@type': 'ContactPoint',
+        contactType: 'professional',
+        email: 'oguz@o10n.design',
+        url: 'https://o10n.design/contact',
+      },
+      hasOccupation: {
+        '@type': 'Occupation',
+        name: 'Product Designer & Design Engineer',
+        description:
+          'Designs user-centered, scalable digital products and leads design-to-code workflows.',
+      },
     },
-  };
-
-  const professionalServiceSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'ProfessionalService',
-    '@id': 'https://o10n.design/#service',
-    name: 'Product Design Services',
-    description:
-      'Product design, UI/UX design, UX research, and design engineering services for SaaS, DaaS, PaaS products',
-    provider: {
-      '@id': 'https://o10n.design/#person',
+    {
+      '@context': 'https://schema.org',
+      '@type': 'ProfessionalService',
+      '@id': 'https://o10n.design/#service',
+      name: 'Product Design & Design Engineering Services',
+      description:
+        'Professional SaaS-focused product design, design engineering, accessibility consulting, and AI-driven workflows.',
+      provider: {
+        '@id': 'https://o10n.design/#person',
+      },
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Ankara',
+        addressCountry: 'TR',
+        postalCode: '06800',
+        streetAddress: 'ODTÜ Teknokent',
+      },
+      areaServed: 'Worldwide',
+      serviceType: [
+        'Product Design',
+        'Design Systems',
+        'UI/UX Design',
+        'Accessibility Consulting',
+        'Design Engineering',
+        'Frontend Development',
+        'UX Research',
+        'AI/LLM Experiments',
+        'Design-Development Collaboration',
+      ],
+      offers: {
+        '@type': 'Offer',
+        description:
+          'Comprehensive product design, design systems, and AI-driven design engineering services.',
+        availability: 'https://schema.org/InStock',
+      },
     },
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: 'Ankara',
-      addressCountry: 'TR',
-      addressRegion: 'Ankara',
-      postalCode: '06800',
-      streetAddress: 'Üniversiteler Mah. ODTÜ Teknokent',
+    {
+      '@context': 'https://schema.org',
+      '@type': 'CreativeWork',
+      '@id': 'https://o10n.design/#portfolio',
+      name: 'Oğuzhan Özcan Portfolio',
+      description:
+        'Portfolio showcasing SaaS product design, case studies, and AI-driven design engineering experiments.',
+      author: {
+        '@id': 'https://o10n.design/#person',
+      },
+      creator: {
+        '@id': 'https://o10n.design/#person',
+      },
+      publisher: {
+        '@id': 'https://o10n.design/#person',
+      },
+      url: 'https://o10n.design',
+      mainEntity: {
+        '@id': 'https://o10n.design/#person',
+      },
+      genre: ['Portfolio', 'Case Study', 'AI Experiment', 'Technical Article'],
+      keywords:
+        'product design, design engineering, SaaS UX, accessibility, AI agents, Storybook handoff',
+      inLanguage: 'en-US',
+      datePublished: '2025-01-01',
+      dateModified: '2025-09-13',
     },
-    areaServed: 'Worldwide',
-    serviceType: [
-      'Product Design',
-      'UI/UX Design',
-      'User Interface Design',
-      'User Experience Design',
-      'Design Systems',
-      'Frontend Development',
-      'Design Engineering',
-    ],
-    offers: {
-      '@type': 'Offer',
-      description: 'Product design, UI/UX design, UX research, and design engineering services',
-      availability: 'https://schema.org/InStock',
+    {
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      '@id': 'https://o10n.design/#kroma',
+      name: 'Kroma | Color Blindness Accessibility Checker',
+      applicationCategory: 'Accessibility Tool',
+      operatingSystem: 'Web-based',
+      description:
+        'Free tool for designers and developers to test UI designs for various types of color blindness.',
+      url: 'https://usekroma.com',
+      creator: {
+        '@id': 'https://o10n.design/#person',
+      },
+      offers: {
+        '@type': 'Offer',
+        price: '0',
+        priceCurrency: 'USD',
+        availability: 'https://schema.org/InStock',
+      },
     },
-  };
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Project',
+      '@id': 'https://o10n.design/#hydrogen',
+      name: 'Hydrogen',
+      description:
+        'AI-driven node map project for SaaS lead scoring and intent analysis, with 1000+ signal properties and interactive visualization.',
+      creator: {
+        '@id': 'https://o10n.design/#person',
+      },
+      keywords: ['AI Agent', 'Lead Scoring', 'Design Engineering', 'Visualization'],
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Project',
+      '@id': 'https://o10n.design/#growth-agent',
+      name: 'Growth Agent',
+      description:
+        'AI-powered enterprise sales and lead generation platform for automating customer pipelines.',
+      creator: {
+        '@id': 'https://o10n.design/#person',
+      },
+      keywords: ['AI Agents', 'Sales Automation', 'Lead Generation', 'Enterprise SaaS'],
+    },
+  ];
 
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchema) }}
-      />
-    </>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+    />
   );
 }
