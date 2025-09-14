@@ -94,7 +94,7 @@ export default function Products() {
         <RowCard
           direction="right"
           cardTitle="Brifl Design System"
-          cardContent="Allowing users to manage their integrations in one place by building an integration hub which increased user retention by 40% within six months."
+          cardContent="A modular, React-friendly component library based on atomic design principles. Contains over 30 components and 200+ states and variants."
           tags={[
             {
               label: 'Product',
