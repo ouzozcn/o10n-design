@@ -12,14 +12,14 @@ import MetaInfo from '@/components/MetaInfo';
 import TextLink from '@/components/TextLink';
 
 export const metadata: Metadata = {
-  title: 'Developer Friendly UI Component Design | Oguzhan Ozcan',
+  title: 'Developer Friendly UI Component Design | Oğuzhan Özcan',
   description:
     'Learn how to design UI components that are developer-friendly by following simple rules for auto-layout, meaningful layer names, and component-driven design principles.',
   alternates: {
     canonical: 'https://o10n.design/writings/dev-friendly-component-design',
   },
   openGraph: {
-    title: 'Developer Friendly UI Component Design | Oguzhan Ozcan',
+    title: 'Developer Friendly UI Component Design | Oğuzhan Özcan',
     description:
       'Learn how to design UI components that are developer-friendly by following simple rules for auto-layout, meaningful layer names, and component-driven design principles.',
     url: 'https://o10n.design/writings/dev-friendly-component-design',

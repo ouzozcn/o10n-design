@@ -6,14 +6,14 @@ import { Footer } from '@/components/Footer';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Ideas | Oguzhan Ozcan',
+  title: 'Ideas | Oğuzhan Özcan',
   description:
     'Explore my design ideas and concepts including Brifl collaborative form building tool and Jotform Logbook internal company awareness tool.',
   alternates: {
     canonical: 'https://o10n.design/ideas',
   },
   openGraph: {
-    title: 'Ideas | Oguzhan Ozcan',
+    title: 'Ideas | Oğuzhan Özcan',
     description:
       'Explore my design ideas and concepts including Brifl collaborative form building tool and Jotform Logbook internal company awareness tool.',
     url: 'https://o10n.design/ideas',

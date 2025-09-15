@@ -43,7 +43,7 @@ export default function CookiePolicy() {
       </div>
       <div className="PageContent flex flex-col p-8 md:p-16 w-full text-stone-900 ">
         <p className="mb-4">
-          This Cookie Policy explains how Oguzhan Ozcan | Product Designer ("Company," "we," "us,"
+          This Cookie Policy explains how Oğuzhan Özcan | Product Designer ("Company," "we," "us,"
           and "our") uses cookies and similar technologies to recognize you when you visit our
           website at https://o10n.design ("Website"). It explains what these technologies are and
           why we use them, as well as your rights to control our use of them.
@@ -60,7 +60,7 @@ export default function CookiePolicy() {
             websites work, or to work more efficiently, as well as to provide reporting information.
           </p>
           <p className="mb-4">
-            Cookies set by the website owner (in this case, Oguzhan Ozcan | Product Designer) are
+            Cookies set by the website owner (in this case, Oğuzhan Özcan | Product Designer) are
             called "first-party cookies." Cookies set by parties other than the website owner are
             called "third-party cookies." Third-party cookies enable third-party features or
             functionality to be provided on or through the website (e.g., advertising, interactive

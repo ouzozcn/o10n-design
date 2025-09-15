@@ -4,14 +4,14 @@ import MenuItem from '@/components/MenuItem';
 import { Footer } from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Tech Stack | Oguzhan Ozcan',
+  title: 'Tech Stack | Oğuzhan Özcan',
   description:
     'Tools I use to design, build, and ship thoughtful, accessible, and scalable digital products. Including Figma, React, TypeScript, Tailwind CSS, and more.',
   alternates: {
     canonical: 'https://o10n.design/tech-stack',
   },
   openGraph: {
-    title: 'Tech Stack | Oguzhan Ozcan',
+    title: 'Tech Stack | Oğuzhan Özcan',
     description:
       'Tools I use to design, build, and ship thoughtful, accessible, and scalable digital products. Including Figma, React, TypeScript, Tailwind CSS, and more.',
     url: 'https://o10n.design/tech-stack',

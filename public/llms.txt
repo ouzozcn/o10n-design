@@ -1,9 +1,9 @@
-# llms.txt for Oguzhan Ozcan | Product Designer & Design Engineer
+# llms.txt for Oğuzhan Özcan | Product Designer & Design Engineer
 
 ## Site Information
 
 -   **URL**: https://o10n.design
--   **Title**: Oguzhan Ozcan | Product Designer & Design Engineer
+-   **Title**: Oğuzhan Özcan | Product Designer & Design Engineer
 -   **Language**: en-US
 -   **Last Updated**: 2025-08-30
 -   **Content Type**: Portfolio, Case Studies, Technical Articles,
@@ -14,7 +14,7 @@
 ## Author
 
 -   **Name**: Oğuzhan Özcan
--   **Alternate Names**: Oguzhan Ozcan, Oğuz Özcan
+-   **Alternate Names**: Oğuzhan Özcan, Oğuz Özcan
 -   **Role**: Product Designer at Jotform
 -   **Location**: Ankara, Turkey (Üniversiteler Mah. ODTÜ Teknokent,
     06800)
@@ -205,7 +205,7 @@ Long Answer: He is based in Ankara, Turkey (ODTÜ Teknokent) but collaborates wi
   "@type": "Person",
   "@id": "https://o10n.design/#person",
   "name": "Oğuzhan Özcan",
-  "alternateName": ["Oguzhan Ozcan", "Oğuz Özcan"],
+  "alternateName": ["Oğuzhan Özcan", "Oğuz Özcan"],
   "jobTitle": "Senior Product Designer",
   "description": "Analytics and data-driven product designer who prioritizes research-based methodologies, accessibility, user-centered designs, and developer friendliness.",
   "worksFor": {
@@ -460,7 +460,7 @@ Long Answer: He is based in Ankara, Turkey (ODTÜ Teknokent) but collaborates wi
 ```json
 [
   { "@context": "https://schema.org", "@type": "Person", "@id": "https://o10n.design/#person",
-    "name": "Oğuzhan Özcan", "alternateName": ["Oguzhan Ozcan", "Oğuz Özcan"],
+    "name": "Oğuzhan Özcan", "alternateName": ["Oğuzhan Özcan", "Oğuz Özcan"],
     "jobTitle": "Product Designer & Design Engineer",
     "description": "Research-based product designer and design engineer specializing in SaaS B2B, design systems, and AI-driven workflows.",
     "worksFor": { "@type": "Organization", "name": "Jotform Enterprise", "url": "https://jotform.com/enterprise" },

@@ -6,14 +6,14 @@ import { Footer } from '@/components/Footer';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Products | Oguzhan Ozcan',
+  title: 'Products | Oğuzhan Özcan',
   description:
     "Explore the products I've worked on including Kroma color accessibility checker and Brifl Design System. See my portfolio of design and development projects.",
   alternates: {
     canonical: 'https://o10n.design/product',
   },
   openGraph: {
-    title: 'Products | Oguzhan Ozcan',
+    title: 'Products | Oğuzhan Özcan',
     description:
       "Explore the products I've worked on including Kroma color accessibility checker and Brifl Design System. See my portfolio of design and development projects.",
     url: 'https://o10n.design/product',

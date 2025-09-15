@@ -6,14 +6,14 @@ import { Footer } from '@/components/Footer';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Case Studies | Oguzhan Ozcan',
+  title: 'Case Studies | Oğuzhan Özcan',
   description:
     'Explore my design case studies including the Jotform 2FA implementation that improved user security and resulted in 15K+ user adoptions.',
   alternates: {
     canonical: 'https://o10n.design/case-study',
   },
   openGraph: {
-    title: 'Case Studies | Oguzhan Ozcan',
+    title: 'Case Studies | Oğuzhan Özcan',
     description:
       'Explore my design case studies including the Jotform 2FA implementation that improved user security and resulted in 15K+ user adoptions.',
     url: 'https://o10n.design/case-study',

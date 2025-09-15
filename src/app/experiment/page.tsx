@@ -6,14 +6,14 @@ import { Footer } from '@/components/Footer';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Experiments | Oguzhan Ozcan',
+  title: 'Experiments | Oğuzhan Özcan',
   description:
     'Explore my design and development experiments including Solart and other innovative projects that push the boundaries of user interface design.',
   alternates: {
     canonical: 'https://o10n.design/experiment',
   },
   openGraph: {
-    title: 'Experiments | Oguzhan Ozcan',
+    title: 'Experiments | Oğuzhan Özcan',
     description:
       'Explore my design and development experiments including Solart and other innovative projects that push the boundaries of user interface design.',
     url: 'https://o10n.design/experiment',
