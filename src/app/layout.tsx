@@ -12,7 +12,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: 'Oguzhan Ozcan | Analytics and Data-Driven Product Designer',
+  title: 'Oğuzhan Özcan | Analytics and Data-Driven Product Designer',
   description:
     'Analytics and data-driven product designer who prioritizes research-based methodologies, accessibility, user-centered designs, and developer friendliness.',
   keywords: [
@@ -47,14 +47,14 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://o10n.design',
-    siteName: 'Oguzhan Ozcan | Analytics and Data-Driven Product Designer',
-    title: 'Oguzhan Ozcan | Analytics and Data-Driven Product Designer',
+    siteName: 'Oğuzhan Özcan | Analytics and Data-Driven Product Designer',
+    title: 'Oğuzhan Özcan | Analytics and Data-Driven Product Designer',
     description:
       'Analytics and data-driven product designer who prioritizes research-based methodologies, accessibility, user-centered designs, and developer friendliness.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Oguzhan Ozcan | Analytics and Data-Driven Product Designer',
+    title: 'Oğuzhan Özcan | Analytics and Data-Driven Product Designer',
     description:
       'Analytics and data-driven product designer who prioritizes research-based methodologies, accessibility, user-centered designs, and developer friendliness.',
   },

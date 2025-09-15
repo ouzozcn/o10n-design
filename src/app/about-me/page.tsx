@@ -4,16 +4,16 @@ import MenuItem from '@/components/MenuItem';
 import { Footer } from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'About Me | Oguzhan Ozcan',
+  title: 'About Me | Oğuzhan Özcan',
   description:
-    'Learn about Oguzhan Ozcan, a self-taught product designer with a physics background, 5+ years of experience designing complex SaaS products, and passion for systems, accessibility, and AI.',
+    'Learn about Oğuzhan Özcan, a self-taught product designer with a physics background, 5+ years of experience designing complex SaaS products, and passion for systems, accessibility, and AI.',
   alternates: {
     canonical: 'https://o10n.design/about-me',
   },
   openGraph: {
-    title: 'About Me | Oguzhan Ozcan',
+    title: 'About Me | Oğuzhan Özcan',
     description:
-      'Learn about Oguzhan Ozcan, a self-taught product designer with a physics background, 5+ years of experience designing complex SaaS products, and passion for systems, accessibility, and AI.',
+      'Learn about Oğuzhan Özcan, a self-taught product designer with a physics background, 5+ years of experience designing complex SaaS products, and passion for systems, accessibility, and AI.',
     url: 'https://o10n.design/about-me',
   },
 };

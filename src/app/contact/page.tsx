@@ -6,16 +6,16 @@ import Image from 'next/image';
 import MailIcon from '@mui/icons-material/Mail';
 
 export const metadata: Metadata = {
-  title: 'Contact | Oguzhan Ozcan',
+  title: 'Contact | Oğuzhan Özcan',
   description:
-    'Get in touch with Oguzhan Ozcan, Analytics and Data-Driven Product Designer. Connect on LinkedIn, send an email, or follow on social media.',
+    'Get in touch with Oğuzhan Özcan, Analytics and Data-Driven Product Designer. Connect on LinkedIn, send an email, or follow on social media.',
   alternates: {
     canonical: 'https://o10n.design/contact',
   },
   openGraph: {
-    title: 'Contact | Oguzhan Ozcan',
+    title: 'Contact | Oğuzhan Özcan',
     description:
-      'Get in touch with Oguzhan Ozcan, Analytics and Data-Driven Product Designer. Connect on LinkedIn, send an email, or follow on social media.',
+      'Get in touch with Oğuzhan Özcan, Analytics and Data-Driven Product Designer. Connect on LinkedIn, send an email, or follow on social media.',
     url: 'https://o10n.design/contact',
   },
 };

@@ -5,7 +5,7 @@ export default function StructuredData() {
       '@type': 'Person',
       '@id': 'https://o10n.design/#person',
       name: 'Oğuzhan Özcan',
-      alternateName: ['Oguzhan Ozcan', 'Oğuz Özcan'],
+      alternateName: ['Oğuzhan Özcan', 'Oğuz Özcan'],
       jobTitle: 'Product Designer & Design Engineer',
       description:
         'Research-based product designer and design engineer specializing in SaaS B2B, design systems, and AI-driven workflows. Experienced in bridging design–development gaps with developer-friendly components, scalable systems, and accessibility-first solutions.',
