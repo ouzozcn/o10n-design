@@ -11,12 +11,12 @@ import TopDivider from '@/components/TopDivider';
 import { Analytics } from '@vercel/analytics/react';
 import GitHubCalendar from 'react-github-calendar';
 import Button from '@/components/Button';
+import RoughAnnotate from '@/components/rough-notation/RoughAnnotate';
 const iconConfig = {
   sm: { height: 24, sizes: '24px' },
   md: { height: 32, sizes: '32px' },
   lg: { height: 72, sizes: '72px' },
 };
-
 export default function HomeClient() {
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
@@ -129,7 +129,16 @@ export default function HomeClient() {
           <RowCard
             direction="left"
             cardTitle="Kroma | Color Blindness Accessibility Checker for User Interfaces"
-            cardContent="Kroma is a free color accessibility checker for those who works on the user interface. It's the only free tool which offer limitless color accessibility checks."
+            cardContent={
+              <>
+                Kroma is a free{' '}
+                <RoughAnnotate type="underline" color="#0284c7" padding={2}>
+                  color accessibility checker
+                </RoughAnnotate>{' '}
+                for those who works on the user interface. It's the only free tool which offer
+                limitless color accessibility checks.
+              </>
+            }
             tags={[
               {
                 label: 'Product',
@@ -180,16 +189,19 @@ export default function HomeClient() {
               />
             }
           />
-          <div className="activity__map relative flex flex-col gap-8 w-full h-auto lg:min-h-[600px] p-12 md:p-16 justify-center items-center border-b border-stone-900 hover:bg-zinc-50 transition-all duration-300">
-            <div className="text-stone-900 text-xl text-center font-sans font-normal lg:text-3xl">
-              Bridging Design & Development
+          <div className="activity__map relative flex flex-col gap-8 w-full h-auto lg:min-h-[600px] p-12 md:p-16 justify-center items-center border-b bg-stone-800  border-stone-900  ">
+            <div className="text-lime-200 text-xl text-center font-sans font-normal lg:text-3xl">
+              My Design Engineer Journey
             </div>
-            <div className="text-stone-900 text-sm text-center font-normal font-sans lg:text-base">
-              As I transition from product designer to design engineer, I'm actively building my
-              technical skills through consistent coding practice. This GitHub activity
-              visualization reflects my commitment to mastering front-end development while
-              maintaining my design perspective—creating experiences that are both beautiful and
-              functionally robust.
+            <div className="text-lime-50 text-sm text-center font-normal font-sans lg:text-base">
+              As I transition from product designer to{' '}
+              <RoughAnnotate type="box" padding={3}>
+                design engineer
+              </RoughAnnotate>
+              , I'm actively building my technical skills through consistent coding practice. This
+              GitHub activity visualization reflects my commitment to mastering front-end
+              development while maintaining my design perspective—creating experiences that are both
+              beautiful and functionally robust.
             </div>
 
             <div>
@@ -197,7 +209,7 @@ export default function HomeClient() {
                 username="ouzozcn"
                 blockSize={16}
                 blockRadius={1}
-                colorScheme="light"
+                colorScheme="dark"
                 renderBlock={(block, activity) =>
                   React.cloneElement(block, {
                     'data-tooltip-id': 'github-activity',
@@ -206,7 +218,7 @@ export default function HomeClient() {
                 }
                 theme={{
                   light: ['#f5f5f4', '#d6d3d1', '#78716c', '#44403c', '#1c1917'],
-                  dark: ['#383838', '#4D455D', '#7DB9B6', '#F5E9CF', '#E96479'],
+                  dark: ['#292524', '#365314', '#3f6212', '#65a30d', '#a3e635'],
                 }}
               />
               <Tooltip id="github-activity" />
@@ -217,9 +229,10 @@ export default function HomeClient() {
               target="_blank"
               type="secondary"
               endIcon={
-                <Image src="/assets/images/github.svg" alt="GitHub" width={24} height={24} />
+                <Image src="/assets/images/github_dark.svg" alt="GitHub" width={24} height={24} />
               }
               ariaLabel="Button for Oğuzhan Özcan's GitHub Profile"
+              className="border-lime-200 text-lime-200 hover:bg-stone-900"
             />
           </div>
 

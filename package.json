@@ -28,6 +28,7 @@
     "react-github-calendar": "^4.5.10",
     "react-spinners": "^0.17.0",
     "react-tooltip": "^5.28.1",
+    "rough-notation": "^0.5.1",
     "swiper": "^11.2.8"
   },
   "devDependencies": {
