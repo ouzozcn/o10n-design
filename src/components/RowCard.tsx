@@ -1,14 +1,14 @@
 'use client';
 
-import React from "react";
-import Link from "next/link";
-import Tag from "./Tag";
-import { TagProps } from "./Tag";
+import React from 'react';
+import Link from 'next/link';
+import Tag from './Tag';
+import { TagProps } from './Tag';
 
 interface RowCardProps {
-  direction: "right" | "left";
+  direction: 'right' | 'left';
   cardTitle: string;
-  cardContent?: string;
+  cardContent?: React.ReactNode;
   swapContent?: React.ReactNode;
   tags?: TagProps[];
   onClick?: () => void;
@@ -26,45 +26,45 @@ const RowCard: React.FC<RowCardProps> = ({
   to,
 }) => {
   const containerClasses = [
-    "relative flex flex-col w-full h-auto lg:min-h-[600px] p-12 md:p-16",
-    "hover:bg-amber-200 transition-all duration-300",
-    "justify-start items-center gap-4 border-b border-stone-900",
-    direction === "right" ? "lg:flex-row-reverse" : "lg:flex-row",
-    "lg:h-140 lg:gap-8",
-    className
-  ].filter(Boolean).join(" ");
+    'relative flex flex-col w-full h-auto lg:min-h-[600px] p-12 md:p-16',
+    'hover:bg-amber-200 transition-all duration-300',
+    'justify-start items-center gap-4 border-b border-stone-900',
+    direction === 'right' ? 'lg:flex-row-reverse' : 'lg:flex-row',
+    'lg:h-140 lg:gap-8',
+    className,
+  ]
+    .filter(Boolean)
+    .join(' ');
 
   return (
     <div className={containerClasses}>
       {swapContent && (
         <div className="flex w-full h-auto justify-center items-center lg:h-full">
           <div className="max-w-[320px] md:max-w-[400px] lg:max-w-[480px] max-h-[320px] md:max-h-[400px] lg:max-h-[480px] w-full h-full flex items-center justify-center">
-          {swapContent}
+            {swapContent}
           </div>
         </div>
       )}
       <div className="flex w-full flex-col justify-start items-start">
         <div className="flex flex-col items-start space-y-3">
-          <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
-            {cardTitle}
-          </h2>
+          <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">{cardTitle}</h2>
           {cardContent && (
             <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
-            {cardContent}
+              {cardContent}
             </p>
           )}
           {tags.length > 0 && (
-          <div className="flex justify-start items-center gap-2 flex-wrap">
-            {tags.map((tagProps, index) => (
-              <Tag key={index} {...tagProps} />
-            ))}
-          </div>
+            <div className="flex justify-start items-center gap-2 flex-wrap">
+              {tags.map((tagProps, index) => (
+                <Tag key={index} {...tagProps} />
+              ))}
+            </div>
           )}
         </div>
       </div>
       {to && (
-        <Link 
-          href={to} 
+        <Link
+          href={to}
           className="absolute inset-0 w-full h-full"
           aria-label={`View details for ${cardTitle}`}
         />

@@ -6,3 +6,40 @@
   .text-stone-900:hover .icon-hidden {
     visibility: visible;
   }
+
+  /* GitHubCalendar text color customization */
+  .react-activity-calendar text,
+  .react-activity-calendar .calendar-month-label,
+  .react-activity-calendar .calendar-legend-text,
+  .calendar-graph text,
+  .react-activity-calendar svg text,
+  .react-activity-calendar .calendar-legend,
+  .react-activity-calendar .calendar-legend text {
+    fill: #ecfccb !important; /* lime-200 */
+  }
+  
+  /* Target specific GitHubCalendar classes */
+  .react-activity-calendar__count,
+  .react-activity-calendar__count text,
+  .react-activity-calendar__count * {
+    color: #ecfccb !important; /* lime-200 */
+    fill: #ecfccb !important; /* lime-200 */
+  }
+.react-activity-calendar__legend-colors text {
+  color: #ecfccb !important; /* lime-200 */
+  fill: #ecfccb !important; /* lime-200 */
+}
+
+/* Target only text elements in legend, not the colored squares */
+.github-calendar-wrapper .react-activity-calendar__legend-colors text {
+  color: #ecfccb !important; /* lime-200 */
+  fill: #ecfccb !important; /* lime-200 */
+}
+
+/* Target legend text specifically */
+.github-calendar-wrapper .react-activity-calendar__legend text,
+.github-calendar-wrapper .react-activity-calendar__legend span,
+.github-calendar-wrapper .react-activity-calendar__legend div {
+  color: #ecfccb !important; /* lime-200 */
+  fill: #ecfccb !important; /* lime-200 */
+}
