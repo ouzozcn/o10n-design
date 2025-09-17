@@ -232,7 +232,7 @@ export default function HomeClient() {
                 <Image src="/assets/images/github_dark.svg" alt="GitHub" width={24} height={24} />
               }
               ariaLabel="Button for Oğuzhan Özcan's GitHub Profile"
-              className="border-lime-200 text-lime-200 hover:bg-stone-900"
+              className="hover:bg-stone-900 connect-github-button"
             />
           </div>
 
