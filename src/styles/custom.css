@@ -25,21 +25,11 @@
     color: #ecfccb !important; /* lime-200 */
     fill: #ecfccb !important; /* lime-200 */
   }
-.react-activity-calendar__legend-colors text {
-  color: #ecfccb !important; /* lime-200 */
-  fill: #ecfccb !important; /* lime-200 */
+.react-activity-calendar__legend-colors {
+  color: #ecfccb;
 }
 
-/* Target only text elements in legend, not the colored squares */
-.github-calendar-wrapper .react-activity-calendar__legend-colors text {
-  color: #ecfccb !important; /* lime-200 */
-  fill: #ecfccb !important; /* lime-200 */
-}
-
-/* Target legend text specifically */
-.github-calendar-wrapper .react-activity-calendar__legend text,
-.github-calendar-wrapper .react-activity-calendar__legend span,
-.github-calendar-wrapper .react-activity-calendar__legend div {
-  color: #ecfccb !important; /* lime-200 */
-  fill: #ecfccb !important; /* lime-200 */
+.connect-github-button {
+  color: #ecfccb;
+  border-color: #ecfccb;
 }
