@@ -8,14 +8,14 @@ import MailIcon from '@mui/icons-material/Mail';
 export const metadata: Metadata = {
   title: 'Contact | Oğuzhan Özcan',
   description:
-    'Get in touch with Oğuzhan Özcan, Analytics and Data-Driven Product Designer. Connect on LinkedIn, send an email, or follow on social media.',
+    'Get in touch with Oğuzhan Özcan, Product Designer. Connect on LinkedIn, send an email, or follow on social media.',
   alternates: {
     canonical: 'https://o10n.design/contact',
   },
   openGraph: {
     title: 'Contact | Oğuzhan Özcan',
     description:
-      'Get in touch with Oğuzhan Özcan, Analytics and Data-Driven Product Designer. Connect on LinkedIn, send an email, or follow on social media.',
+      'Get in touch with Oğuzhan Özcan, Product Designer. Connect on LinkedIn, send an email, or follow on social media.',
     url: 'https://o10n.design/contact',
   },
 };
@@ -68,7 +68,7 @@ export default function Contact() {
           href="https://www.linkedin.com/in/ouzozcn/"
           target="_blank"
           rel="noopener noreferrer"
-          className="ContactBox flex flex-col grow-1 p-8 md:p-16 w-full h-auto items-center justify-center font-sans bg-blue-100 hover:bg-blue-200 md:border-r border-stone-900 cursor-pointer"
+          className="ContactBox flex flex-col grow-1 p-8 md:p-16 w-full h-auto items-center justify-center font-sans hover:bg-blue-200 md:border-r border-stone-900 cursor-pointer"
         >
           <div className="flex items-center gap-4">
             <Image
@@ -85,7 +85,7 @@ export default function Contact() {
           href="mailto:oguz@o10n.design"
           target="_blank"
           rel="noopener noreferrer"
-          className="ContactBox flex flex-col grow-1 p-8 md:p-16 w-full h-auto items-center justify-center font-sans bg-orange-100 hover:bg-orange-200 md:border-r border-stone-900 cursor-pointer"
+          className="ContactBox flex flex-col grow-1 p-8 md:p-16 w-full h-auto items-center justify-center font-sans  hover:bg-orange-200 md:border-r border-stone-900 cursor-pointer"
         >
           <div className="flex items-center gap-4">
             <MailIcon className="w-6 h-6 mb-2" />
@@ -96,7 +96,7 @@ export default function Contact() {
           href="https://github.com/ouzozcn"
           target="_blank"
           rel="noopener noreferrer"
-          className="ContactBox flex flex-col grow-1 p-8 md:p-16 w-full h-auto items-center justify-center font-sans bg-lime-100 hover:bg-lime-200 md:border-r border-stone-900 cursor-pointer"
+          className="ContactBox flex flex-col grow-1 p-8 md:p-16 w-full h-auto items-center justify-center font-sans  hover:bg-lime-200 md:border-r border-stone-900 cursor-pointer"
         >
           <div className="flex items-center gap-4">
             <Image
@@ -113,7 +113,7 @@ export default function Contact() {
           href="https://www.behance.net/oguzhanozcan"
           target="_blank"
           rel="noopener noreferrer"
-          className="ContactBox flex flex-col grow-1 p-8 md:p-16 w-full h-auto items-center justify-center font-sans bg-violet-100 hover:bg-violet-200 md:border-r border-stone-900 cursor-pointer"
+          className="ContactBox flex flex-col grow-1 p-8 md:p-16 w-full h-auto items-center justify-center font-sans  hover:bg-violet-200 md:border-r border-stone-900 cursor-pointer"
         >
           <div className="flex items-center gap-4">
             <Image
@@ -130,7 +130,7 @@ export default function Contact() {
           href="https://dribbble.com/ouzozcn"
           target="_blank"
           rel="noopener noreferrer"
-          className="ContactBox flex flex-col grow-1 p-8 md:p-16 w-full h-auto items-center justify-center font-sans bg-pink-100 hover:bg-pink-200 cursor-pointer"
+          className="ContactBox flex flex-col grow-1 p-8 md:p-16 w-full h-auto items-center justify-center font-sans  hover:bg-pink-200 cursor-pointer"
         >
           <div className="flex items-center gap-4">
             <Image
