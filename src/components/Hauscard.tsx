@@ -11,6 +11,7 @@ type HauscardProps = {
   hasBackgroundImage?: boolean;
   backgroundImageUrl?: string;
   tags?: TagProps[];
+  className?: string;
 };
 
 const Hauscard: React.FC<HauscardProps> = ({
@@ -19,9 +20,10 @@ const Hauscard: React.FC<HauscardProps> = ({
   hasBackgroundImage = false,
   backgroundImageUrl,
   tags = [],
+  className,
 }) => {
   return (
-    <div className="relative w-full min-h-[400px] h-[400px] flex flex-col justify-end items-start gap-2">
+    <div className={`relative w-full min-h-[400px] h-[400px] flex flex-col justify-end items-start gap-2 ${className}`}>
       {hasBackgroundImage && backgroundImageUrl && (
         <div className="absolute inset-0 z-0">
           <Image

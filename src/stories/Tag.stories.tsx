@@ -18,7 +18,7 @@ const meta: Meta<typeof Tag> = {
     },
     type: {
       control: 'radio',
-      options: ['outline', 'lime', 'amber', 'red', 'teal', 'purple'],
+      options: ['outline', 'lime', 'amber', 'red', 'teal', 'purple', 'e'],
       description: 'Color style of the tag.'
     },
     className: { control: 'text', description: 'Custom className for extra styling.' },
@@ -38,7 +38,7 @@ export const Outline: Story = {
   parameters: {
     docs: {
       description: {
-        story: 'A simple outline tag. Use tags to highlight keywords or statuses.'
+        story: 'A simple outline tag. Use tags to highlight keywords or statuses. '
       }
     }
   }
@@ -114,6 +114,20 @@ export const Purple: Story = {
     docs: {
       description: {
         story: 'A purple tag for creativity or special items.'
+      }
+    }
+  }
+};
+export const Emerald: Story = {
+  args: {
+    label: 'Emerald Tag',
+    size: 'medium',
+    type: 'emerald',
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'A emerald colored tag. Great for neutral states!',
       }
     }
   }
