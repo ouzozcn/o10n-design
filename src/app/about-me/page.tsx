@@ -62,11 +62,11 @@ export default function AboutMe() {
         </h2>
       </div>
 
-      <div className="PageContent flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900">
-        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center bg-lime-100 md:border-r border-b border-stone-900">
+      <div className="PageContent flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900 lg:min-h-96">
+        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center md:border-r border-b border-stone-900">
           <p className="text-2xl m-8 font-sans">TL;DR</p>
         </div>
-        <div className="SectionContent flex flex-col grow-1 w-full h-full p-8 border-b border-stone-900 gap-4">
+        <div className="SectionContent flex flex-col grow-1 w-full h-auto p-8 border-b border-stone-900 gap-4">
           <p className="text-lg font-sans">
             <b>Self-taught designer</b> with a physics background
           </p>
@@ -94,11 +94,11 @@ export default function AboutMe() {
         </div>
       </div>
 
-      <div className="PageContent flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900">
-        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center bg-red-100 md:border-r border-b border-stone-900">
+      <div className="PageContent flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900 lg:min-h-96">
+        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center md:border-r border-b border-stone-900">
           <p className="text-2xl m-8 font-sans">My Story</p>
         </div>
-        <div className="SectionContent flex flex-col grow-1 w-full h-full p-8 border-b border-stone-900 gap-4">
+        <div className="SectionContent flex flex-col grow-1 w-full h-auto p-8 border-b border-stone-900 gap-4">
           <p className="text-lg font-sans">
             I began my journey in science, studying Physics at Middle East Technical University.
             Though I didn&apos;t finish the degree, the problem-solving mindset, experimental rigor,
@@ -115,11 +115,11 @@ export default function AboutMe() {
         </div>
       </div>
 
-      <div className="PageContent flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900">
-        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center bg-teal-100 md:border-r border-b border-stone-900">
+      <div className="PageContent flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900 lg:min-h-96">
+        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center md:border-r border-b border-stone-900">
           <p className="text-2xl m-8 font-sans">What I Do Now</p>
         </div>
-        <div className="SectionContent flex flex-col grow-1 w-full h-full p-8 border-b border-stone-900 gap-4">
+        <div className="SectionContent flex flex-col grow-1 w-full h-auto p-8 border-b border-stone-900 gap-4">
           <p className="text-lg font-sans">
             At Jotform, I design for complex features used by thousands of enterprise users — from
             secure form encryption to account management and analytics. I collaborate closely with
@@ -133,11 +133,11 @@ export default function AboutMe() {
         </div>
       </div>
 
-      <div className="PageContent flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900">
-        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center bg-violet-100 md:border-r border-b border-stone-900">
+      <div className="PageContent flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900 lg:min-h-96">
+        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center md:border-r border-b border-stone-900">
           <p className="text-2xl m-8 font-sans">On the Side</p>
         </div>
-        <div className="SectionContent flex flex-col grow-1 w-full h-full p-8 border-b border-stone-900 gap-4">
+        <div className="SectionContent flex flex-col grow-1 w-full h-auto p-8 border-b border-stone-900 gap-4">
           <p className="text-lg font-sans">
             I love working on side projects — whether it&apos;s building tools for accessibility
             (like Kroma), designing AI-powered lead scoring dashboards, or creating frameworks for
@@ -151,7 +151,7 @@ export default function AboutMe() {
         </div>
       </div>
 
-      <div className="PageContent flex flex-col md:flex-row w-full h-full md:h-60 text-stone-900 border-stone-900">
+      <div className="PageContent flex flex-col md:flex-row w-full h-full md:h-60 text-stone-900 border-stone-900 lg:min-h-96">
         <div className="SectionTitle flex flex-col p-8 grow-1 w-full h-auto items-center justify-center bg-amber-100 gap-4 border-stone-900">
           <p className="text-2xl font-medium font-sans">Let&apos;s Talk</p>
           <p className="text-lg font-sans">
