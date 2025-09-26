@@ -16,6 +16,14 @@ const iconConfig = {
   md: { height: 32, sizes: '32px' },
   lg: { height: 72, sizes: '72px' },
 };
+const formatDate = (dateStr: string) => {
+  const date = new Date(dateStr);
+  return date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+};
 export default function HomeClient() {
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
@@ -203,24 +211,26 @@ export default function HomeClient() {
               beautiful and functionally robust.
             </div>
 
-            <div>
-              <GitHubCalendar
-                username="ouzozcn"
-                blockSize={16}
-                blockRadius={1}
-                colorScheme="dark"
-                renderBlock={(block, activity) =>
-                  React.cloneElement(block, {
-                    'data-tooltip-id': 'github-activity',
-                    'data-tooltip-html': `${activity.count} activities on ${activity.date}`,
-                  })
-                }
-                theme={{
-                  light: ['#f5f5f4', '#d6d3d1', '#78716c', '#44403c', '#1c1917'],
-                  dark: ['#292524', '#365314', '#3f6212', '#65a30d', '#a3e635'],
-                }}
-              />
-              <Tooltip id="github-activity" />
+            <div className="w-full overflow-x-auto">
+              <div className="min-w-[500px] w-fit mx-auto flex justify-center">
+                <GitHubCalendar
+                  username="ouzozcn"
+                  blockSize={16}
+                  blockRadius={1}
+                  colorScheme="dark"
+                  renderBlock={(block, activity) =>
+                    React.cloneElement(block, {
+                      'data-tooltip-id': 'github-activity',
+                      'data-tooltip-html': `${activity.count} activities on ${formatDate(activity.date)}`,
+                    })
+                  }
+                  theme={{
+                    light: ['#f5f5f4', '#d6d3d1', '#78716c', '#44403c', '#1c1917'],
+                    dark: ['#292524', '#365314', '#3f6212', '#65a30d', '#a3e635'],
+                  }}
+                />
+                <Tooltip id="github-activity" />
+              </div>
             </div>
             <Button
               label="Let's Connect on GitHub"
@@ -246,7 +256,7 @@ export default function HomeClient() {
                 size: 'large',
               },
               {
-                label: 'Company Awareness',
+                label: 'Company Awareness Product',
                 type: 'outline',
                 size: 'large',
               },
@@ -270,6 +280,11 @@ export default function HomeClient() {
               {
                 label: 'Idea',
                 type: 'purple',
+                size: 'large',
+              },
+              {
+                label: 'Form Builder',
+                type: 'outline',
                 size: 'large',
               },
             ]}
