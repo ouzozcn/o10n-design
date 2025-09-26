@@ -8,7 +8,6 @@ import InfoCard from '@/components/InfoCard';
 import RowCard from '@/components/RowCard';
 import Footer from '@/components/Footer';
 import TopDivider from '@/components/TopDivider';
-import { Analytics } from '@vercel/analytics/react';
 import GitHubCalendar from 'react-github-calendar';
 import Button from '@/components/Button';
 import RoughAnnotate from '@/components/rough-notation/RoughAnnotate';
@@ -101,23 +100,23 @@ export default function HomeClient() {
           />
 
           <MenuItem
-            to="/experiment"
+            to="/writings"
             className="lg:h-[268px] border-stone-900 md:border-r-0"
-            title="Experiments"
+            title="Writings"
             titleClassName="text-md md:text-xl lg:text-2xl"
             svg={
               <>
                 <Image
-                  src="/img/experimentIcon.svg"
-                  alt="Experiments Icon"
+                  src="/img/writingsIcon.svg"
+                  alt="Writings Icon"
                   width={1}
                   height={iconConfig.lg.height}
                   style={{ height: iconConfig.lg.height, width: 'auto' }}
-                  data-tooltip-id="experiment-tooltip"
-                  data-tooltip-content="Braille letter E – represents Experiments"
+                  data-tooltip-id="writing-tooltip"
+                  data-tooltip-content="Braille letter W – represents Writings"
                   data-tooltip-place="right"
                 />
-                <Tooltip id="experiment-tooltip" />
+                <Tooltip id="writing-tooltip" />
               </>
             }
           />
@@ -306,11 +305,11 @@ export default function HomeClient() {
               <Image
                 src="/img/thumbs/thumb-briflds.svg"
                 alt="Brifl Design System components showcase displaying various UI elements"
-                width={600}
-                height={400}
-                className="w-full h-full object-contain"
+                width={1}
+                height={1}
+                className="h-full object-contain w-full"
                 priority
-                sizes="(max-width: 768px) 100vw, 50vw"
+               
               />
             }
             className="border-b-0"
@@ -318,7 +317,6 @@ export default function HomeClient() {
         </section>
 
         <Footer />
-        <Analytics />
       </main>
     </div>
   );

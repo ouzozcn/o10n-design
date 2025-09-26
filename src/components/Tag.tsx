@@ -7,7 +7,7 @@ export interface TagProps {
   startIcon?: React.ReactNode;
   endIcon?: React.ReactNode;
   size: "small" | "medium" | "large";
-  type: "outline" | "lime" | "amber" | "red" | "teal" | "purple";
+  type: "outline" | "lime" | "amber" | "red" | "teal" | "purple" | "emerald";
   className?: string;
 }
 
@@ -24,6 +24,7 @@ const typeClasses = {
   red: "bg-red-200 rounded-full border border-stone-900 justify-center items-center gap-0 inline-flex",
   teal: "bg-teal-200 rounded-full border border-stone-900 justify-center items-center gap-0 inline-flex",
   purple: "bg-purple-200 rounded-full border border-stone-900 justify-center items-center gap-0 inline-flex",
+  emerald: "bg-emerald-200 rounded-full border border-stone-900 justify-center items-center gap-0 inline-flex",
 } as const;
 
 const Tag: React.FC<TagProps> = ({ 

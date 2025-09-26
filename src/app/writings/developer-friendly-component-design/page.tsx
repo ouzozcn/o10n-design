@@ -12,14 +12,14 @@ import MetaInfo from '@/components/MetaInfo';
 import TextLink from '@/components/TextLink';
 
 export const metadata: Metadata = {
-  title: 'Developer Friendly UI Component Design | Oğuzhan Özcan',
+  title: 'Developer Friendly Component Design | Oğuzhan Özcan',
   description:
     'Learn how to design UI components that are developer-friendly by following simple rules for auto-layout, meaningful layer names, and component-driven design principles.',
   alternates: {
     canonical: 'https://o10n.design/writings/dev-friendly-component-design',
   },
   openGraph: {
-    title: 'Developer Friendly UI Component Design | Oğuzhan Özcan',
+    title: 'Developer Friendly Component Design | Oğuzhan Özcan',
     description:
       'Learn how to design UI components that are developer-friendly by following simple rules for auto-layout, meaningful layer names, and component-driven design principles.',
     url: 'https://o10n.design/writings/dev-friendly-component-design',
@@ -34,14 +34,14 @@ export default function DevFriendlyComponentDesign() {
         <Menu />
         <div className="HeaderTitle w-full flex flex-col md:flex-row place-content-between gap-4 items-start md:items-center">
           <h1 className="text-xl md:text-2xl font-sans text-stone-900">
-            Developer Friendly UI Component Design
+            Developer Friendly Component Design
           </h1>
           <Button
-            label="See GitHub Repo"
+            label="Storybook Repo"
             type="secondary"
             size="medium"
             endIcon={<ArrowOutwardIcon />}
-            to="http://github.com/ouzozcn/Solart"
+            to="http://o10n.design/docs/index.html?path=/docs/components-button--docs"
             target="_blank"
           />
         </div>
@@ -58,7 +58,7 @@ export default function DevFriendlyComponentDesign() {
       <div className="PageContent flex flex-col w-full h-full gap-4 p-8 border-b border-stone-900">
         <div className="PageMeta flex flex-col w-full h-full gap-2">
           <div className="PageTitle px-8 pt-5 pb-2 items-center justify-center text-center text-stone-900 text-h1 font-medium font-sans">
-            Developer Friendly UI Component Design
+            Developer Friendly Component Design
           </div>
         </div>
       </div>

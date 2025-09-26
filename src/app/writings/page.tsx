@@ -6,21 +6,21 @@ import { Footer } from '@/components/Footer';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Case Studies | Oğuzhan Özcan',
+  title: 'Writings | Oğuzhan Özcan',
   description:
-    'Explore my design case studies including the Jotform 2FA implementation that improved user security and resulted in 15K+ user adoptions.',
+    'Explore my design ideas and concepts including Brifl collaborative form building tool and Jotform Logbook internal company awareness tool.',
   alternates: {
-    canonical: 'https://o10n.design/case-study',
+    canonical: 'https://o10n.design/writings',
   },
   openGraph: {
-    title: 'Case Studies | Oğuzhan Özcan',
+    title: 'Writings | Oğuzhan Özcan',
     description:
-      'Explore my design case studies including the Jotform 2FA implementation that improved user security and resulted in 15K+ user adoptions.',
-    url: 'https://o10n.design/case-study',
+      'Explore my design ideas and concepts including Brifl collaborative form building tool and Jotform Logbook internal company awareness tool.',
+    url: 'https://o10n.design/writings',
   },
 };
 
-export default function CaseStudy() {
+export default function Writings() {
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
       <div className="md:sticky md:top-0 md:z-10 flex flex-col md:flex-row w-auto border-b border-stone-900 bg-theme-primary">
@@ -36,54 +36,79 @@ export default function CaseStudy() {
         />
         <MenuItem
           to="/case-study"
-          className="flex-1 text-center md:border-b-0 border-r-0 md:border-r border-stone-900 bg-lime-200 hover:bg-lime-200 cursor-default"
+          className="flex-1 text-center md:border-b-0 border-r-0 md:border-r border-stone-900"
           title="Case Studies"
         />
         <MenuItem
           to="/ideas"
-          className="flex-1 text-center md:border-b-0 border-r-0 md:border-r border-stone-900"
+          className="flex-1 text-center md:border-b-0 border-r-0 md:border-r border-stone-900 "
           title="Ideas"
         />
         <MenuItem
           to="/writings"
-          className="flex-1 text-center md:border-b-0 border-b-0 border-r-0 md:border-r border-stone-900"
+          className="flex-1 text-center md:border-b-0 border-b-0 border-r-0 md:border-r border-stone-900 bg-emerald-200 hover:bg-emerald-200 cursor-default"
           title="Writings"
         />
       </div>
 
       <div className="PageHero flex flex-col p-8 w-full md:h-[400px] border-b border-stone-900 justify-center items-center gap-4">
         <h1 className="text-4xl text-center font-sans text-stone-900 flex items-center justify-center">
-          Case Studies
+          Writings
         </h1>
         <h2 className="text-xl text-center font-sans text-stone-900 flex items-center justify-center">
-          Here are some of the Case Studies I&apos;ve worked on.
+          Here are some of the Writings I&apos;ve posted on.
         </h2>
       </div>
 
       <div className="PageContent flex flex-col w-full h-full border-stone-900">
         <RowCard
-          className="border-b-0"
-          direction="left"
-          cardTitle="Enhancing Security Through Two-Factor Authentication"
-          cardContent="Improving user security by implementing 2FA on Jotform which resulted in a 15K+ users adopting the feature."
+          direction="right"
+          cardTitle="brifl: Empowering Creators with Collaborative Form Building"
+          cardContent="An open-source tool designed for designers, developers, writers, and photographers to create, share, and analyze forms seamlessly."
           tags={[
             {
-              label: 'Case Study',
-              type: 'lime',
+              label: 'Idea',
+              type: 'purple',
+              size: 'large',
+            },
+          ]}
+          to="/ideas/brifl"
+          swapContent={
+            <div className="relative w-full h-full min-h-[200px]">
+              <Image
+                src="/img/thumbs/thumb-brifl2.svg"
+                alt="Brifl Form Building Tool"
+                fill
+                className="object-contain"
+                priority
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
+          }
+        />
+        <RowCard
+          className="border-b-0"
+          direction="left"
+          cardTitle="Developer Friendly Component Design"
+          cardContent="Learn how to design UI components that are developer-friendly by following simple rules for auto-layout, meaningful layer names, and component-driven design principles."
+          tags={[
+            {
+              label: 'Writing',
+              type: 'emerald',
               size: 'large',
             },
             {
-              label: 'Security Feature',
+              label: 'UI Component',
               type: 'outline',
               size: 'large',
             },
           ]}
-          to="/case-study/jotform-2fa"
+          to="/ideas/jotform-logbook"
           swapContent={
             <div className="relative w-full h-full min-h-[200px]">
               <Image
-                src="/img/thumbs/thumb-jf2fa.svg"
-                alt="Jotform 2FA Case Study Thumbnail"
+                src="/img/thumbs/thumb-logbook.svg"
+                alt="Jotform Logbook Internal Tool"
                 fill
                 className="object-contain"
                 priority
