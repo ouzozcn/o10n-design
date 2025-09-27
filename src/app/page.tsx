@@ -24,6 +24,12 @@ export const metadata: Metadata = {
       'Product designer and design engineer who prioritizes research-based methodologies, accessibility, user-centered designs, and developer friendliness.',
     images: 'https://o10n.design/img/og_images/contact_open_graph.png',
   },
+  metadataBase: new URL('https://o10n.design'),
+  applicationName: 'o10n.design',
+  authors: [{ name: 'Oğuzhan Özcan', url: 'https://o10n.design/about-me' }],
+  creator: 'Oğuzhan Özcan',
+  publisher: 'Oğuzhan Özcan',
+  colorScheme: 'light',
   icons: {
     icon: 'https://o10n.design/img/favicons/favicon-32x32.png',
     shortcut: 'https://o10n.design/img/favicons/favicon-32x32.png',

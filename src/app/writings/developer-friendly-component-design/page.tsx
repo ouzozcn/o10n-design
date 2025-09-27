@@ -12,17 +12,41 @@ import MetaInfo from '@/components/MetaInfo';
 import TextLink from '@/components/TextLink';
 
 export const metadata: Metadata = {
-  title: 'Developer Friendly Component Design | Oğuzhan Özcan',
+  title: 'Developer Friendly Component Design | Design to Code Best Practices',
   description:
     'Learn how to design UI components that are developer-friendly by following simple rules for auto-layout, meaningful layer names, and component-driven design principles.',
   alternates: {
     canonical: 'https://o10n.design/writings/dev-friendly-component-design',
   },
   openGraph: {
-    title: 'Developer Friendly Component Design | Oğuzhan Özcan',
+    title: 'Developer Friendly Component Design | Design to Code Best Practices',
     description:
-      'Learn how to design UI components that are developer-friendly by following simple rules for auto-layout, meaningful layer names, and component-driven design principles.',
+      'Practical guide to designing components that translate seamlessly from Figma to code. Auto-layout best practices, naming conventions, and handoff strategies.',
     url: 'https://o10n.design/writings/dev-friendly-component-design',
+    images: 'https://o10n.design/img/og_images/dev_friendly_component_open_graph.png',
+    siteName: 'o10n.design',
+    type: 'article',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Developer Friendly Component Design | Design to Code Best Practices',
+    description:
+      'Practical guide to designing components that translate seamlessly from Figma to code. Auto-layout best practices, naming conventions, and handoff strategies.',
+    images: 'https://o10n.design/img/og_images/dev_friendly_component_open_graph.png',
+  },
+  robots: 'index, follow',
+  keywords:
+    'Developer Friendly Design, Component Design, Figma to Code, Auto-Layout Best Practices, UI Component Naming Conventions, Design Handoff, Frontend Development, Design Systems, React Components, Storybook, CSS Class Naming, Web Development, UX/UI Design, Product Design, Design to Development Workflow, Accessible Design, Responsive Design, Developer Experience, Code-Ready Designs',
+  metadataBase: new URL('https://o10n.design'),
+  applicationName: 'o10n.design',
+  authors: [{ name: 'Oğuzhan Özcan', url: 'https://o10n.design/about-me' }],
+  creator: 'Oğuzhan Özcan',
+  publisher: 'Oğuzhan Özcan',
+  colorScheme: 'light',
+  icons: {
+    icon: 'https://o10n.design/img/favicons/favicon-32x32.png',
+    shortcut: 'https://o10n.design/img/favicons/favicon-32x32.png',
+    apple: 'https://o10n.design/img/favicons/apple-touch-icon.png',
   },
 };
 
