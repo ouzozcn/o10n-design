@@ -15,6 +15,27 @@ export const metadata: Metadata = {
     description:
       'Tools I use to design, build, and ship thoughtful, accessible, and scalable digital products. Including Figma, React, TypeScript, Tailwind CSS, and more.',
     url: 'https://o10n.design/tech-stack',
+    images: 'https://o10n.design/img/og_images/tech_stack_open_graph.png',
+    siteName: 'o10n.design',
+    type: 'article',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Tech Stack | Oğuzhan Özcan',
+    description:
+      'Tools I use to design, build, and ship thoughtful, accessible, and scalable digital products. Including Figma, React, TypeScript, Tailwind CSS, and more.',
+    images: 'https://o10n.design/img/og_images/tech_stack_open_graph.png',
+  },
+  metadataBase: new URL('https://o10n.design'),
+  applicationName: 'o10n.design',
+  authors: [{ name: 'Oğuzhan Özcan', url: 'https://o10n.design/about-me' }],
+  creator: 'Oğuzhan Özcan',
+  publisher: 'Oğuzhan Özcan',
+  colorScheme: 'light',
+  icons: {
+    icon: 'https://o10n.design/img/favicons/favicon-32x32.png',
+    shortcut: 'https://o10n.design/img/favicons/favicon-32x32.png',
+    apple: 'https://o10n.design/img/favicons/apple-touch-icon.png',
   },
 };
 
