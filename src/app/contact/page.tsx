@@ -21,6 +21,14 @@ export const metadata: Metadata = {
     images: 'https://o10n.design/img/og_images/contact_open_graph.png',
     siteName: 'o10n.design',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact Oğuzhan Özcan | Product Designer & Design Engineer',
+    description:
+      "Let's collaborate on product design, design systems, or accessibility projects. Available for consulting and full-time opportunities.",
+    images: 'https://o10n.design/img/og_images/contact_open_graph.png',
+  },
+  robots: 'index, follow',
   keywords:
     'Contact Design Engineer, Hire Design Engineer, Turkish Product Designer, SaaS Designer, Contact Product Designer, Hire Product Designer, Design Systems Consultant, SaaS UX Designer, Design Engineering Services, Product Design Collaboration, Freelance Product Designer, Enterprise UX Designer, Accessibility Design Consultant, Ürün Tasarımcısı, Tasarım Mühendisi, Tasarım Sistemleri, UX Tasarımcısı, Kullanıcı Deneyimi, Kullanılabilirlik, Erişilebilirlik, UI/UX Danışmanı, Ürün Tasarımı, Dijital Ürünler, Web ve Mobil Tasarım, Kullanıcı Araştırması, Prototipleme, Wireframing, Görsel Tasarım, Etkileşim Tasarımı',
 };
