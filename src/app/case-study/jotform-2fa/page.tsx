@@ -14,14 +14,14 @@ export const metadata: Metadata = {
     description:
       'Explore Jotform’s 2FA feature to understand how we increase account security for users.',
     url: 'https://o10n.design/product/kroma',
-    images: '/public/img/og_images/jotform2fa_open_graph.png',
+    images: 'https://o10n.design/img/og_images/jotform2fa_open_graph.png',
     siteName: 'o10n.design',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Enhancing Security Through Two-Factor Authentication',
     description: 'Learn about Jotform’s 2FA feature for enhanced security.',
-    images: '/public/img/og_images/jotform2fa_open_graph.png',
+    images: 'https://o10n.design/img/og_images/jotform2fa_open_graph.png',
   },
   robots: 'index, follow',
 };
