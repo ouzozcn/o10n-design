@@ -62,31 +62,6 @@ export default function Writings() {
 
       <div className="PageContent flex flex-col w-full h-full border-stone-900">
         <RowCard
-          direction="right"
-          cardTitle="brifl: Empowering Creators with Collaborative Form Building"
-          cardContent="An open-source tool designed for designers, developers, writers, and photographers to create, share, and analyze forms seamlessly."
-          tags={[
-            {
-              label: 'Idea',
-              type: 'purple',
-              size: 'large',
-            },
-          ]}
-          to="/ideas/brifl"
-          swapContent={
-            <div className="relative w-full h-full min-h-[200px]">
-              <Image
-                src="/img/thumbs/thumb-brifl2.svg"
-                alt="Brifl Form Building Tool"
-                fill
-                className="object-contain"
-                priority
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-            </div>
-          }
-        />
-        <RowCard
           className="border-b-0"
           direction="left"
           cardTitle="Developer Friendly Component Design"
@@ -103,16 +78,15 @@ export default function Writings() {
               size: 'large',
             },
           ]}
-          to="/ideas/jotform-logbook"
+          to="/writings/developer-friendly-component-design"
           swapContent={
-            <div className="relative w-full h-full min-h-[200px]">
+            <div className="relative w-full  min-h-[400px]">
               <Image
-                src="/img/thumbs/thumb-logbook.svg"
-                alt="Jotform Logbook Internal Tool"
+                src="/img/thumbs/thumb-dev-friendly-component.svg"
+                alt="Developer Friendly Component Design"
                 fill
                 className="object-contain"
                 priority
-                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
           }
