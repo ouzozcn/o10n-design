@@ -45,9 +45,9 @@ export default function Ideas() {
           title="Ideas"
         />
         <MenuItem
-          to="/experiment"
+         to="/writings"
           className="flex-1 text-center md:border-b-0 border-b-0 border-r-0 md:border-r border-stone-900"
-          title="Experiments"
+          title="Writings"
         />
       </div>
 

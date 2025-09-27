@@ -2,6 +2,22 @@ import React from 'react';
 import MenuItem from '@/components/MenuItem';
 import { Footer } from '@/components/Footer';
 import MailIcon from '@mui/icons-material/Mail';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Cookie Policy | Oğuzhan Özcan',
+  description:
+    'Read our Cookie Policy to understand how we use cookies and similar technologies on our website.',
+  alternates: {
+    canonical: 'https://o10n.design/cookie-policy',
+  },
+  openGraph: {
+    title: 'Cookie Policy | Oğuzhan Özcan',
+    description:
+      'Read our Cookie Policy to understand how we use cookies and similar technologies on our website.',
+    url: 'https://o10n.design/cookie-policy',
+  },
+};
 export default function CookiePolicy() {
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">

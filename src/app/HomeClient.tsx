@@ -8,7 +8,6 @@ import InfoCard from '@/components/InfoCard';
 import RowCard from '@/components/RowCard';
 import Footer from '@/components/Footer';
 import TopDivider from '@/components/TopDivider';
-import { Analytics } from '@vercel/analytics/react';
 import GitHubCalendar from 'react-github-calendar';
 import Button from '@/components/Button';
 import RoughAnnotate from '@/components/rough-notation/RoughAnnotate';
@@ -16,6 +15,14 @@ const iconConfig = {
   sm: { height: 24, sizes: '24px' },
   md: { height: 32, sizes: '32px' },
   lg: { height: 72, sizes: '72px' },
+};
+const formatDate = (dateStr: string) => {
+  const date = new Date(dateStr);
+  return date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
 };
 export default function HomeClient() {
   return (
@@ -101,23 +108,23 @@ export default function HomeClient() {
           />
 
           <MenuItem
-            to="/experiment"
+            to="/writings"
             className="lg:h-[268px] border-stone-900 md:border-r-0"
-            title="Experiments"
+            title="Writings"
             titleClassName="text-md md:text-xl lg:text-2xl"
             svg={
               <>
                 <Image
-                  src="/img/experimentIcon.svg"
-                  alt="Experiments Icon"
+                  src="/img/writingsIcon.svg"
+                  alt="Writings Icon"
                   width={1}
                   height={iconConfig.lg.height}
                   style={{ height: iconConfig.lg.height, width: 'auto' }}
-                  data-tooltip-id="experiment-tooltip"
-                  data-tooltip-content="Braille letter E – represents Experiments"
+                  data-tooltip-id="writing-tooltip"
+                  data-tooltip-content="Braille letter W – represents Writings"
                   data-tooltip-place="right"
                 />
-                <Tooltip id="experiment-tooltip" />
+                <Tooltip id="writing-tooltip" />
               </>
             }
           />
@@ -204,24 +211,26 @@ export default function HomeClient() {
               beautiful and functionally robust.
             </div>
 
-            <div>
-              <GitHubCalendar
-                username="ouzozcn"
-                blockSize={16}
-                blockRadius={1}
-                colorScheme="dark"
-                renderBlock={(block, activity) =>
-                  React.cloneElement(block, {
-                    'data-tooltip-id': 'github-activity',
-                    'data-tooltip-html': `${activity.count} activities on ${activity.date}`,
-                  })
-                }
-                theme={{
-                  light: ['#f5f5f4', '#d6d3d1', '#78716c', '#44403c', '#1c1917'],
-                  dark: ['#292524', '#365314', '#3f6212', '#65a30d', '#a3e635'],
-                }}
-              />
-              <Tooltip id="github-activity" />
+            <div className="w-full overflow-x-auto">
+              <div className="min-w-[500px] w-fit mx-auto flex justify-center">
+                <GitHubCalendar
+                  username="ouzozcn"
+                  blockSize={16}
+                  blockRadius={1}
+                  colorScheme="dark"
+                  renderBlock={(block, activity) =>
+                    React.cloneElement(block, {
+                      'data-tooltip-id': 'github-activity',
+                      'data-tooltip-html': `${activity.count} activities on ${formatDate(activity.date)}`,
+                    })
+                  }
+                  theme={{
+                    light: ['#f5f5f4', '#d6d3d1', '#78716c', '#44403c', '#1c1917'],
+                    dark: ['#292524', '#365314', '#3f6212', '#65a30d', '#a3e635'],
+                  }}
+                />
+                <Tooltip id="github-activity" />
+              </div>
             </div>
             <Button
               label="Let's Connect on GitHub"
@@ -247,7 +256,7 @@ export default function HomeClient() {
                 size: 'large',
               },
               {
-                label: 'Company Awareness',
+                label: 'Company Awareness Product',
                 type: 'outline',
                 size: 'large',
               },
@@ -271,6 +280,11 @@ export default function HomeClient() {
               {
                 label: 'Idea',
                 type: 'purple',
+                size: 'large',
+              },
+              {
+                label: 'Form Builder',
+                type: 'outline',
                 size: 'large',
               },
             ]}
@@ -306,11 +320,10 @@ export default function HomeClient() {
               <Image
                 src="/img/thumbs/thumb-briflds.svg"
                 alt="Brifl Design System components showcase displaying various UI elements"
-                width={600}
-                height={400}
-                className="w-full h-full object-contain"
+                width={1}
+                height={1}
+                className="h-full object-contain w-full"
                 priority
-                sizes="(max-width: 768px) 100vw, 50vw"
               />
             }
             className="border-b-0"
@@ -318,7 +331,6 @@ export default function HomeClient() {
         </section>
 
         <Footer />
-        <Analytics />
       </main>
     </div>
   );

@@ -2,6 +2,20 @@ import React from 'react';
 import MenuItem from '@/components/MenuItem';
 import { Footer } from '@/components/Footer';
 import MailIcon from '@mui/icons-material/Mail';
+
+import type { Metadata } from 'next';
+export const metadata: Metadata = {
+  title: 'Privacy Policy | Oğuzhan Özcan',
+  description: 'Privacy Policy of o10n.design',
+  alternates: {
+    canonical: 'https://o10n.design/privacy-policy',
+  },
+  openGraph: {
+    title: 'Privacy Policy | Oğuzhan Özcan',
+    description: 'Privacy Policy of o10n.design',
+    url: 'https://o10n.design/privacy-policy',
+  },
+};
 export default function PrivacyPolicy() {
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
@@ -544,19 +558,6 @@ export default function PrivacyPolicy() {
                 <p className="text-lg text-center text-stone-900">Send me an email</p>
               </a>
             </div>
-          </div>
-          <div className="PolicyItem flex flex-col w-full  justify-start items-start gap-1">
-            <h3 className="text-2xl font-semibold mb-2">
-              12. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?
-            </h3>
-            <p className="mb-6">
-              You have the right to request access to the personal information we collect from you,
-              details about how we have processed it, correct inaccuracies, or delete your personal
-              information. You may also have the right to withdraw your consent to our processing of
-              your personal information. These rights may be limited in some circumstances by
-              applicable law. To request to review, update, or delete your personal information,
-              please visit: https://o10n.design/data-protection.
-            </p>
           </div>
         </div>
       </div>

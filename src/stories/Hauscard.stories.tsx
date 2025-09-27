@@ -4,7 +4,7 @@ import Hauscard from '../components/Hauscard';
 import Tag from '../components/Tag';
 
 const meta: Meta<typeof Hauscard> = {
-  title: 'Components/Hauscard',
+  title: 'Components / Hauscard',
   component: Hauscard,
   tags: ['autodocs'],
   parameters: {
@@ -39,7 +39,8 @@ type Story = StoryObj<typeof Hauscard>;
 
 export const Default: Story = {
   args: {
-    title: 'Project Title',
+    title: 'There will be a title here',
+   
     
     tags: [
       { label: 'Design', type: 'lime', size: 'medium' },

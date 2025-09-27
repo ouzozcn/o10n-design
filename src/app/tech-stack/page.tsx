@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import React from 'react';
 import MenuItem from '@/components/MenuItem';
 import { Footer } from '@/components/Footer';
-
+import Image from 'next/image';
 export const metadata: Metadata = {
   title: 'Tech Stack | Oğuzhan Özcan',
   description:
@@ -59,11 +59,18 @@ export default function TechStack() {
         </h2>
       </div>
 
-      <div className="TechStackItem flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900">
-        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center bg-lime-100 md:border-r border-b border-stone-900">
-          <p className="text-2xl m-8 font-sans">Figma</p>
+      <div className="TechStackItem flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900 lg:min-h-80">
+        <div className="SectionTitle flex  grow-1 w-full h-auto items-center justify-center  md:border-r border-b border-stone-900">
+          <Image
+            src="/img/icons/icon-figma.svg"
+            alt="Figma Logo"
+            width={32}
+            height={32}
+            className="inline-block"
+          />
+          <p className="text-2xl m-2 font-sans">Figma</p>
         </div>
-        <div className="SectionContent flex flex-col grow-1 w-full h-full p-8 border-b border-stone-900 gap-4">
+        <div className="SectionContent flex flex-col grow-1 w-full h-auto p-8 justify-center border-b border-stone-900 gap-4">
           <p className="text-lg font-sans">
             My primary design tool for everything from wireframes to high-fidelity UI. I use Figma
             not just for visuals, but for system thinking — components, variants, tokens, and
@@ -72,11 +79,18 @@ export default function TechStack() {
         </div>
       </div>
 
-      <div className="TechStackItem flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900">
-        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center bg-pink-100 md:border-r border-b border-stone-900">
-          <p className="text-2xl m-8 font-sans">Adobe Creative Suite</p>
+      <div className="TechStackItem flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900 lg:min-h-80">
+        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-b border-stone-900">
+          <Image
+            src="/img/icons/icon-adobe.svg"
+            alt="Adobe Logo"
+            width={32}
+            height={32}
+            className="inline-block"
+          />
+          <p className="text-2xl m-2 font-sans">Adobe Creative Suite</p>
         </div>
-        <div className="SectionContent flex flex-col grow-1 w-full h-full p-8 border-b border-stone-900 gap-4">
+        <div className="SectionContent flex flex-col grow-1 w-full h-auto p-8 justify-center border-b border-stone-900 gap-4">
           <p className="text-lg font-sans">
             Primarily Illustrator and Photoshop for custom illustrations, vector assets, image
             editing, and visual polish beyond UI needs.
@@ -84,11 +98,18 @@ export default function TechStack() {
         </div>
       </div>
 
-      <div className="TechStackItem flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900">
-        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center bg-yellow-100 md:border-r border-b border-stone-900">
-          <p className="text-2xl m-8 font-sans">React + TypeScript</p>
+      <div className="TechStackItem flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900 lg:min-h-80">
+        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-b border-stone-900">
+          <Image
+            src="/img/icons/icon-react.svg"
+            alt="React Logo"
+            width={32}
+            height={32}
+            className="inline-block"
+          />
+          <p className="text-2xl m-2 font-sans">React</p>
         </div>
-        <div className="SectionContent flex flex-col grow-1 w-full h-full p-8 border-b border-stone-900 gap-4">
+        <div className="SectionContent flex flex-col grow-1 w-full h-auto p-8 justify-center border-b border-stone-900 gap-4">
           <p className="text-lg font-sans">
             My go-to stack for building interactive interfaces and components. I use TypeScript for
             safe, predictable code and better dev experience.
@@ -96,11 +117,18 @@ export default function TechStack() {
         </div>
       </div>
 
-      <div className="TechStackItem flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900">
-        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center bg-violet-100 md:border-r border-b border-stone-900">
-          <p className="text-2xl m-8 font-sans">Tailwind CSS</p>
+      <div className="TechStackItem flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900 lg:min-h-80">
+        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-b border-stone-900">
+          <Image
+            src="/img/icons/icon-tailwind.svg"
+            alt="Tailwind Logo"
+            width={32}
+            height={32}
+            className="inline-block"
+          />
+          <p className="text-2xl m-2 font-sans">Tailwind CSS</p>
         </div>
-        <div className="SectionContent flex flex-col grow-1 w-full h-full p-8 border-b border-stone-900 gap-4">
+        <div className="SectionContent flex flex-col grow-1 w-full h-auto p-8 justify-center border-b border-stone-900 gap-4">
           <p className="text-lg font-sans">
             I prefer utility-first CSS for its scalability and speed. I also define and manage
             custom color tokens for consistent theming.
@@ -108,11 +136,18 @@ export default function TechStack() {
         </div>
       </div>
 
-      <div className="TechStackItem flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900">
-        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center bg-amber-100 md:border-r border-b border-stone-900">
-          <p className="text-2xl m-8 font-sans">React Flow</p>
+      <div className="TechStackItem flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900 lg:min-h-80">
+        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-b border-stone-900">
+          <Image
+            src="/img/icons/icon-reactflow.svg"
+            alt="React Flow Logo"
+            width={32}
+            height={32}
+            className="inline-block"
+          />
+          <p className="text-2xl m-2 font-sans">React Flow</p>
         </div>
-        <div className="SectionContent flex flex-col grow-1 w-full h-full p-8 border-b border-stone-900 gap-4">
+        <div className="SectionContent flex flex-col grow-1 w-full h-auto p-8 justify-center border-b border-stone-900 gap-4">
           <p className="text-lg font-sans">
             I use it to build node-based interfaces and interactive canvas systems — especially for
             data-driven or visual workflows (like Hydrogen and Growth Agent dashboards).
@@ -120,11 +155,18 @@ export default function TechStack() {
         </div>
       </div>
 
-      <div className="TechStackItem flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900">
-        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center bg-red-100 md:border-r border-b border-stone-900">
-          <p className="text-2xl m-8 font-sans">Storybook</p>
+      <div className="TechStackItem flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900 lg:min-h-80">
+        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-b border-stone-900">
+          <Image
+            src="/img/icons/icon-storybook.svg"
+            alt="Storybook Logo"
+            width={32}
+            height={32}
+            className="inline-block"
+          />
+          <p className="text-2xl m-2 font-sans">Storybook</p>
         </div>
-        <div className="SectionContent flex flex-col grow-1 w-full h-full p-8 border-b border-stone-900 gap-4">
+        <div className="SectionContent flex flex-col grow-1 w-full h-auto p-8 justify-center border-b border-stone-900 gap-4">
           <p className="text-lg font-sans">
             I use Storybook to document, test, and validate React components in isolation — helping
             design and dev stay aligned.
@@ -132,11 +174,18 @@ export default function TechStack() {
         </div>
       </div>
 
-      <div className="TechStackItem flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900">
-        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center bg-purple-100 md:border-r border-b border-stone-900">
-          <p className="text-2xl m-8 font-sans">Chromatic</p>
+      <div className="TechStackItem flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900 lg:min-h-80">
+        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-b border-stone-900">
+          <Image
+            src="/img/icons/icon-chromatic.svg"
+            alt="Chromatic Logo"
+            width={32}
+            height={32}
+            className="inline-block"
+          />
+          <p className="text-2xl m-2 font-sans">Chromatic</p>
         </div>
-        <div className="SectionContent flex flex-col grow-1 w-full h-full p-8 border-b border-stone-900 gap-4">
+        <div className="SectionContent flex flex-col grow-1 w-full h-auto p-8 justify-center border-b border-stone-900 gap-4">
           <p className="text-lg font-sans">
             For visual regression testing and design system CI/CD. I integrate it with Storybook to
             catch UI inconsistencies before they reach production.
@@ -144,11 +193,18 @@ export default function TechStack() {
         </div>
       </div>
 
-      <div className="TechStackItem flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900">
-        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center bg-gray-600 md:border-r border-b border-stone-900">
-          <p className="text-2xl m-8 font-sans text-lime-300">Git + GitHub</p>
+      <div className="TechStackItem flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900 lg:min-h-80">
+        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-b border-stone-900">
+          <Image
+            src="/img/icons/icon-github.svg"
+            alt="GitHub Logo"
+            width={32}
+            height={32}
+            className="inline-block"
+          />
+          <p className="text-2xl m-2 font-sans ">GitHub</p>
         </div>
-        <div className="SectionContent flex flex-col grow-1 w-full h-full p-8 border-b border-stone-900 gap-4">
+        <div className="SectionContent flex flex-col grow-1 w-full h-auto p-8 justify-center border-b border-stone-900 gap-4">
           <p className="text-lg font-sans">
             Version control, code reviews, and team collaboration. I use feature branching and
             commit conventions to keep everything clean and maintainable.
@@ -156,11 +212,18 @@ export default function TechStack() {
         </div>
       </div>
 
-      <div className="TechStackItem flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900">
-        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center bg-rose-100 md:border-r border-stone-900">
-          <p className="text-2xl m-8 font-sans">Jupyter Notebooks</p>
+      <div className="TechStackItem flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900 lg:min-h-80">
+        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-stone-900">
+          <Image
+            src="/img/icons/icon-jupyter.svg"
+            alt="Jupyter Logo"
+            width={32}
+            height={32}
+            className="inline-block"
+          />
+          <p className="text-2xl m-2 font-sans">Jupyter Notebooks</p>
         </div>
-        <div className="SectionContent flex flex-col grow-1 w-full h-full p-8 border-stone-900 gap-4">
+        <div className="SectionContent flex flex-col grow-1 w-full h-auto p-8 justify-center border-stone-900 gap-4">
           <p className="text-lg font-sans">
             I analyze behavioral and product data using Python, Pandas, and Matplotlib. Great for
             making informed design decisions with real usage data.
