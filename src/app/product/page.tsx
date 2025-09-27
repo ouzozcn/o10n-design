@@ -8,7 +8,7 @@ import Image from 'next/image';
 export const metadata: Metadata = {
   title: 'Products | Oğuzhan Özcan',
   description:
-    "Explore the products I've worked on including Kroma color accessibility checker and Brifl Design System. See my portfolio of design and development projects.",
+    "Products and tools I've built: Kroma (free color blindness accessibility checker for UI designers), Brifl Design System (30+ React components with 200+ variants), and other design engineering experiments.",
   alternates: {
     canonical: 'https://o10n.design/product',
   },
@@ -17,6 +17,29 @@ export const metadata: Metadata = {
     description:
       "Explore the products I've worked on including Kroma color accessibility checker and Brifl Design System. See my portfolio of design and development projects.",
     url: 'https://o10n.design/product',
+    images: 'https://o10n.design/img/og_images/products_open_graph.png',
+    siteName: 'o10n.design',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Products | Oğuzhan Özcan',
+    description:
+      "Explore the products I've worked on including Kroma color accessibility checker and Brifl Design System. See my portfolio of design and development projects.",
+    images: 'https://o10n.design/img/og_images/products_open_graph.png',
+  },
+  keywords:
+    'Color Blindness Tool, Accessibility Checker, Design System, React Components, UI Component Library, Kroma Accessibility, Brifl Design System, Design Engineering Projects, Product Designer Portfolio, Open Source Design Tools, Figma Components, Frontend Design Tools, Design System Architecture, Component Design, Accessibility Tools for Designers',
+  metadataBase: new URL('https://o10n.design'),
+  applicationName: 'o10n.design',
+  authors: [{ name: 'Oğuzhan Özcan', url: 'https://o10n.design/about-me' }],
+  creator: 'Oğuzhan Özcan',
+  publisher: 'Oğuzhan Özcan',
+  colorScheme: 'light',
+  icons: {
+    icon: 'https://o10n.design/img/favicons/favicon-32x32.png',
+    shortcut: 'https://o10n.design/img/favicons/favicon-32x32.png',
+    apple: 'https://o10n.design/img/favicons/apple-touch-icon.png',
   },
 };
 
@@ -45,7 +68,7 @@ export default function Products() {
           title="Ideas"
         />
         <MenuItem
-         to="/writings"
+          to="/writings"
           className="flex-1 text-center md:border-b-0 border-b-0 border-r-0 md:border-r border-stone-900"
           title="Writings"
         />

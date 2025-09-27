@@ -8,16 +8,40 @@ import Image from 'next/image';
 export const metadata: Metadata = {
   title: 'Ideas | Oğuzhan Özcan',
   description:
-    'Explore my design ideas and concepts including Brifl collaborative form building tool and Jotform Logbook internal company awareness tool.',
+    'Explorations and unrealized projects: Brifl (collaborative form builder with 30+ unique blocks for creatives), Jotform Logbook (internal tool for cross-team awareness), and other design concepts. Ideas that shaped my thinking—even if they never launched.',
   alternates: {
     canonical: 'https://o10n.design/ideas',
   },
   openGraph: {
     title: 'Ideas | Oğuzhan Özcan',
     description:
-      'Explore my design ideas and concepts including Brifl collaborative form building tool and Jotform Logbook internal company awareness tool.',
+      'Explorations and unrealized projects: Brifl (collaborative form builder with 30+ unique blocks for creatives), Jotform Logbook (internal tool for cross-team awareness), and other design concepts. Ideas that shaped my thinking—even if they never launched.',
     url: 'https://o10n.design/ideas',
+    images: 'https://o10n.design/img/og_images/ideas_open_graph.png',
+    siteName: 'o10n.design',
+    type: 'article',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Ideas | Oğuzhan Özcan',
+    description:
+      'Explorations and unrealized projects: Brifl (collaborative form builder with 30+ unique blocks for creatives), Jotform Logbook (internal tool for cross-team awareness), and other design concepts. Ideas that shaped my thinking—even if they never launched.',
+    images: 'https://o10n.design/img/og_images/ideas_open_graph.png',
+  },
+  robots: 'index, follow',
+  metadataBase: new URL('https://o10n.design'),
+  applicationName: 'o10n.design',
+  authors: [{ name: 'Oğuzhan Özcan', url: 'https://o10n.design/about-me' }],
+  creator: 'Oğuzhan Özcan',
+  publisher: 'Oğuzhan Özcan',
+  colorScheme: 'light',
+  icons: {
+    icon: 'https://o10n.design/img/favicons/favicon-32x32.png',
+    shortcut: 'https://o10n.design/img/favicons/favicon-32x32.png',
+    apple: 'https://o10n.design/img/favicons/apple-touch-icon.png',
+  },
+  keywords:
+    'Design Concepts, Product Ideas, Design Explorations, Unrealized Projects, Design Thinking, Concept Design, Product Ideation, Design Process, Creative Tools Design, Collaborative Tools, Form Builder Design, Internal Tools Design, Design Experiments, Side Projects, Design Portfolio Ideas, Product Design Concepts, UX Explorations, Design Innovation, Speculative Design, Design Research Projects',
 };
 
 export default function Ideas() {
@@ -45,7 +69,7 @@ export default function Ideas() {
           title="Ideas"
         />
         <MenuItem
-         to="/writings"
+          to="/writings"
           className="flex-1 text-center md:border-b-0 border-b-0 border-r-0 md:border-r border-stone-900"
           title="Writings"
         />

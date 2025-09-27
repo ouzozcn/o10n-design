@@ -31,6 +31,17 @@ export const metadata: Metadata = {
   keywords:
     'Design-to-Developer Handoff, Design Specs, Product Design Articles, Design Systems Writing, Accessibility Essays, Design Engineering Blog, UI Component Design Articles, Design to Code Articles, Developer Friendly Design Writing, Design Process Articles, UX Design Writing, SaaS Design Patterns, Frontend Design Blog, Design Thinking Essays, Component Architecture Writing, Design Handoff Best Practices, Design System Documentation, Design Leadership Writing, Product Design Process, Interface Design Articles, Design Collaboration Writing, Technical Design Writing, Design Strategy Essays, User Research Writing, Design Critique Articles, Design Tools Review, Figma Tips Articles, Storybook Documentation, React Component Design, Design Token Writing, Atomic Design Principles, Design System Governance',
   robots: 'index, follow',
+  metadataBase: new URL('https://o10n.design'),
+  applicationName: 'o10n.design',
+  authors: [{ name: 'Oğuzhan Özcan', url: 'https://o10n.design/about-me' }],
+  creator: 'Oğuzhan Özcan',
+  publisher: 'Oğuzhan Özcan',
+  colorScheme: 'light',
+  icons: {
+    icon: 'https://o10n.design/img/favicons/favicon-32x32.png',
+    shortcut: 'https://o10n.design/img/favicons/favicon-32x32.png',
+    apple: 'https://o10n.design/img/favicons/apple-touch-icon.png',
+  },
 };
 
 export default function Writings() {

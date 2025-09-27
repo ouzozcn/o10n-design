@@ -6,16 +6,32 @@ import { Footer } from '@/components/Footer';
 export const metadata: Metadata = {
   title: 'About Me | Oğuzhan Özcan',
   description:
-    'Learn about Oğuzhan Özcan, a self-taught product designer with a physics background, 5+ years of experience designing complex SaaS products, and passion for systems, accessibility, and AI.',
+    'Product designer and design engineer who prioritizes research-based methodologies, accessibility, user-centered designs, and developer friendliness.',
   alternates: {
     canonical: 'https://o10n.design/about-me',
   },
   openGraph: {
     title: 'About Me | Oğuzhan Özcan',
     description:
-      'Learn about Oğuzhan Özcan, a self-taught product designer with a physics background, 5+ years of experience designing complex SaaS products, and passion for systems, accessibility, and AI.',
+      'Product designer and design engineer who prioritizes research-based methodologies, accessibility, user-centered designs, and developer friendliness.',
     url: 'https://o10n.design/about-me',
+    images: 'https://o10n.design/img/og_images/about_me_open_graph.png',
+    siteName: 'o10n.design',
+    type: 'article',
   },
+  metadataBase: new URL('https://o10n.design'),
+  applicationName: 'o10n.design',
+  authors: [{ name: 'Oğuzhan Özcan', url: 'https://o10n.design/about-me' }],
+  creator: 'Oğuzhan Özcan',
+  publisher: 'Oğuzhan Özcan',
+  colorScheme: 'light',
+  icons: {
+    icon: 'https://o10n.design/img/favicons/favicon-32x32.png',
+    shortcut: 'https://o10n.design/img/favicons/favicon-32x32.png',
+    apple: 'https://o10n.design/img/favicons/apple-touch-icon.png',
+  },
+  keywords:
+    'Who is Oğuzhan Özcan?, Oğuzhan Özcan kimdir, oğuzhan özcan, ouzozcn, o10n, o10n.design, Product Designer, Design Engineer, SaaS UX Design, Design Systems, Enterprise Product Design, Accessibility Design, Developer-Friendly Design, Data-Driven Design, AI Workflows, B2B Product Design, Jotform, React Design Components, Storybook Design Handoff, Design to Code, User Research, Frontend Design, Oğuzhan Özcan, Oguzhan Ozcan, Oğuz Özcan, ouzozcn, o10n, o10n.design, UX Designer Turkey, UI/UX Designer, Digital Product Designer, Remote Product Designer, Freelance Product Designer, Full-Stack Designer, Interaction Design, Visual Design, Usability, User Experience, Mobile App Design, Web Design, Prototyping, Wireframing',
 };
 
 export default function AboutMe() {
