@@ -40,7 +40,7 @@ const RowCard: React.FC<RowCardProps> = ({
     <div className={containerClasses}>
       {swapContent && (
         <div className="flex w-full h-auto justify-center items-center lg:h-full">
-          <div className="max-w-[320px] md:max-w-[400px] lg:max-w-[480px] max-h-[320px] md:max-h-[400px] lg:max-h-[480px] w-full h-full flex items-center justify-center">
+          <div className="flex max-w-[320px] md:max-w-[400px] lg:max-w-[480px] max-h-[320px] md:max-h-[400px] lg:max-h-[480px] w-full h-full  items-center justify-center">
             {swapContent}
           </div>
         </div>
