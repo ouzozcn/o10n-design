@@ -6,18 +6,31 @@ import Image from 'next/image';
 import MailIcon from '@mui/icons-material/Mail';
 
 export const metadata: Metadata = {
-  title: 'Contact | Oğuzhan Özcan',
+  title: 'Contact Oğuzhan Özcan | Product Designer & Design Engineer',
   description:
-    'Get in touch with Oğuzhan Özcan, Product Designer. Connect on LinkedIn, send an email, or follow on social media.',
+    'Connect with Oğuzhan Özcan for product design, design systems, or design engineering opportunities. Available for consulting, collaboration, and full-time roles in SaaS and enterprise products.',
   alternates: {
     canonical: 'https://o10n.design/contact',
   },
   openGraph: {
-    title: 'Contact | Oğuzhan Özcan',
+    title: 'Contact Oğuzhan Özcan | Product Designer & Design Engineer',
     description:
-      'Get in touch with Oğuzhan Özcan, Product Designer. Connect on LinkedIn, send an email, or follow on social media.',
+      "Let's collaborate on product design, design systems, or accessibility projects. Available for consulting and full-time opportunities.",
     url: 'https://o10n.design/contact',
+    type: 'website',
+    images: 'https://o10n.design/img/og_images/contact_open_graph.png',
+    siteName: 'o10n.design',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact Oğuzhan Özcan | Product Designer & Design Engineer',
+    description:
+      "Let's collaborate on product design, design systems, or accessibility projects. Available for consulting and full-time opportunities.",
+    images: 'https://o10n.design/img/og_images/contact_open_graph.png',
+  },
+  robots: 'index, follow',
+  keywords:
+    'Contact Design Engineer, Hire Design Engineer, Turkish Product Designer, SaaS Designer, Contact Product Designer, Hire Product Designer, Design Systems Consultant, SaaS UX Designer, Design Engineering Services, Product Design Collaboration, Freelance Product Designer, Enterprise UX Designer, Accessibility Design Consultant, Ürün Tasarımcısı, Tasarım Mühendisi, Tasarım Sistemleri, UX Tasarımcısı, Kullanıcı Deneyimi, Kullanılabilirlik, Erişilebilirlik, UI/UX Danışmanı, Ürün Tasarımı, Dijital Ürünler, Web ve Mobil Tasarım, Kullanıcı Araştırması, Prototipleme, Wireframing, Görsel Tasarım, Etkileşim Tasarımı',
 };
 
 export default function Contact() {
