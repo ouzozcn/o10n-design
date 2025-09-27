@@ -8,15 +8,39 @@ import Image from 'next/image';
 export const metadata: Metadata = {
   title: 'Case Studies | Oğuzhan Özcan',
   description:
-    'Explore my design case studies including the Jotform 2FA implementation that improved user security and resulted in 15K+ user adoptions.',
+    'In-depth case studies from enterprise product design at Jotform. Featuring: Jotform 2FA (15K+ users, 95% retention), security UX, enterprise controls, and B2B SaaS workflows. Real problems, research-driven solutions, measurable impact.',
   alternates: {
     canonical: 'https://o10n.design/case-study',
   },
   openGraph: {
     title: 'Case Studies | Oğuzhan Özcan',
     description:
-      'Explore my design case studies including the Jotform 2FA implementation that improved user security and resulted in 15K+ user adoptions.',
+      'In-depth case studies from enterprise product design at Jotform. Featuring: Jotform 2FA (15K+ users, 95% retention), security UX, enterprise controls, and B2B SaaS workflows. Real problems, research-driven solutions, measurable impact.',
     url: 'https://o10n.design/case-study',
+    images: 'https://o10n.design/img/og_images/case_studies_open_graph.png',
+    siteName: 'o10n.design',
+    type: 'article',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Case Studies | Oğuzhan Özcan',
+    description:
+      'In-depth case studies from enterprise product design at Jotform. Featuring: Jotform 2FA (15K+ users, 95% retention), security UX, enterprise controls, and B2B SaaS workflows. Real problems, research-driven solutions, measurable impact.',
+    images: 'https://o10n.design/img/og_images/case_studies_open_graph.png',
+  },
+  keywords:
+    'Product Design Case Studies, Enterprise UX Design, B2B SaaS Design, Security UX, Two-Factor Authentication Design, User Research in Product Design, SaaS User Experience, Design Thinking Case Studies, UX Problem Solving, User-Centered Design, SaaS Workflow Design, Enterprise Software Design, Product Management Case Studies, Usability Testing in SaaS, Design Strategy for B2B, SaaS Product Development, User Retention Strategies, Accessibility in Enterprise Software, Interaction Design for SaaS, Visual Design in Product Case Studies',
+  robots: 'index, follow',
+  metadataBase: new URL('https://o10n.design'),
+  applicationName: 'o10n.design',
+  authors: [{ name: 'Oğuzhan Özcan', url: 'https://o10n.design/about-me' }],
+  creator: 'Oğuzhan Özcan',
+  publisher: 'Oğuzhan Özcan',
+  colorScheme: 'light',
+  icons: {
+    icon: 'https://o10n.design/img/favicons/favicon-32x32.png',
+    shortcut: 'https://o10n.design/img/favicons/favicon-32x32.png',
+    apple: 'https://o10n.design/img/favicons/apple-touch-icon.png',
   },
 };
 

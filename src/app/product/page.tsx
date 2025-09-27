@@ -30,6 +30,17 @@ export const metadata: Metadata = {
   },
   keywords:
     'Color Blindness Tool, Accessibility Checker, Design System, React Components, UI Component Library, Kroma Accessibility, Brifl Design System, Design Engineering Projects, Product Designer Portfolio, Open Source Design Tools, Figma Components, Frontend Design Tools, Design System Architecture, Component Design, Accessibility Tools for Designers',
+  metadataBase: new URL('https://o10n.design'),
+  applicationName: 'o10n.design',
+  authors: [{ name: 'Oğuzhan Özcan', url: 'https://o10n.design/about-me' }],
+  creator: 'Oğuzhan Özcan',
+  publisher: 'Oğuzhan Özcan',
+  colorScheme: 'light',
+  icons: {
+    icon: 'https://o10n.design/img/favicons/favicon-32x32.png',
+    shortcut: 'https://o10n.design/img/favicons/favicon-32x32.png',
+    apple: 'https://o10n.design/img/favicons/apple-touch-icon.png',
+  },
 };
 
 export default function Products() {
