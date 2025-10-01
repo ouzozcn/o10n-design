@@ -75,12 +75,13 @@ export default function Writings() {
         />
       </div>
 
-      <div className="PageHero flex flex-col p-8 w-full md:h-[400px] border-b border-stone-900 justify-center items-center gap-4">
+      <div className="PageHero flex flex-col p-8 lg:p-32 w-full md:h-[400px] border-b border-stone-900 justify-center items-center gap-4">
         <h1 className="text-4xl text-center font-sans text-stone-900 flex items-center justify-center">
           Writings
         </h1>
         <h2 className="text-xl text-center font-sans text-stone-900 flex items-center justify-center">
-          Here are some of the Writings I&apos;ve posted on.
+          Essays and articles on design systems, accessibility, and design-to-code workflows. I
+          write to clarify my thinking and share what I learn with the community.
         </h2>
       </div>
 

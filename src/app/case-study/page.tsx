@@ -75,12 +75,14 @@ export default function CaseStudy() {
         />
       </div>
 
-      <div className="PageHero flex flex-col p-8 w-full md:h-[400px] border-b border-stone-900 justify-center items-center gap-4">
+      <div className="PageHero flex flex-col p-8 lg:p-32 w-full md:h-[400px] border-b border-stone-900 justify-center items-center gap-4">
         <h1 className="text-4xl text-center font-sans text-stone-900 flex items-center justify-center">
           Case Studies
         </h1>
         <h2 className="text-xl text-center font-sans text-stone-900 flex items-center justify-center">
-          Here are some of the Case Studies I&apos;ve worked on.
+          Deep dives into real product challenges—from security UX to enterprise workflows. These
+          case studies show how I use research, iteration, and cross-functional collaboration to
+          ship features that matter.
         </h2>
       </div>
 
@@ -89,7 +91,7 @@ export default function CaseStudy() {
           className="border-b-0"
           direction="left"
           cardTitle="Enhancing Security Through Two-Factor Authentication"
-          cardContent="Improving user security by implementing 2FA on Jotform which resulted in a 15K+ users adopting the feature."
+          cardContent="Designed and launched Jotform's first two-factor authentication system—adopted by 15,000+ users with a 95% retention rate. A security feature that scaled across Web, Mobile, and Enterprise platforms."
           tags={[
             {
               label: 'Case Study',

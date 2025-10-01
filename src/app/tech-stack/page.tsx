@@ -70,7 +70,7 @@ export default function TechStack() {
         />
       </div>
 
-      <div className="PageHero flex flex-col p-8 md:p-32 w-full md:h-[400px] border-b border-stone-900 justify-center items-center gap-4">
+      <div className="PageHero flex flex-col p-8 lg:p-32 md:p-32 w-full md:h-[400px] border-b border-stone-900 justify-center items-center gap-4">
         <h1 className="text-4xl text-center font-sans text-stone-900 flex items-center justify-center">
           Tech Stack
         </h1>

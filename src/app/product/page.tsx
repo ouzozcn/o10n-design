@@ -74,12 +74,14 @@ export default function Products() {
         />
       </div>
 
-      <div className="PageHero flex flex-col p-8 w-full md:h-[400px] border-b border-stone-900 justify-center items-center gap-4">
+      <div className="PageHero flex flex-col p-8 lg:p-32 w-full md:h-[400px] border-b border-stone-900 justify-center items-center gap-4">
         <h1 className="text-4xl text-center font-sans text-stone-900 flex items-center justify-center">
           Products
         </h1>
         <h2 className="text-xl text-center font-sans text-stone-900 flex items-center justify-center">
-          Here are some of the products I&apos;ve worked on.
+          Tools and systems I've built to solve real problems—from accessibility checkers to full
+          design systems. Each project reflects my commitment to open design, usability, and
+          technical craftsmanship.
         </h2>
       </div>
 
@@ -87,7 +89,7 @@ export default function Products() {
         <RowCard
           direction="left"
           cardTitle="Kroma | Color Blindness Accessibility Checker for User Interfaces"
-          cardContent="Kroma is a free color accessibility checker for those who works on the user interface. It's the only free tool which offer limitless color accessibility checks."
+          cardContent="A free, no-limits color blindness accessibility checker built for UI designers and developers. Kroma simulates 8 types of color vision deficiency—helping you design interfaces everyone can use."
           tags={[
             {
               label: 'Product',

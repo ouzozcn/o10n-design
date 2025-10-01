@@ -75,12 +75,13 @@ export default function Ideas() {
         />
       </div>
 
-      <div className="PageHero flex flex-col p-8 w-full md:h-[400px] border-b border-stone-900 justify-center items-center gap-4">
+      <div className="PageHero flex flex-col p-8 lg:p-32 w-full md:h-[400px] border-b border-stone-900 justify-center items-center gap-4">
         <h1 className="text-4xl text-center font-sans text-stone-900 flex items-center justify-center">
           Ideas
         </h1>
         <h2 className="text-xl text-center font-sans text-stone-900 flex items-center justify-center">
-          Here are some of the Ideas I&apos;ve worked on.
+          Projects that never launched—but shaped how I think. These explorations taught me systems
+          thinking, user research, and the importance of validating ideas before building.
         </h2>
       </div>
 
@@ -88,7 +89,7 @@ export default function Ideas() {
         <RowCard
           direction="right"
           cardTitle="brifl: Empowering Creators with Collaborative Form Building"
-          cardContent="An open-source tool designed for designers, developers, writers, and photographers to create, share, and analyze forms seamlessly."
+          cardContent="A collaborative form builder designed for creatives—featuring 30+ specialized blocks for designers, developers, writers, and photographers. Never launched, but it taught me how to design systems for diverse workflows."
           tags={[
             {
               label: 'Idea',
@@ -114,7 +115,7 @@ export default function Ideas() {
           className="border-b-0"
           direction="left"
           cardTitle="Jotform Logbook | An internal tool for better company awareness"
-          cardContent="Jotform Logbook is an internal tool that helps Jotformers to be aware of what's happening in the company. It's a simple tool that helps us to be more transparent and aware of what's happening in the company."
+          cardContent="An internal tool concept for cross-team transparency at Jotform. Logbook lets teams log work-in-progress, share updates, and reduce duplicated efforts—addressing a real problem I observed in a 600+ person company."
           tags={[
             {
               label: 'Idea',
