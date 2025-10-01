@@ -9,13 +9,13 @@ import Image from 'next/image';
 export const Footer: React.FC = () => {
   return (
     <div className="Footer flex flex-col w-full">
-      <div className="FooterTop flex flex-col md:flex-row w-full md:justify-between items-center bg-teal-50 border-t border-b border-stone-900">
-        <div className="FooterTitle flex flex-col md:flex-row gap-2 md:gap-6 p-6 pb-0 md:p-8 items-center md:items-center">
+      <div className="FooterTop flex flex-col md:flex-row lg:px-20 w-full md:justify-between items-center bg-teal-50 border-t border-b border-stone-900">
+        <div className="FooterTitle flex flex-col gap-2 md:gap-2 p-6 pb-0 md:p-8 items-center md:items-start">
           <div className="text-stone-900 text-2xl text-center md:text-left font-normal font-sans">
             Oğuzhan Özcan
           </div>
           <div className="text-stone-600 text-lg text-center md:text-left font-normal font-sans">
-            Product Designer
+            Product Designer | Design Engineer
           </div>
         </div>
         <div className="FooterSocial flex w-auto lg:w-1/3 justify-start items-center py-4 px-4 md:px-8 gap-2">
@@ -23,37 +23,37 @@ export const Footer: React.FC = () => {
             icon={
               <Image src="/assets/images/LinkedinLogo.svg" alt="LinkedIn" width={24} height={24} />
             }
-            className="border-none hover:bg-blue-200"
+            className="border-none rounded-full hover:bg-teal-200"
             state="idle"
             to="https://linkedin.com/in/ouzozcn/"
           />
           <SimpleTab
             icon={<Image src="/assets/images/behance.svg" alt="Behance" width={24} height={24} />}
-            className="border-none hover:bg-gray-200"
+            className="border-none rounded-full hover:bg-teal-200"
             state="idle"
             to="https://www.behance.net/oguzhanozcan"
           />
           <SimpleTab
             icon={<Image src="/assets/images/github.svg" alt="GitHub" width={24} height={24} />}
-            className="border-none hover:bg-lime-200"
+            className="border-none rounded-full hover:bg-teal-200"
             state="idle"
             to="https://github.com/ouzozcn"
           />
           <SimpleTab
             icon={<Image src="/assets/images/dribbble.svg" alt="Dribbble" width={24} height={24} />}
-            className="border-none hover:bg-pink-200"
+            className="border-none rounded-full hover:bg-teal-200"
             state="idle"
             to="https://dribbble.com/ouzozcn"
           />
           <SimpleTab
             icon={<Image src="/assets/images/medium.svg" alt="Medium" width={24} height={24} />}
-            className="border-none hover:bg-teal-200"
+            className="border-none rounded-full hover:bg-teal-200"
             state="idle"
             to="https://medium.com/@ouzozcn"
           />
           <SimpleTab
             icon={<MailIcon sx={{ fontSize: '1.5rem' }} />}
-            className="border-none hover:bg-violet-200"
+            className="border-none rounded-full hover:bg-teal-200"
             state="idle"
             to="mailto:oguz@o10n.design"
           />

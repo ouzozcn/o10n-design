@@ -6,42 +6,106 @@ import { Footer } from '@/components/Footer';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Writings | Oğuzhan Özcan',
+  title: 'Writings | Oğuzhan Özcan | Design Systems & Developer Handoff',
   description:
-    'Articles and essays on product design, design systems, accessibility, and design engineering. Exploring developer-friendly components, design-to-code workflows, and building inclusive digital experiences.',
+    'Articles on product design, design systems, accessibility, and design engineering. Topics: developer-friendly components, design-to-code workflows, Storybook handoff, atomic design, and building inclusive digital experiences. Insights from 5+ years in SaaS product design.',
   alternates: {
     canonical: 'https://o10n.design/writings',
   },
   openGraph: {
-    title: 'Writings | Oğuzhan Özcan',
+    title: 'Writings | Oğuzhan Özcan | Design Systems & Accessibility',
     description:
-      'Articles and essays on product design, design systems, accessibility, and design engineering. Exploring developer-friendly components, design-to-code workflows, and building inclusive digital experiences.',
+      'Essays on design systems, accessibility, and design-to-code workflows. How to build developer-friendly components, improve handoff, and create inclusive experiences.',
     url: 'https://o10n.design/writings',
-    images: 'https://o10n.design/img/og_images/writings_open_graph.png',
+    images: [
+      {
+        url: 'https://o10n.design/img/og_images/writings_open_graph.png',
+        width: 1200,
+        height: 630,
+        alt: 'Oğuzhan Özcan Writings - Design Systems & Accessibility',
+      },
+    ],
     siteName: 'o10n.design',
     type: 'article',
+    locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Writings | Oğuzhan Özcan',
+    title: 'Writings | Design Systems & Developer Handoff',
     description:
-      'Articles and essays on product design, design systems, accessibility, and design engineering. Exploring developer-friendly components, design-to-code workflows, and building inclusive digital experiences.',
-    images: 'https://o10n.design/img/og_images/writings_open_graph.png',
+      'Articles on design systems, accessibility, and design-to-code workflows. Building better handoffs between design and development.',
+    images: ['https://o10n.design/img/og_images/writings_open_graph.png'],
+    creator: '@ouzozcn',
+    site: '@ouzozcn',
   },
-  keywords:
-    'Design-to-Developer Handoff, Design Specs, Product Design Articles, Design Systems Writing, Accessibility Essays, Design Engineering Blog, UI Component Design Articles, Design to Code Articles, Developer Friendly Design Writing, Design Process Articles, UX Design Writing, SaaS Design Patterns, Frontend Design Blog, Design Thinking Essays, Component Architecture Writing, Design Handoff Best Practices, Design System Documentation, Design Leadership Writing, Product Design Process, Interface Design Articles, Design Collaboration Writing, Technical Design Writing, Design Strategy Essays, User Research Writing, Design Critique Articles, Design Tools Review, Figma Tips Articles, Storybook Documentation, React Component Design, Design Token Writing, Atomic Design Principles, Design System Governance',
-  robots: 'index, follow',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  keywords: [
+    // Content Types
+    'Product Design Articles',
+    'Design Systems Writing',
+    'Accessibility Essays',
+    'Design Engineering Blog',
+    'UX Writing',
+
+    // Core Topics
+    'Design to Code Articles',
+    'Developer Friendly Design',
+    'Design Handoff Best Practices',
+    'Component Architecture Writing',
+    'Design System Documentation',
+
+    // Specific Focus Areas
+    'Storybook Documentation',
+    'Figma Tips',
+    'React Component Design',
+    'Design Tokens',
+    'Atomic Design Principles',
+
+    // Methodologies
+    'Design Process Articles',
+    'Design Thinking Essays',
+    'User Research Writing',
+    'Design Strategy',
+    'Design Leadership',
+
+    // Technical Writing
+    'UI Component Design',
+    'Frontend Design Articles',
+    'Design System Governance',
+    'Design Tools Review',
+
+    // Collaboration
+    'Design-Developer Collaboration',
+    'Cross-Functional Design',
+    'Design Critique',
+    'Design Team Process',
+
+    // Accessibility Focus
+    'Accessible Design Writing',
+    'Inclusive Design Essays',
+    'WCAG Guidelines',
+    'Color Accessibility',
+
+    // Creator
+    'Oğuzhan Özcan Blog',
+    'Product Design Insights',
+    'Design Engineering Writing',
+  ].join(', '),
   metadataBase: new URL('https://o10n.design'),
   applicationName: 'o10n.design',
   authors: [{ name: 'Oğuzhan Özcan', url: 'https://o10n.design/about-me' }],
   creator: 'Oğuzhan Özcan',
-  publisher: 'Oğuzhan Özcan',
-  colorScheme: 'light',
-  icons: {
-    icon: 'https://o10n.design/img/favicons/favicon-32x32.png',
-    shortcut: 'https://o10n.design/img/favicons/favicon-32x32.png',
-    apple: 'https://o10n.design/img/favicons/apple-touch-icon.png',
-  },
+  category: 'portfolio',
 };
 
 export default function Writings() {

@@ -6,42 +6,100 @@ import { Footer } from '@/components/Footer';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Ideas | Oğuzhan Özcan',
+  title: 'Ideas | Oğuzhan Özcan | Design Explorations & Concepts',
   description:
-    'Explorations and unrealized projects: Brifl (collaborative form builder with 30+ unique blocks for creatives), Jotform Logbook (internal tool for cross-team awareness), and other design concepts. Ideas that shaped my thinking—even if they never launched.',
+    'Design explorations and unrealized projects: Brifl (collaborative form builder with 30+ unique blocks for creatives), Jotform Logbook (internal tool for cross-team transparency). Ideas that shaped my design thinking—lessons from projects that never launched.',
   alternates: {
     canonical: 'https://o10n.design/ideas',
   },
   openGraph: {
-    title: 'Ideas | Oğuzhan Özcan',
+    title: 'Ideas & Design Explorations | Oğuzhan Özcan',
     description:
-      'Explorations and unrealized projects: Brifl (collaborative form builder with 30+ unique blocks for creatives), Jotform Logbook (internal tool for cross-team awareness), and other design concepts. Ideas that shaped my thinking—even if they never launched.',
+      'Unrealized projects with real lessons: Brifl form builder, Jotform Logbook. What I learned from ideas that never launched—systems thinking, user research, and validation.',
     url: 'https://o10n.design/ideas',
-    images: 'https://o10n.design/img/og_images/ideas_open_graph.png',
+    images: [
+      {
+        url: 'https://o10n.design/img/og_images/ideas_open_graph.png',
+        width: 1200,
+        height: 630,
+        alt: 'Oğuzhan Özcan Design Ideas - Brifl & Jotform Logbook',
+      },
+    ],
     siteName: 'o10n.design',
     type: 'article',
+    locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Ideas | Oğuzhan Özcan',
+    title: 'Ideas & Design Explorations | Oğuzhan Özcan',
     description:
-      'Explorations and unrealized projects: Brifl (collaborative form builder with 30+ unique blocks for creatives), Jotform Logbook (internal tool for cross-team awareness), and other design concepts. Ideas that shaped my thinking—even if they never launched.',
-    images: 'https://o10n.design/img/og_images/ideas_open_graph.png',
+      'Projects that never launched but shaped how I design: Brifl (form builder for creatives), Jotform Logbook (internal transparency tool). Learning through exploration.',
+    images: ['https://o10n.design/img/og_images/ideas_open_graph.png'],
+    creator: '@ouzozcn',
+    site: '@ouzozcn',
   },
-  robots: 'index, follow',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  keywords: [
+    // Concept Types
+    'Design Concepts',
+    'Product Ideas',
+    'Design Explorations',
+    'Unrealized Projects',
+    'Design Thinking',
+
+    // Specific Projects
+    'Brifl Form Builder',
+    'Jotform Logbook',
+    'Collaborative Form Tool',
+    'Internal Company Tool',
+    'Team Transparency Tool',
+
+    // Design Approach
+    'Concept Design',
+    'Product Ideation',
+    'Design Process',
+    'User Research Process',
+    'Systems Thinking',
+
+    // Project Characteristics
+    'Creative Tools Design',
+    'Collaborative Software Design',
+    'Open Source Design',
+    'Side Projects',
+    'Design Experiments',
+
+    // Learning & Growth
+    'Design Learning',
+    'Design Failures',
+    'Design Lessons',
+    'Design Portfolio Process',
+    'Product Validation',
+
+    // Audience
+    'Design for Creatives',
+    'Tools for Designers',
+    'Tools for Developers',
+    'Tools for Writers',
+
+    // Creator
+    'Oğuzhan Özcan Ideas',
+    'Design Innovation Projects',
+  ].join(', '),
   metadataBase: new URL('https://o10n.design'),
   applicationName: 'o10n.design',
   authors: [{ name: 'Oğuzhan Özcan', url: 'https://o10n.design/about-me' }],
   creator: 'Oğuzhan Özcan',
-  publisher: 'Oğuzhan Özcan',
-  colorScheme: 'light',
-  icons: {
-    icon: 'https://o10n.design/img/favicons/favicon-32x32.png',
-    shortcut: 'https://o10n.design/img/favicons/favicon-32x32.png',
-    apple: 'https://o10n.design/img/favicons/apple-touch-icon.png',
-  },
-  keywords:
-    'Design Concepts, Product Ideas, Design Explorations, Unrealized Projects, Design Thinking, Concept Design, Product Ideation, Design Process, Creative Tools Design, Collaborative Tools, Form Builder Design, Internal Tools Design, Design Experiments, Side Projects, Design Portfolio Ideas, Product Design Concepts, UX Explorations, Design Innovation, Speculative Design, Design Research Projects',
+  category: 'portfolio',
 };
 
 export default function Ideas() {

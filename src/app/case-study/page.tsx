@@ -6,42 +6,97 @@ import { Footer } from '@/components/Footer';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Case Studies | Oğuzhan Özcan',
+  title: 'Case Studies | Oğuzhan Özcan | Enterprise SaaS & Security UX',
   description:
-    'In-depth case studies from enterprise product design at Jotform. Featuring: Jotform 2FA (15K+ users, 95% retention), security UX, enterprise controls, and B2B SaaS workflows. Real problems, research-driven solutions, measurable impact.',
+    'In-depth case studies from enterprise product design at Jotform. Jotform 2FA: Security feature adopted by 15,000+ users with 95% retention. Real problems, research-driven solutions, measurable impact across Web, Mobile, and Enterprise platforms.',
   alternates: {
     canonical: 'https://o10n.design/case-study',
   },
   openGraph: {
-    title: 'Case Studies | Oğuzhan Özcan',
+    title: 'Case Studies | Oğuzhan Özcan | Enterprise Product Design',
     description:
-      'In-depth case studies from enterprise product design at Jotform. Featuring: Jotform 2FA (15K+ users, 95% retention), security UX, enterprise controls, and B2B SaaS workflows. Real problems, research-driven solutions, measurable impact.',
+      'Jotform 2FA case study: Designed authentication system for 25M users. 15K+ adoptions, 95% retention. From research to rollout—security UX that scales.',
     url: 'https://o10n.design/case-study',
-    images: 'https://o10n.design/img/og_images/case_studies_open_graph.png',
+    images: [
+      {
+        url: 'https://o10n.design/img/og_images/case_studies_open_graph.png',
+        width: 1200,
+        height: 630,
+        alt: 'Oğuzhan Özcan Case Studies - Enterprise SaaS & Security UX',
+      },
+    ],
     siteName: 'o10n.design',
     type: 'article',
+    locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Case Studies | Oğuzhan Özcan',
+    title: 'Case Studies | Enterprise SaaS & Security UX',
     description:
-      'In-depth case studies from enterprise product design at Jotform. Featuring: Jotform 2FA (15K+ users, 95% retention), security UX, enterprise controls, and B2B SaaS workflows. Real problems, research-driven solutions, measurable impact.',
-    images: 'https://o10n.design/img/og_images/case_studies_open_graph.png',
+      'Jotform 2FA: 15K+ users, 95% retention. How I designed authentication for 25M users. Research → prototypes → measurable impact.',
+    images: ['https://o10n.design/img/og_images/case_studies_open_graph.png'],
+    creator: '@ouzozcn',
+    site: '@ouzozcn',
   },
-  keywords:
-    'Product Design Case Studies, Enterprise UX Design, B2B SaaS Design, Security UX, Two-Factor Authentication Design, User Research in Product Design, SaaS User Experience, Design Thinking Case Studies, UX Problem Solving, User-Centered Design, SaaS Workflow Design, Enterprise Software Design, Product Management Case Studies, Usability Testing in SaaS, Design Strategy for B2B, SaaS Product Development, User Retention Strategies, Accessibility in Enterprise Software, Interaction Design for SaaS, Visual Design in Product Case Studies',
-  robots: 'index, follow',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  keywords: [
+    // Case Study Focus
+    'Product Design Case Studies',
+    'Enterprise UX Case Studies',
+    'B2B SaaS Design',
+    'Security UX Design',
+    'Two-Factor Authentication Design',
+
+    // Methodologies
+    'User Research Case Studies',
+    'Design Thinking Case Studies',
+    'UX Problem Solving',
+    'User-Centered Design Process',
+
+    // Specific Features
+    'Jotform 2FA',
+    'Authentication UX',
+    'Security Feature Design',
+    'Enterprise Software Design',
+    '2FA User Experience',
+
+    // Outcomes & Metrics
+    'User Retention Strategies',
+    'SaaS Product Success',
+    'Design Impact Metrics',
+    'Usability Testing Results',
+
+    // Work Type
+    'SaaS Workflow Design',
+    'Enterprise Controls Design',
+    'B2B Product Design',
+    'Multi-Platform Design',
+
+    // Skills Demonstrated
+    'Cross-Functional Collaboration',
+    'Design to Development',
+    'Product Strategy',
+    'Design Leadership',
+
+    // Creator
+    'Oğuzhan Özcan Case Studies',
+    'Jotform Product Designer',
+  ].join(', '),
   metadataBase: new URL('https://o10n.design'),
   applicationName: 'o10n.design',
   authors: [{ name: 'Oğuzhan Özcan', url: 'https://o10n.design/about-me' }],
   creator: 'Oğuzhan Özcan',
-  publisher: 'Oğuzhan Özcan',
-  colorScheme: 'light',
-  icons: {
-    icon: 'https://o10n.design/img/favicons/favicon-32x32.png',
-    shortcut: 'https://o10n.design/img/favicons/favicon-32x32.png',
-    apple: 'https://o10n.design/img/favicons/apple-touch-icon.png',
-  },
+  category: 'portfolio',
 };
 
 export default function CaseStudy() {

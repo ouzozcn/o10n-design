@@ -246,7 +246,7 @@ export default function HomeClient() {
           <RowCard
             direction="left"
             cardTitle="Jotform Logbook | An internal tool for better company awareness"
-            cardContent="Jotform Logbook is an internal tool that helps Jotformers to be aware of what's happening in the company. It's a simple tool that helps us to be more transparent and aware of what's happening in the company."
+            cardContent="An internal tool concept for cross-team transparency at Jotform. Logbook lets teams log work-in-progress, share updates, and reduce duplicated efforts—addressing a real problem I observed in a 600+ person company."
             tags={[
               {
                 label: 'Idea',
