@@ -90,7 +90,10 @@ export const Footer: React.FC = () => {
 
         <div className="Column__Writings flex flex-col gap-2 items-center md:items-start">
           <TextLink style="primary" label="Writings" to="/writings" />
-          <TextLink label="Developer Friendly Component Design" to="/writings/developer-friendly-component-design" />
+          <TextLink
+            label="Component Design for JavaScript Frameworks"
+            to="/writings/component-design-for-javascript-frameworks"
+          />
         </div>
       </div>
 

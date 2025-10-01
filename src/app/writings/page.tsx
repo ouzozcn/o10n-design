@@ -88,7 +88,7 @@ export default function Writings() {
         <RowCard
           className="border-b-0"
           direction="left"
-          cardTitle="Developer Friendly Component Design"
+          cardTitle="Component Design for JavaScript Frameworks"
           cardContent="Learn how to design UI components that are developer-friendly by following simple rules for auto-layout, meaningful layer names, and component-driven design principles."
           tags={[
             {
