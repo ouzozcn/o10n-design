@@ -138,12 +138,12 @@ export default function HomeClient() {
             cardTitle="Kroma | Color Blindness Accessibility Checker for User Interfaces"
             cardContent={
               <>
-                Kroma is a free{' '}
-                <RoughAnnotate type="underline" color="#0284c7" padding={2}>
-                  color accessibility checker
+                A free, no-limits{' '}
+                <RoughAnnotate type="underline" color="#02567fff" padding={2}>
+                  color blindness accessibility checker
                 </RoughAnnotate>{' '}
-                for those who works on the user interface. It's the only free tool which offer
-                limitless color accessibility checks.
+                built for UI designers and developers. Kroma simulates 8 types of color vision
+                deficiency—helping you design interfaces everyone can use.
               </>
             }
             tags={[
@@ -172,7 +172,7 @@ export default function HomeClient() {
           <RowCard
             direction="right"
             cardTitle="Enhancing Security Through Two-Factor Authentication"
-            cardContent="Improving user security by implementing 2FA on Jotform which resulted in a 15K+ users adopting the feature."
+            cardContent="Designed and launched Jotform's first two-factor authentication system—adopted by 15,000+ users with a 95% retention rate. A security feature that scaled across Web, Mobile, and Enterprise platforms."
             tags={[
               {
                 label: 'Case Study',
@@ -201,14 +201,12 @@ export default function HomeClient() {
               My Design Engineer Journey
             </div>
             <div className="text-lime-50 text-sm text-center font-normal font-sans lg:text-base">
-              As I transition from product designer to{' '}
-              <RoughAnnotate type="box" padding={3}>
-                design engineer
+              I'm transitioning from product designer to design engineer{' '}
+              <RoughAnnotate type="box" padding={2}>
+                one commit at a time.
               </RoughAnnotate>
-              , I'm actively building my technical skills through consistent coding practice. This
-              GitHub activity visualization reflects my commitment to mastering front-end
-              development while maintaining my design perspective—creating experiences that are both
-              beautiful and functionally robust.
+              This GitHub activity map reflects my daily practice: learning Front-End, building
+              components, and mastering the tools that bridge design and code.
             </div>
 
             <div className="w-full overflow-x-auto">
@@ -275,7 +273,7 @@ export default function HomeClient() {
           <RowCard
             direction="right"
             cardTitle="brifl: Empowering Creators with Collaborative Form Building"
-            cardContent="An open-source tool designed for designers, developers, writers, and photographers to create, share, and analyze forms seamlessly."
+            cardContent="A collaborative form builder designed for creatives—featuring 30+ specialized blocks for designers, developers, writers, and photographers. Never launched, but it taught me how to design systems for diverse workflows."
             tags={[
               {
                 label: 'Idea',
