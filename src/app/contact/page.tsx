@@ -311,7 +311,7 @@ export default function Contact() {
         </a>
       </div>
       <div className="PageContent flex flex-col md:flex-row w-full h-full lg:h-[600px]  border-t border-stone-900">
-        <div className="SectionBlock flex-1 p-8 md:p-12 bg-amber-50 md:border-r border-b md:border-b-0 border-stone-900 content-center">
+        <div className="SectionBlock flex-1 p-8 md:p-12  md:border-r border-b md:border-b-0 border-stone-900 content-center">
           <h3 className="text-xl font-sans font-medium text-stone-900 mb-3 text-center md:text-left">
             ⏱️ Response Time
           </h3>
@@ -320,7 +320,7 @@ export default function Contact() {
             messages are fastest.
           </p>
         </div>
-        <div className="SectionBlock flex-1 p-8 md:p-12 bg-lime-50 md:border-r border-b md:border-b-0 border-stone-900 content-center">
+        <div className="SectionBlock flex-1 p-8 md:p-12  md:border-r border-b md:border-b-0 border-stone-900 content-center">
           <h3 className="text-xl font-sans font-medium text-stone-900 mb-3 text-center md:text-left">
             🌍 Availability
           </h3>
@@ -329,7 +329,7 @@ export default function Contact() {
             on-site collaborations.
           </p>
         </div>
-        <div className="SectionBlock flex-1 p-8 md:p-12 bg-teal-50 content-center">
+        <div className="SectionBlock flex-1 p-8 md:p-12  content-center">
           <h3 className="text-xl font-sans font-medium text-stone-900 mb-3 text-center md:text-left">
             💼 Work Status
           </h3>
