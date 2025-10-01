@@ -6,41 +6,93 @@ import { Footer } from '@/components/Footer';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Products | Oğuzhan Özcan',
+  title: 'Products | Oğuzhan Özcan | Design Tools & Systems',
   description:
-    "Products and tools I've built: Kroma (free color blindness accessibility checker for UI designers), Brifl Design System (30+ React components with 200+ variants), and other design engineering experiments.",
+    "Products and design tools I've built: Kroma (free color blindness accessibility checker used by designers worldwide) and Brifl Design System (30+ React components with 200+ variants). Open-source tools for accessible, developer-friendly design.",
   alternates: {
     canonical: 'https://o10n.design/product',
   },
   openGraph: {
-    title: 'Products | Oğuzhan Özcan',
+    title: 'Products & Design Tools | Oğuzhan Özcan',
     description:
-      "Explore the products I've worked on including Kroma color accessibility checker and Brifl Design System. See my portfolio of design and development projects.",
+      'Kroma: Free accessibility checker for UI designers. Brifl Design System: 30+ React components. Tools built to solve real design problems.',
     url: 'https://o10n.design/product',
-    images: 'https://o10n.design/img/og_images/products_open_graph.png',
+    images: [
+      {
+        url: 'https://o10n.design/img/og_images/products_open_graph.png',
+        width: 1200,
+        height: 630,
+        alt: 'Oğuzhan Özcan Product Portfolio - Kroma & Brifl Design System',
+      },
+    ],
     siteName: 'o10n.design',
     type: 'website',
+    locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Products | Oğuzhan Özcan',
+    title: 'Products & Design Tools | Oğuzhan Özcan',
     description:
-      "Explore the products I've worked on including Kroma color accessibility checker and Brifl Design System. See my portfolio of design and development projects.",
-    images: 'https://o10n.design/img/og_images/products_open_graph.png',
+      'Free accessibility tools & design systems: Kroma (color blindness checker) and Brifl (30+ React components). Built for designers and developers.',
+    images: ['https://o10n.design/img/og_images/products_open_graph.png'],
+    creator: '@ouzozcn',
+    site: '@ouzozcn',
   },
-  keywords:
-    'Color Blindness Tool, Accessibility Checker, Design System, React Components, UI Component Library, Kroma Accessibility, Brifl Design System, Design Engineering Projects, Product Designer Portfolio, Open Source Design Tools, Figma Components, Frontend Design Tools, Design System Architecture, Component Design, Accessibility Tools for Designers',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  keywords: [
+    // Product Names
+    'Kroma',
+    'Kroma Accessibility',
+    'Brifl Design System',
+    'Color Blindness Checker',
+    'Accessibility Checker',
+
+    // Product Types
+    'Design Tools',
+    'Accessibility Tools',
+    'Design System',
+    'UI Component Library',
+    'React Components',
+
+    // Use Cases
+    'Color Accessibility Testing',
+    'UI Accessibility Checker',
+    'Free Accessibility Tools',
+    'Design System Architecture',
+    'Component Design',
+
+    // Technical
+    'Figma Components',
+    'React Design System',
+    'Frontend Design Tools',
+    'Atomic Design',
+    'Design Tokens',
+
+    // Audience
+    'Tools for UI Designers',
+    'Tools for Frontend Developers',
+    'Open Source Design Tools',
+    'Free Design Resources',
+
+    // Creator
+    'Oğuzhan Özcan Products',
+    'o10n.design Products',
+  ].join(', '),
   metadataBase: new URL('https://o10n.design'),
   applicationName: 'o10n.design',
   authors: [{ name: 'Oğuzhan Özcan', url: 'https://o10n.design/about-me' }],
   creator: 'Oğuzhan Özcan',
-  publisher: 'Oğuzhan Özcan',
-  colorScheme: 'light',
-  icons: {
-    icon: 'https://o10n.design/img/favicons/favicon-32x32.png',
-    shortcut: 'https://o10n.design/img/favicons/favicon-32x32.png',
-    apple: 'https://o10n.design/img/favicons/apple-touch-icon.png',
-  },
+  category: 'portfolio',
 };
 
 export default function Products() {
