@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description:
       'Practical guide to designing components that translate seamlessly from Figma to code. Auto-layout best practices, naming conventions, and handoff strategies.',
     url: 'https://o10n.design/writings/dev-friendly-component-design',
-    images: 'https://o10n.design/img/og_images/dev_friendly_component_open_graph.png',
+    images: 'https://o10n.design/img/og_images/compforjs_open_graph.png',
     siteName: 'o10n.design',
     type: 'article',
   },
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: 'Component Design for JavaScript Frameworks | Design to Code Best Practices',
     description:
       'Practical guide to designing components that translate seamlessly from Figma to code. Auto-layout best practices, naming conventions, and handoff strategies.',
-    images: 'https://o10n.design/img/og_images/dev_friendly_component_open_graph.png',
+    images: 'https://o10n.design/img/og_images/compforjs_open_graph.png',
   },
   robots: 'index, follow',
   keywords:
