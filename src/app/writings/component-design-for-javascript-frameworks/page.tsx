@@ -12,14 +12,14 @@ import MetaInfo from '@/components/MetaInfo';
 import TextLink from '@/components/TextLink';
 
 export const metadata: Metadata = {
-  title: 'Developer Friendly Component Design | Design to Code Best Practices',
+  title: 'Component Design for JavaScript Frameworks | Design to Code Best Practices',
   description:
     'Learn how to design UI components that are developer-friendly by following simple rules for auto-layout, meaningful layer names, and component-driven design principles.',
   alternates: {
     canonical: 'https://o10n.design/writings/dev-friendly-component-design',
   },
   openGraph: {
-    title: 'Developer Friendly Component Design | Design to Code Best Practices',
+    title: 'Component Design for JavaScript Frameworks | Design to Code Best Practices',
     description:
       'Practical guide to designing components that translate seamlessly from Figma to code. Auto-layout best practices, naming conventions, and handoff strategies.',
     url: 'https://o10n.design/writings/dev-friendly-component-design',
@@ -29,14 +29,14 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Developer Friendly Component Design | Design to Code Best Practices',
+    title: 'Component Design for JavaScript Frameworks | Design to Code Best Practices',
     description:
       'Practical guide to designing components that translate seamlessly from Figma to code. Auto-layout best practices, naming conventions, and handoff strategies.',
     images: 'https://o10n.design/img/og_images/dev_friendly_component_open_graph.png',
   },
   robots: 'index, follow',
   keywords:
-    'Developer Friendly Design, Component Design, Figma to Code, Auto-Layout Best Practices, UI Component Naming Conventions, Design Handoff, Frontend Development, Design Systems, React Components, Storybook, CSS Class Naming, Web Development, UX/UI Design, Product Design, Design to Development Workflow, Accessible Design, Responsive Design, Developer Experience, Code-Ready Designs',
+    'Component Design, JavaScript Frameworks, Figma to Code, Auto-Layout Best Practices, UI Component Naming Conventions, Design Handoff, Frontend Development, Design Systems, React Components, Storybook, CSS Class Naming, Web Development, UX/UI Design, Product Design, Design to Development Workflow, Accessible Design, Responsive Design, Developer Experience, Code-Ready Designs',
   metadataBase: new URL('https://o10n.design'),
   applicationName: 'o10n.design',
   authors: [{ name: 'Oğuzhan Özcan', url: 'https://o10n.design/about-me' }],
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function DevFriendlyComponentDesign() {
+export default function ComponentDesignForJavaScriptFrameworks() {
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
       <TopDivider />
@@ -58,7 +58,7 @@ export default function DevFriendlyComponentDesign() {
         <Menu />
         <div className="HeaderTitle w-full flex flex-col md:flex-row place-content-between gap-4 items-start md:items-center">
           <h1 className="text-xl md:text-2xl font-sans text-stone-900">
-            Developer Friendly Component Design
+            Component Design for JavaScript Frameworks
           </h1>
           <Button
             label="Storybook Repo"
@@ -82,7 +82,7 @@ export default function DevFriendlyComponentDesign() {
       <div className="PageContent flex flex-col w-full h-full gap-4 p-8 border-b border-stone-900">
         <div className="PageMeta flex flex-col w-full h-full gap-2">
           <div className="PageTitle px-8 pt-5 pb-2 items-center justify-center text-center text-stone-900 text-h1 font-medium font-sans">
-            Developer Friendly Component Design
+            Component Design for JavaScript Frameworks
           </div>
         </div>
       </div>
