@@ -209,7 +209,7 @@ export default function TechStack() {
         <h2 className="text-2xl font-sans font-medium text-stone-900 text-center">Design Tools</h2>
       </div>
       <div className="TechStackItem flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900 lg:min-h-80">
-        <div className="SectionTitle flex  grow-1 w-full h-auto items-center justify-center  md:border-r border-b border-stone-900">
+        <div className="SectionTitle flex  grow-1 w-full h-auto items-center justify-center  md:border-r border-b border-stone-900 min-h-20">
           <Image
             src="/img/icons/icon-figma.svg"
             alt="Figma Logo"
@@ -229,7 +229,7 @@ export default function TechStack() {
       </div>
 
       <div className="TechStackItem flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900 lg:min-h-80">
-        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-b border-stone-900">
+        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-b border-stone-900 min-h-20">
           <Image
             src="/img/icons/icon-adobe.svg"
             alt="Adobe Logo"
@@ -253,7 +253,7 @@ export default function TechStack() {
       </div>
 
       <div className="TechStackItem flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900 lg:min-h-80">
-        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-b border-stone-900">
+        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-b border-stone-900 min-h-20">
           <Image
             src="/img/icons/icon-react.svg"
             alt="React Logo"
@@ -275,7 +275,7 @@ export default function TechStack() {
         </div>
       </div>
       <div className="TechStackItem flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900 lg:min-h-80">
-        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-b border-stone-900">
+        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-b border-stone-900 min-h-20">
           <Image
             src="/img/icons/icon-next-js.svg"
             alt="Next.js Logo"
@@ -298,7 +298,7 @@ export default function TechStack() {
       </div>
 
       <div className="TechStackItem flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900 lg:min-h-80">
-        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-b border-stone-900">
+        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-b border-stone-900 min-h-20">
           <Image
             src="/img/icons/icon-tailwind.svg"
             alt="Tailwind Logo"
@@ -321,7 +321,7 @@ export default function TechStack() {
       </div>
 
       <div className="TechStackItem flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900 lg:min-h-80">
-        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-b border-stone-900">
+        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-b border-stone-900 min-h-20">
           <Image
             src="/img/icons/icon-reactflow.svg"
             alt="React Flow Logo"
@@ -348,7 +348,7 @@ export default function TechStack() {
         </h2>
       </div>
       <div className="TechStackItem flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900 lg:min-h-80">
-        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-b border-stone-900">
+        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-b border-stone-900 min-h-20">
           <Image
             src="/img/icons/icon-storybook.svg"
             alt="Storybook Logo"
@@ -372,7 +372,7 @@ export default function TechStack() {
       </div>
 
       <div className="TechStackItem flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900 lg:min-h-80">
-        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-b border-stone-900">
+        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-b border-stone-900 min-h-20">
           <Image
             src="/img/icons/icon-chromatic.svg"
             alt="Chromatic Logo"
@@ -399,7 +399,7 @@ export default function TechStack() {
         </h2>
       </div>
       <div className="TechStackItem flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900 lg:min-h-80">
-        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-b border-stone-900">
+        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-b border-stone-900 min-h-20">
           <Image
             src="/img/icons/icon-github.svg"
             alt="GitHub Logo"
@@ -428,7 +428,7 @@ export default function TechStack() {
       </div>
 
       <div className="TechStackItem flex flex-col md:flex-row w-full h-full text-stone-900 border-b border-stone-900 lg:min-h-80">
-        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-stone-900">
+        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-b lg:border-b-0 border-stone-900 min-h-20">
           <Image
             src="/img/icons/icon-jupyter.svg"
             alt="Jupyter Logo"
@@ -455,7 +455,7 @@ export default function TechStack() {
         </h2>
       </div>
       <div className="TechStackItem flex flex-col md:flex-row w-full h-full text-stone-900 border-b border-stone-900 lg:min-h-80">
-        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-stone-900">
+        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-b lg:border-b-0 border-stone-900 min-h-20">
           <Image
             src="/img/icons/icon-react.svg"
             alt="React Logo"
@@ -476,7 +476,7 @@ export default function TechStack() {
         </div>
       </div>
       <div className="TechStackItem flex flex-col md:flex-row w-full h-full text-stone-900 border-b border-stone-900 lg:min-h-80">
-        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-stone-900">
+        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-b lg:border-b-0 border-stone-900 min-h-20">
           <Image
             src="/img/icons/icon-dataset.svg"
             alt="Dataset Logo"
@@ -497,7 +497,7 @@ export default function TechStack() {
         </div>
       </div>
       <div className="TechStackItem flex flex-col md:flex-row w-full h-full text-stone-900  border-stone-900 lg:min-h-80">
-        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-stone-900">
+        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-b lg:border-b-0 border-stone-900 min-h-20">
           <Image
             src="/img/icons/icon-api.svg"
             alt="API Logo"
