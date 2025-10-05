@@ -200,7 +200,7 @@ export default function HomeClient() {
             <div className="text-lime-200 text-xl text-center font-sans font-normal lg:text-3xl">
               My Design Engineer Journey
             </div>
-            <div className="text-lime-50 text-sm text-center font-normal font-sans lg:text-base">
+            <div className="text-lime-50 text-sm text-center font-normal font-sans lg:text-base lg:px-24">
               I'm transitioning from product designer to design engineer{' '}
               <RoughAnnotate type="box" padding={2}>
                 one commit at a time.
@@ -213,8 +213,8 @@ export default function HomeClient() {
               <div className="min-w-[500px] w-fit mx-auto flex justify-center">
                 <GitHubCalendar
                   username="ouzozcn"
-                  blockSize={16}
-                  blockRadius={1}
+                  blockSize={20}
+                  blockRadius={2}
                   colorScheme="dark"
                   renderBlock={(block, activity) =>
                     React.cloneElement(block, {
@@ -224,7 +224,7 @@ export default function HomeClient() {
                   }
                   theme={{
                     light: ['#f5f5f4', '#d6d3d1', '#78716c', '#44403c', '#1c1917'],
-                    dark: ['#292524', '#365314', '#3f6212', '#65a30d', '#a3e635'],
+                    dark: ['#292524', '#54613D', '#81945D', '#B0C97F', '#D9F99D'],
                   }}
                 />
                 <Tooltip id="github-activity" />
