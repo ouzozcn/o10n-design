@@ -167,7 +167,7 @@ export default function Writings() {
               size: 'large',
             },
           ]}
-          to="/writings/developer-friendly-component-design"
+          to="/writings/component-design-for-javascript-frameworks"
           swapContent={
             <div className="relative w-full  min-h-[400px]">
               <Image
