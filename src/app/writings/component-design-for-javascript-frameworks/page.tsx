@@ -8,6 +8,8 @@ import TopDivider from '@/components/TopDivider';
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import BookIcon from '@mui/icons-material/Book';
 import GamepadRoundedIcon from '@mui/icons-material/GamepadRounded';
+import WestRoundedIcon from '@mui/icons-material/WestRounded';
+import EastRoundedIcon from '@mui/icons-material/EastRounded';
 import Image from 'next/image';
 import Link from 'next/link';
 import MetaInfo from '@/components/MetaInfo';
@@ -132,10 +134,14 @@ export default function ComponentDesignForJavaScriptFrameworks() {
 
       <div className="BlogBody flex flex-col md:flex-row gap-0 font-sans">
         <div className="BlogContentContainer flex flex-col w-full md:w-3/4  gap-4 md:border-r border-stone-900">
-          <div className="BlogContent flex flex-col w-full   gap-4 ">
+          <div
+            className="BlogContent flex flex-col w-full   gap-4 "
+            id="understanding-components-and-properties"
+          >
             <SectionTitle
               title="1. Understanding Components and Properties"
-              className="bg-violet-100"
+              color="violet"
+              sectionID="understanding-components-and-properties"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
@@ -149,19 +155,19 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 </h2>
                 <ul className="list-disc list-inside ml-4 space-y-4 marker:text-stone-600">
                   <li>
-                    <b>Atoms</b> – Basic elements (buttons, inputs, icons)
+                    <b>Atom:</b> Basic elements (buttons, inputs, icons)
                   </li>
                   <li>
-                    <b>Molecules</b> – Simple combinations (search bar = input + button)
+                    <b>Molecules:</b> Simple combinations (search bar = input + button)
                   </li>
                   <li>
-                    <b>Organisms</b> – Complex sections (navigation header, product card)
+                    <b>Organisms:</b> Complex sections (navigation header, product card)
                   </li>
                   <li>
-                    <b>Templates</b> – Page-level layouts
+                    <b>Templates:</b> Page-level layouts
                   </li>
                   <li>
-                    <b>Pages</b> – Specific instances with real content
+                    <b>Pages:</b> Specific instances with real content
                   </li>
                 </ul>
 
@@ -200,7 +206,10 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               </div>
             </div>
           </div>
-          <div className="BlogContent flex flex-col w-full   gap-4 ">
+          <div
+            className="BlogContent flex flex-col w-full   gap-4 "
+            id="the-universal-component-model"
+          >
             <SectionTitle title="1.1 The Universal Component Model" />
             <div className="flex flex-col md:flex-row gap-12 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
@@ -314,7 +323,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           <div className="BlogContent flex flex-col w-full   gap-4 ">
             <SectionTitle
               title="2. The Four Pillars of Developer-Friendly Components"
-              className="bg-violet-100"
+              color="violet"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent w-full items-center justify-center text-start text-stone-900 text-lg gap-4">
@@ -357,7 +366,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           <div className="BlogContent flex flex-col w-full   gap-4 ">
             <SectionTitle
               title="2.1.A Using Proper Auto-Layout with Frames in Figma"
-              className="bg-amber-100 important"
+              color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
@@ -402,6 +411,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   className="my-4"
                 />
                 <p>
+                  <b>Key principle:</b> <br />
                   Your frame structure defines the HTML structure. Each frame typically becomes an
                   HTML element (most commonly a <code>{'<div>'}</code> container, but could be{' '}
                   <code>{'<button>'}</code>, <code>{'<section>'}</code>, <code>{'<header>'}</code>,{' '}
@@ -409,13 +419,87 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   meaning). Therefore, using the minimum necessary frames helps developers create
                   cleaner, more maintainable code.
                 </p>
+                <p>
+                  <b>Best practices:</b>
+                </p>
+                <ul className="list-disc list-inside ml-4 space-y-2 marker:text-stone-600">
+                  <li>
+                    <b>Sketch the structure:</b> Quick sketches help identify necessary containers.
+                  </li>
+                  <li>
+                    <b>Minimize frames:</b> Use as few frames as possible while maintaining proper
+                    layout.
+                  </li>
+                  <li>
+                    <b>Use consistent spacing:</b> Apply 4px (0.25rem) or 8px (0.5rem) grid systems
+                    using Auto-Layout gap and padding.
+                  </li>
+                  <li>
+                    <b>Set proper sizing:</b> Use "Hug contents" or "Fill container" appropriately.
+                  </li>
+                  <li>
+                    <b>Consider responsive behavior:</b> Think about how the component adapts to
+                    different widths.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="BlogContent flex flex-col w-full   gap-4 ">
+            <SectionTitle title="Example: Button Component Structure" color="orange" />
+            <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+                <p>A simple button needs only one or two frames:</p>
+                <div className="flex items-center justify-center w-full my-4">
+                  <Button
+                    label="Button Label"
+                    type="primary"
+                    size="large"
+                    startIcon={<WestRoundedIcon />}
+                    endIcon={<EastRoundedIcon />}
+                    ariaLabel="Example button with start and end icons"
+                  />
+                </div>
+                <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
+                  {`ButtonContainer (Frame with Auto-Layout)
+                ├── padding: 12px 24px
+                ├── gap: 8px
+                ├── direction: horizontal
+                ├── align: center
+                ├── width: hug contents
+                │
+                ├── StartIcon (optional, component instance)
+                ├── ButtonLabel (text)
+                └── EndIcon (optional, component instance)
+                `}
+                </pre>
+                <p>This structure translates directly to HTML/CSS:</p>
+                <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
+                  {`/// HTML
+                  <button className="button">
+                    {/* if startIcon present */}
+                    <span>Click me</span>
+                    {/* if endIcon present */}
+                    </button>`}
+                </pre>
+                <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
+                  {`/// CSS
+                  .button {
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      gap: 8px;
+                      padding: 12px 24px;
+                      width: fit-content;
+                    }`}
+                </pre>
               </div>
             </div>
           </div>
           <div className="BlogContent flex flex-col w-full   gap-4 ">
             <SectionTitle title="{title}" />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent w-full items-center justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
                 <p>
                   Our goal was to improve account security with an additional layer of
                   authentication—without creating friction or drop-off in user experience. We needed
@@ -431,11 +515,31 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             <p className="text-2xl font-medium text-center text-stone-900">Table of Contents</p>
           </div>
           <div className="flex flex-col pl-4 gap-4">
-            <TextLink label="Understanding Components and Properties" to="#introduction" />
-            <TextLink label="The Challenge" to="#the-challenge" />
-            <TextLink label="The Solution" to="#the-solution" />
-            <TextLink label="The Result" to="#the-result" />
-            <TextLink label="Conclusion" to="#conclusion" />
+            <TextLink
+              label="1 Understanding Components and Properties"
+              to="#understanding-components-and-properties"
+            />
+            <TextLink
+              className="ml-4 "
+              label="1.1 The Universal Component Model"
+              to="#the-universal-component-model"
+            />
+            <TextLink className="ml-4 " label="1.2 What is a Property?" to="#the-solution" />
+            <TextLink
+              label="2 The Four Pillars of Developer-Friendly Components"
+              to="#the-result"
+            />
+            <TextLink className="ml-4 " label="2.1 Structure & Naming" to="#conclusion" />
+            <TextLink
+              className="ml-6 "
+              label="2.1.A Using Proper Auto-Layout with Frames in Figma"
+              to="#conclusion"
+            />
+            <TextLink
+              className="ml-4 "
+              label="Example: Button Component Structure"
+              to="#conclusion"
+            />
           </div>
         </div>
       </div>

@@ -121,7 +121,7 @@ A simple button needs only one or two frames:
 ButtonContainer (Frame with Auto-Layout)
 ├── padding: 12px 24px
 ├── gap: 8px
-├── direction: horizontal
+├── direction: horizontalw
 ├── align: center
 ├── width: hug contents
 │

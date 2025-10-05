@@ -172,6 +172,14 @@ export default function TechStack() {
         </div>
         <div className="WorkflowSteps flex flex-col md:flex-row w-full lg:h-[400px] ">
           <div className="WorkflowStep flex-1  p-8 md:p-12 md:border-r border-b md:border-b-0 border-stone-900 text-center content-center ">
+            <div className="text-4xl mb-4">🔍</div>
+            <h3 className="text-xl font-sans font-medium text-stone-900 mb-2">0. Research</h3>
+            <p className="text-base font-sans text-stone-700">
+              <b>Jupyter Notebook, miro, and Notion </b> for data analysis, user research, and
+              documentation about the design process, including user personas and journey maps.
+            </p>
+          </div>
+          <div className="WorkflowStep flex-1  p-8 md:p-12 md:border-r border-b md:border-b-0 border-stone-900 text-center content-center ">
             <div className="text-4xl mb-4">🎨</div>
             <h3 className="text-xl font-sans font-medium text-stone-900 mb-2">1. Design</h3>
             <p className="text-base font-sans text-stone-700">
@@ -291,8 +299,7 @@ export default function TechStack() {
             portfolio and my side projects.
           </p>
           <p className="text-lg font-sans">
-            <b>What I use it for:</b> Portfolio website, documentation sites, production web apps,
-            server-side rendering.
+            <b>What I use it for:</b> Portfolio website, documentation sites, personal projects.
           </p>
         </div>
       </div>
@@ -314,8 +321,8 @@ export default function TechStack() {
             and maintain consistency across projects.
           </p>
           <p className="text-lg font-sans">
-            <b>What I use it for:</b> Component styling, responsive design, design system
-            implementation, rapid prototyping.
+            <b>What I use it for:</b> User interface and component styling, responsive design,
+            design system implementation.
           </p>
         </div>
       </div>
