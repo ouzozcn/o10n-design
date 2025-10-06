@@ -4,6 +4,8 @@ import Footer from '@/components/Footer';
 import SectionTitle from '@/components/SectionTitle';
 import ThankYou from '@/components/ThankYou';
 import Button from '@/components/Button';
+import PageBreaker from '@/components/PageBreaker';
+import Tag from '@/components/Tag';
 import TopDivider from '@/components/TopDivider';
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import BookIcon from '@mui/icons-material/Book';
@@ -20,6 +22,9 @@ import TextLink from '@/components/TextLink';
 import SwapContent from '@/components/SwapContent';
 import ContentCard from '@/components/ContentCard';
 import InfoContainer from '@/components/InfoContainer';
+import IconButton from '@/components/IconButton';
+import { Icon } from '@mui/material';
+
 export const metadata: Metadata = {
   title: 'Component Design for JavaScript Frameworks | Design to Code Best Practices',
   description:
@@ -126,11 +131,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           once handed off static mockups, today we deliver living component systems that mirror
           production code. Understanding this shift is essential for modern product designers.
         </p>
-        <ContentCard
-          color="lime"
-          content="This is a default content card with a clean, modern design. Perfect for displaying important information or announcements."
-          title="Welcome to Our Platform"
-        />
+
         <p>
           This article will guide you through designing components that seamlessly integrate with
           modern JavaScript frameworks like React, Vue, Angular, and Svelte—reducing development
@@ -152,6 +153,33 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+                <div className="Component__Samples flex flex-col  md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-60 rounded-lg border border-stone-900 hover:bg-stone-50">
+                  <Button
+                    label="I am a primary button"
+                    size="large"
+                    className="rounded-full"
+                    endIcon={<ArrowOutwardIcon />}
+                  />
+                  <Tag
+                    className="h-[52px] p-4"
+                    label="I am a tag"
+                    size="large"
+                    type="lime"
+                    startIcon={<AutoAwesomeRoundedIcon />}
+                  />
+                  <IconButton
+                    className="h-[52px] p-4"
+                    type="secondary"
+                    aria-label="I am an icon button"
+                    size="large"
+                    icon={<CodeRoundedIcon />}
+                  />
+                </div>
+                <div className="flex w-full items-center justify-center">
+                  <p className="text-sm text-stone-600 text-center mt-4 h-auto">
+                    Button, Tag, and Icon-Button components
+                  </p>
+                </div>
                 <p>
                   A component is a single, reusable UI element within a product, a building block
                   that can be used repeatedly with different configurations. This concept mirrors
@@ -220,6 +248,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             <SectionTitle
               title="1.1 The Universal Component Model"
               className="md:sticky md:top-[87px] md:self-start"
+              color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-12 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
@@ -259,6 +288,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             <SectionTitle
               title="1.2 What is a Property?"
               className="md:sticky md:top-[87px] md:self-start"
+              color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent w-full items-center justify-center text-start text-stone-900 text-lg gap-4">
@@ -338,10 +368,10 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           </div>
           <div
             className="BlogContent flex flex-col w-full gap-4 scroll-mt-[87px]"
-            id="the-four-pillars-of-developer-friendly-components"
+            id="the-fundamentals-of-developer-friendly-components"
           >
             <SectionTitle
-              title="2. The Four Pillars of Developer-Friendly Components"
+              title="2. The Fundamentals of Developer-Friendly Components"
               color="violet"
               className="md:sticky md:top-[87px] md:self-start"
             />
@@ -367,7 +397,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     <b>Interaction:</b> Prototyping behaviors and states
                   </li>
                 </ul>
-                <p>Let's explore each pillar in depth.</p>
+                <p>Let's explore each principle in depth.</p>
               </div>
             </div>
           </div>
@@ -378,6 +408,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             <SectionTitle
               title="2.1 Structure & Naming"
               className="md:sticky md:top-[87px] md:self-start"
+              color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent w-full items-center justify-center text-start text-stone-900 text-lg gap-4">
@@ -394,7 +425,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             id="using-proper-auto-layout-with-frames-in-figma"
           >
             <SectionTitle
-              title="2.1.A Using Proper Auto-Layout with Frames in Figma"
+              title="2.2 Using Proper Auto-Layout with Frames in Figma"
               color="neutral"
               className="md:sticky md:top-[87px] md:self-start"
             />
@@ -480,7 +511,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             id="example-button-component-structure"
           >
             <SectionTitle
-              title="Example: Button Component Structure"
+              title="2.3 Example: Button Component Structure"
               color="orange"
               className="md:sticky md:top-[87px] md:self-start"
             />
@@ -538,7 +569,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             id="giving-meaningful-layer-names"
           >
             <SectionTitle
-              title="2.1.B Giving Meaningful Layer Names"
+              title="2.4 Giving Meaningful Layer Names"
               className="md:sticky md:top-[87px] md:self-start"
               color="neutral"
             />
@@ -586,7 +617,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 </ul>
                 <p className="font-bold mt-2">Naming Conventions</p>
                 <p>Follow these guidelines when naming layers:</p>
-                <div className="flex flex-row gap-4 w-full ">
+                <div className="flex flex-col md:flex-row gap-4 w-full ">
                   <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
                     {`/// Use clear, descriptive names
 
@@ -625,10 +656,15 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               </div>
             </div>
           </div>
-          <div className="BlogContent flex flex-col w-full   gap-4 " id="component-properties">
+
+          <div
+            className="BlogContent flex flex-col w-full   gap-4 "
+            id="component-properties-in-figma"
+          >
             <SectionTitle
-              title="2.2 Component Properties"
+              title="2.5 Component Properties in Figma"
               className="md:sticky md:top-[87px] md:self-start"
+              color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
@@ -642,17 +678,6 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   implement the component. Defining properties is a time investment that pays off in
                   spades.
                 </p>
-              </div>
-            </div>
-          </div>
-          <div className="BlogContent flex flex-col w-full   gap-4 " id="types-of-figma-properties">
-            <SectionTitle
-              title="2.2.A Types of Figma Properties"
-              className="md:sticky md:top-[87px] md:self-start"
-              color="neutral"
-            />
-            <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
                 <p>
                   Figma supports several property types that map directly to JavaScript/TypeScript:
                 </p>
@@ -718,7 +743,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   boolean properties indicates that the property is optional which is a valuable
                   info for the development team.
                 </p>
-                <div className="flex flex-row gap-4 w-full ">
+                <div className="flex flex-col md:flex-row gap-4 w-full ">
                   <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
                     {`/// Use descriptive, purposeful names
 
@@ -771,11 +796,243 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   target="_blank"
                   className="my-4"
                 />
+                <p className="font-bold md:mt-6 ">Framework-Specific Implementation</p>
+                <p>
+                  The same Figma component properties translate naturally across frameworks. Here's
+                  how a button component with well-named props looks in different ecosystems:
+                </p>
+                <SwapContent label="Placeholder" className="w-full" />
+                <div className="flex flex-col md:flex-row gap-4 w-full ">
+                  <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
+                    {` /// React (TypeScript)
+
+interface ButtonProps {
+  label: string;
+  size?: 'small' | 'medium' | 'large';
+  type?: 'primary' | 'secondary' | 'tertiary';
+  isLoading?: boolean;
+  isDisabled?: boolean;
+  endIcon?: React.ReactNode;
+  startIcon?: React.ReactNode;
+  onClick?: () => void;
+}
+
+
+// Usage
+
+<Button 
+  label="Click me" 
+  type="primary" 
+  size="medium"
+  isDisabled={false}
+  startIcon={<WestRoundedIcon />}
+  onClick={() => { /* handle click */ }}
+/>
+                  `}
+                  </pre>
+                  <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
+                    {` /// Vue 3 (TypeScript)
+
+interface ButtonProps {
+  label: string;
+  type?: 'primary' | 'secondary' | 'tertiary';
+  size?: 'small' | 'medium' | 'large';
+  isDisabled?: boolean;
+  isLoading?: boolean;
+  startIcon?: Component;
+  endIcon?: Component;
+}
+
+
+// Usage
+
+<Button 
+  label="Click me" 
+  type="primary" 
+  size="medium"
+  :is-disabled="false"
+  :start-icon="ArrowLeft"
+  @click="handleClick"
+/>
+                  `}
+                  </pre>
+                </div>
+                <div className="flex flex-col md:flex-row gap-4 w-full ">
+                  <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
+                    {` /// Angular (TypeScript)
+
+@Component({
+  selector: 'app-button',
+  template: ''
+})
+export class ButtonComponent {
+  @Input() label!: string;
+  @Input() type?: 'primary' | 'secondary' | 'tertiary' = 'primary';
+  @Input() size?: 'small' | 'medium' | 'large' = 'medium';
+  @Input() isDisabled?: boolean = false;
+  @Input() isLoading?: boolean = false;
+  @Input() startIcon?: TemplateRef<any>;
+  @Input() endIcon?: TemplateRef<any>;
+  @Output() onClick = new EventEmitter<void>();
+}
+
+
+// Usage
+
+<app-button 
+  label="Click me" 
+  type="primary" 
+  size="medium"
+  [isDisabled]="false"
+  [startIcon]="arrowLeftTemplate"
+  (onClick)="handleClick()"
+/>
+                  `}
+                  </pre>
+                  <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
+                    {` /// Svelte (TypeScript)
+
+<script lang="ts">
+  export let label: string;
+  export let type: 'primary' | 'secondary' | 'tertiary' = 'primary';
+  export let size: 'small' | 'medium' | 'large' = 'medium';
+  export let isDisabled: boolean = false;
+  export let isLoading: boolean = false;
+  export let startIcon: Component | undefined = undefined;
+  export let endIcon: Component | undefined = undefined;
+</script>
+
+
+// Usage
+
+<Button 
+  label="Click me" 
+  type="primary" 
+  size="medium"
+  isDisabled={false}
+  startIcon={ArrowLeft}
+  on:click={handleClick}
+/>
+                  `}
+                  </pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="BlogContent flex flex-col w-full   gap-4 " id="tokenization">
+            <SectionTitle
+              title="2.6 Tokenization"
+              className="md:sticky md:top-[87px] md:self-start"
+              color="neutral"
+            />
+            <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+                <SwapContent label="Placeholder" className="w-full" />
+                <p>
+                  Modern digital products require theme support (light mode, dark mode, high
+                  contrast). This necessitates <b>tokenization</b>, using variables instead of
+                  hard-coded values. Besides that, using tokens instead of fixed values also enables
+                  scalability and consistency across the design system. For example, if your brand
+                  color changes, updating a single token updates it everywhere. As designers, we
+                  often hear new iteration ideas from stakeholders. Using tokens allows us to
+                  implement changes quickly without redesigning every component.
+                </p>
+                <p className="font-bold md:mt-6 ">From Hard-Coded Values to Design Tokens</p>
+                <p>
+                  If you are using CSS or CSS-in-JS, design tokens are typically implemented as CSS
+                  variables (custom properties). You need to create your own primitive and component
+                  tokens. If you want to skip the creating primitive tokens, it's best to use an
+                  existing open-source token library like TailwindCSS. Tailwind provides a
+                  comprehensive set of design tokens that cover colors, spacing, typography, and
+                  more. You can then create component-specific tokens that reference these
+                  primitives. For example, a button's primary background color token might reference
+                  Tailwind's `--tw-color-blue-600`. Here is an example of how to transition from old
+                  way to modern way:
+                </p>
+                <div className="flex flex-col  gap-4 w-full ">
+                  <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
+                    {`/// Old approach (hard-coded values)
+
+🟥 Color: "#0D99FF" (specific hex value)
+🟥 Spacing: "16px" (specific pixel value)
+🟥 Font: "Inter" (specific typeface)
+🟥 Border radius: "8px" (specific value)`}
+                  </pre>
+                  <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
+                    {`/// Modern approach (design tokens)
+
+🟩 Color: "--color-primary-600" → resolves to "#0D99FF" in light mode, "#3B82F6" in dark mode
+🟩 Spacing: "--spacing-4" → resolves to "16px" (or "1rem" in fluid systems)
+🟩 Font: "--font-family-sans" → resolves to "Inter, system-ui, sans-serif"
+🟩 Border radius: "--radius-md" → resolves to "8px"`}
+                  </pre>
+                </div>
+                <p className="font-bold md:mt-6 ">
+                  <b>Benefits of Tokenization</b>
+                </p>
+                <ul className="list-disc list-inside ml-4 space-y-2 marker:text-stone-600">
+                  <li>
+                    <b>Easy theme switching:</b> Change entire color schemes by swapping variable
+                    collections
+                  </li>
+                  <li>
+                    <b>Consistent design:</b> All components reference the same token system,
+                    eliminating one-off values
+                  </li>
+                  <li>
+                    <b>Simplified maintenance:</b> Update a token once, change it everywhere
+                  </li>
+                  <li>
+                    <b>Developer alignment:</b> Design tokens map directly to CSS custom properties
+                  </li>
+                  <li>
+                    <b>Accessibility compliance:</b> Manage contrast ratios systematically
+                  </li>
+                  <li>
+                    <b>Brand flexibility:</b> Support white-label products or multi-brand systems
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            className="BlogContent flex flex-col w-full   gap-4 "
+            id="implementing-tokens-in-figma"
+          >
+            <SectionTitle
+              title="2.7 Implementing Tokens in Figma"
+              className="md:sticky md:top-[87px] md:self-start"
+              color="neutral"
+            />
+            <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+                <p>Figma's Local Variables feature enables comprehensive tokenization:</p>
+                <div className="Token__Samples flex flex-col md:flex-row items-center justify-center w-full">
+                  <div className="Token__Sample flex items-center justify-between bg-stone-100 border border-stone-300 rounded-lg gap-2 p-2 m-1">
+                    <span className="font-mono text-sm">--color-primary-600</span>
+                    <span className="font-mono text-sm">(#0D99FF)</span>
+                  </div>
+                  <div className="Token__Sample flex items-center justify-between bg-stone-100 border border-stone-300 rounded-lg gap-2 p-2 m-1">
+                    <span className="font-mono text-sm">--spacing-4</span>
+                    <span className="font-mono text-sm">(16px)</span>
+                  </div>
+                  <div className="Token__Sample flex items-center justify-between bg-stone-100 border border-stone-300 rounded-lg gap-2 p-2 m-1">
+                    <span className="font-mono text-sm">--font-family-sans</span>
+                    <span className="font-mono text-sm">(Inter, system-ui, sans-serif)</span>
+                  </div>
+                  <div className="Token__Sample flex items-center justify-between bg-stone-100 border border-stone-300 rounded-lg gap-2 p-2 m-1">
+                    <span className="font-mono text-sm">--radius-md</span>
+                    <span className="font-mono text-sm">(8px)</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div className="BlogContent flex flex-col w-full   gap-4 ">
-            <SectionTitle title="{title}" className="md:sticky md:top-[87px] md:self-start" />
+            <SectionTitle
+              title="2.8 Implementing Tokens in Figma"
+              className="md:sticky md:top-[87px] md:self-start"
+            />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
                 <p>
@@ -816,38 +1073,40 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             />
             <TextLink
               className=" text-sm"
-              label="2. The Four Pillars of Developer-Friendly Components"
-              to="#the-four-pillars-of-developer-friendly-components"
+              label="2. The Fundamentals of Developer-Friendly Components"
+              to="#the-fundamentals-of-developer-friendly-components"
             />
             <TextLink
               className="ml-4  text-sm"
-              label="2.1. Structure & Naming"
+              label="2.1 Structure & Naming"
               to="#structure-naming"
             />
             <TextLink
-              className="ml-6  text-sm"
-              label="2.1.A. Using Proper Auto-Layout with Frames in Figma"
+              className="ml-4  text-sm"
+              label="2.2 Using Proper Auto-Layout with Frames in Figma"
               to="#using-proper-auto-layout-with-frames-in-figma"
             />
             <TextLink
-              className="ml-6  text-sm"
-              label="Example: Button Component Structure"
+              className="ml-4  text-sm"
+              label="2.3 Example: Button Component Structure"
               to="#example-button-component-structure"
             />
             <TextLink
-              className="ml-6 text-sm "
-              label="2.1.B. Giving Meaningful Layer Names"
+              className="ml-4 text-sm "
+              label="2.4 Giving Meaningful Layer Names"
               to="#giving-meaningful-layer-names"
             />
             <TextLink
               className="ml-4  text-sm"
-              label="2.2. Component Properties"
-              to="#component-properties"
+              label="2.5 Component Properties in Figma"
+              to="#component-properties-in-figma"
             />
+
+            <TextLink className="ml-4  text-sm" label="2.6 Tokenization" to="#tokenization" />
             <TextLink
-              className="ml-6  text-sm"
-              label="2.2.A. Types of Figma Properties"
-              to="#types-of-figma-properties"
+              className="ml-4  text-sm"
+              label="2.7 Implementing Tokens in Figma"
+              to="#implementing-tokens-in-figma"
             />
           </div>
         </div>
