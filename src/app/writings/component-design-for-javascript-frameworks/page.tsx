@@ -135,13 +135,14 @@ export default function ComponentDesignForJavaScriptFrameworks() {
       <div className="BlogBody flex flex-col md:flex-row gap-0 font-sans">
         <div className="BlogContentContainer flex flex-col w-full md:w-3/4  gap-4 md:border-r border-stone-900">
           <div
-            className="BlogContent flex flex-col w-full   gap-4 "
+            className="BlogContent flex flex-col w-full gap-4 scroll-mt-[87px]"
             id="understanding-components-and-properties"
           >
             <SectionTitle
               title="1. Understanding Components and Properties"
               color="violet"
               sectionID="understanding-components-and-properties"
+              className="md:sticky md:top-[87px] md:self-start"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
@@ -207,10 +208,13 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             </div>
           </div>
           <div
-            className="BlogContent flex flex-col w-full   gap-4 "
+            className="BlogContent flex flex-col w-full gap-4 scroll-mt-[87px]"
             id="the-universal-component-model"
           >
-            <SectionTitle title="1.1 The Universal Component Model" />
+            <SectionTitle
+              title="1.1 The Universal Component Model"
+              className="md:sticky md:top-[87px] md:self-start"
+            />
             <div className="flex flex-col md:flex-row gap-12 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
                 <p>
@@ -242,8 +246,14 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               </div>
             </div>
           </div>
-          <div className="BlogContent flex flex-col w-full   gap-4 ">
-            <SectionTitle title="1.2 What is a Property?" />
+          <div
+            className="BlogContent flex flex-col w-full gap-4 scroll-mt-[87px]"
+            id="what-is-a-property"
+          >
+            <SectionTitle
+              title="1.2 What is a Property?"
+              className="md:sticky md:top-[87px] md:self-start"
+            />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent w-full items-center justify-center text-start text-stone-900 text-lg gap-4">
                 <p>
@@ -320,10 +330,14 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               </div>
             </div>
           </div>
-          <div className="BlogContent flex flex-col w-full   gap-4 ">
+          <div
+            className="BlogContent flex flex-col w-full gap-4 scroll-mt-[87px]"
+            id="the-four-pillars-of-developer-friendly-components"
+          >
             <SectionTitle
               title="2. The Four Pillars of Developer-Friendly Components"
               color="violet"
+              className="md:sticky md:top-[87px] md:self-start"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent w-full items-center justify-center text-start text-stone-900 text-lg gap-4">
@@ -351,8 +365,14 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               </div>
             </div>
           </div>
-          <div className="BlogContent flex flex-col w-full   gap-4 ">
-            <SectionTitle title="2.1 Structure & Naming" />
+          <div
+            className="BlogContent flex flex-col w-full gap-4 scroll-mt-[87px]"
+            id="structure-naming"
+          >
+            <SectionTitle
+              title="2.1 Structure & Naming"
+              className="md:sticky md:top-[87px] md:self-start"
+            />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent w-full items-center justify-center text-start text-stone-900 text-lg gap-4">
                 <p>
@@ -363,10 +383,14 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               </div>
             </div>
           </div>
-          <div className="BlogContent flex flex-col w-full   gap-4 ">
+          <div
+            className="BlogContent flex flex-col w-full gap-4 scroll-mt-[87px]"
+            id="using-proper-auto-layout-with-frames-in-figma"
+          >
             <SectionTitle
               title="2.1.A Using Proper Auto-Layout with Frames in Figma"
               color="neutral"
+              className="md:sticky md:top-[87px] md:self-start"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
@@ -445,8 +469,15 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               </div>
             </div>
           </div>
-          <div className="BlogContent flex flex-col w-full   gap-4 ">
-            <SectionTitle title="Example: Button Component Structure" color="orange" />
+          <div
+            className="BlogContent flex flex-col w-full gap-4 scroll-mt-[87px]"
+            id="example-button-component-structure"
+          >
+            <SectionTitle
+              title="Example: Button Component Structure"
+              color="orange"
+              className="md:sticky md:top-[87px] md:self-start"
+            />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
                 <p>A simple button needs only one or two frames:</p>
@@ -497,7 +528,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             </div>
           </div>
           <div className="BlogContent flex flex-col w-full   gap-4 ">
-            <SectionTitle title="{title}" />
+            <SectionTitle title="{title}" className="md:sticky md:top-[87px] md:self-start" />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
                 <p>
@@ -510,7 +541,11 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             </div>
           </div>
         </div>
-        <div className="BlogSideBar flex flex-col p-8 items-start justify-start gap-4 w-full md:w-1/4 bg-amber-50 md:border-t border-stone-900">
+        <div
+          className="BlogSideBar flex flex-col p-8 items-start justify-start gap-4 w-full md:w-1/4 bg-amber-50 md:border-t border-stone-900 
+            md:sticky md:top-[87px] md:self-start"
+          style={{ maxHeight: 'calc(100vh - 88px)' }}
+        >
           <div className="flex flex-col gap-4">
             <p className="text-2xl font-medium text-center text-stone-900">Table of Contents</p>
           </div>
@@ -524,21 +559,21 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               label="1.1 The Universal Component Model"
               to="#the-universal-component-model"
             />
-            <TextLink className="ml-4 " label="1.2 What is a Property?" to="#the-solution" />
+            <TextLink className="ml-4 " label="1.2 What is a Property?" to="#what-is-a-property" />
             <TextLink
               label="2 The Four Pillars of Developer-Friendly Components"
-              to="#the-result"
+              to="#the-four-pillars-of-developer-friendly-components"
             />
-            <TextLink className="ml-4 " label="2.1 Structure & Naming" to="#conclusion" />
+            <TextLink className="ml-4 " label="2.1 Structure & Naming" to="#structure-naming" />
             <TextLink
               className="ml-6 "
               label="2.1.A Using Proper Auto-Layout with Frames in Figma"
-              to="#conclusion"
+              to="#using-proper-auto-layout-with-frames-in-figma"
             />
             <TextLink
               className="ml-4 "
               label="Example: Button Component Structure"
-              to="#conclusion"
+              to="#example-button-component-structure"
             />
           </div>
         </div>
