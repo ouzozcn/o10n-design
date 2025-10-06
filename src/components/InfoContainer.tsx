@@ -1,9 +1,20 @@
 import React from 'react';
 import SquareIcon from '@mui/icons-material/Square';
 import Link from 'next/link';
+import { vi } from 'vitest';
 interface InfoContainerProps {
   content: string;
-  color: 'lime' | 'pink' | 'amber' | 'teal' | 'emerald' | 'red' | 'cyan' | 'orange';
+  color:
+    | 'lime'
+    | 'pink'
+    | 'amber'
+    | 'teal'
+    | 'emerald'
+    | 'red'
+    | 'cyan'
+    | 'orange'
+    | 'violet'
+    | 'neutral';
   icon?: React.ReactNode;
   className?: string;
   to: string;
@@ -20,6 +31,7 @@ const colorClasses = {
   cyan: 'bg-cyan-50 hover:bg-cyan-100',
   orange: 'bg-orange-50 hover:bg-orange-100',
   neutral: 'bg-stone-50 hover:bg-stone-100',
+  violet: 'bg-violet-50 hover:bg-violet-100',
 };
 
 const InfoContainer: React.FC<InfoContainerProps> = ({
