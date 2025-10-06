@@ -7,7 +7,10 @@ import Button from '@/components/Button';
 import TopDivider from '@/components/TopDivider';
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import BookIcon from '@mui/icons-material/Book';
+import AutoAwesomeRoundedIcon from '@mui/icons-material/AutoAwesomeRounded';
 import GamepadRoundedIcon from '@mui/icons-material/GamepadRounded';
+import PriorityHighRoundedIcon from '@mui/icons-material/PriorityHighRounded';
+import CodeRoundedIcon from '@mui/icons-material/CodeRounded';
 import WestRoundedIcon from '@mui/icons-material/WestRounded';
 import EastRoundedIcon from '@mui/icons-material/EastRounded';
 import Image from 'next/image';
@@ -87,7 +90,10 @@ export default function ComponentDesignForJavaScriptFrameworks() {
       </div>
       <div className="PageContent flex flex-col w-full h-full gap-4 p-8 border-b border-stone-900">
         <div className="PageMeta flex flex-col w-full h-full gap-2">
-          <div className="PageTitle px-8 pt-5 pb-2 items-center justify-center text-center text-stone-900 text-h1 font-medium font-sans">
+          <div
+            id="introduction"
+            className="PageTitle px-8 pt-5 pb-2 items-center justify-center text-center text-stone-900 text-h1 font-medium font-sans"
+          >
             Component Design for JavaScript Frameworks: <br /> A Designer's Guide to
             Developer-Friendly Components
           </div>
@@ -317,7 +323,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   <InfoContainer
                     color="amber"
                     icon={<GamepadRoundedIcon />}
-                    content="Try button properties on the Storybook Playground"
+                    content="Try Button component properties on the Storybook Playground"
                     to="/docs/index.html?path=/docs/components-button--docs"
                     target="_blank"
                     className="  mt-6 mb-4"
@@ -527,6 +533,247 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               </div>
             </div>
           </div>
+          <div
+            className="BlogContent flex flex-col w-full   gap-4 "
+            id="giving-meaningful-layer-names"
+          >
+            <SectionTitle
+              title="2.1.B Giving Meaningful Layer Names"
+              className="md:sticky md:top-[87px] md:self-start"
+              color="neutral"
+            />
+            <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+                <p>
+                  Proper layer naming is essential for clear communication between designers and
+                  developers. Meaningful names help developers understand the purpose of each frame
+                  and how it maps to code. If you wouldn't name a CSS class "Frame 1" or "Group 2",
+                  don't use those names in Figma. Instead, use descriptive names that reflect the
+                  element's role.
+                </p>
+                <SwapContent label="Placeholder" className="w-full" />
+                <InfoContainer
+                  color="violet"
+                  icon={<AutoAwesomeRoundedIcon />}
+                  content="Figma provides AI-powered layer naming if you prefer not to manually label frames. Learn more about using AI to rename layers in Figma."
+                  to="https://help.figma.com/hc/en-us/articles/24004711129879-Rename-layers-with-AI?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2025100506"
+                  target="_blank"
+                  className="my-4"
+                />
+                <p>
+                  <b>Benefits of Thoughtful Layer Naming</b>
+                </p>
+                <ul className="list-disc list-inside ml-4 space-y-2 marker:text-stone-600">
+                  <li>
+                    <b>Clarifies HTML structure:</b>Layer names can inform semantic HTML elements
+                    and CSS class names.
+                  </li>
+                  <li>
+                    <b>Improves maintainability:</b> Easier to understand and modify components
+                    later.
+                  </li>
+                  <li>
+                    <b>Aligns with development patterns:</b> Developers can quickly map design to
+                    code.
+                  </li>
+                  <li>
+                    <b>Enhances team communication:</b> Shared vocabulary between design and
+                    development.
+                  </li>
+                  <li>
+                    <b>Enables better search:</b> Find components quickly in large Figma files.
+                  </li>
+                </ul>
+                <p className="font-bold mt-2">Naming Conventions</p>
+                <p>Follow these guidelines when naming layers:</p>
+                <div className="flex flex-row gap-4 w-full ">
+                  <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
+                    {`/// Use clear, descriptive names
+
+🟩 CardImage (not Image1)
+🟩 CardTitle (not Text_Layer_2)
+🟩 ActionButton (not Button)
+🟩 IconWrapper (not Group_23)
+🟩 PriceLabel (not Text)`}
+                  </pre>
+                  <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
+                    {`/// Do not use vague, generic names
+
+🟥 Container
+🟥 Wrapper
+🟥 Group
+🟥 Frame #123456
+🟥 Text`}
+                  </pre>
+                </div>
+                <InfoContainer
+                  color="red"
+                  icon={<PriorityHighRoundedIcon />}
+                  content="Do not use Rectangle and Ellipse in Figma since they do not translate to semantic HTML elements. Always use Frames with Auto-Layout for containers. Learn more about Groups vs Frames in Figma."
+                  to="https://www.figma.com/best-practices/groups-versus-frames/?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2025100507"
+                  target="_blank"
+                  className="my-4"
+                />
+                <p>
+                  By combining proper Auto-Layout structure with meaningful layer names, you set
+                  developers up for success—enabling them to implement components quickly and
+                  accurately. Modern design systems like Material Design (Google), Carbon (IBM), and
+                  Atlassian Design System use consistent layer naming to create clarity across
+                  hundreds of components.
+                </p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div className="BlogContent flex flex-col w-full   gap-4 " id="component-properties">
+            <SectionTitle
+              title="2.2 Component Properties"
+              className="md:sticky md:top-[87px] md:self-start"
+            />
+            <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+                <SwapContent label="Placeholder" className="w-full" />
+                <p>
+                  Component properties (props) are arguably Figma's most powerful feature for
+                  creating flexible, functional components that mirror real component behavior. As a
+                  designer, If I am going to use an UI element more than once, I always create a
+                  component with well-defined properties. This approach not only streamlines my
+                  design process but also significantly reduces the development effort required to
+                  implement the component. Defining properties is a time investment that pays off in
+                  spades.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="BlogContent flex flex-col w-full   gap-4 " id="types-of-figma-properties">
+            <SectionTitle
+              title="2.2.A Types of Figma Properties"
+              className="md:sticky md:top-[87px] md:self-start"
+              color="neutral"
+            />
+            <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+                <p>
+                  Figma supports several property types that map directly to JavaScript/TypeScript:
+                </p>
+                <div className="FigmaPropTable w-full overflow-x-auto my-4">
+                  <table className="min-w-full border border-stone-300 rounded-xl bg-white text-stone-900 text-sm">
+                    <thead>
+                      <tr className="bg-stone-100">
+                        <th className="px-4 py-2 border-b border-stone-300 text-left font-semibold">
+                          Figma Property
+                        </th>
+                        <th className="px-4 py-2 border-b border-stone-300 text-left font-semibold">
+                          Frontend Equivalent
+                        </th>
+                        <th className="px-4 py-2 border-b border-stone-300 text-left font-semibold">
+                          Example Use Case
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className="px-4 py-2 border-b border-stone-200">Text</td>
+                        <td className="px-4 py-2 border-b border-stone-200">
+                          <code>string</code>
+                        </td>
+                        <td className="px-4 py-2 border-b border-stone-200">
+                          Button labels, card titles, descriptions
+                        </td>
+                      </tr>
+                      <tr>
+                        <td className="px-4 py-2 border-b border-stone-200">Boolean</td>
+                        <td className="px-4 py-2 border-b border-stone-200">
+                          <code>boolean</code>
+                        </td>
+                        <td className="px-4 py-2 border-b border-stone-200">
+                          isDisabled, isLoading, hasIcon
+                        </td>
+                      </tr>
+                      <tr>
+                        <td className="px-4 py-2 border-b border-stone-200">Instance Swap</td>
+                        <td className="px-4 py-2 border-b border-stone-200">Component instance</td>
+                        <td className="px-4 py-2 border-b border-stone-200">
+                          Icon components, avatar images
+                        </td>
+                      </tr>
+                      <tr>
+                        <td className="px-4 py-2">Variant</td>
+                        <td className="px-4 py-2">
+                          <code>string</code> enum
+                        </td>
+                        <td className="px-4 py-2">type="primary", size="large"</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p className="text-sm text-stone-600 text-center mt-3">
+                    Table 1. Mapping Figma Properties to Frontend Equivalents
+                  </p>
+                </div>
+                <p className="font-bold">Property Naming Best Practices</p>
+                <p>
+                  While naming properties, consider giving meaningful names that convey the purpose
+                  of the property. Following front-end conventions can help maintain consistency and
+                  clarity and it also reduce the development time. Adding a <b>?</b> at the end of
+                  boolean properties indicates that the property is optional which is a valuable
+                  info for the development team.
+                </p>
+                <div className="flex flex-row gap-4 w-full ">
+                  <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
+                    {`/// Use descriptive, purposeful names
+
+🟩 cardTitle
+🟩 isDisabled
+🟩 buttonLabel
+🟩 iconStart
+🟩 hasEndIcon
+🟩 showKebabMenu`}
+                  </pre>
+                  <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
+                    {`/// Do not use vague, generic names
+
+🟥 text1
+🟥 disabled
+🟥 label
+🟥 icon
+🟥 end
+🟥 menu`}
+                  </pre>
+                </div>
+                <p className="font-bold md:mt-6 ">Follow frontend conventions</p>
+                <p>
+                  Front-end development is in progress since the early 2000s. Over the years,
+                  certain conventions have emerged that enhance code readability and
+                  maintainability. Adopting these conventions in your property naming can
+                  significantly improve collaboration with developers. As designers, we should
+                  strive to speak the same language as our developer counterparts. Here are some key
+                  conventions to consider:
+                </p>
+
+                <ul className="list-disc list-inside ml-4 space-y-2 marker:text-stone-600">
+                  <li>
+                    Use <b>camelCase</b> (e.g., buttonLabel, isDisabled) for property names to align
+                    with JavaScript conventions.
+                  </li>
+                  <li>
+                    Prefix boolean properties with <b>is</b>, <b>has</b>, <b>show</b>, or <b>can</b>{' '}
+                    to indicate their <b>true/false</b> nature.
+                  </li>
+                  <li>Use specific, clear names (`primaryColor` not `color1`)</li>
+                  <li>Indicate optional behavior clearly (`startIcon?` or `iconStart?`)</li>
+                  <li>Use consistent naming patterns across all components</li>
+                </ul>
+                <InfoContainer
+                  color="teal"
+                  icon={<CodeRoundedIcon />}
+                  content="Learn more about JavaScript naming conventions and best practices. Visit the W3Schools website for a comprehensive guide."
+                  to="https://www.w3schools.com/js/js_conventions.asp?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2025100508"
+                  target="_blank"
+                  className="my-4"
+                />
+              </div>
+            </div>
+          </div>
           <div className="BlogContent flex flex-col w-full   gap-4 ">
             <SectionTitle title="{title}" className="md:sticky md:top-[87px] md:self-start" />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
@@ -541,42 +788,70 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             </div>
           </div>
         </div>
+        {/* * Sidebar Start * */}
         <div
-          className="BlogSideBar flex flex-col p-8 items-start justify-start gap-4 w-full md:w-1/4 bg-amber-50 md:border-t border-stone-900 
+          className="BlogSideBar flex flex-col px-4 py-3 items-start justify-start gap-4 w-full md:w-1/4 bg-amber-50 md:border-t border-stone-900 
             md:sticky md:top-[87px] md:self-start"
           style={{ maxHeight: 'calc(100vh - 88px)' }}
         >
           <div className="flex flex-col gap-4">
             <p className="text-2xl font-medium text-center text-stone-900">Table of Contents</p>
           </div>
-          <div className="flex flex-col pl-4 gap-4">
+          <div className="flex flex-col  gap-4">
+            <TextLink className=" text-sm" label="Introduction" to="#introduction" />
             <TextLink
-              label="1 Understanding Components and Properties"
+              className=" text-sm"
+              label="1. Understanding Components and Properties"
               to="#understanding-components-and-properties"
             />
             <TextLink
-              className="ml-4 "
-              label="1.1 The Universal Component Model"
+              className="ml-4  text-sm"
+              label="1.1. The Universal Component Model"
               to="#the-universal-component-model"
             />
-            <TextLink className="ml-4 " label="1.2 What is a Property?" to="#what-is-a-property" />
             <TextLink
-              label="2 The Four Pillars of Developer-Friendly Components"
+              className="ml-4  text-sm"
+              label="1.2. What is a Property?"
+              to="#what-is-a-property"
+            />
+            <TextLink
+              className=" text-sm"
+              label="2. The Four Pillars of Developer-Friendly Components"
               to="#the-four-pillars-of-developer-friendly-components"
             />
-            <TextLink className="ml-4 " label="2.1 Structure & Naming" to="#structure-naming" />
             <TextLink
-              className="ml-6 "
-              label="2.1.A Using Proper Auto-Layout with Frames in Figma"
+              className="ml-4  text-sm"
+              label="2.1. Structure & Naming"
+              to="#structure-naming"
+            />
+            <TextLink
+              className="ml-6  text-sm"
+              label="2.1.A. Using Proper Auto-Layout with Frames in Figma"
               to="#using-proper-auto-layout-with-frames-in-figma"
             />
             <TextLink
-              className="ml-4 "
+              className="ml-6  text-sm"
               label="Example: Button Component Structure"
               to="#example-button-component-structure"
             />
+            <TextLink
+              className="ml-6 text-sm "
+              label="2.1.B. Giving Meaningful Layer Names"
+              to="#giving-meaningful-layer-names"
+            />
+            <TextLink
+              className="ml-4  text-sm"
+              label="2.2. Component Properties"
+              to="#component-properties"
+            />
+            <TextLink
+              className="ml-6  text-sm"
+              label="2.2.A. Types of Figma Properties"
+              to="#types-of-figma-properties"
+            />
           </div>
         </div>
+        {/* * Sidebar End * */}
       </div>
 
       <Footer />
