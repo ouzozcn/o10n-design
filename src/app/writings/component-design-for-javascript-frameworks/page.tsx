@@ -176,7 +176,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   color="teal"
                   icon={<BookIcon />}
                   content="Learn more about atomic design principles and how to apply them in your work. Visit the Brad Frost's Atomic Design website for a comprehensive guide."
-                  to="https://atomicdesign.bradfrost.com/?utm_source=o10n-blog&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2025100505"
+                  to="https://atomicdesign.bradfrost.com/?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2025100505"
                   target="_blank"
                   className="my-4"
                 />
@@ -430,7 +430,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   color="teal"
                   icon={<ArrowOutwardIcon />}
                   content="Learn more about Figma Auto-Layout and how it maps to CSS Flexbox. Visit the Figma Help Center for a comprehensive guide."
-                  to="https://help.figma.com/hc/en-us/articles/360040451373-Create-designs-with-Auto-Layout?utm_source=o10n-blog&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2025100505"
+                  to="https://help.figma.com/hc/en-us/articles/360040451373-Create-designs-with-Auto-Layout?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2025100505"
                   target="_blank"
                   className="my-4"
                 />
