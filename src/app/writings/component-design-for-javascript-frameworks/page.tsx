@@ -23,12 +23,12 @@ import SwapContent from '@/components/SwapContent';
 import ContentCard from '@/components/ContentCard';
 import InfoContainer from '@/components/InfoContainer';
 import IconButton from '@/components/IconButton';
-import { Icon } from '@mui/material';
+import { Chip, Icon } from '@mui/material';
 
 export const metadata: Metadata = {
   title: 'Component Design for JavaScript Frameworks | Design to Code Best Practices',
   description:
-    'Learn how to design UI components that are developer-friendly by following simple rules for auto-layout, meaningful layer names, and component-driven design principles.',
+    'Learn how to design UI components that are js-friendly by following simple rules for auto-layout, meaningful layer names, and component-driven design principles.',
   alternates: {
     canonical: 'https://o10n.design/writings/dev-friendly-component-design',
   },
@@ -99,8 +99,8 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             id="introduction"
             className="PageTitle px-8 pt-5 pb-2 items-center justify-center text-center text-stone-900 text-h1 font-medium font-sans"
           >
-            Component Design for JavaScript Frameworks: <br /> A Designer's Guide to
-            Developer-Friendly Components
+            Component Design for JavaScript Frameworks: <br /> A Designer's Guide to JS-Friendly
+            Components
           </div>
         </div>
       </div>
@@ -368,10 +368,10 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           </div>
           <div
             className="BlogContent flex flex-col w-full gap-4 scroll-mt-[87px]"
-            id="the-fundamentals-of-developer-friendly-components"
+            id="the-fundamentals-of-js-friendly-components"
           >
             <SectionTitle
-              title="2. The Fundamentals of Developer-Friendly Components"
+              title="2. The Fundamentals of JS-Friendly Components"
               color="violet"
               className="md:sticky md:top-[87px] md:self-start"
             />
@@ -387,8 +387,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     define HTML structure
                   </li>
                   <li>
-                    <b>Properties & Props:</b> Establishing clear, developer-friendly component
-                    properties
+                    <b>Properties & Props:</b> Establishing clear, js-friendly component properties
                   </li>
                   <li>
                     <b>Tokenization:</b> Applying design tokens for scalable theming
@@ -579,10 +578,27 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   Proper layer naming is essential for clear communication between designers and
                   developers. Meaningful names help developers understand the purpose of each frame
                   and how it maps to code. If you wouldn't name a CSS class "Frame 1" or "Group 2",
-                  don't use those names in Figma. Instead, use descriptive names that reflect the
-                  element's role.
+                  don't use those names in your layers. Instead, use descriptive names that reflect
+                  the element's role.
                 </p>
-                <SwapContent label="Placeholder" className="w-full" />
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/layer-naming-comp.svg"
+                    alt="Layer Naming in Figma"
+                    width={1200}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Unnamed vs Meaningful Layer Names for a Card Component
+                  </p>
+                </div>
+                <p>
+                  Above example shows a card component with poorly named layers (left) versus
+                  thoughtfully named layers (right). The meaningful names clarify the structure and
+                  purpose of each element, making it easier for developers to implement the design
+                  accurately. Even the Figma icons tells the layout direction (horizontal vs
+                  vertical) at a glance.
+                </p>
                 <InfoContainer
                   color="violet"
                   icon={<AutoAwesomeRoundedIcon />}
@@ -668,7 +684,18 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
-                <SwapContent label="Placeholder" className="w-full" />
+                <div className="Image__Container flex flex-col items-center justify-center w-full my-4">
+                  <Image
+                    src="/img/js-components/FigmaComponentProps.svg"
+                    alt="Figma UI Component Properties"
+                    className="mb-4"
+                    width={400}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Properties of the button component in Figma UI
+                  </p>
+                </div>
                 <p>
                   Component properties (props) are arguably Figma's most powerful feature for
                   creating flexible, functional components that mirror real component behavior. As a
@@ -681,6 +708,18 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <p>
                   Figma supports several property types that map directly to JavaScript/TypeScript:
                 </p>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/figma-property-types.svg"
+                    alt="Figma UI Component Properties"
+                    width={600}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Property types available in Figma
+                  </p>
+                </div>
+
                 <div className="FigmaPropTable w-full overflow-x-auto my-4">
                   <table className="min-w-full border border-stone-300 rounded-xl bg-white text-stone-900 text-sm">
                     <thead>
@@ -801,7 +840,25 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   The same Figma component properties translate naturally across frameworks. Here's
                   how a button component with well-named props looks in different ecosystems:
                 </p>
-                <SwapContent label="Placeholder" className="w-full" />
+                <div className="Image__Container flex flex-col items-center justify-center w-full my-4">
+                  <Image
+                    src="/img/js-components/figma-to-code-props.svg"
+                    alt="Figma UI Component Properties"
+                    className="mb-4"
+                    width={1200}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Component property mapping between Figma and code
+                  </p>
+                </div>
+                <p>
+                  Above Figma button component properties map directly to props in React, Vue,
+                  Angular, and Svelte with minimal adjustments for framework syntax. This
+                  consistency reduces cognitive load for developers and help them implement
+                  components faster and with fewer errors.
+                </p>
+
                 <div className="flex flex-col md:flex-row gap-4 w-full ">
                   <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
                     {` /// React (TypeScript)
@@ -857,7 +914,7 @@ interface ButtonProps {
                   `}
                   </pre>
                 </div>
-                <div className="flex flex-col md:flex-row gap-4 w-full ">
+                <div className="flex flex-col md:flex-row gap-4 w-full mb-4 ">
                   <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
                     {` /// Angular (TypeScript)
 
@@ -916,6 +973,14 @@ export class ButtonComponent {
                   `}
                   </pre>
                 </div>
+                <p>
+                  As we can see, the same well-defined properties in Figma translate cleanly to
+                  props in React, Vue, Angular, and Svelte. This consistency not only speeds up
+                  development but also reduces the likelihood of miscommunication or errors during
+                  implementation. By investing time in defining clear, js-friendly component
+                  properties in Figma, we set the stage for a smoother handoff to developers and a
+                  more efficient development process overall.
+                </p>
               </div>
             </div>
           </div>
@@ -927,7 +992,18 @@ export class ButtonComponent {
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
-                <SwapContent label="Placeholder" className="w-full" />
+                <div className="Token__Samples__Placeholder flex flex-col gap-4 items-center justify-center w-full mb-4">
+                  <div className="Token__Samples__List flex flex-col lg:flex-row gap-4 lg:gap-16 p-4 lg:p-16 items-center justify-center w-full h-60 rounded-lg border border-stone-900 hover:bg-stone-50">
+                    <Tag label="--color-primary-600" size="large" type="lime" />
+                    <Tag label="--spacing-4" size="large" type="red" />
+                    <Tag label="--font-family-sans" size="large" type="amber" />
+                    <Tag label="--radius-md" size="large" type="emerald" />
+                  </div>
+                  <p className="text-sm text-stone-600">
+                    Sample design tokens which point to a color hex value (#0D99FF), spacing in
+                    pixels (16px), font family (Space Grotesk), and border radius (8px).
+                  </p>
+                </div>
                 <p>
                   Modern digital products require theme support (light mode, dark mode, high
                   contrast). This necessitates <b>tokenization</b>, using variables instead of
@@ -1007,24 +1083,6 @@ export class ButtonComponent {
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
                 <p>Figma's Local Variables feature enables comprehensive tokenization:</p>
-                <div className="Token__Samples flex flex-col md:flex-row items-center justify-center w-full">
-                  <div className="Token__Sample flex items-center justify-between bg-stone-100 border border-stone-300 rounded-lg gap-2 p-2 m-1">
-                    <span className="font-mono text-sm">--color-primary-600</span>
-                    <span className="font-mono text-sm">(#0D99FF)</span>
-                  </div>
-                  <div className="Token__Sample flex items-center justify-between bg-stone-100 border border-stone-300 rounded-lg gap-2 p-2 m-1">
-                    <span className="font-mono text-sm">--spacing-4</span>
-                    <span className="font-mono text-sm">(16px)</span>
-                  </div>
-                  <div className="Token__Sample flex items-center justify-between bg-stone-100 border border-stone-300 rounded-lg gap-2 p-2 m-1">
-                    <span className="font-mono text-sm">--font-family-sans</span>
-                    <span className="font-mono text-sm">(Inter, system-ui, sans-serif)</span>
-                  </div>
-                  <div className="Token__Sample flex items-center justify-between bg-stone-100 border border-stone-300 rounded-lg gap-2 p-2 m-1">
-                    <span className="font-mono text-sm">--radius-md</span>
-                    <span className="font-mono text-sm">(8px)</span>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -1073,8 +1131,8 @@ export class ButtonComponent {
             />
             <TextLink
               className=" text-sm"
-              label="2. The Fundamentals of Developer-Friendly Components"
-              to="#the-fundamentals-of-developer-friendly-components"
+              label="2. The Fundamentals of JS-Friendly Components"
+              to="#the-fundamentals-of-js-friendly-components"
             />
             <TextLink
               className="ml-4  text-sm"
