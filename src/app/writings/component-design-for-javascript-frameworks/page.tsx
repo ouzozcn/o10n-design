@@ -581,7 +581,24 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   don't use those names in your layers. Instead, use descriptive names that reflect
                   the element's role.
                 </p>
-                <SwapContent label="Placeholder" className="w-full" />
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/layer-naming-comp.svg"
+                    alt="Layer Naming in Figma"
+                    width={1200}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Unnamed vs Meaningful Layer Names for a Card Component
+                  </p>
+                </div>
+                <p>
+                  Above example shows a card component with poorly named layers (left) versus
+                  thoughtfully named layers (right). The meaningful names clarify the structure and
+                  purpose of each element, making it easier for developers to implement the design
+                  accurately. Even the Figma icons tells the layout direction (horizontal vs
+                  vertical) at a glance.
+                </p>
                 <InfoContainer
                   color="violet"
                   icon={<AutoAwesomeRoundedIcon />}
@@ -667,7 +684,18 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
-                <SwapContent label="Placeholder" className="w-full" />
+                <div className="Image__Container flex flex-col items-center justify-center w-full my-4">
+                  <Image
+                    src="/img/js-components/FigmaComponentProps.svg"
+                    alt="Figma UI Component Properties"
+                    className="mb-4"
+                    width={400}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Properties of the button component in Figma UI
+                  </p>
+                </div>
                 <p>
                   Component properties (props) are arguably Figma's most powerful feature for
                   creating flexible, functional components that mirror real component behavior. As a
@@ -680,6 +708,18 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <p>
                   Figma supports several property types that map directly to JavaScript/TypeScript:
                 </p>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/figma-property-types.svg"
+                    alt="Figma UI Component Properties"
+                    width={600}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Property types available in Figma
+                  </p>
+                </div>
+
                 <div className="FigmaPropTable w-full overflow-x-auto my-4">
                   <table className="min-w-full border border-stone-300 rounded-xl bg-white text-stone-900 text-sm">
                     <thead>
@@ -800,7 +840,25 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   The same Figma component properties translate naturally across frameworks. Here's
                   how a button component with well-named props looks in different ecosystems:
                 </p>
-                <SwapContent label="Placeholder" className="w-full" />
+                <div className="Image__Container flex flex-col items-center justify-center w-full my-4">
+                  <Image
+                    src="/img/js-components/figma-to-code-props.svg"
+                    alt="Figma UI Component Properties"
+                    className="mb-4"
+                    width={1200}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Component property mapping between Figma and code
+                  </p>
+                </div>
+                <p>
+                  Above Figma button component properties map directly to props in React, Vue,
+                  Angular, and Svelte with minimal adjustments for framework syntax. This
+                  consistency reduces cognitive load for developers and help them implement
+                  components faster and with fewer errors.
+                </p>
+
                 <div className="flex flex-col md:flex-row gap-4 w-full ">
                   <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
                     {` /// React (TypeScript)
@@ -856,7 +914,7 @@ interface ButtonProps {
                   `}
                   </pre>
                 </div>
-                <div className="flex flex-col md:flex-row gap-4 w-full ">
+                <div className="flex flex-col md:flex-row gap-4 w-full mb-4 ">
                   <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
                     {` /// Angular (TypeScript)
 
@@ -915,6 +973,14 @@ export class ButtonComponent {
                   `}
                   </pre>
                 </div>
+                <p>
+                  As we can see, the same well-defined properties in Figma translate cleanly to
+                  props in React, Vue, Angular, and Svelte. This consistency not only speeds up
+                  development but also reduces the likelihood of miscommunication or errors during
+                  implementation. By investing time in defining clear, js-friendly component
+                  properties in Figma, we set the stage for a smoother handoff to developers and a
+                  more efficient development process overall.
+                </p>
               </div>
             </div>
           </div>
