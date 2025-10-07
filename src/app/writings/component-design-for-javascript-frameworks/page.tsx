@@ -23,12 +23,12 @@ import SwapContent from '@/components/SwapContent';
 import ContentCard from '@/components/ContentCard';
 import InfoContainer from '@/components/InfoContainer';
 import IconButton from '@/components/IconButton';
-import { Icon } from '@mui/material';
+import { Chip, Icon } from '@mui/material';
 
 export const metadata: Metadata = {
   title: 'Component Design for JavaScript Frameworks | Design to Code Best Practices',
   description:
-    'Learn how to design UI components that are developer-friendly by following simple rules for auto-layout, meaningful layer names, and component-driven design principles.',
+    'Learn how to design UI components that are js-friendly by following simple rules for auto-layout, meaningful layer names, and component-driven design principles.',
   alternates: {
     canonical: 'https://o10n.design/writings/dev-friendly-component-design',
   },
@@ -99,8 +99,8 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             id="introduction"
             className="PageTitle px-8 pt-5 pb-2 items-center justify-center text-center text-stone-900 text-h1 font-medium font-sans"
           >
-            Component Design for JavaScript Frameworks: <br /> A Designer's Guide to
-            Developer-Friendly Components
+            Component Design for JavaScript Frameworks: <br /> A Designer's Guide to JS-Friendly
+            Components
           </div>
         </div>
       </div>
@@ -368,10 +368,10 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           </div>
           <div
             className="BlogContent flex flex-col w-full gap-4 scroll-mt-[87px]"
-            id="the-fundamentals-of-developer-friendly-components"
+            id="the-fundamentals-of-js-friendly-components"
           >
             <SectionTitle
-              title="2. The Fundamentals of Developer-Friendly Components"
+              title="2. The Fundamentals of JS-Friendly Components"
               color="violet"
               className="md:sticky md:top-[87px] md:self-start"
             />
@@ -387,8 +387,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     define HTML structure
                   </li>
                   <li>
-                    <b>Properties & Props:</b> Establishing clear, developer-friendly component
-                    properties
+                    <b>Properties & Props:</b> Establishing clear, js-friendly component properties
                   </li>
                   <li>
                     <b>Tokenization:</b> Applying design tokens for scalable theming
@@ -579,8 +578,8 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   Proper layer naming is essential for clear communication between designers and
                   developers. Meaningful names help developers understand the purpose of each frame
                   and how it maps to code. If you wouldn't name a CSS class "Frame 1" or "Group 2",
-                  don't use those names in Figma. Instead, use descriptive names that reflect the
-                  element's role.
+                  don't use those names in your layers. Instead, use descriptive names that reflect
+                  the element's role.
                 </p>
                 <SwapContent label="Placeholder" className="w-full" />
                 <InfoContainer
@@ -927,7 +926,18 @@ export class ButtonComponent {
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
-                <SwapContent label="Placeholder" className="w-full" />
+                <div className="Token__Samples__Placeholder flex flex-col gap-4 items-center justify-center w-full mb-4">
+                  <div className="Token__Samples__List flex flex-col lg:flex-row gap-4 lg:gap-16 p-4 lg:p-16 items-center justify-center w-full h-60 rounded-lg border border-stone-900 hover:bg-stone-50">
+                    <Tag label="--color-primary-600" size="large" type="lime" />
+                    <Tag label="--spacing-4" size="large" type="red" />
+                    <Tag label="--font-family-sans" size="large" type="amber" />
+                    <Tag label="--radius-md" size="large" type="emerald" />
+                  </div>
+                  <p className="text-sm text-stone-600">
+                    Sample design tokens which point to a color hex value (#0D99FF), spacing in
+                    pixels (16px), font family (Space Grotesk), and border radius (8px).
+                  </p>
+                </div>
                 <p>
                   Modern digital products require theme support (light mode, dark mode, high
                   contrast). This necessitates <b>tokenization</b>, using variables instead of
@@ -1007,24 +1017,6 @@ export class ButtonComponent {
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
                 <p>Figma's Local Variables feature enables comprehensive tokenization:</p>
-                <div className="Token__Samples flex flex-col md:flex-row items-center justify-center w-full">
-                  <div className="Token__Sample flex items-center justify-between bg-stone-100 border border-stone-300 rounded-lg gap-2 p-2 m-1">
-                    <span className="font-mono text-sm">--color-primary-600</span>
-                    <span className="font-mono text-sm">(#0D99FF)</span>
-                  </div>
-                  <div className="Token__Sample flex items-center justify-between bg-stone-100 border border-stone-300 rounded-lg gap-2 p-2 m-1">
-                    <span className="font-mono text-sm">--spacing-4</span>
-                    <span className="font-mono text-sm">(16px)</span>
-                  </div>
-                  <div className="Token__Sample flex items-center justify-between bg-stone-100 border border-stone-300 rounded-lg gap-2 p-2 m-1">
-                    <span className="font-mono text-sm">--font-family-sans</span>
-                    <span className="font-mono text-sm">(Inter, system-ui, sans-serif)</span>
-                  </div>
-                  <div className="Token__Sample flex items-center justify-between bg-stone-100 border border-stone-300 rounded-lg gap-2 p-2 m-1">
-                    <span className="font-mono text-sm">--radius-md</span>
-                    <span className="font-mono text-sm">(8px)</span>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -1073,8 +1065,8 @@ export class ButtonComponent {
             />
             <TextLink
               className=" text-sm"
-              label="2. The Fundamentals of Developer-Friendly Components"
-              to="#the-fundamentals-of-developer-friendly-components"
+              label="2. The Fundamentals of JS-Friendly Components"
+              to="#the-fundamentals-of-js-friendly-components"
             />
             <TextLink
               className="ml-4  text-sm"
