@@ -30,13 +30,13 @@ export const metadata: Metadata = {
   description:
     'Learn how to design UI components that are js-friendly by following simple rules for auto-layout, meaningful layer names, and component-driven design principles.',
   alternates: {
-    canonical: 'https://o10n.design/writings/dev-friendly-component-design',
+    canonical: 'https://o10n.design/articles/dev-friendly-component-design',
   },
   openGraph: {
     title: 'Component Design for JavaScript Frameworks | Design to Code Best Practices',
     description:
       'Practical guide to designing components that translate seamlessly from Figma to code. Auto-layout best practices, naming conventions, and handoff strategies.',
-    url: 'https://o10n.design/writings/dev-friendly-component-design',
+    url: 'https://o10n.design/articles/dev-friendly-component-design',
     images: 'https://o10n.design/img/og_images/compforjs_open_graph.png',
     siteName: 'o10n.design',
     type: 'article',
@@ -105,37 +105,65 @@ export default function ComponentDesignForJavaScriptFrameworks() {
         </div>
       </div>
 
-      <div className="SummaryContent flex flex-col w-full  lg:gap-6 p-4 md:px-16 md:py-8 text-xl items-center justify-center text-start font-regular text-stone-900">
+      <div className="Summary__Content flex flex-col w-full  gap-4 lg:gap-12 p-6 lg:py-12 lg:px-60 text-xl items-center justify-center text-start font-regular text-stone-900">
+        <p>
+          The history of human-computer interaction and user interface design (graphical user
+          interface, GUI) spans over 70 years. There were only text-based command-line interfaces
+          available when it was initially launched in the early 1960s. We first saw the mouse,
+          windows, icons, and hypertext links when Douglas Engelbart unveiled the "Mother of All
+          Demos.”
+        </p>
+        <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 ">
+          <Image
+            src="/img/js-components/mother-of-all-demos.jpg"
+            alt="Mother of All Demos"
+            width={800}
+            height={1}
+            className="rounded-lg border border-stone-900 "
+          />
+          <p className="text-center text-sm text-stone-600">
+            Douglas Engelbart using the NLS’s 5-button chord keyset, a standard QWERTY keyboard, and
+            3-button mouse, around 1968. NMAH Catalog #2015.3073.11.
+          </p>
+        </div>
+        <p>
+          This marked the start of a lengthy history of user interface design, which was followed by
+          some incredible successes like Xerox PARC’s Alto (’73) and Star (’81), Apple Lisa (’83)
+          and Macintosh (’84), Microsoft Windows (’85). The development of standardized,
+          user-friendly, and reusable interfaces became necessary as a result of all these technical
+          advancements.
+        </p>
+        <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 ">
+          <Image
+            src="/img/js-components/mac-gui.png"
+            alt="Macintosh System 1 GUI"
+            width={800}
+            height={1}
+            className="rounded-lg border border-stone-900 "
+          />
+          <p className="text-center text-sm text-stone-600">Macintosh System 1 GUI (1984)</p>
+        </div>
+        <p>
+          When UI became dynamic with Web 2.0 tech in the early 2000s, designers started to create
+          reusable snippets (navigation elements, modals, form elements). This led to emerging
+          design patterns like Yahoo did back in 2006 with Yahoo Design Pattern Library (YUI).
+          Facebook released React in 2013, marking a significant advancement in UI architecture and
+          contributing to the growth of the component ecosystem. Today's digital products are
+          composed of tens of thousands of uniform, scalable, and reusable components. Because it
+          must fit in multiple locations on the interface, designing a small square with an optional
+          checkmark within takes additional planning effort. Since designers and developers co-own
+          modern UI components, we designers need to learn more about their technical
+          implementation.
+        </p>
+        <div className="SwapContentPlaceholder w-full">
+          <SwapContent label="Placeholder" className="w-full" />
+        </div>
         <p>
           A decade ago, UI designers relied on Photoshop for interface design. In the 2010s, Sketch
           emerged as a Mac-exclusive option, though its paid model limited widespread adoption. Many
           of us started with Adobe XD, which introduced component concepts but lacked robust
           property management. Tools like InVision, Origami Studio, and Axure RP existed but proved
           too complex for junior designers.
-        </p>
-        <div className="SwapContentPlaceholder w-full">
-          <SwapContent label="Placeholder" className="w-full" />
-        </div>
-        <p>
-          Today's landscape has transformed dramatically. Modern tools like Figma enable designers
-          to create sophisticated component structures with properties (strings, booleans,
-          instances) that directly translate to frontend code. The gap between design and
-          development continues to narrow—I believe that within a few years, UI/UX Designer and
-          Frontend Developer roles will merge into a single, highly valuable position.
-        </p>
-        <div className="SwapContentPlaceholder w-full">
-          <SwapContent label="Placeholder" className="w-full" />
-        </div>
-        <p>
-          This evolution has fundamentally changed the designer-developer relationship. Where we
-          once handed off static mockups, today we deliver living component systems that mirror
-          production code. Understanding this shift is essential for modern product designers.
-        </p>
-
-        <p>
-          This article will guide you through designing components that seamlessly integrate with
-          modern JavaScript frameworks like React, Vue, Angular, and Svelte—reducing development
-          effort and improving collaboration regardless of the tech stack your team uses.
         </p>
       </div>
 
@@ -210,7 +238,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   color="teal"
                   icon={<BookIcon />}
                   content="Learn more about atomic design principles and how to apply them in your work. Visit the Brad Frost's Atomic Design website for a comprehensive guide."
-                  to="https://atomicdesign.bradfrost.com/?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2025100505"
+                  to="https://atomicdesign.bradfrost.com/?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
                   target="_blank"
                   className="my-4"
                 />
@@ -295,9 +323,36 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <p>
                   <b>Properties (props)</b> define a component's identity and characteristics.
                   Consider a car analogy: it has properties like brand, model, year, and passenger
-                  capacity—each serving a specific purpose.
+                  capacity where each serves a specific purpose.
                 </p>{' '}
-                <br />
+                <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-60 lg:my-8 rounded-lg border border-stone-900 hover:bg-stone-50">
+                  <Button
+                    label="Primary Button"
+                    type="primary"
+                    size="medium"
+                    isDisabled={false}
+                    isLoading={false}
+                    startIcon={<CodeRoundedIcon />}
+                  />
+                  <Button
+                    label="Secondary Button"
+                    type="secondary"
+                    size="medium"
+                    isDisabled={false}
+                    isLoading={true}
+                    className="h-[52px]"
+                  />
+                  <Button
+                    label="Tertiary Button"
+                    type="tertiary"
+                    size="medium"
+                    isDisabled={true}
+                    isLoading={false}
+                  />
+                </div>
+                <p className="text-center text-sm text-stone-600 lg:mb-6">
+                  Button component with different property configurations
+                </p>
                 <p>Similarly, a button component might have properties like:</p>
                 <ul className="list-disc list-inside ml-4 mt-4 space-y-4 marker:text-stone-600">
                   <li>
@@ -349,16 +404,14 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     (action) : What happens when clicked
                   </li>
                 </ul>
-                <div className="lg:mx-8 ">
-                  <InfoContainer
-                    color="amber"
-                    icon={<GamepadRoundedIcon />}
-                    content="Try Button component properties on the Storybook Playground"
-                    to="/docs/index.html?path=/docs/components-button--docs"
-                    target="_blank"
-                    className="  mt-6 mb-4"
-                  />
-                </div>
+                <InfoContainer
+                  color="cyan"
+                  icon={<GamepadRoundedIcon />}
+                  content="Try Button component properties on the Storybook Playground"
+                  to="/docs/index.html?path=/docs/components-button--docs"
+                  target="_blank"
+                  className="  mt-6 mb-6"
+                />
                 <p>
                   These properties map directly to React/Vue/Angular/Svelte props and make
                   components flexible, reusable, and maintainable.
@@ -466,7 +519,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   color="teal"
                   icon={<ArrowOutwardIcon />}
                   content="Learn more about Figma Auto-Layout and how it maps to CSS Flexbox. Visit the Figma Help Center for a comprehensive guide."
-                  to="https://help.figma.com/hc/en-us/articles/360040451373-Create-designs-with-Auto-Layout?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2025100505"
+                  to="https://help.figma.com/hc/en-us/articles/360040451373-Create-designs-with-Auto-Layout?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
                   target="_blank"
                   className="my-4"
                 />
@@ -603,7 +656,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   color="violet"
                   icon={<AutoAwesomeRoundedIcon />}
                   content="Figma provides AI-powered layer naming if you prefer not to manually label frames. Learn more about using AI to rename layers in Figma."
-                  to="https://help.figma.com/hc/en-us/articles/24004711129879-Rename-layers-with-AI?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2025100506"
+                  to="https://help.figma.com/hc/en-us/articles/24004711129879-Rename-layers-with-AI?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
                   target="_blank"
                   className="my-4"
                 />
@@ -657,7 +710,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   color="red"
                   icon={<PriorityHighRoundedIcon />}
                   content="Do not use Rectangle and Ellipse in Figma since they do not translate to semantic HTML elements. Always use Frames with Auto-Layout for containers. Learn more about Groups vs Frames in Figma."
-                  to="https://www.figma.com/best-practices/groups-versus-frames/?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2025100507"
+                  to="https://www.figma.com/best-practices/groups-versus-frames/?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
                   target="_blank"
                   className="my-4"
                 />
@@ -831,7 +884,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   color="teal"
                   icon={<CodeRoundedIcon />}
                   content="Learn more about JavaScript naming conventions and best practices. Visit the W3Schools website for a comprehensive guide."
-                  to="https://www.w3schools.com/js/js_conventions.asp?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2025100508"
+                  to="https://www.w3schools.com/js/js_conventions.asp?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
                   target="_blank"
                   className="my-4"
                 />
