@@ -105,23 +105,33 @@ export default function ComponentDesignForJavaScriptFrameworks() {
         </div>
       </div>
 
-      <div className="SummaryContent flex flex-col w-full  lg:gap-6 p-4 md:px-16 md:py-8 text-xl items-center justify-center text-start font-regular text-stone-900">
+      <div className="Summary__Content flex flex-col w-full  gap-4 lg:gap-12 p-6 lg:py-12 lg:px-60 text-xl items-center justify-center text-start font-regular text-stone-900">
         <p>
-          A decade ago, UI designers relied on Photoshop for interface design. In the 2010s, Sketch
-          emerged as a Mac-exclusive option, though its paid model limited widespread adoption. Many
-          of us started with Adobe XD, which introduced component concepts but lacked robust
-          property management. Tools like InVision, Origami Studio, and Axure RP existed but proved
-          too complex for junior designers.
+          The history of human-computer interaction and user interface design (graphical user
+          interface, GUI) spans over 70 years. There were only text-based command-line interfaces
+          available when it was initially launched in the early 1960s. We first saw the mouse,
+          windows, icons, and hypertext links when Douglas Engelbart unveiled the "Mother of All
+          Demos.”
         </p>
-        <div className="SwapContentPlaceholder w-full">
-          <SwapContent label="Placeholder" className="w-full" />
+        <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 ">
+          <Image
+            src="/img/js-components/mother-of-all-demos.jpg"
+            alt="Mother of All Demos"
+            width={800}
+            height={1}
+            className="rounded-lg border border-stone-900 "
+          />
+          <p className="text-center text-sm text-stone-600">
+            Douglas Engelbart using the NLS’s 5-button chord keyset, a standard QWERTY keyboard, and
+            3-button mouse, around 1968. NMAH Catalog #2015.3073.11.
+          </p>
         </div>
         <p>
-          Today's landscape has transformed dramatically. Modern tools like Figma enable designers
-          to create sophisticated component structures with properties (strings, booleans,
-          instances) that directly translate to frontend code. The gap between design and
-          development continues to narrow. I believe that within a few years, UI/UX Designer and
-          Frontend Developer roles will merge into a single, highly valuable position.
+          This marked the start of a lengthy history of user interface design, which was followed by
+          some incredible successes like Xerox PARC’s Alto (’73) and Star (’81), Apple Lisa (’83)
+          and Macintosh (’84), Microsoft Windows (’85). The development of standardized,
+          user-friendly, and reusable interfaces became necessary as a result of all these technical
+          advancements.
         </p>
         <div className="SwapContentPlaceholder w-full">
           <SwapContent label="Placeholder" className="w-full" />
@@ -210,7 +220,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   color="teal"
                   icon={<BookIcon />}
                   content="Learn more about atomic design principles and how to apply them in your work. Visit the Brad Frost's Atomic Design website for a comprehensive guide."
-                  to="https://atomicdesign.bradfrost.com/?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2025100505"
+                  to="https://atomicdesign.bradfrost.com/?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
                   target="_blank"
                   className="my-4"
                 />
@@ -491,7 +501,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   color="teal"
                   icon={<ArrowOutwardIcon />}
                   content="Learn more about Figma Auto-Layout and how it maps to CSS Flexbox. Visit the Figma Help Center for a comprehensive guide."
-                  to="https://help.figma.com/hc/en-us/articles/360040451373-Create-designs-with-Auto-Layout?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2025100505"
+                  to="https://help.figma.com/hc/en-us/articles/360040451373-Create-designs-with-Auto-Layout?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
                   target="_blank"
                   className="my-4"
                 />
@@ -628,7 +638,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   color="violet"
                   icon={<AutoAwesomeRoundedIcon />}
                   content="Figma provides AI-powered layer naming if you prefer not to manually label frames. Learn more about using AI to rename layers in Figma."
-                  to="https://help.figma.com/hc/en-us/articles/24004711129879-Rename-layers-with-AI?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2025100506"
+                  to="https://help.figma.com/hc/en-us/articles/24004711129879-Rename-layers-with-AI?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
                   target="_blank"
                   className="my-4"
                 />
@@ -682,7 +692,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   color="red"
                   icon={<PriorityHighRoundedIcon />}
                   content="Do not use Rectangle and Ellipse in Figma since they do not translate to semantic HTML elements. Always use Frames with Auto-Layout for containers. Learn more about Groups vs Frames in Figma."
-                  to="https://www.figma.com/best-practices/groups-versus-frames/?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2025100507"
+                  to="https://www.figma.com/best-practices/groups-versus-frames/?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
                   target="_blank"
                   className="my-4"
                 />
@@ -856,7 +866,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   color="teal"
                   icon={<CodeRoundedIcon />}
                   content="Learn more about JavaScript naming conventions and best practices. Visit the W3Schools website for a comprehensive guide."
-                  to="https://www.w3schools.com/js/js_conventions.asp?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2025100508"
+                  to="https://www.w3schools.com/js/js_conventions.asp?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
                   target="_blank"
                   className="my-4"
                 />
