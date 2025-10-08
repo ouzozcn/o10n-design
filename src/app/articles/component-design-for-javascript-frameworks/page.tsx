@@ -133,19 +133,37 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           user-friendly, and reusable interfaces became necessary as a result of all these technical
           advancements.
         </p>
+        <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 ">
+          <Image
+            src="/img/js-components/mac-gui.png"
+            alt="Macintosh System 1 GUI"
+            width={800}
+            height={1}
+            className="rounded-lg border border-stone-900 "
+          />
+          <p className="text-center text-sm text-stone-600">Macintosh System 1 GUI (1984)</p>
+        </div>
+        <p>
+          When UI became dynamic with Web 2.0 tech in the early 2000s, designers started to create
+          reusable snippets (navigation elements, modals, form elements). This led to emerging
+          design patterns like Yahoo did back in 2006 with Yahoo Design Pattern Library (YUI).
+          Facebook released React in 2013, marking a significant advancement in UI architecture and
+          contributing to the growth of the component ecosystem. Today's digital products are
+          composed of tens of thousands of uniform, scalable, and reusable components. Because it
+          must fit in multiple locations on the interface, designing a small square with an optional
+          checkmark within takes additional planning effort. Since designers and developers co-own
+          modern UI components, we designers need to learn more about their technical
+          implementation.
+        </p>
         <div className="SwapContentPlaceholder w-full">
           <SwapContent label="Placeholder" className="w-full" />
         </div>
         <p>
-          This evolution has fundamentally changed the designer-developer relationship. Where we
-          once handed off static mockups, today we deliver living component systems that mirror
-          production code. Understanding this shift is essential for modern product designers.
-        </p>
-
-        <p>
-          This article will guide you through designing components that seamlessly integrate with
-          modern JavaScript frameworks like React, Vue, Angular, and Svelte—reducing development
-          effort and improving collaboration regardless of the tech stack your team uses.
+          A decade ago, UI designers relied on Photoshop for interface design. In the 2010s, Sketch
+          emerged as a Mac-exclusive option, though its paid model limited widespread adoption. Many
+          of us started with Adobe XD, which introduced component concepts but lacked robust
+          property management. Tools like InVision, Origami Studio, and Axure RP existed but proved
+          too complex for junior designers.
         </p>
       </div>
 
