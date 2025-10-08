@@ -120,7 +120,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           Today's landscape has transformed dramatically. Modern tools like Figma enable designers
           to create sophisticated component structures with properties (strings, booleans,
           instances) that directly translate to frontend code. The gap between design and
-          development continues to narrow—I believe that within a few years, UI/UX Designer and
+          development continues to narrow. I believe that within a few years, UI/UX Designer and
           Frontend Developer roles will merge into a single, highly valuable position.
         </p>
         <div className="SwapContentPlaceholder w-full">
@@ -295,9 +295,36 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <p>
                   <b>Properties (props)</b> define a component's identity and characteristics.
                   Consider a car analogy: it has properties like brand, model, year, and passenger
-                  capacity—each serving a specific purpose.
+                  capacity where each serves a specific purpose.
                 </p>{' '}
-                <br />
+                <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-60 lg:my-8 rounded-lg border border-stone-900 hover:bg-stone-50">
+                  <Button
+                    label="Primary Button"
+                    type="primary"
+                    size="medium"
+                    isDisabled={false}
+                    isLoading={false}
+                    startIcon={<CodeRoundedIcon />}
+                  />
+                  <Button
+                    label="Secondary Button"
+                    type="secondary"
+                    size="medium"
+                    isDisabled={false}
+                    isLoading={true}
+                    className="h-[52px]"
+                  />
+                  <Button
+                    label="Tertiary Button"
+                    type="tertiary"
+                    size="medium"
+                    isDisabled={true}
+                    isLoading={false}
+                  />
+                </div>
+                <p className="text-center text-sm text-stone-600 lg:mb-6">
+                  Button component with different property configurations
+                </p>
                 <p>Similarly, a button component might have properties like:</p>
                 <ul className="list-disc list-inside ml-4 mt-4 space-y-4 marker:text-stone-600">
                   <li>
@@ -349,16 +376,14 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     (action) : What happens when clicked
                   </li>
                 </ul>
-                <div className="lg:mx-8 ">
-                  <InfoContainer
-                    color="amber"
-                    icon={<GamepadRoundedIcon />}
-                    content="Try Button component properties on the Storybook Playground"
-                    to="/docs/index.html?path=/docs/components-button--docs"
-                    target="_blank"
-                    className="  mt-6 mb-4"
-                  />
-                </div>
+                <InfoContainer
+                  color="cyan"
+                  icon={<GamepadRoundedIcon />}
+                  content="Try Button component properties on the Storybook Playground"
+                  to="/docs/index.html?path=/docs/components-button--docs"
+                  target="_blank"
+                  className="  mt-6 mb-6"
+                />
                 <p>
                   These properties map directly to React/Vue/Angular/Svelte props and make
                   components flexible, reusable, and maintainable.
