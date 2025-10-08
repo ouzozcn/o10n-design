@@ -124,9 +124,9 @@ export default function CaseStudy() {
           title="Ideas"
         />
         <MenuItem
-          to="/writings"
+          to="/articles"
           className="flex-1 text-center md:border-b-0 border-b-0 border-r-0 md:border-r border-stone-900"
-          title="Writings"
+          title="Articles"
         />
       </div>
 

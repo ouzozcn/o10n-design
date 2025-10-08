@@ -46,8 +46,8 @@ const Menu: React.FC<MenuProps> = ({ className }) => {
             />
             <MenuItem to="/ideas" title="Ideas" className="flex-1 w-full text-2xl border-r-0" />
             <MenuItem
-              to="/writings"
-              title="Writings"
+              to="/articles"
+              title="Articles"
               className="flex-1 w-full text-2xl border-r-0"
             />
             <MenuItem

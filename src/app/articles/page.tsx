@@ -6,23 +6,23 @@ import { Footer } from '@/components/Footer';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Writings | Oğuzhan Özcan | Design Systems & Developer Handoff',
+  title: 'Articles | Oğuzhan Özcan | Design Systems & Developer Handoff',
   description:
     'Articles on product design, design systems, accessibility, and design engineering. Topics: developer-friendly components, design-to-code workflows, Storybook handoff, atomic design, and building inclusive digital experiences. Insights from 5+ years in SaaS product design.',
   alternates: {
-    canonical: 'https://o10n.design/writings',
+    canonical: 'https://o10n.design/articles',
   },
   openGraph: {
-    title: 'Writings | Oğuzhan Özcan | Design Systems & Accessibility',
+    title: 'Articles | Oğuzhan Özcan | Design Systems & Accessibility',
     description:
       'Essays on design systems, accessibility, and design-to-code workflows. How to build developer-friendly components, improve handoff, and create inclusive experiences.',
-    url: 'https://o10n.design/writings',
+    url: 'https://o10n.design/articles',
     images: [
       {
         url: 'https://o10n.design/img/og_images/writings_open_graph.png',
         width: 1200,
         height: 630,
-        alt: 'Oğuzhan Özcan Writings - Design Systems & Accessibility',
+        alt: 'Oğuzhan Özcan Articles - Design Systems & Accessibility',
       },
     ],
     siteName: 'o10n.design',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Writings | Design Systems & Developer Handoff',
+    title: 'Articles | Design Systems & Developer Handoff',
     description:
       'Articles on design systems, accessibility, and design-to-code workflows. Building better handoffs between design and development.',
     images: ['https://o10n.design/img/og_images/writings_open_graph.png'],
@@ -52,16 +52,16 @@ export const metadata: Metadata = {
   keywords: [
     // Content Types
     'Product Design Articles',
-    'Design Systems Writing',
+    'Design Systems Article',
     'Accessibility Essays',
     'Design Engineering Blog',
-    'UX Writing',
+    'UX Article',
 
     // Core Topics
     'Design to Code Articles',
     'Developer Friendly Design',
     'Design Handoff Best Practices',
-    'Component Architecture Writing',
+    'Component Architecture Article',
     'Design System Documentation',
 
     // Specific Focus Areas
@@ -74,11 +74,11 @@ export const metadata: Metadata = {
     // Methodologies
     'Design Process Articles',
     'Design Thinking Essays',
-    'User Research Writing',
+    'User Research Article',
     'Design Strategy',
     'Design Leadership',
 
-    // Technical Writing
+    // Technical Article
     'UI Component Design',
     'Frontend Design Articles',
     'Design System Governance',
@@ -91,7 +91,7 @@ export const metadata: Metadata = {
     'Design Team Process',
 
     // Accessibility Focus
-    'Accessible Design Writing',
+    'Accessible Design Article',
     'Inclusive Design Essays',
     'WCAG Guidelines',
     'Color Accessibility',
@@ -99,7 +99,7 @@ export const metadata: Metadata = {
     // Creator
     'Oğuzhan Özcan Blog',
     'Product Design Insights',
-    'Design Engineering Writing',
+    'Design Engineering Article',
   ].join(', '),
   metadataBase: new URL('https://o10n.design'),
   applicationName: 'o10n.design',
@@ -108,7 +108,7 @@ export const metadata: Metadata = {
   category: 'portfolio',
 };
 
-export default function Writings() {
+export default function Articles() {
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
       <div className="md:sticky md:top-0 md:z-10 flex flex-col md:flex-row w-auto border-b border-stone-900 bg-theme-primary">
@@ -133,15 +133,15 @@ export default function Writings() {
           title="Ideas"
         />
         <MenuItem
-          to="/writings"
+          to="/articles"
           className="flex-1 text-center md:border-b-0 border-b-0 border-r-0 md:border-r border-stone-900 bg-emerald-200 hover:bg-emerald-200 cursor-default"
-          title="Writings"
+          title="Articles"
         />
       </div>
 
       <div className="PageHero flex flex-col p-8 lg:p-32 w-full md:h-[400px] border-b border-stone-900 justify-center items-center gap-4">
         <h1 className="text-4xl text-center font-sans text-stone-900 flex items-center justify-center">
-          Writings
+          Articles
         </h1>
         <h2 className="text-xl text-center font-sans text-stone-900 flex items-center justify-center">
           Essays and articles on design systems, accessibility, and design-to-code workflows. I
@@ -157,7 +157,7 @@ export default function Writings() {
           cardContent="Learn how to design UI components that are developer-friendly by following simple rules for auto-layout, meaningful layer names, and component-driven design principles."
           tags={[
             {
-              label: 'Writing',
+              label: 'Article',
               type: 'emerald',
               size: 'large',
             },
@@ -167,7 +167,7 @@ export default function Writings() {
               size: 'large',
             },
           ]}
-          to="/writings/component-design-for-javascript-frameworks"
+          to="/articles/component-design-for-javascript-frameworks"
           swapContent={
             <div className="relative w-full  min-h-[400px]">
               <Image

@@ -108,23 +108,23 @@ export default function HomeClient() {
           />
 
           <MenuItem
-            to="/writings"
+            to="/articles"
             className="lg:h-[268px] border-stone-900 md:border-r-0"
-            title="Writings"
+            title="Articles"
             titleClassName="text-md md:text-xl lg:text-2xl"
             svg={
               <>
                 <Image
-                  src="/img/writingsIcon.svg"
-                  alt="Writings Icon"
+                  src="/img/articlesIcon.svg"
+                  alt="Articles Icon"
                   width={1}
                   height={iconConfig.lg.height}
                   style={{ height: iconConfig.lg.height, width: 'auto' }}
-                  data-tooltip-id="writing-tooltip"
-                  data-tooltip-content="Braille letter W – represents Writings"
+                  data-tooltip-id="article-tooltip"
+                  data-tooltip-content="Braille letter A – represents Articles"
                   data-tooltip-place="right"
                 />
-                <Tooltip id="writing-tooltip" />
+                <Tooltip id="article-tooltip" />
               </>
             }
           />

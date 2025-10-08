@@ -44,7 +44,7 @@ knowledge for designers and developers working together.
 -   `/product` - Product showcases and design systems
 -   `/ideas` - Design concepts and project ideas
 -   `/experiment` - Design and AI experiments
--   `/writings` - Articles and technical blog posts
+-   `/articles` - Articles and technical blog posts
 -   `/tech-stack` - Technologies and tools overview
 -   `/docs` - Documentation and resources
 -   `/contact` - Contact information and form
@@ -63,9 +63,9 @@ knowledge for designers and developers working together.
 
 ### Technical Content & Articles
 
--   `/writings/dev-friendly-component-design` - Component design best
+-   `/articles/dev-friendly-component-design` - Component design best
     practices for developer collaboration
--   `/writings/using-tokens-in-figma` - Design tokens implementation
+-   `/articles/using-tokens-in-figma` - Design tokens implementation
     guide and workflow
 
 ### Legal & Policy Pages
@@ -142,7 +142,7 @@ Development, TypeScript, Figma, Design Process
 ### Secondary Topics
 
 User Testing, Usability, A11y, Color Theory, Form Design, Security UX,
-Design-Development Collaboration, Technical Writing, Portfolio Design,
+Design-Development Collaboration, Technical Article, Portfolio Design,
 Case Study Methodology
 
 ### Long-tail Keywords
@@ -438,7 +438,7 @@ Long Answer: He is based in Ankara, Turkey (ODTÜ Teknokent) but collaborates wi
     worldwide
 -   **Brifl Design System**: Developed comprehensive design system for
     open-source form builder, Brifl, improving development efficiency
--   **Technical Writing**: Published technical articles on
+-   **Technical Article**: Published technical articles on
     design-development collaboration, contributing to industry knowledge
 -   **Enocta Platform**: Contributed to Enocta Learning Experience
     Platform (https://www.enocta.com/) as UI/UX Designer, improving

@@ -30,13 +30,13 @@ export const metadata: Metadata = {
   description:
     'Learn how to design UI components that are js-friendly by following simple rules for auto-layout, meaningful layer names, and component-driven design principles.',
   alternates: {
-    canonical: 'https://o10n.design/writings/dev-friendly-component-design',
+    canonical: 'https://o10n.design/articles/dev-friendly-component-design',
   },
   openGraph: {
     title: 'Component Design for JavaScript Frameworks | Design to Code Best Practices',
     description:
       'Practical guide to designing components that translate seamlessly from Figma to code. Auto-layout best practices, naming conventions, and handoff strategies.',
-    url: 'https://o10n.design/writings/dev-friendly-component-design',
+    url: 'https://o10n.design/articles/dev-friendly-component-design',
     images: 'https://o10n.design/img/og_images/compforjs_open_graph.png',
     siteName: 'o10n.design',
     type: 'article',
