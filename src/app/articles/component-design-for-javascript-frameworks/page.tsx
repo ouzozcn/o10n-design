@@ -149,21 +149,32 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           design patterns like Yahoo did back in 2006 with Yahoo Design Pattern Library (YUI).
           Facebook released React in 2013, marking a significant advancement in UI architecture and
           contributing to the growth of the component ecosystem. Today's digital products are
-          composed of tens of thousands of uniform, scalable, and reusable components. Because it
-          must fit in multiple locations on the interface, designing a small square with an optional
-          checkmark within takes additional planning effort. Since designers and developers co-own
-          modern UI components, we designers need to learn more about their technical
-          implementation.
+          composed of a vast array of uniform, scalable, and reusable components. Because a
+          component must fit in multiple locations on the interface, designing a small square with
+          an optional checkmark icon within takes additional planning effort. Since designers and
+          developers co-own modern UI components, we designers need to learn more about their
+          technical implementation.
         </p>
         <div className="SwapContentPlaceholder w-full">
           <SwapContent label="Placeholder" className="w-full" />
         </div>
         <p>
-          A decade ago, UI designers relied on Photoshop for interface design. In the 2010s, Sketch
-          emerged as a Mac-exclusive option, though its paid model limited widespread adoption. Many
-          of us started with Adobe XD, which introduced component concepts but lacked robust
-          property management. Tools like InVision, Origami Studio, and Axure RP existed but proved
-          too complex for junior designers.
+          In this article, we'll explore best practices for designing components that developers can
+          easily implement in their applications. At the end of reading, you will have a solid
+          understanding of:
+          <ul className="list-disc list-inside ml-4 lg:mt-8 space-y-2 marker:text-stone-600">
+            <li>Component design principles</li>
+            <li>Understanding component properties</li>
+            <li>Property, Auto-Layout, and Frame Naming in Figma</li>
+            <li>Design tokens for scalable theming</li>
+            <li>Prototyping interactions and states</li>
+          </ul>
+        </p>
+        <p>
+          Whether you're a product designer, UI/UX designer, or front-end developer, mastering these
+          concepts will greatly enhance your ability to create cohesive and user-friendly
+          interfaces. If you are ready to take your component design skills to the next level, let's
+          dive in!
         </p>
       </div>
 
@@ -211,7 +222,9 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <p>
                   A component is a single, reusable UI element within a product, a building block
                   that can be used repeatedly with different configurations. This concept mirrors
-                  both design systems and code architecture.
+                  both design systems and code architecture. Modern practices like Atomic Design
+                  emphasize the importance of breaking down components into their most basic parts
+                  to create a more efficient and scalable design process.
                 </p>
                 <h2 className="SectionImage w-full flex font-bold text-start ">
                   Component hierarchy follows atomic design principles:
@@ -242,7 +255,11 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   target="_blank"
                   className="my-4"
                 />
-
+                <p>
+                  Understanding this hierarchy and their relationships is crucial for creating
+                  effective design systems. By leveraging atomic design principles, you can ensure
+                  consistency and scalability across your projects.
+                </p>
                 <h2 className="SectionImage w-full flex font-bold text-start ">
                   Common component examples:
                 </h2>
@@ -281,8 +298,8 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             <div className="flex flex-col md:flex-row gap-12 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
                 <p>
-                  Despite syntactic differences, all modern JavaScript frameworks share a common
-                  component-based architecture:
+                  Despite syntactic differences, all modern JavaScript frameworks and libraries
+                  share a common component-based architecture:
                 </p>
                 <ul className="list-disc list-inside ml-4 space-y-4 marker:text-stone-600 ">
                   <li>
@@ -303,8 +320,9 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 </div>
                 <p>
                   When you design components with these universal concepts in mind, your work
-                  translates smoothly across any framework. A well-designed button in Figma becomes
-                  an equally well-implemented button in React, Vue, Angular, or Svelte.
+                  translates smoothly across most popular frameworks. A well-designed button in
+                  Figma becomes an equally well-implemented button in React (technically a library,
+                  not a full framework), Vue, Angular, or Svelte.
                 </p>
               </div>
             </div>
