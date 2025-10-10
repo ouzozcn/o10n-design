@@ -5,10 +5,20 @@ import Menu from '@/components/Menu';
 import Button from '@/components/Button';
 import CachedRoundedIcon from '@mui/icons-material/CachedRounded';
 import SwapContent from '@/components/SwapContent';
+import { Button as ShadcnButton } from '@/components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import CodeRoundedIcon from '@mui/icons-material/CodeRounded';
+
 {
   /* Component dependencies start*/
 }
 /// import any components you plan to use in the playground here
+import {
+  Code,
+  CodeBlock,
+  CodeHeader,
+} from '@/components/animate-ui/components/animate/code';
+
 {
   /* Component dependencies end */
 }
@@ -43,11 +53,33 @@ export default function Playground() {
         </div>
         {/* Content Start*/}
         <div className="Playground__Content w-full min-h-[400px] p-4 md:p-24 items-center justify-center bg-stone-100">
-          {/* Replace this with actual playground content */}
-          <SwapContent
-            label="Playground Content Area"
-            className="w-full h-full lg:min-h-[300px] border-2 border-dashed border-stone-400 flex items-center justify-center text-stone-400"
-          />
+          <Code code={`interface ButtonProps {
+  label: string;
+  size?: 'small' | 'medium' | 'large';
+  type?: 'primary' | 'secondary' | 'tertiary';
+  isLoading?: boolean;
+  isDisabled?: boolean;
+  endIcon?: React.ReactNode;
+  startIcon?: React.ReactNode;
+  onClick?: () => void;
+}
+
+
+// Usage
+
+<Button 
+  label="Click me" 
+  type="primary" 
+  size="medium"
+  isDisabled={false}
+  startIcon={<WestRoundedIcon />}
+  onClick={() => { /* handle click */ }}
+/>`}>
+             <CodeHeader icon={CodeRoundedIcon} copyButton className='text-amber-50 h-16 px-6'>
+        Button.tsx
+      </CodeHeader>
+            <CodeBlock lang="tsx" theme="dark" writing duration={5000} cursor={true}  />
+          </Code>
           {/* End of playground content */}
         </div>
         {/* Content End*/}
