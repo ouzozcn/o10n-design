@@ -5,8 +5,7 @@ import Menu from '@/components/Menu';
 import Button from '@/components/Button';
 import CachedRoundedIcon from '@mui/icons-material/CachedRounded';
 import SwapContent from '@/components/SwapContent';
-import { Button as ShadcnButton } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+
 import CodeRoundedIcon from '@mui/icons-material/CodeRounded';
 
 {
