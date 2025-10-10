@@ -5,7 +5,7 @@ import Menu from '@/components/Menu';
 import Button from '@/components/Button';
 import CachedRoundedIcon from '@mui/icons-material/CachedRounded';
 import SwapContent from '@/components/SwapContent';
-
+import Footer from '@/components/Footer';
 import CodeRoundedIcon from '@mui/icons-material/CodeRounded';
 
 {
@@ -21,6 +21,8 @@ import {
 {
   /* Component dependencies end */
 }
+
+
 export default function Playground() {
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
@@ -83,6 +85,7 @@ export default function Playground() {
         </div>
         {/* Content End*/}
       </div>
+      <Footer/>
     </div>
   );
 }
