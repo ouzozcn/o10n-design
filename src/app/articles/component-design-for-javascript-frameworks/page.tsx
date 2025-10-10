@@ -755,7 +755,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
-                <div className="Image__Container flex flex-col items-center justify-center w-full my-4">
+                <div className="Image__Container flex flex-col items-center justify-center w-full">
                   <Image
                     src="/img/js-components/FigmaComponentProps.svg"
                     alt="Figma UI Component Properties"
