@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: 'https://o10n.design/articles',
     images: [
       {
-        url: 'https://o10n.design/img/og_images/writings_open_graph.png',
+        url: 'https://o10n.design/img/og_images/articles_open_graph.png',
         width: 1200,
         height: 630,
         alt: 'Oğuzhan Özcan Articles - Design Systems & Accessibility - o10n',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: 'Articles | Design Systems & Developer Handoff',
     description:
       'Articles on design systems, accessibility, and design-to-code workflows. Building better handoffs between design and development.',
-    images: ['https://o10n.design/img/og_images/writings_open_graph.png'],
+    images: ['https://o10n.design/img/og_images/articles_open_graph.png'],
     creator: '@ouzozcn',
     site: '@ouzozcn',
   },

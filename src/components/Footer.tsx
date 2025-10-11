@@ -88,7 +88,7 @@ export const Footer: React.FC = () => {
           <TextLink label="Jotform Logbook" to="/ideas/jotform-logbook" />
         </div>
 
-        <div className="Column__Writings flex flex-col gap-2 items-center md:items-start">
+        <div className="Column__Articles flex flex-col gap-2 items-center md:items-start">
           <TextLink style="primary" label="Articles" to="/articles" />
           <TextLink
             label="Component Design for JavaScript Frameworks"
