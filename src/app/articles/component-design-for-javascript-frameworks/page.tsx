@@ -346,7 +346,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
              
               <div className="SectionContent w-full items-center justify-center text-start text-stone-900 text-lg gap-4">
               <div className='Animated___Code__Block flex flex-col w-full lg:w-1/2 items-center justify-center lg:mx-auto lg:mb-4'>
-              <Code code={` // Basic properties
+              <Code className='lg:w-[430px] lg:h-[600px]' code={` // Basic properties
 
   interface ButtonProps {
   label: string;
@@ -372,10 +372,10 @@ export default function ComponentDesignForJavaScriptFrameworks() {
              <CodeHeader icon={CodeRoundedIcon} copyButton className='text-amber-50 h-16 px-6'>
         Button.tsx
       </CodeHeader>
-            <CodeBlock lang="tsx" theme="dark" writing duration={5000} cursor={true}  />
+            <CodeBlock lang="tsx" theme="dark" writing duration={12000}  inView={true} cursor={true}  />
           </Code>
           <p className="text-center text-sm text-stone-600 lg:my-6">
-                  Basic properties for a button component
+                  Basic properties for a button component in TypeScript
                 </p>
               </div>
                 <p>
@@ -654,25 +654,32 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 `}
                 </pre>
                 <p>This structure translates directly to HTML/CSS:</p>
-                <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
-                  {`/// HTML
-                  <button className="button">
-                    {/* if startIcon present */}
-                    <span>Click me</span>
-                    {/* if endIcon present */}
-                    </button>`}
-                </pre>
-                <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
-                  {`/// CSS
-                  .button {
-                      display: flex;
-                      flex-direction: row;
-                      align-items: center;
-                      gap: 8px;
-                      padding: 12px 24px;
-                      width: fit-content;
-                    }`}
-                </pre>
+                
+                <div className='Animated___Code__Blocks flex flex-col lg:flex-row w-full items-center justify-center gap-2 lg:gap-4 lg:mx-auto lg:mb-4'>
+              <Code className='lg:w-1/2 lg:h-[330px]' code={`<button className="button">
+{/* if startIcon present */}
+<span>Button Label</span>
+{/* if endIcon present */}
+</button> `}>
+             <CodeHeader icon={CodeRoundedIcon} copyButton className='text-amber-50 h-16 px-6'>
+        index.html
+      </CodeHeader>
+            <CodeBlock lang="html" theme="dark" writing duration={8000}  inView={true} cursor={true}  />
+          </Code>
+          <Code className=' lg:w-1/2 lg:h-[330px]' code={`.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  width: fit-content;
+} `}>
+             <CodeHeader icon={CodeRoundedIcon} copyButton className='text-amber-50 h-16 px-6'>
+        style.css
+      </CodeHeader>
+            <CodeBlock lang="css" theme="dark" writing duration={8000}  inView={true} cursor={true}  />
+          </Code>
+          </div>
               </div>
             </div>
           </div>
@@ -769,7 +776,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <InfoContainer
                   color="red"
                   icon={<PriorityHighRoundedIcon />}
-                  content="Do not use Rectangle and Ellipse in Figma since they do not translate to semantic HTML elements. Always use Frames with Auto-Layout for containers. Learn more about Groups vs Frames in Figma."
+                  content="Avoid using Rectangle and Ellipse in Figma since they do not translate to semantic HTML elements. Always use Frames with Auto-Layout for containers. Learn more about Groups vs Frames in Figma."
                   to="https://www.figma.com/best-practices/groups-versus-frames/?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
                   target="_blank"
                   className="my-4"
