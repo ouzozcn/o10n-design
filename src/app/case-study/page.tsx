@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         url: 'https://o10n.design/img/og_images/case_studies_open_graph.png',
         width: 1200,
         height: 630,
-        alt: 'Oğuzhan Özcan Case Studies - Enterprise SaaS & Security UX',
+        alt: 'Oğuzhan Özcan Case Studies - Enterprise SaaS & Security UX - o10n',
       },
     ],
     siteName: 'o10n.design',

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         url: 'https://o10n.design/img/og_images/products_open_graph.png',
         width: 1200,
         height: 630,
-        alt: 'Oğuzhan Özcan Product Portfolio - Kroma & Brifl Design System',
+        alt: 'Oğuzhan Özcan Product Portfolio - Kroma & Brifl Design System - o10n',
       },
     ],
     siteName: 'o10n.design',

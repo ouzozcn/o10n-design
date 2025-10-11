@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         url: 'https://o10n.design/img/og_images/ideas_open_graph.png',
         width: 1200,
         height: 630,
-        alt: 'Oğuzhan Özcan Design Ideas - Brifl & Jotform Logbook',
+        alt: 'Oğuzhan Özcan Design Ideas - Brifl & Jotform Logbook - o10n',
       },
     ],
     siteName: 'o10n.design',

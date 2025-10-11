@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         url: 'https://o10n.design/img/og_images/tech_stack_open_graph.png',
         width: 1200,
         height: 630,
-        alt: 'Oğuzhan Özcan Tech Stack - Design & Development Tools',
+        alt: 'Oğuzhan Özcan Tech Stack - Design & Development Tools - o10n',
       },
     ],
     siteName: 'o10n.design',

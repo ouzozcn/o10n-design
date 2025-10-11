@@ -163,6 +163,14 @@ export default function StructuredData() {
       mainEntity: [
         {
           '@type': 'Question',
+          name: 'Who is Oğuzhan Özcan?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Oğuzhan Özcan is a product designer and design engineer based in Ankara which likes to solve complex problems with data analysis, research, and test.',
+          },
+        },
+        {
+          '@type': 'Question',
           name: 'What services does Oğuzhan Özcan provide?',
           acceptedAnswer: {
             '@type': 'Answer',
