@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         url: 'https://o10n.design/img/og_images/writings_open_graph.png',
         width: 1200,
         height: 630,
-        alt: 'Oğuzhan Özcan Articles - Design Systems & Accessibility',
+        alt: 'Oğuzhan Özcan Articles - Design Systems & Accessibility - o10n',
       },
     ],
     siteName: 'o10n.design',

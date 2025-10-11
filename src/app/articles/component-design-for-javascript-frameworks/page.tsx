@@ -1,4 +1,5 @@
-import type { Metadata } from 'next';
+'use client'
+/* import type { Metadata } from 'next'; */
 import Menu from '@/components/Menu';
 import Footer from '@/components/Footer';
 import SectionTitle from '@/components/SectionTitle';
@@ -24,13 +25,8 @@ import ContentCard from '@/components/ContentCard';
 import InfoContainer from '@/components/InfoContainer';
 import IconButton from '@/components/IconButton';
 import { Chip, Icon } from '@mui/material';
-import {
-  Code,
-  CodeBlock,
-  CodeHeader,
-} from '@/components/animate-ui/components/animate/code';
-
-
+import { Code, CodeBlock, CodeHeader } from '@/components/animate-ui/components/animate/code';
+/*
 export const metadata: Metadata = {
   title: 'Component Design for JavaScript Frameworks | Design to Code Best Practices',
   description:
@@ -69,7 +65,17 @@ export const metadata: Metadata = {
     apple: 'https://o10n.design/img/favicons/apple-touch-icon.png',
   },
 };
+*/
 
+  const handleClickOne = () => {
+    alert('🚀 You triggered this JavaScript Popup Box by clicking the Primary Button.');
+  };
+  const handleClickTwo = () => {
+    alert('🚀 You triggered this JavaScript Popup Box by clicking the Icon Button.');
+  };
+  const handleClickThree = () => {
+    alert('Whereas the loading and tertiary buttons cannot be clicked, this primary one can.');
+  };
 export default function ComponentDesignForJavaScriptFrameworks() {
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
@@ -204,6 +210,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     size="large"
                     className="rounded-full"
                     endIcon={<ArrowOutwardIcon />}
+                    onClick={handleClickOne}
                   />
                   <Tag
                     className="h-[52px] p-4"
@@ -218,6 +225,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     aria-label="I am an icon button"
                     size="large"
                     icon={<CodeRoundedIcon />}
+                    onClick={handleClickTwo}
                   />
                 </div>
                 <div className="flex w-full items-center justify-center">
@@ -343,10 +351,11 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-             
               <div className="SectionContent w-full items-center justify-center text-start text-stone-900 text-lg gap-4">
-              <div className='Animated___Code__Block flex flex-col w-full lg:w-1/2 items-center justify-center lg:mx-auto lg:mb-4'>
-              <Code code={` // Basic properties
+                <div className="Animated___Code__Block flex flex-col w-full lg:w-1/2 items-center justify-center lg:mx-auto lg:mb-4">
+                  <Code
+                    className="lg:w-[430px] lg:h-[600px]"
+                    code={` // Basic properties
 
   interface ButtonProps {
   label: string;
@@ -368,16 +377,28 @@ export default function ComponentDesignForJavaScriptFrameworks() {
   size="medium"
   startIcon={<WestRoundedIcon />}
   onClick={() => { /* handle click */ }}
-/>`}>
-             <CodeHeader icon={CodeRoundedIcon} copyButton className='text-amber-50 h-16 px-6'>
-        Button.tsx
-      </CodeHeader>
-            <CodeBlock lang="tsx" theme="dark" writing duration={5000} cursor={true}  />
-          </Code>
-          <p className="text-center text-sm text-stone-600 lg:my-6">
-                  Basic properties for a button component
-                </p>
-              </div>
+/>`}
+                  >
+                    <CodeHeader
+                      icon={CodeRoundedIcon}
+                      copyButton
+                      className="text-amber-50 h-16 px-6"
+                    >
+                      Button.tsx
+                    </CodeHeader>
+                    <CodeBlock
+                      lang="tsx"
+                      theme="dark"
+                      writing
+                      duration={12000}
+                      inView={true}
+                      cursor={true}
+                    />
+                  </Code>
+                  <p className="text-center text-sm text-stone-600 lg:my-6">
+                    Basic properties for a button component in TypeScript
+                  </p>
+                </div>
                 <p>
                   <b>Properties (props)</b> define a component's identity and characteristics.
                   Consider a car analogy: it has properties like brand, model, year, and passenger
@@ -391,6 +412,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     isDisabled={false}
                     isLoading={false}
                     startIcon={<CodeRoundedIcon />}
+                     onClick={handleClickThree}
                   />
                   <Button
                     label="Secondary Button"
@@ -462,15 +484,15 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     (action) : What happens when clicked
                   </li>
                 </ul>
-                <div className='flex w-auto items-center justify-center'>
-                <InfoContainer
-                  color="cyan"
-                  icon={<GamepadRoundedIcon />}
-                  content="Try Button component properties on Storybook "
-                  to="/docs/index.html?path=/docs/components-button--docs"
-                  target="_blank"
-                  className="mt-6 mb-6"
-                />
+                <div className="flex w-auto items-center justify-center">
+                  <InfoContainer
+                    color="cyan"
+                    icon={<GamepadRoundedIcon />}
+                    content="Try Button component properties on Storybook "
+                    to="/docs/index.html?path=/docs/components-button--docs"
+                    target="_blank"
+                    className="mt-6 mb-6"
+                  />
                 </div>
                 <p>
                   These properties map directly to React/Vue/Angular/Svelte props and make
@@ -654,25 +676,60 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 `}
                 </pre>
                 <p>This structure translates directly to HTML/CSS:</p>
-                <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
-                  {`/// HTML
-                  <button className="button">
-                    {/* if startIcon present */}
-                    <span>Click me</span>
-                    {/* if endIcon present */}
-                    </button>`}
-                </pre>
-                <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
-                  {`/// CSS
-                  .button {
-                      display: flex;
-                      flex-direction: row;
-                      align-items: center;
-                      gap: 8px;
-                      padding: 12px 24px;
-                      width: fit-content;
-                    }`}
-                </pre>
+
+                <div className="Animated___Code__Blocks flex flex-col lg:flex-row w-full items-center justify-center gap-2 lg:gap-4 lg:mx-auto lg:mb-4">
+                  <Code
+                    className="lg:w-1/2 lg:h-[330px]"
+                    code={`<button className="button">
+{/* if startIcon present */}
+<span>Button Label</span>
+{/* if endIcon present */}
+</button> `}
+                  >
+                    <CodeHeader
+                      icon={CodeRoundedIcon}
+                      copyButton
+                      className="text-amber-50 h-16 px-6"
+                    >
+                      index.html
+                    </CodeHeader>
+                    <CodeBlock
+                      lang="html"
+                      theme="dark"
+                      writing
+                      duration={8000}
+                      inView={true}
+                      cursor={true}
+                    />
+                  </Code>
+                  <Code
+                    className=" lg:w-1/2 lg:h-[330px]"
+                    code={`.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  width: fit-content;
+} `}
+                  >
+                    <CodeHeader
+                      icon={CodeRoundedIcon}
+                      copyButton
+                      className="text-amber-50 h-16 px-6"
+                    >
+                      style.css
+                    </CodeHeader>
+                    <CodeBlock
+                      lang="css"
+                      theme="dark"
+                      writing
+                      duration={8000}
+                      inView={true}
+                      cursor={true}
+                    />
+                  </Code>
+                </div>
               </div>
             </div>
           </div>
@@ -769,7 +826,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <InfoContainer
                   color="red"
                   icon={<PriorityHighRoundedIcon />}
-                  content="Do not use Rectangle and Ellipse in Figma since they do not translate to semantic HTML elements. Always use Frames with Auto-Layout for containers. Learn more about Groups vs Frames in Figma."
+                  content="Avoid using Rectangle and Ellipse in Figma since they do not translate to semantic HTML elements. Always use Frames with Auto-Layout for containers. Learn more about Groups vs Frames in Figma."
                   to="https://www.figma.com/best-practices/groups-versus-frames/?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
                   target="_blank"
                   className="my-4"
@@ -971,12 +1028,10 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   consistency reduces cognitive load for developers and help them implement
                   components faster and with fewer errors.
                 </p>
-
-                <div className="flex flex-col md:flex-row gap-4 w-full ">
-                  <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
-                    {` /// React (TypeScript)
-
-interface ButtonProps {
+                <div className="Animated___Code__Blocks flex flex-col w-full items-center justify-center gap-2 lg:gap-4 lg:mx-auto lg:mb-4">
+                  <Code
+                    className="lg:w-full lg:h-[330px]"
+                    code={`interface ButtonProps {
   label: string;
   size?: 'small' | 'medium' | 'large';
   type?: 'primary' | 'secondary' | 'tertiary';
@@ -985,25 +1040,27 @@ interface ButtonProps {
   endIcon?: React.ReactNode;
   startIcon?: React.ReactNode;
   onClick?: () => void;
-}
-
-
-// Usage
-
-<Button 
-  label="Click me" 
-  type="primary" 
-  size="medium"
-  isDisabled={false}
-  startIcon={<WestRoundedIcon />}
-  onClick={() => { /* handle click */ }}
-/>
-                  `}
-                  </pre>
-                  <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
-                    {` /// Vue 3 (TypeScript)
-
-interface ButtonProps {
+} `}
+                  >
+                    <CodeHeader
+                      icon={CodeRoundedIcon}
+                      copyButton
+                      className="text-amber-50 h-16 px-6"
+                    >
+                      React (TypeScript)
+                    </CodeHeader>
+                    <CodeBlock
+                      lang="tsx"
+                      theme="dark"
+                      writing
+                      duration={8000}
+                      inView={true}
+                      cursor={true}
+                    />
+                  </Code>
+                  <Code
+                    className=" lg:w-full lg:h-[330px]"
+                    code={`interface ButtonProps {
   label: string;
   type?: 'primary' | 'secondary' | 'tertiary';
   size?: 'small' | 'medium' | 'large';
@@ -1011,27 +1068,30 @@ interface ButtonProps {
   isLoading?: boolean;
   startIcon?: Component;
   endIcon?: Component;
-}
-
-
-// Usage
-
-<Button 
-  label="Click me" 
-  type="primary" 
-  size="medium"
-  :is-disabled="false"
-  :start-icon="ArrowLeft"
-  @click="handleClick"
-/>
-                  `}
-                  </pre>
-                </div>
-                <div className="flex flex-col md:flex-row gap-4 w-full mb-4 ">
-                  <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
-                    {` /// Angular (TypeScript)
-
-@Component({
+} `}
+                  >
+                    <CodeHeader
+                      icon={CodeRoundedIcon}
+                      copyButton
+                      className="text-amber-50 h-16 px-6"
+                    >
+                      Vue 3 (TypeScript)
+                    </CodeHeader>
+                    <CodeBlock
+                      lang="tsx"
+                      theme="dark"
+                      writing
+                      duration={8000}
+                      delay={1000}
+                      inView={true}
+                      cursor={true}
+                    />
+                  </Code>
+                
+              
+                  <Code
+                    className="lg:w-full lg:h-[330px]"
+                    code={`@Component({
   selector: 'app-button',
   template: ''
 })
@@ -1044,25 +1104,28 @@ export class ButtonComponent {
   @Input() startIcon?: TemplateRef<any>;
   @Input() endIcon?: TemplateRef<any>;
   @Output() onClick = new EventEmitter<void>();
-}
-
-
-// Usage
-
-<app-button 
-  label="Click me" 
-  type="primary" 
-  size="medium"
-  [isDisabled]="false"
-  [startIcon]="arrowLeftTemplate"
-  (onClick)="handleClick()"
-/>
-                  `}
-                  </pre>
-                  <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
-                    {` /// Svelte (TypeScript)
-
-<script lang="ts">
+} `}
+                  >
+                    <CodeHeader
+                      icon={CodeRoundedIcon}
+                      copyButton
+                      className="text-amber-50 h-16 px-6"
+                    >
+                      Angular (TypeScript)
+                    </CodeHeader>
+                    <CodeBlock
+                      lang="tsx"
+                      theme="dark"
+                      writing
+                      duration={8000}
+                       delay={1000}
+                      inView={true}
+                      cursor={true}
+                    />
+                  </Code>
+                  <Code
+                    className=" lg:w-full lg:h-[330px]"
+                    code={` <script lang="ts">
   export let label: string;
   export let type: 'primary' | 'secondary' | 'tertiary' = 'primary';
   export let size: 'small' | 'medium' | 'large' = 'medium';
@@ -1070,22 +1133,27 @@ export class ButtonComponent {
   export let isLoading: boolean = false;
   export let startIcon: Component | undefined = undefined;
   export let endIcon: Component | undefined = undefined;
-</script>
+</script> `}
+                  >
+                    <CodeHeader
+                      icon={CodeRoundedIcon}
+                      copyButton
+                      className="text-amber-50 h-16 px-6"
+                    >
+                      Svelte (TypeScript)
+                    </CodeHeader>
+                    <CodeBlock
+                      lang="ts"
+                      theme="dark"
+                      writing
+                      duration={8000}
+                       delay={1000}
+                      inView={true}
+                      cursor={true}
+                    />
+                  </Code>
+               </div>
 
-
-// Usage
-
-<Button 
-  label="Click me" 
-  type="primary" 
-  size="medium"
-  isDisabled={false}
-  startIcon={ArrowLeft}
-  on:click={handleClick}
-/>
-                  `}
-                  </pre>
-                </div>
                 <p>
                   As we can see, the same well-defined properties in Figma translate cleanly to
                   props in React, Vue, Angular, and Svelte. This consistency not only speeds up
@@ -1106,7 +1174,7 @@ export class ButtonComponent {
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
                 <div className="Token__Samples__Placeholder flex flex-col gap-4 items-center justify-center w-full mb-4">
-                  <div className="Token__Samples__List flex flex-col lg:flex-row gap-4 lg:gap-16 p-4 lg:p-16 items-center justify-center w-full h-60 rounded-lg border border-stone-900 hover:bg-stone-50">
+                  <div className="Token__Samples__List flex flex-col lg:flex-row gap-4 lg:gap-8 p-4 lg:p-16 items-center justify-center w-full h-60 rounded-lg border border-stone-900 hover:bg-stone-50">
                     <Tag label="--color-primary-600" size="large" type="lime" />
                     <Tag label="--spacing-4" size="large" type="red" />
                     <Tag label="--font-family-sans" size="large" type="amber" />
