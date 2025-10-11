@@ -462,14 +462,16 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     (action) : What happens when clicked
                   </li>
                 </ul>
+                <div className='flex w-auto items-center justify-center'>
                 <InfoContainer
                   color="cyan"
                   icon={<GamepadRoundedIcon />}
-                  content="Try Button component properties on the Storybook Playground"
+                  content="Try Button component properties on Storybook "
                   to="/docs/index.html?path=/docs/components-button--docs"
                   target="_blank"
-                  className="  mt-6 mb-6"
+                  className="mt-6 mb-6"
                 />
+                </div>
                 <p>
                   These properties map directly to React/Vue/Angular/Svelte props and make
                   components flexible, reusable, and maintainable.
