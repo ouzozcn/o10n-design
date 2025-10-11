@@ -24,6 +24,12 @@ import ContentCard from '@/components/ContentCard';
 import InfoContainer from '@/components/InfoContainer';
 import IconButton from '@/components/IconButton';
 import { Chip, Icon } from '@mui/material';
+import {
+  Code,
+  CodeBlock,
+  CodeHeader,
+} from '@/components/animate-ui/components/animate/code';
+
 
 export const metadata: Metadata = {
   title: 'Component Design for JavaScript Frameworks | Design to Code Best Practices',
@@ -337,7 +343,41 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
+             
               <div className="SectionContent w-full items-center justify-center text-start text-stone-900 text-lg gap-4">
+              <div className='Animated___Code__Block flex flex-col w-full lg:w-1/2 items-center justify-center lg:mx-auto lg:mb-4'>
+              <Code code={` // Basic properties
+
+  interface ButtonProps {
+  label: string;
+  size?: 'small' | 'medium' | 'large';
+  type?: 'primary' | 'secondary' | 'tertiary';
+  isLoading?: boolean;
+  isDisabled?: boolean;
+  endIcon?: React.ReactNode;
+  startIcon?: React.ReactNode;
+  onClick?: () => void;
+}
+
+
+// Usage
+
+<Button 
+  label="Click me" 
+  type="primary" 
+  size="medium"
+  startIcon={<WestRoundedIcon />}
+  onClick={() => { /* handle click */ }}
+/>`}>
+             <CodeHeader icon={CodeRoundedIcon} copyButton className='text-amber-50 h-16 px-6'>
+        Button.tsx
+      </CodeHeader>
+            <CodeBlock lang="tsx" theme="dark" writing duration={5000} cursor={true}  />
+          </Code>
+          <p className="text-center text-sm text-stone-600 lg:my-6">
+                  Basic properties for a button component
+                </p>
+              </div>
                 <p>
                   <b>Properties (props)</b> define a component's identity and characteristics.
                   Consider a car analogy: it has properties like brand, model, year, and passenger
