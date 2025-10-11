@@ -45,12 +45,16 @@ export default function Playground() {
           />
         </div>
       </div>
-      <div className="Body__Playground flex flex-col md:flex-row w-full min-h-[400px] ">
-        <div className="Playground__Nav flex flex-col w-1/4 h-dvh gap-3 bg-amber-200  border-r lg:p-8 border-stone-900">
+      <div className="Body__Playground flex flex-col  w-full h-dvh ">
+        <div className="Playground__Nav flex flex-col md:flex-row w-full min-h-24 items-center justify-center  gap-4 lg:gap-24 bg-amber-200  border-b lg:p-8 border-stone-900 ">
+          <div className='flex-col gap-2'>
           <div className="text-md ">Current Project</div>
           <div className="text-lg font-semibold">Project Name Goes Here</div>
-          <div className="text-md mt-4 "> Start Date</div>
+          </div>
+          <div className='flex-col gap-2'>
+          <div className="text-md  "> Start Date</div>
           <div className="text-lg font-semibold">Project Start Date Goes Here</div>
+          </div>
         </div>
         {/* Content Start*/}
         <div className="Playground__Content w-full min-h-[400px] p-4 md:p-24 items-center justify-center bg-stone-100">
