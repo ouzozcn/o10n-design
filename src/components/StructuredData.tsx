@@ -18,9 +18,9 @@ export default function StructuredData() {
       mainEntityOfPage: 'https://o10n.design',
       image: {
         '@type': 'ImageObject',
-        url: 'https://o10n.design/assets/images/og-image.jpg',
-        width: 400,
-        height: 400,
+        url: 'https://o10n.design/public/img/og_images/o10n_open_graph.png',
+        width: 1200,
+        height: 630,
       },
       address: {
         '@type': 'PostalAddress',
