@@ -99,7 +99,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
       <div className="PageImage flex p-8 w-full h-60 md:h-auto bg-cyan-50 border-b border-stone-900 justify-center items-center gap-4">
         <Image
           src="/img/hero/hero-dev-friendly-comp.svg"
-          alt="Developer Friendly Component Design Thumbnail"
+          alt="Developer Friendly Component Design Thumbnail o10n"
           width={1200}
           height={600}
           className="drop-shadow-lg"
@@ -496,7 +496,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 </div>
                 <p>
                   These properties map directly to React/Vue/Angular/Svelte props and make
-                  components flexible, reusable, and maintainable.
+                  components flexible, reusable, and maintainable. 
                 </p>
               </div>
             </div>
