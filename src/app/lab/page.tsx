@@ -8,35 +8,41 @@ import SwapContent from '@/components/SwapContent';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import IconButton from '@/components/IconButton';
 import {
-    SandboxCodeEditor,
-    SandboxConsole,
-    SandboxFileExplorer,
-    SandboxLayout,
-    SandboxPreview,
-    SandboxProvider,
-    SandboxTabs,
-    SandboxTabsContent,
-    SandboxTabsList,
-    SandboxTabsTrigger,
-  } from "@/components/kibo-ui/sandbox";
-  import {
-    ResizableHandle,
-    ResizablePanel,
-    ResizablePanelGroup,
-  } from "@/components/ui/resizable";
-  import { AppWindowIcon, CodeIcon, TerminalIcon } from "lucide-react";
+  SandboxCodeEditor,
+  SandboxConsole,
+  SandboxFileExplorer,
+  SandboxLayout,
+  SandboxPreview,
+  SandboxProvider,
+  SandboxTabs,
+  SandboxTabsContent,
+  SandboxTabsList,
+  SandboxTabsTrigger,
+} from '@/components/kibo-ui/sandbox';
+import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from '@/components/ui/resizable';
+import { AppWindowIcon, CodeIcon, TerminalIcon } from 'lucide-react';
 export default function Lab() {
-    return (
-      <div className="w-full  border-collapse  min-h-screen bg-[#151515]">
-       
-        <div className="Header sticky top-0 flex flex-row p-4 w-full h-auto md:h-[88px] border-b border-stone-500 items-center justify-start gap-4 bg-[#151515] z-10">
-         
-          <IconButton type='secondary' size='small' icon={<HomeRoundedIcon />} className='w-[54px] h-[54px] border-lime-100 text-lime-100 hover:bg-stone-800' to='./' />
-          <div className="HeaderTitle w-full flex flex-col md:flex-row place-content-between gap-4 items-start md:items-center">
-            <h1 className="text-xl md:text-2xl font-sans text-lime-100">Lab</h1>
-  
+  return (
+    <div className="w-full  border-collapse  min-h-screen bg-[#151515]">
+      <div className="Header sticky top-0 flex flex-row p-4 w-full h-auto md:h-[88px] border-b border-stone-500 items-center justify-start gap-4 bg-[#151515] z-10">
+        <Menu className="border-lime-200 text-lime-100 hover:bg-stone-800 border-2" />
+        <div className="HeaderTitle w-full flex flex-col md:flex-row place-content-between gap-4 items-start md:items-center">
+          <h1 className="text-xl md:text-2xl font-sans text-lime-100">o10n.lab</h1>
+          <div className="flex flex-row gap-2">
             <Button
-            className='h-[58px] border-lime-100 text-lime-100 hover:bg-stone-800'
+              className="h-[58px] border-lime-100 text-lime-100 hover:bg-stone-800"
+              label="Hard Reload"
+              type="secondary"
+              size="medium"
+              endIcon={<CachedRoundedIcon />}
+              onClick={() => {
+                if (typeof window !== 'undefined') {
+                  window.location.reload();
+                }
+              }}
+            />
+            <Button
+              className="h-[58px] border-lime-100 text-lime-100 hover:bg-stone-800"
               label="Hard Reload"
               type="secondary"
               size="medium"
@@ -49,11 +55,12 @@ export default function Lab() {
             />
           </div>
         </div>
-        <div className="Body__Lab flex flex-col w-full h-dvh">
-<SandboxProvider
-  files={{
-    "/index.js": {
-      code: `import React from 'react';
+      </div>
+      <div className="Body__Lab flex flex-col w-full h-dvh">
+        <SandboxProvider
+          files={{
+            '/index.js': {
+              code: `import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 
@@ -69,9 +76,9 @@ function App() {
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App />);`,
-    },
-    "/styles.css": {
-      code: `body {
+            },
+            '/styles.css': {
+              code: `body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
 }
@@ -89,9 +96,9 @@ root.render(<App />);`,
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   margin-bottom: 20px;
 }`,
-    },
-    "/components/Button.js": {
-      code: `import React from 'react';
+            },
+            '/components/Button.js': {
+              code: `import React from 'react';
 
 export function Button({ children, onClick, variant = 'primary' }) {
   const baseStyles = 'px-4 py-2 rounded font-medium transition-colors';
@@ -110,9 +117,9 @@ export function Button({ children, onClick, variant = 'primary' }) {
     </button>
   );
 }`,
-    },
-    "/utils/helpers.js": {
-      code: `export function formatDate(date) {
+            },
+            '/utils/helpers.js': {
+              code: `export function formatDate(date) {
   return new Date(date).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
@@ -135,58 +142,53 @@ export function debounce(func, wait) {
     timeout = setTimeout(later, wait);
   };
 }`,
-    },
-  }}
-  template="react"
-  theme="dark"
->
-    <SandboxLayout>
-      <SandboxTabs defaultValue="preview">
-        <SandboxTabsList>
-          <SandboxTabsTrigger value="code">
-            <CodeIcon size={14} />
-            Code
-          </SandboxTabsTrigger>
-          <SandboxTabsTrigger value="preview">
-            <AppWindowIcon size={14} />
-            Preview
-          </SandboxTabsTrigger>
-          <SandboxTabsTrigger value="console">
-            <TerminalIcon size={14} />
-            Console
-          </SandboxTabsTrigger>
-        </SandboxTabsList>
-        <SandboxTabsContent className="overflow-hidden" value="code">
-          <ResizablePanelGroup direction="horizontal">
-            <ResizablePanel
-              className="overflow-y-auto"
-              defaultSize={25}
-              maxSize={40}
-              minSize={20}
-            >
-              <SandboxFileExplorer 
-             
-              />
-            </ResizablePanel>
-            <ResizableHandle withHandle />
-            <ResizablePanel className="overflow-y-auto">
-              <SandboxCodeEditor className='h-dvh'/>
-            </ResizablePanel>
-          </ResizablePanelGroup>
-        </SandboxTabsContent>
-        <SandboxTabsContent value="preview">
-          <SandboxPreview
-            showOpenInCodeSandbox={true}
-            showRefreshButton={true}
-          />
-        </SandboxTabsContent>
-        <SandboxTabsContent value="console">
-          <SandboxConsole />
-        </SandboxTabsContent>
-      </SandboxTabs>
-    </SandboxLayout>
-  </SandboxProvider>
-        </div>
-        </div>
-    );
+            },
+          }}
+          template="react"
+          theme="dark"
+        >
+          <SandboxLayout>
+            <SandboxTabs defaultValue="preview">
+              <SandboxTabsList>
+                <SandboxTabsTrigger value="code">
+                  <CodeIcon size={14} />
+                  Code
+                </SandboxTabsTrigger>
+                <SandboxTabsTrigger value="preview">
+                  <AppWindowIcon size={14} />
+                  Preview
+                </SandboxTabsTrigger>
+                <SandboxTabsTrigger value="console">
+                  <TerminalIcon size={14} />
+                  Console
+                </SandboxTabsTrigger>
+              </SandboxTabsList>
+              <SandboxTabsContent className="overflow-hidden" value="code">
+                <ResizablePanelGroup direction="horizontal">
+                  <ResizablePanel
+                    className="overflow-y-auto"
+                    defaultSize={25}
+                    maxSize={40}
+                    minSize={20}
+                  >
+                    <SandboxFileExplorer />
+                  </ResizablePanel>
+                  <ResizableHandle withHandle />
+                  <ResizablePanel className="overflow-y-auto">
+                    <SandboxCodeEditor className="h-dvh" />
+                  </ResizablePanel>
+                </ResizablePanelGroup>
+              </SandboxTabsContent>
+              <SandboxTabsContent value="preview">
+                <SandboxPreview showOpenInCodeSandbox={true} showRefreshButton={true} />
+              </SandboxTabsContent>
+              <SandboxTabsContent value="console">
+                <SandboxConsole />
+              </SandboxTabsContent>
+            </SandboxTabs>
+          </SandboxLayout>
+        </SandboxProvider>
+      </div>
+    </div>
+  );
 }

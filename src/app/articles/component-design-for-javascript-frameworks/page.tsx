@@ -1291,7 +1291,7 @@ export class ButtonComponent {
           style={{ maxHeight: 'calc(100vh - 88px)' }}
         >
           <div className="flex flex-col gap-4">
-            <p className="text-2xl font-medium text-center text-stone-900">Table of Contents</p>
+            <p className="text-2xl font-medium text-center text-stone-900">In this article</p>
           </div>
           <div className="flex flex-col  gap-4">
             <TextLink className=" text-sm" label="Introduction" to="#introduction" />
