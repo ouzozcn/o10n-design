@@ -1,11 +1,10 @@
-'use client'
+'use client';
 /* import type { Metadata } from 'next'; */
 import Menu from '@/components/Menu';
 import Footer from '@/components/Footer';
 import SectionTitle from '@/components/SectionTitle';
 import ThankYou from '@/components/ThankYou';
 import Button from '@/components/Button';
-import PageBreaker from '@/components/PageBreaker';
 import Tag from '@/components/Tag';
 import TopDivider from '@/components/TopDivider';
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
@@ -16,15 +15,13 @@ import PriorityHighRoundedIcon from '@mui/icons-material/PriorityHighRounded';
 import CodeRoundedIcon from '@mui/icons-material/CodeRounded';
 import WestRoundedIcon from '@mui/icons-material/WestRounded';
 import EastRoundedIcon from '@mui/icons-material/EastRounded';
+import LanguageIcon from '@mui/icons-material/Language';
 import Image from 'next/image';
 import Link from 'next/link';
-import MetaInfo from '@/components/MetaInfo';
 import TextLink from '@/components/TextLink';
 import SwapContent from '@/components/SwapContent';
-import ContentCard from '@/components/ContentCard';
 import InfoContainer from '@/components/InfoContainer';
 import IconButton from '@/components/IconButton';
-import { Chip, Icon } from '@mui/material';
 import { Code, CodeBlock, CodeHeader } from '@/components/animate-ui/components/animate/code';
 /*
 export const metadata: Metadata = {
@@ -67,15 +64,15 @@ export const metadata: Metadata = {
 };
 */
 
-  const handleClickOne = () => {
-    alert('🚀 You triggered this JavaScript Popup Box by clicking the Primary Button.');
-  };
-  const handleClickTwo = () => {
-    alert('🚀 You triggered this JavaScript Popup Box by clicking the Icon Button.');
-  };
-  const handleClickThree = () => {
-    alert('Whereas the loading and tertiary buttons cannot be clicked, this primary one can.');
-  };
+const handleClickOne = () => {
+  alert('🚀 You triggered this JavaScript Popup Box by clicking the Primary Button.');
+};
+const handleClickTwo = () => {
+  alert('🚀 You triggered this JavaScript Popup Box by clicking the Icon Button.');
+};
+const handleClickThree = () => {
+  alert('Whereas the loading and tertiary buttons cannot be clicked, this primary one can.');
+};
 export default function ComponentDesignForJavaScriptFrameworks() {
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
@@ -118,55 +115,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
       </div>
 
       <div className="Summary__Content flex flex-col w-full  gap-4 lg:gap-12 p-6 lg:py-12 lg:px-60 text-xl items-center justify-center text-start font-regular text-stone-900">
-        <p>
-          The history of human-computer interaction and user interface design (graphical user
-          interface, GUI) spans over 70 years. There were only text-based command-line interfaces
-          available when it was initially launched in the early 1960s. We first saw the mouse,
-          windows, icons, and hypertext links when Douglas Engelbart unveiled the "Mother of All
-          Demos.”
-        </p>
-        <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 ">
-          <Image
-            src="/img/js-components/mother-of-all-demos.jpg"
-            alt="Mother of All Demos"
-            width={800}
-            height={1}
-            className="rounded-lg border border-stone-900 "
-          />
-          <p className="text-center text-sm text-stone-600">
-            Douglas Engelbart using the NLS’s 5-button chord keyset, a standard QWERTY keyboard, and
-            3-button mouse, around 1968. NMAH Catalog #2015.3073.11.
-          </p>
-        </div>
-        <p>
-          This marked the start of a lengthy history of user interface design, which was followed by
-          some incredible successes like Xerox PARC’s Alto (’73) and Star (’81), Apple Lisa (’83)
-          and Macintosh (’84), Microsoft Windows (’85). The development of standardized,
-          user-friendly, and reusable interfaces became necessary as a result of all these technical
-          advancements.
-        </p>
-        <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 ">
-          <Image
-            src="/img/js-components/mac-gui.png"
-            alt="Macintosh System 1 GUI"
-            width={800}
-            height={1}
-            className="rounded-lg border border-stone-900 "
-          />
-          <p className="text-center text-sm text-stone-600">Macintosh System 1 GUI (1984)</p>
-        </div>
-        <p>
-          When UI became dynamic with Web 2.0 tech in the early 2000s, designers started to create
-          reusable snippets (navigation elements, modals, form elements). This led to emerging
-          design patterns like Yahoo did back in 2006 with Yahoo Design Pattern Library (YUI).
-          Facebook released React in 2013, marking a significant advancement in UI architecture and
-          contributing to the growth of the component ecosystem. Today's digital products are
-          composed of a vast array of uniform, scalable, and reusable components. Because a
-          component must fit in multiple locations on the interface, designing a small square with
-          an optional checkmark icon within takes additional planning effort. Since designers and
-          developers co-own modern UI components, we designers need to learn more about their
-          technical implementation.
-        </p>
+        <p>Intro</p>
         <div className="SwapContentPlaceholder w-full">
           <SwapContent label="Placeholder" className="w-full" />
         </div>
@@ -192,6 +141,73 @@ export default function ComponentDesignForJavaScriptFrameworks() {
 
       <div className="BlogBody flex flex-col md:flex-row gap-0 font-sans">
         <div className="BlogContentContainer flex flex-col w-full md:w-3/4  gap-4 md:border-r border-stone-900">
+          {/* * Section Start * */}
+          <div className="BlogContent flex flex-col w-full   gap-4 " id="history">
+            <SectionTitle
+              title="0. History"
+              className="md:sticky md:top-[87px] md:self-start"
+              color="violet"
+            />
+            <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-12">
+                <p>
+                  The history of human-computer interaction and user interface design (graphical
+                  user interface, GUI) spans over 70 years. There were only text-based command-line
+                  interfaces available when it was initially launched in the early 1960s. We first
+                  saw the mouse, windows, icons, and hypertext links when Douglas Engelbart unveiled
+                  the "Mother of All Demos.”
+                </p>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 ">
+                  <Image
+                    src="/img/js-components/mother-of-all-demos.jpg"
+                    alt="Mother of All Demos"
+                    width={800}
+                    height={1}
+                    className="rounded-lg border border-stone-900 "
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Douglas Engelbart using the NLS’s 5-button chord keyset, a standard QWERTY
+                    keyboard, and 3-button mouse, around 1968. NMAH Catalog #2015.3073.11.
+                  </p>
+                </div>
+                <p>
+                  This marked the start of a lengthy history of user interface design, which was
+                  followed by some incredible successes like Xerox PARC’s Alto (’73) and Star (’81),
+                  Apple Lisa (’83) and Macintosh (’84), Microsoft Windows (’85). The development of
+                  standardized, user-friendly, and reusable interfaces became necessary as a result
+                  of all these technical advancements.
+                </p>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 ">
+                  <Image
+                    src="/img/js-components/mac-gui.png"
+                    alt="Macintosh System 1 GUI"
+                    width={800}
+                    height={1}
+                    className="rounded-lg border border-stone-900 "
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Macintosh System 1 GUI (1984)
+                  </p>
+                </div>
+                <p>
+                  When UI became dynamic with Web 2.0 tech in the early 2000s, designers started to
+                  create reusable snippets (navigation elements, modals, form elements). This led to
+                  emerging design patterns like Yahoo did back in 2006 with Yahoo Design Pattern
+                  Library (YUI). Facebook released React in 2013, marking a significant advancement
+                  in UI architecture and contributing to the growth of the component ecosystem.
+                  Today's digital products are composed of a vast array of uniform, scalable, and
+                  reusable components. Because a component must fit in multiple locations on the
+                  interface, designing a small square with an optional checkmark icon within takes
+                  additional planning effort. Since designers and developers co-own modern UI
+                  components, we designers need to learn more about their technical implementation.
+                </p>
+                <div className="SwapContentPlaceholder w-full">
+                  <SwapContent label="Placeholder" className="w-full" />
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* * Section End * */}
           <div
             className="BlogContent flex flex-col w-full gap-4 scroll-mt-[87px]"
             id="understanding-components-and-properties"
@@ -412,7 +428,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     isDisabled={false}
                     isLoading={false}
                     startIcon={<CodeRoundedIcon />}
-                     onClick={handleClickThree}
+                    onClick={handleClickThree}
                   />
                   <Button
                     label="Secondary Button"
@@ -496,7 +512,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 </div>
                 <p>
                   These properties map directly to React/Vue/Angular/Svelte props and make
-                  components flexible, reusable, and maintainable. 
+                  components flexible, reusable, and maintainable.
                 </p>
               </div>
             </div>
@@ -540,7 +556,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             id="structure-naming"
           >
             <SectionTitle
-              title="2.1 Structure & Naming"
+              title="3. Structure & Naming"
               className="md:sticky md:top-[87px] md:self-start"
               color="neutral"
             />
@@ -559,7 +575,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             id="using-proper-auto-layout-with-frames-in-figma"
           >
             <SectionTitle
-              title="2.2 Using Proper Auto-Layout with Frames in Figma"
+              title="3.1 Using Proper Auto-Layout with Frames in Figma"
               color="neutral"
               className="md:sticky md:top-[87px] md:self-start"
             />
@@ -645,7 +661,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             id="example-button-component-structure"
           >
             <SectionTitle
-              title="2.3 Example: Button Component Structure"
+              title="3.2 Example: Button Component Structure"
               color="orange"
               className="md:sticky md:top-[87px] md:self-start"
             />
@@ -738,7 +754,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             id="giving-meaningful-layer-names"
           >
             <SectionTitle
-              title="2.4 Giving Meaningful Layer Names"
+              title="3.3 Giving Meaningful Layer Names"
               className="md:sticky md:top-[87px] md:self-start"
               color="neutral"
             />
@@ -844,11 +860,11 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           </div>
 
           <div
-            className="BlogContent flex flex-col w-full   gap-4 "
-            id="component-properties-in-figma"
+            className="BlogContent flex flex-col w-full   gap-4 scroll-mt-[87px]"
+            id="component-properties"
           >
             <SectionTitle
-              title="2.5 Component Properties in Figma"
+              title="4. Component Properties"
               className="md:sticky md:top-[87px] md:self-start"
               color="neutral"
             />
@@ -1087,8 +1103,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                       cursor={true}
                     />
                   </Code>
-                
-              
+
                   <Code
                     className="lg:w-full lg:h-[330px]"
                     code={`@Component({
@@ -1118,7 +1133,7 @@ export class ButtonComponent {
                       theme="dark"
                       writing
                       duration={8000}
-                       delay={1000}
+                      delay={1000}
                       inView={true}
                       cursor={true}
                     />
@@ -1147,12 +1162,12 @@ export class ButtonComponent {
                       theme="dark"
                       writing
                       duration={8000}
-                       delay={1000}
+                      delay={1000}
                       inView={true}
                       cursor={true}
                     />
                   </Code>
-               </div>
+                </div>
 
                 <p>
                   As we can see, the same well-defined properties in Figma translate cleanly to
@@ -1167,7 +1182,7 @@ export class ButtonComponent {
           </div>
           <div className="BlogContent flex flex-col w-full   gap-4 " id="tokenization">
             <SectionTitle
-              title="2.6 Tokenization"
+              title="5. Tokenization"
               className="md:sticky md:top-[87px] md:self-start"
               color="neutral"
             />
@@ -1257,7 +1272,7 @@ export class ButtonComponent {
             id="implementing-tokens-in-figma"
           >
             <SectionTitle
-              title="2.7 Implementing Tokens in Figma"
+              title="5.1 Implementing Tokens in Figma"
               className="md:sticky md:top-[87px] md:self-start"
               color="neutral"
             />
@@ -1267,22 +1282,69 @@ export class ButtonComponent {
               </div>
             </div>
           </div>
-          <div className="BlogContent flex flex-col w-full   gap-4 ">
+          {/* * Section Start * */}
+          <div
+            className="BlogContent flex flex-col w-full   gap-4 "
+            id="implementing-tokens-in-figma"
+          >
             <SectionTitle
-              title="2.8 Implementing Tokens in Figma"
+              title="X.X title"
               className="md:sticky md:top-[87px] md:self-start"
+              color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
-                <p>
-                  Our goal was to improve account security with an additional layer of
-                  authentication—without creating friction or drop-off in user experience. We needed
-                  a solution that served both our individual (B2C) users and our enterprise clients
-                  with scalable and customizable options.
-                </p>
+                <p>Content</p>
               </div>
             </div>
           </div>
+          {/* * Section End * */}
+          <div className="BlogContent flex flex-col w-full   gap-4 ">
+            <SectionTitle
+              title="X.X title"
+              className="md:sticky md:top-[87px] md:self-start"
+              color="neutral"
+            />
+            <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+                <p>Content </p>
+              </div>
+            </div>
+          </div>
+          <ThankYou
+            message="Thanks for taking the time to explore this project. I hope you enjoyed the deep dive into the process, challenges, and learnings behind it."
+            exploreBlocks={[
+              <Link key="jotform-logbook" href="/ideas/jotform-logbook" className="flex-1 h-full">
+                <div className="SectionBlock h-full p-6 flex flex-col justify-start items-start gap-2 cursor-pointer  hover:bg-orange-200 transition sm:border-b lg:border-b-0 lg:border-r border-stone-900">
+                  <div className="self-stretch text-stone-900 text-lg font-medium font-sans leading-normal">
+                    Jotform Logbook
+                  </div>
+                  <div className="self-stretch text-stone-900 text-md font-normal font-sans">
+                    An internal tool for better company awareness
+                  </div>
+                </div>
+              </Link>,
+              <Link key="brifl" href="/ideas/brifl" className="flex-1 h-full">
+                <div className="SectionBlock h-full p-6  flex flex-col justify-start items-start gap-2 cursor-pointer hover:bg-pink-200 transition">
+                  <div className="self-stretch text-stone-900 text-lg font-medium font-sans leading-normal">
+                    Brifl
+                  </div>
+                  <div className="self-stretch text-stone-900 text-md font-normal font-sans">
+                    A collaborative form-building platform designed to bridge the gap between
+                    creators and clients.
+                  </div>
+                </div>
+              </Link>,
+            ]}
+            simpleTabs={[
+              {
+                icon: <LanguageIcon />,
+                state: 'idle',
+                to: 'https://usekroma.com/',
+                className: 'h-full hover:bg-blue-100 border-r-0',
+              },
+            ]}
+          />
         </div>
         {/* * Sidebar Start * */}
         <div
@@ -1295,6 +1357,7 @@ export class ButtonComponent {
           </div>
           <div className="flex flex-col  gap-4">
             <TextLink className=" text-sm" label="Introduction" to="#introduction" />
+            <TextLink className=" text-sm" label="0. History" to="#history" />
             <TextLink
               className=" text-sm"
               label="1. Understanding Components and Properties"
@@ -1315,38 +1378,85 @@ export class ButtonComponent {
               label="2. The Fundamentals of JS-Friendly Components"
               to="#the-fundamentals-of-js-friendly-components"
             />
+            <TextLink className=" text-sm" label="3. Structure & Naming" to="#structure-naming" />
             <TextLink
               className="ml-4  text-sm"
-              label="2.1 Structure & Naming"
-              to="#structure-naming"
-            />
-            <TextLink
-              className="ml-4  text-sm"
-              label="2.2 Using Proper Auto-Layout with Frames in Figma"
+              label="3.1 Using Proper Auto-Layout with Frames in Figma"
               to="#using-proper-auto-layout-with-frames-in-figma"
             />
             <TextLink
               className="ml-4  text-sm"
-              label="2.3 Example: Button Component Structure"
+              label="3.2 Example: Button Component Structure"
               to="#example-button-component-structure"
             />
             <TextLink
               className="ml-4 text-sm "
-              label="2.4 Giving Meaningful Layer Names"
+              label="3.3 Giving Meaningful Layer Names"
               to="#giving-meaningful-layer-names"
             />
             <TextLink
-              className="ml-4  text-sm"
-              label="2.5 Component Properties in Figma"
-              to="#component-properties-in-figma"
+              className="  text-sm"
+              label="4. Component Properties"
+              to="#component-properties"
             />
 
-            <TextLink className="ml-4  text-sm" label="2.6 Tokenization" to="#tokenization" />
+            <TextLink className="  text-sm" label="5. Tokenization" to="#tokenization" />
             <TextLink
               className="ml-4  text-sm"
-              label="2.7 Implementing Tokens in Figma"
+              label="5.1 Implementing Tokens in Figma"
               to="#implementing-tokens-in-figma"
             />
+            <TextLink
+              className=" text-sm"
+              label="6. Interaction & Prototyping"
+              to="#interaction-and-prototyping"
+            />
+            <TextLink
+              className="ml-4  text-sm"
+              label="6.1 Essential States to Prototype"
+              to="#essential-states-to-prototype"
+            />
+            <TextLink
+              className="ml-4  text-sm"
+              label="6.2 Advanced Prototyping Patterns"
+              to="#advanced-prototyping-patterns"
+            />
+            <TextLink
+              className="ml-4  text-sm"
+              label="6.3 Interaction Specifications"
+              to="#interaction-specifications"
+            />
+            <TextLink
+              className="ml-4  text-sm"
+              label="6.4 Accessibility Considerations in Prototyping"
+              to="#accessibility-considerations-in-prototyping"
+            />
+            <TextLink
+              className="ml-4  text-sm"
+              label="6.5 Example: E-Commerce Product Card"
+              to="#example-e-commerce-product-card"
+            />
+            <TextLink
+              className="  text-sm"
+              label="7. Designing for Accessibility"
+              to="#designing-for-accessibility"
+            />
+            <TextLink
+              className="ml-4  text-sm"
+              label="7.1 Accessibility Principles"
+              to="#accessibility-principles"
+            />
+            <TextLink
+              className="ml-4  text-sm"
+              label="7.2 Focus States: Keyboard Navigation"
+              to="#focus-states-keyboard-navigation"
+            />
+            <TextLink
+              className="ml-4  text-sm"
+              label="7.3 Color Contrast Requirements"
+              to="#color-contrast-requirements"
+            />
+            <TextLink className=" text-sm" label="Conclusion" to="#conclusion" />
           </div>
         </div>
         {/* * Sidebar End * */}
