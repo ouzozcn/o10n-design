@@ -23,6 +23,8 @@ import SwapContent from '@/components/SwapContent';
 import InfoContainer from '@/components/InfoContainer';
 import IconButton from '@/components/IconButton';
 import { Code, CodeBlock, CodeHeader } from '@/components/animate-ui/components/animate/code';
+import ContentCard from '@/components/ContentCard';
+
 /*
 export const metadata: Metadata = {
   title: 'Component Design for JavaScript Frameworks | Design to Code Best Practices',
@@ -146,7 +148,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             <SectionTitle
               title="0. History"
               className="md:sticky md:top-[87px] md:self-start"
-              color="violet"
+              color="emerald"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-12">
@@ -214,7 +216,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           >
             <SectionTitle
               title="1. Understanding Components and Properties"
-              color="violet"
+              color="emerald"
               sectionID="understanding-components-and-properties"
               className="md:sticky md:top-[87px] md:self-start"
             />
@@ -523,7 +525,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           >
             <SectionTitle
               title="2. The Fundamentals of JS-Friendly Components"
-              color="violet"
+              color="emerald"
               className="md:sticky md:top-[87px] md:self-start"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
@@ -558,7 +560,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             <SectionTitle
               title="3. Structure & Naming"
               className="md:sticky md:top-[87px] md:self-start"
-              color="neutral"
+              color="emerald"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent w-full items-center justify-center text-start text-stone-900 text-lg gap-4">
@@ -678,7 +680,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     ariaLabel="Example button with start and end icons"
                   />
                 </div>
-                <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
+                <pre className="bg-amber-50  rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
                   {`ButtonContainer (Frame with Auto-Layout)
                 ├── padding: 12px 24px
                 ├── gap: 8px
@@ -786,7 +788,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   vertical) at a glance.
                 </p>
                 <InfoContainer
-                  color="violet"
+                  color="emerald"
                   icon={<AutoAwesomeRoundedIcon />}
                   content="Figma provides AI-powered layer naming if you prefer not to manually label frames. Learn more about using AI to rename layers in Figma."
                   to="https://help.figma.com/hc/en-us/articles/24004711129879-Rename-layers-with-AI?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
@@ -820,7 +822,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <p className="font-bold mt-2">Naming Conventions</p>
                 <p>Follow these guidelines when naming layers:</p>
                 <div className="flex flex-col md:flex-row gap-4 w-full ">
-                  <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
+                  <pre className="bg-amber-50  rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
                     {`/// Use clear, descriptive names
 
 🟩 CardImage (not Image1)
@@ -829,7 +831,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
 🟩 IconWrapper (not Group_23)
 🟩 PriceLabel (not Text)`}
                   </pre>
-                  <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
+                  <pre className="bg-amber-50  rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
                     {`/// Do not use vague, generic names
 
 🟥 Container
@@ -866,7 +868,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             <SectionTitle
               title="4. Component Properties"
               className="md:sticky md:top-[87px] md:self-start"
-              color="neutral"
+              color="emerald"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
@@ -909,7 +911,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <div className="FigmaPropTable w-full overflow-x-auto my-4">
                   <table className="min-w-full border border-stone-300 rounded-xl bg-white text-stone-900 text-sm">
                     <thead>
-                      <tr className="bg-stone-100">
+                      <tr className="bg-amber-100">
                         <th className="px-4 py-2 border-b border-stone-300 text-left font-semibold">
                           Figma Property
                         </th>
@@ -969,7 +971,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   info for the development team.
                 </p>
                 <div className="flex flex-col md:flex-row gap-4 w-full ">
-                  <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
+                  <pre className="bg-amber-50  rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
                     {`/// Use descriptive, purposeful names
 
 🟩 cardTitle
@@ -979,7 +981,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
 🟩 hasEndIcon
 🟩 showKebabMenu`}
                   </pre>
-                  <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
+                  <pre className="bg-amber-50  rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
                     {`/// Do not use vague, generic names
 
 🟥 text1
@@ -1184,7 +1186,7 @@ export class ButtonComponent {
             <SectionTitle
               title="5. Tokenization"
               className="md:sticky md:top-[87px] md:self-start"
-              color="neutral"
+              color="emerald"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
@@ -1207,7 +1209,7 @@ export class ButtonComponent {
                   scalability and consistency across the design system. For example, if your brand
                   color changes, updating a single token updates it everywhere. As designers, we
                   often hear new iteration ideas from stakeholders. Using tokens allows us to
-                  implement changes quickly without redesigning every component.
+                  implement changes quickly without touching every component.
                 </p>
                 <p className="font-bold md:mt-6 ">From Hard-Coded Values to Design Tokens</p>
                 <p>
@@ -1221,8 +1223,8 @@ export class ButtonComponent {
                   Tailwind's `--tw-color-blue-600`. Here is an example of how to transition from old
                   way to modern way:
                 </p>
-                <div className="flex flex-col  gap-4 w-full ">
-                  <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
+                <div className="flex flex-col  lg:flex-row gap-4 w-full ">
+                  <pre className="bg-amber-50  rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
                     {`/// Old approach (hard-coded values)
 
 🟥 Color: "#0D99FF" (specific hex value)
@@ -1230,7 +1232,7 @@ export class ButtonComponent {
 🟥 Font: "Inter" (specific typeface)
 🟥 Border radius: "8px" (specific value)`}
                   </pre>
-                  <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
+                  <pre className="bg-amber-50  rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
                     {`/// Modern approach (design tokens)
 
 🟩 Color: "--color-primary-600" → resolves to "#0D99FF" in light mode, "#3B82F6" in dark mode
@@ -1268,17 +1270,155 @@ export class ButtonComponent {
             </div>
           </div>
           <div
-            className="BlogContent flex flex-col w-full   gap-4 "
-            id="implementing-tokens-in-figma"
+            className="BlogContent flex flex-col w-full   gap-8 "
+            id="definition-of-design-token"
           >
             <SectionTitle
-              title="5.1 Implementing Tokens in Figma"
+              title="5.1 Definition of Design Token"
               className="md:sticky md:top-[87px] md:self-start"
               color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
-                <p>Figma's Local Variables feature enables comprehensive tokenization:</p>
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-8">
+                <div className="Image__Container flex flex-col items-center justify-center w-full">
+                  <Image
+                    src="/img/js-components/button_tokens.svg"
+                    alt="Button tokens illustration"
+                    className="mb-4"
+                    width={800}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Examples for basic design tokens for a button component
+                  </p>
+                </div>
+                <p>
+                  A design token is a standardized, reusable variable that stores design values like
+                  colors, spacing, or typography so they can be easily accessed across different
+                  platforms and technologies. Design tokens maintain consistency and help designers
+                  and developers collaborate more effectively. We can define various types of tokens
+                  for different purposes. For example, we can define color tokens for different
+                  purposes like primary, secondary, success, error, etc.
+                </p>
+                <p>
+                  Tokens have various layers of abstraction, from primitive tokens to component
+                  tokens to application tokens.
+                </p>
+                <ul className="list-disc list-inside ml-4 space-y-2 marker:text-stone-600">
+                  <li>
+                    <b>Primitive tokens:</b> These are the most basic tokens, like colors, spacing,
+                    and typography.
+                  </li>
+                  <li>
+                    <b>Component tokens:</b> These are tokens that are specific to a component, like
+                    the button component illustrated above.
+                  </li>
+                  <li>
+                    <b>Application tokens:</b> These are tokens that are specific to the
+                    application, like the theme tokens.
+                  </li>
+                </ul>
+                <div className="Token__Samples__Placeholder flex flex-col gap-4 items-center justify-center w-full mb-4">
+                  <div className="Token__Samples__List flex flex-col lg:flex-row gap-4 lg:gap-8 p-4 lg:p-16 items-center justify-center w-full h-60 rounded-lg border border-stone-900 hover:bg-stone-50">
+                    <Tag label="--amber-500" size="large" type="amber" />
+                    <Tag label="--button-surface-primary" size="large" type="red" />
+                    <Tag label="--system-theme-primary" size="large" type="teal" />
+                  </div>
+                  <p className="text-sm text-stone-600">
+                    Examples for design tokens levels from primitive to component to application.
+                  </p>
+                </div>
+                <p>
+                  Design tokens are simple to incorporate into component libraries, style guides,
+                  and design systems because they are usually stored in a format like JSON, YAML, or
+                  XML. They can be employed in a variety of frameworks and tools, frequently with
+                  the aid of design token management tools or preprocessors.
+                </p>
+                <Code
+                  className=" lg:w-1/2 h-auto mx-auto"
+                  code={`
+"color": {
+  "primary": "#007bff",
+  "secondary": "#6c757d",
+  "success": "#28a745",
+  "error": "#dc3545",
+},
+"font": {
+  "baseSize": "16px",
+  "headingSize": "24px",
+  "fontFamily": "Space Grotesk, sans-serif"
+},
+"spacing": {
+  "small": "4px",
+  "medium": "8px",
+  "large": "16px"
+},
+"borderRadius": {
+  "small": "4px",
+  "medium": "8px",
+  "large": "16px"
+}
+`}
+                >
+                  <CodeHeader icon={CodeRoundedIcon} copyButton className="text-amber-50 h-16 px-6">
+                    Design Token Examples
+                  </CodeHeader>
+                  <CodeBlock lang="json" theme="dark" inView={true} cursor={true} />
+                </Code>
+                <p>
+                  Managing design tokens is a crucial part of design system maintenance. You can use
+                  various tools to manage design tokens like Tokens Studio, Specify, and Supernova.
+                  supernova.io.
+                </p>
+                {/* Market Analysis Cards */}
+                <div className="SectionContent flex  my-4 items-start justify-center flex-col md:flex-row gap-8">
+                  <ContentCard
+                    title="Tokens Studio"
+                    to="https://tokens.studio/?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
+                    target="_blank"
+                    icon={<CodeRoundedIcon />}
+                    color="neutral"
+                    content={
+                      <div>
+                        <p>
+                          Tokens Studio is the designer's favorite, native Figma integration with
+                          powerful Graph Engine for complex logic.
+                        </p>
+                      </div>
+                    }
+                  />
+                  <ContentCard
+                    title="Specify"
+                    to="https://specifyapp.com/?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
+                    target="_blank"
+                    icon={<CodeRoundedIcon />}
+                    color="neutral"
+                    content={
+                      <div>
+                        <p>
+                          Specify is the automation powerhouse perfect for teams that need reliable,
+                          customizable token distribution. It's sad that it doesn't have a free
+                          plan.
+                        </p>
+                      </div>
+                    }
+                  />
+                  <ContentCard
+                    title="Supernova"
+                    to="https://supernova.io/?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
+                    target="_blank"
+                    icon={<CodeRoundedIcon />}
+                    color="neutral"
+                    content={
+                      <div>
+                        <p>
+                          Supernova is the enterprise solution to complete design system management
+                          platform with documentation and automation.
+                        </p>
+                      </div>
+                    }
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -1288,9 +1428,121 @@ export class ButtonComponent {
             id="implementing-tokens-in-figma"
           >
             <SectionTitle
-              title="X.X title"
+              title="5.2 Implementing Tokens in Figma"
               className="md:sticky md:top-[87px] md:self-start"
               color="neutral"
+            />
+            <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+                <p>
+                  Figma allows us to define various tokens through its Variables feature with four
+                  different types: Color, Number, String, and Boolean. Using these tokens improves
+                  design system maintenance, ensures consistency across the interface, eases style
+                  updates, and enables various theme modes such as dark-light mode.{' '}
+                </p>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/figma-variable-types.svg"
+                    alt="Figma Local Variables Types"
+                    width={600}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Local Variables types available in Figma
+                  </p>
+                </div>
+                <p>
+                  These different types of tokens can be used in various ways to define style
+                  properties while designing components, elements, templates, pages, and more:
+                </p>
+                <ul className="list-disc list-inside ml-4 space-y-2 marker:text-stone-600">
+                  <li>
+                    <b>Color:</b> Semantic color tokens (primary, secondary, success, error, etc.)
+                  </li>
+                  <li>
+                    <b>Number:</b> Consistent spacing scale (4px, 8px, 12px, 16px, 24px, etc.)
+                  </li>
+                  <li>
+                    <b>String:</b> Font families, sizes, weights, line heights
+                  </li>
+                  <li>
+                    <b>Boolean:</b> Border radius, shadows, blur effects
+                  </li>
+                </ul>
+                <p>
+                  To get started using local variables in Figma, first create a "Collection" in the
+                  Variables UI by clicking variables button on the right sidebar. Each file has its
+                  own variables, but you can publish them via a team library. You can also move
+                  tokens between design files by copying and pasting.{' '}
+                </p>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/variables_sidebar_placement.svg"
+                    alt="Figma Variables Sidebar Placement"
+                    width={400}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">Placement of the Variables</p>
+                </div>
+                <p>
+                  Once you have created a collection, you can add variables to it by clicking the
+                  "Add Variable" button. You can also add variables to a collection by copying and
+                  pasting them from another collection.
+                </p>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/token_container.svg"
+                    alt="Example of variable usage in Figma o10n"
+                    width={1000}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">Example of variable usage</p>
+                </div>
+                <p>
+                  After defining the variables, you can start to use them in every aspect of your
+                  design system. You can use color-body-text-primary to all your body text elements.
+                  This will allow you to easily change the color of your body text by changing the
+                  value of the related color variable.
+                </p>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/token_usage_on_figma_component.svg"
+                    alt="Example of variable usage in Figma o10n"
+                    width={400}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Using tokens for width, height, gap, and padding
+                  </p>
+                </div>
+                <p>
+                  You can also use tokens for width, height, gap, and padding of your components.
+                  This will allow you to easily change the size of your components by changing the
+                  value of the related token.
+                </p>
+                <div className="flex w-auto mx-auto items-center justify-center">
+                  <InfoContainer
+                    color="cyan"
+                    icon={<ArrowOutwardIcon />}
+                    content="Learn more about using variables and tokens in Figma "
+                    to="https://help.figma.com/hc/en-us/articles/15339657135383-Guide-to-variables-in-Figma?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
+                    target="_blank"
+                    className="mt-6 mb-6"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* * Section End * */}
+          {/* * Section Start * */}
+          <div
+            className="BlogContent flex flex-col w-full   gap-4 "
+            id="interaction-and-prototyping"
+          >
+            <SectionTitle
+              title="6. Interaction & Prototyping"
+              className="md:sticky md:top-[87px] md:self-start"
+              color="emerald"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
@@ -1299,6 +1551,7 @@ export class ButtonComponent {
             </div>
           </div>
           {/* * Section End * */}
+          {/* * Section Start * */}
           <div className="BlogContent flex flex-col w-full   gap-4 ">
             <SectionTitle
               title="X.X title"
@@ -1311,6 +1564,91 @@ export class ButtonComponent {
               </div>
             </div>
           </div>
+          {/* * Section End * */}
+          {/* * Section Start * */}
+          <div className="BlogContent flex flex-col w-full   gap-4 ">
+            <SectionTitle
+              title="X.X title"
+              className="md:sticky md:top-[87px] md:self-start"
+              color="neutral"
+            />
+            <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+                <p>Content </p>
+              </div>
+            </div>
+          </div>
+          {/* * Section End * */}
+          {/* * Section Start * */}
+          <div className="BlogContent flex flex-col w-full   gap-4 ">
+            <SectionTitle
+              title="X.X title"
+              className="md:sticky md:top-[87px] md:self-start"
+              color="neutral"
+            />
+            <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+                <p>Content </p>
+              </div>
+            </div>
+          </div>
+          {/* * Section End * */}
+          {/* * Section Start * */}
+          <div className="BlogContent flex flex-col w-full   gap-4 ">
+            <SectionTitle
+              title="X.X title"
+              className="md:sticky md:top-[87px] md:self-start"
+              color="neutral"
+            />
+            <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+                <p>Content </p>
+              </div>
+            </div>
+          </div>
+          {/* * Section End * */}
+          {/* * Section Start * */}
+          <div className="BlogContent flex flex-col w-full   gap-4 ">
+            <SectionTitle
+              title="X.X title"
+              className="md:sticky md:top-[87px] md:self-start"
+              color="neutral"
+            />
+            <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+                <p>Content </p>
+              </div>
+            </div>
+          </div>
+          {/* * Section End * */}
+          {/* * Section Start * */}
+          <div className="BlogContent flex flex-col w-full   gap-4 ">
+            <SectionTitle
+              title="X.X title"
+              className="md:sticky md:top-[87px] md:self-start"
+              color="neutral"
+            />
+            <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+                <p>Content </p>
+              </div>
+            </div>
+          </div>
+          {/* * Section End * */}
+          {/* * Section Start * */}
+          <div className="BlogContent flex flex-col w-full   gap-4 ">
+            <SectionTitle
+              title="X.X title"
+              className="md:sticky md:top-[87px] md:self-start"
+              color="neutral"
+            />
+            <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+                <p>Content </p>
+              </div>
+            </div>
+          </div>
+          {/* * Section End * */}
           <ThankYou
             message="Thanks for taking the time to explore this project. I hope you enjoyed the deep dive into the process, challenges, and learnings behind it."
             exploreBlocks={[
@@ -1350,7 +1688,7 @@ export class ButtonComponent {
         <div
           className="BlogSideBar flex flex-col px-4 py-3 items-start justify-start gap-4 w-full md:w-1/4 bg-amber-50 md:border-t border-stone-900 
             md:sticky md:top-[87px] md:self-start"
-          style={{ maxHeight: 'calc(100vh - 88px)' }}
+          style={{ height: 'auto' }}
         >
           <div className="flex flex-col gap-4">
             <p className="text-2xl font-medium text-center text-stone-900">In this article</p>
@@ -1403,7 +1741,12 @@ export class ButtonComponent {
             <TextLink className="  text-sm" label="5. Tokenization" to="#tokenization" />
             <TextLink
               className="ml-4  text-sm"
-              label="5.1 Implementing Tokens in Figma"
+              label="5.1 Definition of Design Token"
+              to="#definition-of-design-token"
+            />
+            <TextLink
+              className="ml-4  text-sm"
+              label="5.2 Implementing Tokens in Figma"
               to="#implementing-tokens-in-figma"
             />
             <TextLink

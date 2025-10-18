@@ -14,7 +14,6 @@ import TopDivider from '@/components/TopDivider';
 import ContentCard from '@/components/ContentCard';
 import PageBreaker from '@/components/PageBreaker';
 import MetaInfo from '@/components/MetaInfo';
-import SquareIcon from '@mui/icons-material/Square';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import SearchIcon from '@mui/icons-material/Search';
 import ContactEmergencyRoundedIcon from '@mui/icons-material/ContactEmergencyRounded';
@@ -33,6 +32,7 @@ export default function Brifl() {
   const swiperRef = useRef<SwiperType | null>(null);
 
   useEffect(() => {
+    // eslint-disable-next-line no-console
     console.info(
       '🎨 Welcome to brifl - A collaborative form-building platform designed to bridge the gap between creators and clients. This project showcases how specialized form tools can streamline creative workflows and improve client communication across different disciplines: design, development, writing, and photography.'
     );
@@ -180,6 +180,8 @@ export default function Brifl() {
         <div className="SectionContent flex mx-8 mb-8 items-start justify-center flex-col md:flex-row gap-4">
           <ContentCard
             title="Jotform"
+            to="https://www.jotform.com/?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
+            target="_blank"
             icon={<SearchIcon />}
             color="orange"
             content={
@@ -198,6 +200,8 @@ export default function Brifl() {
           />
           <ContentCard
             title="SurveyMonkey"
+            to="https://www.surveymonkey.com/?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
+            target="_blank"
             icon={<SearchIcon />}
             color="lime"
             content={
@@ -215,6 +219,8 @@ export default function Brifl() {
           />
           <ContentCard
             title="Typeform"
+            to="https://www.typeform.com/?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
+            target="_blank"
             icon={<SearchIcon />}
             color="pink"
             content={
