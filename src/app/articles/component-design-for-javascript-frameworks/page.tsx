@@ -1,31 +1,32 @@
-'use client'
+'use client';
 /* import type { Metadata } from 'next'; */
 import Menu from '@/components/Menu';
 import Footer from '@/components/Footer';
 import SectionTitle from '@/components/SectionTitle';
 import ThankYou from '@/components/ThankYou';
 import Button from '@/components/Button';
-import PageBreaker from '@/components/PageBreaker';
 import Tag from '@/components/Tag';
 import TopDivider from '@/components/TopDivider';
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import BookIcon from '@mui/icons-material/Book';
 import AutoAwesomeRoundedIcon from '@mui/icons-material/AutoAwesomeRounded';
-import GamepadRoundedIcon from '@mui/icons-material/GamepadRounded';
 import PriorityHighRoundedIcon from '@mui/icons-material/PriorityHighRounded';
 import CodeRoundedIcon from '@mui/icons-material/CodeRounded';
 import WestRoundedIcon from '@mui/icons-material/WestRounded';
 import EastRoundedIcon from '@mui/icons-material/EastRounded';
+import LanguageIcon from '@mui/icons-material/Language';
+import DesignServicesIcon from '@mui/icons-material/DesignServices';
+import DirectionsRunIcon from '@mui/icons-material/DirectionsRun';
 import Image from 'next/image';
 import Link from 'next/link';
-import MetaInfo from '@/components/MetaInfo';
 import TextLink from '@/components/TextLink';
 import SwapContent from '@/components/SwapContent';
-import ContentCard from '@/components/ContentCard';
 import InfoContainer from '@/components/InfoContainer';
 import IconButton from '@/components/IconButton';
-import { Chip, Icon } from '@mui/material';
 import { Code, CodeBlock, CodeHeader } from '@/components/animate-ui/components/animate/code';
+import ContentCard from '@/components/ContentCard';
+import FigmaIcon from '@/components/icons/Figma';
+import StorybookIcon from '@/components/icons/Storybook';
 /*
 export const metadata: Metadata = {
   title: 'Component Design for JavaScript Frameworks | Design to Code Best Practices',
@@ -67,15 +68,15 @@ export const metadata: Metadata = {
 };
 */
 
-  const handleClickOne = () => {
-    alert('🚀 You triggered this JavaScript Popup Box by clicking the Primary Button.');
-  };
-  const handleClickTwo = () => {
-    alert('🚀 You triggered this JavaScript Popup Box by clicking the Icon Button.');
-  };
-  const handleClickThree = () => {
-    alert('Whereas the loading and tertiary buttons cannot be clicked, this primary one can.');
-  };
+const handleClickOne = () => {
+  alert('🚀 You triggered this JavaScript Popup Box by clicking the Primary Button.');
+};
+const handleClickTwo = () => {
+  alert('🚀 You triggered this JavaScript Popup Box by clicking the Icon Button.');
+};
+const handleClickThree = () => {
+  alert('Whereas the loading and tertiary buttons cannot be clicked, this primary one can.');
+};
 export default function ComponentDesignForJavaScriptFrameworks() {
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
@@ -111,94 +112,217 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             id="introduction"
             className="PageTitle px-8 pt-5 pb-2 items-center justify-center text-center text-stone-900 text-h1 font-medium font-sans"
           >
-            Component Design for JavaScript Frameworks: <br /> A Designer's Guide to JS-Friendly
-            Components
+            Component Design for JavaScript Frameworks
+          </div>
+          <div className="PageSubtitle flex flex-col text-center text-lg text-stone-600 w-full h-full gap-2">
+            <p>A Designer's Guide to JS-Friendly Components</p>
           </div>
         </div>
       </div>
 
       <div className="Summary__Content flex flex-col w-full  gap-4 lg:gap-12 p-6 lg:py-12 lg:px-60 text-xl items-center justify-center text-start font-regular text-stone-900">
         <p>
-          The history of human-computer interaction and user interface design (graphical user
-          interface, GUI) spans over 70 years. There were only text-based command-line interfaces
-          available when it was initially launched in the early 1960s. We first saw the mouse,
-          windows, icons, and hypertext links when Douglas Engelbart unveiled the "Mother of All
-          Demos.”
+          During product development, design must communicate with a variety of stakeholders,
+          including researchers, product managers, developers, testers, data analysts, and others.
+          But developers are probably the ones we see, talk to, and discuss the most. We talk about
+          every little element of a product with our fellow engineers and developers. Common
+          knowledge is essential for a more productive workplace. Communication is improved,
+          misunderstandings are decreased, expectations and reality can be discussed, and design and
+          development can coexist peacefully when everyone speaks the same language.
         </p>
-        <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 ">
-          <Image
-            src="/img/js-components/mother-of-all-demos.jpg"
-            alt="Mother of All Demos"
-            width={800}
-            height={1}
-            className="rounded-lg border border-stone-900 "
-          />
-          <p className="text-center text-sm text-stone-600">
-            Douglas Engelbart using the NLS’s 5-button chord keyset, a standard QWERTY keyboard, and
-            3-button mouse, around 1968. NMAH Catalog #2015.3073.11.
-          </p>
-        </div>
         <p>
-          This marked the start of a lengthy history of user interface design, which was followed by
-          some incredible successes like Xerox PARC’s Alto (’73) and Star (’81), Apple Lisa (’83)
-          and Macintosh (’84), Microsoft Windows (’85). The development of standardized,
-          user-friendly, and reusable interfaces became necessary as a result of all these technical
-          advancements.
+          The current environment mostly recommends vibe design and vibe coding for product
+          development, but these approaches are not long-term viable. Furthermore, it can be
+          cathosrophic in the long term to design and develop without knowledge. Fundamental
+          understanding of several verticals, such as development, is necessary for designing a
+          sustainable product. To produce components, elements, and pages that are ready for
+          production, we product designers and design engineers must therefore have greater
+          knowledge about front-end development. It's better to know what's happening to our designs
+          after we deliver them to developers.
         </p>
-        <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 ">
+
+        <div className="Logo__Container flex flex-col md:flex-row items-center justify-center w-full gap-2 md:gap-12">
+          <Image src="/img/icons/icon-figma.svg" alt="Figma Icon" width={72} height={1} />
           <Image
-            src="/img/js-components/mac-gui.png"
-            alt="Macintosh System 1 GUI"
-            width={800}
+            src="/img/icons/icon-arrow-right.svg"
+            alt="Arrow Right Icon"
+            width={72}
             height={1}
-            className="rounded-lg border border-stone-900 "
           />
-          <p className="text-center text-sm text-stone-600">Macintosh System 1 GUI (1984)</p>
-        </div>
-        <p>
-          When UI became dynamic with Web 2.0 tech in the early 2000s, designers started to create
-          reusable snippets (navigation elements, modals, form elements). This led to emerging
-          design patterns like Yahoo did back in 2006 with Yahoo Design Pattern Library (YUI).
-          Facebook released React in 2013, marking a significant advancement in UI architecture and
-          contributing to the growth of the component ecosystem. Today's digital products are
-          composed of a vast array of uniform, scalable, and reusable components. Because a
-          component must fit in multiple locations on the interface, designing a small square with
-          an optional checkmark icon within takes additional planning effort. Since designers and
-          developers co-own modern UI components, we designers need to learn more about their
-          technical implementation.
-        </p>
-        <div className="SwapContentPlaceholder w-full">
-          <SwapContent label="Placeholder" className="w-full" />
+          <Image src="/img/icons/icon-react.svg" alt="React Icon" width={72} height={1} />
+          <Image src="/img/icons/icon-svelte.svg" alt="Svelte Icon" width={72} height={1} />
+          <Image src="/img/icons/icon-vue.svg" alt="Vue Icon" width={72} height={1} />
+          <Image src="/img/icons/icon-angular.svg" alt="Angular Icon" width={72} height={1} />
         </div>
         <p>
           In this article, we'll explore best practices for designing components that developers can
-          easily implement in their applications. At the end of reading, you will have a solid
+          easily implement in applications. At the end of reading, you will have a solid
           understanding of:
           <ul className="list-disc list-inside ml-4 lg:mt-8 space-y-2 marker:text-stone-600">
-            <li>Component design principles</li>
-            <li>Understanding component properties</li>
-            <li>Property, Auto-Layout, and Frame Naming in Figma</li>
-            <li>Design tokens for scalable theming</li>
-            <li>Prototyping interactions and states</li>
+            <li>
+              How Figma's Auto-Layout directly maps to CSS Flexbox, enabling you to design with code
+              structure in mind
+            </li>
+            <li>
+              Property naming conventions that work identically across all major JavaScript
+              frameworks
+            </li>
+            <li>
+              Design token implementation strategies for scalable theming and dark mode support
+            </li>
+            <li>Prototyping interactions and states for realistic UI behavior</li>
+            <li>
+              Complete accessibility guidelines including WCAG 2.2 compliance and keyboard
+              navigation patterns
+            </li>
           </ul>
         </p>
+        <p className=" font-semibold text-center text-stone-900 text-h3 font-sans lg:mt-8">
+          Who benefits from reading this article?
+        </p>
+        {/* Target Audience Cards */}
+        <div className="SectionContent flex  items-start justify-center flex-col md:flex-row gap-8">
+          <ContentCard
+            title="Designers"
+            icon={<DesignServicesIcon />}
+            color="neutral"
+            className="hover:bg-lime-50"
+            content={
+              <div>
+                <p>
+                  Reduce developer questions and create components that translate perfectly to code.
+                  Learn Auto-Layout patterns, property and layer naming conventions, design tokens
+                  and handoff best practices.
+                </p>
+              </div>
+            }
+          />
+          <ContentCard
+            title="Frontend Developers"
+            icon={<CodeRoundedIcon />}
+            color="neutral"
+            className="hover:bg-teal-50"
+            content={
+              <div>
+                <p>
+                  Implement designs faster with clear component structure. Understand design
+                  decisions and reduce refactoring by recognizing well-structured Figma files.
+                </p>
+              </div>
+            }
+          />
+          <ContentCard
+            title="Product Managers"
+            icon={<DirectionsRunIcon />}
+            color="neutral"
+            className="hover:bg-purple-50"
+            content={
+              <div>
+                <p>
+                  Accelerate feature delivery with better design-dev collaboration. Understand
+                  technical constraints and reduce sprint delays from unclear component specs.
+                </p>
+              </div>
+            }
+          />
+        </div>
         <p>
           Whether you're a product designer, UI/UX designer, or front-end developer, mastering these
           concepts will greatly enhance your ability to create cohesive and user-friendly
-          interfaces. If you are ready to take your component design skills to the next level, let's
-          dive in!
+          interfaces. By the end, you'll understand not just what makes a good component, but{' '}
+          <i>why</i> certain decisions matter and <i>how</i> they impact the final product. If you
+          are ready to take your component design skills to the next level, let's dive in!
         </p>
       </div>
 
       <div className="BlogBody flex flex-col md:flex-row gap-0 font-sans">
         <div className="BlogContentContainer flex flex-col w-full md:w-3/4  gap-4 md:border-r border-stone-900">
+          {/* * Section Start * */}
+          <div className="BlogContent flex flex-col w-full   gap-4 " id="a-brief-history">
+            <SectionTitle
+              title="0. A Brief History"
+              className="md:sticky md:top-[87px] md:self-start"
+              color="emerald"
+            />
+            <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-12">
+                <p>
+                  The history of human-computer interaction and user interface design (graphical
+                  user interface, GUI) spans over 70 years. There were only text-based command-line
+                  interfaces available when it was initially launched in the early 1960s. We first
+                  saw the mouse, windows, icons, and hypertext links when Douglas Engelbart unveiled
+                  the "Mother of All Demos.”
+                </p>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 ">
+                  <Image
+                    src="/img/js-components/mother-of-all-demos.jpg"
+                    alt="Mother of All Demos"
+                    width={800}
+                    height={1}
+                    className="rounded-lg border border-stone-900 "
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Douglas Engelbart using the NLS’s 5-button chord keyset, a standard QWERTY
+                    keyboard, and 3-button mouse, around 1968. NMAH Catalog #2015.3073.11.
+                  </p>
+                </div>
+                <p>
+                  This marked the start of a lengthy history of user interface design, which was
+                  followed by some incredible successes like Xerox PARC’s Alto (’73) and Star (’81),
+                  Apple Lisa (’83) and Macintosh (’84), Microsoft Windows (’85). The development of
+                  standardized, user-friendly, and reusable interfaces became necessary as a result
+                  of all these technical advancements.
+                </p>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 ">
+                  <Image
+                    src="/img/js-components/mac-gui.png"
+                    alt="Macintosh System 1 GUI"
+                    width={800}
+                    height={1}
+                    className="rounded-lg border border-stone-900 "
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Macintosh System 1 GUI (1984)
+                  </p>
+                </div>
+                <p>
+                  When UI became dynamic with Web 2.0 tech in the early 2000s, designers started to
+                  create reusable snippets (navigation elements, modals, form elements). This led to
+                  emerging design patterns like Yahoo did back in 2006 with Yahoo Design Pattern
+                  Library (YUI).
+                </p>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 ">
+                  <Image
+                    src="/img/js-components/yahoo_design_library.png"
+                    alt="Yahoo Design Library Calendar Component"
+                    width={400}
+                    height={1}
+                    className="rounded-lg border border-stone-900 "
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Calendar Component from Yahoo Design Pattern Library
+                  </p>
+                </div>
+                <p>
+                  Facebook released React in 2013, marking a significant advancement in UI
+                  architecture and contributing to the growth of the component ecosystem. Today's
+                  digital products are composed of a vast array of uniform, scalable, and reusable
+                  components. Because a component must fit in multiple locations on the interface,
+                  designing a small square with an optional checkmark icon within takes additional
+                  planning effort. Since designers and developers co-own modern UI components, we
+                  designers need to learn more about their technical implementation.
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* * Section End * */}
           <div
             className="BlogContent flex flex-col w-full gap-4 scroll-mt-[87px]"
             id="understanding-components-and-properties"
           >
             <SectionTitle
               title="1. Understanding Components and Properties"
-              color="violet"
+              color="emerald"
               sectionID="understanding-components-and-properties"
               className="md:sticky md:top-[87px] md:self-start"
             />
@@ -329,8 +453,16 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     <b>Composition:</b> Nesting components to build complex UIs
                   </li>
                 </ul>
-                <div className="SwapContentPlaceholder w-full">
-                  <SwapContent label="Placeholder" className="w-full" />
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/universal_component_model.svg"
+                    alt="Universal Component Model"
+                    width={600}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Universal Component Model Diagram
+                  </p>
                 </div>
                 <p>
                   When you design components with these universal concepts in mind, your work
@@ -412,7 +544,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     isDisabled={false}
                     isLoading={false}
                     startIcon={<CodeRoundedIcon />}
-                     onClick={handleClickThree}
+                    onClick={handleClickThree}
                   />
                   <Button
                     label="Secondary Button"
@@ -487,7 +619,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <div className="flex w-auto items-center justify-center">
                   <InfoContainer
                     color="cyan"
-                    icon={<GamepadRoundedIcon />}
+                    icon={<StorybookIcon />}
                     content="Try Button component properties on Storybook "
                     to="/docs/index.html?path=/docs/components-button--docs"
                     target="_blank"
@@ -496,7 +628,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 </div>
                 <p>
                   These properties map directly to React/Vue/Angular/Svelte props and make
-                  components flexible, reusable, and maintainable. 
+                  components flexible, reusable, and maintainable.
                 </p>
               </div>
             </div>
@@ -507,11 +639,22 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           >
             <SectionTitle
               title="2. The Fundamentals of JS-Friendly Components"
-              color="violet"
+              color="emerald"
               className="md:sticky md:top-[87px] md:self-start"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent w-full items-center justify-center text-start text-stone-900 text-lg gap-4">
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/fundamentals_of_component.svg"
+                    alt="The Fundamentals of JS-Friendly Components"
+                    width={800}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    The Fundamentals of JS-Friendly Components Diagram
+                  </p>
+                </div>
                 <p>
                   Designing components that developers can efficiently implement requires mastering
                   four fundamental principles:
@@ -519,19 +662,22 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <ul className="list-disc list-inside ml-4 my-4 space-y-4 marker:text-stone-600">
                   <li>
                     <b>Structure & Naming:</b> Using Auto-Layout and meaningful frame names to
-                    define HTML structure
+                    define HTML structure.
                   </li>
                   <li>
-                    <b>Properties & Props:</b> Establishing clear, js-friendly component properties
+                    <b>Properties & Props:</b> Establishing clear, js-friendly component properties.
                   </li>
                   <li>
-                    <b>Tokenization:</b> Applying design tokens for scalable theming
+                    <b>Tokenization:</b> Applying design tokens for scalable theming.
                   </li>
                   <li>
-                    <b>Interaction:</b> Prototyping behaviors and states
+                    <b>Interaction:</b> Prototyping behaviors and states.
                   </li>
                 </ul>
-                <p>Let's explore each principle in depth.</p>
+                <p>
+                  Learning these fundamentals will help you design components that are not only
+                  visually appealing but also easy to implement and maintain.
+                </p>
               </div>
             </div>
           </div>
@@ -540,14 +686,31 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             id="structure-naming"
           >
             <SectionTitle
-              title="2.1 Structure & Naming"
+              title="3. Structure & Naming"
               className="md:sticky md:top-[87px] md:self-start"
-              color="neutral"
+              color="emerald"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent w-full items-center justify-center text-start text-stone-900 text-lg gap-4">
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/frame_structure_example.svg"
+                    alt="Frame Structure Example"
+                    width={600}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Unnamed and named frame structure
+                  </p>
+                </div>
                 <p>
-                  In this section, we'll cover best practices for structuring components using
+                  Regarding layer naming, there are two schools of thought: those that define the
+                  names and those who do not. Naming your levels is really helpful when done
+                  correctly and purposefully. Naming levels aid in our comprehension of the proper
+                  HTML structure for a given component. When you wish to iterate later, it also
+                  makes the component easier to understand. To make the components more
+                  understandable, the majority of design system libraries employ layer naming. In
+                  this section, we'll cover best practices for structuring components using
                   <b> Auto-Layout in Figma</b> and naming conventions that translate seamlessly to
                   HTML/CSS.
                 </p>
@@ -556,10 +719,10 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           </div>
           <div
             className="BlogContent flex flex-col w-full gap-4 scroll-mt-[87px]"
-            id="using-proper-auto-layout-with-frames-in-figma"
+            id="using-proper-auto-layout-with-frames"
           >
             <SectionTitle
-              title="2.2 Using Proper Auto-Layout with Frames in Figma"
+              title="3.1 Using Proper Auto-Layout with Frames"
               color="neutral"
               className="md:sticky md:top-[87px] md:self-start"
             />
@@ -570,10 +733,19 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   the traditional Adobe-style approach, while Frames unlock Figma's powerful
                   <b> Auto-Layout</b> feature.
                 </p>
-                <SwapContent label="Placeholder" className="w-full" />
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/figma_group_vs_frames.svg"
+                    alt="Figma Groups vs Frames"
+                    width={600}
+                    height={1}
+                  />
+                </div>
+
                 <p>
-                  Auto-Layout in Figma directly corresponds to CSS Flexbox properties. When you
-                  configure Auto-Layout settings in Figma, you're essentially defining:
+                  Using Auto-Layout will allow us to define the layout of the component in a more
+                  flexible way. Auto-Layout in Figma directly corresponds to CSS Flexbox properties.
+                  When you configure Auto-Layout settings in Figma, you're essentially defining:
                 </p>
                 <ul className="list-disc list-inside ml-4 space-y-4 marker:text-stone-600">
                   <li>
@@ -596,10 +768,36 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     container)
                   </li>
                 </ul>
-                <SwapContent label="Placeholder" className="w-full" />
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/figma-layout-types.svg"
+                    alt="Figma Auto-Layout Types"
+                    width={600}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Auto-Layout types available in Figma
+                  </p>
+                </div>
+                <p>
+                  Besides defining the layout of the component, Auto-Layout also allows us to define
+                  the spacing between the children of the component with using Gap and Padding
+                  properties.
+                </p>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/figma_gap_and_padding.svg"
+                    alt="Figma Gap and Padding"
+                    width={400}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Gap and Padding properties in Auto-Layout
+                  </p>
+                </div>
                 <InfoContainer
                   color="teal"
-                  icon={<ArrowOutwardIcon />}
+                  icon={<FigmaIcon />}
                   content="Learn more about Figma Auto-Layout and how it maps to CSS Flexbox. Visit the Figma Help Center for a comprehensive guide."
                   to="https://help.figma.com/hc/en-us/articles/360040451373-Create-designs-with-Auto-Layout?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
                   target="_blank"
@@ -614,6 +812,15 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   meaning). Therefore, using the minimum necessary frames helps developers create
                   cleaner, more maintainable code.
                 </p>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/semantic_frame_map.svg"
+                    alt="Semantic Frame Mapping"
+                    width={600}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">Semantic Frame Mapping</p>
+                </div>
                 <p>
                   <b>Best practices:</b>
                 </p>
@@ -645,14 +852,17 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             id="example-button-component-structure"
           >
             <SectionTitle
-              title="2.3 Example: Button Component Structure"
+              title="3.2 Example: Button Component Structure"
               color="orange"
               className="md:sticky md:top-[87px] md:self-start"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
-                <p>A simple button needs only one or two frames:</p>
-                <div className="flex items-center justify-center w-full my-4">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-8">
+                <p>
+                  A simple button needs only three frames which wrapped by a container. These frames
+                  are used for start icon, button label, and end icon.
+                </p>
+                <div className="flex items-center justify-center w-full gap-16 my-4">
                   <Button
                     label="Button Label"
                     type="primary"
@@ -660,31 +870,28 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     startIcon={<WestRoundedIcon />}
                     endIcon={<EastRoundedIcon />}
                     ariaLabel="Example button with start and end icons"
+                    onClick={() => alert('I am a button made of three frames')}
+                  />
+                  <Image
+                    src="/img/js-components/simple_button_frames.svg"
+                    alt="Figma Local Variables Types"
+                    width={300}
+                    height={1}
                   />
                 </div>
-                <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
-                  {`ButtonContainer (Frame with Auto-Layout)
-                ├── padding: 12px 24px
-                ├── gap: 8px
-                ├── direction: horizontal
-                ├── align: center
-                ├── width: hug contents
-                │
-                ├── StartIcon (optional, component instance)
-                ├── ButtonLabel (text)
-                └── EndIcon (optional, component instance)
-                `}
-                </pre>
-                <p>This structure translates directly to HTML/CSS:</p>
+
+                <p className="text-cen">
+                  Those three frames translate directly to HTML and CSS as:
+                </p>
 
                 <div className="Animated___Code__Blocks flex flex-col lg:flex-row w-full items-center justify-center gap-2 lg:gap-4 lg:mx-auto lg:mb-4">
                   <Code
                     className="lg:w-1/2 lg:h-[330px]"
-                    code={`<button className="button">
-{/* if startIcon present */}
-<span>Button Label</span>
-{/* if endIcon present */}
-</button> `}
+                    code={`<button class="button" aria-label="{buttonLabel}">
+  <span class="icon startIcon">{startIcon}</span>
+  <span class="label">{buttonLabel}</span>
+  <span class="icon endIcon">{endIcon}</span>
+</button>`}
                   >
                     <CodeHeader
                       icon={CodeRoundedIcon}
@@ -705,13 +912,36 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   <Code
                     className=" lg:w-1/2 lg:h-[330px]"
                     code={`.button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 8px;
-  padding: 12px 24px;
-  width: fit-content;
-} `}
+    width: 100%;
+    padding: 16px 24px;
+    background: #292524;
+    border: none;
+    border-radius: 2px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #FAFAFA;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    background: #292524;   
+}
+
+.startIcon, .endIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label {
+    flex-grow: 1;
+}     `}
                   >
                     <CodeHeader
                       icon={CodeRoundedIcon}
@@ -730,6 +960,21 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     />
                   </Code>
                 </div>
+                <p>
+                  You can have more or less frames inside a container depending on the complexity of
+                  the component. For example, if you have a spinner for loading state, you can add a
+                  frame for the spinner.{' '}
+                </p>
+                <div className="flex items-center justify-center w-auto mx-auto">
+                  <InfoContainer
+                    color="teal"
+                    icon={<CodeRoundedIcon />}
+                    content="You can try the button example in CodePen"
+                    to="https://codepen.io/ouzozcn/pen/dPGJmoo"
+                    target="_blank"
+                    className="my-4"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -738,7 +983,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             id="giving-meaningful-layer-names"
           >
             <SectionTitle
-              title="2.4 Giving Meaningful Layer Names"
+              title="3.3 Giving Meaningful Layer Names"
               className="md:sticky md:top-[87px] md:self-start"
               color="neutral"
             />
@@ -770,7 +1015,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   vertical) at a glance.
                 </p>
                 <InfoContainer
-                  color="violet"
+                  color="emerald"
                   icon={<AutoAwesomeRoundedIcon />}
                   content="Figma provides AI-powered layer naming if you prefer not to manually label frames. Learn more about using AI to rename layers in Figma."
                   to="https://help.figma.com/hc/en-us/articles/24004711129879-Rename-layers-with-AI?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
@@ -804,7 +1049,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <p className="font-bold mt-2">Naming Conventions</p>
                 <p>Follow these guidelines when naming layers:</p>
                 <div className="flex flex-col md:flex-row gap-4 w-full ">
-                  <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
+                  <pre className="bg-amber-50  rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
                     {`/// Use clear, descriptive names
 
 🟩 CardImage (not Image1)
@@ -813,7 +1058,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
 🟩 IconWrapper (not Group_23)
 🟩 PriceLabel (not Text)`}
                   </pre>
-                  <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
+                  <pre className="bg-amber-50  rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
                     {`/// Do not use vague, generic names
 
 🟥 Container
@@ -844,13 +1089,13 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           </div>
 
           <div
-            className="BlogContent flex flex-col w-full   gap-4 "
-            id="component-properties-in-figma"
+            className="BlogContent flex flex-col w-full   gap-4 scroll-mt-[87px]"
+            id="component-properties"
           >
             <SectionTitle
-              title="2.5 Component Properties in Figma"
+              title="4. Component Properties"
               className="md:sticky md:top-[87px] md:self-start"
-              color="neutral"
+              color="emerald"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
@@ -863,7 +1108,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     height={1}
                   />
                   <p className="text-center text-sm text-stone-600">
-                    Properties of the button component in Figma UI
+                    Properties of a sample button component in Figma
                   </p>
                 </div>
                 <p>
@@ -889,11 +1134,14 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     Property types available in Figma
                   </p>
                 </div>
-
+                <p>
+                  We can use these property types to create a button component with different states
+                  and variants. Below is a table that maps Figma properties to frontend equivalents.
+                </p>
                 <div className="FigmaPropTable w-full overflow-x-auto my-4">
                   <table className="min-w-full border border-stone-300 rounded-xl bg-white text-stone-900 text-sm">
                     <thead>
-                      <tr className="bg-stone-100">
+                      <tr className="bg-amber-100">
                         <th className="px-4 py-2 border-b border-stone-300 text-left font-semibold">
                           Figma Property
                         </th>
@@ -944,37 +1192,21 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     Table 1. Mapping Figma Properties to Frontend Equivalents
                   </p>
                 </div>
-                <p className="font-bold">Property Naming Best Practices</p>
-                <p>
-                  While naming properties, consider giving meaningful names that convey the purpose
-                  of the property. Following front-end conventions can help maintain consistency and
-                  clarity and it also reduce the development time. Adding a <b>?</b> at the end of
-                  boolean properties indicates that the property is optional which is a valuable
-                  info for the development team.
-                </p>
-                <div className="flex flex-col md:flex-row gap-4 w-full ">
-                  <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
-                    {`/// Use descriptive, purposeful names
-
-🟩 cardTitle
-🟩 isDisabled
-🟩 buttonLabel
-🟩 iconStart
-🟩 hasEndIcon
-🟩 showKebabMenu`}
-                  </pre>
-                  <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
-                    {`/// Do not use vague, generic names
-
-🟥 text1
-🟥 disabled
-🟥 label
-🟥 icon
-🟥 end
-🟥 menu`}
-                  </pre>
-                </div>
-                <p className="font-bold md:mt-6 ">Follow frontend conventions</p>
+              </div>
+            </div>
+          </div>
+          {/* * Section Start * */}
+          <div
+            className="BlogContent flex flex-col w-full   gap-4 "
+            id="property-naming-conventions"
+          >
+            <SectionTitle
+              title="4.1 Property Naming Conventions"
+              className="md:sticky md:top-[87px] md:self-start"
+              color="neutral"
+            />
+            <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
                 <p>
                   Front-end development is in progress since the early 2000s. Over the years,
                   certain conventions have emerged that enhance code readability and
@@ -997,6 +1229,36 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   <li>Indicate optional behavior clearly (`startIcon?` or `iconStart?`)</li>
                   <li>Use consistent naming patterns across all components</li>
                 </ul>
+                <p>
+                  While naming properties, consider giving meaningful names that convey the purpose
+                  of the property. Following front-end conventions can help maintain consistency and
+                  clarity and it also reduce the development time. As an example, adding a <b>?</b>{' '}
+                  at the end of boolean properties indicates that the property is optional which is
+                  a valuable info for the development team.
+                </p>
+                <div className="flex flex-col md:flex-row gap-4 w-full ">
+                  <pre className="bg-amber-50  rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
+                    {`/// Use descriptive, purposeful names
+
+🟩 cardTitle
+🟩 isDisabled
+🟩 buttonLabel
+🟩 iconStart
+🟩 hasEndIcon
+🟩 showKebabMenu`}
+                  </pre>
+                  <pre className="bg-amber-50  rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
+                    {`/// Do not use vague, generic names
+
+🟥 text1
+🟥 disabled
+🟥 label
+🟥 icon
+🟥 end
+🟥 menu`}
+                  </pre>
+                </div>
+
                 <InfoContainer
                   color="teal"
                   icon={<CodeRoundedIcon />}
@@ -1005,10 +1267,25 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   target="_blank"
                   className="my-4"
                 />
-                <p className="font-bold md:mt-6 ">Framework-Specific Implementation</p>
+              </div>
+            </div>
+          </div>
+          {/* * Section End * */}
+          {/* * Section Start * */}
+          <div
+            className="BlogContent flex flex-col w-full   gap-4 "
+            id="framework-specific-implementation"
+          >
+            <SectionTitle
+              title="4.2 Framework-Specific Implementation"
+              className="md:sticky md:top-[87px] md:self-start"
+              color="neutral"
+            />
+            <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
                 <p>
-                  The same Figma component properties translate naturally across frameworks. Here's
-                  how a button component with well-named props looks in different ecosystems:
+                  Figma component properties translate naturally across frameworks. Here's how a
+                  button component with well-named props looks in React (TypeScript):
                 </p>
                 <div className="Image__Container flex flex-col items-center justify-center w-full my-4">
                   <Image
@@ -1087,8 +1364,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                       cursor={true}
                     />
                   </Code>
-                
-              
+
                   <Code
                     className="lg:w-full lg:h-[330px]"
                     code={`@Component({
@@ -1118,7 +1394,7 @@ export class ButtonComponent {
                       theme="dark"
                       writing
                       duration={8000}
-                       delay={1000}
+                      delay={1000}
                       inView={true}
                       cursor={true}
                     />
@@ -1147,12 +1423,12 @@ export class ButtonComponent {
                       theme="dark"
                       writing
                       duration={8000}
-                       delay={1000}
+                      delay={1000}
                       inView={true}
                       cursor={true}
                     />
                   </Code>
-               </div>
+                </div>
 
                 <p>
                   As we can see, the same well-defined properties in Figma translate cleanly to
@@ -1165,11 +1441,12 @@ export class ButtonComponent {
               </div>
             </div>
           </div>
+          {/* * Section End * */}
           <div className="BlogContent flex flex-col w-full   gap-4 " id="tokenization">
             <SectionTitle
-              title="2.6 Tokenization"
+              title="5. Tokenization"
               className="md:sticky md:top-[87px] md:self-start"
-              color="neutral"
+              color="emerald"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
@@ -1192,7 +1469,7 @@ export class ButtonComponent {
                   scalability and consistency across the design system. For example, if your brand
                   color changes, updating a single token updates it everywhere. As designers, we
                   often hear new iteration ideas from stakeholders. Using tokens allows us to
-                  implement changes quickly without redesigning every component.
+                  implement changes quickly without touching every component.
                 </p>
                 <p className="font-bold md:mt-6 ">From Hard-Coded Values to Design Tokens</p>
                 <p>
@@ -1206,8 +1483,8 @@ export class ButtonComponent {
                   Tailwind's `--tw-color-blue-600`. Here is an example of how to transition from old
                   way to modern way:
                 </p>
-                <div className="flex flex-col  gap-4 w-full ">
-                  <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
+                <div className="flex flex-col  lg:flex-row gap-4 w-full ">
+                  <pre className="bg-amber-50  rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
                     {`/// Old approach (hard-coded values)
 
 🟥 Color: "#0D99FF" (specific hex value)
@@ -1215,7 +1492,7 @@ export class ButtonComponent {
 🟥 Font: "Inter" (specific typeface)
 🟥 Border radius: "8px" (specific value)`}
                   </pre>
-                  <pre className="bg-stone-100 border border-stone-300 rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
+                  <pre className="bg-amber-50  rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
                     {`/// Modern approach (design tokens)
 
 🟩 Color: "--color-primary-600" → resolves to "#0D99FF" in light mode, "#3B82F6" in dark mode
@@ -1253,48 +1530,442 @@ export class ButtonComponent {
             </div>
           </div>
           <div
+            className="BlogContent flex flex-col w-full   gap-8 "
+            id="definition-of-design-token"
+          >
+            <SectionTitle
+              title="5.1 Definition of Design Token"
+              className="md:sticky md:top-[87px] md:self-start"
+              color="neutral"
+            />
+            <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-8">
+                <div className="Image__Container flex flex-col items-center justify-center w-full">
+                  <Image
+                    src="/img/js-components/button_tokens.svg"
+                    alt="Button tokens illustration"
+                    className="mb-4"
+                    width={800}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Examples for basic design tokens for a button component
+                  </p>
+                </div>
+                <p>
+                  A design token is a standardized, reusable variable that stores design values like
+                  colors, spacing, or typography so they can be easily accessed across different
+                  platforms and technologies. Design tokens maintain consistency and help designers
+                  and developers collaborate more effectively. We can define various types of tokens
+                  for different purposes. For example, we can define color tokens for different
+                  purposes like primary, secondary, success, error, etc.
+                </p>
+                <p>
+                  Tokens have various layers of abstraction, from primitive tokens to component
+                  tokens to application tokens.
+                </p>
+                <ul className="list-disc list-inside ml-4 space-y-2 marker:text-stone-600">
+                  <li>
+                    <b>Primitive tokens:</b> These are the most basic tokens, like colors, spacing,
+                    and typography.
+                  </li>
+                  <li>
+                    <b>Component tokens:</b> These are tokens that are specific to a component, like
+                    the button component illustrated above.
+                  </li>
+                  <li>
+                    <b>Application tokens:</b> These are tokens that are specific to the
+                    application, like the theme tokens.
+                  </li>
+                </ul>
+                <div className="Token__Samples__Placeholder flex flex-col gap-4 items-center justify-center w-full mb-4">
+                  <div className="Token__Samples__List flex flex-col lg:flex-row gap-4 lg:gap-8 p-4 lg:p-16 items-center justify-center w-full h-60 rounded-lg border border-stone-900 hover:bg-stone-50">
+                    <Tag label="--amber-500" size="large" type="amber" />
+                    <Tag label="--button-surface-primary" size="large" type="red" />
+                    <Tag label="--system-theme-primary" size="large" type="teal" />
+                  </div>
+                  <p className="text-sm text-stone-600">
+                    Examples for design tokens levels from primitive to component to application.
+                  </p>
+                </div>
+                <p>
+                  Design tokens are simple to incorporate into component libraries, style guides,
+                  and design systems because they are usually stored in a format like JSON, YAML, or
+                  XML. They can be employed in a variety of frameworks and tools, frequently with
+                  the aid of design token management tools or preprocessors.
+                </p>
+                <Code
+                  className=" lg:w-1/2 h-auto mx-auto"
+                  code={`
+"color": {
+  "primary": "#007bff",
+  "secondary": "#6c757d",
+  "success": "#28a745",
+  "error": "#dc3545",
+},
+"font": {
+  "baseSize": "16px",
+  "headingSize": "24px",
+  "fontFamily": "Space Grotesk, sans-serif"
+},
+"spacing": {
+  "small": "4px",
+  "medium": "8px",
+  "large": "16px"
+},
+"borderRadius": {
+  "small": "4px",
+  "medium": "8px",
+  "large": "16px"
+}
+`}
+                >
+                  <CodeHeader icon={CodeRoundedIcon} copyButton className="text-amber-50 h-16 px-6">
+                    Design Token Examples
+                  </CodeHeader>
+                  <CodeBlock lang="json" theme="dark" inView={true} cursor={true} />
+                </Code>
+                <p>
+                  Managing design tokens is a crucial part of design system maintenance. You can use
+                  various tools to manage design tokens like Tokens Studio, Specify, and Supernova.
+                </p>
+                {/* Market Analysis Cards */}
+                <div className="SectionContent flex  my-4 items-start justify-center flex-col md:flex-row gap-8">
+                  <ContentCard
+                    title="Tokens Studio"
+                    to="https://tokens.studio/?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
+                    target="_blank"
+                    icon={<CodeRoundedIcon />}
+                    color="neutral"
+                    content={
+                      <div>
+                        <p>
+                          Tokens Studio is the designer's favorite, native Figma integration with
+                          powerful Graph Engine for complex logic.
+                        </p>
+                      </div>
+                    }
+                  />
+                  <ContentCard
+                    title="Specify"
+                    to="https://specifyapp.com/?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
+                    target="_blank"
+                    icon={<CodeRoundedIcon />}
+                    color="neutral"
+                    content={
+                      <div>
+                        <p>
+                          Specify is the automation powerhouse perfect for teams that need reliable,
+                          customizable token distribution. It's sad that it doesn't have a free
+                          plan.
+                        </p>
+                      </div>
+                    }
+                  />
+                  <ContentCard
+                    title="Supernova"
+                    to="https://supernova.io/?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
+                    target="_blank"
+                    icon={<CodeRoundedIcon />}
+                    color="neutral"
+                    content={
+                      <div>
+                        <p>
+                          Supernova is the enterprise solution to complete design system management
+                          platform with documentation and automation.
+                        </p>
+                      </div>
+                    }
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* * Section Start * */}
+          <div
             className="BlogContent flex flex-col w-full   gap-4 "
             id="implementing-tokens-in-figma"
           >
             <SectionTitle
-              title="2.7 Implementing Tokens in Figma"
+              title="5.2 Implementing Tokens in Figma"
               className="md:sticky md:top-[87px] md:self-start"
               color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
-                <p>Figma's Local Variables feature enables comprehensive tokenization:</p>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 ">
+                  <Image
+                    src="/img/js-components/primitive_tokens.svg"
+                    alt="Primitive Token in Figma - o10n"
+                    width={400}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Primitive level color token examples
+                  </p>
+                </div>
+                <p>
+                  Figma allows us to define various tokens through its Variables feature with four
+                  different types: Color, Number, String, and Boolean. Using these tokens improves
+                  design system maintenance, ensures consistency across the interface, eases style
+                  updates, and enables various theme modes such as dark-light mode.{' '}
+                </p>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/figma-variable-types.svg"
+                    alt="Figma variables Types"
+                    width={600}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Variable types available in Figma
+                  </p>
+                </div>
+                <p>
+                  These different types of tokens can be used in various ways to define style
+                  properties while designing components, elements, templates, pages, and more:
+                </p>
+                <ul className="list-disc list-inside ml-4 space-y-2 marker:text-stone-600">
+                  <li>
+                    <b>Color:</b> Semantic color tokens (primary, secondary, success, error, etc.)
+                  </li>
+                  <li>
+                    <b>Number:</b> Consistent spacing scale (4px, 8px, 12px, 16px, 24px, etc.)
+                  </li>
+                  <li>
+                    <b>String:</b> Font families, sizes, weights, line heights
+                  </li>
+                  <li>
+                    <b>Boolean:</b> Border radius, shadows, blur effects
+                  </li>
+                </ul>
+                <p>
+                  To get started using variables in Figma, open Variables panel via right sidebar
+                  and create a "Collection" in the Variables window. Each file has its own variables
+                  yet you can publish them via a team library. You can also move tokens between
+                  design files by copying and pasting.{' '}
+                </p>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/variables_sidebar_placement.svg"
+                    alt="Figma Variables Sidebar Placement"
+                    width={400}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">Placement of the Variables</p>
+                </div>
+                <p>
+                  Once you have created a collection, you can add variables to it by clicking the
+                  "Create Variable" button. You can also add variables to a collection by copying
+                  and pasting them from another collection.
+                </p>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/token_container.svg"
+                    alt="Example of variable usage in Figma o10n"
+                    width={1000}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">Example of variable usage</p>
+                </div>
+                <p>
+                  After defining the variables, you can start to use them in every aspect of your
+                  design system. You can use color-body-text-primary to all your body text elements.
+                  This will allow you to easily change the color of your body text by changing the
+                  value of the related color variable.
+                </p>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/token_usage_on_figma_component.svg"
+                    alt="Example of variable usage in Figma o10n"
+                    width={400}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Using tokens for width, height, gap, and padding
+                  </p>
+                </div>
+                <p>
+                  You can also use tokens for width, height, gap, and padding of your components.
+                  This will allow you to easily change the size of your components by changing the
+                  value of the related token.
+                </p>
+                <div className="flex w-auto mx-auto items-center justify-center">
+                  <InfoContainer
+                    color="cyan"
+                    icon={<FigmaIcon />}
+                    content="Learn more about using variables and tokens in Figma "
+                    to="https://help.figma.com/hc/en-us/articles/15339657135383-Guide-to-variables-in-Figma?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
+                    target="_blank"
+                    className="mt-6 mb-6"
+                  />
+                </div>
               </div>
             </div>
           </div>
-          <div className="BlogContent flex flex-col w-full   gap-4 ">
+          {/* * Section End * */}
+          {/* * Section Start * */}
+          <div
+            className="BlogContent flex flex-col w-full   gap-4 "
+            id="interaction-and-prototyping"
+          >
             <SectionTitle
-              title="2.8 Implementing Tokens in Figma"
+              title="6. Interaction & Prototyping"
               className="md:sticky md:top-[87px] md:self-start"
+              color="emerald"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
-                <p>
-                  Our goal was to improve account security with an additional layer of
-                  authentication—without creating friction or drop-off in user experience. We needed
-                  a solution that served both our individual (B2C) users and our enterprise clients
-                  with scalable and customizable options.
-                </p>
+                <p>Content</p>
               </div>
             </div>
           </div>
+          {/* * Section End * */}
+          {/* * Section Start * */}
+          <div className="BlogContent flex flex-col w-full   gap-4 ">
+            <SectionTitle
+              title="X.X title"
+              className="md:sticky md:top-[87px] md:self-start"
+              color="neutral"
+            />
+            <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+                <p>Content </p>
+              </div>
+            </div>
+          </div>
+          {/* * Section End * */}
+          {/* * Section Start * */}
+          <div className="BlogContent flex flex-col w-full   gap-4 ">
+            <SectionTitle
+              title="X.X title"
+              className="md:sticky md:top-[87px] md:self-start"
+              color="neutral"
+            />
+            <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+                <p>Content </p>
+              </div>
+            </div>
+          </div>
+          {/* * Section End * */}
+          {/* * Section Start * */}
+          <div className="BlogContent flex flex-col w-full   gap-4 ">
+            <SectionTitle
+              title="X.X title"
+              className="md:sticky md:top-[87px] md:self-start"
+              color="neutral"
+            />
+            <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+                <p>Content </p>
+              </div>
+            </div>
+          </div>
+          {/* * Section End * */}
+          {/* * Section Start * */}
+          <div className="BlogContent flex flex-col w-full   gap-4 ">
+            <SectionTitle
+              title="X.X title"
+              className="md:sticky md:top-[87px] md:self-start"
+              color="neutral"
+            />
+            <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+                <p>Content </p>
+              </div>
+            </div>
+          </div>
+          {/* * Section End * */}
+          {/* * Section Start * */}
+          <div className="BlogContent flex flex-col w-full   gap-4 ">
+            <SectionTitle
+              title="X.X title"
+              className="md:sticky md:top-[87px] md:self-start"
+              color="neutral"
+            />
+            <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+                <p>Content </p>
+              </div>
+            </div>
+          </div>
+          {/* * Section End * */}
+          {/* * Section Start * */}
+          <div className="BlogContent flex flex-col w-full   gap-4 ">
+            <SectionTitle
+              title="X.X title"
+              className="md:sticky md:top-[87px] md:self-start"
+              color="neutral"
+            />
+            <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+                <p>Content </p>
+              </div>
+            </div>
+          </div>
+          {/* * Section End * */}
+          {/* * Section Start * */}
+          <div className="BlogContent flex flex-col w-full   gap-4 ">
+            <SectionTitle
+              title="X.X title"
+              className="md:sticky md:top-[87px] md:self-start"
+              color="neutral"
+            />
+            <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+                <p>Content </p>
+              </div>
+            </div>
+          </div>
+          {/* * Section End * */}
+          <ThankYou
+            message="Thanks for taking the time to explore this project. I hope you enjoyed the deep dive into the process, challenges, and learnings behind it."
+            exploreBlocks={[
+              <Link key="jotform-logbook" href="/ideas/jotform-logbook" className="flex-1 h-full">
+                <div className="SectionBlock h-full p-6 flex flex-col justify-start items-start gap-2 cursor-pointer  hover:bg-orange-200 transition sm:border-b lg:border-b-0 lg:border-r border-stone-900">
+                  <div className="self-stretch text-stone-900 text-lg font-medium font-sans leading-normal">
+                    Jotform Logbook
+                  </div>
+                  <div className="self-stretch text-stone-900 text-md font-normal font-sans">
+                    An internal tool for better company awareness
+                  </div>
+                </div>
+              </Link>,
+              <Link key="brifl" href="/ideas/brifl" className="flex-1 h-full">
+                <div className="SectionBlock h-full p-6  flex flex-col justify-start items-start gap-2 cursor-pointer hover:bg-pink-200 transition">
+                  <div className="self-stretch text-stone-900 text-lg font-medium font-sans leading-normal">
+                    Brifl
+                  </div>
+                  <div className="self-stretch text-stone-900 text-md font-normal font-sans">
+                    A collaborative form-building platform designed to bridge the gap between
+                    creators and clients.
+                  </div>
+                </div>
+              </Link>,
+            ]}
+            simpleTabs={[
+              {
+                icon: <LanguageIcon />,
+                state: 'idle',
+                to: 'https://usekroma.com/',
+                className: 'h-full hover:bg-blue-100 border-r-0',
+              },
+            ]}
+          />
         </div>
         {/* * Sidebar Start * */}
         <div
           className="BlogSideBar flex flex-col px-4 py-3 items-start justify-start gap-4 w-full md:w-1/4 bg-amber-50 md:border-t border-stone-900 
             md:sticky md:top-[87px] md:self-start"
-          style={{ maxHeight: 'calc(100vh - 88px)' }}
+          style={{ height: 'auto' }}
         >
           <div className="flex flex-col gap-4">
-            <p className="text-2xl font-medium text-center text-stone-900">Table of Contents</p>
+            <p className="text-2xl font-medium text-center text-stone-900">In this article</p>
           </div>
           <div className="flex flex-col  gap-4">
             <TextLink className=" text-sm" label="Introduction" to="#introduction" />
+            <TextLink className=" text-sm" label="0. A Brief History" to="#a-brief-history" />
             <TextLink
               className=" text-sm"
               label="1. Understanding Components and Properties"
@@ -1315,38 +1986,99 @@ export class ButtonComponent {
               label="2. The Fundamentals of JS-Friendly Components"
               to="#the-fundamentals-of-js-friendly-components"
             />
+            <TextLink className=" text-sm" label="3. Structure & Naming" to="#structure-naming" />
             <TextLink
               className="ml-4  text-sm"
-              label="2.1 Structure & Naming"
-              to="#structure-naming"
+              label="3.1 Using Proper Auto-Layout with Frames"
+              to="#using-proper-auto-layout-with-frames"
             />
             <TextLink
               className="ml-4  text-sm"
-              label="2.2 Using Proper Auto-Layout with Frames in Figma"
-              to="#using-proper-auto-layout-with-frames-in-figma"
-            />
-            <TextLink
-              className="ml-4  text-sm"
-              label="2.3 Example: Button Component Structure"
+              label="3.2 Example: Button Component Structure"
               to="#example-button-component-structure"
             />
             <TextLink
               className="ml-4 text-sm "
-              label="2.4 Giving Meaningful Layer Names"
+              label="3.3 Giving Meaningful Layer Names"
               to="#giving-meaningful-layer-names"
             />
             <TextLink
-              className="ml-4  text-sm"
-              label="2.5 Component Properties in Figma"
-              to="#component-properties-in-figma"
+              className="  text-sm"
+              label="4. Component Properties"
+              to="#component-properties"
             />
-
-            <TextLink className="ml-4  text-sm" label="2.6 Tokenization" to="#tokenization" />
+            <TextLink
+              className=" ml-4 text-sm"
+              label="4.1 Property Naming Conventions"
+              to="#property-naming-conventions"
+            />
+            <TextLink
+              className="ml-4 text-sm"
+              label="4.2 Framework-Specific Implementation"
+              to="#framework-specific-implementation"
+            />
+            <TextLink className="  text-sm" label="5. Tokenization" to="#tokenization" />
             <TextLink
               className="ml-4  text-sm"
-              label="2.7 Implementing Tokens in Figma"
+              label="5.1 Definition of Design Token"
+              to="#definition-of-design-token"
+            />
+            <TextLink
+              className="ml-4  text-sm"
+              label="5.2 Implementing Tokens in Figma"
               to="#implementing-tokens-in-figma"
             />
+            <TextLink
+              className=" text-sm"
+              label="6. Interaction & Prototyping"
+              to="#interaction-and-prototyping"
+            />
+            <TextLink
+              className="ml-4  text-sm"
+              label="6.1 Essential States to Prototype"
+              to="#essential-states-to-prototype"
+            />
+            <TextLink
+              className="ml-4  text-sm"
+              label="6.2 Advanced Prototyping Patterns"
+              to="#advanced-prototyping-patterns"
+            />
+            <TextLink
+              className="ml-4  text-sm"
+              label="6.3 Interaction Specifications"
+              to="#interaction-specifications"
+            />
+            <TextLink
+              className="ml-4  text-sm"
+              label="6.4 Accessibility Considerations in Prototyping"
+              to="#accessibility-considerations-in-prototyping"
+            />
+            <TextLink
+              className="ml-4  text-sm"
+              label="6.5 Example: E-Commerce Product Card"
+              to="#example-e-commerce-product-card"
+            />
+            <TextLink
+              className="  text-sm"
+              label="7. Designing for Accessibility"
+              to="#designing-for-accessibility"
+            />
+            <TextLink
+              className="ml-4  text-sm"
+              label="7.1 Accessibility Principles"
+              to="#accessibility-principles"
+            />
+            <TextLink
+              className="ml-4  text-sm"
+              label="7.2 Focus States: Keyboard Navigation"
+              to="#focus-states-keyboard-navigation"
+            />
+            <TextLink
+              className="ml-4  text-sm"
+              label="7.3 Color Contrast Requirements"
+              to="#color-contrast-requirements"
+            />
+            <TextLink className=" text-sm" label="Conclusion" to="#conclusion" />
           </div>
         </div>
         {/* * Sidebar End * */}
