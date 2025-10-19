@@ -20,7 +20,6 @@ import DirectionsRunIcon from '@mui/icons-material/DirectionsRun';
 import Image from 'next/image';
 import Link from 'next/link';
 import TextLink from '@/components/TextLink';
-import SwapContent from '@/components/SwapContent';
 import InfoContainer from '@/components/InfoContainer';
 import IconButton from '@/components/IconButton';
 import { Code, CodeBlock, CodeHeader } from '@/components/animate-ui/components/animate/code';
@@ -77,6 +76,11 @@ const handleClickTwo = () => {
 const handleClickThree = () => {
   alert('Whereas the loading and tertiary buttons cannot be clicked, this primary one can.');
 };
+const handleClickFour = () => {
+  alert(
+    'This button container shows the default, hover, focus, loading, and disabled states of a button component.'
+  );
+};
 export default function ComponentDesignForJavaScriptFrameworks() {
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
@@ -120,7 +124,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
         </div>
       </div>
 
-      <div className="Summary__Content flex flex-col w-full  gap-4 lg:gap-12 p-6 lg:py-12 lg:px-60 text-xl items-center justify-center text-start font-regular text-stone-900">
+      <div className="Summary__Content flex flex-col w-full  gap-4 lg:gap-12 p-6 lg:py-12 lg:px-40 text-xl items-center justify-center text-start font-regular text-stone-900">
         <p>
           During product development, design must communicate with a variety of stakeholders,
           including researchers, product managers, developers, testers, data analysts, and others.
@@ -130,15 +134,26 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           misunderstandings are decreased, expectations and reality can be discussed, and design and
           development can coexist peacefully when everyone speaks the same language.
         </p>
+        <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 ">
+          <Image
+            src="/img/js-components/communication_freq_with_stakeholders.svg"
+            alt="Figma Local Variables Types"
+            width={600}
+            height={1}
+          />
+          <p className="text-center text-sm text-stone-600">
+            Approximate communication frequency with stakeholders for a designer
+          </p>
+        </div>
         <p>
           The current environment mostly recommends vibe design and vibe coding for product
-          development, but these approaches are not long-term viable. Furthermore, it can be
-          cathosrophic in the long term to design and develop without knowledge. Fundamental
-          understanding of several verticals, such as development, is necessary for designing a
-          sustainable product. To produce components, elements, and pages that are ready for
-          production, we product designers and design engineers must therefore have greater
-          knowledge about front-end development. It's better to know what's happening to our designs
-          after we deliver them to developers.
+          development, but these approaches are not long-term viable. Designing and developing
+          without knowledge is not sustainable. Furthermore, it can be cathosrophic in the long
+          term. Fundamental understanding of several verticals, such as development, is necessary
+          for designing a sustainable product. To produce components, elements, and pages that are
+          ready for production, we product designers and design engineers must therefore have
+          greater knowledge about front-end development. It's better to know what's happening to our
+          designs after we deliver them to developers.
         </p>
 
         <div className="Logo__Container flex flex-col md:flex-row items-center justify-center w-full gap-2 md:gap-12">
@@ -154,29 +169,27 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           <Image src="/img/icons/icon-vue.svg" alt="Vue Icon" width={72} height={1} />
           <Image src="/img/icons/icon-angular.svg" alt="Angular Icon" width={72} height={1} />
         </div>
+        <p className="text-center text-sm text-stone-600">From Figma to Code</p>
         <p>
           In this article, we'll explore best practices for designing components that developers can
           easily implement in applications. At the end of reading, you will have a solid
           understanding of:
-          <ul className="list-disc list-inside ml-4 lg:mt-8 space-y-2 marker:text-stone-600">
-            <li>
-              How Figma's Auto-Layout directly maps to CSS Flexbox, enabling you to design with code
-              structure in mind
-            </li>
-            <li>
-              Property naming conventions that work identically across all major JavaScript
-              frameworks
-            </li>
-            <li>
-              Design token implementation strategies for scalable theming and dark mode support
-            </li>
-            <li>Prototyping interactions and states for realistic UI behavior</li>
-            <li>
-              Complete accessibility guidelines including WCAG 2.2 compliance and keyboard
-              navigation patterns
-            </li>
-          </ul>
         </p>
+        <ul className="list-disc list-inside ml-4  space-y-4 marker:text-stone-600">
+          <li>
+            How Figma's Auto-Layout directly maps to CSS Flexbox, enabling you to design with code
+            structure in mind
+          </li>
+          <li>
+            Property naming conventions that work identically across all major JavaScript frameworks
+          </li>
+          <li>Design token implementation strategies for scalable theming and dark mode support</li>
+          <li>Prototyping interactions and states for realistic UI behavior</li>
+          <li>
+            Complete accessibility guidelines including WCAG 2.2 compliance and keyboard navigation
+            patterns
+          </li>
+        </ul>
         <p className=" font-semibold text-center text-stone-900 text-h3 font-sans lg:mt-8">
           Who benefits from reading this article?
         </p>
@@ -238,9 +251,9 @@ export default function ComponentDesignForJavaScriptFrameworks() {
       <div className="BlogBody flex flex-col md:flex-row gap-0 font-sans">
         <div className="BlogContentContainer flex flex-col w-full md:w-3/4  gap-4 md:border-r border-stone-900">
           {/* * Section Start * */}
-          <div className="BlogContent flex flex-col w-full   gap-4 " id="a-brief-history">
+          <div className="BlogContent flex flex-col w-full   gap-4 " id="history">
             <SectionTitle
-              title="0. A Brief History"
+              title="0. History"
               className="md:sticky md:top-[87px] md:self-start"
               color="emerald"
             />
@@ -661,11 +674,11 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 </p>
                 <ul className="list-disc list-inside ml-4 my-4 space-y-4 marker:text-stone-600">
                   <li>
-                    <b>Structure & Naming:</b> Using Auto-Layout and meaningful frame names to
-                    define HTML structure.
+                    <b>Structure:</b> Using Auto-Layout and meaningful frame names to define HTML
+                    structure.
                   </li>
                   <li>
-                    <b>Properties & Props:</b> Establishing clear, js-friendly component properties.
+                    <b>Properties:</b> Establishing clear, js-friendly component properties.
                   </li>
                   <li>
                     <b>Tokenization:</b> Applying design tokens for scalable theming.
@@ -681,12 +694,9 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               </div>
             </div>
           </div>
-          <div
-            className="BlogContent flex flex-col w-full gap-4 scroll-mt-[87px]"
-            id="structure-naming"
-          >
+          <div className="BlogContent flex flex-col w-full gap-4 scroll-mt-[87px]" id="structure">
             <SectionTitle
-              title="3. Structure & Naming"
+              title="3. Structure"
               className="md:sticky md:top-[87px] md:self-start"
               color="emerald"
             />
@@ -1090,10 +1100,10 @@ export default function ComponentDesignForJavaScriptFrameworks() {
 
           <div
             className="BlogContent flex flex-col w-full   gap-4 scroll-mt-[87px]"
-            id="component-properties"
+            id="properties"
           >
             <SectionTitle
-              title="4. Component Properties"
+              title="4. Properties"
               className="md:sticky md:top-[87px] md:self-start"
               color="emerald"
             />
@@ -1229,6 +1239,15 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   <li>Indicate optional behavior clearly (`startIcon?` or `iconStart?`)</li>
                   <li>Use consistent naming patterns across all components</li>
                 </ul>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/component__property_naming.svg"
+                    alt="Figma Property Naming Conventions"
+                    width={600}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">Property naming conventions</p>
+                </div>
                 <p>
                   While naming properties, consider giving meaningful names that convey the purpose
                   of the property. Following front-end conventions can help maintain consistency and
@@ -1476,7 +1495,7 @@ export class ButtonComponent {
                   If you are using CSS or CSS-in-JS, design tokens are typically implemented as CSS
                   variables (custom properties). You need to create your own primitive and component
                   tokens. If you want to skip the creating primitive tokens, it's best to use an
-                  existing open-source token library like TailwindCSS. Tailwind provides a
+                  existing open-source library like TailwindCSS. TailwindCSS provides a
                   comprehensive set of design tokens that cover colors, spacing, typography, and
                   more. You can then create component-specific tokens that reference these
                   primitives. For example, a button's primary background color token might reference
@@ -1621,7 +1640,7 @@ export class ButtonComponent {
 `}
                 >
                   <CodeHeader icon={CodeRoundedIcon} copyButton className="text-amber-50 h-16 px-6">
-                    Design Token Examples
+                    Design Token Documentation
                   </CodeHeader>
                   <CodeBlock lang="json" theme="dark" inView={true} cursor={true} />
                 </Code>
@@ -1805,120 +1824,444 @@ export class ButtonComponent {
           </div>
           {/* * Section End * */}
           {/* * Section Start * */}
-          <div
-            className="BlogContent flex flex-col w-full   gap-4 "
-            id="interaction-and-prototyping"
-          >
+          <div className="BlogContent flex flex-col w-full   gap-4 " id="interaction">
             <SectionTitle
-              title="6. Interaction & Prototyping"
+              title="6. Interaction"
               className="md:sticky md:top-[87px] md:self-start"
               color="emerald"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
-                <p>Content</p>
+                <p>
+                  Prototyping is one of the must-haves for delivering a production-ready component.
+                  It allows us to mimic real-time behaviors for actionable items. Today most UI
+                  elements have interactions. At least, a hover state is applicable for most of
+                  them. For instance, A button can redirect users to a different page, display a
+                  dialog, or open a drawer on the side. Adding an On Click event into a component in
+                  Figma actually helps developers while defining the “onClick” function on the
+                  component so they can define proper destination for the component.
+                </p>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/prototype_flow.svg"
+                    alt=" Button with hover and onClick actions"
+                    width={1200}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Button with hover and onClick actions
+                  </p>
+                </div>
+                <p>
+                  Various triggers and actions are available in Figma's prototype capabilities. Page
+                  transitions can be defined using triggering overlays, which are primarily utilized
+                  for drawers, dialog, and modals, as well as animations and destinations, which aid
+                  in defining navigation. We can simulate items that function just like we developed
+                  them by using component-level prototyping.When a component have interactions,
+                  developers can see those actions via Dev Mode in Figma, VS Code, or Cursor.
+                </p>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/hover_trigger_flow_sample.svg"
+                    alt="Interaction configurations for hover trigger"
+                    width={800}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Interaction configurations for hover trigger
+                  </p>
+                </div>
+                <p>
+                  Additionally, adding component interactions reveals the product's faults during
+                  the early stages of design. Configuring user flows is made possible by the usage
+                  of interactive components rather than static ones. Additionally, it is necessary
+                  for the initial testing of prototypes. If you conduct a usability test, you can
+                  use the prototype to test the user flows and interactions. Last but not least of
+                  the benefits is having interactive elements enables stakeholders to understand
+                  better while you are doing your presentations.
+                </p>
               </div>
             </div>
           </div>
           {/* * Section End * */}
           {/* * Section Start * */}
-          <div className="BlogContent flex flex-col w-full   gap-4 ">
+          <div
+            className="BlogContent flex flex-col w-full   gap-4 "
+            id="essential-states-to-prototype"
+          >
             <SectionTitle
-              title="X.X title"
+              title="6.1 Essential States to Prototype"
               className="md:sticky md:top-[87px] md:self-start"
               color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
-                <p>Content </p>
+                <p>
+                  Almost all of the components need to define various states. Every state serves a
+                  distinct function in displaying a component's status. While a hover state provides
+                  visual input regarding the interactivity, a default state displays the component's
+                  initial appearance. The cursor pointer's appearance may indicate that a component
+                  is draggable or contains an anchor link that will take us to a different location.
+                </p>
+                <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-60 lg:my-8 rounded-lg border border-stone-900 hover:bg-stone-50">
+                  <Button
+                    label="Default"
+                    type="secondary"
+                    size="medium"
+                    isDisabled={false}
+                    isLoading={false}
+                    onClick={handleClickFour}
+                  />
+                  <Button
+                    label="Hover"
+                    type="secondary"
+                    size="medium"
+                    isDisabled={false}
+                    isLoading={false}
+                    onClick={handleClickFour}
+                    className="bg-amber-100"
+                  />
+                  <Button
+                    label="Focus"
+                    type="secondary"
+                    size="medium"
+                    isDisabled={false}
+                    isLoading={false}
+                    onClick={handleClickFour}
+                    className="outline outline-2 outline-stone-900"
+                  />
+                  <Button
+                    label="Loading"
+                    type="secondary"
+                    size="medium"
+                    isDisabled={false}
+                    isLoading={true}
+                    className="h-[52px]"
+                  />
+                  <Button
+                    label="Disabled"
+                    type="secondary"
+                    size="medium"
+                    isDisabled={true}
+                    isLoading={false}
+                  />
+                </div>
+                <p className="text-center text-sm text-stone-600 lg:mb-6">
+                  Button component with default, hover, focus, loading, and disabled states
+                </p>
+                <p> Any interactive component needs to exhibit these fundamental states: </p>
+                <p className="font-semibold text-stone-900">Default State</p>
+                <ul className="list-disc list-inside ml-4 space-y-2 marker:text-stone-600">
+                  <li>How the component appears initially</li>
+                  <li>Resting state with no user interaction</li>
+                </ul>
+
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/Input_default.svg"
+                    alt="Default state of an input component"
+                    width={400}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Default state of an input component
+                  </p>
+                </div>
+                <p className="font-semibold text-stone-900 mt-4">Hover State</p>
+                <ul className="list-disc list-inside ml-4 space-y-2 marker:text-stone-600">
+                  <li>Visual feedback when pointer hovers over the element</li>
+                  <li>Cursor changes to indicate interactivity</li>
+                  <li>Subtle color shifts, elevations, or underlines</li>
+                </ul>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/Input_hover.svg"
+                    alt="Hover state of an input component"
+                    width={400}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Hover state of an input component
+                  </p>
+                </div>
+                <p className="font-semibold text-stone-900 mt-4">Focus State</p>
+                <ul className="list-disc list-inside ml-4 space-y-2 marker:text-stone-600">
+                  <li>Keyboard navigation indicator</li>
+                  <li>Critical for accessibility (WCAG compliance)</li>
+                  <li>Often a visible outline or highlight</li>
+                </ul>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/Input_focus.svg"
+                    alt="Focus state of an input component"
+                    width={400}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Focus state of an input component
+                  </p>
+                </div>
+                <p className="font-semibold text-stone-900 mt-4">Active/Pressed State</p>
+                <ul className="list-disc list-inside ml-4 space-y-2 marker:text-stone-600">
+                  <li>Visual feedback during click/tap</li>
+                  <li>Brief state showing the component is being activated</li>
+                  <li>Often a slight scale reduction or color darkening</li>
+                </ul>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/Input_active.svg"
+                    alt="Active/Pressed state of an input component"
+                    width={400}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Active/Pressed state of an input component
+                  </p>
+                </div>
+                <p className="font-semibold text-stone-900 mt-4">Disabled State</p>
+                <ul className="list-disc list-inside ml-4 space-y-2 marker:text-stone-600">
+                  <li>Non-interactive appearance</li>
+                  <li>Reduced opacity or grayed-out styling</li>
+                  <li>Cursor changes to "not-allowed"</li>
+                </ul>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/Input_disabled.svg"
+                    alt="Disabled state of an input component"
+                    width={400}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Disabled state of an input component
+                  </p>
+                </div>
+                <p className="font-semibold text-stone-900 mt-4">Loading State</p>
+                <ul className="list-disc list-inside ml-4 space-y-2 marker:text-stone-600">
+                  <li>Indicates asynchronous operations</li>
+                  <li>Often shows spinner or skeleton loader</li>
+                  <li>May disable interaction during loading</li>
+                </ul>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/Input_loading.svg"
+                    alt="Loading state of an input component"
+                    width={400}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Loading state of an input component
+                  </p>
+                </div>
+                <p className="font-semibold text-stone-900 mt-4">Error State</p>
+                <ul className="list-disc list-inside ml-4 space-y-2 marker:text-stone-600">
+                  <li>Displays validation errors or failures</li>
+                  <li>Red/warning colors, error icons, helper text</li>
+                  <li>Critical for form components</li>
+                </ul>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/Input_error.svg"
+                    alt="Error state of an input component"
+                    width={400}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Error state of an input component
+                  </p>
+                </div>
+                <p className="font-semibold text-stone-900 mt-4">Success State</p>
+                <ul className="list-disc list-inside ml-4 space-y-2 marker:text-stone-600">
+                  <li>Confirms successful operations</li>
+                  <li>Green/success colors, checkmarks, confirmation messages</li>
+                </ul>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/Input_success.svg"
+                    alt="Success state of an input component"
+                    width={400}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Success state of an input component
+                  </p>
+                </div>
               </div>
             </div>
           </div>
           {/* * Section End * */}
           {/* * Section Start * */}
-          <div className="BlogContent flex flex-col w-full   gap-4 ">
+          <div className="BlogContent flex flex-col w-full   gap-4 " id="triggers-and-actions">
             <SectionTitle
-              title="X.X title"
+              title="6.2 Triggers and Actions"
               className="md:sticky md:top-[87px] md:self-start"
               color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
-                <p>Content </p>
+                <p>
+                  Changing states of a component or assigning an onclick function requires defining
+                  triggers and actions. Figma offers various triggers and actions for both web and
+                  mobile experiences. To create an interactive component and functional interface in
+                  the design phase, you need to use triggers and actions functionality.{' '}
+                </p>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/interaction_flow_for_component.svg"
+                    alt="Interaction flow for a component"
+                    width={800}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Interaction flow for a component
+                  </p>
+                </div>
+                <p className="font-semibold text-stone-900 mt-4">Triggers</p>
+                <p>
+                  You can designate ten distinct triggers for your components in Figma. These
+                  triggers can be used to assign keyboard keys, click and drag, move the mouse
+                  pointer over an element, or delay a transition. The two triggers that designers
+                  use the most while designing are On Click and While Hovering. On Tap and On Drag
+                  might be your top picks if you're developing for mobile.{' '}
+                </p>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/figma_trigger_types.svg"
+                    alt="Figma interactiontrigger types"
+                    width={800}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Trigger types available in Figma
+                  </p>
+                </div>
+                <p className="font-semibold text-stone-900 mt-4">Actions</p>
+                <p>
+                  Actions are the functions that are executed when a trigger is activated. You can
+                  designate eleven distinct actions for your components in Figma. These actions
+                  define the behavior of the component when a trigger is activated.
+                </p>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/figma_action_types.svg"
+                    alt="Figma action types"
+                    width={680}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Action types available in Figma
+                  </p>
+                </div>
+                <p>
+                  Most common action when designing components and pages are Navigate, Scrool, Open,
+                  and Open Overlay. If you need to define complex behavior, you can use the
+                  Conditional, Set Variable, and Set Variable Mode. Conditional action type allows
+                  you to define IF/ELSE logic. Set Variable action type allows you to set a variable
+                  value. Set Variable Mode action type allows you to switch between different modes
+                  of a variable such as light mode, dark mode, and high contrast mode.
+                </p>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/on_click_example.svg"
+                    alt="On Click example"
+                    width={800}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Defining an On Click action on a button component to navigate user to pricing
+                    page
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* * Section End * */}
+
+          {/* * Section Start * */}
+          <div className="BlogContent flex flex-col w-full   gap-4 " id="conclusion">
+            <SectionTitle
+              title="Conclusion"
+              className="md:sticky md:top-[87px] md:self-start"
+              color="lime"
+            />
+            <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+                <p>
+                  Design is an iterative process that involves collaborating with multiple
+                  stakeholders. Among these, developers are often your closest partners and require
+                  the most detailed support from designers. If you understand and start to apply the
+                  principles of component design, you will be able to create components that are
+                  easy to understand, maintain, and scale.
+                </p>
+                <p>By understanding how design decisions affect development, we can:</p>
+                <ul className="list-disc list-inside ml-4 space-y-2 marker:text-stone-600">
+                  <li>Reduce implementation time</li>
+                  <li>Minimize miscommunication</li>
+                  <li>Improve code quality</li>
+                  <li>Enable faster iteration</li>
+                  <li>Scale design systems</li>
+                </ul>
+                <p>
+                  The best components aren't just beautiful. They are thoughtfully structured,
+                  clearly documented, and ready to become excellent in development.
+                </p>
               </div>
             </div>
           </div>
           {/* * Section End * */}
           {/* * Section Start * */}
-          <div className="BlogContent flex flex-col w-full   gap-4 ">
+          <div className="BlogContent flex flex-col w-full   gap-4 " id="references">
             <SectionTitle
-              title="X.X title"
+              title="References"
               className="md:sticky md:top-[87px] md:self-start"
               color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
-                <p>Content </p>
+                <a
+                  href="https://www.amazon.com/JavaScript-Comprehensive-Learning-Professional-Programming/dp/1493222864?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-stone-600 hover:text-stone-900 hover:underline transition"
+                >
+                  ✤ Ackermann, P. (2022). JavaScript: The Comprehensive Guide.
+                </a>
+                <a
+                  href="https://www.wiley.com/en-us/HTML+and+CSS%3A+Design+and+Build+Websites-p-9781118206911?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-stone-600 hover:text-stone-900 hover:underline transition"
+                >
+                  ✤ Duckett, J. (2011). HTML and CSS: Design and Build Websites. John Wiley & Sons.
+                </a>
+                <a
+                  href="https://jackrusher.com/classic-ux/?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-stone-600 hover:text-stone-900 hover:underline transition"
+                >
+                  ✤ Classic HCI demos. (n.d.).
+                </a>
+                <a
+                  href="https://clarle.github.io/yui3/?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-stone-600 hover:text-stone-900 hover:underline transition"
+                >
+                  ✤ YUI Library. (n.d.).
+                </a>
+                <a
+                  href="https://atomicdesign.bradfrost.com/?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-stone-600 hover:text-stone-900 hover:underline transition"
+                >
+                  ✤ Atomic Design by Brad Frost. (n.d.).
+                </a>
               </div>
             </div>
           </div>
           {/* * Section End * */}
-          {/* * Section Start * */}
-          <div className="BlogContent flex flex-col w-full   gap-4 ">
-            <SectionTitle
-              title="X.X title"
-              className="md:sticky md:top-[87px] md:self-start"
-              color="neutral"
-            />
-            <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
-                <p>Content </p>
-              </div>
-            </div>
-          </div>
-          {/* * Section End * */}
-          {/* * Section Start * */}
-          <div className="BlogContent flex flex-col w-full   gap-4 ">
-            <SectionTitle
-              title="X.X title"
-              className="md:sticky md:top-[87px] md:self-start"
-              color="neutral"
-            />
-            <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
-                <p>Content </p>
-              </div>
-            </div>
-          </div>
-          {/* * Section End * */}
-          {/* * Section Start * */}
-          <div className="BlogContent flex flex-col w-full   gap-4 ">
-            <SectionTitle
-              title="X.X title"
-              className="md:sticky md:top-[87px] md:self-start"
-              color="neutral"
-            />
-            <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
-                <p>Content </p>
-              </div>
-            </div>
-          </div>
-          {/* * Section End * */}
-          {/* * Section Start * */}
-          <div className="BlogContent flex flex-col w-full   gap-4 ">
-            <SectionTitle
-              title="X.X title"
-              className="md:sticky md:top-[87px] md:self-start"
-              color="neutral"
-            />
-            <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
-                <p>Content </p>
-              </div>
-            </div>
-          </div>
-          {/* * Section End * */}
+
           <ThankYou
             message="Thanks for taking the time to explore this project. I hope you enjoyed the deep dive into the process, challenges, and learnings behind it."
             exploreBlocks={[
@@ -1964,10 +2307,10 @@ export class ButtonComponent {
             <p className="text-2xl font-medium text-center text-stone-900">In this article</p>
           </div>
           <div className="flex flex-col  gap-4">
-            <TextLink className=" text-sm" label="Introduction" to="#introduction" />
-            <TextLink className=" text-sm" label="0. A Brief History" to="#a-brief-history" />
+            <TextLink className=" font-semibold text-sm" label="Introduction" to="#introduction" />
+            <TextLink className=" font-semibold text-sm" label="0. History" to="#history" />
             <TextLink
-              className=" text-sm"
+              className=" font-semibold text-sm"
               label="1. Understanding Components and Properties"
               to="#understanding-components-and-properties"
             />
@@ -1982,11 +2325,11 @@ export class ButtonComponent {
               to="#what-is-a-property"
             />
             <TextLink
-              className=" text-sm"
+              className=" font-semibold text-sm"
               label="2. The Fundamentals of JS-Friendly Components"
               to="#the-fundamentals-of-js-friendly-components"
             />
-            <TextLink className=" text-sm" label="3. Structure & Naming" to="#structure-naming" />
+            <TextLink className=" font-semibold text-sm" label="3. Structure" to="#structure" />
             <TextLink
               className="ml-4  text-sm"
               label="3.1 Using Proper Auto-Layout with Frames"
@@ -2002,11 +2345,7 @@ export class ButtonComponent {
               label="3.3 Giving Meaningful Layer Names"
               to="#giving-meaningful-layer-names"
             />
-            <TextLink
-              className="  text-sm"
-              label="4. Component Properties"
-              to="#component-properties"
-            />
+            <TextLink className=" font-semibold text-sm" label="4. Properties" to="#properties" />
             <TextLink
               className=" ml-4 text-sm"
               label="4.1 Property Naming Conventions"
@@ -2017,7 +2356,11 @@ export class ButtonComponent {
               label="4.2 Framework-Specific Implementation"
               to="#framework-specific-implementation"
             />
-            <TextLink className="  text-sm" label="5. Tokenization" to="#tokenization" />
+            <TextLink
+              className="font-semibold  text-sm"
+              label="5. Tokenization"
+              to="#tokenization"
+            />
             <TextLink
               className="ml-4  text-sm"
               label="5.1 Definition of Design Token"
@@ -2028,11 +2371,7 @@ export class ButtonComponent {
               label="5.2 Implementing Tokens in Figma"
               to="#implementing-tokens-in-figma"
             />
-            <TextLink
-              className=" text-sm"
-              label="6. Interaction & Prototyping"
-              to="#interaction-and-prototyping"
-            />
+            <TextLink className=" font-semibold text-sm" label="6. Interaction" to="#interaction" />
             <TextLink
               className="ml-4  text-sm"
               label="6.1 Essential States to Prototype"
@@ -2040,45 +2379,12 @@ export class ButtonComponent {
             />
             <TextLink
               className="ml-4  text-sm"
-              label="6.2 Advanced Prototyping Patterns"
-              to="#advanced-prototyping-patterns"
+              label="6.2 Triggers and Actions"
+              to="#triggers-and-actions"
             />
-            <TextLink
-              className="ml-4  text-sm"
-              label="6.3 Interaction Specifications"
-              to="#interaction-specifications"
-            />
-            <TextLink
-              className="ml-4  text-sm"
-              label="6.4 Accessibility Considerations in Prototyping"
-              to="#accessibility-considerations-in-prototyping"
-            />
-            <TextLink
-              className="ml-4  text-sm"
-              label="6.5 Example: E-Commerce Product Card"
-              to="#example-e-commerce-product-card"
-            />
-            <TextLink
-              className="  text-sm"
-              label="7. Designing for Accessibility"
-              to="#designing-for-accessibility"
-            />
-            <TextLink
-              className="ml-4  text-sm"
-              label="7.1 Accessibility Principles"
-              to="#accessibility-principles"
-            />
-            <TextLink
-              className="ml-4  text-sm"
-              label="7.2 Focus States: Keyboard Navigation"
-              to="#focus-states-keyboard-navigation"
-            />
-            <TextLink
-              className="ml-4  text-sm"
-              label="7.3 Color Contrast Requirements"
-              to="#color-contrast-requirements"
-            />
-            <TextLink className=" text-sm" label="Conclusion" to="#conclusion" />
+
+            <TextLink className="font-semibold  text-sm" label="Conclusion" to="#conclusion" />
+            <TextLink className="font-semibold text-sm" label="References" to="#references" />
           </div>
         </div>
         {/* * Sidebar End * */}
