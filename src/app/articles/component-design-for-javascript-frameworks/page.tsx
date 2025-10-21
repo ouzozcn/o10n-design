@@ -91,6 +91,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           <h1 className="text-xl md:text-2xl font-sans text-stone-900">
             Component Design for JavaScript Frameworks
           </h1>
+          {/*
           <Button
             label="Storybook Repo"
             type="secondary"
@@ -99,6 +100,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             to="http://o10n.design/docs/index.html?path=/docs/components-button--docs"
             target="_blank"
           />
+          */}
         </div>
       </div>
       <div className="PageImage flex p-8 w-full h-60 md:h-auto bg-cyan-50 border-b border-stone-900 justify-center items-center gap-4">
@@ -124,7 +126,14 @@ export default function ComponentDesignForJavaScriptFrameworks() {
         </div>
       </div>
 
-      <div className="Summary__Content flex flex-col w-full  gap-4 lg:gap-12 p-6 lg:py-12 lg:px-40 text-xl items-center justify-center text-start font-regular text-stone-900">
+      <div className="Summary__Content flex flex-col w-full  gap-4 lg:gap-12 p-6 lg:py-12 lg:px-40 text-xl items-center justify-center text-justify font-regular text-stone-900">
+        <p>
+          The landscape of product design nowadays requires many more skills, knowledge, and
+          expertise. We designers have learned about research methods for understanding user needs,
+          data analysis for product creation, psychology for understanding others, and other
+          disciplines. Another important area where we may improve personally and learn new things
+          is front-end development, which is also the goal of this article.
+        </p>
         <p>
           During product development, design must communicate with a variety of stakeholders,
           including researchers, product managers, developers, testers, data analysts, and others.
@@ -138,7 +147,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           <Image
             src="/img/js-components/communication_freq_with_stakeholders.svg"
             alt="Figma Local Variables Types"
-            width={600}
+            width={500}
             height={1}
           />
           <p className="text-center text-sm text-stone-600">
@@ -147,13 +156,12 @@ export default function ComponentDesignForJavaScriptFrameworks() {
         </div>
         <p>
           The current environment mostly recommends vibe design and vibe coding for product
-          development, but these approaches are not long-term viable. Designing and developing
-          without knowledge is not sustainable. Furthermore, it can be cathosrophic in the long
-          term. Fundamental understanding of several verticals, such as development, is necessary
-          for designing a sustainable product. To produce components, elements, and pages that are
-          ready for production, we product designers and design engineers must therefore have
-          greater knowledge about front-end development. It's better to know what's happening to our
-          designs after we deliver them to developers.
+          development yet these approaches are not sustainable in the long run. Furthermore, it can
+          be cathosrophic in the long term. Fundamental understanding of several verticals, such as
+          development, is necessary for designing a sustainable product. To produce components,
+          elements, and pages that are ready for production, we product designers and design
+          engineers must therefore have greater knowledge and intent about front-end development.
+          It's better to know what's happening to our designs after we deliver them to developers.
         </p>
 
         <div className="Logo__Container flex flex-col md:flex-row items-center justify-center w-full gap-2 md:gap-12">
@@ -251,7 +259,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
       <div className="BlogBody flex flex-col md:flex-row gap-0 font-sans">
         <div className="BlogContentContainer flex flex-col w-full md:w-3/4  gap-4 md:border-r border-stone-900">
           {/* * Section Start * */}
-          <div className="BlogContent flex flex-col w-full   gap-4 " id="history">
+          {/* <div className="BlogContent flex flex-col w-full   gap-4 " id="history">
             <SectionTitle
               title="0. History"
               className="md:sticky md:top-[87px] md:self-start"
@@ -327,7 +335,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* * Section End * */}
           <div
             className="BlogContent flex flex-col w-full gap-4 scroll-mt-[87px]"
@@ -2308,7 +2316,7 @@ export class ButtonComponent {
           </div>
           <div className="flex flex-col  gap-4">
             <TextLink className=" font-semibold text-sm" label="Introduction" to="#introduction" />
-            <TextLink className=" font-semibold text-sm" label="0. History" to="#history" />
+            {/* <TextLink className=" font-semibold text-sm" label="0. History" to="#history" /> */}
             <TextLink
               className=" font-semibold text-sm"
               label="1. Understanding Components and Properties"
