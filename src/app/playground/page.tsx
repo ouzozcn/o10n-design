@@ -6,12 +6,14 @@ import Button from '@/components/Button';
 import CachedRoundedIcon from '@mui/icons-material/CachedRounded';
 import Footer from '@/components/Footer';
 
+import DesignSkillPie from '@/components/data-vis/DesignSkillPie';
 {
   /* Component dependencies start*/
 }
 /// import any components you plan to use in the playground here
-
-import { ResponsiveTreeMapCanvas } from '@nivo/treemap';
+import { PieChart } from '@mui/x-charts/PieChart';
+import { DefaultizedPieValueType } from '@mui/x-charts/models';
+import { Tooltip } from 'react-tooltip';
 {
   /* Component dependencies end */
 }
@@ -169,6 +171,27 @@ const treeMapData = {
   ],
 };
 
+const designerSkillsData = [
+  { value: 30, label: 'Soft Skills', color: '#facc15', formattedValue: '30%' },
+  { value: 25, label: 'Design Process', color: '#38bdf8', formattedValue: '25%' },
+  { value: 20, label: 'Front-end Skills', color: '#a3e635', formattedValue: '20%' },
+  { value: 12, label: 'User Research', color: '#2dd4bf', formattedValue: '12%' },
+  { value: 8, label: 'Emerging Tech (AI/No-code)', color: '#e879f9', formattedValue: '8%' },
+  { value: 5, label: 'Business Strategy', color: '#fb7185', formattedValue: '5%' },
+];
+
+const size = {
+  width: 400,
+  height: 400,
+  margin: { bottom: 15 },
+};
+const TOTAL = designerSkillsData.map(item => item.value).reduce((a, b) => a + b, 0);
+
+const getArcLabel = (params: DefaultizedPieValueType) => {
+  const percent = params.value / TOTAL;
+  return `${(percent * 100).toFixed(0)}%`;
+};
+
 export default function Playground() {
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
@@ -192,30 +215,32 @@ export default function Playground() {
         </div>
       </div>
       <div className="Body__Playground flex flex-col  w-full h-dvh ">
-        <div className="Playground__Nav flex flex-col md:flex-row w-full min-h-24 items-center justify-center  gap-4 lg:gap-24 bg-amber-200  border-b lg:p-8 border-stone-900 ">
-          <div className="flex-col gap-2">
-            <div className="text-md ">Current Project</div>
-            <div className="text-lg font-semibold">Project Name Goes Here</div>
-          </div>
-          <div className="flex-col gap-2">
-            <div className="text-md  "> Start Date</div>
-            <div className="text-lg font-semibold">Project Start Date Goes Here</div>
-          </div>
+        <div className="Playground__Nav flex flex-col md:flex-row w-full h-auto items-center justify-center   bg-amber-200  border-b p-4 border-stone-900 ">
+          <div className="text-md ">Charts</div>
         </div>
         {/* Content Start*/}
         {/* Content Start*/}
         {/* Content Start*/}
-        <ResponsiveTreeMapCanvas
-          data={treeMapData}
-          value="value"
-          margin={{ top: 10, right: 10, bottom: 10, left: 10 }}
-          tile="squarify"
-          innerPadding={2}
-          padRootToSquare={true}
-          borderWidth={1}
-          borderColor="rgba(0, 0, 0, 0.1)"
-        />
-
+        <div className="w-full h-full flex items-center gap-4 justify-center">
+          <PieChart
+            series={[
+              {
+                data: designerSkillsData,
+                highlightScope: { fade: 'global', highlight: 'item' },
+                arcLabel: getArcLabel,
+                innerRadius: 30,
+              },
+            ]}
+            {...size}
+            slotProps={{
+              legend: {
+                direction: 'horizontal',
+                position: { vertical: 'bottom', horizontal: 'center' },
+              },
+            }}
+          ></PieChart>
+          <DesignSkillPie />
+        </div>
         {/* Content End*/}
         {/* Content End*/}
         {/* Content End*/}
