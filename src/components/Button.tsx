@@ -6,7 +6,7 @@ import Link from 'next/link';
 export interface ButtonProps {
   label: string;
   type?: 'primary' | 'secondary' | 'tertiary';
-  size?: 'small' | 'medium' | 'large';
+  size?: 'small' | 'medium' | 'large' | 'xlarge';
   startIcon?: React.ReactNode;
   endIcon?: React.ReactNode;
   isDisabled?: boolean;
@@ -23,7 +23,7 @@ const typeClasses = {
   primary:
     'h-auto bg-stone-800 text-neutral-50 hover:bg-stone-900 rounded-md justify-center items-center gap-1 inline-flex',
   secondary:
-    'h-auto bg-transparent rounded-md border-2 border-stone-900 hover:bg-amber-100 justify-center items-center gap-1 inline-flex',
+    'h-auto bg-transparent rounded-md  border-2 border-stone-900 hover:bg-amber-100 justify-center items-center gap-1 inline-flex',
   tertiary:
     'h-auto bg-transparent rounded-md hover:bg-amber-100 justify-center items-center gap-1 inline-flex',
 };
@@ -32,6 +32,7 @@ const sizeClasses = {
   small: 'px-2 py-2 text-sm',
   medium: 'px-3 py-3 text-md',
   large: 'px-6 py-3 text-lg',
+  xlarge: 'px-8 py-6 text-xl',
 };
 
 const isExternal = (url?: string) => url && /^https?:\/\//.test(url);

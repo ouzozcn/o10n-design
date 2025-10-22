@@ -15,7 +15,7 @@ export const Footer: React.FC = () => {
             Oğuzhan Özcan
           </div>
           <div className="text-stone-600 text-lg text-center md:text-left font-normal font-sans">
-            Product Designer && Design Engineer
+            Product Designer & Design Engineer
           </div>
         </div>
         <div className="FooterSocial flex w-auto lg:w-1/3 justify-start items-center py-4 px-4 md:px-8 gap-2">

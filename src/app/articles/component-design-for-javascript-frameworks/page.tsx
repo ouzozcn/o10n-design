@@ -26,6 +26,7 @@ import { Code, CodeBlock, CodeHeader } from '@/components/animate-ui/components/
 import ContentCard from '@/components/ContentCard';
 import FigmaIcon from '@/components/icons/Figma';
 import StorybookIcon from '@/components/icons/Storybook';
+import DesignSkillPie from '@/components/data-vis/DesignSkillPie';
 /*
 export const metadata: Metadata = {
   title: 'Component Design for JavaScript Frameworks | Design to Code Best Practices',
@@ -81,6 +82,56 @@ const handleClickFour = () => {
     'This button container shows the default, hover, focus, loading, and disabled states of a button component.'
   );
 };
+const buttonFactsOne = () => {
+  alert(
+    'ℹ️ The first web button was created in 1993.  The Mosaic browser introduced the <input type="button"> element. Before that, all web interactions were just hyperlinked text!'
+  );
+};
+const buttonFactsTwo = () => {
+  alert(
+    'ℹ️ The word "button" in UI comes from actual clothing buttons — Early computer interfaces borrowed heavily from physical metaphors. Buttons were designed to look "pushable" with beveled edges and shadows, mimicking real-world buttons you could press.'
+  );
+};
+const buttonFactsThree = () => {
+  alert(
+    'ℹ️ The optimal button border-radius is 4-8 pixels — Studies show that slightly rounded corners (4-8px) are processed 17% faster by our brains than sharp corners, which our minds perceive as slightly threatening.'
+  );
+};
+const buttonFactsFour = () => {
+  alert(
+    'ℹ️ Ghost buttons increase cart abandonment by 20-30% — Despite being trendy, ghost buttons perform significantly worse than solid buttons for primary actions.'
+  );
+};
+const buttonFactsFive = () => {
+  alert(
+    'ℹ️ Japanese websites have 3x more buttons — Japanese web design typically features significantly more buttons and options on a single page compared to Western minimalist designs.'
+  );
+};
+const buttonFactsSix = () => {
+  alert(
+    'ℹ️ The average button click takes 200ms — Studies show that the average time it takes for a user to click a button is 200ms, which is a significant amount of time.'
+  );
+};
+const buttonFactsSeven = () => {
+  alert(
+    'ℹ️ The average user encounters 100+ buttons daily — From elevator buttons to smartphone apps, the average person interacts with over 100 buttons per day, yet only consciously notices about 10% of them.'
+  );
+};
+const buttonFactsEight = () => {
+  alert(
+    'ℹ️ Buttons cause "decision fatigue" — Studies show that presenting users with more than 3-5 button options significantly increases abandonment rates. This is why good UX design emphasizes primary, secondary, and tertiary button hierarchies.'
+  );
+};
+const buttonFactsNine = () => {
+  alert(
+    'ℹ️ The average user clicks a button 3-5 times per day — From elevator buttons to smartphone apps, the average person interacts with over 100 buttons per day, yet only consciously notices about 10% of them.'
+  );
+};
+const buttonFactsTen = () => {
+  alert(
+    'ℹ️ "Sign Up" beats "Register" by 60% — Changing button copy from "Register" to "Sign Up" can increase conversions by up to 60%. "Register" feels formal and commitment-heavy, while "Sign Up" feels casual and reversible.'
+  );
+};
 export default function ComponentDesignForJavaScriptFrameworks() {
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
@@ -91,6 +142,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           <h1 className="text-xl md:text-2xl font-sans text-stone-900">
             Component Design for JavaScript Frameworks
           </h1>
+          {/*
           <Button
             label="Storybook Repo"
             type="secondary"
@@ -99,6 +151,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             to="http://o10n.design/docs/index.html?path=/docs/components-button--docs"
             target="_blank"
           />
+          */}
         </div>
       </div>
       <div className="PageImage flex p-8 w-full h-60 md:h-auto bg-cyan-50 border-b border-stone-900 justify-center items-center gap-4">
@@ -124,56 +177,74 @@ export default function ComponentDesignForJavaScriptFrameworks() {
         </div>
       </div>
 
-      <div className="Summary__Content flex flex-col w-full  gap-4 lg:gap-12 p-6 lg:py-12 lg:px-40 text-xl items-center justify-center text-start font-regular text-stone-900">
+      <div className="Summary__Content flex flex-col w-full  gap-4 lg:gap-12 p-6 lg:py-12 lg:px-40 text-xl items-center justify-center text-justify font-regular text-stone-900">
+        <p>
+          The landscape of product design nowadays requires many more skills, knowledge, and
+          expertise. We designers have learned about research methods for understanding user needs,
+          data analysis for product growth, psychology for understanding others, and list goes on.
+          Another important area where we may improve personally and learn new things is front-end
+          development which is an emerging skill that is becoming more and more important. Analysis
+          of current job market data shows that one in five Product Designer positions now requires
+          front-end development knowledge which is a clear signal that technical skills have shifted
+          from optional to essential.
+        </p>
+        <div className="w-full h-full flex flex-col items-center justify-center">
+          <DesignSkillPie />
+          <p className="text-center text-sm mt-4 text-stone-600">
+            Most required skills in job listings for Product Designers in 2024-2025 (
+            <a
+              href="/assets/documents/research/Product_Designer_Skills_Employers_Want_Most_in_2024_2025.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-cyan-700 hover:text-cyan-900"
+            >
+              Source: Claude Deep Search
+            </a>
+            ).
+          </p>
+        </div>
+        <p>
+          The skills that are currently most important for product designers are displayed in the
+          above chart. We need to learn more about these skills in order to find a better fit in the
+          present technology environment. I'll attempt to break down the "Front-End" knowledge in
+          this article and explain how to create components that are simple to implement in code by
+          following to a few fundamental front-end development concepts. You will eventually be able
+          to comprehend the relationships between properties and props, design tokens and theming,
+          frames and HTML structure, and interactions with prototypes.
+        </p>
+        <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+          <Image
+            src="/img/js-components/fundamentals_of_components_hexagon.svg"
+            alt="The Fundamentals of JS-Friendly Components"
+            width={800}
+            height={1}
+          />
+          <p className="text-center text-sm text-stone-600">Topics covered in this article</p>
+        </div>
         <p>
           During product development, design must communicate with a variety of stakeholders,
           including researchers, product managers, developers, testers, data analysts, and others.
           But developers are probably the ones we see, talk to, and discuss the most. We talk about
-          every little element of a product with our fellow engineers and developers. Common
-          knowledge is essential for a more productive workplace. Communication is improved,
-          misunderstandings are decreased, expectations and reality can be discussed, and design and
-          development can coexist peacefully when everyone speaks the same language.
+          every little element of a product with them. Common knowledge is essential for a more
+          productive workplace. Communication is improved, misunderstandings are decreased,
+          expectations and reality can be discussed, and design and development can coexist
+          peacefully when everyone speaks the same language.
         </p>
         <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 ">
           <Image
             src="/img/js-components/communication_freq_with_stakeholders.svg"
-            alt="Figma Local Variables Types"
-            width={600}
+            alt="Communication frequency with stakeholders for a designer"
+            width={500}
             height={1}
           />
           <p className="text-center text-sm text-stone-600">
             Approximate communication frequency with stakeholders for a designer
           </p>
         </div>
-        <p>
-          The current environment mostly recommends vibe design and vibe coding for product
-          development, but these approaches are not long-term viable. Designing and developing
-          without knowledge is not sustainable. Furthermore, it can be cathosrophic in the long
-          term. Fundamental understanding of several verticals, such as development, is necessary
-          for designing a sustainable product. To produce components, elements, and pages that are
-          ready for production, we product designers and design engineers must therefore have
-          greater knowledge about front-end development. It's better to know what's happening to our
-          designs after we deliver them to developers.
-        </p>
 
-        <div className="Logo__Container flex flex-col md:flex-row items-center justify-center w-full gap-2 md:gap-12">
-          <Image src="/img/icons/icon-figma.svg" alt="Figma Icon" width={72} height={1} />
-          <Image
-            src="/img/icons/icon-arrow-right.svg"
-            alt="Arrow Right Icon"
-            width={72}
-            height={1}
-          />
-          <Image src="/img/icons/icon-react.svg" alt="React Icon" width={72} height={1} />
-          <Image src="/img/icons/icon-svelte.svg" alt="Svelte Icon" width={72} height={1} />
-          <Image src="/img/icons/icon-vue.svg" alt="Vue Icon" width={72} height={1} />
-          <Image src="/img/icons/icon-angular.svg" alt="Angular Icon" width={72} height={1} />
-        </div>
-        <p className="text-center text-sm text-stone-600">From Figma to Code</p>
         <p>
-          In this article, we'll explore best practices for designing components that developers can
-          easily implement in applications. At the end of reading, you will have a solid
-          understanding of:
+          In this article, we'll explore best practices for designing components for JavaScript
+          frameworks and libraries. At the end of reading, you will have a solid understanding of:
         </p>
         <ul className="list-disc list-inside ml-4  space-y-4 marker:text-stone-600">
           <li>
@@ -190,6 +261,20 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             patterns
           </li>
         </ul>
+        <div className="Logo__Container flex flex-col md:flex-row items-center justify-center w-full gap-2 md:gap-12">
+          <Image src="/img/icons/icon-figma.svg" alt="Figma Icon" width={72} height={1} />
+          <Image
+            src="/img/icons/icon-arrow-right.svg"
+            alt="Arrow Right Icon"
+            width={72}
+            height={1}
+          />
+          <Image src="/img/icons/icon-react.svg" alt="React Icon" width={72} height={1} />
+          <Image src="/img/icons/icon-svelte.svg" alt="Svelte Icon" width={72} height={1} />
+          <Image src="/img/icons/icon-vue.svg" alt="Vue Icon" width={72} height={1} />
+          <Image src="/img/icons/icon-angular.svg" alt="Angular Icon" width={72} height={1} />
+        </div>
+        <p className="text-center text-sm text-stone-600">From Figma to Code</p>
         <p className=" font-semibold text-center text-stone-900 text-h3 font-sans lg:mt-8">
           Who benefits from reading this article?
         </p>
@@ -251,7 +336,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
       <div className="BlogBody flex flex-col md:flex-row gap-0 font-sans">
         <div className="BlogContentContainer flex flex-col w-full md:w-3/4  gap-4 md:border-r border-stone-900">
           {/* * Section Start * */}
-          <div className="BlogContent flex flex-col w-full   gap-4 " id="history">
+          {/* <div className="BlogContent flex flex-col w-full   gap-4 " id="history">
             <SectionTitle
               title="0. History"
               className="md:sticky md:top-[87px] md:self-start"
@@ -327,7 +412,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* * Section End * */}
           <div
             className="BlogContent flex flex-col w-full gap-4 scroll-mt-[87px]"
@@ -578,62 +663,166 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <p className="text-center text-sm text-stone-600 lg:mb-6">
                   Button component with different property configurations
                 </p>
-                <p>Similarly, a button component might have properties like:</p>
-                <ul className="list-disc list-inside ml-4 mt-4 space-y-4 marker:text-stone-600">
-                  <li>
-                    <code>
-                      <b>label</b>
-                    </code>{' '}
-                    (string) : The button text
-                  </li>
-                  <li>
-                    <code>
-                      <b>type</b>
-                    </code>{' '}
-                    (variant) : primary | secondary | tertiary
-                  </li>
-                  <li>
-                    <code>
-                      <b>size</b>
-                    </code>{' '}
-                    (variant) : small | medium | large
-                  </li>
-                  <li>
-                    <code>
-                      <b>isDisabled</b>
-                    </code>{' '}
-                    (boolean) : Whether the button is interactive
-                  </li>
-                  <li>
-                    <code>
-                      <b>isLoading</b>
-                    </code>{' '}
-                    (boolean) : Shows loading spinner
-                  </li>
-                  <li>
-                    <code>
-                      <b>startIcon</b>
-                    </code>{' '}
-                    (component instance) : Optional icon before text
-                  </li>
-                  <li>
-                    <code>
-                      <b>endIcon</b>
-                    </code>{' '}
-                    (component instance) : Optional icon after text
-                  </li>
-                  <li>
-                    <code>
-                      <b>onClick</b>
-                    </code>{' '}
-                    (action) : What happens when clicked
-                  </li>
-                </ul>
+                <p className="mb-4">Similarly, a button component might have properties like:</p>
+                {/*  button block for prop showcase} */}
+                <code>
+                  <b>label:</b> string
+                </code>
+                <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-24 lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
+                  <Button
+                    label="I am label"
+                    type="primary"
+                    size="medium"
+                    className="w-[200px]"
+                    isDisabled={false}
+                    isLoading={false}
+                    onClick={buttonFactsOne}
+                  />
+                </div>
+                {/*  button block for prop showcase} */}
+                {/*  button block for prop showcase} */}
+                <code>
+                  <b>type:</b> enum ('primary' | 'secondary' | 'tertiary')
+                </code>
+                <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-auto p-4   lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
+                  <Button
+                    label="I am primary"
+                    type="primary"
+                    size="medium"
+                    isDisabled={false}
+                    isLoading={false}
+                    onClick={buttonFactsTwo}
+                  />
+                  <Button
+                    label="I am secondary"
+                    type="secondary"
+                    size="medium"
+                    isDisabled={false}
+                    isLoading={false}
+                    onClick={buttonFactsThree}
+                  />
+                  <Button
+                    label="I am tertiary"
+                    type="tertiary"
+                    size="medium"
+                    isDisabled={false}
+                    isLoading={false}
+                    onClick={buttonFactsFour}
+                  />
+                </div>
+                {/*  button block for prop showcase} */}
+                {/*  button block for prop showcase} */}
+                <code>
+                  <b>size:</b> enum ('small' | 'medium' | 'large')
+                </code>
+                <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-auto p-4 lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
+                  <Button
+                    label="I am small"
+                    type="primary"
+                    size="small"
+                    isDisabled={false}
+                    isLoading={false}
+                    onClick={buttonFactsFive}
+                  />
+                  <Button
+                    label="I am medium"
+                    type="primary"
+                    size="medium"
+                    isDisabled={false}
+                    isLoading={false}
+                    onClick={buttonFactsSix}
+                  />
+                  <Button
+                    label="I am large"
+                    type="primary"
+                    size="xlarge"
+                    isDisabled={false}
+                    isLoading={false}
+                    onClick={buttonFactsSeven}
+                  />
+                </div>
+                {/*  button block for prop showcase} */}
+                {/*  button block for prop showcase} */}
+                <code>
+                  <b>isDisabled:</b> boolean
+                </code>
+                <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-24 lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
+                  <Button
+                    label="I am disabled"
+                    type="primary"
+                    size="medium"
+                    className="w-[200px]"
+                    isDisabled={true}
+                    isLoading={false}
+                  />
+                </div>
+                {/*  button block for prop showcase} */}
+                {/*  button block for prop showcase} */}
+                <code>
+                  <b>isLoading:</b> boolean
+                </code>
+                <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-24 lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
+                  <Button
+                    label="I am loading"
+                    type="primary"
+                    size="medium"
+                    className="w-[200px]"
+                    isDisabled={false}
+                    isLoading={true}
+                  />
+                </div>
+                {/*  button block for prop showcase} */}
+                {/*  button block for prop showcase} */}
+                <code>
+                  <b>startIcon:</b> component instance
+                </code>
+                <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-24 lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
+                  <Button
+                    label="I have a start icon"
+                    type="primary"
+                    size="medium"
+                    isDisabled={false}
+                    isLoading={false}
+                    startIcon={<CodeRoundedIcon />}
+                    onClick={buttonFactsEight}
+                  />
+                </div>
+                {/*  button block for prop showcase} */}
+                {/*  button block for prop showcase} */}
+                <code>
+                  <b>endIcon:</b> component instance
+                </code>
+                <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-24 lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
+                  <Button
+                    label="I have an end icon"
+                    type="primary"
+                    size="medium"
+                    isDisabled={false}
+                    isLoading={false}
+                    endIcon={<CodeRoundedIcon />}
+                    onClick={buttonFactsNine}
+                  />
+                </div>
+                {/*  button block for prop showcase} */}
+                {/*  button block for prop showcase} */}
+                <code>
+                  <b>onClick:</b> function
+                </code>
+                <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-24 lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
+                  <Button
+                    label="What would happen when clicked?"
+                    type="primary"
+                    size="medium"
+                    isDisabled={false}
+                    isLoading={false}
+                  />
+                </div>
+                {/*  button block for prop showcase} */}
                 <div className="flex w-auto items-center justify-center">
                   <InfoContainer
                     color="cyan"
                     icon={<StorybookIcon />}
-                    content="Try Button component properties on Storybook "
+                    content="Try all button component properties on Storybook "
                     to="/docs/index.html?path=/docs/components-button--docs"
                     target="_blank"
                     className="mt-6 mb-6"
@@ -872,7 +1061,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   A simple button needs only three frames which wrapped by a container. These frames
                   are used for start icon, button label, and end icon.
                 </p>
-                <div className="flex items-center justify-center w-full gap-16 my-4">
+                <div className="flex items-center flex-col md:flex-row justify-center w-full gap-4 md:gap-16 my-4">
                   <Button
                     label="Button Label"
                     type="primary"
@@ -2308,7 +2497,7 @@ export class ButtonComponent {
           </div>
           <div className="flex flex-col  gap-4">
             <TextLink className=" font-semibold text-sm" label="Introduction" to="#introduction" />
-            <TextLink className=" font-semibold text-sm" label="0. History" to="#history" />
+            {/* <TextLink className=" font-semibold text-sm" label="0. History" to="#history" /> */}
             <TextLink
               className=" font-semibold text-sm"
               label="1. Understanding Components and Properties"
