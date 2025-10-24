@@ -7,6 +7,7 @@ interface SectionTitleProps {
   startIcon?: React.ReactNode;
   className?: string;
   sectionID?: string;
+  zIndex?: number;
   color?:
     | 'lime'
     | 'pink'
@@ -37,6 +38,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
   className = '',
   color = 'teal',
   sectionID,
+  zIndex = 1,
 }) => {
   const containerClasses = [
     'flex w-full h-20',
@@ -51,7 +53,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
     .filter(Boolean)
     .join(' ');
   return (
-    <header className={containerClasses}>
+    <header className={containerClasses} style={{ zIndex: zIndex }}>
       {startIcon && (
         <div
           className="text-center text-stone-800 text-2xl font-sans font-medium"

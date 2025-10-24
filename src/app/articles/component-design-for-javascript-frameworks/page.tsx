@@ -198,7 +198,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               rel="noopener noreferrer"
               className="underline text-cyan-700 hover:text-cyan-900"
             >
-              Source: Claude Deep Search
+              Source
             </a>
             ).
           </p>
@@ -275,7 +275,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           <Image src="/img/icons/icon-angular.svg" alt="Angular Icon" width={72} height={1} />
         </div>
         <p className="text-center text-sm text-stone-600">From Figma to Code</p>
-        <p className=" font-semibold text-center text-stone-900 text-h3 font-sans lg:mt-8">
+        <p className=" font-semibold text-center text-stone-900 text-h3 font-sans ">
           Who benefits from reading this article?
         </p>
         {/* Target Audience Cards */}
@@ -334,7 +334,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
       </div>
 
       <div className="BlogBody flex flex-col md:flex-row gap-0 font-sans">
-        <div className="BlogContentContainer flex flex-col w-full md:w-3/4  gap-4 md:border-r border-stone-900">
+        <div className="BlogContentContainer flex flex-col w-full md:w-3/4   md:border-r border-stone-900">
           {/* * Section Start * */}
           {/* <div className="BlogContent flex flex-col w-full   gap-4 " id="history">
             <SectionTitle
@@ -818,14 +818,14 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   />
                 </div>
                 {/*  button block for prop showcase} */}
-                <div className="flex w-auto items-center justify-center">
+                <div className="flex items-center justify-center w-auto mx-auto">
                   <InfoContainer
                     color="cyan"
                     icon={<StorybookIcon />}
-                    content="Try all button component properties on Storybook "
+                    content="You can try all button component properties on Storybook "
                     to="/docs/index.html?path=/docs/components-button--docs"
                     target="_blank"
-                    className="mt-6 mb-6"
+                    className="my-4"
                   />
                 </div>
                 <p>
@@ -987,7 +987,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   <Image
                     src="/img/js-components/figma_gap_and_padding.svg"
                     alt="Figma Gap and Padding"
-                    width={400}
+                    width={600}
                     height={1}
                   />
                   <p className="text-center text-sm text-stone-600">
@@ -1249,7 +1249,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <p>Follow these guidelines when naming layers:</p>
                 <div className="flex flex-col md:flex-row gap-4 w-full ">
                   <pre className="bg-amber-50  rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
-                    {`/// Use clear, descriptive names
+                    {`// Use clear, descriptive names
 
 🟩 CardImage (not Image1)
 🟩 CardTitle (not Text_Layer_2)
@@ -1258,7 +1258,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
 🟩 PriceLabel (not Text)`}
                   </pre>
                   <pre className="bg-amber-50  rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
-                    {`/// Do not use vague, generic names
+                    {`// Do not use vague, generic names
 
 🟥 Container
 🟥 Wrapper
@@ -1446,7 +1446,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 </p>
                 <div className="flex flex-col md:flex-row gap-4 w-full ">
                   <pre className="bg-amber-50  rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
-                    {`/// Use descriptive, purposeful names
+                    {`// Use descriptive, purposeful names
 
 🟩 cardTitle
 🟩 isDisabled
@@ -1456,7 +1456,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
 🟩 showKebabMenu`}
                   </pre>
                   <pre className="bg-amber-50  rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
-                    {`/// Do not use vague, generic names
+                    {`// Do not use vague, generic names
 
 🟥 text1
 🟥 disabled
