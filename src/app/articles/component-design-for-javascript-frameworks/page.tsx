@@ -27,6 +27,9 @@ import ContentCard from '@/components/ContentCard';
 import FigmaIcon from '@/components/icons/Figma';
 import StorybookIcon from '@/components/icons/Storybook';
 import DesignSkillPie from '@/components/data-vis/DesignSkillPie';
+import { ToastContainer } from 'react-toastify';
+import { showCustomToast } from '@/components/CustomToast';
+
 /*
 export const metadata: Metadata = {
   title: 'Component Design for JavaScript Frameworks | Design to Code Best Practices',
@@ -69,72 +72,86 @@ export const metadata: Metadata = {
 */
 
 const handleClickOne = () => {
-  alert('🚀 You triggered this JavaScript Popup Box by clicking the Primary Button.');
+  showCustomToast('You clicked the Primary Button.');
 };
 const handleClickTwo = () => {
-  alert('🚀 You triggered this JavaScript Popup Box by clicking the Icon Button.');
+  showCustomToast('You clicked the Icon Button.');
 };
 const handleClickThree = () => {
-  alert('Whereas the loading and tertiary buttons cannot be clicked, this primary one can.');
+  showCustomToast('The loading and tertiary buttons cannot be clicked, but this primary one can.');
 };
 const handleClickFour = () => {
-  alert(
+  showCustomToast(
     'This button container shows the default, hover, focus, loading, and disabled states of a button component.'
   );
 };
 const buttonFactsOne = () => {
-  alert(
-    'ℹ️ The first web button was created in 1993.  The Mosaic browser introduced the <input type="button"> element. Before that, all web interactions were just hyperlinked text!'
+  showCustomToast(
+    'The first web button was created in 1993.  The Mosaic browser introduced the <input type="button"> element. Before that, all web interactions were just hyperlinked text!'
   );
 };
 const buttonFactsTwo = () => {
-  alert(
-    'ℹ️ The word "button" in UI comes from actual clothing buttons — Early computer interfaces borrowed heavily from physical metaphors. Buttons were designed to look "pushable" with beveled edges and shadows, mimicking real-world buttons you could press.'
+  showCustomToast(
+    'The word "button" in UI comes from actual clothing buttons — Early computer interfaces borrowed heavily from physical metaphors. Buttons were designed to look "pushable" with beveled edges and shadows, mimicking real-world buttons you could press.'
   );
 };
 const buttonFactsThree = () => {
-  alert(
-    'ℹ️ The optimal button border-radius is 4-8 pixels — Studies show that slightly rounded corners (4-8px) are processed 17% faster by our brains than sharp corners, which our minds perceive as slightly threatening.'
+  showCustomToast(
+    'The optimal button border-radius is 4-8 pixels — Studies show that slightly rounded corners (4-8px) are processed 17% faster by our brains than sharp corners, which our minds perceive as slightly threatening.'
   );
 };
 const buttonFactsFour = () => {
-  alert(
-    'ℹ️ Ghost buttons increase cart abandonment by 20-30% — Despite being trendy, ghost buttons perform significantly worse than solid buttons for primary actions.'
+  showCustomToast(
+    'Ghost buttons increase cart abandonment by 20-30% — Despite being trendy, ghost buttons perform significantly worse than solid buttons for primary actions.'
   );
 };
 const buttonFactsFive = () => {
-  alert(
-    'ℹ️ Japanese websites have 3x more buttons — Japanese web design typically features significantly more buttons and options on a single page compared to Western minimalist designs.'
+  showCustomToast(
+    'Japanese websites have 3x more buttons — Japanese web design typically features significantly more buttons and options on a single page compared to Western minimalist designs.'
   );
 };
 const buttonFactsSix = () => {
-  alert(
-    'ℹ️ The average button click takes 200ms — Studies show that the average time it takes for a user to click a button is 200ms, which is a significant amount of time.'
+  showCustomToast(
+    'The average button click takes 200ms — Studies show that the average time it takes for a user to click a button is 200ms, which is a significant amount of time.'
   );
 };
 const buttonFactsSeven = () => {
-  alert(
-    'ℹ️ The average user encounters 100+ buttons daily — From elevator buttons to smartphone apps, the average person interacts with over 100 buttons per day, yet only consciously notices about 10% of them.'
+  showCustomToast(
+    'The average user encounters 100+ buttons daily — From elevator buttons to smartphone apps, the average person interacts with over 100 buttons per day, yet only consciously notices about 10% of them.'
   );
 };
 const buttonFactsEight = () => {
-  alert(
-    'ℹ️ Buttons cause "decision fatigue" — Studies show that presenting users with more than 3-5 button options significantly increases abandonment rates. This is why good UX design emphasizes primary, secondary, and tertiary button hierarchies.'
+  showCustomToast(
+    'Buttons cause "decision fatigue" — Studies show that presenting users with more than 3-5 button options significantly increases abandonment rates. This is why good UX design emphasizes primary, secondary, and tertiary button hierarchies.'
   );
 };
 const buttonFactsNine = () => {
-  alert(
-    'ℹ️ The average user clicks a button 3-5 times per day — From elevator buttons to smartphone apps, the average person interacts with over 100 buttons per day, yet only consciously notices about 10% of them.'
+  showCustomToast(
+    'The average user clicks a button 3-5 times per day — From elevator buttons to smartphone apps, the average person interacts with over 100 buttons per day, yet only consciously notices about 10% of them.'
   );
 };
 const buttonFactsTen = () => {
-  alert(
-    'ℹ️ "Sign Up" beats "Register" by 60% — Changing button copy from "Register" to "Sign Up" can increase conversions by up to 60%. "Register" feels formal and commitment-heavy, while "Sign Up" feels casual and reversible.'
+  showCustomToast(
+    '"Sign Up" beats "Register" by 60% — Changing button copy from "Register" to "Sign Up" can increase conversions by up to 60%. "Register" feels formal and commitment-heavy, while "Sign Up" feels casual and reversible.'
   );
 };
+
 export default function ComponentDesignForJavaScriptFrameworks() {
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={true}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        icon={false}
+        closeButton={false}
+      />
       <TopDivider />
       <div className="Header sticky top-0 flex flex-row p-4 w-full h-auto md:h-[88px] border-b border-stone-900 items-center justify-start gap-4 bg-amber-50 z-10">
         <Menu />
@@ -274,7 +291,9 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           <Image src="/img/icons/icon-vue.svg" alt="Vue Icon" width={72} height={1} />
           <Image src="/img/icons/icon-angular.svg" alt="Angular Icon" width={72} height={1} />
         </div>
-        <p className="text-center text-sm text-stone-600">From Figma to Code</p>
+        <p className="text-center text-sm text-stone-600">
+          From Figma to React, Svelte, Vue, or Angular
+        </p>
         <p className=" font-semibold text-center text-stone-900 text-h3 font-sans ">
           Who benefits from reading this article?
         </p>
@@ -815,6 +834,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     size="medium"
                     isDisabled={false}
                     isLoading={false}
+                    onClick={buttonFactsTen}
                   />
                 </div>
                 {/*  button block for prop showcase} */}
