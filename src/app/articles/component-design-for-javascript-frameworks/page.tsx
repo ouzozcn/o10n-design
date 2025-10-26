@@ -14,7 +14,6 @@ import PriorityHighRoundedIcon from '@mui/icons-material/PriorityHighRounded';
 import CodeRoundedIcon from '@mui/icons-material/CodeRounded';
 import WestRoundedIcon from '@mui/icons-material/WestRounded';
 import EastRoundedIcon from '@mui/icons-material/EastRounded';
-import LanguageIcon from '@mui/icons-material/Language';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
 import DirectionsRunIcon from '@mui/icons-material/DirectionsRun';
 import Image from 'next/image';
@@ -29,7 +28,7 @@ import StorybookIcon from '@/components/icons/Storybook';
 import DesignSkillPie from '@/components/data-vis/DesignSkillPie';
 import { ToastContainer } from 'react-toastify';
 import { showCustomToast } from '@/components/CustomToast';
-
+import RoughAnnotate from '@/components/rough-notation/RoughAnnotate';
 /*
 export const metadata: Metadata = {
   title: 'Component Design for JavaScript Frameworks | Design to Code Best Practices',
@@ -202,9 +201,12 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           data analysis for product growth, psychology for understanding others, and list goes on.
           Another important area where we may improve personally and learn new things is front-end
           development which is an emerging skill that is becoming more and more important. Analysis
-          of current job market data shows that one in five Product Designer positions now requires
-          front-end development knowledge which is a clear signal that technical skills have shifted
-          from optional to essential.
+          of current job market data shows that{' '}
+          <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+            one in five Product Designer positions
+          </RoughAnnotate>{' '}
+          now requires front-end development knowledge which is a clear signal that technical skills
+          have shifted from optional to essential.
         </p>
         <div className="w-full h-full flex flex-col items-center justify-center">
           <DesignSkillPie />
@@ -223,8 +225,11 @@ export default function ComponentDesignForJavaScriptFrameworks() {
         </div>
         <p>
           This article is a guide for designers who want to create components that are easy to
-          implement in code. It covers the fundamentals of component design, including structure,
-          properties, design tokens, and interactions.
+          implement in code. It covers the{' '}
+          <RoughAnnotate type="box" color="#a78bfa" padding={2}>
+            fundamentals of component design,
+          </RoughAnnotate>{' '}
+          including structure, properties, design tokens, and interactions.
         </p>
 
         <div className="Hexagon__Icon__Container flex flex-col md:flex-row items-center justify-center w-full gap-4 md:gap-8">
@@ -276,9 +281,12 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           researchers, product managers, developers, testers, data analysts, and others. But
           developers are probably the ones we see, talk to, and discuss the most. We talk about
           every little element of a product with them. Common knowledge is essential for a more
-          productive workplace. When designers and developers speak the same language, communication
-          is improved, misunderstandings are decreased, expectations and reality can be discussed,
-          and design and development can coexist peacefully.
+          productive workplace. When designers and developers{' '}
+          <RoughAnnotate type="underline" color="#0ea5e9" padding={2}>
+            speak the same language,
+          </RoughAnnotate>{' '}
+          communication is improved, misunderstandings are decreased, expectations and reality can
+          be discussed, and design and development can coexist peacefully.
         </p>
         <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 ">
           <Image
@@ -293,8 +301,11 @@ export default function ComponentDesignForJavaScriptFrameworks() {
         </div>
 
         <p>
-          In this article, we'll explore best practices for designing components for JavaScript
-          frameworks and libraries. At the end of reading, you will have a solid understanding of:
+          In this article, we'll explore best practices for{' '}
+          <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+            designing components for JavaScript frameworks and libraries.
+          </RoughAnnotate>{' '}
+          At the end of reading, you will have a solid understanding of:
         </p>
         <ul className="list-disc list-inside ml-4  space-y-4 marker:text-stone-600">
           <li>How to nest frames within each other to create a proper HTML structure.</li>
@@ -506,11 +517,14 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   </p>
                 </div>
                 <p>
-                  A component is a single, reusable UI element within a product, a building block
-                  that can be used repeatedly with different configurations. This concept mirrors
-                  both design systems and code architecture. Modern practices like Atomic Design
-                  emphasize the importance of breaking down components into their most basic parts
-                  to create a more efficient and scalable design process.
+                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                    A component is a single, reusable UI element
+                  </RoughAnnotate>{' '}
+                  within a product, a building block that can be used repeatedly with different
+                  configurations. This concept mirrors both design systems and code architecture.
+                  Modern practices like Atomic Design emphasize the importance of breaking down
+                  components into their most basic parts to create a more efficient and scalable
+                  design process.
                 </p>
                 <h2 className="SectionImage w-full flex font-bold text-start ">
                   Component hierarchy follows atomic design principles:
@@ -584,7 +598,10 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             <div className="flex flex-col md:flex-row gap-12 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
                 <p>
-                  Despite syntactic differences, all modern JavaScript frameworks and libraries
+                  Despite syntactic differences,{' '}
+                  <RoughAnnotate type="underline" color="#0ea5e9" padding={2}>
+                    all modern JavaScript frameworks and libraries
+                  </RoughAnnotate>{' '}
                   share a common component-based architecture:
                 </p>
                 <ul className="list-disc list-inside ml-4 space-y-4 marker:text-stone-600 ">
@@ -681,8 +698,12 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 </div>
                 <p>
                   <b>Properties (props)</b> define a component's (object) identity and
-                  characteristics. Each property has a name and a value, and each of these
-                  name/value pairs tells you something about the component itself.
+                  characteristics. Each property has{' '}
+                  <RoughAnnotate type="box" color="#8b5cf6" padding={2}>
+                    a name and a value
+                  </RoughAnnotate>{' '}
+                  , and each of these name/value pairs tells you something about the component
+                  itself.
                 </p>
                 <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
                   <Image
@@ -716,9 +737,11 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 </div>
                 <p className="mb-4">
                   The car objects have the same properties but with different values. They tell you
-                  the maker of car,model, year, and passenger capacity. Similarly, any UI component
-                  has properties like them. For instance, a button component might have properties
-                  like:
+                  the maker of car,model, year, and passenger capacity. Similarly,{' '}
+                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                    any UI component has properties
+                  </RoughAnnotate>{' '}
+                  like them. For instance, a button component might have properties like:
                 </p>
                 {/*  button block for prop showcase} */}
                 <code>
@@ -917,8 +940,10 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   </p>
                 </div>
                 <p>
-                  Designing components that developers can efficiently implement requires mastering
-                  four fundamental principles:
+                  Designing components that developers can efficiently implement requires mastering{' '}
+                  <RoughAnnotate type="underline" color="#0ea5e9" padding={2}>
+                    four fundamental principles:
+                  </RoughAnnotate>
                 </p>
                 <ul className="list-disc list-inside ml-4 my-4 space-y-4 marker:text-stone-600">
                   <li>
@@ -937,7 +962,8 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 </ul>
                 <p>
                   Learning these fundamentals will help you design components that are not only
-                  visually appealing but also easy to implement and maintain.
+                  visually appealing but also easy to implement and maintain. Let's dive into each
+                  fundamental in depth. We will start with the first fundamental: Structure.
                 </p>
               </div>
             </div>
@@ -952,12 +978,16 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               <div className="SectionContent w-full items-center justify-center text-start text-stone-900 text-lg gap-4">
                 <p>
                   The arrangement and organization of HTML elements within a document is referred to
-                  as its structure. This structure establishes the relationships between the various
-                  sections of a web page and the way content is presented. Below is an example of a
-                  basic HTML structure.
+                  as its{' '}
+                  <RoughAnnotate type="box" color="#8b5cf6" padding={3}>
+                    structure.
+                  </RoughAnnotate>{' '}
+                  This structure establishes the relationships between the various sections of a web
+                  page and the way content is presented. Below is an example of a basic HTML
+                  structure.
                 </p>
                 <Code
-                  className=" lg:w-auto h-auto mx-auto my-4 lg:my-8"
+                  className=" lg:w-auto h-[310px] mx-auto my-4 lg:my-8"
                   code={`<!DOCTYPE html>
 <head>
   <title>This is the title visible in the browser tab</title>
@@ -972,12 +1002,15 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   <CodeHeader icon={CodeRoundedIcon} copyButton className="text-amber-50 h-16 px-6">
                     Basic HTML Structure
                   </CodeHeader>
-                  <CodeBlock lang="html" theme="dark" inView={true} cursor={true} />
+                  <CodeBlock lang="html" theme="dark" cursor={true} />
                 </Code>
                 <p>
                   HTML uses various elements to structure the content of a page. These elements are
-                  called tags. Each tag has a specific purpose and is used to create different types
-                  of content.
+                  called tags.{' '}
+                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                    Each tag has a specific purpose
+                  </RoughAnnotate>{' '}
+                  and is used to create different types of content.
                 </p>
                 <div className="HTML__Tags__Samples__Placeholder flex flex-col gap-4 items-center justify-center w-full my-4 lg:my-8">
                   <div className="HTML__Tags__Samples__List flex flex-wrap gap-4 lg:gap-6 p-4 lg:p-8 items-center justify-center w-full h-60 rounded-lg border border-stone-900 hover:bg-stone-50">
@@ -995,9 +1028,12 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   </p>
                 </div>
                 <p>
-                  In design, we define this structure by using frames. Each frame we use is
-                  translated to a HTML element. Belows is the example of frame nesting for the basic
-                  HTML structure mentioned above.
+                  In design, we define this structure by using{' '}
+                  <RoughAnnotate type="circle" color="#84cc16" padding={3}>
+                    frames.
+                  </RoughAnnotate>{' '}
+                  Each frame we use is translated to a HTML element. Belows is the example of frame
+                  nesting for the basic HTML structure mentioned above.
                 </p>
                 <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
                   <Image
@@ -1041,8 +1077,16 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
                 <p>
-                  Figma offers two ways to nest objects: <b>Groups</b> and <b>Frames</b>. Groups are
-                  the traditional Adobe-style approach, while Frames unlock Figma's powerful
+                  Figma offers two ways to nest objects:{' '}
+                  <RoughAnnotate type="underline" color="#ef4444" padding={2}>
+                    <b>Groups</b>{' '}
+                  </RoughAnnotate>{' '}
+                  and{' '}
+                  <RoughAnnotate type="underline" color="#22c55e" padding={2}>
+                    <b>Frames</b>.
+                  </RoughAnnotate>{' '}
+                  Groups are the traditional Adobe-style approach, while Frames unlock Figma's
+                  powerful
                   <b> Auto-Layout</b> feature.
                 </p>
                 <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
@@ -1056,7 +1100,10 @@ export default function ComponentDesignForJavaScriptFrameworks() {
 
                 <p>
                   Using Auto-Layout will allow us to define the layout of the component in a more
-                  flexible way. Auto-Layout in Figma directly corresponds to CSS Flexbox properties.
+                  flexible way. Auto-Layout in Figma directly corresponds to{' '}
+                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                    CSS Flexbox properties.
+                  </RoughAnnotate>{' '}
                   When you configure Auto-Layout settings, you're essentially defining:
                 </p>
                 <ul className="list-disc list-inside ml-4 space-y-4 marker:text-stone-600">
@@ -1093,7 +1140,14 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 </div>
                 <p>
                   Besides defining the layout of the component, Auto-Layout also allows us to define
-                  the spacing between the children of the component with using Gap and Padding
+                  the spacing between the children of the component with using{' '}
+                  <RoughAnnotate type="box" color="#8b5cf6" padding={2}>
+                    Gap
+                  </RoughAnnotate>{' '}
+                  and{' '}
+                  <RoughAnnotate type="box" color="#8b5cf6" padding={2}>
+                    Padding
+                  </RoughAnnotate>{' '}
                   properties.
                 </p>
                 <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
@@ -1117,12 +1171,14 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 />
                 <p>
                   <b>Key principle:</b> <br />
-                  Your frame structure defines the HTML structure. Each frame typically becomes an
-                  HTML element (most commonly a <code>{'<div>'}</code> container, but could be{' '}
-                  <code>{'<button>'}</code>, <code>{'<section>'}</code>, <code>{'<header>'}</code>,{' '}
-                  <code>{'<nav>'}</code>, or <code>{'<article>'}</code> depending on semantic
-                  meaning). Therefore, using the minimum necessary frames helps developers create
-                  cleaner, more maintainable code.
+                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                    Your frame structure defines the HTML structure.
+                  </RoughAnnotate>{' '}
+                  Each frame typically becomes an HTML element (most commonly a{' '}
+                  <code>{'<div>'}</code> container, but could be <code>{'<button>'}</code>,{' '}
+                  <code>{'<section>'}</code>, <code>{'<header>'}</code>, <code>{'<nav>'}</code>, or{' '}
+                  <code>{'<article>'}</code> depending on semantic meaning). Therefore, using the
+                  minimum necessary frames helps developers create cleaner, more maintainable code.
                 </p>
                 <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
                   <Image
@@ -1316,8 +1372,11 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   Proper layer naming is essential for clear communication between designers and
                   developers. Meaningful names help developers understand the purpose of each frame
                   and how it maps to code. If you wouldn't name a CSS class "Frame 1" or "Group 2",
-                  don't use those names in your layers. Instead, use descriptive names that reflect
-                  the element's role.
+                  don't use those names in your layers. Instead,{' '}
+                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                    use descriptive names
+                  </RoughAnnotate>{' '}
+                  that reflect the element's role.
                 </p>
                 <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
                   <Image
@@ -1332,8 +1391,11 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 </div>
                 <p>
                   Above example shows a card component with unnamed frames (left) versus
-                  thoughtfully named frames (right). The meaningful names clarify the structure and
-                  purpose of each element, making it easier for developers to implement the design
+                  thoughtfully named frames (right). The meaningful names{' '}
+                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                    clarify the structure and purpose
+                  </RoughAnnotate>{' '}
+                  of each element, making it easier for developers to implement the design
                   accurately. Even the Figma icons tells the layout direction (horizontal vs
                   vertical) at a glance.
                 </p>
@@ -1350,7 +1412,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 </p>
                 <ul className="list-disc list-inside ml-4 space-y-2 marker:text-stone-600">
                   <li>
-                    <b>Clarifies HTML structure:</b>Layer names can inform semantic HTML elements
+                    <b>Clarifies HTML structure:</b> Layer names can inform semantic HTML elements
                     and CSS class names.
                   </li>
                   <li>
@@ -1364,9 +1426,6 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   <li>
                     <b>Enhances team communication:</b> Shared vocabulary between design and
                     development.
-                  </li>
-                  <li>
-                    <b>Enables better search:</b> Find components quickly in large Figma files.
                   </li>
                 </ul>
                 <p className="font-bold mt-2">Naming Conventions</p>
@@ -1438,9 +1497,12 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   creating flexible, functional components that mirror real component behavior. As a
                   designer, If I am going to use an UI element more than once, I always create a
                   component with well-defined properties. This approach not only streamlines my
-                  design process but also significantly reduces the development effort required to
-                  implement the component. Defining properties is a time investment that pays off in
-                  spades.
+                  design process but also significantly{' '}
+                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                    reduces the development effort
+                  </RoughAnnotate>{' '}
+                  required to implement the component. Defining properties is a time investment that
+                  pays off in spades.
                 </p>
                 <p>
                   Figma supports several property types that map directly to JavaScript/TypeScript:
@@ -1539,15 +1601,22 @@ export default function ComponentDesignForJavaScriptFrameworks() {
 
                 <ul className="list-disc list-inside ml-4 space-y-2 marker:text-stone-600">
                   <li>
-                    Use <b>camelCase</b> (e.g., buttonLabel, isDisabled) for property names to align
-                    with JavaScript conventions.
+                    Use{' '}
+                    <RoughAnnotate type="underline" color="#0ea5e9" padding={2}>
+                      <b>camelCase</b>
+                    </RoughAnnotate>{' '}
+                    (e.g., buttonLabel, isDisabled) for property names to align with JavaScript
+                    conventions.
                   </li>
                   <li>
                     Prefix boolean properties with <b>is</b>, <b>has</b>, <b>show</b>, or <b>can</b>{' '}
                     to indicate their <b>true/false</b> nature.
                   </li>
                   <li>Use specific, clear names (`primaryColor` not `color1`)</li>
-                  <li>Indicate optional behavior clearly (`startIcon?` or `iconStart?`)</li>
+                  <li>
+                    Indicate optional behavior clearly with using question mark <b>?</b> (startIcon
+                    is must but startIcon? is optional)
+                  </li>
                   <li>Use consistent naming patterns across all components</li>
                 </ul>
                 <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
@@ -1630,11 +1699,13 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   </p>
                 </div>
                 <p>
-                  Above Figma button component properties map directly to props in React, Vue,
-                  Angular, and Svelte with minimal adjustments for framework syntax. This
-                  consistency reduces cognitive load for developers and help them implement
-                  components faster and with fewer errors. Let's take a look at how the same
-                  properties look in different frameworks:
+                  Above Figma button component properties map directly to props in{' '}
+                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                    React, Vue, Angular, and Svelte
+                  </RoughAnnotate>{' '}
+                  with minimal adjustments for framework syntax. This consistency reduces cognitive
+                  load for developers and help them implement components faster and with fewer
+                  errors. Let's take a look at how the same properties look in different frameworks:
                 </p>
                 <div className="Animated___Code__Blocks flex flex-col w-full items-center justify-center gap-2 lg:gap-4 lg:mx-auto lg:mb-4">
                   <Code
@@ -1780,8 +1851,11 @@ export class ButtonComponent {
                   props in React, Vue, Angular, and Svelte. This consistency not only speeds up
                   development but also reduces the likelihood of miscommunication or errors during
                   implementation. By investing time in defining clear, js-friendly component
-                  properties in Figma, we set the stage for a smoother handoff to developers and a
-                  more efficient development process overall.
+                  properties in Figma, we set the stage for a{' '}
+                  <RoughAnnotate type="underline" color="#0ea5e9" padding={2}>
+                    smoother handoff
+                  </RoughAnnotate>{' '}
+                  to developers and a more efficient development process overall.
                 </p>
               </div>
             </div>
@@ -1815,23 +1889,30 @@ export class ButtonComponent {
                 </div>
                 <p>
                   Modern digital products require theme support (light mode, dark mode, high
-                  contrast). This necessitates <b>tokens</b>, using variables instead of hard-coded
-                  values. Besides that, using tokens instead of fixed values also enables
-                  scalability and consistency across the design system. For example, if your brand
-                  color changes, updating a single token updates it everywhere. As designers, we
-                  often hear new iteration ideas from stakeholders. Using tokens allows us to
-                  implement changes quickly without touching every component.
+                  contrast). This necessitates <b>tokens</b>, or customization features{' '}
+                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                    using variables instead of hard-coded values.
+                  </RoughAnnotate>{' '}
+                  Besides that, using tokens instead of fixed values also enables scalability and
+                  consistency across the design system. For example, if your brand color changes,
+                  updating a single token updates it everywhere. As designers, we often hear new
+                  iteration ideas from stakeholders. Using tokens allows us to implement changes
+                  quickly without touching every component.
                 </p>
                 <p className="font-bold md:mt-6 ">From Hard-Coded Values to Design Tokens</p>
                 <p>
-                  If you are using CSS or CSS-in-JS, design tokens are typically implemented as CSS
-                  variables (custom properties). You need to create your own primitive and component
-                  tokens. If you want to skip the creating primitive tokens, it's best to use an
-                  existing library like TailwindCSS. It provides a comprehensive set of design
-                  tokens that cover colors, spacing, typography, and more. You can then create
-                  component-specific tokens that reference these primitives. For example, a button's
-                  primary background color token might reference Tailwind's `--tw-color-blue-600`.
-                  Here is an example of how to transition from old way to modern way:
+                  If you are using CSS, SASS, or CSS-in-JS, design tokens are typically implemented
+                  as CSS variables (custom properties). You need to create your own primitive and
+                  component tokens. If you want to skip the creating primitive tokens, it's best to
+                  use an existing library like{' '}
+                  <RoughAnnotate type="box" color="#8b5cf6" padding={2}>
+                    TailwindCSS.
+                  </RoughAnnotate>{' '}
+                  It provides a comprehensive set of design tokens that cover colors, spacing,
+                  typography, and more. You can then create component-specific tokens that reference
+                  these primitives. For example, a button's primary background color token might
+                  reference Tailwind's `--tw-color-blue-600`. Here is an example of how to
+                  transition from old way to modern way:
                 </p>
                 <div className="flex flex-col  lg:flex-row gap-4 w-full ">
                   <pre className="bg-amber-50  rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
@@ -1903,12 +1984,16 @@ export class ButtonComponent {
                   </p>
                 </div>
                 <p>
-                  A design token is a standardized, reusable variable that stores design values like
-                  colors, spacing, or typography so they can be easily accessed across different
-                  platforms and technologies. Design tokens maintain consistency and help designers
-                  and developers collaborate more effectively. We can define various types of tokens
-                  for different purposes. For example, we can define color tokens for different
-                  purposes like primary, secondary, success, error, etc.
+                  A design token is a standardized,{' '}
+                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                    reusable variable
+                  </RoughAnnotate>{' '}
+                  that stores design values like colors, spacing, or typography so they can be
+                  easily accessed across different platforms and technologies. Design tokens
+                  maintain consistency and help designers and developers collaborate more
+                  effectively. We can define various types of tokens for different purposes. For
+                  example, we can define color tokens for different purposes like primary,
+                  secondary, success, error, etc.
                 </p>
                 <p>
                   Tokens have various layers of abstraction, from primitive tokens to component
@@ -2056,9 +2141,13 @@ export class ButtonComponent {
                 </div>
                 <p>
                   Figma allows us to define various tokens through its Variables feature with four
-                  different types: Color, Number, String, and Boolean. Using these tokens improves
-                  design system maintenance, ensures consistency across the interface, eases style
-                  updates, and enables various theme modes such as dark-light mode.{' '}
+                  different types:{' '}
+                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                    Color, Number, String, and Boolean.
+                  </RoughAnnotate>{' '}
+                  Using these tokens improves design system maintenance, ensures consistency across
+                  the interface, eases style updates, and enables various theme modes such as
+                  dark-light mode.{' '}
                 </p>
                 <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
                   <Image
@@ -2080,13 +2169,14 @@ export class ButtonComponent {
                     <b>Color:</b> Semantic color tokens (primary, secondary, success, error, etc.)
                   </li>
                   <li>
-                    <b>Number:</b> Consistent spacing scale (4px, 8px, 12px, 16px, 24px, etc.)
+                    <b>Number:</b> Consistent spacing scale for height, gap, padding (4px, 8px,
+                    etc.)
                   </li>
                   <li>
-                    <b>String:</b> Font families, sizes, weights, line heights
+                    <b>String:</b> Font families, placeholders
                   </li>
                   <li>
-                    <b>Boolean:</b> Border radius, shadows, blur effects
+                    <b>Boolean:</b> Light/Dark mode switch, IF/ELSE conditions
                   </li>
                 </ul>
                 <p>
@@ -2119,10 +2209,13 @@ export class ButtonComponent {
                   <p className="text-center text-sm text-stone-600">Example of variable usage</p>
                 </div>
                 <p>
-                  After defining the variables, you can start to use them in every aspect of your
-                  design system. You can use color-body-text-primary to all your body text elements.
-                  This will allow you to easily change the color of your body text by changing the
-                  value of the related color variable.
+                  After defining the variables, you can start to{' '}
+                  <RoughAnnotate type="underline" color="#0ea5e9" padding={2}>
+                    use them in every aspect of your design system.
+                  </RoughAnnotate>{' '}
+                  You can use color-body-text-primary to all your body text elements. This will
+                  allow you to easily change the color of your body text by changing the value of
+                  the related color variable.
                 </p>
                 <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
                   <Image
@@ -2165,12 +2258,16 @@ export class ButtonComponent {
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
                 <p>
                   Prototyping is one of the must-haves for delivering a production-ready component.
-                  It allows us to mimic real-time behaviors for actionable items. Today most UI
-                  elements have interactions. At least, a hover state is applicable for most of
-                  them. For instance, a button can redirect users to a different page, display a
-                  dialog, or open a drawer on the side. Adding an On Click event into a component in
-                  Figma actually helps developers while defining the “onClick” function on the
-                  component so they can define proper destination for the component.
+                  It allows us to{' '}
+                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                    mimic real-time behaviors
+                  </RoughAnnotate>{' '}
+                  for actionable items. Today most UI elements have interactions. At least, a hover
+                  state is applicable for most of them. For instance, a button can redirect users to
+                  a different page, display a dialog, or open a drawer on the side. Adding an On
+                  Click event into a component in Figma actually helps developers while defining the
+                  “onClick” function on the component so they can define proper destination for the
+                  component.
                 </p>
                 <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
                   <Image
@@ -2189,7 +2286,11 @@ export class ButtonComponent {
                   for drawers, dialog, and modals, as well as animations and destinations, which aid
                   in defining navigation. We can simulate items that function just like we developed
                   them by using component-level prototyping. When a component has interactions,
-                  developers can see those actions via Dev Mode in Figma, VS Code, or Cursor.
+                  developers can see those actions via{' '}
+                  <RoughAnnotate type="box" color="#8b5cf6" padding={2}>
+                    Dev Mode in Figma,
+                  </RoughAnnotate>{' '}
+                  VS Code, or Cursor.
                 </p>
                 <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
                   <Image
@@ -2203,13 +2304,16 @@ export class ButtonComponent {
                   </p>
                 </div>
                 <p>
-                  Additionally, adding component interactions reveals the product's faults during
-                  the early stages of design. Configuring user flows is made possible by the usage
-                  of interactive components rather than static ones. Additionally, it is necessary
-                  for the initial testing of prototypes. If you conduct a usability test, you can
-                  use the prototype to test the user flows and interactions. Last but not least of
-                  the benefits is having interactive elements enables stakeholders to understand
-                  better while you are doing your presentations.
+                  Additionally, adding component interactions{' '}
+                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                    reveals the component's faults
+                  </RoughAnnotate>{' '}
+                  during the early stages of design. Configuring user flows is made possible by the
+                  usage of interactive components rather than static ones. Additionally, it is
+                  necessary for the initial testing of prototypes. If you conduct a usability test,
+                  you can use the prototype to test the user flows and interactions. Last but not
+                  least of the benefits is having interactive elements enables stakeholders to
+                  understand better while you are doing your presentations.
                 </p>
               </div>
             </div>
@@ -2228,11 +2332,15 @@ export class ButtonComponent {
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
                 <p>
-                  Almost all of the components need to define various states. Every state serves a
-                  distinct function in displaying a component's status. While a hover state provides
-                  visual input regarding the interactivity, a default state displays the component's
-                  initial appearance. The cursor pointer's appearance may indicate that a component
-                  is draggable or contains an anchor link that will take us to a different location.
+                  Almost all of the components{' '}
+                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                    need to define various states.
+                  </RoughAnnotate>{' '}
+                  Every state serves a distinct function in displaying a component's status. While a
+                  hover state provides visual input regarding the interactivity, a default state
+                  displays the component's initial appearance. The cursor pointer's appearance may
+                  indicate that a component is draggable or contains an anchor link that will take
+                  us to a different location.
                 </p>
                 <div className="flex flex-col items-center justify-center w-full">
                   <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-60 lg:my-8 rounded-lg border border-stone-900 hover:bg-stone-50">
@@ -2433,10 +2541,13 @@ export class ButtonComponent {
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
                 <p>
-                  Changing states of a component or assigning an onclick function requires defining
-                  triggers and actions. Figma offers various triggers and actions for both web and
-                  mobile experiences. To create an interactive component and functional interface in
-                  the design phase, you need to use triggers and actions functionality.{' '}
+                  Changing states of a component or assigning an onclick function requires{' '}
+                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                    defining triggers and actions.
+                  </RoughAnnotate>{' '}
+                  Figma offers various triggers and actions for both web and mobile experiences. To
+                  create an interactive component and functional interface in the design phase, you
+                  need to use triggers and actions functionality.{' '}
                 </p>
                 <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
                   <Image
@@ -2451,11 +2562,15 @@ export class ButtonComponent {
                 </div>
                 <p className="font-semibold text-stone-900 mt-4">Triggers</p>
                 <p>
-                  You can designate ten distinct triggers for your components in Figma. These
-                  triggers can be used to assign keyboard keys, click and drag, move the mouse
-                  pointer over an element, or delay a transition. The two triggers that designers
-                  use the most while designing are On Click and While Hovering. On Tap and On Drag
-                  might be your top picks if you're designing for mobile.{' '}
+                  You can designate{' '}
+                  <RoughAnnotate type="underline" color="#0ea5e9" padding={2}>
+                    ten distinct triggers
+                  </RoughAnnotate>{' '}
+                  for your components in Figma. These triggers can be used to assign keyboard keys,
+                  click and drag, move the mouse pointer over an element, or delay a transition. The
+                  two triggers that designers use the most while designing are On Click and While
+                  Hovering. On Tap and On Drag might be your top picks if you're designing for
+                  mobile.{' '}
                 </p>
                 <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
                   <Image
@@ -2471,8 +2586,12 @@ export class ButtonComponent {
                 <p className="font-semibold text-stone-900 mt-4">Actions</p>
                 <p>
                   Actions are the functions that are executed when a trigger is activated. You can
-                  designate eleven distinct actions for your components in Figma. These actions
-                  define the behavior of the component when a trigger is activated.
+                  designate{' '}
+                  <RoughAnnotate type="underline" color="#0ea5e9" padding={2}>
+                    eleven distinct actions
+                  </RoughAnnotate>{' '}
+                  for your components in Figma. These actions define the behavior of the component
+                  when a trigger is activated.
                 </p>
                 <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
                   <Image
@@ -2486,12 +2605,16 @@ export class ButtonComponent {
                   </p>
                 </div>
                 <p>
-                  Most common action when designing components and pages are Navigate, Scrool, Open,
-                  and Open Overlay. If you need to define complex behavior, you can use the
-                  Conditional, Set Variable, and Set Variable Mode. Conditional action type allows
-                  you to define IF/ELSE logic. Set Variable action type allows you to set a variable
-                  value. Set Variable Mode action type allows you to switch between different modes
-                  of a variable such as light mode, dark mode, and high contrast mode.
+                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                    Most common actions
+                  </RoughAnnotate>{' '}
+                  when designing components and pages are <b>Navigate</b>, <b>Scrool</b>,{' '}
+                  <b>Open</b>, and <b>Open Overlay</b>. If you need to define complex behavior, you
+                  can use the Conditional, Set Variable, and Set Variable Mode. Conditional action
+                  type allows you to define IF/ELSE logic. Set Variable action type allows you to
+                  set a variable value. Set Variable Mode action type allows you to switch between
+                  different modes of a variable such as light mode, dark mode, and high contrast
+                  mode.
                 </p>
                 <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
                   <Image
@@ -2520,23 +2643,129 @@ export class ButtonComponent {
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
                 <p>
-                  Design is an iterative process that involves collaborating with multiple
-                  stakeholders. Among these, developers are often your closest partners and require
-                  the most detailed support from designers. If you understand and start to apply the
-                  principles of component design, you will be able to create components that are
-                  easy to understand, maintain, and scale.
+                  The principles outlined in this article, <b>Structure</b>, <b>Properties</b>,{' '}
+                  <b>Tokens</b>, and
+                  <b>Interactions</b>, are essential for creating components that are easy to
+                  implement in code. When you structure frames with HTML in mind, name properties
+                  using proper conventions, implement design tokens for scalability, and prototype
+                  complete interaction states, you're not just creating better Figma files.{' '}
+                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                    You're building bridges between disciplines.
+                  </RoughAnnotate>
                 </p>
-                <p>By understanding how design decisions affect development, we can:</p>
+                <p>If you start to implement these principles, you will see the benefits like:</p>
                 <ul className="list-disc list-inside ml-4 space-y-2 marker:text-stone-600">
-                  <li>Reduce implementation time</li>
-                  <li>Minimize miscommunication</li>
-                  <li>Improve code quality</li>
-                  <li>Enable faster iteration</li>
-                  <li>Scale design systems</li>
+                  <li>Fewer clarification questions from developers</li>
+                  <li>Increased development velocity</li>
+                  <li>Better code quality with clear component architecture</li>
+                  <li>Easier iteration and maintenance</li>
+                  <li>Scalable design systems across multiple products</li>
+                </ul>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/bridge_between_design_dev.svg"
+                    alt="Bridge between design and development"
+                    width={800}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Bridge between design and development
+                  </p>
+                </div>
+
+                <p className="font-semibold text-stone-900 mt-4">Beyond Individual Components</p>
+                <p>
+                  While this article focused on component design, these principles extend far beyond
+                  single UI elements:
+                </p>
+                <ul className="list-disc list-inside ml-4 space-y-2 marker:text-stone-600">
+                  <li>
+                    <b>Design systems</b> become more maintainable when built on these foundations
+                  </li>
+                  <li>
+                    <b>Cross-functional teams</b> collaborate more smoothly with shared terminology
+                  </li>
+                  <li>
+                    <b>Product velocity</b> increases when handoffs are friction-free
+                  </li>
+                  <li>
+                    <b>Technical debt</b> decreases when designs are implementable from the start
+                  </li>
+                  <li>
+                    <b>Career opportunities</b> expand as you develop design engineering skills
+                  </li>
                 </ul>
                 <p>
-                  The best components aren't just beautiful. They are thoughtfully structured,
-                  clearly documented, and ready to become excellent in development.
+                  The job market data shows this clearly: 20% of product designer positions now
+                  requires front-end development knowledge. This isn't a passing trend.{' '}
+                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                    It's the evolution of our discipline.
+                  </RoughAnnotate>{' '}
+                  Designers who understand code structure, component architecture, and developer
+                  workflows are becoming increasingly valuable.
+                </p>
+                <p className="font-semibold text-stone-900 mt-4">Starting Tomorrow</p>
+                <p>You don't need to master everything at once. Start small:</p>
+                <p>This week: </p>
+                <ul className="list-disc list-inside ml-4 space-y-2 marker:text-stone-600">
+                  <li>Review one existing component in your design files</li>
+                  <li>Rename frames using semantic, meaningful names</li>
+                  <li>Check if your Auto-Layout structure makes sense for HTML</li>
+                </ul>
+                <p className=" mt-4">This month: </p>
+                <ul className="list-disc list-inside ml-4 space-y-2 marker:text-stone-600">
+                  <li>Create or refine properties for your core components</li>
+                  <li>Establish a naming convention document with your team</li>
+                  <li>Prototype interaction states for your most-used components</li>
+                </ul>
+                <p className=" mt-4">This quarter: </p>
+                <ul className="list-disc list-inside ml-4 space-y-2 marker:text-stone-600">
+                  <li>Implement a design token system using Figma Variables</li>
+                  <li>Document your component standards</li>
+                  <li>Conduct a handoff retrospective with your development team</li>
+                </ul>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/learning_journey.svg"
+                    alt="Your learning journey"
+                    width={800}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">Your learning journey</p>
+                </div>
+                <p>
+                  Small, consistent improvements compound into expertise. Each component you refine
+                  teaches you more about the design-development relationship. Do not forget: The
+                  best components aren't just beautiful. They are{' '}
+                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                    thoughtfully structured, clearly documented, and ready to become excellent in
+                    development.
+                  </RoughAnnotate>
+                </p>
+                <p className="font-semibold text-stone-900 mt-4">A Final Thought</p>
+                <p>
+                  The best designs aren't the ones that look most impressive in Figma presentations.
+                  They're the ones that successfully navigate the journey from concept to
+                  production, maintaining their integrity, meeting user needs, and respecting
+                  technical constraints along the way.
+                </p>
+                <p>
+                  By mastering component design for JavaScript frameworks, you're not just becoming
+                  a better designer. You're becoming a more{' '}
+                  <RoughAnnotate type="underline" color="#0ea5e9" padding={2}>
+                    effective collaborator,
+                  </RoughAnnotate>{' '}
+                  a more{' '}
+                  <RoughAnnotate type="underline" color="#0ea5e9" padding={2}>
+                    valuable team member,
+                  </RoughAnnotate>{' '}
+                  and a more{' '}
+                  <RoughAnnotate type="underline" color="#0ea5e9" padding={2}>
+                    complete product professional.
+                  </RoughAnnotate>{' '}
+                  You're learning to speak multiple languages fluently. The visual language of
+                  design and the logical language of code. Use both to create experiences that truly
+                  work.
                 </p>
               </div>
             </div>
@@ -2638,7 +2867,7 @@ export class ButtonComponent {
           {/* * Section End * */}
 
           <ThankYou
-            message="Thanks for taking the time to explore this project. I hope you enjoyed the deep dive into the process, challenges, and learnings behind it."
+            message="Thanks for taking the time to explore this article. I hope you enjoyed the deep dive into the process, challenges, and learnings behind it. If you found this guide valuable, share it with your design and development teams. Better component design benefits everyone in the product development process."
             exploreBlocks={[
               <Link key="jotform-logbook" href="/ideas/jotform-logbook" className="flex-1 h-full">
                 <div className="SectionBlock h-full p-6 flex flex-col justify-start items-start gap-2 cursor-pointer  hover:bg-orange-200 transition sm:border-b lg:border-b-0 lg:border-r border-stone-900">

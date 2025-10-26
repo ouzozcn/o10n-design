@@ -28,7 +28,7 @@ export function RoughAnnotate({
   strokeWidth,
   padding,
   animationDuration = 800,
-  multiline,
+  multiline = true,
   iterations,
   brackets,
   rtl,
@@ -38,6 +38,7 @@ export function RoughAnnotate({
   rootMargin = '0px 0px -10% 0px',
   threshold = 0.1,
 }: RoughAnnotateProps) {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const Tag = as as any;
   const elementRef = useRef<HTMLElement | null>(null);
   const options = useMemo(
