@@ -16,6 +16,7 @@ const iconConfig = {
   md: { height: 32, sizes: '32px' },
   lg: { height: 72, sizes: '72px' },
 };
+/* Date formatter for GitHub Calendar */
 const formatDate = (dateStr: string) => {
   const date = new Date(dateStr);
   return date.toLocaleDateString('en-US', {
