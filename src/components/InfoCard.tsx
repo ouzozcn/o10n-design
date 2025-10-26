@@ -31,7 +31,7 @@ const InfoCard: React.FC<InfoCardProps> = () => {
       <div className="p-4 mx-4 self-stretch font-sans text-stone-800 text-lg leading-normal [content-visibility:auto] [contain:content]">
         Product designer and design engineer bridging the gap between design vision and technical
         reality. I turn research insights into scalable systems, accessible interfaces, and
-        developer-ready components—currently at Jotform Enterprise.
+        developer-ready components. Currently at Jotform.
         <br />
         <br />
         Nice to meet you 👋

@@ -67,6 +67,8 @@ export const Footer: React.FC = () => {
           <TextLink label="Tech Stack" to="/tech-stack" />
           <TextLink label="Contact" to="/contact" />
           <TextLink label="</docs>" to="/docs" />
+          <TextLink label="Playground" to="/playground" />
+          <TextLink label="Sandbox" to="/sandbox" />
           <TextLink label="Privacy Policy" to="/privacy-policy" />
           <TextLink label="Cookie Policy" to="/cookie-policy" />
         </div>

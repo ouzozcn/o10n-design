@@ -77,9 +77,7 @@ const handleClickOne = () => {
 const handleClickTwo = () => {
   showCustomToast('You clicked the Icon Button.');
 };
-const handleClickThree = () => {
-  showCustomToast('The loading and tertiary buttons cannot be clicked, but this primary one can.');
-};
+
 const handleClickFour = () => {
   showCustomToast(
     'This button container shows the default, hover, focus, loading, and disabled states of a button component.'
@@ -87,53 +85,56 @@ const handleClickFour = () => {
 };
 const buttonFactsOne = () => {
   showCustomToast(
-    'The first web button was created in 1993.  The Mosaic browser introduced the <input type="button"> element. Before that, all web interactions were just hyperlinked text!'
+    'The first web button was created in 1993. The Mosaic browser introduced the <input type="button"> element. Before that, all web interactions were just hyperlinked text!'
   );
 };
 const buttonFactsTwo = () => {
   showCustomToast(
-    'The word "button" in UI comes from actual clothing buttons — Early computer interfaces borrowed heavily from physical metaphors. Buttons were designed to look "pushable" with beveled edges and shadows, mimicking real-world buttons you could press.'
+    'The word "button" in UI comes from actual clothing buttons. Early computer interfaces borrowed heavily from physical metaphors. Buttons were designed to look "pushable" with beveled edges and shadows, mimicking real-world buttons you could press.'
   );
 };
 const buttonFactsThree = () => {
   showCustomToast(
-    'The optimal button border-radius is 4-8 pixels — Studies show that slightly rounded corners (4-8px) are processed 17% faster by our brains than sharp corners, which our minds perceive as slightly threatening.'
+    'The optimal button border-radius is 4-8 pixels. Studies show that slightly rounded corners (4-8px) are processed 17% faster by our brains than sharp corners, which our minds perceive as slightly threatening.'
   );
 };
 const buttonFactsFour = () => {
   showCustomToast(
-    'Ghost buttons increase cart abandonment by 20-30% — Despite being trendy, ghost buttons perform significantly worse than solid buttons for primary actions.'
+    'Ghost buttons increase cart abandonment by 20-30%. Despite being trendy, ghost buttons perform significantly worse than solid buttons for primary actions.'
   );
 };
 const buttonFactsFive = () => {
   showCustomToast(
-    'Japanese websites have 3x more buttons — Japanese web design typically features significantly more buttons and options on a single page compared to Western minimalist designs.'
+    'Japanese websites have 3x more buttons. Japanese web design typically features significantly more buttons and options on a single page compared to Western minimalist designs.'
   );
 };
 const buttonFactsSix = () => {
   showCustomToast(
-    'The average button click takes 200ms — Studies show that the average time it takes for a user to click a button is 200ms, which is a significant amount of time.'
+    'The average button click takes 200ms. Studies show that the average time it takes for a user to click a button is 200ms, which is a significant amount of time.'
   );
 };
 const buttonFactsSeven = () => {
   showCustomToast(
-    'The average user encounters 100+ buttons daily — From elevator buttons to smartphone apps, the average person interacts with over 100 buttons per day, yet only consciously notices about 10% of them.'
+    'The average user encounters 100+ buttons daily. From elevator buttons to smartphone apps, the average person interacts with over 100 buttons per day, yet only consciously notices about 10% of them.'
   );
 };
 const buttonFactsEight = () => {
   showCustomToast(
-    'Buttons cause "decision fatigue" — Studies show that presenting users with more than 3-5 button options significantly increases abandonment rates. This is why good UX design emphasizes primary, secondary, and tertiary button hierarchies.'
+    'Buttons cause "decision fatigue". Studies show that presenting users with more than 3-5 button options significantly increases abandonment rates. This is why good UX design emphasizes primary, secondary, and tertiary button hierarchies.'
   );
 };
 const buttonFactsNine = () => {
   showCustomToast(
-    'The average user clicks a button 3-5 times per day — From elevator buttons to smartphone apps, the average person interacts with over 100 buttons per day, yet only consciously notices about 10% of them.'
+    'The average user clicks a button 3-5 times per day. From elevator buttons to smartphone apps, the average person interacts with over 100 buttons per day, yet only consciously notices about 10% of them.'
   );
 };
 const buttonFactsTen = () => {
   showCustomToast(
-    '"Sign Up" beats "Register" by 60% — Changing button copy from "Register" to "Sign Up" can increase conversions by up to 60%. "Register" feels formal and commitment-heavy, while "Sign Up" feels casual and reversible.'
+    '"Sign Up" beats "Register" by 60%. Changing button copy from "Register" to "Sign Up" can increase conversions by up to 60%. "Register" feels formal and commitment-heavy, while "Sign Up" feels casual and reversible.'
   );
+};
+const buttonExample = () => {
+  showCustomToast('I am a button made of three frames');
 };
 
 export default function ComponentDesignForJavaScriptFrameworks() {
@@ -217,35 +218,67 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             >
               Source
             </a>
-            ).
+            )
           </p>
         </div>
         <p>
-          The skills that are currently most important for product designers are displayed in the
-          above chart. We need to learn more about these skills in order to find a better fit in the
-          present technology environment. I'll attempt to break down the "Front-End" knowledge in
-          this article and explain how to create components that are simple to implement in code by
-          following to a few fundamental front-end development concepts. You will eventually be able
-          to comprehend the relationships between properties and props, design tokens and theming,
-          frames and HTML structure, and interactions with prototypes.
+          This article is a guide for designers who want to create components that are easy to
+          implement in code. It covers the fundamentals of component design, including structure,
+          properties, design tokens, and interactions.
         </p>
-        <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+
+        <div className="Hexagon__Icon__Container flex flex-col md:flex-row items-center justify-center w-full gap-4 md:gap-8">
           <Image
-            src="/img/js-components/fundamentals_of_components_hexagon.svg"
-            alt="The Fundamentals of JS-Friendly Components"
-            width={800}
+            src="/img/js-components/hexagon_icon_structure.svg"
+            alt="Hexagon Icon Structure"
+            width={180}
             height={1}
+            onClick={() => {
+              window.location.href = '#structure';
+            }}
+            className="cursor-pointer"
           />
-          <p className="text-center text-sm text-stone-600">Topics covered in this article</p>
+          <Image
+            src="/img/js-components/hexagon_icon_properties.svg"
+            alt="Hexagon Icon Properties"
+            width={180}
+            height={1}
+            onClick={() => {
+              window.location.href = '#properties';
+            }}
+            className="cursor-pointer"
+          />
+          <Image
+            src="/img/js-components/hexagon_icon_tokens.svg"
+            alt="Hexagon Icon Tokens"
+            width={180}
+            height={1}
+            onClick={() => {
+              window.location.href = '#tokens';
+            }}
+            className="cursor-pointer"
+          />
+          <Image
+            src="/img/js-components/hexagon_icon_interaction.svg"
+            alt="Hexagon Icon Interaction"
+            width={180}
+            height={1}
+            onClick={() => {
+              window.location.href = '#interaction';
+            }}
+            className="cursor-pointer"
+          />
         </div>
+        <p className="text-center text-sm text-stone-600">Topics covered in this article</p>
         <p>
-          During product development, design must communicate with a variety of stakeholders,
-          including researchers, product managers, developers, testers, data analysts, and others.
-          But developers are probably the ones we see, talk to, and discuss the most. We talk about
+          Learning these fundamentals will improve your design process and communication. During
+          product development, design must communicate with a variety of stakeholders, including
+          researchers, product managers, developers, testers, data analysts, and others. But
+          developers are probably the ones we see, talk to, and discuss the most. We talk about
           every little element of a product with them. Common knowledge is essential for a more
-          productive workplace. Communication is improved, misunderstandings are decreased,
-          expectations and reality can be discussed, and design and development can coexist
-          peacefully when everyone speaks the same language.
+          productive workplace. When designers and developers speak the same language, communication
+          is improved, misunderstandings are decreased, expectations and reality can be discussed,
+          and design and development can coexist peacefully.
         </p>
         <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 ">
           <Image
@@ -264,19 +297,17 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           frameworks and libraries. At the end of reading, you will have a solid understanding of:
         </p>
         <ul className="list-disc list-inside ml-4  space-y-4 marker:text-stone-600">
+          <li>How to nest frames within each other to create a proper HTML structure.</li>
           <li>
-            How Figma's Auto-Layout directly maps to CSS Flexbox, enabling you to design with code
-            structure in mind
+            How Figma's Auto-Layout directly maps to CSS, enabling you to design with code structure
+            in mind.
           </li>
           <li>
-            Property naming conventions that work identically across all major JavaScript frameworks
+            Property naming conventions that work identically across all major JavaScript
+            frameworks.
           </li>
-          <li>Design token implementation strategies for scalable theming and dark mode support</li>
-          <li>Prototyping interactions and states for realistic UI behavior</li>
-          <li>
-            Complete accessibility guidelines including WCAG 2.2 compliance and keyboard navigation
-            patterns
-          </li>
+          <li>Design token implementation strategies for consistent and maintainable styling.</li>
+          <li>Prototyping interactions and states for realistic UI behavior.</li>
         </ul>
         <div className="Logo__Container flex flex-col md:flex-row items-center justify-center w-full gap-2 md:gap-12">
           <Image src="/img/icons/icon-figma.svg" alt="Figma Icon" width={72} height={1} />
@@ -512,8 +543,8 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 />
                 <p>
                   Understanding this hierarchy and their relationships is crucial for creating
-                  effective design systems. By leveraging atomic design principles, you can ensure
-                  consistency and scalability across your projects.
+                  effective components, design systems, and products. By leveraging atomic design
+                  principles, you can ensure consistency and scalability across your projects.
                 </p>
                 <h2 className="SectionImage w-full flex font-bold text-start ">
                   Common component examples:
@@ -625,7 +656,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
   type="primary" 
   size="medium"
   startIcon={<WestRoundedIcon />}
-  onClick={() => { /* handle click */ }}
+  onClick={() => { /* Your action here */ }}
 />`}
                   >
                     <CodeHeader
@@ -649,40 +680,46 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   </p>
                 </div>
                 <p>
-                  <b>Properties (props)</b> define a component's identity and characteristics.
-                  Consider a car analogy: it has properties like brand, model, year, and passenger
-                  capacity where each serves a specific purpose.
-                </p>{' '}
-                <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-60 lg:my-8 rounded-lg border border-stone-900 hover:bg-stone-50">
-                  <Button
-                    label="Primary Button"
-                    type="primary"
-                    size="medium"
-                    isDisabled={false}
-                    isLoading={false}
-                    startIcon={<CodeRoundedIcon />}
-                    onClick={handleClickThree}
-                  />
-                  <Button
-                    label="Secondary Button"
-                    type="secondary"
-                    size="medium"
-                    isDisabled={false}
-                    isLoading={true}
-                    className="h-[52px]"
-                  />
-                  <Button
-                    label="Tertiary Button"
-                    type="tertiary"
-                    size="medium"
-                    isDisabled={true}
-                    isLoading={false}
-                  />
-                </div>
-                <p className="text-center text-sm text-stone-600 lg:mb-6">
-                  Button component with different property configurations
+                  <b>Properties (props)</b> define a component's (object) identity and
+                  characteristics. Each property has a name and a value, and each of these
+                  name/value pairs tells you something about the component itself.
                 </p>
-                <p className="mb-4">Similarly, a button component might have properties like:</p>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/props_name_value.svg"
+                    alt="Properties have a name and a value"
+                    width={800}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Properties have a name and a value
+                  </p>
+                </div>
+                <p>
+                  Duckett (2014) defines properties with a car analogy. Consider two cars: each has
+                  properties like brand, model, year, and passenger capacity where each serves a
+                  specific purpose. Both cars have these properties where the first car is a Toyota
+                  and the second car is a Honda. The first car is a Corolla and the second car is a
+                  Civic. The first car is a 2020 and the second car is a 2021. The first car has a
+                  passenger capacity of 5 and the second car has a passenger capacity of 5.{' '}
+                </p>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/car_props_table.svg"
+                    alt="Property comparison for two different cars"
+                    width={800}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Property comparison for two different cars
+                  </p>
+                </div>
+                <p className="mb-4">
+                  The car objects have the same properties but with different values. They tell you
+                  the maker of car,model, year, and passenger capacity. Similarly, any UI component
+                  has properties like them. For instance, a button component might have properties
+                  like:
+                </p>
                 {/*  button block for prop showcase} */}
                 <code>
                   <b>label:</b> string
@@ -849,8 +886,10 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   />
                 </div>
                 <p>
-                  These properties map directly to React/Vue/Angular/Svelte props and make
-                  components flexible, reusable, and maintainable.
+                  Above properties tells us the abilites of the button component. The idea of name
+                  and value pairs is used in both HTML and CSS. In HTML, an attribute is like a
+                  property. Different attributes have different names, and each attribute can have a
+                  value. Name and Value pairs are used a lot in programming.
                 </p>
               </div>
             </div>
@@ -890,7 +929,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     <b>Properties:</b> Establishing clear, js-friendly component properties.
                   </li>
                   <li>
-                    <b>Tokenization:</b> Applying design tokens for scalable theming.
+                    <b>Tokens:</b> Applying design tokens for scalable theming.
                   </li>
                   <li>
                     <b>Interaction:</b> Prototyping behaviors and states.
@@ -911,28 +950,82 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent w-full items-center justify-center text-start text-stone-900 text-lg gap-4">
-                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
-                  <Image
-                    src="/img/js-components/frame_structure_example.svg"
-                    alt="Frame Structure Example"
-                    width={600}
-                    height={1}
-                  />
-                  <p className="text-center text-sm text-stone-600">
-                    Unnamed and named frame structure
+                <p>
+                  The arrangement and organization of HTML elements within a document is referred to
+                  as its structure. This structure establishes the relationships between the various
+                  sections of a web page and the way content is presented. Below is an example of a
+                  basic HTML structure.
+                </p>
+                <Code
+                  className=" lg:w-auto h-auto mx-auto my-4 lg:my-8"
+                  code={`<!DOCTYPE html>
+<head>
+  <title>This is the title visible in the browser tab</title>
+</head>
+<body>
+  <h1>This is the heading of the page</h1>
+  <p>This is the paragraph of the page</p> 
+</body>
+</html>
+`}
+                >
+                  <CodeHeader icon={CodeRoundedIcon} copyButton className="text-amber-50 h-16 px-6">
+                    Basic HTML Structure
+                  </CodeHeader>
+                  <CodeBlock lang="html" theme="dark" inView={true} cursor={true} />
+                </Code>
+                <p>
+                  HTML uses various elements to structure the content of a page. These elements are
+                  called tags. Each tag has a specific purpose and is used to create different types
+                  of content.
+                </p>
+                <div className="HTML__Tags__Samples__Placeholder flex flex-col gap-4 items-center justify-center w-full my-4 lg:my-8">
+                  <div className="HTML__Tags__Samples__List flex flex-wrap gap-4 lg:gap-6 p-4 lg:p-8 items-center justify-center w-full h-60 rounded-lg border border-stone-900 hover:bg-stone-50">
+                    <Tag label="<header>" size="large" type="lime" />
+                    <Tag label="<nav>" size="large" type="red" />
+                    <Tag label="<main>" size="large" type="amber" />
+                    <Tag label="<section>" size="large" type="violet" />
+                    <Tag label="<article>" size="large" type="teal" />
+                    <Tag label="<footer>" size="large" type="purple" />
+                    <Tag label="<h1>" size="large" type="emerald" />
+                    <Tag label="<p>" size="large" type="indigo" />
+                  </div>
+                  <p className="text-sm text-stone-600">
+                    Sample HTML tags which are used to structure the content
                   </p>
                 </div>
                 <p>
-                  Regarding layer naming, there are two schools of thought: those that define the
-                  names and those who do not. Naming your levels is really helpful when done
-                  correctly and purposefully. Naming levels aid in our comprehension of the proper
-                  HTML structure for a given component. When you wish to iterate later, it also
-                  makes the component easier to understand. To make the components more
-                  understandable, the majority of design system libraries employ layer naming. In
-                  this section, we'll cover best practices for structuring components using
-                  <b> Auto-Layout in Figma</b> and naming conventions that translate seamlessly to
-                  HTML/CSS.
+                  In design, we define this structure by using frames. Each frame we use is
+                  translated to a HTML element. Belows is the example of frame nesting for the basic
+                  HTML structure mentioned above.
                 </p>
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/basic_html_structure.svg"
+                    alt="Basic HTML Structure Frame Structure"
+                    width={300}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Basic Frame Nesting for the Basic HTML Structure
+                  </p>
+                </div>
+                <p>
+                  While desiging a page or a component, we actually define the HTML structure. That
+                  is why it is important to understand and know how to nest frames within each
+                  other. In the next section, we will cover how to use Auto-Layout, how to name
+                  frames, and how to use them in a proper way.
+                </p>
+                <div className="flex w-auto items-center justify-center">
+                  <InfoContainer
+                    color="cyan"
+                    icon={<CodeRoundedIcon />}
+                    content="Learn more about HTML elements (tags) and their semantic meaning. Visit the W3Schools website for a comprehensive guide."
+                    to="https://www.w3schools.com/html/html_elements.asp?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
+                    target="_blank"
+                    className="mt-6 mb-6"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -964,7 +1057,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <p>
                   Using Auto-Layout will allow us to define the layout of the component in a more
                   flexible way. Auto-Layout in Figma directly corresponds to CSS Flexbox properties.
-                  When you configure Auto-Layout settings in Figma, you're essentially defining:
+                  When you configure Auto-Layout settings, you're essentially defining:
                 </p>
                 <ul className="list-disc list-inside ml-4 space-y-4 marker:text-stone-600">
                   <li>
@@ -1089,7 +1182,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     startIcon={<WestRoundedIcon />}
                     endIcon={<EastRoundedIcon />}
                     ariaLabel="Example button with start and end icons"
-                    onClick={() => alert('I am a button made of three frames')}
+                    onClick={buttonExample}
                   />
                   <Image
                     src="/img/js-components/simple_button_frames.svg"
@@ -1191,7 +1284,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     content="You can try the button example in CodePen"
                     to="https://codepen.io/ouzozcn/pen/dPGJmoo"
                     target="_blank"
-                    className="my-4"
+                    className="mb-4"
                   />
                 </div>
               </div>
@@ -1208,6 +1301,17 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
+                  <Image
+                    src="/img/js-components/frame_structure_example.svg"
+                    alt="Frame Structure Example"
+                    width={600}
+                    height={1}
+                  />
+                  <p className="text-center text-sm text-stone-600">
+                    Unnamed and named frame structure
+                  </p>
+                </div>
                 <p>
                   Proper layer naming is essential for clear communication between designers and
                   developers. Meaningful names help developers understand the purpose of each frame
@@ -1227,8 +1331,8 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   </p>
                 </div>
                 <p>
-                  Above example shows a card component with poorly named layers (left) versus
-                  thoughtfully named layers (right). The meaningful names clarify the structure and
+                  Above example shows a card component with unnamed frames (left) versus
+                  thoughtfully named frames (right). The meaningful names clarify the structure and
                   purpose of each element, making it easier for developers to implement the design
                   accurately. Even the Figma icons tells the layout direction (horizontal vs
                   vertical) at a glance.
@@ -1297,12 +1401,11 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 />
                 <p>
                   By combining proper Auto-Layout structure with meaningful layer names, you set
-                  developers up for success—enabling them to implement components quickly and
-                  accurately. Modern design systems like Material Design (Google), Carbon (IBM), and
-                  Atlassian Design System use consistent layer naming to create clarity across
-                  hundreds of components.
+                  your development team up for success. This will enable them to implement
+                  components quickly and accurately. Modern design systems like Material Design
+                  (Google), Carbon (IBM), and Atlassian Design System use consistent frame naming to
+                  create clarity across hundreds of components.
                 </p>
-                <p></p>
               </div>
             </div>
           </div>
@@ -1354,7 +1457,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   </p>
                 </div>
                 <p>
-                  We can use these property types to create a button component with different states
+                  We can use these property types to create any UI component with different states
                   and variants. Below is a table that maps Figma properties to frontend equivalents.
                 </p>
                 <div className="FigmaPropTable w-full overflow-x-auto my-4">
@@ -1427,12 +1530,11 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
                 <p>
-                  Front-end development is in progress since the early 2000s. Over the years,
-                  certain conventions have emerged that enhance code readability and
-                  maintainability. Adopting these conventions in your property naming can
-                  significantly improve collaboration with developers. As designers, we should
-                  strive to speak the same language as our developer counterparts. Here are some key
-                  conventions to consider:
+                  Front-end development has been around for a long time. Over the years, certain
+                  conventions have emerged that enhance code readability and maintainability.
+                  Adopting these conventions in your property naming can significantly improve
+                  collaboration with developers. As designers, we should strive to speak the same
+                  language as our developer counterparts. Here are some key conventions to consider:
                 </p>
 
                 <ul className="list-disc list-inside ml-4 space-y-2 marker:text-stone-600">
@@ -1452,7 +1554,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   <Image
                     src="/img/js-components/component__property_naming.svg"
                     alt="Figma Property Naming Conventions"
-                    width={600}
+                    width={700}
                     height={1}
                   />
                   <p className="text-center text-sm text-stone-600">Property naming conventions</p>
@@ -1531,11 +1633,12 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   Above Figma button component properties map directly to props in React, Vue,
                   Angular, and Svelte with minimal adjustments for framework syntax. This
                   consistency reduces cognitive load for developers and help them implement
-                  components faster and with fewer errors.
+                  components faster and with fewer errors. Let's take a look at how the same
+                  properties look in different frameworks:
                 </p>
                 <div className="Animated___Code__Blocks flex flex-col w-full items-center justify-center gap-2 lg:gap-4 lg:mx-auto lg:mb-4">
                   <Code
-                    className="lg:w-full lg:h-[330px]"
+                    className="lg:w-[650px] lg:h-[330px]"
                     code={`interface ButtonProps {
   label: string;
   size?: 'small' | 'medium' | 'large';
@@ -1563,11 +1666,15 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                       cursor={true}
                     />
                   </Code>
+                  <p className="text-sm text-stone-600 lg:mb-4">
+                    In React, component properties are defined in an interface.
+                  </p>
+
                   <Code
-                    className=" lg:w-full lg:h-[330px]"
+                    className=" lg:w-[650px] lg:h-[330px]"
                     code={`interface ButtonProps {
   label: string;
-  type?: 'primary' | 'secondary' | 'tertiary';
+  type?: 'primary' | 'secondary' | 'tertiary';<
   size?: 'small' | 'medium' | 'large';
   isDisabled?: boolean;
   isLoading?: boolean;
@@ -1592,9 +1699,12 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                       cursor={true}
                     />
                   </Code>
+                  <p className="text-sm text-stone-600 lg:mb-4">
+                    In Vue, component properties are defined in an interface.
+                  </p>
 
                   <Code
-                    className="lg:w-full lg:h-[330px]"
+                    className="lg:w-[650px] lg:h-[430px]"
                     code={`@Component({
   selector: 'app-button',
   template: ''
@@ -1627,8 +1737,12 @@ export class ButtonComponent {
                       cursor={true}
                     />
                   </Code>
+                  <p className="text-sm text-stone-600 lg:mb-4">
+                    In Angular, component properties are defined in a class.
+                  </p>
+
                   <Code
-                    className=" lg:w-full lg:h-[330px]"
+                    className=" lg:w-[650px] lg:h-[330px]"
                     code={` <script lang="ts">
   export let label: string;
   export let type: 'primary' | 'secondary' | 'tertiary' = 'primary';
@@ -1656,6 +1770,9 @@ export class ButtonComponent {
                       cursor={true}
                     />
                   </Code>
+                  <p className="text-sm text-stone-600 ">
+                    In Svelte, component properties are defined in a script tag.
+                  </p>
                 </div>
 
                 <p>
@@ -1670,16 +1787,22 @@ export class ButtonComponent {
             </div>
           </div>
           {/* * Section End * */}
-          <div className="BlogContent flex flex-col w-full   gap-4 " id="tokenization">
+          <div className="BlogContent flex flex-col w-full   gap-4 " id="tokens">
             <SectionTitle
-              title="5. Tokenization"
+              title="5. Tokens"
               className="md:sticky md:top-[87px] md:self-start"
               color="emerald"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+                <p>
+                  A token, as used in web development and design, is typically a standardized value
+                  that denotes a particular configuration or design element. Tokens are frequently
+                  used to enhance scalability, preserve consistency, and promote cooperation across
+                  various platforms and technologies.
+                </p>
                 <div className="Token__Samples__Placeholder flex flex-col gap-4 items-center justify-center w-full mb-4">
-                  <div className="Token__Samples__List flex flex-col lg:flex-row gap-4 lg:gap-8 p-4 lg:p-16 items-center justify-center w-full h-60 rounded-lg border border-stone-900 hover:bg-stone-50">
+                  <div className="Token__Samples__List flex flex-col lg:flex-row gap-4 lg:gap-6 p-4 lg:p-8 items-center justify-center w-full h-60 rounded-lg border border-stone-900 hover:bg-stone-50">
                     <Tag label="--color-primary-600" size="large" type="lime" />
                     <Tag label="--spacing-4" size="large" type="red" />
                     <Tag label="--font-family-sans" size="large" type="amber" />
@@ -1692,8 +1815,8 @@ export class ButtonComponent {
                 </div>
                 <p>
                   Modern digital products require theme support (light mode, dark mode, high
-                  contrast). This necessitates <b>tokenization</b>, using variables instead of
-                  hard-coded values. Besides that, using tokens instead of fixed values also enables
+                  contrast). This necessitates <b>tokens</b>, using variables instead of hard-coded
+                  values. Besides that, using tokens instead of fixed values also enables
                   scalability and consistency across the design system. For example, if your brand
                   color changes, updating a single token updates it everywhere. As designers, we
                   often hear new iteration ideas from stakeholders. Using tokens allows us to
@@ -1704,16 +1827,15 @@ export class ButtonComponent {
                   If you are using CSS or CSS-in-JS, design tokens are typically implemented as CSS
                   variables (custom properties). You need to create your own primitive and component
                   tokens. If you want to skip the creating primitive tokens, it's best to use an
-                  existing open-source library like TailwindCSS. TailwindCSS provides a
-                  comprehensive set of design tokens that cover colors, spacing, typography, and
-                  more. You can then create component-specific tokens that reference these
-                  primitives. For example, a button's primary background color token might reference
-                  Tailwind's `--tw-color-blue-600`. Here is an example of how to transition from old
-                  way to modern way:
+                  existing library like TailwindCSS. It provides a comprehensive set of design
+                  tokens that cover colors, spacing, typography, and more. You can then create
+                  component-specific tokens that reference these primitives. For example, a button's
+                  primary background color token might reference Tailwind's `--tw-color-blue-600`.
+                  Here is an example of how to transition from old way to modern way:
                 </p>
                 <div className="flex flex-col  lg:flex-row gap-4 w-full ">
                   <pre className="bg-amber-50  rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
-                    {`/// Old approach (hard-coded values)
+                    {`// Old approach (hard-coded values)
 
 🟥 Color: "#0D99FF" (specific hex value)
 🟥 Spacing: "16px" (specific pixel value)
@@ -1721,7 +1843,7 @@ export class ButtonComponent {
 🟥 Border radius: "8px" (specific value)`}
                   </pre>
                   <pre className="bg-amber-50  rounded-lg p-4 text-sm font-mono w-full overflow-x-auto">
-                    {`/// Modern approach (design tokens)
+                    {`// Modern approach (design tokens)
 
 🟩 Color: "--color-primary-600" → resolves to "#0D99FF" in light mode, "#3B82F6" in dark mode
 🟩 Spacing: "--spacing-4" → resolves to "16px" (or "1rem" in fluid systems)
@@ -1730,7 +1852,7 @@ export class ButtonComponent {
                   </pre>
                 </div>
                 <p className="font-bold md:mt-6 ">
-                  <b>Benefits of Tokenization</b>
+                  <b>Benefits of Tokens</b>
                 </p>
                 <ul className="list-disc list-inside ml-4 space-y-2 marker:text-stone-600">
                   <li>
@@ -1820,12 +1942,11 @@ export class ButtonComponent {
                   Design tokens are simple to incorporate into component libraries, style guides,
                   and design systems because they are usually stored in a format like JSON, YAML, or
                   XML. They can be employed in a variety of frameworks and tools, frequently with
-                  the aid of design token management tools or preprocessors.
+                  the aid of design token management tools or preprocessors like Sass.
                 </p>
                 <Code
                   className=" lg:w-1/2 h-auto mx-auto"
-                  code={`
-"color": {
+                  code={`"color": {
   "primary": "#007bff",
   "secondary": "#6c757d",
   "success": "#28a745",
@@ -1854,10 +1975,11 @@ export class ButtonComponent {
                   <CodeBlock lang="json" theme="dark" inView={true} cursor={true} />
                 </Code>
                 <p>
-                  Managing design tokens is a crucial part of design system maintenance. You can use
-                  various tools to manage design tokens like Tokens Studio, Specify, and Supernova.
+                  Managing design tokens is a crucial part of components and design systems
+                  maintenance. You can use various tools to manage design tokens like Tokens Studio,
+                  Specify, and Supernova.
                 </p>
-                {/* Market Analysis Cards */}
+                {/* Token Management Tools Cards */}
                 <div className="SectionContent flex  my-4 items-start justify-center flex-col md:flex-row gap-8">
                   <ContentCard
                     title="Tokens Studio"
@@ -2045,7 +2167,7 @@ export class ButtonComponent {
                   Prototyping is one of the must-haves for delivering a production-ready component.
                   It allows us to mimic real-time behaviors for actionable items. Today most UI
                   elements have interactions. At least, a hover state is applicable for most of
-                  them. For instance, A button can redirect users to a different page, display a
+                  them. For instance, a button can redirect users to a different page, display a
                   dialog, or open a drawer on the side. Adding an On Click event into a component in
                   Figma actually helps developers while defining the “onClick” function on the
                   component so they can define proper destination for the component.
@@ -2054,7 +2176,7 @@ export class ButtonComponent {
                   <Image
                     src="/img/js-components/prototype_flow.svg"
                     alt=" Button with hover and onClick actions"
-                    width={1200}
+                    width={1100}
                     height={1}
                   />
                   <p className="text-center text-sm text-stone-600">
@@ -2066,7 +2188,7 @@ export class ButtonComponent {
                   transitions can be defined using triggering overlays, which are primarily utilized
                   for drawers, dialog, and modals, as well as animations and destinations, which aid
                   in defining navigation. We can simulate items that function just like we developed
-                  them by using component-level prototyping.When a component have interactions,
+                  them by using component-level prototyping. When a component has interactions,
                   developers can see those actions via Dev Mode in Figma, VS Code, or Cursor.
                 </p>
                 <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
@@ -2112,52 +2234,55 @@ export class ButtonComponent {
                   initial appearance. The cursor pointer's appearance may indicate that a component
                   is draggable or contains an anchor link that will take us to a different location.
                 </p>
-                <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-60 lg:my-8 rounded-lg border border-stone-900 hover:bg-stone-50">
-                  <Button
-                    label="Default"
-                    type="secondary"
-                    size="medium"
-                    isDisabled={false}
-                    isLoading={false}
-                    onClick={handleClickFour}
-                  />
-                  <Button
-                    label="Hover"
-                    type="secondary"
-                    size="medium"
-                    isDisabled={false}
-                    isLoading={false}
-                    onClick={handleClickFour}
-                    className="bg-amber-100"
-                  />
-                  <Button
-                    label="Focus"
-                    type="secondary"
-                    size="medium"
-                    isDisabled={false}
-                    isLoading={false}
-                    onClick={handleClickFour}
-                    className="outline outline-2 outline-stone-900"
-                  />
-                  <Button
-                    label="Loading"
-                    type="secondary"
-                    size="medium"
-                    isDisabled={false}
-                    isLoading={true}
-                    className="h-[52px]"
-                  />
-                  <Button
-                    label="Disabled"
-                    type="secondary"
-                    size="medium"
-                    isDisabled={true}
-                    isLoading={false}
-                  />
+                <div className="flex flex-col items-center justify-center w-full">
+                  <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-60 lg:my-8 rounded-lg border border-stone-900 hover:bg-stone-50">
+                    <Button
+                      label="Default"
+                      type="secondary"
+                      size="medium"
+                      isDisabled={false}
+                      isLoading={false}
+                      onClick={handleClickFour}
+                    />
+                    <Button
+                      label="Hover"
+                      type="secondary"
+                      size="medium"
+                      isDisabled={false}
+                      isLoading={false}
+                      onClick={handleClickFour}
+                      className="bg-amber-100"
+                    />
+                    <Button
+                      label="Focus"
+                      type="secondary"
+                      size="medium"
+                      isDisabled={false}
+                      isLoading={false}
+                      onClick={handleClickFour}
+                      className="outline outline-2 outline-stone-900"
+                    />
+                    <Button
+                      label="Loading"
+                      type="secondary"
+                      size="medium"
+                      isDisabled={false}
+                      isLoading={true}
+                      className="h-[52px]"
+                    />
+                    <Button
+                      label="Disabled"
+                      type="secondary"
+                      size="medium"
+                      isDisabled={true}
+                      isLoading={false}
+                    />
+                  </div>
+
+                  <p className="text-center text-sm text-stone-600 lg:mb-6">
+                    Button component with default, hover, focus, loading, and disabled states
+                  </p>
                 </div>
-                <p className="text-center text-sm text-stone-600 lg:mb-6">
-                  Button component with default, hover, focus, loading, and disabled states
-                </p>
                 <p> Any interactive component needs to exhibit these fundamental states: </p>
                 <p className="font-semibold text-stone-900">Default State</p>
                 <ul className="list-disc list-inside ml-4 space-y-2 marker:text-stone-600">
@@ -2330,7 +2455,7 @@ export class ButtonComponent {
                   triggers can be used to assign keyboard keys, click and drag, move the mouse
                   pointer over an element, or delay a transition. The two triggers that designers
                   use the most while designing are On Click and While Hovering. On Tap and On Drag
-                  might be your top picks if you're developing for mobile.{' '}
+                  might be your top picks if you're designing for mobile.{' '}
                 </p>
                 <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
                   <Image
@@ -2427,36 +2552,55 @@ export class ButtonComponent {
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
                 <a
-                  href="https://www.amazon.com/JavaScript-Comprehensive-Learning-Professional-Programming/dp/1493222864?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
+                  href="https://www.sap-press.com/javascript_5554/?srsltid=AfmBOoqQj4XvAyc5MbhgoFjwT5gvatvbKQG061LEGNubgN7iUH5b4Ain?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-stone-600 hover:text-stone-900 hover:underline transition"
                 >
-                  ✤ Ackermann, P. (2022). JavaScript: The Comprehensive Guide.
+                  ✤ Ackermann, P. (2022). <i>JavaScript: The Comprehensive Guide</i>.
                 </a>
+                <a
+                  href="https://www.oreilly.com/library/view/learning-react-2nd/9781492051718?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-stone-600 hover:text-stone-900 hover:underline transition"
+                >
+                  ✤ Banks, A., & Porcello, E. (2020).{' '}
+                  <i>Learning react: Modern Patterns for Developing React Apps.</i> O’Reilly Media.
+                </a>
+
                 <a
                   href="https://www.wiley.com/en-us/HTML+and+CSS%3A+Design+and+Build+Websites-p-9781118206911?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-stone-600 hover:text-stone-900 hover:underline transition"
                 >
-                  ✤ Duckett, J. (2011). HTML and CSS: Design and Build Websites. John Wiley & Sons.
+                  ✤ Duckett, J. (2011). <i>HTML and CSS: Design and Build Websites</i>. John Wiley &
+                  Sons.
                 </a>
                 <a
-                  href="https://jackrusher.com/classic-ux/?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
+                  href="https://www.wiley.com/en-us/JavaScript+and+jQuery%3A+Interactive+Front-End+Web+Development-p-9781118531648?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-stone-600 hover:text-stone-900 hover:underline transition"
                 >
-                  ✤ Classic HCI demos. (n.d.).
+                  ✤ Duckett, J. (2014).{' '}
+                  <i>JavaScript and jQuery: Interactive Front-End Web Development.</i> John Wiley &
+                  Sons.
                 </a>
+
                 <a
-                  href="https://clarle.github.io/yui3/?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
+                  href="https://www.oreilly.com/library/view/javascript-the-definitive/9781491952016?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-stone-600 hover:text-stone-900 hover:underline transition"
                 >
-                  ✤ YUI Library. (n.d.).
+                  ✤ Flanagan, D. (2020).{' '}
+                  <i>
+                    JavaScript: The Definitive Guide: Master the World’s Most-used Programming
+                    Language.
+                  </i>{' '}
+                  O’Reilly Media.
                 </a>
                 <a
                   href="https://atomicdesign.bradfrost.com/?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
@@ -2464,7 +2608,29 @@ export class ButtonComponent {
                   rel="noopener noreferrer"
                   className="text-stone-600 hover:text-stone-900 hover:underline transition"
                 >
-                  ✤ Atomic Design by Brad Frost. (n.d.).
+                  ✤ Frost, B. (2016). <i>Atomic design.</i>
+                </a>
+                <a
+                  href="https://www.oreilly.com/library/view/modern-front-end-architecture/9781484266250/?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-stone-600 hover:text-stone-900 hover:underline transition"
+                >
+                  ✤ Lanciaux, R. (2021).{' '}
+                  <i>
+                    Modern front-end architecture: Optimize Your Front-end Development with
+                    Components, Storybook, and Mise en Place Philosophy.
+                  </i>{' '}
+                  Apress.
+                </a>
+                <a
+                  href="https://www.oreilly.com/library/view/clean-code-a/9780136083238//?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-stone-600 hover:text-stone-900 hover:underline transition"
+                >
+                  ✤ Martin, R. C. (2009).{' '}
+                  <i>Clean code: A Handbook of Agile Software Craftsmanship.</i> Pearson Education.
                 </a>
               </div>
             </div>
@@ -2495,14 +2661,6 @@ export class ButtonComponent {
                   </div>
                 </div>
               </Link>,
-            ]}
-            simpleTabs={[
-              {
-                icon: <LanguageIcon />,
-                state: 'idle',
-                to: 'https://usekroma.com/',
-                className: 'h-full hover:bg-blue-100 border-r-0',
-              },
             ]}
           />
         </div>
@@ -2565,11 +2723,7 @@ export class ButtonComponent {
               label="4.2 Framework-Specific Implementation"
               to="#framework-specific-implementation"
             />
-            <TextLink
-              className="font-semibold  text-sm"
-              label="5. Tokenization"
-              to="#tokenization"
-            />
+            <TextLink className="font-semibold  text-sm" label="5. Tokens" to="#tokens" />
             <TextLink
               className="ml-4  text-sm"
               label="5.1 Definition of Design Token"
