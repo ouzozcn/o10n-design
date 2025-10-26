@@ -1,12 +1,8 @@
 'use client';
 import React from 'react';
-import TopDivider from '@/components/TopDivider';
-import Menu from '@/components/Menu';
 import Button from '@/components/Button';
 import CachedRoundedIcon from '@mui/icons-material/CachedRounded';
-import SwapContent from '@/components/SwapContent';
-import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
-import IconButton from '@/components/IconButton';
+import Footer from '@/components/Footer';
 import {
   SandboxCodeEditor,
   SandboxConsole,
@@ -21,28 +17,15 @@ import {
 } from '@/components/kibo-ui/sandbox';
 import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from '@/components/ui/resizable';
 import { AppWindowIcon, CodeIcon, TerminalIcon } from 'lucide-react';
-export default function Lab() {
+export default function Sandbox() {
   return (
     <div className="w-full  border-collapse  min-h-screen bg-[#151515]">
       <div className="Header sticky top-0 flex flex-row p-4 w-full h-auto md:h-[88px] border-b border-stone-500 items-center justify-start gap-4 bg-[#151515] z-10">
-        <Menu className="border-lime-200 text-lime-100 hover:bg-stone-800 border-2" />
         <div className="HeaderTitle w-full flex flex-col md:flex-row place-content-between gap-4 items-start md:items-center">
-          <h1 className="text-xl md:text-2xl font-sans text-lime-100">o10n.lab</h1>
+          <h1 className="text-xl md:text-2xl font-sans text-lime-100">Sandbox</h1>
           <div className="flex flex-row gap-2">
             <Button
-              className="h-[58px] border-lime-100 text-lime-100 hover:bg-stone-800"
-              label="Hard Reload"
-              type="secondary"
-              size="medium"
-              endIcon={<CachedRoundedIcon />}
-              onClick={() => {
-                if (typeof window !== 'undefined') {
-                  window.location.reload();
-                }
-              }}
-            />
-            <Button
-              className="h-[58px] border-lime-100 text-lime-100 hover:bg-stone-800"
+              className="h-[58px] border-lime-100  text-lime-100 hover:bg-stone-800"
               label="Hard Reload"
               type="secondary"
               size="medium"
@@ -67,7 +50,7 @@ import ReactDOM from 'react-dom/client';
 function App() {
   return (
     <div className="p-8">
-      <h1 className="text-2xl font-bold mb-4">Welcome to o10n.lab</h1>
+      <h1 className="text-2xl font-bold mb-4">Welcome to Sandbox</h1>
       <p className="text-gray-600">This is a basic sandbox playground for React</p>
    
     </div>
@@ -189,6 +172,7 @@ export function debounce(func, wait) {
           </SandboxLayout>
         </SandboxProvider>
       </div>
+      <Footer />
     </div>
   );
 }

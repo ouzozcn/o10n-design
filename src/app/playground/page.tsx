@@ -6,191 +6,14 @@ import Button from '@/components/Button';
 import CachedRoundedIcon from '@mui/icons-material/CachedRounded';
 import Footer from '@/components/Footer';
 
-import DesignSkillPie from '@/components/data-vis/DesignSkillPie';
 {
-  /* Component dependencies start*/
+  /* Playground dependencies start*/
 }
 /// import any components you plan to use in the playground here
-import { PieChart } from '@mui/x-charts/PieChart';
-import { DefaultizedPieValueType } from '@mui/x-charts/models';
-import { Tooltip } from 'react-tooltip';
+
 {
-  /* Component dependencies end */
+  /* Playground dependencies end */
 }
-const treeMapData = {
-  name: 'Product Designer Skills 2024-2025',
-  color: 'hsl(220, 70%, 50%)',
-  children: [
-    {
-      name: 'Soft Skills & Collaboration',
-      color: 'hsl(200, 70%, 50%)',
-      children: [
-        {
-          name: 'Cross-functional Collaboration',
-          value: 88,
-          percentage: '88%',
-          color: 'hsl(200, 70%, 45%)',
-        },
-        {
-          name: 'Communication',
-          value: 83,
-          percentage: '83%',
-          color: 'hsl(200, 70%, 50%)',
-        },
-        {
-          name: 'Proactive/Self-Directed',
-          value: 36,
-          percentage: '36%',
-          color: 'hsl(200, 70%, 55%)',
-        },
-        {
-          name: 'Feedback Seeking',
-          value: 32,
-          percentage: '32%',
-          color: 'hsl(200, 70%, 60%)',
-        },
-        {
-          name: 'Learning Mindset',
-          value: 30,
-          percentage: '30%',
-          color: 'hsl(200, 70%, 65%)',
-        },
-        {
-          name: 'Task Prioritization',
-          value: 28,
-          percentage: '28%',
-          color: 'hsl(200, 70%, 70%)',
-        },
-      ],
-    },
-    {
-      name: 'Core Design Skills',
-      color: 'hsl(280, 70%, 50%)',
-      children: [
-        {
-          name: 'User Research & Testing',
-          value: 72,
-          percentage: '72%',
-          color: 'hsl(280, 70%, 45%)',
-        },
-        {
-          name: 'Design Process (End-to-End)',
-          value: 60,
-          percentage: '60%',
-          color: 'hsl(280, 70%, 50%)',
-        },
-        {
-          name: 'UI/Visual Design',
-          value: 56,
-          percentage: '56%',
-          color: 'hsl(280, 70%, 55%)',
-        },
-        {
-          name: 'Prototyping & Wireframing',
-          value: 48,
-          percentage: '48%',
-          color: 'hsl(280, 70%, 60%)',
-        },
-        {
-          name: 'Empathy & User-Centered',
-          value: 47,
-          percentage: '47%',
-          color: 'hsl(280, 70%, 65%)',
-        },
-      ],
-    },
-    {
-      name: 'Technical & Systems',
-      color: 'hsl(160, 70%, 45%)',
-      children: [
-        {
-          name: 'Design Systems',
-          value: 48,
-          percentage: '48%',
-          color: 'hsl(160, 70%, 40%)',
-        },
-        {
-          name: 'Multi-platform Design',
-          value: 28,
-          percentage: '28%',
-          color: 'hsl(160, 70%, 45%)',
-        },
-        {
-          name: 'HTML/CSS/JS Basics',
-          value: 23,
-          percentage: '23%',
-          color: 'hsl(160, 70%, 50%)',
-        },
-      ],
-    },
-    {
-      name: 'Business & Strategy',
-      color: 'hsl(30, 70%, 50%)',
-      children: [
-        {
-          name: 'Business Vision & Alignment',
-          value: 38,
-          percentage: '38%',
-          color: 'hsl(30, 70%, 45%)',
-        },
-        {
-          name: 'Strategic Thinking',
-          value: 25,
-          percentage: '25%',
-          color: 'hsl(30, 70%, 50%)',
-        },
-      ],
-    },
-    {
-      name: 'Emerging Skills',
-      color: 'hsl(330, 70%, 50%)',
-      children: [
-        {
-          name: 'AI Literacy',
-          value: 41,
-          percentage: '41%',
-          color: 'hsl(330, 70%, 45%)',
-          note: 'Top digital skill priority',
-        },
-        {
-          name: 'Accessibility Expertise',
-          value: 44,
-          percentage: '44%',
-          color: 'hsl(330, 70%, 50%)',
-          note: 'Higher priority than 2023',
-        },
-        {
-          name: 'No-code Platforms',
-          value: 20,
-          percentage: '20%',
-          color: 'hsl(330, 70%, 55%)',
-          note: 'Growing requirement',
-        },
-      ],
-    },
-  ],
-};
-
-const designerSkillsData = [
-  { value: 30, label: 'Soft Skills', color: '#facc15', formattedValue: '30%' },
-  { value: 25, label: 'Design Process', color: '#38bdf8', formattedValue: '25%' },
-  { value: 20, label: 'Front-end Skills', color: '#a3e635', formattedValue: '20%' },
-  { value: 12, label: 'User Research', color: '#2dd4bf', formattedValue: '12%' },
-  { value: 8, label: 'Emerging Tech (AI/No-code)', color: '#e879f9', formattedValue: '8%' },
-  { value: 5, label: 'Business Strategy', color: '#fb7185', formattedValue: '5%' },
-];
-
-const size = {
-  width: 400,
-  height: 400,
-  margin: { bottom: 15 },
-};
-const TOTAL = designerSkillsData.map(item => item.value).reduce((a, b) => a + b, 0);
-
-const getArcLabel = (params: DefaultizedPieValueType) => {
-  const percent = params.value / TOTAL;
-  return `${(percent * 100).toFixed(0)}%`;
-};
 
 export default function Playground() {
   return (
@@ -221,25 +44,16 @@ export default function Playground() {
         {/* Content Start*/}
         {/* Content Start*/}
         {/* Content Start*/}
-        <div className="w-full h-full flex items-center gap-4 justify-center">
-          <PieChart
-            series={[
-              {
-                data: designerSkillsData,
-                highlightScope: { fade: 'global', highlight: 'item' },
-                arcLabel: getArcLabel,
-                innerRadius: 30,
-              },
-            ]}
-            {...size}
-            slotProps={{
-              legend: {
-                direction: 'horizontal',
-                position: { vertical: 'bottom', horizontal: 'center' },
-              },
-            }}
-          ></PieChart>
-          <DesignSkillPie />
+        <div
+          className="Hexagon__Container flex flex-col w-64 h-64 mx-auto my-8 bg-amber-300 hover:bg-amber-400 border-2 border-stone-900"
+          style={{ clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)' }}
+        >
+          <div className="Hexagon__Icon flex justify-center items-center h-1/2">
+            <CachedRoundedIcon className="text-4xl text-stone-900" />
+          </div>
+          <div className="Hexagon__Content flex justify-center items-center h-1/2">
+            <p className="text-stone-900 font-medium">Label</p>
+          </div>
         </div>
         {/* Content End*/}
         {/* Content End*/}
