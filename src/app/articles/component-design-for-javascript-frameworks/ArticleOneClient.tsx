@@ -28,7 +28,7 @@ import DesignSkillPie from '@/components/data-vis/DesignSkillPie';
 import { ToastContainer } from 'react-toastify';
 import { showCustomToast } from '@/components/CustomToast';
 import RoughAnnotate from '@/components/rough-notation/RoughAnnotate';
-
+import Input from '@/components/Input';
 const handleClickOne = () => {
   showCustomToast('You clicked the Primary Button.');
 };
@@ -2357,13 +2357,13 @@ export class ButtonComponent {
                   <li>Resting state with no user interaction</li>
                 </ul>
 
-                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
-                  <Image
-                    src="/img/js-components/Input_default.svg"
-                    alt="Default state of an input component"
-                    width={400}
-                    height={1}
+                <div className="Input__Sample__Container flex flex-col items-center justify-center w-full lg:w-1/2 mx-auto gap-6 my-4 lg:my-6">
+                  <Input
+                    state="idle"
+                    placeholder="I am on default state"
+                    startIcon={<CodeRoundedIcon />}
                   />
+
                   <p className="text-center text-sm text-stone-600">
                     Default state of an input component
                   </p>
