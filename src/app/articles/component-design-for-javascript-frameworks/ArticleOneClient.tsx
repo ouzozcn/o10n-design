@@ -1,4 +1,5 @@
 'use client';
+import React, { useState } from 'react';
 import Menu from '@/components/Menu';
 import Footer from '@/components/Footer';
 import SectionTitle from '@/components/SectionTitle';
@@ -29,6 +30,10 @@ import { ToastContainer } from 'react-toastify';
 import { showCustomToast } from '@/components/CustomToast';
 import RoughAnnotate from '@/components/rough-notation/RoughAnnotate';
 import Input from '@/components/Input';
+
+/* Input Constants */
+// Moved inside component function
+/* */
 const handleClickOne = () => {
   showCustomToast('You clicked the Primary Button.');
 };
@@ -96,6 +101,25 @@ const buttonExample = () => {
 };
 
 export default function ComponentDesignForJavaScriptFrameworks() {
+  /* Input Constants */
+  const [value, setValue] = useState('');
+  const [state, setState] = useState<
+    'idle' | 'hover' | 'focus' | 'active' | 'loading' | 'disabled' | 'success' | 'error'
+  >('idle');
+
+  const handleFocus = () => {
+    setState('focus');
+  };
+
+  const handleBlur = () => {
+    if (value) {
+      setState('success');
+    } else {
+      setState('idle');
+    }
+  };
+  /* */
+
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
       <ToastContainer
@@ -2350,7 +2374,13 @@ export class ButtonComponent {
                     Button component with default, hover, focus, loading, and disabled states
                   </p>
                 </div>
-                <p> Any interactive component needs to exhibit these fundamental states: </p>
+                <p>
+                  {' '}
+                  Any interactive component needs to exhibit these fundamental states;{' '}
+                  <b>Default</b>, <b>Hover</b>, <b>Focus</b>, <b>Active</b>, <b>Disabled</b>,{' '}
+                  <b>Loading</b>, <b>Error</b>, <b>Success</b>. Let's take a look at each state in
+                  detail with using an <b>input</b> component as an example.{' '}
+                </p>
                 <p className="font-semibold text-stone-900">Default State</p>
                 <ul className="list-disc list-inside ml-4 space-y-2 marker:text-stone-600">
                   <li>How the component appears initially</li>
@@ -2359,9 +2389,13 @@ export class ButtonComponent {
 
                 <div className="Input__Sample__Container flex flex-col items-center justify-center w-full lg:w-1/2 mx-auto gap-6 my-4 lg:my-6">
                   <Input
-                    state="idle"
+                    value={value}
+                    state={state}
                     placeholder="I am on default state"
                     startIcon={<CodeRoundedIcon />}
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
+                    onChange={newValue => setValue(newValue)}
                   />
 
                   <p className="text-center text-sm text-stone-600">
@@ -2374,13 +2408,16 @@ export class ButtonComponent {
                   <li>Cursor changes to indicate interactivity</li>
                   <li>Subtle color shifts, elevations, or underlines</li>
                 </ul>
-                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
-                  <Image
-                    src="/img/js-components/Input_hover.svg"
-                    alt="Hover state of an input component"
-                    width={400}
-                    height={1}
+                <div className="Input__Sample__Container flex flex-col items-center justify-center w-full lg:w-1/2 mx-auto gap-6 my-4 lg:my-6">
+                  <Input
+                    value={value}
+                    state="hover"
+                    placeholder="I am on hover state"
+                    startIcon={<CodeRoundedIcon />}
+                    onChange={newValue => setValue(newValue)}
+                    className="bg-amber-200"
                   />
+
                   <p className="text-center text-sm text-stone-600">
                     Hover state of an input component
                   </p>
@@ -2391,14 +2428,16 @@ export class ButtonComponent {
                   <li>Critical for accessibility (WCAG compliance)</li>
                   <li>Often a visible outline or highlight</li>
                 </ul>
-                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
-                  <Image
-                    src="/img/js-components/Input_focus.svg"
-                    alt="Focus state of an input component"
-                    width={400}
-                    height={1}
+                <div className="Input__Sample__Container flex flex-col items-center justify-center w-full lg:w-1/2 mx-auto gap-6 my-4 lg:my-6">
+                  <Input
+                    value={value}
+                    state="focus"
+                    placeholder="I am on focus state"
+                    startIcon={<CodeRoundedIcon />}
+                    onChange={newValue => setValue(newValue)}
                   />
-                  <p className="text-center text-sm text-stone-600">
+
+                  <p className="text-center text-sm text-stone-600 ">
                     Focus state of an input component
                   </p>
                 </div>
@@ -2408,15 +2447,19 @@ export class ButtonComponent {
                   <li>Brief state showing the component is being activated</li>
                   <li>Often a slight scale reduction or color darkening</li>
                 </ul>
-                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
-                  <Image
-                    src="/img/js-components/Input_active.svg"
-                    alt="Active/Pressed state of an input component"
-                    width={400}
-                    height={1}
+                <div className="Input__Sample__Container flex flex-col items-center justify-center w-full lg:w-1/2 mx-auto gap-6 my-4 lg:my-6">
+                  <Input
+                    value={value}
+                    state="active"
+                    placeholder="I am on active state"
+                    startIcon={<CodeRoundedIcon />}
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
+                    onChange={newValue => setValue(newValue)}
                   />
+
                   <p className="text-center text-sm text-stone-600">
-                    Active/Pressed state of an input component
+                    Active state of an input component
                   </p>
                 </div>
                 <p className="font-semibold text-stone-900 mt-4">Disabled State</p>
@@ -2425,13 +2468,16 @@ export class ButtonComponent {
                   <li>Reduced opacity or grayed-out styling</li>
                   <li>Cursor changes to "not-allowed"</li>
                 </ul>
-                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
-                  <Image
-                    src="/img/js-components/Input_disabled.svg"
-                    alt="Disabled state of an input component"
-                    width={400}
-                    height={1}
+                <div className="Input__Sample__Container flex flex-col items-center justify-center w-full lg:w-1/2 mx-auto gap-6 my-4 lg:my-6">
+                  <Input
+                    value={value}
+                    state="disabled"
+                    placeholder="I am on disabled state"
+                    startIcon={<CodeRoundedIcon />}
+                    onChange={newValue => setValue(newValue)}
+                    className="cursor-not-allowed"
                   />
+
                   <p className="text-center text-sm text-stone-600">
                     Disabled state of an input component
                   </p>
@@ -2442,13 +2488,15 @@ export class ButtonComponent {
                   <li>Often shows spinner or skeleton loader</li>
                   <li>May disable interaction during loading</li>
                 </ul>
-                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
-                  <Image
-                    src="/img/js-components/Input_loading.svg"
-                    alt="Loading state of an input component"
-                    width={400}
-                    height={1}
+                <div className="Input__Sample__Container flex flex-col items-center justify-center w-full lg:w-1/2 mx-auto gap-6 my-4 lg:my-6">
+                  <Input
+                    value={value}
+                    state="loading"
+                    placeholder="I am on loading state"
+                    startIcon={<CodeRoundedIcon />}
+                    onChange={newValue => setValue(newValue)}
                   />
+
                   <p className="text-center text-sm text-stone-600">
                     Loading state of an input component
                   </p>
@@ -2459,13 +2507,15 @@ export class ButtonComponent {
                   <li>Red/warning colors, error icons, helper text</li>
                   <li>Critical for form components</li>
                 </ul>
-                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
-                  <Image
-                    src="/img/js-components/Input_error.svg"
-                    alt="Error state of an input component"
-                    width={400}
-                    height={1}
+                <div className="Input__Sample__Container flex flex-col items-center justify-center w-full lg:w-1/2 mx-auto gap-6 my-4 lg:my-6">
+                  <Input
+                    value={value}
+                    state="error"
+                    placeholder="I am on error state"
+                    startIcon={<CodeRoundedIcon />}
+                    onChange={newValue => setValue(newValue)}
                   />
+
                   <p className="text-center text-sm text-stone-600">
                     Error state of an input component
                   </p>
@@ -2475,13 +2525,15 @@ export class ButtonComponent {
                   <li>Confirms successful operations</li>
                   <li>Green/success colors, checkmarks, confirmation messages</li>
                 </ul>
-                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
-                  <Image
-                    src="/img/js-components/Input_success.svg"
-                    alt="Success state of an input component"
-                    width={400}
-                    height={1}
+                <div className="Input__Sample__Container flex flex-col items-center justify-center w-full lg:w-1/2 mx-auto gap-6 my-4 lg:my-6">
+                  <Input
+                    value={value}
+                    state="success"
+                    placeholder="I am on success state"
+                    startIcon={<CodeRoundedIcon />}
+                    onChange={newValue => setValue(newValue)}
                   />
+
                   <p className="text-center text-sm text-stone-600">
                     Success state of an input component
                   </p>

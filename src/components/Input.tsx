@@ -26,7 +26,7 @@ export interface InputProps {
 
 function Input({
   className = '',
-  value = '',
+  value,
   placeholder = 'Type a placeholder...',
   startIcon,
   endIcon,
@@ -70,10 +70,6 @@ function Input({
       default:
         return 'text-stone-800';
     }
-  };
-
-  const getBorderStyle = () => {
-    return 'border';
   };
 
   // Default user icon SVG
@@ -142,7 +138,7 @@ function Input({
           ${getBorderColor()} border-2
           ${getBackgroundColor()}
           ${state === 'disabled' ? 'cursor-not-allowed' : ''}
-          ${state === 'focus' ? 'border-blue-500 ring-2 ring-blue-200' : ''}
+          ${state === 'focus' ? 'border-amber-900 ring-2 ring-amber-400' : ''}
         `}
       >
         {/* Start Icon */}
