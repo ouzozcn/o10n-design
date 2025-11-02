@@ -19,6 +19,7 @@ interface RoughAnnotateProps {
   showWhenVisible?: boolean;
   rootMargin?: string;
   threshold?: number;
+  delay?: number;
 }
 
 export function RoughAnnotate({
@@ -37,6 +38,7 @@ export function RoughAnnotate({
   showWhenVisible = true,
   rootMargin = '0px 0px -10% 0px',
   threshold = 0.1,
+  delay = 0,
 }: RoughAnnotateProps) {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const Tag = as as any;
@@ -63,16 +65,29 @@ export function RoughAnnotate({
       if (!elementRef.current) return;
       const annotation = annotate(elementRef.current, options);
 
-      if (!showWhenVisible) {
+      const showAnnotation = () => {
+        if (delay > 0) {
+          return setTimeout(() => {
+            annotation.show();
+          }, delay);
+        }
         annotation.show();
-        return;
+        return null;
+      };
+
+      if (!showWhenVisible) {
+        const timeoutId = showAnnotation();
+        return function cleanup() {
+          if (timeoutId) clearTimeout(timeoutId);
+        };
       }
 
+      let timeoutId: ReturnType<typeof setTimeout> | null = null;
       const observer = new IntersectionObserver(
         entries => {
           const entry = entries[0];
           if (entry && entry.isIntersecting) {
-            annotation.show();
+            timeoutId = showAnnotation();
             observer.disconnect();
           }
         },
@@ -82,9 +97,10 @@ export function RoughAnnotate({
 
       return function cleanup() {
         observer.disconnect();
+        if (timeoutId) clearTimeout(timeoutId);
       };
     },
-    [options, showWhenVisible, rootMargin, threshold]
+    [options, showWhenVisible, rootMargin, threshold, delay]
   );
 
   return (
