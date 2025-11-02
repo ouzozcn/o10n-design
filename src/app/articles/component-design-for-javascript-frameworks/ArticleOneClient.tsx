@@ -1,4 +1,5 @@
 'use client';
+import React, { useState } from 'react';
 import Menu from '@/components/Menu';
 import Footer from '@/components/Footer';
 import SectionTitle from '@/components/SectionTitle';
@@ -28,7 +29,11 @@ import DesignSkillPie from '@/components/data-vis/DesignSkillPie';
 import { ToastContainer } from 'react-toastify';
 import { showCustomToast } from '@/components/CustomToast';
 import RoughAnnotate from '@/components/rough-notation/RoughAnnotate';
+import Input from '@/components/Input';
 
+/* Input Constants */
+// Moved inside component function
+/* */
 const handleClickOne = () => {
   showCustomToast('You clicked the Primary Button.');
 };
@@ -96,6 +101,34 @@ const buttonExample = () => {
 };
 
 export default function ComponentDesignForJavaScriptFrameworks() {
+  /* Input Constants */
+  // Individual state for each input demonstration
+  const [defaultValue, setDefaultValue] = useState('');
+  const [defaultState, setDefaultState] = useState<
+    'idle' | 'hover' | 'focus' | 'active' | 'loading' | 'disabled' | 'success' | 'error'
+  >('idle');
+
+  const [hoverValue, setHoverValue] = useState('');
+  const [focusValue, setFocusValue] = useState('');
+  const [activeValue, setActiveValue] = useState('');
+  const [disabledValue, setDisabledValue] = useState('');
+  const [loadingValue, setLoadingValue] = useState('');
+  const [errorValue, setErrorValue] = useState('');
+  const [successValue, setSuccessValue] = useState('');
+
+  const handleFocus = () => {
+    setDefaultState('focus');
+  };
+
+  const handleBlur = () => {
+    if (defaultValue) {
+      setDefaultState('success');
+    } else {
+      setDefaultState('idle');
+    }
+  };
+  /* */
+
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
       <ToastContainer
@@ -161,7 +194,14 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           Another important area where we may improve personally and learn new things is front-end
           development which is an emerging skill that is becoming more and more important. Analysis
           of current job market data shows that{' '}
-          <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+          <RoughAnnotate
+            type="highlight"
+            color="#a7f3d0"
+            padding={2}
+            animationDuration={1600}
+            showWhenVisible={true}
+            delay={4000}
+          >
             one in five Product Designer positions
           </RoughAnnotate>{' '}
           now requires front-end development knowledge which is a clear signal that technical skills
@@ -185,7 +225,14 @@ export default function ComponentDesignForJavaScriptFrameworks() {
         <p>
           This article is a guide for designers who want to create components that are easy to
           implement in code. It covers the{' '}
-          <RoughAnnotate type="box" color="#a78bfa" padding={2}>
+          <RoughAnnotate
+            type="box"
+            color="#a78bfa"
+            padding={2}
+            animationDuration={1600}
+            showWhenVisible={true}
+            delay={4000}
+          >
             fundamentals of component design,
           </RoughAnnotate>{' '}
           including structure, properties, design tokens, and interactions.
@@ -241,7 +288,14 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           developers are probably the ones we see, talk to, and discuss the most. We talk about
           every little element of a product with them. Common knowledge is essential for a more
           productive workplace. When designers and developers{' '}
-          <RoughAnnotate type="underline" color="#0ea5e9" padding={2}>
+          <RoughAnnotate
+            type="underline"
+            color="#0ea5e9"
+            padding={2}
+            animationDuration={1600}
+            showWhenVisible={true}
+            delay={4000}
+          >
             speak the same language,
           </RoughAnnotate>{' '}
           communication is improved, misunderstandings are decreased, expectations and reality can
@@ -261,7 +315,14 @@ export default function ComponentDesignForJavaScriptFrameworks() {
 
         <p>
           In this article, we'll explore best practices for{' '}
-          <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+          <RoughAnnotate
+            type="highlight"
+            color="#a7f3d0"
+            padding={2}
+            animationDuration={1600}
+            showWhenVisible={true}
+            delay={4000}
+          >
             designing components for JavaScript frameworks and libraries.
           </RoughAnnotate>{' '}
           At the end of reading, you will have a solid understanding of:
@@ -476,7 +537,14 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   </p>
                 </div>
                 <p>
-                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                  <RoughAnnotate
+                    type="highlight"
+                    color="#a7f3d0"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     A component is a single, reusable UI element
                   </RoughAnnotate>{' '}
                   within a product, a building block that can be used repeatedly with different
@@ -558,7 +626,14 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
                 <p>
                   Despite syntactic differences,{' '}
-                  <RoughAnnotate type="underline" color="#0ea5e9" padding={2}>
+                  <RoughAnnotate
+                    type="underline"
+                    color="#0ea5e9"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     all modern JavaScript frameworks and libraries
                   </RoughAnnotate>{' '}
                   share a common component-based architecture:
@@ -658,7 +733,14 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <p>
                   <b>Properties (props)</b> define a component's (object) identity and
                   characteristics. Each property has{' '}
-                  <RoughAnnotate type="box" color="#8b5cf6" padding={2}>
+                  <RoughAnnotate
+                    type="box"
+                    color="#8b5cf6"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     a name and a value
                   </RoughAnnotate>{' '}
                   , and each of these name/value pairs tells you something about the component
@@ -697,7 +779,14 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <p className="mb-4">
                   The car objects have the same properties but with different values. They tell you
                   the maker of car,model, year, and passenger capacity. Similarly,{' '}
-                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                  <RoughAnnotate
+                    type="highlight"
+                    color="#a7f3d0"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     any UI component has properties
                   </RoughAnnotate>{' '}
                   like them. For instance, a button component might have properties like:
@@ -900,7 +989,14 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 </div>
                 <p>
                   Designing components that developers can efficiently implement requires mastering{' '}
-                  <RoughAnnotate type="underline" color="#0ea5e9" padding={2}>
+                  <RoughAnnotate
+                    type="underline"
+                    color="#0ea5e9"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     four fundamental principles:
                   </RoughAnnotate>
                 </p>
@@ -938,7 +1034,14 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <p>
                   The arrangement and organization of HTML elements within a document is referred to
                   as its{' '}
-                  <RoughAnnotate type="box" color="#8b5cf6" padding={3}>
+                  <RoughAnnotate
+                    type="box"
+                    color="#8b5cf6"
+                    padding={3}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     structure.
                   </RoughAnnotate>{' '}
                   This structure establishes the relationships between the various sections of a web
@@ -966,7 +1069,14 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <p>
                   HTML uses various elements to structure the content of a page. These elements are
                   called tags.{' '}
-                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                  <RoughAnnotate
+                    type="highlight"
+                    color="#a7f3d0"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     Each tag has a specific purpose
                   </RoughAnnotate>{' '}
                   and is used to create different types of content.
@@ -988,7 +1098,14 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 </div>
                 <p>
                   In design, we define this structure by using{' '}
-                  <RoughAnnotate type="circle" color="#84cc16" padding={3}>
+                  <RoughAnnotate
+                    type="circle"
+                    color="#84cc16"
+                    padding={3}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     frames.
                   </RoughAnnotate>{' '}
                   Each frame we use is translated to a HTML element. Belows is the example of frame
@@ -1037,11 +1154,25 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
                 <p>
                   Figma offers two ways to nest objects:{' '}
-                  <RoughAnnotate type="underline" color="#ef4444" padding={2}>
+                  <RoughAnnotate
+                    type="underline"
+                    color="#ef4444"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     <b>Groups</b>{' '}
                   </RoughAnnotate>{' '}
                   and{' '}
-                  <RoughAnnotate type="underline" color="#22c55e" padding={2}>
+                  <RoughAnnotate
+                    type="underline"
+                    color="#22c55e"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     <b>Frames</b>.
                   </RoughAnnotate>{' '}
                   Groups are the traditional Adobe-style approach, while Frames unlock Figma's
@@ -1060,7 +1191,14 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <p>
                   Using Auto-Layout will allow us to define the layout of the component in a more
                   flexible way. Auto-Layout in Figma directly corresponds to{' '}
-                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                  <RoughAnnotate
+                    type="highlight"
+                    color="#a7f3d0"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     CSS Flexbox properties.
                   </RoughAnnotate>{' '}
                   When you configure Auto-Layout settings, you're essentially defining:
@@ -1100,11 +1238,25 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <p>
                   Besides defining the layout of the component, Auto-Layout also allows us to define
                   the spacing between the children of the component with using{' '}
-                  <RoughAnnotate type="box" color="#8b5cf6" padding={2}>
+                  <RoughAnnotate
+                    type="box"
+                    color="#8b5cf6"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     Gap
                   </RoughAnnotate>{' '}
                   and{' '}
-                  <RoughAnnotate type="box" color="#8b5cf6" padding={2}>
+                  <RoughAnnotate
+                    type="box"
+                    color="#8b5cf6"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     Padding
                   </RoughAnnotate>{' '}
                   properties.
@@ -1130,7 +1282,14 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 />
                 <p>
                   <b>Key principle:</b> <br />
-                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                  <RoughAnnotate
+                    type="highlight"
+                    color="#a7f3d0"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     Your frame structure defines the HTML structure.
                   </RoughAnnotate>{' '}
                   Each frame typically becomes an HTML element (most commonly a{' '}
@@ -1332,7 +1491,14 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   developers. Meaningful names help developers understand the purpose of each frame
                   and how it maps to code. If you wouldn't name a CSS class "Frame 1" or "Group 2",
                   don't use those names in your layers. Instead,{' '}
-                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                  <RoughAnnotate
+                    type="highlight"
+                    color="#a7f3d0"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     use descriptive names
                   </RoughAnnotate>{' '}
                   that reflect the element's role.
@@ -1457,7 +1623,14 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   designer, If I am going to use an UI element more than once, I always create a
                   component with well-defined properties. This approach not only streamlines my
                   design process but also significantly{' '}
-                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                  <RoughAnnotate
+                    type="highlight"
+                    color="#a7f3d0"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     reduces the development effort
                   </RoughAnnotate>{' '}
                   required to implement the component. Defining properties is a time investment that
@@ -1561,7 +1734,14 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <ul className="list-disc list-inside ml-4 space-y-2 marker:text-stone-600">
                   <li>
                     Use{' '}
-                    <RoughAnnotate type="underline" color="#0ea5e9" padding={2}>
+                    <RoughAnnotate
+                      type="underline"
+                      color="#0ea5e9"
+                      padding={2}
+                      animationDuration={1600}
+                      showWhenVisible={true}
+                      delay={4000}
+                    >
                       <b>camelCase</b>
                     </RoughAnnotate>{' '}
                     (e.g., buttonLabel, isDisabled) for property names to align with JavaScript
@@ -1659,7 +1839,14 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 </div>
                 <p>
                   Above Figma button component properties map directly to props in{' '}
-                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                  <RoughAnnotate
+                    type="highlight"
+                    color="#a7f3d0"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     React, Vue, Angular, and Svelte
                   </RoughAnnotate>{' '}
                   with minimal adjustments for framework syntax. This consistency reduces cognitive
@@ -1811,7 +1998,14 @@ export class ButtonComponent {
                   development but also reduces the likelihood of miscommunication or errors during
                   implementation. By investing time in defining clear, js-friendly component
                   properties in Figma, we set the stage for a{' '}
-                  <RoughAnnotate type="underline" color="#0ea5e9" padding={2}>
+                  <RoughAnnotate
+                    type="underline"
+                    color="#0ea5e9"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     smoother handoff
                   </RoughAnnotate>{' '}
                   to developers and a more efficient development process overall.
@@ -1849,7 +2043,14 @@ export class ButtonComponent {
                 <p>
                   Modern digital products require theme support (light mode, dark mode, high
                   contrast). This necessitates <b>tokens</b>, or customization features{' '}
-                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                  <RoughAnnotate
+                    type="highlight"
+                    color="#a7f3d0"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     using variables instead of hard-coded values.
                   </RoughAnnotate>{' '}
                   Besides that, using tokens instead of fixed values also enables scalability and
@@ -1864,7 +2065,14 @@ export class ButtonComponent {
                   as CSS variables (custom properties). You need to create your own primitive and
                   component tokens. If you want to skip the creating primitive tokens, it's best to
                   use an existing library like{' '}
-                  <RoughAnnotate type="box" color="#8b5cf6" padding={2}>
+                  <RoughAnnotate
+                    type="box"
+                    color="#8b5cf6"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     TailwindCSS.
                   </RoughAnnotate>{' '}
                   It provides a comprehensive set of design tokens that cover colors, spacing,
@@ -1944,7 +2152,14 @@ export class ButtonComponent {
                 </div>
                 <p>
                   A design token is a standardized,{' '}
-                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                  <RoughAnnotate
+                    type="highlight"
+                    color="#a7f3d0"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     reusable variable
                   </RoughAnnotate>{' '}
                   that stores design values like colors, spacing, or typography so they can be
@@ -2101,7 +2316,14 @@ export class ButtonComponent {
                 <p>
                   Figma allows us to define various tokens through its Variables feature with four
                   different types:{' '}
-                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                  <RoughAnnotate
+                    type="highlight"
+                    color="#a7f3d0"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     Color, Number, String, and Boolean.
                   </RoughAnnotate>{' '}
                   Using these tokens improves design system maintenance, ensures consistency across
@@ -2169,7 +2391,14 @@ export class ButtonComponent {
                 </div>
                 <p>
                   After defining the variables, you can start to{' '}
-                  <RoughAnnotate type="underline" color="#0ea5e9" padding={2}>
+                  <RoughAnnotate
+                    type="underline"
+                    color="#0ea5e9"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     use them in every aspect of your design system.
                   </RoughAnnotate>{' '}
                   You can use color-body-text-primary to all your body text elements. This will
@@ -2218,7 +2447,14 @@ export class ButtonComponent {
                 <p>
                   Prototyping is one of the must-haves for delivering a production-ready component.
                   It allows us to{' '}
-                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                  <RoughAnnotate
+                    type="highlight"
+                    color="#a7f3d0"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     mimic real-time behaviors
                   </RoughAnnotate>{' '}
                   for actionable items. Today most UI elements have interactions. At least, a hover
@@ -2246,7 +2482,14 @@ export class ButtonComponent {
                   in defining navigation. We can simulate items that function just like we developed
                   them by using component-level prototyping. When a component has interactions,
                   developers can see those actions via{' '}
-                  <RoughAnnotate type="box" color="#8b5cf6" padding={2}>
+                  <RoughAnnotate
+                    type="box"
+                    color="#8b5cf6"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     Dev Mode in Figma,
                   </RoughAnnotate>{' '}
                   VS Code, or Cursor.
@@ -2264,7 +2507,14 @@ export class ButtonComponent {
                 </div>
                 <p>
                   Additionally, adding component interactions{' '}
-                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                  <RoughAnnotate
+                    type="highlight"
+                    color="#a7f3d0"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     reveals the component's faults
                   </RoughAnnotate>{' '}
                   during the early stages of design. Configuring user flows is made possible by the
@@ -2292,7 +2542,14 @@ export class ButtonComponent {
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
                 <p>
                   Almost all of the components{' '}
-                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                  <RoughAnnotate
+                    type="highlight"
+                    color="#a7f3d0"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     need to define various states.
                   </RoughAnnotate>{' '}
                   Every state serves a distinct function in displaying a component's status. While a
@@ -2350,20 +2607,30 @@ export class ButtonComponent {
                     Button component with default, hover, focus, loading, and disabled states
                   </p>
                 </div>
-                <p> Any interactive component needs to exhibit these fundamental states: </p>
+                <p>
+                  {' '}
+                  Any interactive component needs to exhibit these fundamental states;{' '}
+                  <b>Default</b>, <b>Hover</b>, <b>Focus</b>, <b>Active</b>, <b>Disabled</b>,{' '}
+                  <b>Loading</b>, <b>Error</b>, <b>Success</b>. Let's take a look at each state in
+                  detail with using an <b>input</b> component as an example.{' '}
+                </p>
                 <p className="font-semibold text-stone-900">Default State</p>
                 <ul className="list-disc list-inside ml-4 space-y-2 marker:text-stone-600">
                   <li>How the component appears initially</li>
                   <li>Resting state with no user interaction</li>
                 </ul>
 
-                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
-                  <Image
-                    src="/img/js-components/Input_default.svg"
-                    alt="Default state of an input component"
-                    width={400}
-                    height={1}
+                <div className="Input__Sample__Container flex flex-col items-center justify-center w-full lg:w-1/2 mx-auto gap-6 my-4 lg:my-6">
+                  <Input
+                    value={defaultValue}
+                    state={defaultState}
+                    placeholder="I am on default state"
+                    startIcon={<CodeRoundedIcon />}
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
+                    onChange={newValue => setDefaultValue(newValue)}
                   />
+
                   <p className="text-center text-sm text-stone-600">
                     Default state of an input component
                   </p>
@@ -2374,13 +2641,16 @@ export class ButtonComponent {
                   <li>Cursor changes to indicate interactivity</li>
                   <li>Subtle color shifts, elevations, or underlines</li>
                 </ul>
-                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
-                  <Image
-                    src="/img/js-components/Input_hover.svg"
-                    alt="Hover state of an input component"
-                    width={400}
-                    height={1}
+                <div className="Input__Sample__Container flex flex-col items-center justify-center w-full lg:w-1/2 mx-auto gap-6 my-4 lg:my-6">
+                  <Input
+                    value={hoverValue}
+                    state="hover"
+                    placeholder="I am on hover state"
+                    startIcon={<CodeRoundedIcon />}
+                    onChange={newValue => setHoverValue(newValue)}
+                    className="bg-amber-200"
                   />
+
                   <p className="text-center text-sm text-stone-600">
                     Hover state of an input component
                   </p>
@@ -2391,14 +2661,16 @@ export class ButtonComponent {
                   <li>Critical for accessibility (WCAG compliance)</li>
                   <li>Often a visible outline or highlight</li>
                 </ul>
-                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
-                  <Image
-                    src="/img/js-components/Input_focus.svg"
-                    alt="Focus state of an input component"
-                    width={400}
-                    height={1}
+                <div className="Input__Sample__Container flex flex-col items-center justify-center w-full lg:w-1/2 mx-auto gap-6 my-4 lg:my-6">
+                  <Input
+                    value={focusValue}
+                    state="focus"
+                    placeholder="I am on focus state"
+                    startIcon={<CodeRoundedIcon />}
+                    onChange={newValue => setFocusValue(newValue)}
                   />
-                  <p className="text-center text-sm text-stone-600">
+
+                  <p className="text-center text-sm text-stone-600 ">
                     Focus state of an input component
                   </p>
                 </div>
@@ -2408,15 +2680,17 @@ export class ButtonComponent {
                   <li>Brief state showing the component is being activated</li>
                   <li>Often a slight scale reduction or color darkening</li>
                 </ul>
-                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
-                  <Image
-                    src="/img/js-components/Input_active.svg"
-                    alt="Active/Pressed state of an input component"
-                    width={400}
-                    height={1}
+                <div className="Input__Sample__Container flex flex-col items-center justify-center w-full lg:w-1/2 mx-auto gap-6 my-4 lg:my-6">
+                  <Input
+                    value={activeValue}
+                    state="active"
+                    placeholder="I am on active state"
+                    startIcon={<CodeRoundedIcon />}
+                    onChange={newValue => setActiveValue(newValue)}
                   />
+
                   <p className="text-center text-sm text-stone-600">
-                    Active/Pressed state of an input component
+                    Active state of an input component
                   </p>
                 </div>
                 <p className="font-semibold text-stone-900 mt-4">Disabled State</p>
@@ -2425,13 +2699,16 @@ export class ButtonComponent {
                   <li>Reduced opacity or grayed-out styling</li>
                   <li>Cursor changes to "not-allowed"</li>
                 </ul>
-                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
-                  <Image
-                    src="/img/js-components/Input_disabled.svg"
-                    alt="Disabled state of an input component"
-                    width={400}
-                    height={1}
+                <div className="Input__Sample__Container flex flex-col items-center justify-center w-full lg:w-1/2 mx-auto gap-6 my-4 lg:my-6">
+                  <Input
+                    value={disabledValue}
+                    state="disabled"
+                    placeholder="I am on disabled state"
+                    startIcon={<CodeRoundedIcon />}
+                    onChange={newValue => setDisabledValue(newValue)}
+                    className="cursor-not-allowed"
                   />
+
                   <p className="text-center text-sm text-stone-600">
                     Disabled state of an input component
                   </p>
@@ -2442,13 +2719,15 @@ export class ButtonComponent {
                   <li>Often shows spinner or skeleton loader</li>
                   <li>May disable interaction during loading</li>
                 </ul>
-                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
-                  <Image
-                    src="/img/js-components/Input_loading.svg"
-                    alt="Loading state of an input component"
-                    width={400}
-                    height={1}
+                <div className="Input__Sample__Container flex flex-col items-center justify-center w-full lg:w-1/2 mx-auto gap-6 my-4 lg:my-6">
+                  <Input
+                    value={loadingValue}
+                    state="loading"
+                    placeholder="I am on loading state"
+                    startIcon={<CodeRoundedIcon />}
+                    onChange={newValue => setLoadingValue(newValue)}
                   />
+
                   <p className="text-center text-sm text-stone-600">
                     Loading state of an input component
                   </p>
@@ -2459,13 +2738,15 @@ export class ButtonComponent {
                   <li>Red/warning colors, error icons, helper text</li>
                   <li>Critical for form components</li>
                 </ul>
-                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
-                  <Image
-                    src="/img/js-components/Input_error.svg"
-                    alt="Error state of an input component"
-                    width={400}
-                    height={1}
+                <div className="Input__Sample__Container flex flex-col items-center justify-center w-full lg:w-1/2 mx-auto gap-6 my-4 lg:my-6">
+                  <Input
+                    value={errorValue}
+                    state="error"
+                    placeholder="I am on error state"
+                    startIcon={<CodeRoundedIcon />}
+                    onChange={newValue => setErrorValue(newValue)}
                   />
+
                   <p className="text-center text-sm text-stone-600">
                     Error state of an input component
                   </p>
@@ -2475,13 +2756,15 @@ export class ButtonComponent {
                   <li>Confirms successful operations</li>
                   <li>Green/success colors, checkmarks, confirmation messages</li>
                 </ul>
-                <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
-                  <Image
-                    src="/img/js-components/Input_success.svg"
-                    alt="Success state of an input component"
-                    width={400}
-                    height={1}
+                <div className="Input__Sample__Container flex flex-col items-center justify-center w-full lg:w-1/2 mx-auto gap-6 my-4 lg:my-6">
+                  <Input
+                    value={successValue}
+                    state="success"
+                    placeholder="I am on success state"
+                    startIcon={<CodeRoundedIcon />}
+                    onChange={newValue => setSuccessValue(newValue)}
                   />
+
                   <p className="text-center text-sm text-stone-600">
                     Success state of an input component
                   </p>
@@ -2501,7 +2784,14 @@ export class ButtonComponent {
               <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
                 <p>
                   Changing states of a component or assigning an onclick function requires{' '}
-                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                  <RoughAnnotate
+                    type="highlight"
+                    color="#a7f3d0"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     defining triggers and actions.
                   </RoughAnnotate>{' '}
                   Figma offers various triggers and actions for both web and mobile experiences. To
@@ -2522,7 +2812,14 @@ export class ButtonComponent {
                 <p className="font-semibold text-stone-900 mt-4">Triggers</p>
                 <p>
                   You can designate{' '}
-                  <RoughAnnotate type="underline" color="#0ea5e9" padding={2}>
+                  <RoughAnnotate
+                    type="underline"
+                    color="#0ea5e9"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     ten distinct triggers
                   </RoughAnnotate>{' '}
                   for your components in Figma. These triggers can be used to assign keyboard keys,
@@ -2546,7 +2843,14 @@ export class ButtonComponent {
                 <p>
                   Actions are the functions that are executed when a trigger is activated. You can
                   designate{' '}
-                  <RoughAnnotate type="underline" color="#0ea5e9" padding={2}>
+                  <RoughAnnotate
+                    type="underline"
+                    color="#0ea5e9"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     eleven distinct actions
                   </RoughAnnotate>{' '}
                   for your components in Figma. These actions define the behavior of the component
@@ -2657,7 +2961,14 @@ export class ButtonComponent {
                 <p>
                   The job market data shows this clearly: 20% of product designer positions now
                   requires front-end development knowledge. This isn't a passing trend.{' '}
-                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                  <RoughAnnotate
+                    type="highlight"
+                    color="#a7f3d0"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     It's the evolution of our discipline.
                   </RoughAnnotate>{' '}
                   Designers who understand code structure, component architecture, and developer
@@ -2696,7 +3007,14 @@ export class ButtonComponent {
                   Small, consistent improvements compound into expertise. Each component you refine
                   teaches you more about the design-development relationship. Do not forget: The
                   best components aren't just beautiful. They are{' '}
-                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                  <RoughAnnotate
+                    type="highlight"
+                    color="#a7f3d0"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     thoughtfully structured, clearly documented, and ready to become excellent in
                     development.
                   </RoughAnnotate>
@@ -2711,15 +3029,36 @@ export class ButtonComponent {
                 <p>
                   By mastering component design for JavaScript frameworks, you're not just becoming
                   a better designer. You're becoming a more{' '}
-                  <RoughAnnotate type="underline" color="#0ea5e9" padding={2}>
+                  <RoughAnnotate
+                    type="underline"
+                    color="#0ea5e9"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={3000}
+                  >
                     effective collaborator,
                   </RoughAnnotate>{' '}
                   a more{' '}
-                  <RoughAnnotate type="underline" color="#0ea5e9" padding={2}>
+                  <RoughAnnotate
+                    type="underline"
+                    color="#0ea5e9"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={4000}
+                  >
                     valuable team member,
                   </RoughAnnotate>{' '}
                   and a more{' '}
-                  <RoughAnnotate type="underline" color="#0ea5e9" padding={2}>
+                  <RoughAnnotate
+                    type="underline"
+                    color="#0ea5e9"
+                    padding={2}
+                    animationDuration={1600}
+                    showWhenVisible={true}
+                    delay={5000}
+                  >
                     complete product professional.
                   </RoughAnnotate>{' '}
                   You're learning to speak multiple languages fluently. The visual language of
@@ -2854,7 +3193,7 @@ export class ButtonComponent {
         </div>
         {/* * Sidebar Start * */}
         <div
-          className="BlogSideBar flex flex-col px-4 py-3 items-start justify-start gap-4 w-full md:w-1/4 bg-amber-50 md:border-t border-stone-900 
+          className="BlogSideBar flex flex-col px-4 py-3 items-start justify-start gap-4 w-full h-full md:w-1/4 bg-amber-50 md:border-t border-stone-900 
             md:sticky md:top-[87px] md:self-start"
           style={{ height: 'auto' }}
         >
