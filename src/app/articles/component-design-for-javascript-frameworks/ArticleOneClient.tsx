@@ -102,20 +102,29 @@ const buttonExample = () => {
 
 export default function ComponentDesignForJavaScriptFrameworks() {
   /* Input Constants */
-  const [value, setValue] = useState('');
-  const [state, setState] = useState<
+  // Individual state for each input demonstration
+  const [defaultValue, setDefaultValue] = useState('');
+  const [defaultState, setDefaultState] = useState<
     'idle' | 'hover' | 'focus' | 'active' | 'loading' | 'disabled' | 'success' | 'error'
   >('idle');
 
+  const [hoverValue, setHoverValue] = useState('');
+  const [focusValue, setFocusValue] = useState('');
+  const [activeValue, setActiveValue] = useState('');
+  const [disabledValue, setDisabledValue] = useState('');
+  const [loadingValue, setLoadingValue] = useState('');
+  const [errorValue, setErrorValue] = useState('');
+  const [successValue, setSuccessValue] = useState('');
+
   const handleFocus = () => {
-    setState('focus');
+    setDefaultState('focus');
   };
 
   const handleBlur = () => {
-    if (value) {
-      setState('success');
+    if (defaultValue) {
+      setDefaultState('success');
     } else {
-      setState('idle');
+      setDefaultState('idle');
     }
   };
   /* */
@@ -2389,13 +2398,13 @@ export class ButtonComponent {
 
                 <div className="Input__Sample__Container flex flex-col items-center justify-center w-full lg:w-1/2 mx-auto gap-6 my-4 lg:my-6">
                   <Input
-                    value={value}
-                    state={state}
+                    value={defaultValue}
+                    state={defaultState}
                     placeholder="I am on default state"
                     startIcon={<CodeRoundedIcon />}
                     onFocus={handleFocus}
                     onBlur={handleBlur}
-                    onChange={newValue => setValue(newValue)}
+                    onChange={newValue => setDefaultValue(newValue)}
                   />
 
                   <p className="text-center text-sm text-stone-600">
@@ -2410,11 +2419,11 @@ export class ButtonComponent {
                 </ul>
                 <div className="Input__Sample__Container flex flex-col items-center justify-center w-full lg:w-1/2 mx-auto gap-6 my-4 lg:my-6">
                   <Input
-                    value={value}
+                    value={hoverValue}
                     state="hover"
                     placeholder="I am on hover state"
                     startIcon={<CodeRoundedIcon />}
-                    onChange={newValue => setValue(newValue)}
+                    onChange={newValue => setHoverValue(newValue)}
                     className="bg-amber-200"
                   />
 
@@ -2430,11 +2439,11 @@ export class ButtonComponent {
                 </ul>
                 <div className="Input__Sample__Container flex flex-col items-center justify-center w-full lg:w-1/2 mx-auto gap-6 my-4 lg:my-6">
                   <Input
-                    value={value}
+                    value={focusValue}
                     state="focus"
                     placeholder="I am on focus state"
                     startIcon={<CodeRoundedIcon />}
-                    onChange={newValue => setValue(newValue)}
+                    onChange={newValue => setFocusValue(newValue)}
                   />
 
                   <p className="text-center text-sm text-stone-600 ">
@@ -2449,13 +2458,11 @@ export class ButtonComponent {
                 </ul>
                 <div className="Input__Sample__Container flex flex-col items-center justify-center w-full lg:w-1/2 mx-auto gap-6 my-4 lg:my-6">
                   <Input
-                    value={value}
+                    value={activeValue}
                     state="active"
                     placeholder="I am on active state"
                     startIcon={<CodeRoundedIcon />}
-                    onFocus={handleFocus}
-                    onBlur={handleBlur}
-                    onChange={newValue => setValue(newValue)}
+                    onChange={newValue => setActiveValue(newValue)}
                   />
 
                   <p className="text-center text-sm text-stone-600">
@@ -2470,11 +2477,11 @@ export class ButtonComponent {
                 </ul>
                 <div className="Input__Sample__Container flex flex-col items-center justify-center w-full lg:w-1/2 mx-auto gap-6 my-4 lg:my-6">
                   <Input
-                    value={value}
+                    value={disabledValue}
                     state="disabled"
                     placeholder="I am on disabled state"
                     startIcon={<CodeRoundedIcon />}
-                    onChange={newValue => setValue(newValue)}
+                    onChange={newValue => setDisabledValue(newValue)}
                     className="cursor-not-allowed"
                   />
 
@@ -2490,11 +2497,11 @@ export class ButtonComponent {
                 </ul>
                 <div className="Input__Sample__Container flex flex-col items-center justify-center w-full lg:w-1/2 mx-auto gap-6 my-4 lg:my-6">
                   <Input
-                    value={value}
+                    value={loadingValue}
                     state="loading"
                     placeholder="I am on loading state"
                     startIcon={<CodeRoundedIcon />}
-                    onChange={newValue => setValue(newValue)}
+                    onChange={newValue => setLoadingValue(newValue)}
                   />
 
                   <p className="text-center text-sm text-stone-600">
@@ -2509,11 +2516,11 @@ export class ButtonComponent {
                 </ul>
                 <div className="Input__Sample__Container flex flex-col items-center justify-center w-full lg:w-1/2 mx-auto gap-6 my-4 lg:my-6">
                   <Input
-                    value={value}
+                    value={errorValue}
                     state="error"
                     placeholder="I am on error state"
                     startIcon={<CodeRoundedIcon />}
-                    onChange={newValue => setValue(newValue)}
+                    onChange={newValue => setErrorValue(newValue)}
                   />
 
                   <p className="text-center text-sm text-stone-600">
@@ -2527,11 +2534,11 @@ export class ButtonComponent {
                 </ul>
                 <div className="Input__Sample__Container flex flex-col items-center justify-center w-full lg:w-1/2 mx-auto gap-6 my-4 lg:my-6">
                   <Input
-                    value={value}
+                    value={successValue}
                     state="success"
                     placeholder="I am on success state"
                     startIcon={<CodeRoundedIcon />}
-                    onChange={newValue => setValue(newValue)}
+                    onChange={newValue => setSuccessValue(newValue)}
                   />
 
                   <p className="text-center text-sm text-stone-600">
