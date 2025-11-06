@@ -11,6 +11,9 @@ import TopDivider from '@/components/TopDivider';
 import GitHubCalendar from 'react-github-calendar';
 import Button from '@/components/Button';
 import RoughAnnotate from '@/components/rough-notation/RoughAnnotate';
+import KromaSimulator from '@/components/examples/KromaSimulator';
+import Tag from '@/components/Tag';
+import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
 const iconConfig = {
   sm: { height: 24, sizes: '24px' },
   md: { height: 32, sizes: '32px' },
@@ -66,7 +69,7 @@ export default function HomeClient() {
 
           <MenuItem
             to="/case-study"
-            className="lg:h-[268px] border-stone-900 md:border-r-0"
+            className="lg:h-[268px] border-r-0"
             title="Case Studies"
             titleClassName="text-md md:text-xl lg:text-2xl"
             svg={
@@ -110,7 +113,7 @@ export default function HomeClient() {
 
           <MenuItem
             to="/articles"
-            className="lg:h-[268px] border-stone-900 md:border-r-0"
+            className="lg:h-[268px] border-r-0 "
             title="Articles"
             titleClassName="text-md md:text-xl lg:text-2xl"
             svg={
@@ -134,9 +137,42 @@ export default function HomeClient() {
 
       <main className="flex flex-col w-full">
         <section className="flex flex-col w-full">
+          <div className="Kroma__Section flex flex-col lg:flex-row w-full  items-center justify-center border-b border-stone-900">
+            <div className="Kroma__Placeholder w-full lg:w-1/2 ">
+              <div className="flex flex-col w-full h-full p-4 lg:p-24 ">
+                <KromaSimulator />
+              </div>
+            </div>
+            <div className="Kroma__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4">
+              <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
+                Kroma | Color Blindness Simulator
+              </h2>
+              <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
+                A free, no-limits{' '}
+                <RoughAnnotate type="underline" color="#02567fff" padding={2}>
+                  color blindness simulator
+                </RoughAnnotate>{' '}
+                built for UI designers and developers. Kroma simulates 8 types of color vision
+                deficiency—helping you design interfaces everyone can use.
+              </p>
+              <div className="Section__Tags flex justify-start items-center gap-2 flex-wrap">
+                <Tag label="Product" type="red" size="large" />
+                <Tag label="Accessibility (a11y)" type="outline" size="large" />
+                <Tag
+                  label="Read more"
+                  type="lime"
+                  size="large"
+                  endIcon={<ArrowForwardRoundedIcon />}
+                  to="/product/kroma"
+                  target="_blank"
+                  className="hover:bg-lime-200"
+                />
+              </div>
+            </div>
+          </div>
           <RowCard
             direction="left"
-            cardTitle="Kroma | Color Blindness Accessibility Checker for User Interfaces"
+            cardTitle="Kroma | Color Blindness Simulator for User Interfaces"
             cardContent={
               <>
                 A free, no-limits{' '}

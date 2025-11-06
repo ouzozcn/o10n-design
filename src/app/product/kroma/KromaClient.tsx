@@ -28,6 +28,7 @@ export default function KromaClient() {
   const swiperRef = useRef<SwiperType | null>(null);
 
   useEffect(() => {
+    // eslint-disable-next-line no-console
     console.info(
       'Welcome to Kroma 🎨 A free tool for designers and developers to upload UI screens and instantly preview how they appear to users with various types of color vision deficiency. No paywalls, no upload limits. Built to promote accessible, inclusive design.'
     );

@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import React from 'react';
 
 export interface TagProps {
@@ -20,6 +21,8 @@ export interface TagProps {
     | 'pink'
     | 'rose';
   className?: string;
+  to?: string;
+  target?: '_blank' | '_self' | '_parent' | '_top';
 }
 
 const sizeClasses = {
@@ -48,7 +51,16 @@ const typeClasses = {
   rose: 'bg-rose-200 rounded-full border border-stone-900 justify-center items-center gap-0 inline-flex',
 } as const;
 
-const Tag: React.FC<TagProps> = ({ label, startIcon, endIcon, size, type, className = '' }) => {
+const Tag: React.FC<TagProps> = ({
+  label,
+  startIcon,
+  endIcon,
+  size,
+  type,
+  className = '',
+  to,
+  target,
+}) => {
   const classes = [
     'min-h-[34px] w-auto px-4 py-2 inline-flex items-center justify-center rounded',
     sizeClasses[size],
@@ -59,8 +71,8 @@ const Tag: React.FC<TagProps> = ({ label, startIcon, endIcon, size, type, classN
     .filter(Boolean)
     .join(' ');
 
-  return (
-    <span className={classes} role="status" aria-label={label}>
+  const content = (
+    <>
       {startIcon && (
         <span className="mr-2" aria-hidden="true">
           {startIcon}
@@ -72,6 +84,26 @@ const Tag: React.FC<TagProps> = ({ label, startIcon, endIcon, size, type, classN
           {endIcon}
         </span>
       )}
+    </>
+  );
+
+  if (to) {
+    return (
+      <Link
+        href={to}
+        target={target || '_self'}
+        className={classes}
+        role="status"
+        aria-label={label}
+      >
+        {content}
+      </Link>
+    );
+  }
+
+  return (
+    <span className={classes} role="status" aria-label={label}>
+      {content}
     </span>
   );
 };

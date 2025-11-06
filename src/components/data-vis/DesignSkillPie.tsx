@@ -1,3 +1,6 @@
+'use client';
+
+import { useEffect, useState } from 'react';
 import { PieChart } from '@mui/x-charts/PieChart';
 import { DefaultizedPieValueType } from '@mui/x-charts/models';
 
@@ -9,12 +12,6 @@ const designerSkillsData = [
   { value: 8, label: 'Emerging Tech (AI/No-code)', color: '#d8b4fe', formattedValue: '8%' },
   { value: 5, label: 'Business Strategy', color: '#fca5a5', formattedValue: '5%' },
 ];
-
-const size = {
-  width: 400,
-  height: 400,
-  margin: { bottom: 15 },
-};
 const TOTAL = designerSkillsData.map(item => item.value).reduce((a, b) => a + b, 0);
 
 const getArcLabel = (params: DefaultizedPieValueType) => {
@@ -23,6 +20,27 @@ const getArcLabel = (params: DefaultizedPieValueType) => {
 };
 
 export default function DesignSkillPie() {
+  const [chartSize, setChartSize] = useState({
+    width: 400,
+    height: 400,
+    margin: { bottom: 15 },
+  });
+
+  useEffect(() => {
+    function updateSize() {
+      const isMobile = window.innerWidth < 768;
+      setChartSize({
+        width: isMobile ? 300 : 400,
+        height: isMobile ? 300 : 400,
+        margin: { bottom: 15 },
+      });
+    }
+
+    updateSize();
+    window.addEventListener('resize', updateSize);
+    return () => window.removeEventListener('resize', updateSize);
+  }, []);
+
   return (
     <PieChart
       series={[
@@ -33,7 +51,7 @@ export default function DesignSkillPie() {
           innerRadius: 30,
         },
       ]}
-      {...size}
+      {...chartSize}
       slotProps={{
         legend: {
           direction: 'horizontal',

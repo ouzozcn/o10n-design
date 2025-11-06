@@ -172,21 +172,21 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           className="drop-shadow-lg"
         />
       </div>
-      <div className="PageContent flex flex-col w-full h-full gap-4 p-8 border-b border-stone-900">
-        <div className="PageMeta flex flex-col w-full h-full gap-2">
+      <div className="Page__Content flex flex-col w-full h-full gap-4 p-4 lg:p-8 border-b border-stone-900">
+        <div className="Page__Meta flex flex-col w-full h-full gap-2">
           <div
             id="introduction"
-            className="PageTitle px-8 pt-5 pb-2 items-center justify-center text-center text-stone-900 text-h1 font-medium font-sans"
+            className="Page__Title px-8 pt-5 pb-2 items-center justify-center text-center text-stone-900 text-2xl md:text-3xl lg:text-h1 font-medium font-sans"
           >
             Component Design for JavaScript Frameworks
           </div>
-          <div className="PageSubtitle flex flex-col text-center text-lg text-stone-600 w-full h-full gap-2">
-            <p>A Designer's Guide to JS-Friendly Components</p>
+          <div className="PageSubtitle flex flex-col text-center text-md lg:text-lg text-stone-600 w-full h-full gap-2 ">
+            <h2>A Designer's Guide to JS-Friendly Components</h2>
           </div>
         </div>
       </div>
 
-      <div className="Summary__Content flex flex-col w-full  gap-4 lg:gap-12 p-6 lg:py-12 lg:px-40 text-xl items-center justify-center text-justify font-regular text-stone-900">
+      <div className="Summary__Content flex flex-col w-full  gap-4 lg:gap-12 p-6 lg:py-12 lg:px-40 text-lg lg:text-xl items-center justify-center text-left font-regular text-stone-900">
         <p>
           The landscape of product design nowadays requires many more skills, knowledge, and
           expertise. We designers have learned about research methods for understanding user needs,
@@ -285,9 +285,8 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           Learning these fundamentals will improve your design process and communication. During
           product development, design must communicate with a variety of stakeholders, including
           researchers, product managers, developers, testers, data analysts, and others. But
-          developers are probably the ones we see, talk to, and discuss the most. We talk about
-          every little element of a product with them. Common knowledge is essential for a more
-          productive workplace. When designers and developers{' '}
+          developers are probably the ones we see, talk to, and discuss the most. When designers and
+          developers{' '}
           <RoughAnnotate
             type="underline"
             color="#0ea5e9"
@@ -2026,8 +2025,18 @@ export class ButtonComponent {
                   A token, as used in web development and design, is typically a standardized value
                   that denotes a particular configuration or design element. Tokens are frequently
                   used to enhance scalability, preserve consistency, and promote cooperation across
-                  various platforms and technologies.
+                  various libraries and frameworks.
                 </p>
+                <div className="flex w-auto items-center justify-center">
+                  <InfoContainer
+                    color="orange"
+                    icon={<PriorityHighRoundedIcon />}
+                    content="Depending on the industry context, the term 'token' has many meanings. In this article, we are using the term 'token' to refer to design tokens."
+                    to="https://www.figma.com/design/kY09M2r2lZgP3hZ0l34D4I/Design-Tokens?node-id=0-1&t=1730533200209-0"
+                    target="_blank"
+                    className="mt-6 mb-6"
+                  />
+                </div>
                 <div className="Token__Samples__Placeholder flex flex-col gap-4 items-center justify-center w-full mb-4">
                   <div className="Token__Samples__List flex flex-col lg:flex-row gap-4 lg:gap-6 p-4 lg:p-8 items-center justify-center w-full h-60 rounded-lg border border-stone-900 hover:bg-stone-50">
                     <Tag label="--color-primary-600" size="large" type="lime" />
@@ -2324,7 +2333,7 @@ export class ButtonComponent {
                     showWhenVisible={true}
                     delay={4000}
                   >
-                    Color, Number, String, and Boolean.
+                    <b>Color</b>, <b>Number</b>, <b>String</b>, and <b>Boolean</b>.
                   </RoughAnnotate>{' '}
                   Using these tokens improves design system maintenance, ensures consistency across
                   the interface, eases style updates, and enables various theme modes such as
