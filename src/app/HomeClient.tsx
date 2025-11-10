@@ -170,42 +170,7 @@ export default function HomeClient() {
               </div>
             </div>
           </div>
-          <RowCard
-            direction="left"
-            cardTitle="Kroma | Color Blindness Simulator for User Interfaces"
-            cardContent={
-              <>
-                A free, no-limits{' '}
-                <RoughAnnotate type="underline" color="#02567fff" padding={2}>
-                  color blindness accessibility checker
-                </RoughAnnotate>{' '}
-                built for UI designers and developers. Kroma simulates 8 types of color vision
-                deficiency—helping you design interfaces everyone can use.
-              </>
-            }
-            tags={[
-              {
-                label: 'Product',
-                type: 'red',
-                size: 'large',
-              },
-              {
-                label: 'Accessibility (a11y)',
-                type: 'outline',
-                size: 'large',
-              },
-            ]}
-            to="/product/kroma"
-            swapContent={
-              <Image
-                src="/img/thumbs/thumb-kroma2.svg"
-                alt="Kroma accessibility checker interface showing color contrast validation"
-                width={1}
-                height={1}
-                className="w-[70%]"
-              />
-            }
-          />
+
           <RowCard
             direction="right"
             cardTitle="Enhancing Security Through Two-Factor Authentication"

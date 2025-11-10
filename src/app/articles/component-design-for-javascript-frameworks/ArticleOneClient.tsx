@@ -1890,7 +1890,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     className=" lg:w-[650px] lg:h-[330px]"
                     code={`interface ButtonProps {
   label: string;
-  type?: 'primary' | 'secondary' | 'tertiary';<
+  type?: 'primary' | 'secondary' | 'tertiary';
   size?: 'small' | 'medium' | 'large';
   isDisabled?: boolean;
   isLoading?: boolean;
