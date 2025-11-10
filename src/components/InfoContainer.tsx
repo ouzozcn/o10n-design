@@ -1,7 +1,7 @@
 import React from 'react';
 import SquareIcon from '@mui/icons-material/Square';
 import Link from 'next/link';
-import { vi } from 'vitest';
+
 interface InfoContainerProps {
   content: string;
   color:

@@ -4,7 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import SimpleTab from './SimpleTab';
 import { Tooltip } from 'react-tooltip';
-
+import RoughAnnotate from '@/components/rough-notation/RoughAnnotate';
 interface InfoCardProps {
   className?: string;
 }
@@ -30,11 +30,22 @@ const InfoCard: React.FC<InfoCardProps> = () => {
       </div>
       <div className="p-4 mx-4 self-stretch font-sans text-stone-800 text-lg leading-normal [content-visibility:auto] [contain:content]">
         Product designer and design engineer bridging the gap between design vision and technical
-        reality. I turn research insights into scalable systems, accessible interfaces, and
-        developer-ready components. Currently at Jotform.
+        reality. I turn{' '}
+        <RoughAnnotate
+          type="underline"
+          color="#0ea5e9"
+          padding={2}
+          animationDuration={1600}
+          showWhenVisible={true}
+          delay={1000}
+        >
+          research insights
+        </RoughAnnotate>{' '}
+        into scalable systems, accessible interfaces, and developer-ready components. Currently at
+        Jotform.
         <br />
         <br />
-        Nice to meet you 👋
+        Nice to meet you.
       </div>
       <div className="flex mt-auto w-full divide-x-1 border-t border-stone-900 gap-0">
         <SimpleTab
