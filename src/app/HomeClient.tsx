@@ -14,6 +14,7 @@ import RoughAnnotate from '@/components/rough-notation/RoughAnnotate';
 import KromaSimulator from '@/components/examples/KromaSimulator';
 import Tag from '@/components/Tag';
 import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
+import TwoFactorAuth from '@/components/examples/TwoFactorAuth';
 const iconConfig = {
   sm: { height: 24, sizes: '24px' },
   md: { height: 32, sizes: '32px' },
@@ -137,14 +138,15 @@ export default function HomeClient() {
 
       <main className="flex flex-col w-full">
         <section className="flex flex-col w-full">
-          <div className="Kroma__Section group flex flex-col lg:flex-row w-full  items-center justify-center border-b border-stone-900">
+          {/* Kroma Section Starts */}
+          <div className="Kroma__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center border-b border-stone-900">
             <div className="Kroma__Placeholder w-full lg:w-1/2 ">
               <div className="flex flex-col w-full h-full p-4 lg:p-24 ">
                 <KromaSimulator />
               </div>
             </div>
             <div className="Kroma__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4">
-              <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
+              <h2 className="text-stone-900 text-xl lg:text-3xl text-center lg:text-start font-sans font-normal ">
                 Kroma | Color Blindness Simulator
               </h2>
               <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
@@ -159,9 +161,9 @@ export default function HomeClient() {
                 <Tag label="Product" type="red" size="large" />
                 <Tag label="Accessibility (a11y)" type="outline" size="large" />
               </div>
-              <div className="flex justify-start items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ">
+              <div className="flex justify-start items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200  ">
                 <Button
-                  label="Read more"
+                  label="Explore Kroma"
                   rounded={true}
                   to="/product/kroma"
                   target="_blank"
@@ -171,34 +173,42 @@ export default function HomeClient() {
               </div>
             </div>
           </div>
+          {/* Kroma Section Ends */}
+          {/* 2FA v2 Section Starts */}
+          <div className="Jotform2FA__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center border-b border-stone-900">
+            <div className="Jotform2FA__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4">
+              <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
+                Enhancing Security Through Two-Factor Authentication
+              </h2>
+              <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
+                Designed and launched Jotform's two-factor authentication system—adopted by 15,000+
+                users with a 95% retention rate. A security feature that scaled across Web, Mobile,
+                and Enterprise platforms.
+              </p>
+              <div className="Section__Tags flex justify-start items-center gap-2 flex-wrap">
+                <Tag label="Case Study" type="lime" size="large" />
+                <Tag label="Security Feature" type="outline" size="large" />
+              </div>
+              <div className="flex justify-start items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ">
+                <Button
+                  label="Read Case Study"
+                  rounded={true}
+                  to="case-study/jotform-2fa"
+                  target="_blank"
+                  type="primary"
+                  endIcon={<ArrowForwardRoundedIcon />}
+                />
+              </div>
+            </div>
+            <div className="2FA__Placeholder w-full lg:w-1/2 ">
+              <div className="flex flex-col w-auto h-full p-4 lg:p-24 ">
+                <TwoFactorAuth />
+              </div>
+            </div>
+          </div>
+          {/* 2FA v2 Section Ends */}
 
-          <RowCard
-            direction="right"
-            cardTitle="Enhancing Security Through Two-Factor Authentication"
-            cardContent="Designed and launched Jotform's first two-factor authentication system—adopted by 15,000+ users with a 95% retention rate. A security feature that scaled across Web, Mobile, and Enterprise platforms."
-            tags={[
-              {
-                label: 'Case Study',
-                type: 'lime',
-                size: 'large',
-              },
-              {
-                label: 'Security Feature',
-                type: 'outline',
-                size: 'large',
-              },
-            ]}
-            to="/case-study/jotform-2fa"
-            swapContent={
-              <Image
-                src="/img/thumbs/thumb-jf2fa.svg"
-                alt="Jotform 2FA implementation preview showing security interface"
-                width={1}
-                height={1}
-                className="h-full object-contain w-[90%]"
-              />
-            }
-          />
+          {/* GitHub Activity Map Section Starts */}
           <div className="activity__map relative flex flex-col gap-8 w-full h-auto lg:min-h-[600px] p-12 md:p-16 justify-center items-center border-b bg-stone-800  border-stone-900  ">
             <div className="text-lime-200 text-xl text-center font-sans font-normal lg:text-3xl">
               My Design Engineer Journey
@@ -245,7 +255,8 @@ export default function HomeClient() {
               className="hover:bg-stone-900 connect-github-button"
             />
           </div>
-
+          {/* GitHub Activity Map Section Ends */}
+          {/* Jotform Logbook Section Starts */}
           <RowCard
             direction="left"
             cardTitle="Jotform Logbook | An internal tool for better company awareness"
@@ -273,6 +284,8 @@ export default function HomeClient() {
               />
             }
           />
+          {/* Jotform Logbook Section Ends */}
+          {/* Brifl Section Starts */}
           <RowCard
             direction="right"
             cardTitle="brifl: Empowering Creators with Collaborative Form Building"
@@ -300,6 +313,8 @@ export default function HomeClient() {
               />
             }
           />
+          {/* Brifl Section Ends */}
+          {/* Brifl Design System Section Starts */}
           <RowCard
             direction="left"
             cardTitle="Brifl Design System"
@@ -329,6 +344,7 @@ export default function HomeClient() {
             }
             className="border-b-0"
           />
+          {/* Brifl Design System Section Ends */}
         </section>
 
         <Footer />
