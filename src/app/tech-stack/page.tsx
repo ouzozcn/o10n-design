@@ -157,12 +157,9 @@ export default function TechStack() {
           My Tech Stack
         </h1>
         <h2 className="text-xl text-center font-sans text-stone-900 flex items-center justify-center max-w-3xl">
-          Tools and technologies I use to design, build, and ship thoughtful, accessible, and
-          scalable digital products.
+          Tools and technologies I use to research, design, build, test, and ship thoughtful,
+          accessible, and scalable digital products.
         </h2>
-        <p className="text-base text-center font-sans text-stone-600">
-          From design systems to production code—my complete workflow.
-        </p>
       </div>
       <div className="WorkflowSection flex flex-col w-full border-b border-stone-900 ">
         <div className="SectionHeader p-6 md:p-8 border-b border-stone-900 content-center lg:h-60 bg-amber-50">

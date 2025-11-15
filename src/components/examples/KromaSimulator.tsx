@@ -189,9 +189,7 @@ export default function KromaSimulator() {
         {/* CTA Section */}
         <div className=" flex gap-2 items-center justify-center pt-4 px-1 relative shrink-0 w-full">
           <div className="flex flex-col font-sans font-normal justify-center  text-base text-stone-900 text-center ">
-            <p className="leading-normal">
-              Select a type to observe the basic colors&apos; colorblindness effect.
-            </p>
+            <p className="leading-normal">Select a type to see how color blindness affects</p>
           </div>
         </div>
 

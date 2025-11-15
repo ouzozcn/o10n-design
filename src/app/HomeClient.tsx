@@ -137,7 +137,7 @@ export default function HomeClient() {
 
       <main className="flex flex-col w-full">
         <section className="flex flex-col w-full">
-          <div className="Kroma__Section flex flex-col lg:flex-row w-full  items-center justify-center border-b border-stone-900">
+          <div className="Kroma__Section group flex flex-col lg:flex-row w-full  items-center justify-center border-b border-stone-900">
             <div className="Kroma__Placeholder w-full lg:w-1/2 ">
               <div className="flex flex-col w-full h-full p-4 lg:p-24 ">
                 <KromaSimulator />
@@ -158,14 +158,15 @@ export default function HomeClient() {
               <div className="Section__Tags flex justify-start items-center gap-2 flex-wrap">
                 <Tag label="Product" type="red" size="large" />
                 <Tag label="Accessibility (a11y)" type="outline" size="large" />
-                <Tag
+              </div>
+              <div className="flex justify-start items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ">
+                <Button
                   label="Read more"
-                  type="lime"
-                  size="large"
-                  endIcon={<ArrowForwardRoundedIcon />}
+                  rounded={true}
                   to="/product/kroma"
                   target="_blank"
-                  className="hover:bg-lime-200"
+                  type="primary"
+                  endIcon={<ArrowForwardRoundedIcon />}
                 />
               </div>
             </div>
