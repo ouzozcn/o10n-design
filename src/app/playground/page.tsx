@@ -6,6 +6,7 @@ import Button from '@/components/Button';
 import CachedRoundedIcon from '@mui/icons-material/CachedRounded';
 import Footer from '@/components/Footer';
 import TwoFactorAuth from '@/components/examples/TwoFactorAuth';
+import BriflSample from '@/components/examples/BriflSample';
 {
   /* Playground dependencies start*/
 }
@@ -45,7 +46,7 @@ export default function Playground() {
         {/* Content Start */}
         <div className="flex flex-col w-full items-center justify-center h-full gap-4 p-8 border-b border-stone-900">
           <div className="w-auto">
-            <TwoFactorAuth />
+            <BriflSample />
           </div>
         </div>
 

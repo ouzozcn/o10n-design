@@ -152,7 +152,7 @@ export default function KromaSimulator() {
 
       <div className="flex flex-col h-auto gap-0 items-start  rounded-lg ">
         {/* Title Section */}
-        <div className=" flex flex-col gap-0 items-start justify-center p-7 shrink-0 w-full">
+        <div className=" flex flex-col gap-0 items-center justify-center p-7 shrink-0 w-full">
           <div className=" relative shrink-0 ">
             <Image
               src="/img/kroma/KromaLogo.svg"

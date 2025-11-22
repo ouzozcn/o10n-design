@@ -87,8 +87,8 @@ export default function TwoFactorAuth() {
       </div>
 
       {/* Content Section */}
-      <div className="p-6 flex flex-col gap-6">
-        <div className="text-stone-900 text-lg text-center font-sans">
+      <div className="p-6 flex flex-col gap-4">
+        <div className="text-stone-900 text-base text-center font-sans">
           Write a random 6-digit code to verify
         </div>
 
