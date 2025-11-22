@@ -290,10 +290,10 @@ export default function HomeClient() {
           <div className="Brifl__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center border-b border-stone-900">
             <div className="Brifl__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4">
               <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
-                brifl: Empowering Creators with Collaborative Form Building
+                brifl | Collaborative Form Builder
               </h2>
               <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
-                A collaborative form builder designed for creatives—featuring 30+ specialized blocks
+                A collaborative form builder designed for creatives,featuring 30+ specialized blocks
                 for designers, developers, writers, and photographers. Never launched, but it taught
                 me how to design systems for diverse workflows.
               </p>

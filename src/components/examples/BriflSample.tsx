@@ -36,10 +36,10 @@ const typefaceOptions: TypefaceOption[] = [
 ];
 
 const typefaceMessages: Record<Exclude<TypefaceStyle, null>, string> = {
-  'sans-serif': 'Clean and minimal, just like your browser history.',
-  serif: 'Classic choice! You probably read actual books.',
-  'slab-serif': 'Bold and chunky, like your favorite retro video game.',
-  handwriting: 'Playful and fun! Your inner child approves.',
+  'sans-serif': 'Clean, minimal, and universally readable.',
+  serif: 'A timeless choice with character. Perfect for long-form reading.',
+  'slab-serif': 'Bold and sturdy. Great for headlines that demand attention.',
+  handwriting: 'Warm and personal. Adds a human touch to the interface.',
 };
 
 function getTypefaceMessage(typeface: TypefaceStyle): string {
