@@ -5,7 +5,6 @@ import Menu from '@/components/Menu';
 import Button from '@/components/Button';
 import CachedRoundedIcon from '@mui/icons-material/CachedRounded';
 import Footer from '@/components/Footer';
-import TwoFactorAuth from '@/components/examples/TwoFactorAuth';
 import BriflSample from '@/components/examples/BriflSample';
 {
   /* Playground dependencies start*/
@@ -40,7 +39,7 @@ export default function Playground() {
       </div>
       <div className="Body__Playground flex flex-col  w-full h-dvh ">
         <div className="Playground__Nav flex flex-col md:flex-row w-full h-auto items-center justify-center bg-amber-200 border-b p-4 border-stone-900">
-          <div className="text-md">Two-Factor Authentication</div>
+          <div className="text-md">Brifl Sample</div>
         </div>
 
         {/* Content Start */}

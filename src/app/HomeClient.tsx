@@ -15,6 +15,7 @@ import KromaSimulator from '@/components/examples/KromaSimulator';
 import Tag from '@/components/Tag';
 import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
 import TwoFactorAuth from '@/components/examples/TwoFactorAuth';
+import BriflSample from '@/components/examples/BriflSample';
 const iconConfig = {
   sm: { height: 24, sizes: '24px' },
   md: { height: 32, sizes: '32px' },
@@ -285,35 +286,40 @@ export default function HomeClient() {
             }
           />
           {/* Jotform Logbook Section Ends */}
-          {/* Brifl Section Starts */}
-          <RowCard
-            direction="right"
-            cardTitle="brifl: Empowering Creators with Collaborative Form Building"
-            cardContent="A collaborative form builder designed for creatives—featuring 30+ specialized blocks for designers, developers, writers, and photographers. Never launched, but it taught me how to design systems for diverse workflows."
-            tags={[
-              {
-                label: 'Idea',
-                type: 'purple',
-                size: 'large',
-              },
-              {
-                label: 'Form Builder',
-                type: 'outline',
-                size: 'large',
-              },
-            ]}
-            to="/ideas/brifl"
-            swapContent={
-              <Image
-                src="/img/thumbs/thumb-brifl2.svg"
-                alt="Brifl form builder interface showing collaborative editing features"
-                width={1}
-                height={1}
-                className=" h-full object-contain w-[120%]"
-              />
-            }
-          />
-          {/* Brifl Section Ends */}
+          {/* Brifl v2 Section Starts */}
+          <div className="Brifl__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center border-b border-stone-900">
+            <div className="Brifl__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4">
+              <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
+                brifl: Empowering Creators with Collaborative Form Building
+              </h2>
+              <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
+                A collaborative form builder designed for creatives—featuring 30+ specialized blocks
+                for designers, developers, writers, and photographers. Never launched, but it taught
+                me how to design systems for diverse workflows.
+              </p>
+              <div className="Section__Tags flex justify-start items-center gap-2 flex-wrap">
+                <Tag label="Idea" type="purple" size="large" />
+                <Tag label="Form Builder" type="outline" size="large" />
+              </div>
+              <div className="flex justify-start items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ">
+                <Button
+                  label="Explore brifl"
+                  rounded={true}
+                  to="ideas/brifl"
+                  target="_blank"
+                  type="primary"
+                  endIcon={<ArrowForwardRoundedIcon />}
+                />
+              </div>
+            </div>
+            <div className="Brifl__Placeholder w-full lg:w-1/2 ">
+              <div className="flex flex-col w-auto h-full p-4 lg:p-24 ">
+                <BriflSample />
+              </div>
+            </div>
+          </div>
+          {/* Brifl v2 Section Ends */}
+
           {/* Brifl Design System Section Starts */}
           <RowCard
             direction="left"

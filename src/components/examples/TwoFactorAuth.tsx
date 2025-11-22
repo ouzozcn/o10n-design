@@ -3,6 +3,7 @@
 import React, { useState, useRef, KeyboardEvent } from 'react';
 import { Button } from '@/components/ui/button';
 import CheckRoundedIcon from '@mui/icons-material/CheckRounded';
+import Image from 'next/image';
 export default function TwoFactorAuth() {
   const [otp, setOtp] = useState<string[]>(['', '', '', '', '', '']);
   const [verificationStatus, setVerificationStatus] = useState<'idle' | 'verifying' | 'verified'>(
@@ -77,19 +78,24 @@ export default function TwoFactorAuth() {
   };
 
   return (
-    <div className="w-full flex flex-col border border-stone-900  rounded-lg">
+    <div className="w-full flex flex-col border border-stone-900  rounded-lg lg:max-w-[600px] bg-white">
       {/* Icon Section */}
-      <div className="flex items-center border-b border-stone-900">
+      <div className="flex items-center border-b border-stone-900 p-4">
         {/* Title Section */}
-        <div className="flex-1 p-4 text-center">
-          <h2 className="text-stone-900 text-2xl font-sans font-medium">Verify that it's you</h2>
-        </div>
+
+        <Image
+          src="/img/twofa/Jotform_Logo.svg"
+          alt="Jotform Logo"
+          width={1}
+          height={24}
+          className="block max-w-none object-contain mx-auto w-auto h-auto"
+        />
       </div>
 
       {/* Content Section */}
       <div className="p-6 flex flex-col gap-4">
         <div className="text-stone-900 text-base text-center font-sans">
-          Write a random 6-digit code to verify
+          Write a random 6-digit code to simulate a 2FA verification
         </div>
 
         {/* OTP Input Fields */}

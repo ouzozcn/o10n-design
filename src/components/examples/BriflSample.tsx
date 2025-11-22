@@ -65,14 +65,18 @@ export default function BriflSample() {
   };
 
   return (
-    <div className="border border-stone-900 rounded-lg flex flex-col w-full lg:min-w-[500px] lg:min-h-[300px] h-full">
+    <div className="Brifl__Component flex flex-col border border-stone-900 rounded-lg  w-full lg:min-w-[500px] lg:min-h-[300px] h-full lg:max-w-[600px] bg-white">
       {/* Title Section */}
-      <div className="flex flex-col gap-3 items-center justify-center px-7 py-5 w-full">
+      <div className="Brifl__Header flex flex-col gap-3 items-center justify-center px-7 py-5 w-full">
         <Image src="/img/brifl/brifl-logo.svg" alt="Brifl Logo" width={82} height={1} />
       </div>
 
       {/* Content Section */}
-      <div className="border-t border-stone-900 flex flex-col gap-5 items-center justify-center p-5 w-full h-full">
+      <div
+        className={`Brifl__Content border-t border-stone-900 flex flex-col gap-5 items-center p-5 w-full ${
+          isSubmitted ? 'flex-1 justify-center' : 'h-fit justify-start'
+        }`}
+      >
         {!isSubmitted && (
           <div className="flex flex-col font-sans font-medium justify-center text-base text-stone-900 text-center">
             <p className="leading-normal">What is your preferred typeface style?</p>
@@ -94,8 +98,8 @@ export default function BriflSample() {
                   onClick={() => handleTypefaceSelect(option.id)}
                   className={`flex items-center justify-center shrink-0 w-16 h-16 border rounded transition-colors ${
                     isSelected
-                      ? 'border-blue-500 bg-amber-100 border-2'
-                      : 'border-stone-700 bg-transparent hover:bg-amber-50'
+                      ? 'border-[#1F4FDE] bg-[#1F4FDE]/30 border-2'
+                      : 'border-stone-700 bg-transparent hover:bg-[#1F4FDE]/20'
                   }`}
                   aria-label={`Select ${option.name} typeface`}
                   aria-pressed={isSelected}
@@ -120,10 +124,10 @@ export default function BriflSample() {
             size="small"
             onClick={handleSubmit}
             isDisabled={!isSubmitted && !selectedTypeface}
-            fullWidth
             ariaLabel={
               isSubmitted ? 'Restart typeface selection' : 'Submit selected typeface preference'
             }
+            className="bg-[#1F4FDE] hover:bg-[#1F4FDE]/90 min-w-[150px]"
           />
         </div>
       </div>
