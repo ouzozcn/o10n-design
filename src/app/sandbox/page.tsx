@@ -46,13 +46,12 @@ export default function Sandbox() {
               code: `import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-
 function App() {
   return (
-    <div className="p-8">
-      <h1 className="text-2xl font-bold mb-4">Welcome to Sandbox</h1>
-      <p className="text-gray-600">This is a basic sandbox playground for React</p>
-   
+    <div>
+      <h1>Welcome to o10n Sandbox</h1>
+      <p>This is a basic sandbox playground for React</p>
+      <p> To edit this sandbox, click the code tab above and navigate to the index.js file</p>
     </div>
   );
 }

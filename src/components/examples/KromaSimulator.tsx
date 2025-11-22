@@ -79,7 +79,7 @@ export default function KromaSimulator() {
     : {};
 
   return (
-    <div className="border border-stone-900 rounded-lg overflow-hidden ">
+    <div className="border border-stone-900 rounded-lg overflow-hidden lg:max-w-[600px] bg-white">
       <svg width="0" height="0" className="absolute">
         <defs>
           {/* Protanomaly - Reduced red sensitivity */}
@@ -150,9 +150,9 @@ export default function KromaSimulator() {
         </defs>
       </svg>
 
-      <div className="flex flex-col h-auto gap-0 items-start  rounded-lg ">
+      <div className="flex flex-col h-auto gap-0 items-center  rounded-lg ">
         {/* Title Section */}
-        <div className=" flex flex-col gap-0 items-start justify-center p-7 shrink-0 w-full">
+        <div className=" flex flex-col gap-0 items-center justify-center p-7 shrink-0 w-full">
           <div className=" relative shrink-0 ">
             <Image
               src="/img/kroma/KromaLogo.svg"
@@ -165,7 +165,7 @@ export default function KromaSimulator() {
         </div>
 
         {/* Icons Wrapper */}
-        <div className=" border-y border-stone-900 flex flex-wrap p-4 lg:p-8 gap-8 md:gap-10 lg:gap-16 h-auto items-center justify-center relative shrink-0 w-full">
+        <div className=" border-y border-stone-900 flex flex-wrap p-4 lg:p-6 gap-8 lg:gap-10  h-auto items-center justify-center relative shrink-0 w-full">
           <div
             className="flex h-[96px] items-center justify-center relative shrink-0 w-[96px]"
             style={iconFilterStyle}
@@ -189,9 +189,7 @@ export default function KromaSimulator() {
         {/* CTA Section */}
         <div className=" flex gap-2 items-center justify-center pt-4 px-1 relative shrink-0 w-full">
           <div className="flex flex-col font-sans font-normal justify-center  text-base text-stone-900 text-center ">
-            <p className="leading-normal">
-              Select a type to observe the basic colors&apos; colorblindness effect.
-            </p>
+            <p className="leading-normal">Select a type to see how color blindness affects</p>
           </div>
         </div>
 

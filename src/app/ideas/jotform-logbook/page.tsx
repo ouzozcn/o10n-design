@@ -1,25 +1,25 @@
 'use client';
 
-import React, { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Navigation, Thumbs } from "swiper/modules";
-import type { Swiper as SwiperType } from "swiper";
-import Image from "next/image";
-import Link from "next/link";
-import Menu from "@/components/Menu";
-import { Footer } from "@/components/Footer";
-import ThankYou from "@/components/ThankYou";
-import TopDivider from "@/components/TopDivider";
-import SectionTitle from "@/components/SectionTitle";
-import MetaInfo from "@/components/MetaInfo";
+import React, { useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
+import type { Swiper as SwiperType } from 'swiper';
+import Image from 'next/image';
+import Link from 'next/link';
+import Menu from '@/components/Menu';
+import { Footer } from '@/components/Footer';
+import ThankYou from '@/components/ThankYou';
+import TopDivider from '@/components/TopDivider';
+import SectionTitle from '@/components/SectionTitle';
+import MetaInfo from '@/components/MetaInfo';
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/effect-cards";
-import "swiper/css/free-mode";
-import "swiper/css/navigation";
-import "swiper/css/thumbs";
-import "@/styles/swiper.css";
+import 'swiper/css';
+import 'swiper/css/effect-cards';
+import 'swiper/css/free-mode';
+import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
+import '@/styles/swiper.css';
 
 export default function JotformLogbook() {
   const [showSecondHero, setShowSecondHero] = useState(false);
@@ -29,8 +29,6 @@ export default function JotformLogbook() {
   const toggleHero = () => {
     setShowSecondHero(!showSecondHero);
   };
-
-  
 
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
@@ -49,7 +47,7 @@ export default function JotformLogbook() {
         onClick={toggleHero}
       >
         <Image
-          src={showSecondHero ? "/img/hero/hero-logbook2.svg" : "/img/hero/hero-logbook.svg"}
+          src={showSecondHero ? '/img/hero/hero-logbook2.svg' : '/img/hero/hero-logbook.svg'}
           alt="Jotform Logbook Hero"
           width={1200}
           height={600}
@@ -76,48 +74,44 @@ export default function JotformLogbook() {
 
       <div className="BodyContainer flex flex-col gap-0 font-sans">
         <div className="p-4 md:px-16 md:py-8 text-xl text-center font-medium text-stone-900">
-          Jotform Logbook is an internal tool designed to enhance company
-          awareness and collaboration. It allows teams to log their work in
-          progress (WIP) and completed logs (LOG), track affected products,
-          collaborate with other teams, and provide rich-text descriptions and
-          screenshots. The tool is designed to reduce duplicated work, improve
+          Jotform Logbook is an internal tool designed to enhance company awareness and
+          collaboration. It allows teams to log their work in progress (WIP) and completed works
+          (LOG), track affected products, collaborate with other teams, and provide rich-text
+          descriptions and screenshots. The tool is designed to reduce duplicated work, improve
           visibility across departments, and facilitate smoother collaboration.
         </div>
 
         <SectionTitle title="Problem Discovery" />
         <div className="SectionContent font-normal p-4 md:px-16 md:py-8 items-center justify-center text-start text-stone-900 text-lg gap-4">
           <p>
-            At Jotform, we face a common challenge seen in many large
-            multi-product tech companies. With over 600 employees and a broad
-            range of products — including Form, AI Agent, Workflow, E-Sign, and
-            App — multiple teams are working simultaneously on the same platform
+            At Jotform, we face a common challenge seen in many large multi-product tech companies.
+            With over 600 employees and a broad range of products — including Form, AI Agent,
+            Workflow, E-Sign, and App — multiple teams are working simultaneously on the same
+            platform
           </p>
           <br />
           <p>
-            Over time, I identified several inefficiencies in how work is
-            communicated and tracked:
+            Over time, I identified several inefficiencies in how work is communicated and tracked:
           </p>
           <br />
           <ul className="list-disc pl-2 space-y-1 text-left">
             <li>
               <p>
-                Teams were often developing <b>similar or overlapping</b>{" "}
-                features without knowing it.
+                Teams were often developing <b>similar or overlapping</b> features without knowing
+                it.
               </p>
             </li>
             <li>
               <p>
-                <b>Email loops were the primary method of announcements </b>,
-                which proved ineffective — especially in a workplace where many
-                white-collar professionals tend to avoid reading non-essential
-                emails.
+                <b>Email loops were the primary method of announcements </b>, which proved
+                ineffective — especially in a workplace where many white-collar professionals tend
+                to avoid reading non-essential emails.
               </p>
             </li>
             <li>
               <p>
-                <b>Cross-team collaborations were increasing</b>, yet there was
-                no clear way to document or track these shared efforts across
-                teams.
+                <b>Cross-team collaborations were increasing</b>, yet there was no clear way to
+                document or track these shared efforts across teams.
               </p>
             </li>
           </ul>
@@ -126,9 +120,8 @@ export default function JotformLogbook() {
         <SectionTitle title="Solution Approach" />
         <div className="SectionContent font-normal p-4 md:px-16 md:py-8 items-center justify-center text-start text-stone-900 text-lg gap-4">
           <p>
-            To address these challenges, I initiated the design of an internal
-            tool called <b>Jotform Logbook</b> — a centralized, searchable space
-            where teams can:
+            To address these challenges, I initiated the design of an internal tool called{' '}
+            <b>Jotform Logbook</b> — a centralized, searchable space where teams can:
           </p>
           <br />
           <ul className="list-disc pl-2 space-y-1 text-left">
@@ -145,18 +138,17 @@ export default function JotformLogbook() {
               Add <b>rich-text descriptions and screenshots</b>
             </li>
             <li>
-              Provide <b>direct links</b> to relevant resources (GitHub,
-              Storybook, Figma, internal tools, etc.)
+              Provide <b>direct links</b> to relevant resources (GitHub, Storybook, Figma, internal
+              tools, etc.)
             </li>
             <li>
-              <b>Search and filter</b> through all logs for transparency and
-              alignment
+              <b>Search and filter</b> through all logs for transparency and alignment
             </li>
           </ul>
           <br />
           <p>
-            This tool is designed to reduce duplicated work, improve visibility
-            across departments, and facilitate smoother collaboration.
+            This tool is designed to reduce duplicated work, improve visibility across departments,
+            and facilitate smoother collaboration.
           </p>
 
           <div className="flex w-full items-center justify-center">
@@ -168,7 +160,7 @@ export default function JotformLogbook() {
                 modules={[FreeMode, Navigation, Thumbs]}
                 className="showcase-swiper rounded-lg mb-4"
               >
-                {[1, 2, 3, 4, 5].map((num) => (
+                {[1, 2, 3, 4, 5].map(num => (
                   <SwiperSlide key={num} className="h-[600px]">
                     <Image
                       src={`/img/logbook/sketch-logbook-${num}.png`}
@@ -190,7 +182,7 @@ export default function JotformLogbook() {
                 modules={[FreeMode, Navigation, Thumbs]}
                 className="showcase-thumbs w-full items-center justify-center"
               >
-                {[1, 2, 3, 4, 5].map((num) => (
+                {[1, 2, 3, 4, 5].map(num => (
                   <SwiperSlide key={num}>
                     <Image
                       src={`/img/logbook/sketch-logbook-${num}.png`}
@@ -209,10 +201,7 @@ export default function JotformLogbook() {
 
       <SectionTitle title="How It Works" />
       <div className="SectionContent font-sans p-4 md:px-16 md:py-8 items-center justify-center text-start text-stone-900 text-lg gap-4">
-        <p>
-          The design process was iterative, with frequent feedback loops and
-          design iterations.
-        </p>
+        <p>The design process was iterative, with frequent feedback loops and design iterations.</p>
       </div>
 
       <div className="SectionContent flex flex-col w-auto font-sans items-center justify-center text-stone-900 text-lg gap-4">
@@ -225,12 +214,12 @@ export default function JotformLogbook() {
               <ul className="list-disc pl-4 space-y-1 text-left">
                 <li>When a team begins a new feature, they log it as a WIP.</li>
                 <li>
-                  This includes: description, affected products, collaborators,
-                  screenshots, and URLs.
+                  This includes: description, affected products, collaborators, screenshots, and
+                  URLs.
                 </li>
                 <li>
-                  A system email is automatically sent to relevant people,
-                  linking directly to the log entry.
+                  A system email is automatically sent to relevant people, linking directly to the
+                  log entry.
                 </li>
               </ul>
             </div>
@@ -242,13 +231,8 @@ export default function JotformLogbook() {
             </div>
             <div className="self-stretch justify-center text-stone-900 text-md font-normal font-sans">
               <ul className="list-disc pl-4 space-y-1 text-left">
-                <li>
-                  Once the work is complete, the team logs it as a final entry.
-                </li>
-                <li>
-                  Similar fields apply, but often with more finalized context
-                  and outcomes.
-                </li>
+                <li>Once the work is complete, the team logs it as a final entry.</li>
+                <li>Similar fields apply, but often with more finalized context and outcomes.</li>
                 <li>This entry is also emailed internally for visibility.</li>
               </ul>
             </div>
@@ -261,12 +245,11 @@ export default function JotformLogbook() {
             <div className="self-stretch justify-center text-stone-900 text-md font-normal font-sans">
               <ul className="list-disc pl-4 space-y-1 text-left">
                 <li>
-                  Employees can browse all WIP and LOG entries via tags,
-                  filters, collaborators, and product mentions.
+                  Employees can browse all WIP and LOG entries via tags, filters, collaborators, and
+                  product mentions.
                 </li>
                 <li>
-                  This keeps everyone informed without the noise of excessive
-                  meetings or emails.
+                  This keeps everyone informed without the noise of excessive meetings or emails.
                 </li>
               </ul>
             </div>
@@ -284,7 +267,7 @@ export default function JotformLogbook() {
               modules={[FreeMode, Navigation, Thumbs]}
               className="showcase-swiper rounded-lg mb-4"
             >
-              {[1, 2, 3, 4].map((num) => (
+              {[1, 2, 3, 4].map(num => (
                 <SwiperSlide key={num} className="h-[600px]">
                   <Image
                     src={`/img/logbook/ui-logbook-${num}.png`}
@@ -306,7 +289,7 @@ export default function JotformLogbook() {
               modules={[FreeMode, Navigation, Thumbs]}
               className="showcase-thumbs"
             >
-              {[1, 2, 3, 4].map((num) => (
+              {[1, 2, 3, 4].map(num => (
                 <SwiperSlide key={num}>
                   <Image
                     src={`/img/logbook/ui-logbook-${num}.png`}
@@ -325,23 +308,19 @@ export default function JotformLogbook() {
       <SectionTitle title="Result" />
       <div className="SectionContent font-sans p-4 md:px-16 md:py-8 items-center justify-center text-start text-stone-900 text-lg gap-4">
         <p>
-          The Jotform Logbook fosters a culture of{" "}
-          <b>transparency, accountability, and cross-team awareness.</b> It
-          serves as a living documentation layer between teams, aimed at
-          reducing friction and improving product development velocity. In a
-          fast-moving organization with an expanding array of products and
-          contributors, such internal infrastructure is essential for
-          scalability.
+          The Jotform Logbook fosters a culture of{' '}
+          <b>transparency, accountability, and cross-team awareness.</b> It serves as a living
+          documentation layer between teams, aimed at reducing friction and improving product
+          development velocity. In a fast-moving organization with an expanding array of products
+          and contributors, such internal infrastructure is essential for scalability.
         </p>
         <br />
         <p>
-          This project was initiated and designed by me, addressing pain points
-          I encountered firsthand. From problem discovery to solution design, I
-          led the product thinking and UX design, collaborating closely with
-          engineering stakeholders to plan the implementation. While{" "}
-          <b>we did not build the final product,</b> this initiative reflects my
-          commitment to solving real internal challenges through lightweight yet
-          scalable design principles.
+          This project was initiated and designed by me, addressing pain points I encountered
+          firsthand. From problem discovery to solution design, I led the product thinking and UX
+          design, collaborating closely with engineering stakeholders to plan the implementation.
+          While <b>we did not build the final product,</b> this initiative reflects my commitment to
+          solving real internal challenges through lightweight yet scalable design principles.
         </p>
       </div>
 
@@ -372,15 +351,15 @@ export default function JotformLogbook() {
         simpleTabs={[
           {
             icon: <Image src="/img/behance.svg" alt="Behance" width={24} height={24} />,
-            state: "idle",
-            to: "https://www.behance.net/gallery/158941869/brifl-Open-Source-Form-Application",
-            className: "h-full hover:bg-blue-100",
+            state: 'idle',
+            to: 'https://www.behance.net/gallery/158941869/brifl-Open-Source-Form-Application',
+            className: 'h-full hover:bg-blue-100',
           },
           {
             icon: <Image src="/img/dribbble.svg" alt="Dribbble" width={24} height={24} />,
-            state: "idle",
-            to: "https://dribbble.com/shots/19994696-brifl-open-source-form-application-landing-page",
-            className: "h-full hover:bg-pink-100 border-r-0",
+            state: 'idle',
+            to: 'https://dribbble.com/shots/19994696-brifl-open-source-form-application-landing-page',
+            className: 'h-full hover:bg-pink-100 border-r-0',
           },
         ]}
       />
@@ -388,4 +367,4 @@ export default function JotformLogbook() {
       <Footer />
     </div>
   );
-} 
+}

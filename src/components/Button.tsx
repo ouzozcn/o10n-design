@@ -12,6 +12,7 @@ export interface ButtonProps {
   isDisabled?: boolean;
   isLoading?: boolean;
   fullWidth?: boolean;
+  rounded?: boolean;
   onClick?: () => void;
   to?: string;
   className?: string;
@@ -41,6 +42,7 @@ const Button: React.FC<ButtonProps> = ({
   label,
   type = 'primary',
   size = 'medium',
+  rounded = false,
   startIcon,
   endIcon,
   isDisabled = false,
@@ -54,7 +56,8 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   const getClassNames = () => {
     const classes = [
-      'inline-flex items-center justify-center rounded',
+      'inline-flex items-center justify-center',
+      rounded ? 'rounded-full' : 'rounded-md',
       fullWidth ? 'w-full' : 'w-auto',
       typeClasses[type],
       sizeClasses[size],

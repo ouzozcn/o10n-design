@@ -456,7 +456,7 @@ export default function MFAClient() {
                 FullStory Dashboard to <b>monitor usage in real-time</b>
               </li>
               <li>
-                <b>BDM Training and Support</b> for Enterprise Clients
+                <b>CRM Training and Support</b> for Enterprise Clients
               </li>
             </ul>
           </div>
