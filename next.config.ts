@@ -2,7 +2,6 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ['images.unsplash.com'],
     remotePatterns: [
       {
         protocol: 'https',
@@ -13,19 +12,10 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   experimental: {
     optimizeCss: true,
   },
-  webpack: (config) => {
-    config.optimization = {
-      ...config.optimization,
-      minimize: true,
-    };
-    return config;
-  },
+  turbopack: {},
   async redirects() {
     // Only apply redirects in production
     if (process.env.NODE_ENV !== 'production') {
