@@ -16,6 +16,7 @@ import Tag from '@/components/Tag';
 import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
 import TwoFactorAuth from '@/components/examples/TwoFactorAuth';
 import BriflSample from '@/components/examples/BriflSample';
+import BriflDSSample from '@/components/examples/BriflDSSample';
 const iconConfig = {
   sm: { height: 24, sizes: '24px' },
   md: { height: 32, sizes: '32px' },
@@ -257,6 +258,38 @@ export default function HomeClient() {
             />
           </div>
           {/* GitHub Activity Map Section Ends */}
+          {/* Brifl DS Section Starts */}
+          <div className="BriflDS__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center border-b border-stone-900">
+            <div className="BriflDS__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4">
+              <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
+                brifl Design System
+              </h2>
+              <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
+                A modular, React-friendly component library based on atomic design principles.
+                Contains over 30 components and 200+ states and variants.
+              </p>
+              <div className="Section__Tags flex justify-start items-center gap-2 flex-wrap">
+                <Tag label="Product" type="red" size="large" />
+                <Tag label="Design System" type="outline" size="large" />
+              </div>
+              <div className="flex justify-start items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ">
+                <Button
+                  label="Explore brifl Design System"
+                  rounded={true}
+                  to="/product/brifl-design-system"
+                  target="_blank"
+                  type="primary"
+                  endIcon={<ArrowForwardRoundedIcon />}
+                />
+              </div>
+            </div>
+            <div className="2FA__Placeholder w-full lg:w-1/2 ">
+              <div className="flex flex-col w-auto h-full p-4 lg:p-24 ">
+                <BriflDSSample />
+              </div>
+            </div>
+          </div>
+          {/* Brifl DS Section Ends */}
           {/* Jotform Logbook Section Starts */}
           <RowCard
             direction="left"
@@ -319,38 +352,6 @@ export default function HomeClient() {
             </div>
           </div>
           {/* Brifl v2 Section Ends */}
-
-          {/* Brifl Design System Section Starts */}
-          <RowCard
-            direction="left"
-            cardTitle="Brifl Design System"
-            cardContent="A modular, React-friendly component library based on atomic design principles. Contains over 30 components and 200+ states and variants."
-            tags={[
-              {
-                label: 'Product',
-                type: 'red',
-                size: 'large',
-              },
-              {
-                label: 'Design System',
-                type: 'outline',
-                size: 'large',
-              },
-            ]}
-            to="/product/brifl-design-system"
-            swapContent={
-              <Image
-                src="/img/thumbs/thumb-briflds.svg"
-                alt="Brifl Design System components showcase displaying various UI elements"
-                width={1}
-                height={1}
-                className="h-full object-contain w-full"
-                priority
-              />
-            }
-            className="border-b-0"
-          />
-          {/* Brifl Design System Section Ends */}
         </section>
 
         <Footer />
