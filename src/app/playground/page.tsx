@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import TopDivider from '@/components/TopDivider';
 import Menu from '@/components/Menu';
 import Button from '@/components/Button';
@@ -10,12 +10,13 @@ import BriflSample from '@/components/examples/BriflSample';
   /* Playground dependencies start*/
 }
 /// import any components you plan to use in the playground here
-
+import Circle from '@uiw/react-color-circle';
 {
   /* Playground dependencies end */
 }
 
 export default function Playground() {
+  const [hex, setHex] = useState('#F44E3B');
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
       <TopDivider />
@@ -39,13 +40,19 @@ export default function Playground() {
       </div>
       <div className="Body__Playground flex flex-col  w-full h-dvh ">
         <div className="Playground__Nav flex flex-col md:flex-row w-full h-auto items-center justify-center bg-amber-200 border-b p-4 border-stone-900">
-          <div className="text-md">Brifl Sample</div>
+          <div className="text-md">Brifl Design System Sample</div>
         </div>
 
         {/* Content Start */}
         <div className="flex flex-col w-full items-center justify-center h-full gap-4 p-8 border-b border-stone-900">
           <div className="w-auto">
-            <BriflSample />
+            <Circle
+              colors={['#F44E3B', '#FE9200', '#FCDC00', '#DBDF00']}
+              color={hex}
+              onChange={color => {
+                setHex(color.hex);
+              }}
+            />
           </div>
         </div>
 
