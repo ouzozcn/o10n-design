@@ -44,7 +44,7 @@ export default function BriflDSSample() {
       {/* Components Showcase Section */}
       <div className="flex flex-col md:flex-row items-center">
         {/* Checkbox Section */}
-        <div className="p-3 flex flex-col gap-3 md:border-r border-stone-800 items-center md:items-start">
+        <div className="p-3 flex flex-col md:w-1/3 gap-3 md:border-r border-stone-800 items-center md:items-start">
           <div className="text-xl font-medium text-stone-900 tracking-tight">brifl.Checkbox</div>
           <BriflCheckbox
             checked={checkboxChecked}
@@ -54,7 +54,7 @@ export default function BriflDSSample() {
         </div>
 
         {/* Radio Section */}
-        <div className="p-3 flex flex-col gap-3 md:border-r border-stone-800 items-center md:items-start">
+        <div className="p-3 flex flex-col md:w-1/3 gap-3 md:border-r border-stone-800 items-center md:items-start">
           <div className="text-xl font-medium text-stone-900 tracking-tight">brifl.Radio</div>
           <BriflRadio
             checked={radioChecked}
@@ -64,7 +64,7 @@ export default function BriflDSSample() {
         </div>
 
         {/* Toggle Section */}
-        <div className="p-3 flex flex-col gap-3 items-center md:items-start">
+        <div className="p-3 flex flex-col md:w-1/3  gap-3 items-center md:items-start">
           <div className="text-xl font-medium text-stone-900 tracking-tight">brifl.Toggle</div>
           <BriflToggle
             checked={toggleChecked}

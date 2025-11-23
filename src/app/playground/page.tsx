@@ -1,29 +1,24 @@
 'use client';
-import React, { useState } from 'react';
-import TopDivider from '@/components/TopDivider';
 import Menu from '@/components/Menu';
 import Button from '@/components/Button';
 import CachedRoundedIcon from '@mui/icons-material/CachedRounded';
 import Footer from '@/components/Footer';
-
+import Checkbox from '@/components/Checkbox';
 {
   /* Playground dependencies start*/
 }
 /// import any components you plan to use in the playground here
-import Circle from '@uiw/react-color-circle';
-import BriflCheckbox from '@/components/brifl-ds/BriflCheckbox';
-import BriflRadio from '@/components/brifl-ds/BriflRadio';
-import BriflToggle from '@/components/brifl-ds/BriflToggle';
-import BriflDSSample from '@/components/examples/BriflDSSample';
+
 {
   /* Playground dependencies end */
 }
 
 export default function Playground() {
-  const [hex, setHex] = useState('#F44E3B');
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
-      <TopDivider />
+      <div className="flex flex-col w-full p-1 text-center text-sm md:text-base lg:text-lg border-b border-stone-900 min-h-8 lg:min-h-10 items-center justify-center">
+        <h1>Oğuzhan Özcan - Product Designer & Design Engineer</h1>
+      </div>
       <div className="Header sticky top-0 flex flex-row p-4 w-full h-auto md:h-[88px] border-b border-stone-900 items-center justify-start gap-4 bg-amber-50 z-10">
         <Menu />
         <div className="HeaderTitle w-full flex flex-col md:flex-row place-content-between gap-4 items-start md:items-center">
@@ -49,24 +44,12 @@ export default function Playground() {
 
         {/* Content Start */}
         <div className="flex flex-col w-full items-center justify-center h-full gap-4 p-8 border-b border-stone-900">
-          <div className="w-auto">
-            <Circle
-              colors={['#F44E3B', '#FE9200', '#FCDC00', '#DBDF00']}
-              color={hex}
-              onChange={color => {
-                setHex(color.hex);
-              }}
-            />
-            <div className="flex flex-row gap-4">
-              <BriflCheckbox defaultChecked={false} onChange={checked => console.log(checked)} />
-              <BriflRadio defaultChecked={false} onChange={checked => console.log(checked)} />
-              <BriflToggle defaultChecked={false} onChange={checked => console.log(checked)} />
-            </div>
-            <BriflDSSample />
-          </div>
+          <div className="w-auto gap-12"></div>
+          <Checkbox size="lg" defaultChecked={false} onChange={checked => console.log(checked)} />
+          <Checkbox size="md" defaultChecked={false} onChange={checked => console.log(checked)} />
+          <Checkbox size="sm" defaultChecked={false} onChange={checked => console.log(checked)} />
+          {/* Content End */}
         </div>
-
-        {/* Content End */}
       </div>
       <Footer />
     </div>

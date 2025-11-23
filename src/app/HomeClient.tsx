@@ -7,7 +7,6 @@ import MenuItem from '@/components/MenuItem';
 import InfoCard from '@/components/InfoCard';
 import RowCard from '@/components/RowCard';
 import Footer from '@/components/Footer';
-import TopDivider from '@/components/TopDivider';
 import GitHubCalendar from 'react-github-calendar';
 import Button from '@/components/Button';
 import RoughAnnotate from '@/components/rough-notation/RoughAnnotate';
@@ -34,11 +33,11 @@ const formatDate = (dateStr: string) => {
 export default function HomeClient() {
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
-      <h1 className="sr-only">
-        Oğuzhan Özcan - Product Designer | Analytics and Data-Driven Design
-      </h1>
+      <h1 className="sr-only">Oğuzhan Özcan - Product Designer & Design Engineer</h1>
 
-      <TopDivider />
+      <div className="flex flex-col w-full p-1 text-center text-sm md:text-base lg:text-lg border-b border-stone-900 min-h-8 lg:min-h-10 items-center justify-center">
+        <h1>Oğuzhan Özcan - Product Designer & Design Engineer</h1>
+      </div>
 
       <div className="flex flex-col lg:flex-row w-full">
         <div className="w-full lg:w-auto h-full lg:h-[536px] lg:border-b border-stone-900">
