@@ -5,12 +5,16 @@ import Menu from '@/components/Menu';
 import Button from '@/components/Button';
 import CachedRoundedIcon from '@mui/icons-material/CachedRounded';
 import Footer from '@/components/Footer';
-import BriflSample from '@/components/examples/BriflSample';
+
 {
   /* Playground dependencies start*/
 }
 /// import any components you plan to use in the playground here
 import Circle from '@uiw/react-color-circle';
+import BriflCheckbox from '@/components/brifl-ds/BriflCheckbox';
+import BriflRadio from '@/components/brifl-ds/BriflRadio';
+import BriflToggle from '@/components/brifl-ds/BriflToggle';
+import BriflDSSample from '@/components/examples/BriflDSSample';
 {
   /* Playground dependencies end */
 }
@@ -53,6 +57,12 @@ export default function Playground() {
                 setHex(color.hex);
               }}
             />
+            <div className="flex flex-row gap-4">
+              <BriflCheckbox defaultChecked={false} onChange={checked => console.log(checked)} />
+              <BriflRadio defaultChecked={false} onChange={checked => console.log(checked)} />
+              <BriflToggle defaultChecked={false} onChange={checked => console.log(checked)} />
+            </div>
+            <BriflDSSample />
           </div>
         </div>
 
