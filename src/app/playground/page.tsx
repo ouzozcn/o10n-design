@@ -3,15 +3,14 @@ import Menu from '@/components/Menu';
 import Button from '@/components/Button';
 import CachedRoundedIcon from '@mui/icons-material/CachedRounded';
 import Footer from '@/components/Footer';
-import Checkbox from '@/components/Checkbox';
-{
-  /* Playground dependencies start*/
-}
-/// import any components you plan to use in the playground here
 
-{
-  /* Playground dependencies end */
-}
+/// Playground dependencies start
+
+/// Import any components you plan to use in the playground here
+import Checkbox from '@/components/Checkbox';
+import RadioButton from '@/components/RadioButton';
+import ToggleButton from '@/components/ToggleButton';
+/// Playground dependencies end
 
 export default function Playground() {
   return (
@@ -43,11 +42,41 @@ export default function Playground() {
         </div>
 
         {/* Content Start */}
-        <div className="flex flex-col w-full items-center justify-center h-full gap-4 p-8 border-b border-stone-900">
+        <div className="flex flex-row w-full items-center justify-center h-full gap-4 p-8 border-b border-stone-900">
           <div className="w-auto gap-12"></div>
           <Checkbox size="lg" defaultChecked={false} onChange={checked => console.log(checked)} />
           <Checkbox size="md" defaultChecked={false} onChange={checked => console.log(checked)} />
           <Checkbox size="sm" defaultChecked={false} onChange={checked => console.log(checked)} />
+          <RadioButton
+            size="lg"
+            defaultChecked={false}
+            onChange={checked => console.log(checked)}
+          />
+          <RadioButton
+            size="md"
+            defaultChecked={false}
+            onChange={checked => console.log(checked)}
+          />
+          <RadioButton
+            size="sm"
+            defaultChecked={false}
+            onChange={checked => console.log(checked)}
+          />
+          <ToggleButton
+            size="lg"
+            defaultChecked={false}
+            onChange={checked => console.log(checked)}
+          />
+          <ToggleButton
+            size="md"
+            defaultChecked={false}
+            onChange={checked => console.log(checked)}
+          />
+          <ToggleButton
+            size="sm"
+            defaultChecked={false}
+            onChange={checked => console.log(checked)}
+          />
           {/* Content End */}
         </div>
       </div>
