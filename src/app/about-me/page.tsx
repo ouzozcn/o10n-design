@@ -4,14 +4,14 @@ import MenuItem from '@/components/MenuItem';
 import { Footer } from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'About Me | Oğuzhan Özcan | Product Designer & Design Engineer',
+  title: 'About Me | Product Designer & Design Engineer | Oğuzhan Özcan',
   description:
     'Self-taught product designer now transitioning to design engineering. 5+ years designing SaaS B2B products. Passionate about accessibility, design systems, and building bridges between design and code. Currently at Jotform Enterprise.',
   alternates: {
     canonical: 'https://o10n.design/about-me',
   },
   openGraph: {
-    title: 'About Oğuzhan Özcan | Product Designer → Design Engineer',
+    title: 'About Oğuzhan Özcan | Product Designer & Design Engineer',
     description:
       'Self-taught product designer now transitioning to design engineering. 5+ years designing SaaS B2B products. Passionate about accessibility, design systems, and building bridges between design and code. Currently at Jotform Enterprise.',
     url: 'https://o10n.design/about-me',
