@@ -2,14 +2,14 @@ import type { Metadata } from 'next';
 import BriflDSClient from './BriflDSClient';
 
 export const metadata: Metadata = {
-  title: 'Brifl Design System | Oğuzhan Özcan | Design Systems & Component Libraries',
+  title: 'brifl Design System | Design Systems & Component Libraries | Oğuzhan Özcan ',
   description:
     'A modular, React-friendly component library built on atomic design principles. The Brifl Design System contains 30+ UI components and 200+ states and variants, providing a scalable foundation for consistent, accessible, and high-fidelity UI design.',
   alternates: {
     canonical: 'https://o10n.design/product/brifl-design-system',
   },
   openGraph: {
-    title: 'Brifl Design System | Designing a Scalable and Modular UI Foundation',
+    title: 'brifl Design System | Designing a Scalable and Modular UI Foundation',
     description:
       'A modular, React-friendly component library based on atomic design principles. Contains 30+ components and 200+ states and variants. Designed by Oğuzhan Özcan (August - December 2021) using Figma and Miro.',
     url: 'https://o10n.design/product/brifl-design-system',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
         url: 'https://o10n.design/img/og_images/brifl_ds_open_graph.png',
         width: 1200,
         height: 630,
-        alt: 'Brifl Design System - A modular, React-friendly component library by Oğuzhan Özcan',
+        alt: 'brifl Design System - A modular, React-friendly component library by Oğuzhan Özcan',
       },
     ],
     siteName: 'o10n.design',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Brifl Design System | Scalable Component Library',
+    title: 'brifl Design System | Scalable Component Library',
     description:
       'Modular, React-friendly design system with 30+ components and 200+ variants. Built on atomic design principles for consistent, accessible UI design.',
     images: ['https://o10n.design/img/og_images/brifl_ds_open_graph.png'],
@@ -133,6 +133,6 @@ export const metadata: Metadata = {
   classification: 'Design Portfolio',
 };
 
-export default function Home() {
+export default function BriflDS() {
   return <BriflDSClient />;
 }
