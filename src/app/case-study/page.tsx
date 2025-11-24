@@ -148,7 +148,7 @@ export default function CaseStudy() {
       <div className="PageContent flex flex-col w-full h-full border-stone-900">
         {/* 2FA v2 Section Starts */}
         <div className="Jotform2FA__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center ">
-          <div className="Jotform2FA__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4">
+          <div className="Jotform2FA__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4 order-2 lg:order-1">
             <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
               Enhancing Security Through Two-Factor Authentication
             </h2>

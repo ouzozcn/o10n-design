@@ -1,9 +1,7 @@
 import type { Metadata } from 'next';
 import React from 'react';
 import MenuItem from '@/components/MenuItem';
-import RowCard from '@/components/RowCard';
 import { Footer } from '@/components/Footer';
-import Image from 'next/image';
 import RoughAnnotate from '@/components/rough-notation/RoughAnnotate';
 import Tag from '@/components/Tag';
 import Button from '@/components/Button';
@@ -151,7 +149,7 @@ export default function Products() {
             </div>
           </div>
           <div className="Kroma__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4">
-            <h2 className="text-stone-900 text-xl lg:text-3xl text-center lg:text-start font-sans font-normal ">
+            <h2 className="text-stone-900 text-xl lg:text-3xl text-start font-sans font-normal ">
               Kroma | Color Blindness Simulator
             </h2>
             <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
@@ -188,7 +186,7 @@ export default function Products() {
         {/* Kroma Section Ends */}
         {/* Brifl DS Section Starts */}
         <div className="BriflDS__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center ">
-          <div className="BriflDS__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4">
+          <div className="BriflDS__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4 order-2 lg:order-1">
             <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
               brifl Design System
             </h2>

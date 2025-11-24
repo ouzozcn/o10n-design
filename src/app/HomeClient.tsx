@@ -141,7 +141,7 @@ export default function HomeClient() {
         <section className="flex flex-col w-full">
           {/* ArticleOne Section Starts */}
           <div className="ArticleOne__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center border-b border-stone-900">
-            <div className="ArticleOne__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4">
+            <div className="ArticleOne__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4 order-2 lg:order-1">
               <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
                 Component Design for JavaScript Frameworks
               </h2>
@@ -176,7 +176,7 @@ export default function HomeClient() {
                 />
               </div>
             </div>
-            <div className="2FA__Placeholder w-full lg:w-1/2 ">
+            <div className="ArticleOne__Placeholder w-full lg:w-1/2 order-1 lg:order-2">
               <div className="flex flex-col w-auto h-full p-4 lg:p-24 ">
                 <ArticleOneSample />
               </div>
@@ -191,7 +191,7 @@ export default function HomeClient() {
               </div>
             </div>
             <div className="Kroma__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4">
-              <h2 className="text-stone-900 text-xl lg:text-3xl text-center lg:text-start font-sans font-normal ">
+              <h2 className="text-stone-900 text-xl lg:text-3xl text-start font-sans font-normal ">
                 Kroma | Color Blindness Simulator
               </h2>
               <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
@@ -228,7 +228,7 @@ export default function HomeClient() {
           {/* Kroma Section Ends */}
           {/* 2FA v2 Section Starts */}
           <div className="Jotform2FA__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center border-b border-stone-900">
-            <div className="Jotform2FA__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4">
+            <div className="Jotform2FA__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4 order-2 lg:order-1">
               <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
                 Enhancing Security Through Two-Factor Authentication
               </h2>
@@ -262,7 +262,7 @@ export default function HomeClient() {
                 />
               </div>
             </div>
-            <div className="2FA__Placeholder w-full lg:w-1/2 ">
+            <div className="Jotform2FA__Placeholder w-full lg:w-1/2 order-1 lg:order-2">
               <div className="flex flex-col w-auto h-full p-4 lg:p-24 ">
                 <TwoFactorAuth />
               </div>
@@ -326,7 +326,7 @@ export default function HomeClient() {
           {/* GitHub Activity Map Section Ends */}
           {/* Brifl DS Section Starts */}
           <div className="BriflDS__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center border-b border-stone-900">
-            <div className="BriflDS__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4">
+            <div className="BriflDS__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4 order-2 lg:order-1">
               <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
                 brifl Design System
               </h2>
@@ -360,7 +360,7 @@ export default function HomeClient() {
                 />
               </div>
             </div>
-            <div className="BriflDS__Placeholder w-full lg:w-1/2 ">
+            <div className="BriflDS__Placeholder w-full lg:w-1/2 order-1 lg:order-2">
               <div className="flex flex-col w-auto h-full p-4 lg:p-24 ">
                 <BriflDSSample />
               </div>
@@ -381,7 +381,7 @@ export default function HomeClient() {
               </div>
             </div>
             <div className="JotformLogbook__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4">
-              <h2 className="text-stone-900 text-xl lg:text-3xl text-center lg:text-start font-sans font-normal ">
+              <h2 className="text-stone-900 text-xl lg:text-3xl text-start font-sans font-normal ">
                 Jotform Logbook | An internal tool for better company awareness
               </h2>
               <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
@@ -409,7 +409,7 @@ export default function HomeClient() {
 
           {/* Brifl v2 Section Starts */}
           <div className="Brifl__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center ">
-            <div className="Brifl__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4">
+            <div className="Brifl__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4 order-2 lg:order-1">
               <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
                 brifl | Collaborative Form Builder
               </h2>
@@ -445,7 +445,7 @@ export default function HomeClient() {
                 />
               </div>
             </div>
-            <div className="Brifl__Placeholder w-full lg:w-1/2 ">
+            <div className="Brifl__Placeholder w-full lg:w-1/2 order-1 lg:order-2">
               <div className="flex flex-col w-auto h-full p-4 lg:p-24 ">
                 <BriflSample />
               </div>

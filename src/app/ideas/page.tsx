@@ -161,7 +161,7 @@ export default function Ideas() {
             </div>
           </div>
           <div className="JotformLogbook__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4">
-            <h2 className="text-stone-900 text-xl lg:text-3xl text-center lg:text-start font-sans font-normal ">
+            <h2 className="text-stone-900 text-xl lg:text-3xl text-start font-sans font-normal ">
               Jotform Logbook | An internal tool for better company awareness
             </h2>
             <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
@@ -189,7 +189,7 @@ export default function Ideas() {
 
         {/* Brifl v2 Section Starts */}
         <div className="Brifl__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center ">
-          <div className="Brifl__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4">
+          <div className="Brifl__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4 order-2 lg:order-1">
             <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
               brifl | Collaborative Form Builder
             </h2>

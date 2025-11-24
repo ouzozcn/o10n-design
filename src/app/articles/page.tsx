@@ -155,7 +155,7 @@ export default function Articles() {
       <div className="PageContent flex flex-col w-full h-full border-stone-900">
         {/* ArticleOne Section Starts */}
         <div className="ArticleOne__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center ">
-          <div className="ArticleOne__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4">
+          <div className="ArticleOne__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4 order-2 lg:order-1">
             <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
               Component Design for JavaScript Frameworks
             </h2>
