@@ -11,8 +11,8 @@ export default function StructuredData() {
         'Research-based product designer and design engineer specializing in SaaS B2B, design systems, and AI-driven workflows. Experienced in bridging design–development gaps with developer-friendly components, scalable systems, and accessibility-first solutions.',
       worksFor: {
         '@type': 'Organization',
-        name: 'Jotform Enterprise',
-        url: 'https://jotform.com/enterprise',
+        name: 'Jotform',
+        url: 'https://jotform.com',
       },
       url: 'https://o10n.design',
       mainEntityOfPage: 'https://o10n.design',
@@ -101,9 +101,7 @@ export default function StructuredData() {
       name: 'Product Design & Design Engineering Services',
       description:
         'Professional SaaS-focused product design, design engineering, accessibility consulting, and AI-driven workflows.',
-      provider: {
-        '@id': 'https://o10n.design/#person',
-      },
+
       address: {
         '@type': 'PostalAddress',
         addressLocality: 'Ankara',
@@ -112,23 +110,6 @@ export default function StructuredData() {
         streetAddress: 'ODTÜ Teknokent',
       },
       areaServed: 'Worldwide',
-      serviceType: [
-        'Product Design',
-        'Design Systems',
-        'UI/UX Design',
-        'Accessibility Consulting',
-        'Design Engineering',
-        'Frontend Development',
-        'UX Research',
-        'AI/LLM Experiments',
-        'Design-Development Collaboration',
-      ],
-      offers: {
-        '@type': 'Offer',
-        description:
-          'Comprehensive product design, design systems, and AI-driven design engineering services.',
-        availability: 'https://schema.org/InStock',
-      },
     },
     {
       '@context': 'https://schema.org',
@@ -140,9 +121,7 @@ export default function StructuredData() {
       author: {
         '@id': 'https://o10n.design/#person',
       },
-      creator: {
-        '@id': 'https://o10n.design/#person',
-      },
+
       publisher: {
         '@id': 'https://o10n.design/#person',
       },
@@ -230,14 +209,17 @@ export default function StructuredData() {
       description:
         'Free tool for designers and developers to test UI designs for various types of color blindness.',
       url: 'https://usekroma.com',
-      creator: {
-        '@id': 'https://o10n.design/#person',
-      },
+
       offers: {
         '@type': 'Offer',
         price: '0',
         priceCurrency: 'USD',
         availability: 'https://schema.org/InStock',
+      },
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '4.7',
+        ratingCount: '72',
       },
     },
     {
@@ -247,9 +229,7 @@ export default function StructuredData() {
       name: 'Hydrogen',
       description:
         'AI-driven node map project for SaaS lead scoring and intent analysis, with 1000+ signal properties and interactive visualization.',
-      creator: {
-        '@id': 'https://o10n.design/#person',
-      },
+
       keywords: ['AI Agent', 'Lead Scoring', 'Design Engineering', 'Visualization'],
     },
     {
@@ -259,9 +239,7 @@ export default function StructuredData() {
       name: 'Growth Agent',
       description:
         'AI-powered enterprise sales and lead generation platform for automating customer pipelines.',
-      creator: {
-        '@id': 'https://o10n.design/#person',
-      },
+
       keywords: ['AI Agents', 'Sales Automation', 'Lead Generation', 'Enterprise SaaS'],
     },
   ];
