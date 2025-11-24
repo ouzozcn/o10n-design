@@ -86,7 +86,7 @@ function ToggleButton({
   };
 
   const styles = getStyles();
-  const iconColor = visualState === 'checked' ? '#65a30d' : '#57534e'; // dark for checked, gray for default/hover
+  const iconColor = visualState === 'checked' ? '#1c1917' : '#57534e'; // dark for checked, gray for default/hover
 
   return (
     <button

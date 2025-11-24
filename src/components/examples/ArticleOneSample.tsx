@@ -54,7 +54,7 @@ export default function ArticleOneSample() {
         {/* Label Section */}
         <div className="border-t border-stone-900 flex flex-col gap-5 items-start justify-center px-5 py-4 w-full">
           <div className="flex gap-3 items-center w-full">
-            <div className="font-mono font-bold text-lg text-stone-900 whitespace-nowrap shrink-0">
+            <div className="font-mono font-semibold text-lg text-stone-900 whitespace-nowrap shrink-0">
               label:
             </div>
             <div className="flex-1 min-w-0">
@@ -74,7 +74,7 @@ export default function ArticleOneSample() {
         {/* Type Section */}
         <div className="border-t border-stone-900 flex flex-col gap-5 items-start justify-center px-5 py-4 w-full">
           <div className="flex gap-3 items-center">
-            <div className="font-mono font-bold text-lg text-stone-900 whitespace-nowrap shrink-0">
+            <div className="font-mono font-semibold text-lg text-stone-900 whitespace-nowrap shrink-0">
               type?:
             </div>
             <div
@@ -128,7 +128,7 @@ export default function ArticleOneSample() {
         {/* Size Section */}
         <div className="border-t border-stone-900 flex flex-col gap-5 items-start justify-center px-5 py-4 w-full">
           <div className="flex gap-3 items-center">
-            <div className="font-mono font-bold text-lg text-stone-900 whitespace-nowrap shrink-0">
+            <div className="font-mono font-semibold text-lg text-stone-900 whitespace-nowrap shrink-0">
               size?:
             </div>
             <div
@@ -182,7 +182,7 @@ export default function ArticleOneSample() {
         {/* StartIcon Section */}
         <div className="border-t border-stone-900 flex flex-col gap-5 items-start justify-center px-5 py-4 w-full">
           <div className="flex gap-3 items-center">
-            <div className="font-mono font-bold text-lg text-stone-900 whitespace-nowrap shrink-0">
+            <div className="font-mono font-semibold text-lg text-stone-900 whitespace-nowrap shrink-0">
               startIcon?:
             </div>
             <div className="flex gap-3 items-center">
@@ -199,7 +199,7 @@ export default function ArticleOneSample() {
         {/* EndIcon Section */}
         <div className="border-t border-stone-900 flex flex-col gap-5 items-start justify-center px-5 py-4 w-full">
           <div className="flex gap-3 items-center">
-            <div className="font-mono font-bold text-lg text-stone-900 whitespace-nowrap shrink-0">
+            <div className="font-mono font-semibold text-lg text-stone-900 whitespace-nowrap shrink-0">
               endIcon?:
             </div>
             <div className="flex gap-3 items-center">
