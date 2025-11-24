@@ -6,9 +6,10 @@ module.exports = {
   exclude: [
     '/opengraph-image.png', // Exclude image files from sitemap
     '/_next/**',
-    '/api/**'
+    '/api/**',
+    '/cdn-cgi/**',
   ],
-  additionalPaths: async (config) => [
+  additionalPaths: async config => [
     await config.transform(config, '/llms.txt'),
     await config.transform(config, '/llms.md'),
   ],
@@ -17,14 +18,12 @@ module.exports = {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/_next/', '/api/']
-      }
+        disallow: ['/cdn-cgi/'],
+      },
     ],
-    additionalSitemaps: [
-      'https://o10n.design/sitemap.xml'
-    ]
+    additionalSitemaps: ['https://o10n.design/sitemap.xml'],
   },
   changefreq: 'monthly',
   priority: 0.7,
-  sitemapSize: 5000
-}
+  sitemapSize: 5000,
+};
