@@ -5,8 +5,6 @@ module.exports = {
   generateIndexSitemap: false, // Generate a single sitemap instead of sitemap index
   exclude: [
     '/opengraph-image.png', // Exclude image files from sitemap
-    '/_next/**',
-    '/api/**',
     '/cdn-cgi/**',
   ],
   additionalPaths: async config => [
