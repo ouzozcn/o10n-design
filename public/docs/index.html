@@ -1,14 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
 
     <title>o10n - Documentation</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    
+    <meta name="description" content="Documentation for o10n.design" />
+    <meta name="keywords" content="o10n.design, documentation, react, storybook, chromatic" />
+    <meta name="author" content="Oğuzhan Özcan" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="google" content="notranslate" />
+    <meta
+      name="google-site-verification"
+      content="google-site-verification=google-site-verification"
+    />
+
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
-    
+
     <style>
       @font-face {
         font-family: 'Nunito Sans';
@@ -45,155 +56,127 @@
 
     <link href="./sb-manager/runtime.js" rel="modulepreload" />
 
-    
-    <link href="./sb-addons/storybook-core-server-presets-0/common-manager-bundle.js" rel="modulepreload" />
-    
+    <link
+      href="./sb-addons/storybook-core-server-presets-0/common-manager-bundle.js"
+      rel="modulepreload"
+    />
+
     <link href="./sb-addons/onboarding-1/manager-bundle.js" rel="modulepreload" />
-    
+
     <link href="./sb-addons/chromatic-com-storybook-2/manager-bundle.js" rel="modulepreload" />
-    
+
     <link href="./sb-addons/docs-3/manager-bundle.js" rel="modulepreload" />
-    
+
     <link href="./sb-addons/a11y-4/manager-bundle.js" rel="modulepreload" />
-    
+
     <link href="./sb-addons/vitest-5/manager-bundle.js" rel="modulepreload" />
-    
+
     <link href="./sb-addons/storybook-6/manager-bundle.js" rel="modulepreload" />
-      <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
- 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
       #storybook-root[hidden] {
         display: none !important;
       }
     </style>
-<!-- Hotjar  -->
-<script>
-  (function (h, o, t, j, a, r) {
-    h.hj =
-      h.hj ||
-      function () {
-        (h.hj.q = h.hj.q || []).push(arguments);
-      };
-    h._hjSettings = { hjid: 5338821, hjsv: 6 };
-    a = o.getElementsByTagName("head")[0];
-    r = o.createElement("script");
-    r.async = 1;
-    r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-    a.appendChild(r);
-  })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-</script>
-<!-- Hotjar  -->
+    <!-- Hotjar  -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 5338821, hjsv: 6 };
+        a = o.getElementsByTagName('head')[0];
+        r = o.createElement('script');
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <!-- Hotjar  -->
 
-<!-- Google tag (gtag.js) -->
-<script
-  async
-  src="https://www.googletagmanager.com/gtag/js?id=G-C0CLBMC044"
-></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag("js", new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C0CLBMC044"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-  gtag("config", "G-C0CLBMC044");
-</script>
-<!-- Google tag (gtag.js) -->
-    
+      gtag('config', 'G-C0CLBMC044');
+    </script>
+    <!-- Google tag (gtag.js) -->
   </head>
   <body>
     <div id="root"></div>
 
-    
     <script>
-      
-        
-          window['FEATURES'] = {
-  "argTypeTargetsV7": true,
-  "legacyDecoratorFileOrder": false,
-  "disallowImplicitActionsInRenderV8": true,
-  "viewport": true,
-  "highlight": true,
-  "controls": true,
-  "interactions": true,
-  "actions": true,
-  "backgrounds": true,
-  "outline": true,
-  "measure": true
-};
-        
-      
-        
-          window['REFS'] = {};
-        
-      
-        
-          window['LOGLEVEL'] = "info";
-        
-      
-        
-          window['DOCS_OPTIONS'] = {
-  "defaultName": "Docs"
-};
-        
-      
-        
-          window['CONFIG_TYPE'] = "PRODUCTION";
-        
-      
-        
-      
-        
-      
-        
-          window['TAGS_OPTIONS'] = {
-  "dev-only": {
-    "excludeFromDocsStories": true
-  },
-  "docs-only": {
-    "excludeFromSidebar": true
-  },
-  "test-only": {
-    "excludeFromSidebar": true,
-    "excludeFromDocsStories": true
-  }
-};
-        
-      
-        
-          window['STORYBOOK_RENDERER'] = "react";
-        
-      
-        
-          window['STORYBOOK_BUILDER'] = "@storybook/builder-vite";
-        
-      
-        
-          window['STORYBOOK_FRAMEWORK'] = "@storybook/nextjs-vite";
-        
-      
+      window['FEATURES'] = {
+        argTypeTargetsV7: true,
+        legacyDecoratorFileOrder: false,
+        disallowImplicitActionsInRenderV8: true,
+        viewport: true,
+        highlight: true,
+        controls: true,
+        interactions: true,
+        actions: true,
+        backgrounds: true,
+        outline: true,
+        measure: true,
+      };
+
+      window['REFS'] = {};
+
+      window['LOGLEVEL'] = 'info';
+
+      window['DOCS_OPTIONS'] = {
+        defaultName: 'Docs',
+      };
+
+      window['CONFIG_TYPE'] = 'PRODUCTION';
+
+      window['TAGS_OPTIONS'] = {
+        'dev-only': {
+          excludeFromDocsStories: true,
+        },
+        'docs-only': {
+          excludeFromSidebar: true,
+        },
+        'test-only': {
+          excludeFromSidebar: true,
+          excludeFromDocsStories: true,
+        },
+      };
+
+      window['STORYBOOK_RENDERER'] = 'react';
+
+      window['STORYBOOK_BUILDER'] = '@storybook/builder-vite';
+
+      window['STORYBOOK_FRAMEWORK'] = '@storybook/nextjs-vite';
     </script>
-    
 
     <script type="module">
       import './sb-manager/globals-runtime.js';
 
-      
-        import './sb-addons/storybook-core-server-presets-0/common-manager-bundle.js';
-      
-        import './sb-addons/onboarding-1/manager-bundle.js';
-      
-        import './sb-addons/chromatic-com-storybook-2/manager-bundle.js';
-      
-        import './sb-addons/docs-3/manager-bundle.js';
-      
-        import './sb-addons/a11y-4/manager-bundle.js';
-      
-        import './sb-addons/vitest-5/manager-bundle.js';
-      
-        import './sb-addons/storybook-6/manager-bundle.js';
-      
+      import './sb-addons/storybook-core-server-presets-0/common-manager-bundle.js';
+
+      import './sb-addons/onboarding-1/manager-bundle.js';
+
+      import './sb-addons/chromatic-com-storybook-2/manager-bundle.js';
+
+      import './sb-addons/docs-3/manager-bundle.js';
+
+      import './sb-addons/a11y-4/manager-bundle.js';
+
+      import './sb-addons/vitest-5/manager-bundle.js';
+
+      import './sb-addons/storybook-6/manager-bundle.js';
 
       import './sb-manager/runtime.js';
     </script>

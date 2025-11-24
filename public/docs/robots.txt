@@ -1,7 +1,8 @@
 # *
 User-agent: *
 Allow: /
-
+Disallow: 
+/cdn-cgi/
 # Host
 Host: https://o10n.design
 
