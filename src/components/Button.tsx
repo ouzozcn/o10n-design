@@ -30,8 +30,8 @@ const typeClasses = {
 };
 
 const sizeClasses = {
-  small: 'px-2 py-2 text-sm',
-  medium: 'px-3 py-3 text-md',
+  small: 'min-h-10 px-2 py-2 text-sm',
+  medium: 'min-h-[50px] px-3 py-3 text-md',
   large: 'px-6 py-3 text-lg',
   xlarge: 'px-8 py-6 text-xl',
 };

@@ -10,6 +10,7 @@ import Footer from '@/components/Footer';
 import Checkbox from '@/components/Checkbox';
 import RadioButton from '@/components/RadioButton';
 import ToggleButton from '@/components/ToggleButton';
+import ArticleOneSample from '@/components/examples/ArticleOneSample';
 /// Playground dependencies end
 
 export default function Playground() {
@@ -38,45 +39,15 @@ export default function Playground() {
       </div>
       <div className="Body__Playground flex flex-col  w-full h-dvh ">
         <div className="Playground__Nav flex flex-col md:flex-row w-full h-auto items-center justify-center bg-amber-200 border-b p-4 border-stone-900">
-          <div className="text-md">Brifl Design System Sample</div>
+          <div className="text-md">Checkbox, RadioButton, ToggleButton</div>
         </div>
 
         {/* Content Start */}
         <div className="flex flex-row w-full items-center justify-center h-full gap-4 p-8 border-b border-stone-900">
-          <div className="w-auto gap-12"></div>
-          <Checkbox size="lg" defaultChecked={false} onChange={checked => console.log(checked)} />
-          <Checkbox size="md" defaultChecked={false} onChange={checked => console.log(checked)} />
-          <Checkbox size="sm" defaultChecked={false} onChange={checked => console.log(checked)} />
-          <RadioButton
-            size="lg"
-            defaultChecked={false}
-            onChange={checked => console.log(checked)}
-          />
-          <RadioButton
-            size="md"
-            defaultChecked={false}
-            onChange={checked => console.log(checked)}
-          />
-          <RadioButton
-            size="sm"
-            defaultChecked={false}
-            onChange={checked => console.log(checked)}
-          />
-          <ToggleButton
-            size="lg"
-            defaultChecked={false}
-            onChange={checked => console.log(checked)}
-          />
-          <ToggleButton
-            size="md"
-            defaultChecked={false}
-            onChange={checked => console.log(checked)}
-          />
-          <ToggleButton
-            size="sm"
-            defaultChecked={false}
-            onChange={checked => console.log(checked)}
-          />
+          <div className="w-auto gap-12">
+            <ArticleOneSample />
+          </div>
+
           {/* Content End */}
         </div>
       </div>
