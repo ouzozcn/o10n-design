@@ -4,7 +4,11 @@ import MenuItem from '@/components/MenuItem';
 import RowCard from '@/components/RowCard';
 import { Footer } from '@/components/Footer';
 import Image from 'next/image';
-
+import RoughAnnotate from '@/components/rough-notation/RoughAnnotate';
+import Tag from '@/components/Tag';
+import Button from '@/components/Button';
+import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
+import TwoFactorAuth from '@/components/examples/TwoFactorAuth';
 export const metadata: Metadata = {
   title: 'Case Studies | Oğuzhan Özcan | Enterprise SaaS & Security UX',
   description:
@@ -142,37 +146,49 @@ export default function CaseStudy() {
       </div>
 
       <div className="PageContent flex flex-col w-full h-full border-stone-900">
-        <RowCard
-          className="border-b-0"
-          direction="left"
-          cardTitle="Enhancing Security Through Two-Factor Authentication"
-          cardContent="Designed and launched Jotform's first two-factor authentication system—adopted by 15,000+ users with a 95% retention rate. A security feature that scaled across Web, Mobile, and Enterprise platforms."
-          tags={[
-            {
-              label: 'Case Study',
-              type: 'lime',
-              size: 'large',
-            },
-            {
-              label: 'Security Feature',
-              type: 'outline',
-              size: 'large',
-            },
-          ]}
-          to="/case-study/jotform-2fa"
-          swapContent={
-            <div className="relative w-full h-full min-h-[200px]">
-              <Image
-                src="/img/thumbs/thumb-jf2fa.svg"
-                alt="Jotform 2FA Case Study Thumbnail"
-                fill
-                className="object-contain"
-                priority
-                sizes="(max-width: 768px) 100vw, 50vw"
+        {/* 2FA v2 Section Starts */}
+        <div className="Jotform2FA__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center ">
+          <div className="Jotform2FA__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4">
+            <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
+              Enhancing Security Through Two-Factor Authentication
+            </h2>
+            <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
+              Designed and launched Jotform's two-factor authentication system,{' '}
+              <RoughAnnotate
+                type="underline"
+                color="#0ea5e9"
+                padding={2}
+                delay={1000}
+                animationDuration={1200}
+                showWhenVisible={true}
+              >
+                adopted by 50,000+ users
+              </RoughAnnotate>{' '}
+              with a 90% retention rate. A security feature that scaled across Web, Mobile, and
+              Enterprise platforms.
+            </p>
+            <div className="Section__Tags flex justify-start items-center gap-2 flex-wrap">
+              <Tag label="Case Study" type="lime" size="large" />
+              <Tag label="Security Feature" type="outline" size="large" />
+            </div>
+            <div className="flex justify-start items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ">
+              <Button
+                label="Read Case Study"
+                rounded={true}
+                to="case-study/jotform-2fa"
+                target="_blank"
+                type="primary"
+                endIcon={<ArrowForwardRoundedIcon />}
               />
             </div>
-          }
-        />
+          </div>
+          <div className="2FA__Placeholder w-full lg:w-1/2 ">
+            <div className="flex flex-col w-auto h-full p-4 lg:p-24 ">
+              <TwoFactorAuth />
+            </div>
+          </div>
+        </div>
+        {/* 2FA v2 Section Ends */}
       </div>
 
       <Footer />

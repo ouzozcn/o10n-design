@@ -1,19 +1,22 @@
 import type { Metadata } from 'next';
 import React from 'react';
 import MenuItem from '@/components/MenuItem';
-import RowCard from '@/components/RowCard';
 import { Footer } from '@/components/Footer';
-import Image from 'next/image';
+import RoughAnnotate from '@/components/rough-notation/RoughAnnotate';
+import Tag from '@/components/Tag';
+import Button from '@/components/Button';
+import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
+import ArticleOneSample from '@/components/examples/ArticleOneSample';
 
 export const metadata: Metadata = {
-  title: 'Articles | Oğuzhan Özcan | Design Systems & Developer Handoff',
+  title: 'Articles | Oğuzhan Özcan | Design Systems, Accessibility, and Design Engineering',
   description:
     'Articles on product design, design systems, accessibility, and design engineering. Topics: developer-friendly components, design-to-code workflows, Storybook handoff, atomic design, and building inclusive digital experiences. Insights from 5+ years in SaaS product design.',
   alternates: {
     canonical: 'https://o10n.design/articles',
   },
   openGraph: {
-    title: 'Articles | Oğuzhan Özcan | Design Systems & Accessibility',
+    title: 'Articles | Oğuzhan Özcan | Design Systems, Accessibility, and Design Engineering',
     description:
       'Essays on design systems, accessibility, and design-to-code workflows. How to build developer-friendly components, improve handoff, and create inclusive experiences.',
     url: 'https://o10n.design/articles',
@@ -22,7 +25,7 @@ export const metadata: Metadata = {
         url: 'https://o10n.design/img/og_images/articles_open_graph.png',
         width: 1200,
         height: 630,
-        alt: 'Oğuzhan Özcan Articles - Design Systems & Accessibility - o10n',
+        alt: 'Oğuzhan Özcan Articles - Design Systems, Accessibility, and Design Engineering - o10n',
       },
     ],
     siteName: 'o10n.design',
@@ -150,36 +153,50 @@ export default function Articles() {
       </div>
 
       <div className="PageContent flex flex-col w-full h-full border-stone-900">
-        <RowCard
-          className="border-b-0"
-          direction="left"
-          cardTitle="Component Design for JavaScript Frameworks"
-          cardContent="Learn how to design UI components that are developer-friendly by following simple rules for auto-layout, meaningful layer names, and component-driven design principles."
-          tags={[
-            {
-              label: 'Article',
-              type: 'emerald',
-              size: 'large',
-            },
-            {
-              label: 'UI Component',
-              type: 'outline',
-              size: 'large',
-            },
-          ]}
-          to="/articles/component-design-for-javascript-frameworks"
-          swapContent={
-            <div className="relative w-full  min-h-[400px]">
-              <Image
-                src="/img/thumbs/thumb-dev-friendly-component.svg"
-                alt="Developer Friendly Component Design"
-                fill
-                className="object-contain"
-                priority
+        {/* ArticleOne Section Starts */}
+        <div className="ArticleOne__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center ">
+          <div className="ArticleOne__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4">
+            <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
+              Component Design for JavaScript Frameworks
+            </h2>
+            <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
+              Master the four fundamentals of component design:{' '}
+              <RoughAnnotate
+                type="highlight"
+                color="#a7f3d0"
+                padding={2}
+                animationDuration={1200}
+                showWhenVisible={true}
+                delay={1000}
+              >
+                Structure, Properties, Tokens, and Interaction
+              </RoughAnnotate>{' '}
+              to create Figma components that translate seamlessly into JavaScript frameworks. Learn
+              Auto-Layout patterns, naming conventions, design tokens, and prototyping techniques
+              that bridge design and development.
+            </p>
+            <div className="Section__Tags flex justify-start items-center gap-2 flex-wrap">
+              <Tag label="Article" type="emerald" size="large" />
+              <Tag label="Component Design" type="outline" size="large" />
+            </div>
+            <div className="flex justify-start items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ">
+              <Button
+                label="Read Article"
+                rounded={true}
+                to="articles/component-design-for-javascript-frameworks"
+                target="_blank"
+                type="primary"
+                endIcon={<ArrowForwardRoundedIcon />}
               />
             </div>
-          }
-        />
+          </div>
+          <div className="2FA__Placeholder w-full lg:w-1/2 ">
+            <div className="flex flex-col w-auto h-full p-4 lg:p-24 ">
+              <ArticleOneSample />
+            </div>
+          </div>
+        </div>
+        {/* ArticleOne Section Ends */}
       </div>
 
       <Footer />

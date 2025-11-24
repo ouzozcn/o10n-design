@@ -146,8 +146,20 @@ export default function HomeClient() {
                 Component Design for JavaScript Frameworks
               </h2>
               <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
-                A comprehensive guide teaching designers how to create UI components that seamlessly
-                translate from Figma to React, Vue, Angular, and Svelte.
+                Master the four fundamentals of component design:{' '}
+                <RoughAnnotate
+                  type="highlight"
+                  color="#a7f3d0"
+                  padding={2}
+                  animationDuration={1200}
+                  showWhenVisible={true}
+                  delay={1000}
+                >
+                  Structure, Properties, Tokens, and Interaction
+                </RoughAnnotate>{' '}
+                to create Figma components that translate seamlessly into JavaScript frameworks.
+                Learn Auto-Layout patterns, naming conventions, design tokens, and prototyping
+                techniques that bridge design and development.
               </p>
               <div className="Section__Tags flex justify-start items-center gap-2 flex-wrap">
                 <Tag label="Article" type="emerald" size="large" />
@@ -184,7 +196,14 @@ export default function HomeClient() {
               </h2>
               <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
                 A free, no-limits{' '}
-                <RoughAnnotate type="underline" color="#02567fff" padding={2}>
+                <RoughAnnotate
+                  type="highlight"
+                  color="#a7f3d0"
+                  padding={2}
+                  animationDuration={1200}
+                  showWhenVisible={true}
+                  delay={1000}
+                >
                   color blindness simulator
                 </RoughAnnotate>{' '}
                 built for UI designers and developers. Kroma simulates 8 types of color vision
@@ -214,9 +233,19 @@ export default function HomeClient() {
                 Enhancing Security Through Two-Factor Authentication
               </h2>
               <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
-                Designed and launched Jotform's two-factor authentication system—adopted by 15,000+
-                users with a 95% retention rate. A security feature that scaled across Web, Mobile,
-                and Enterprise platforms.
+                Designed and launched Jotform's two-factor authentication system,{' '}
+                <RoughAnnotate
+                  type="underline"
+                  color="#0ea5e9"
+                  padding={2}
+                  delay={1000}
+                  animationDuration={1200}
+                  showWhenVisible={true}
+                >
+                  adopted by 50,000+ users
+                </RoughAnnotate>{' '}
+                with a 90% retention rate. A security feature that scaled across Web, Mobile, and
+                Enterprise platforms.
               </p>
               <div className="Section__Tags flex justify-start items-center gap-2 flex-wrap">
                 <Tag label="Case Study" type="lime" size="large" />
@@ -248,9 +277,15 @@ export default function HomeClient() {
             </div>
             <div className="text-lime-50 text-sm text-center font-normal font-sans lg:text-base lg:px-24">
               I'm transitioning from product designer to design engineer{' '}
-              <RoughAnnotate type="box" padding={2}>
+              <RoughAnnotate
+                type="box"
+                padding={2}
+                animationDuration={1200}
+                showWhenVisible={true}
+                delay={1000}
+              >
                 one commit at a time.
-              </RoughAnnotate>
+              </RoughAnnotate>{' '}
               This GitHub activity map reflects my daily practice: learning Front-End, building
               components, and mastering the tools that bridge design and code.
             </div>
@@ -296,8 +331,19 @@ export default function HomeClient() {
                 brifl Design System
               </h2>
               <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
-                A modular, React-friendly component library based on atomic design principles.
-                Contains over 30 components and 200+ states and variants.
+                A modular,{' '}
+                <RoughAnnotate
+                  type="highlight"
+                  color="#a7f3d0"
+                  padding={2}
+                  animationDuration={1200}
+                  showWhenVisible={true}
+                  delay={1000}
+                >
+                  React-friendly component library
+                </RoughAnnotate>{' '}
+                based on atomic design principles. Contains over 30 components and 200+ states and
+                variants.
               </p>
               <div className="Section__Tags flex justify-start items-center gap-2 flex-wrap">
                 <Tag label="Product" type="red" size="large" />
@@ -314,7 +360,7 @@ export default function HomeClient() {
                 />
               </div>
             </div>
-            <div className="2FA__Placeholder w-full lg:w-1/2 ">
+            <div className="BriflDS__Placeholder w-full lg:w-1/2 ">
               <div className="flex flex-col w-auto h-full p-4 lg:p-24 ">
                 <BriflDSSample />
               </div>
@@ -362,15 +408,27 @@ export default function HomeClient() {
           {/* Jotform Logbook v2 Ends */}
 
           {/* Brifl v2 Section Starts */}
-          <div className="Brifl__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center border-b border-stone-900">
+          <div className="Brifl__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center ">
             <div className="Brifl__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4">
               <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
                 brifl | Collaborative Form Builder
               </h2>
               <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
-                A collaborative form builder designed for creatives,featuring 30+ specialized blocks
-                for designers, developers, writers, and photographers. Never launched, but it taught
-                me how to design systems for diverse workflows.
+                A collaborative form builder{' '}
+                <RoughAnnotate
+                  type="box"
+                  color="#8b5cf6"
+                  padding={2}
+                  animationDuration={1200}
+                  showWhenVisible={true}
+                  delay={1000}
+                >
+                  {' '}
+                  designed for creatives
+                </RoughAnnotate>
+                ,featuring 30+ specialized blocks for designers, developers, writers, and
+                photographers. Never launched, but it taught me how to design systems for diverse
+                workflows.
               </p>
               <div className="Section__Tags flex justify-start items-center gap-2 flex-wrap">
                 <Tag label="Idea" type="purple" size="large" />
