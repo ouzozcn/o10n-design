@@ -5,7 +5,6 @@ import Image from 'next/image';
 import { Tooltip } from 'react-tooltip';
 import MenuItem from '@/components/MenuItem';
 import InfoCard from '@/components/InfoCard';
-import RowCard from '@/components/RowCard';
 import Footer from '@/components/Footer';
 import GitHubCalendar from 'react-github-calendar';
 import Button from '@/components/Button';
@@ -16,6 +15,7 @@ import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
 import TwoFactorAuth from '@/components/examples/TwoFactorAuth';
 import BriflSample from '@/components/examples/BriflSample';
 import BriflDSSample from '@/components/examples/BriflDSSample';
+import ArticleOneSample from '@/components/examples/ArticleOneSample';
 const iconConfig = {
   sm: { height: 24, sizes: '24px' },
   md: { height: 32, sizes: '32px' },
@@ -139,6 +139,38 @@ export default function HomeClient() {
 
       <main className="flex flex-col w-full">
         <section className="flex flex-col w-full">
+          {/* ArticleOne Section Starts */}
+          <div className="ArticleOne__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center border-b border-stone-900">
+            <div className="ArticleOne__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4">
+              <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
+                Component Design for JavaScript Frameworks
+              </h2>
+              <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
+                A comprehensive guide teaching designers how to create UI components that seamlessly
+                translate from Figma to React, Vue, Angular, and Svelte.
+              </p>
+              <div className="Section__Tags flex justify-start items-center gap-2 flex-wrap">
+                <Tag label="Article" type="emerald" size="large" />
+                <Tag label="Component Design" type="outline" size="large" />
+              </div>
+              <div className="flex justify-start items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ">
+                <Button
+                  label="Read Article"
+                  rounded={true}
+                  to="articles/component-design-for-javascript-frameworks"
+                  target="_blank"
+                  type="primary"
+                  endIcon={<ArrowForwardRoundedIcon />}
+                />
+              </div>
+            </div>
+            <div className="2FA__Placeholder w-full lg:w-1/2 ">
+              <div className="flex flex-col w-auto h-full p-4 lg:p-24 ">
+                <ArticleOneSample />
+              </div>
+            </div>
+          </div>
+          {/* ArticleOne Section Ends */}
           {/* Kroma Section Starts */}
           <div className="Kroma__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center border-b border-stone-900">
             <div className="Kroma__Placeholder w-full lg:w-1/2 ">
@@ -289,35 +321,46 @@ export default function HomeClient() {
             </div>
           </div>
           {/* Brifl DS Section Ends */}
-          {/* Jotform Logbook Section Starts */}
-          <RowCard
-            direction="left"
-            cardTitle="Jotform Logbook | An internal tool for better company awareness"
-            cardContent="An internal tool concept for cross-team transparency at Jotform. Logbook lets teams log work-in-progress, share updates, and reduce duplicated efforts—addressing a real problem I observed in a 600+ person company."
-            tags={[
-              {
-                label: 'Idea',
-                type: 'purple',
-                size: 'large',
-              },
-              {
-                label: 'Company Awareness Product',
-                type: 'outline',
-                size: 'large',
-              },
-            ]}
-            to="/ideas/jotform-logbook"
-            swapContent={
-              <Image
-                src="/img/thumbs/thumb-logbook.svg"
-                alt="Jotform Logbook interface showing company updates and notifications"
-                width={1}
-                height={1}
-                className="h-full object-contain w-[110%]"
-              />
-            }
-          />
-          {/* Jotform Logbook Section Ends */}
+          {/* Jotform Logbook v2  Starts */}
+          <div className="JotformLogbook__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center border-b border-stone-900">
+            <div className="JotformLogbook__Placeholder w-full lg:w-1/2 ">
+              <div className="flex flex-col w-full h-full p-4 lg:p-24 ">
+                <Image
+                  src="/img/thumbs/thumb-logbook.svg"
+                  alt="Jotform Logbook interface showing company updates and notifications"
+                  width={1}
+                  height={1}
+                  className="h-full object-contain w-[110%]"
+                />
+              </div>
+            </div>
+            <div className="JotformLogbook__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4">
+              <h2 className="text-stone-900 text-xl lg:text-3xl text-center lg:text-start font-sans font-normal ">
+                Jotform Logbook | An internal tool for better company awareness
+              </h2>
+              <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
+                An internal tool concept for cross-team transparency at Jotform. Logbook lets teams
+                log work-in-progress, share updates, and reduce duplicated efforts—addressing a real
+                problem I observed in a 600+ person company.
+              </p>
+              <div className="Section__Tags flex justify-start items-center gap-2 flex-wrap">
+                <Tag label="Idea" type="purple" size="large" />
+                <Tag label="Company Awareness Product" type="outline" size="large" />
+              </div>
+              <div className="flex justify-start items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200  ">
+                <Button
+                  label="Explore Jotform Logbook"
+                  rounded={true}
+                  to="/ideas/jotform-logbook"
+                  target="_blank"
+                  type="primary"
+                  endIcon={<ArrowForwardRoundedIcon />}
+                />
+              </div>
+            </div>
+          </div>
+          {/* Jotform Logbook v2 Ends */}
+
           {/* Brifl v2 Section Starts */}
           <div className="Brifl__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center border-b border-stone-900">
             <div className="Brifl__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4">

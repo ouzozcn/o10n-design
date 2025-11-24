@@ -30,7 +30,7 @@ import { ToastContainer } from 'react-toastify';
 import { showCustomToast } from '@/components/CustomToast';
 import RoughAnnotate from '@/components/rough-notation/RoughAnnotate';
 import Input from '@/components/Input';
-
+import ArticleOneSample from '@/components/examples/ArticleOneSample';
 /* Input Constants */
 // Moved inside component function
 /* */
@@ -164,13 +164,15 @@ export default function ComponentDesignForJavaScriptFrameworks() {
         </div>
       </div>
       <div className="PageImage flex p-8 w-full h-60 md:h-auto bg-cyan-50 border-b border-stone-900 justify-center items-center gap-4">
-        <Image
+        <ArticleOneSample />
+
+        {/*<Image
           src="/img/hero/hero-dev-friendly-comp.svg"
           alt="Developer Friendly Component Design Thumbnail o10n"
           width={1200}
           height={600}
           className="drop-shadow-lg"
-        />
+        />*/}
       </div>
       <div className="Page__Content flex flex-col w-full h-full gap-4 p-4 lg:p-8 border-b border-stone-900">
         <div className="Page__Meta flex flex-col w-full h-full gap-2">

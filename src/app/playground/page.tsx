@@ -7,9 +7,7 @@ import Footer from '@/components/Footer';
 /// Playground dependencies start
 
 /// Import any components you plan to use in the playground here
-import Checkbox from '@/components/Checkbox';
-import RadioButton from '@/components/RadioButton';
-import ToggleButton from '@/components/ToggleButton';
+
 import ArticleOneSample from '@/components/examples/ArticleOneSample';
 /// Playground dependencies end
 

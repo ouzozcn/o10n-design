@@ -26,9 +26,9 @@ export default function BriflDSSample() {
   ];
 
   return (
-    <div className="border border-stone-800 rounded-lg w-full flex flex-col lg:max-w-[600px]">
+    <div className="border border-stone-800 rounded-lg w-full flex flex-col lg:max-w-[600px] bg-white">
       {/* Theme Switcher Section */}
-      <div className="border-b border-stone-800 p-3 flex flex-col gap-3">
+      <div className="border-b border-stone-800 p-3 flex flex-col gap-3 ">
         <div className="text-xl font-medium text-stone-900 tracking-tight">brifl.Theme</div>
         <div className="flex items-center gap-2">
           <Circle

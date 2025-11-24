@@ -7,28 +7,47 @@ import RadioButton from '@/components/RadioButton';
 import ToggleButton from '@/components/ToggleButton';
 import WestRoundedIcon from '@mui/icons-material/WestRounded';
 import EastRoundedIcon from '@mui/icons-material/EastRounded';
-import TextFieldsRoundedIcon from '@mui/icons-material/TextFieldsRounded';
 type ButtonType = 'primary' | 'secondary' | 'tertiary';
 type ButtonSize = 'small' | 'medium' | 'large' | 'xlarge';
-
+import { ToastContainer } from 'react-toastify';
+import { showCustomToast } from '@/components/CustomToast';
+import EditRoundedIcon from '@mui/icons-material/EditRounded';
 export default function ArticleOneSample() {
   const [label, setLabel] = React.useState('Button.tsx');
   const [type, setType] = React.useState<ButtonType>('primary');
-  const [size, setSize] = React.useState<ButtonSize>('small');
+  const [size, setSize] = React.useState<ButtonSize>('medium');
   const [hasStartIcon, setHasStartIcon] = React.useState(true);
   const [hasEndIcon, setHasEndIcon] = React.useState(true);
-
+  const handleClickOne = () => {
+    showCustomToast(
+      'You can change the properties of the button and see the changes in the preview.'
+    );
+  };
   return (
-    <div className="bg-white border border-stone-900 rounded-lg w-full lg:max-w-[600px]">
+    <div className="bg-white border  border-stone-900 rounded-lg w-full lg:max-w-[600px]">
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={true}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        icon={false}
+        closeButton={false}
+      />
       <div className="flex flex-col">
         {/* Button Preview Section */}
-        <div className="bg-amber-50 flex items-center justify-center px-7 py-6 w-full lg:h-[100px]">
+        <div className="bg-amber-50 flex items-center justify-center px-7 py-6 w-full lg:h-[100px] rounded-t-lg">
           <Button
             label={label}
             type={type}
             size={size}
             startIcon={hasStartIcon ? <WestRoundedIcon /> : undefined}
             endIcon={hasEndIcon ? <EastRoundedIcon /> : undefined}
+            onClick={handleClickOne}
           />
         </div>
 
@@ -45,7 +64,7 @@ export default function ArticleOneSample() {
                 placeholder="Enter label..."
                 state={label.length >= 24 ? 'error' : 'idle'}
                 className="w-full"
-                startIcon={<TextFieldsRoundedIcon />}
+                startIcon={<EditRoundedIcon />}
                 maxLength={24}
               />
             </div>
@@ -58,7 +77,11 @@ export default function ArticleOneSample() {
             <div className="font-mono font-bold text-lg text-stone-900 whitespace-nowrap shrink-0">
               type?:
             </div>
-            <div className="flex gap-3 items-center" role="radiogroup" aria-label="Button type">
+            <div
+              className="flex flex-col md:flex-row gap-3 items-start"
+              role="radiogroup"
+              aria-label="Button type"
+            >
               <div className="flex gap-2 items-center">
                 <RadioButton
                   name="button-type"
@@ -108,7 +131,11 @@ export default function ArticleOneSample() {
             <div className="font-mono font-bold text-lg text-stone-900 whitespace-nowrap shrink-0">
               size?:
             </div>
-            <div className="flex gap-3 items-center" role="radiogroup" aria-label="Button size">
+            <div
+              className="flex flex-col md:flex-row gap-3 items-start"
+              role="radiogroup"
+              aria-label="Button size"
+            >
               <div className="flex gap-2 items-center">
                 <RadioButton
                   name="button-size"
