@@ -1,10 +1,13 @@
 import type { Metadata } from 'next';
 import React from 'react';
 import MenuItem from '@/components/MenuItem';
-import RowCard from '@/components/RowCard';
 import { Footer } from '@/components/Footer';
 import Image from 'next/image';
-
+import RoughAnnotate from '@/components/rough-notation/RoughAnnotate';
+import Tag from '@/components/Tag';
+import Button from '@/components/Button';
+import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
+import BriflSample from '@/components/examples/BriflSample';
 export const metadata: Metadata = {
   title: 'Ideas | Oğuzhan Özcan | Design Explorations & Concepts',
   description:
@@ -144,62 +147,91 @@ export default function Ideas() {
       </div>
 
       <div className="PageContent flex flex-col w-full h-full border-stone-900">
-        <RowCard
-          direction="right"
-          cardTitle="brifl: Empowering Creators with Collaborative Form Building"
-          cardContent="A collaborative form builder designed for creatives—featuring 30+ specialized blocks for designers, developers, writers, and photographers. Never launched, but it taught me how to design systems for diverse workflows."
-          tags={[
-            {
-              label: 'Idea',
-              type: 'purple',
-              size: 'large',
-            },
-          ]}
-          to="/ideas/brifl"
-          swapContent={
-            <div className="relative w-full h-full min-h-[200px]">
-              <Image
-                src="/img/thumbs/thumb-brifl2.svg"
-                alt="Brifl Form Building Tool"
-                fill
-                className="object-contain"
-                priority
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-            </div>
-          }
-        />
-        <RowCard
-          className="border-b-0"
-          direction="left"
-          cardTitle="Jotform Logbook | An internal tool for better company awareness"
-          cardContent="An internal tool concept for cross-team transparency at Jotform. Logbook lets teams log work-in-progress, share updates, and reduce duplicated efforts—addressing a real problem I observed in a 600+ person company."
-          tags={[
-            {
-              label: 'Idea',
-              type: 'purple',
-              size: 'large',
-            },
-            {
-              label: 'Company Awareness',
-              type: 'outline',
-              size: 'large',
-            },
-          ]}
-          to="/ideas/jotform-logbook"
-          swapContent={
-            <div className="relative w-full h-full min-h-[200px]">
+        {/* Jotform Logbook v2  Starts */}
+        <div className="JotformLogbook__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center border-b border-stone-900">
+          <div className="JotformLogbook__Placeholder w-full lg:w-1/2 ">
+            <div className="flex flex-col w-full h-full p-4 lg:p-24 ">
               <Image
                 src="/img/thumbs/thumb-logbook.svg"
-                alt="Jotform Logbook Internal Tool"
-                fill
-                className="object-contain"
-                priority
-                sizes="(max-width: 768px) 100vw, 50vw"
+                alt="Jotform Logbook interface showing company updates and notifications"
+                width={1}
+                height={1}
+                className="h-full object-contain w-[110%]"
               />
             </div>
-          }
-        />
+          </div>
+          <div className="JotformLogbook__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4">
+            <h2 className="text-stone-900 text-xl lg:text-3xl text-start font-sans font-normal ">
+              Jotform Logbook | An internal tool for better company awareness
+            </h2>
+            <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
+              An internal tool concept for cross-team transparency at Jotform. Logbook lets teams
+              log work-in-progress, share updates, and reduce duplicated efforts—addressing a real
+              problem I observed in a 600+ person company.
+            </p>
+            <div className="Section__Tags flex justify-start items-center gap-2 flex-wrap">
+              <Tag label="Idea" type="purple" size="large" />
+              <Tag label="Company Awareness Product" type="outline" size="large" />
+            </div>
+            <div className="flex justify-start items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200  ">
+              <Button
+                label="Explore Jotform Logbook"
+                rounded={true}
+                to="/ideas/jotform-logbook"
+                target="_blank"
+                type="primary"
+                endIcon={<ArrowForwardRoundedIcon />}
+              />
+            </div>
+          </div>
+        </div>
+        {/* Jotform Logbook v2 Ends */}
+
+        {/* Brifl v2 Section Starts */}
+        <div className="Brifl__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center ">
+          <div className="Brifl__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4 order-2 lg:order-1">
+            <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
+              brifl | Collaborative Form Builder
+            </h2>
+            <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
+              A collaborative form builder{' '}
+              <RoughAnnotate
+                type="box"
+                color="#8b5cf6"
+                padding={2}
+                animationDuration={1200}
+                showWhenVisible={true}
+                delay={1000}
+              >
+                {' '}
+                designed for creatives
+              </RoughAnnotate>
+              ,featuring 30+ specialized blocks for designers, developers, writers, and
+              photographers. Never launched, but it taught me how to design systems for diverse
+              workflows.
+            </p>
+            <div className="Section__Tags flex justify-start items-center gap-2 flex-wrap">
+              <Tag label="Idea" type="purple" size="large" />
+              <Tag label="Form Builder" type="outline" size="large" />
+            </div>
+            <div className="flex justify-start items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ">
+              <Button
+                label="Explore brifl"
+                rounded={true}
+                to="ideas/brifl"
+                target="_blank"
+                type="primary"
+                endIcon={<ArrowForwardRoundedIcon />}
+              />
+            </div>
+          </div>
+          <div className="Brifl__Placeholder w-full lg:w-1/2 ">
+            <div className="flex flex-col w-auto h-full p-4 lg:p-24 ">
+              <BriflSample />
+            </div>
+          </div>
+        </div>
+        {/* Brifl v2 Section Ends */}
       </div>
 
       <Footer />

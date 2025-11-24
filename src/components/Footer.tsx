@@ -69,8 +69,7 @@ export const Footer: React.FC = () => {
           <TextLink label="</docs>" to="/docs" />
           <TextLink label="Playground" to="/playground" />
           <TextLink label="Sandbox" to="/sandbox" />
-          <TextLink label="Privacy Policy" to="/privacy-policy" />
-          <TextLink label="Cookie Policy" to="/cookie-policy" />
+          <TextLink label="LLMs" to="/llms.txt" />
         </div>
 
         <div className="ColumnProduct flex flex-col gap-2 items-center md:items-start">

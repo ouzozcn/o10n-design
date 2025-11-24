@@ -22,6 +22,7 @@ export interface InputProps {
   onChange?: (value: string) => void;
   onFocus?: () => void;
   onBlur?: () => void;
+  maxLength?: number;
 }
 
 function Input({
@@ -34,6 +35,7 @@ function Input({
   onChange,
   onFocus,
   onBlur,
+  maxLength,
 }: InputProps) {
   const getBorderColor = () => {
     switch (state) {
@@ -162,6 +164,7 @@ function Input({
             onChange={e => onChange?.(e.target.value)}
             onFocus={onFocus}
             onBlur={onBlur}
+            maxLength={maxLength}
             className={`
               w-full p-3 bg-transparent 
               ${getTextColor()}

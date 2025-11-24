@@ -1,10 +1,13 @@
 import type { Metadata } from 'next';
 import React from 'react';
 import MenuItem from '@/components/MenuItem';
-import RowCard from '@/components/RowCard';
 import { Footer } from '@/components/Footer';
-import Image from 'next/image';
-
+import RoughAnnotate from '@/components/rough-notation/RoughAnnotate';
+import Tag from '@/components/Tag';
+import Button from '@/components/Button';
+import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
+import KromaSimulator from '@/components/examples/KromaSimulator';
+import BriflDSSample from '@/components/examples/BriflDSSample';
 export const metadata: Metadata = {
   title: 'Products | Oğuzhan Özcan | Design Tools & Systems',
   description:
@@ -138,67 +141,92 @@ export default function Products() {
       </div>
 
       <div className="PageContent flex flex-col w-full h-full border-stone-900">
-        <RowCard
-          direction="left"
-          cardTitle="Kroma | Color Blindness Accessibility Checker for User Interfaces"
-          cardContent="A free, no-limits color blindness accessibility checker built for UI designers and developers. Kroma simulates 8 types of color vision deficiency—helping you design interfaces everyone can use."
-          tags={[
-            {
-              label: 'Product',
-              type: 'red',
-              size: 'large',
-            },
-            {
-              label: 'Accessibility (a11y)',
-              type: 'outline',
-              size: 'large',
-            },
-          ]}
-          to="/product/kroma"
-          swapContent={
-            <div className="relative w-full h-full min-h-[200px]">
-              <Image
-                src="/img/thumbs/thumb-kroma2.svg"
-                alt="Kroma Color Accessibility Checker"
-                fill
-                className="object-contain"
-                priority
-                sizes="(max-width: 768px) 100vw, 50vw"
+        {/* Kroma Section Starts */}
+        <div className="Kroma__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center border-b border-stone-900">
+          <div className="Kroma__Placeholder w-full lg:w-1/2 ">
+            <div className="flex flex-col w-full h-full p-4 lg:p-24 ">
+              <KromaSimulator />
+            </div>
+          </div>
+          <div className="Kroma__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4">
+            <h2 className="text-stone-900 text-xl lg:text-3xl text-start font-sans font-normal ">
+              Kroma | Color Blindness Simulator
+            </h2>
+            <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
+              A free, no-limits{' '}
+              <RoughAnnotate
+                type="highlight"
+                color="#a7f3d0"
+                padding={2}
+                animationDuration={1200}
+                showWhenVisible={true}
+                delay={1000}
+              >
+                color blindness simulator
+              </RoughAnnotate>{' '}
+              built for UI designers and developers. Kroma simulates 8 types of color vision
+              deficiency—helping you design interfaces everyone can use.
+            </p>
+            <div className="Section__Tags flex justify-start items-center gap-2 flex-wrap">
+              <Tag label="Product" type="red" size="large" />
+              <Tag label="Accessibility (a11y)" type="outline" size="large" />
+            </div>
+            <div className="flex justify-start items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200  ">
+              <Button
+                label="Explore Kroma"
+                rounded={true}
+                to="/product/kroma"
+                target="_blank"
+                type="primary"
+                endIcon={<ArrowForwardRoundedIcon />}
               />
             </div>
-          }
-        />
-        <RowCard
-          direction="right"
-          cardTitle="Brifl Design System"
-          cardContent="A modular, React-friendly component library based on atomic design principles. Contains over 30 components and 200+ states and variants."
-          tags={[
-            {
-              label: 'Product',
-              type: 'red',
-              size: 'large',
-            },
-            {
-              label: 'Design System',
-              type: 'outline',
-              size: 'large',
-            },
-          ]}
-          to="/product/brifl-design-system"
-          swapContent={
-            <div className="relative w-full h-full min-h-[200px]">
-              <Image
-                src="/img/thumbs/thumb-briflds.svg"
-                alt="Brifl Design System"
-                fill
-                className="object-contain"
-                priority
-                sizes="(max-width: 768px) 100vw, 50vw"
+          </div>
+        </div>
+        {/* Kroma Section Ends */}
+        {/* Brifl DS Section Starts */}
+        <div className="BriflDS__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center ">
+          <div className="BriflDS__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4 order-2 lg:order-1">
+            <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
+              brifl Design System
+            </h2>
+            <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
+              A modular,{' '}
+              <RoughAnnotate
+                type="highlight"
+                color="#a7f3d0"
+                padding={2}
+                animationDuration={1200}
+                showWhenVisible={true}
+                delay={1000}
+              >
+                React-friendly component library
+              </RoughAnnotate>{' '}
+              based on atomic design principles. Contains over 30 components and 200+ states and
+              variants.
+            </p>
+            <div className="Section__Tags flex justify-start items-center gap-2 flex-wrap">
+              <Tag label="Product" type="red" size="large" />
+              <Tag label="Design System" type="outline" size="large" />
+            </div>
+            <div className="flex justify-start items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ">
+              <Button
+                label="Explore brifl Design System"
+                rounded={true}
+                to="/product/brifl-design-system"
+                target="_blank"
+                type="primary"
+                endIcon={<ArrowForwardRoundedIcon />}
               />
             </div>
-          }
-          className="border-b-0"
-        />
+          </div>
+          <div className="BriflDS__Placeholder w-full lg:w-1/2 ">
+            <div className="flex flex-col w-auto h-full p-4 lg:p-24 ">
+              <BriflDSSample />
+            </div>
+          </div>
+        </div>
+        {/* Brifl DS Section Ends */}
       </div>
 
       <Footer />

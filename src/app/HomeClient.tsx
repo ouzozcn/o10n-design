@@ -5,9 +5,7 @@ import Image from 'next/image';
 import { Tooltip } from 'react-tooltip';
 import MenuItem from '@/components/MenuItem';
 import InfoCard from '@/components/InfoCard';
-import RowCard from '@/components/RowCard';
 import Footer from '@/components/Footer';
-import TopDivider from '@/components/TopDivider';
 import GitHubCalendar from 'react-github-calendar';
 import Button from '@/components/Button';
 import RoughAnnotate from '@/components/rough-notation/RoughAnnotate';
@@ -17,6 +15,7 @@ import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
 import TwoFactorAuth from '@/components/examples/TwoFactorAuth';
 import BriflSample from '@/components/examples/BriflSample';
 import BriflDSSample from '@/components/examples/BriflDSSample';
+import ArticleOneSample from '@/components/examples/ArticleOneSample';
 const iconConfig = {
   sm: { height: 24, sizes: '24px' },
   md: { height: 32, sizes: '32px' },
@@ -34,11 +33,11 @@ const formatDate = (dateStr: string) => {
 export default function HomeClient() {
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
-      <h1 className="sr-only">
-        Oğuzhan Özcan - Product Designer | Analytics and Data-Driven Design
-      </h1>
+      <h1 className="sr-only">Oğuzhan Özcan - Product Designer & Design Engineer</h1>
 
-      <TopDivider />
+      <div className="flex flex-col w-full p-1 text-center text-sm md:text-base lg:text-lg border-b border-stone-900 min-h-8 lg:min-h-10 items-center justify-center">
+        <h1>Oğuzhan Özcan - Product Designer & Design Engineer</h1>
+      </div>
 
       <div className="flex flex-col lg:flex-row w-full">
         <div className="w-full lg:w-auto h-full lg:h-[536px] lg:border-b border-stone-900">
@@ -140,6 +139,50 @@ export default function HomeClient() {
 
       <main className="flex flex-col w-full">
         <section className="flex flex-col w-full">
+          {/* ArticleOne Section Starts */}
+          <div className="ArticleOne__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center border-b border-stone-900">
+            <div className="ArticleOne__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4 order-2 lg:order-1">
+              <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
+                Component Design for JavaScript Frameworks
+              </h2>
+              <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
+                Master the four fundamentals of component design:{' '}
+                <RoughAnnotate
+                  type="highlight"
+                  color="#a7f3d0"
+                  padding={2}
+                  animationDuration={1200}
+                  showWhenVisible={true}
+                  delay={1000}
+                >
+                  Structure, Properties, Tokens, and Interaction
+                </RoughAnnotate>{' '}
+                to create Figma components that translate seamlessly into JavaScript frameworks.
+                Learn Auto-Layout patterns, naming conventions, design tokens, and prototyping
+                techniques that bridge design and development.
+              </p>
+              <div className="Section__Tags flex justify-start items-center gap-2 flex-wrap">
+                <Tag label="Article" type="emerald" size="large" />
+                <Tag label="Component Design" type="outline" size="large" />
+              </div>
+              <div className="flex justify-start items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ">
+                <Button
+                  label="Read Article"
+                  rounded={true}
+                  to="articles/component-design-for-javascript-frameworks"
+                  target="_blank"
+                  type="primary"
+                  endIcon={<ArrowForwardRoundedIcon />}
+                />
+              </div>
+            </div>
+            <div className="ArticleOne__Placeholder w-full lg:w-1/2 order-1 lg:order-2">
+              <div className="flex flex-col w-auto h-full p-4 lg:p-24 ">
+                <ArticleOneSample />
+              </div>
+            </div>
+          </div>
+          {/* ArticleOne Section Ends */}
           {/* Kroma Section Starts */}
           <div className="Kroma__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center border-b border-stone-900">
             <div className="Kroma__Placeholder w-full lg:w-1/2 ">
@@ -148,12 +191,19 @@ export default function HomeClient() {
               </div>
             </div>
             <div className="Kroma__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4">
-              <h2 className="text-stone-900 text-xl lg:text-3xl text-center lg:text-start font-sans font-normal ">
+              <h2 className="text-stone-900 text-xl lg:text-3xl text-start font-sans font-normal ">
                 Kroma | Color Blindness Simulator
               </h2>
               <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
                 A free, no-limits{' '}
-                <RoughAnnotate type="underline" color="#02567fff" padding={2}>
+                <RoughAnnotate
+                  type="highlight"
+                  color="#a7f3d0"
+                  padding={2}
+                  animationDuration={1200}
+                  showWhenVisible={true}
+                  delay={1000}
+                >
                   color blindness simulator
                 </RoughAnnotate>{' '}
                 built for UI designers and developers. Kroma simulates 8 types of color vision
@@ -178,14 +228,24 @@ export default function HomeClient() {
           {/* Kroma Section Ends */}
           {/* 2FA v2 Section Starts */}
           <div className="Jotform2FA__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center border-b border-stone-900">
-            <div className="Jotform2FA__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4">
+            <div className="Jotform2FA__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4 order-2 lg:order-1">
               <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
                 Enhancing Security Through Two-Factor Authentication
               </h2>
               <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
-                Designed and launched Jotform's two-factor authentication system—adopted by 15,000+
-                users with a 95% retention rate. A security feature that scaled across Web, Mobile,
-                and Enterprise platforms.
+                Designed and launched Jotform's two-factor authentication system,{' '}
+                <RoughAnnotate
+                  type="underline"
+                  color="#0ea5e9"
+                  padding={2}
+                  delay={1000}
+                  animationDuration={1200}
+                  showWhenVisible={true}
+                >
+                  adopted by 50,000+ users
+                </RoughAnnotate>{' '}
+                with a 90% retention rate. A security feature that scaled across Web, Mobile, and
+                Enterprise platforms.
               </p>
               <div className="Section__Tags flex justify-start items-center gap-2 flex-wrap">
                 <Tag label="Case Study" type="lime" size="large" />
@@ -202,7 +262,7 @@ export default function HomeClient() {
                 />
               </div>
             </div>
-            <div className="2FA__Placeholder w-full lg:w-1/2 ">
+            <div className="Jotform2FA__Placeholder w-full lg:w-1/2 order-1 lg:order-2">
               <div className="flex flex-col w-auto h-full p-4 lg:p-24 ">
                 <TwoFactorAuth />
               </div>
@@ -217,9 +277,15 @@ export default function HomeClient() {
             </div>
             <div className="text-lime-50 text-sm text-center font-normal font-sans lg:text-base lg:px-24">
               I'm transitioning from product designer to design engineer{' '}
-              <RoughAnnotate type="box" padding={2}>
+              <RoughAnnotate
+                type="box"
+                padding={2}
+                animationDuration={1200}
+                showWhenVisible={true}
+                delay={1000}
+              >
                 one commit at a time.
-              </RoughAnnotate>
+              </RoughAnnotate>{' '}
               This GitHub activity map reflects my daily practice: learning Front-End, building
               components, and mastering the tools that bridge design and code.
             </div>
@@ -260,13 +326,24 @@ export default function HomeClient() {
           {/* GitHub Activity Map Section Ends */}
           {/* Brifl DS Section Starts */}
           <div className="BriflDS__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center border-b border-stone-900">
-            <div className="BriflDS__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4">
+            <div className="BriflDS__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4 order-2 lg:order-1">
               <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
                 brifl Design System
               </h2>
               <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
-                A modular, React-friendly component library based on atomic design principles.
-                Contains over 30 components and 200+ states and variants.
+                A modular,{' '}
+                <RoughAnnotate
+                  type="highlight"
+                  color="#a7f3d0"
+                  padding={2}
+                  animationDuration={1200}
+                  showWhenVisible={true}
+                  delay={1000}
+                >
+                  React-friendly component library
+                </RoughAnnotate>{' '}
+                based on atomic design principles. Contains over 30 components and 200+ states and
+                variants.
               </p>
               <div className="Section__Tags flex justify-start items-center gap-2 flex-wrap">
                 <Tag label="Product" type="red" size="large" />
@@ -283,52 +360,75 @@ export default function HomeClient() {
                 />
               </div>
             </div>
-            <div className="2FA__Placeholder w-full lg:w-1/2 ">
+            <div className="BriflDS__Placeholder w-full lg:w-1/2 order-1 lg:order-2">
               <div className="flex flex-col w-auto h-full p-4 lg:p-24 ">
                 <BriflDSSample />
               </div>
             </div>
           </div>
           {/* Brifl DS Section Ends */}
-          {/* Jotform Logbook Section Starts */}
-          <RowCard
-            direction="left"
-            cardTitle="Jotform Logbook | An internal tool for better company awareness"
-            cardContent="An internal tool concept for cross-team transparency at Jotform. Logbook lets teams log work-in-progress, share updates, and reduce duplicated efforts—addressing a real problem I observed in a 600+ person company."
-            tags={[
-              {
-                label: 'Idea',
-                type: 'purple',
-                size: 'large',
-              },
-              {
-                label: 'Company Awareness Product',
-                type: 'outline',
-                size: 'large',
-              },
-            ]}
-            to="/ideas/jotform-logbook"
-            swapContent={
-              <Image
-                src="/img/thumbs/thumb-logbook.svg"
-                alt="Jotform Logbook interface showing company updates and notifications"
-                width={1}
-                height={1}
-                className="h-full object-contain w-[110%]"
-              />
-            }
-          />
-          {/* Jotform Logbook Section Ends */}
+          {/* Jotform Logbook v2  Starts */}
+          <div className="JotformLogbook__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center border-b border-stone-900">
+            <div className="JotformLogbook__Placeholder w-full lg:w-1/2 ">
+              <div className="flex flex-col w-full h-full p-4 lg:p-24 ">
+                <Image
+                  src="/img/thumbs/thumb-logbook.svg"
+                  alt="Jotform Logbook interface showing company updates and notifications"
+                  width={1}
+                  height={1}
+                  className="h-full object-contain w-[110%]"
+                />
+              </div>
+            </div>
+            <div className="JotformLogbook__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4">
+              <h2 className="text-stone-900 text-xl lg:text-3xl text-start font-sans font-normal ">
+                Jotform Logbook | An internal tool for better company awareness
+              </h2>
+              <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
+                An internal tool concept for cross-team transparency at Jotform. Logbook lets teams
+                log work-in-progress, share updates, and reduce duplicated efforts—addressing a real
+                problem I observed in a 600+ person company.
+              </p>
+              <div className="Section__Tags flex justify-start items-center gap-2 flex-wrap">
+                <Tag label="Idea" type="purple" size="large" />
+                <Tag label="Company Awareness Product" type="outline" size="large" />
+              </div>
+              <div className="flex justify-start items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200  ">
+                <Button
+                  label="Explore Jotform Logbook"
+                  rounded={true}
+                  to="/ideas/jotform-logbook"
+                  target="_blank"
+                  type="primary"
+                  endIcon={<ArrowForwardRoundedIcon />}
+                />
+              </div>
+            </div>
+          </div>
+          {/* Jotform Logbook v2 Ends */}
+
           {/* Brifl v2 Section Starts */}
-          <div className="Brifl__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center border-b border-stone-900">
-            <div className="Brifl__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4">
+          <div className="Brifl__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center ">
+            <div className="Brifl__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4 order-2 lg:order-1">
               <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
                 brifl | Collaborative Form Builder
               </h2>
               <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
-                A collaborative form builder designed for creatives,featuring 30+ specialized blocks
-                for designers, developers, writers, and photographers. Never launched, but it taught
-                me how to design systems for diverse workflows.
+                A collaborative form builder{' '}
+                <RoughAnnotate
+                  type="box"
+                  color="#8b5cf6"
+                  padding={2}
+                  animationDuration={1200}
+                  showWhenVisible={true}
+                  delay={1000}
+                >
+                  {' '}
+                  designed for creatives
+                </RoughAnnotate>
+                ,featuring 30+ specialized blocks for designers, developers, writers, and
+                photographers. Never launched, but it taught me how to design systems for diverse
+                workflows.
               </p>
               <div className="Section__Tags flex justify-start items-center gap-2 flex-wrap">
                 <Tag label="Idea" type="purple" size="large" />
@@ -345,7 +445,7 @@ export default function HomeClient() {
                 />
               </div>
             </div>
-            <div className="Brifl__Placeholder w-full lg:w-1/2 ">
+            <div className="Brifl__Placeholder w-full lg:w-1/2 order-1 lg:order-2">
               <div className="flex flex-col w-auto h-full p-4 lg:p-24 ">
                 <BriflSample />
               </div>
