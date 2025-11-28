@@ -13,6 +13,7 @@
     "chromatic": "npx chromatic --project-token=chpt_a64ff83fd6bd5f3"
   },
   "dependencies": {
+    "@ai-sdk/anthropic": "^2.0.50",
     "@codesandbox/sandpack-react": "^2.20.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
@@ -24,6 +25,7 @@
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
     "@xyflow/react": "^12.6.4",
+    "ai": "^5.0.104",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "critters": "^0.0.23",
@@ -45,7 +47,8 @@
     "shiki": "^3.13.0",
     "swiper": "^11.2.8",
     "tailwind-merge": "^3.3.1",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^4.1.13"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^4.1.3",
