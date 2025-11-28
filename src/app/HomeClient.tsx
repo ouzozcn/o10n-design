@@ -35,7 +35,7 @@ export default function HomeClient() {
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
       <h1 className="sr-only">Oğuzhan Özcan - Product Designer & Design Engineer</h1>
 
-      <div className="flex flex-col w-full p-1 text-center text-sm md:text-base lg:text-lg border-b border-stone-900 min-h-8 lg:min-h-10 items-center justify-center">
+      <div className="flex flex-col w-full p-1 text-theme-primary text-center text-sm md:text-base lg:text-lg border-b border-stone-900 min-h-8 lg:min-h-10 items-center justify-center">
         <h1>Oğuzhan Özcan - Product Designer & Design Engineer</h1>
       </div>
 
