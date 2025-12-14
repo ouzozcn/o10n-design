@@ -163,7 +163,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           */}
         </div>
       </div>
-      <div className="PageImage flex p-8 w-full h-60 md:h-auto bg-cyan-50 border-b border-stone-900 justify-center items-center gap-4">
+      <div className="PageImage flex p-8 w-full h-auto bg-cyan-50 border-b border-stone-900 justify-center items-center gap-4">
         <ArticleOneSample />
 
         {/*<Image
@@ -198,11 +198,11 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           of current job market data shows that{' '}
           <RoughAnnotate
             type="highlight"
-            color="#a7f3d0"
+            color="#6ee7b770"
             padding={2}
             animationDuration={1600}
             showWhenVisible={true}
-            delay={4000}
+            delay={2000}
           >
             one in five Product Designer positions
           </RoughAnnotate>{' '}
@@ -318,7 +318,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           In this article, we'll explore best practices for{' '}
           <RoughAnnotate
             type="highlight"
-            color="#a7f3d0"
+            color="#6ee7b770"
             padding={2}
             animationDuration={1600}
             showWhenVisible={true}
@@ -540,7 +540,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <p>
                   <RoughAnnotate
                     type="highlight"
-                    color="#a7f3d0"
+                    color="#6ee7b770"
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
@@ -686,7 +686,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               <div className="SectionContent w-full items-center justify-center text-start text-stone-900 text-lg gap-4">
                 <div className="Animated___Code__Block flex flex-col w-full lg:w-1/2 items-center justify-center lg:mx-auto lg:mb-4">
                   <Code
-                    className="lg:w-[430px] lg:h-[600px]"
+                    className="w-full lg:w-[430px] h-[620px]"
                     code={` // Basic properties
 
   interface ButtonProps {
@@ -782,7 +782,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   the maker of car,model, year, and passenger capacity. Similarly,{' '}
                   <RoughAnnotate
                     type="highlight"
-                    color="#a7f3d0"
+                    color="#6ee7b770"
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
@@ -1050,7 +1050,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   structure.
                 </p>
                 <Code
-                  className=" lg:w-auto h-[310px] mx-auto my-4 lg:my-8"
+                  className=" w-auto lg:w-3/4 h-[330px] mx-auto my-4 lg:my-8"
                   code={`<!DOCTYPE html>
 <head>
   <title>This is the title visible in the browser tab</title>
@@ -1072,7 +1072,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   called tags.{' '}
                   <RoughAnnotate
                     type="highlight"
-                    color="#a7f3d0"
+                    color="#6ee7b770"
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
@@ -1083,7 +1083,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   and is used to create different types of content.
                 </p>
                 <div className="HTML__Tags__Samples__Placeholder flex flex-col gap-4 items-center justify-center w-full my-4 lg:my-8">
-                  <div className="HTML__Tags__Samples__List flex flex-wrap gap-4 lg:gap-6 p-4 lg:p-8 items-center justify-center w-full h-60 rounded-lg border border-stone-900 hover:bg-stone-50">
+                  <div className="HTML__Tags__Samples__List flex flex-wrap gap-4 lg:gap-6 p-4 lg:p-8 items-center justify-center w-full md:h-60 h-auto rounded-lg border border-stone-900 hover:bg-stone-50">
                     <Tag label="<header>" size="large" type="lime" />
                     <Tag label="<nav>" size="large" type="red" />
                     <Tag label="<main>" size="large" type="amber" />
@@ -1194,7 +1194,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   flexible way. Auto-Layout in Figma directly corresponds to{' '}
                   <RoughAnnotate
                     type="highlight"
-                    color="#a7f3d0"
+                    color="#6ee7b770"
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
@@ -1285,7 +1285,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   <b>Key principle:</b> <br />
                   <RoughAnnotate
                     type="highlight"
-                    color="#a7f3d0"
+                    color="#6ee7b770"
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
@@ -1373,7 +1373,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
 
                 <div className="Animated___Code__Blocks flex flex-col lg:flex-row w-full items-center justify-center gap-2 lg:gap-4 lg:mx-auto lg:mb-4">
                   <Code
-                    className="lg:w-1/2 lg:h-[330px]"
+                    className="w-full h-auto lg:w-1/2 lg:h-[330px]"
                     code={`<button class="button" aria-label="{buttonLabel}">
   <span class="icon startIcon">{startIcon}</span>
   <span class="label">{buttonLabel}</span>
@@ -1397,7 +1397,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     />
                   </Code>
                   <Code
-                    className=" lg:w-1/2 lg:h-[330px]"
+                    className="w-full h-auto lg:w-1/2 lg:h-[330px]"
                     code={`.button {
     width: 100%;
     padding: 16px 24px;
@@ -1494,7 +1494,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   don't use those names in your layers. Instead,{' '}
                   <RoughAnnotate
                     type="highlight"
-                    color="#a7f3d0"
+                    color="#6ee7b770"
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
@@ -1518,7 +1518,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <p>
                   Above example shows a card component with unnamed frames (left) versus
                   thoughtfully named frames (right). The meaningful names{' '}
-                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                  <RoughAnnotate type="highlight" color="#6ee7b770" padding={2}>
                     clarify the structure and purpose
                   </RoughAnnotate>{' '}
                   of each element, making it easier for developers to implement the design
@@ -1626,7 +1626,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   design process but also significantly{' '}
                   <RoughAnnotate
                     type="highlight"
-                    color="#a7f3d0"
+                    color="#6ee7b770"
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
@@ -1842,7 +1842,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   Above Figma button component properties map directly to props in{' '}
                   <RoughAnnotate
                     type="highlight"
-                    color="#a7f3d0"
+                    color="#6ee7b770"
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
@@ -1856,7 +1856,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 </p>
                 <div className="Animated___Code__Blocks flex flex-col w-full items-center justify-center gap-2 lg:gap-4 lg:mx-auto lg:mb-4">
                   <Code
-                    className="lg:w-[650px] lg:h-[330px]"
+                    className="w-full h-auto lg:w-[650px] lg:h-[330px]"
                     code={`interface ButtonProps {
   label: string;
   size?: 'small' | 'medium' | 'large';
@@ -1889,7 +1889,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   </p>
 
                   <Code
-                    className=" lg:w-[650px] lg:h-[330px]"
+                    className="w-full h-auto lg:w-[650px] lg:h-[330px]"
                     code={`interface ButtonProps {
   label: string;
   type?: 'primary' | 'secondary' | 'tertiary';
@@ -1922,7 +1922,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   </p>
 
                   <Code
-                    className="lg:w-[650px] lg:h-[430px]"
+                    className="w-full h-auto lg:w-[650px] lg:h-[430px]"
                     code={`@Component({
   selector: 'app-button',
   template: ''
@@ -1960,7 +1960,7 @@ export class ButtonComponent {
                   </p>
 
                   <Code
-                    className=" lg:w-[650px] lg:h-[330px]"
+                    className="w-full h-auto lg:w-[650px] lg:h-[330px]"
                     code={` <script lang="ts">
   export let label: string;
   export let type: 'primary' | 'secondary' | 'tertiary' = 'primary';
@@ -2056,7 +2056,7 @@ export class ButtonComponent {
                   contrast). This necessitates <b>tokens</b>, or customization features{' '}
                   <RoughAnnotate
                     type="highlight"
-                    color="#a7f3d0"
+                    color="#6ee7b770"
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
@@ -2165,7 +2165,7 @@ export class ButtonComponent {
                   A design token is a standardized,{' '}
                   <RoughAnnotate
                     type="highlight"
-                    color="#a7f3d0"
+                    color="#6ee7b770"
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
@@ -2215,7 +2215,7 @@ export class ButtonComponent {
                   the aid of design token management tools or preprocessors like Sass.
                 </p>
                 <Code
-                  className=" lg:w-1/2 h-auto mx-auto"
+                  className="w-full h-auto lg:w-1/2 mx-auto"
                   code={`"color": {
   "primary": "#007bff",
   "secondary": "#6c757d",
@@ -2329,7 +2329,7 @@ export class ButtonComponent {
                   different types:{' '}
                   <RoughAnnotate
                     type="highlight"
-                    color="#a7f3d0"
+                    color="#6ee7b770"
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
@@ -2460,7 +2460,7 @@ export class ButtonComponent {
                   It allows us to{' '}
                   <RoughAnnotate
                     type="highlight"
-                    color="#a7f3d0"
+                    color="#6ee7b770"
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
@@ -2520,7 +2520,7 @@ export class ButtonComponent {
                   Additionally, adding component interactions{' '}
                   <RoughAnnotate
                     type="highlight"
-                    color="#a7f3d0"
+                    color="#6ee7b770"
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
@@ -2555,7 +2555,7 @@ export class ButtonComponent {
                   Almost all of the components{' '}
                   <RoughAnnotate
                     type="highlight"
-                    color="#a7f3d0"
+                    color="#6ee7b770"
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
@@ -2570,7 +2570,7 @@ export class ButtonComponent {
                   us to a different location.
                 </p>
                 <div className="flex flex-col items-center justify-center w-full">
-                  <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-60 lg:my-8 rounded-lg border border-stone-900 hover:bg-stone-50">
+                  <div className="Button__Samples flex flex-col md:flex-row gap-4 p-4 md:gap-12 items-center justify-center w-full md:h-60 h-auto lg:my-8 rounded-lg border border-stone-900 hover:bg-stone-50">
                     <Button
                       label="Default"
                       type="secondary"
@@ -2797,7 +2797,7 @@ export class ButtonComponent {
                   Changing states of a component or assigning an onclick function requires{' '}
                   <RoughAnnotate
                     type="highlight"
-                    color="#a7f3d0"
+                    color="#6ee7b770"
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
@@ -2879,7 +2879,7 @@ export class ButtonComponent {
                   </p>
                 </div>
                 <p>
-                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                  <RoughAnnotate type="highlight" color="#6ee7b770" padding={2}>
                     Most common actions
                   </RoughAnnotate>{' '}
                   when designing components and pages are <b>Navigate</b>, <b>Scrool</b>,{' '}
@@ -2923,7 +2923,7 @@ export class ButtonComponent {
                   implement in code. When you structure frames with HTML in mind, name properties
                   using proper conventions, implement design tokens for scalability, and prototype
                   complete interaction states, you're not just creating better Figma files.{' '}
-                  <RoughAnnotate type="highlight" color="#a7f3d0" padding={2}>
+                  <RoughAnnotate type="highlight" color="#6ee7b770" padding={2}>
                     You're building bridges between disciplines.
                   </RoughAnnotate>
                 </p>
@@ -2974,7 +2974,7 @@ export class ButtonComponent {
                   requires front-end development knowledge. This isn't a passing trend.{' '}
                   <RoughAnnotate
                     type="highlight"
-                    color="#a7f3d0"
+                    color="#6ee7b770"
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
@@ -3020,7 +3020,7 @@ export class ButtonComponent {
                   best components aren't just beautiful. They are{' '}
                   <RoughAnnotate
                     type="highlight"
-                    color="#a7f3d0"
+                    color="#6ee7b770"
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}

@@ -2,16 +2,16 @@ import type { Metadata } from 'next';
 import HomeClient from './HomeClient';
 
 export const metadata: Metadata = {
-  title: 'Oğuzhan Özcan | Product Designer & Design Engineer | SaaS & Enterprise UX',
+  title: 'Oğuzhan Özcan | Product Designer & Design Engineer',
   description:
-    'Product designer and design engineer specializing in SaaS B2B products, design systems, and accessibility. I bridge design and development with research-driven solutions, scalable components, and developer-friendly handoffs. Currently at Jotform Enterprise.',
+    'Product designer and design engineer specializing in B2B SaaS products, design systems, and accessibility. I bridge design and development with research-driven solutions, scalable components, and developer-friendly handoffs. Currently at Jotform Enterprise.',
   alternates: {
     canonical: 'https://o10n.design',
   },
   openGraph: {
     title: 'Oğuzhan Özcan | Product Designer & Design Engineer',
     description:
-      'Designing scalable SaaS products and design systems. From Jotform 2FA (15K+ users) to Kroma accessibility tool. I turn research into developer-ready components and accessible experiences.',
+      'Product designer and design engineer specializing in B2B SaaS products, design systems, and accessibility. I bridge design and development with research-driven solutions, scalable components, and developer-friendly handoffs. Currently at Jotform Enterprise.',
     url: 'https://o10n.design',
     type: 'website',
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Oğuzhan Özcan | Product Designer & Design Engineer',
     description:
-      'SaaS product designer → design engineer. Building accessible interfaces, scalable systems, and developer-friendly components. Currently at Jotform Enterprise.',
+      'Product designer and design engineer specializing in B2B SaaS products, design systems, and accessibility. I bridge design and development with research-driven solutions, scalable components, and developer-friendly handoffs. Currently at Jotform Enterprise.',
     images: ['https://o10n.design/img/og_images/o10n_open_graph.png'],
     creator: '@ouzozcn',
     site: '@ouzozcn',
