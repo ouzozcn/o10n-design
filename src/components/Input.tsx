@@ -168,7 +168,7 @@ function Input({
             className={`
               w-full p-3 bg-transparent 
               ${getTextColor()}
-              placeholder:${getTextColor()}
+              placeholder:"${getTextColor()}"
             `}
             style={{
               border: 'none',

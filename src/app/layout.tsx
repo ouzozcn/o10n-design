@@ -12,9 +12,9 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: 'Oğuzhan Özcan | Analytics and Data-Driven Product Designer',
+  title: 'Oğuzhan Özcan | Product Designer & Design Engineer',
   description:
-    'Analytics and data-driven product designer who prioritizes research-based methodologies, accessibility, user-centered designs, and developer friendliness.',
+    'Product designer and design engineer specializing in B2B SaaS products, design systems, and accessibility. I bridge design and development with research-driven solutions, scalable components, and developer-friendly handoffs. Currently at Jotform Enterprise.',
   keywords: [
     'product design',
     'design engineer',
@@ -47,16 +47,16 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://o10n.design',
-    siteName: 'Oğuzhan Özcan | Analytics and Data-Driven Product Designer',
-    title: 'Oğuzhan Özcan | Analytics and Data-Driven Product Designer',
+    siteName: 'Oğuzhan Özcan | Product Designer & Design Engineer',
+    title: 'Oğuzhan Özcan | Product Designer & Design Engineer',
     description:
-      'Analytics and data-driven product designer who prioritizes research-based methodologies, accessibility, user-centered designs, and developer friendliness.',
+      'Product designer and design engineer specializing in B2B SaaS products, design systems, and accessibility. I bridge design and development with research-driven solutions, scalable components, and developer-friendly handoffs. Currently at Jotform Enterprise.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Oğuzhan Özcan | Analytics and Data-Driven Product Designer',
+    title: 'Oğuzhan Özcan | Product Designer & Design Engineer',
     description:
-      'Analytics and data-driven product designer who prioritizes research-based methodologies, accessibility, user-centered designs, and developer friendliness.',
+      'Product designer and design engineer specializing in B2B SaaS products, design systems, and accessibility. I bridge design and development with research-driven solutions, scalable components, and developer-friendly handoffs. Currently at Jotform Enterprise.',
   },
   robots: {
     index: true,
