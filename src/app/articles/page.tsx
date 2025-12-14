@@ -179,7 +179,7 @@ export default function Articles() {
               <Tag label="Article" type="emerald" size="large" />
               <Tag label="Component Design" type="outline" size="large" />
             </div>
-            <div className="flex justify-start items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ">
+            <div className="flex justify-start items-center gap-2 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-200 ">
               <Button
                 label="Read Article"
                 rounded={true}

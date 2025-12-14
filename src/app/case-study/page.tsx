@@ -171,7 +171,7 @@ export default function CaseStudy() {
               <Tag label="Case Study" type="lime" size="large" />
               <Tag label="Security Feature" type="outline" size="large" />
             </div>
-            <div className="flex justify-start items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ">
+            <div className="flex justify-start items-center gap-2 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-200 ">
               <Button
                 label="Read Case Study"
                 rounded={true}
