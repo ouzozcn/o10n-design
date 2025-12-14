@@ -173,7 +173,7 @@ export default function Ideas() {
               <Tag label="Idea" type="purple" size="large" />
               <Tag label="Company Awareness Product" type="outline" size="large" />
             </div>
-            <div className="flex justify-start items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200  ">
+            <div className="flex justify-start items-center gap-2 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-200  ">
               <Button
                 label="Explore Jotform Logbook"
                 rounded={true}
@@ -214,7 +214,7 @@ export default function Ideas() {
               <Tag label="Idea" type="purple" size="large" />
               <Tag label="Form Builder" type="outline" size="large" />
             </div>
-            <div className="flex justify-start items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ">
+            <div className="flex justify-start items-center gap-2 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-200 ">
               <Button
                 label="Explore brifl"
                 rounded={true}

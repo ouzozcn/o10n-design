@@ -171,7 +171,7 @@ export default function Products() {
               <Tag label="Product" type="red" size="large" />
               <Tag label="Accessibility (a11y)" type="outline" size="large" />
             </div>
-            <div className="flex justify-start items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200  ">
+            <div className="flex justify-start items-center gap-2 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-200  ">
               <Button
                 label="Explore Kroma"
                 rounded={true}
@@ -209,7 +209,7 @@ export default function Products() {
               <Tag label="Product" type="red" size="large" />
               <Tag label="Design System" type="outline" size="large" />
             </div>
-            <div className="flex justify-start items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ">
+            <div className="flex justify-start items-center gap-2 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-200 ">
               <Button
                 label="Explore brifl Design System"
                 rounded={true}

@@ -146,7 +146,7 @@ export default function HomeClient() {
                 Component Design for JavaScript Frameworks
               </h2>
               <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
-                Master the four fundamentals of component design:{' '}
+                Master the fundamentals of component design:{' '}
                 <RoughAnnotate
                   type="highlight"
                   color="#a7f3d0"
@@ -157,15 +157,15 @@ export default function HomeClient() {
                 >
                   Structure, Properties, Tokens, and Interaction
                 </RoughAnnotate>{' '}
-                to create Figma components that translate seamlessly into JavaScript frameworks.
-                Learn Auto-Layout patterns, naming conventions, design tokens, and prototyping
-                techniques that bridge design and development.
+                to create components that translate seamlessly into JavaScript frameworks. Learn
+                Auto-Layout patterns, naming conventions, design tokens, and prototyping techniques
+                that bridge design and development.
               </p>
               <div className="Section__Tags flex justify-start items-center gap-2 flex-wrap">
                 <Tag label="Article" type="emerald" size="large" />
                 <Tag label="Component Design" type="outline" size="large" />
               </div>
-              <div className="flex justify-start items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ">
+              <div className="flex justify-start items-center gap-2 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-200 ">
                 <Button
                   label="Read Article"
                   rounded={true}
@@ -213,7 +213,7 @@ export default function HomeClient() {
                 <Tag label="Product" type="red" size="large" />
                 <Tag label="Accessibility (a11y)" type="outline" size="large" />
               </div>
-              <div className="flex justify-start items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200  ">
+              <div className="flex justify-start items-center gap-2 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-200  ">
                 <Button
                   label="Explore Kroma"
                   rounded={true}
@@ -251,7 +251,7 @@ export default function HomeClient() {
                 <Tag label="Case Study" type="lime" size="large" />
                 <Tag label="Security Feature" type="outline" size="large" />
               </div>
-              <div className="flex justify-start items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ">
+              <div className="flex justify-start items-center gap-2 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-200 ">
                 <Button
                   label="Read Case Study"
                   rounded={true}
@@ -349,7 +349,7 @@ export default function HomeClient() {
                 <Tag label="Product" type="red" size="large" />
                 <Tag label="Design System" type="outline" size="large" />
               </div>
-              <div className="flex justify-start items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ">
+              <div className="flex justify-start items-center gap-2 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-200 ">
                 <Button
                   label="Explore brifl Design System"
                   rounded={true}
@@ -393,7 +393,7 @@ export default function HomeClient() {
                 <Tag label="Idea" type="purple" size="large" />
                 <Tag label="Company Awareness Product" type="outline" size="large" />
               </div>
-              <div className="flex justify-start items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200  ">
+              <div className="flex justify-start items-center gap-2 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-200  ">
                 <Button
                   label="Explore Jotform Logbook"
                   rounded={true}
@@ -434,7 +434,7 @@ export default function HomeClient() {
                 <Tag label="Idea" type="purple" size="large" />
                 <Tag label="Form Builder" type="outline" size="large" />
               </div>
-              <div className="flex justify-start items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ">
+              <div className="flex justify-start items-center gap-2 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-200 ">
                 <Button
                   label="Explore brifl"
                   rounded={true}
