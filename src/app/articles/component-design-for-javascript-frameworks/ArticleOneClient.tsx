@@ -188,7 +188,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
         </div>
       </div>
 
-      <div className="Summary__Content flex flex-col w-full  gap-4 lg:gap-12 p-6 lg:py-12 lg:px-40 text-lg lg:text-xl items-center justify-center text-left font-regular text-stone-900">
+      <div className="Summary__Content flex flex-col w-full  gap-4 lg:gap-12 p-6 lg:py-12 lg:px-40 text-lg lg:text-xl items-center justify-center text-justify lg:text-left font-regular text-stone-900">
         <p>
           The landscape of product design nowadays requires many more skills, knowledge, and
           expertise. We designers have learned about research methods for understanding user needs,
@@ -233,7 +233,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             padding={2}
             animationDuration={1600}
             showWhenVisible={true}
-            delay={4000}
+            delay={200}
           >
             fundamentals of component design,
           </RoughAnnotate>{' '}
@@ -295,7 +295,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             padding={2}
             animationDuration={1600}
             showWhenVisible={true}
-            delay={4000}
+            delay={200}
           >
             speak the same language,
           </RoughAnnotate>{' '}
@@ -322,7 +322,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             padding={2}
             animationDuration={1600}
             showWhenVisible={true}
-            delay={4000}
+            delay={200}
           >
             designing components for JavaScript frameworks and libraries.
           </RoughAnnotate>{' '}
@@ -425,7 +425,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               color="emerald"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-12">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-12">
                 <p>
                   The history of human-computer interaction and user interface design (graphical
                   user interface, GUI) spans over 70 years. There were only text-based command-line
@@ -507,7 +507,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               className="md:sticky md:top-[87px] md:self-start"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <div className="Component__Samples flex flex-col  md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-60 rounded-lg border border-stone-900 hover:bg-stone-50">
                   <Button
                     label="I am a primary button"
@@ -544,7 +544,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     A component is a single, reusable UI element
                   </RoughAnnotate>{' '}
@@ -554,7 +554,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   components into their most basic parts to create a more efficient and scalable
                   design process.
                 </p>
-                <h2 className="SectionImage w-full flex font-bold text-start ">
+                <h2 className="SectionImage w-full flex font-bold text-justify lg:text-left ">
                   Component hierarchy follows atomic design principles:
                 </h2>
                 <ul className="list-disc list-inside ml-4 space-y-4 marker:text-stone-600">
@@ -588,7 +588,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   effective components, design systems, and products. By leveraging atomic design
                   principles, you can ensure consistency and scalability across your projects.
                 </p>
-                <h2 className="SectionImage w-full flex font-bold text-start ">
+                <h2 className="SectionImage w-full flex font-bold text-justify lg:text-left ">
                   Common component examples:
                 </h2>
                 <ul className="list-disc list-inside ml-4 space-y-4 marker:text-stone-600">
@@ -624,7 +624,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-12 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <p>
                   Despite syntactic differences,{' '}
                   <RoughAnnotate
@@ -633,7 +633,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     all modern JavaScript frameworks and libraries
                   </RoughAnnotate>{' '}
@@ -683,7 +683,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent w-full items-center justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent w-full items-center justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <div className="Animated___Code__Block flex flex-col w-full lg:w-1/2 items-center justify-center lg:mx-auto lg:mb-4">
                   <Code
                     className="w-full lg:w-[430px] h-[620px]"
@@ -718,14 +718,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     >
                       Button.tsx
                     </CodeHeader>
-                    <CodeBlock
-                      lang="tsx"
-                      theme="dark"
-                      writing
-                      duration={12000}
-                      inView={true}
-                      cursor={true}
-                    />
+                    <CodeBlock lang="tsx" theme="dark" />
                   </Code>
                   <p className="text-center text-sm text-stone-600 lg:my-6">
                     Basic properties for a button component in TypeScript
@@ -740,7 +733,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     a name and a value
                   </RoughAnnotate>{' '}
@@ -786,7 +779,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     any UI component has properties
                   </RoughAnnotate>{' '}
@@ -872,7 +865,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 {/*  button block for prop showcase} */}
                 {/*  button block for prop showcase} */}
                 <code>
-                  <b>isDisabled:</b> boolean
+                  <b>isDisabled?:</b> boolean
                 </code>
                 <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-24 lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
                   <Button
@@ -887,7 +880,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 {/*  button block for prop showcase} */}
                 {/*  button block for prop showcase} */}
                 <code>
-                  <b>isLoading:</b> boolean
+                  <b>isLoading?:</b> boolean
                 </code>
                 <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-24 lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
                   <Button
@@ -902,7 +895,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 {/*  button block for prop showcase} */}
                 {/*  button block for prop showcase} */}
                 <code>
-                  <b>startIcon:</b> component instance
+                  <b>startIcon?:</b> component instance
                 </code>
                 <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-24 lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
                   <Button
@@ -918,7 +911,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 {/*  button block for prop showcase} */}
                 {/*  button block for prop showcase} */}
                 <code>
-                  <b>endIcon:</b> component instance
+                  <b>endIcon?:</b> component instance
                 </code>
                 <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-24 lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
                   <Button
@@ -976,7 +969,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               className="md:sticky md:top-[87px] md:self-start"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent w-full items-center justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent w-full items-center justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
                   <Image
                     src="/img/js-components/fundamentals_of_component.svg"
@@ -996,7 +989,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     four fundamental principles:
                   </RoughAnnotate>
@@ -1031,7 +1024,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               color="emerald"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent w-full items-center justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent w-full items-center justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <p>
                   The arrangement and organization of HTML elements within a document is referred to
                   as its{' '}
@@ -1041,7 +1034,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={3}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     structure.
                   </RoughAnnotate>{' '}
@@ -1065,7 +1058,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   <CodeHeader icon={CodeRoundedIcon} copyButton className="text-amber-50 h-16 px-6">
                     Basic HTML Structure
                   </CodeHeader>
-                  <CodeBlock lang="html" theme="dark" cursor={true} />
+                  <CodeBlock lang="html" theme="dark" />
                 </Code>
                 <p>
                   HTML uses various elements to structure the content of a page. These elements are
@@ -1076,7 +1069,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     Each tag has a specific purpose
                   </RoughAnnotate>{' '}
@@ -1105,7 +1098,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={3}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     frames.
                   </RoughAnnotate>{' '}
@@ -1152,7 +1145,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               className="md:sticky md:top-[87px] md:self-start"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <p>
                   Figma offers two ways to nest objects:{' '}
                   <RoughAnnotate
@@ -1161,7 +1154,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     <b>Groups</b>{' '}
                   </RoughAnnotate>{' '}
@@ -1172,7 +1165,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     <b>Frames</b>.
                   </RoughAnnotate>{' '}
@@ -1198,7 +1191,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     CSS Flexbox properties.
                   </RoughAnnotate>{' '}
@@ -1245,7 +1238,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     Gap
                   </RoughAnnotate>{' '}
@@ -1256,7 +1249,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     Padding
                   </RoughAnnotate>{' '}
@@ -1289,7 +1282,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     Your frame structure defines the HTML structure.
                   </RoughAnnotate>{' '}
@@ -1344,7 +1337,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               className="md:sticky md:top-[87px] md:self-start"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-8">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-8">
                 <p>
                   A simple button needs only three frames which wrapped by a container. These frames
                   are used for start icon, button label, and end icon.
@@ -1387,14 +1380,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     >
                       index.html
                     </CodeHeader>
-                    <CodeBlock
-                      lang="html"
-                      theme="dark"
-                      writing
-                      duration={8000}
-                      inView={true}
-                      cursor={true}
-                    />
+                    <CodeBlock lang="html" theme="dark" />
                   </Code>
                   <Code
                     className="w-full h-auto lg:w-1/2 lg:h-[330px]"
@@ -1437,14 +1423,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     >
                       style.css
                     </CodeHeader>
-                    <CodeBlock
-                      lang="css"
-                      theme="dark"
-                      writing
-                      duration={8000}
-                      inView={true}
-                      cursor={true}
-                    />
+                    <CodeBlock lang="css" theme="dark" />
                   </Code>
                 </div>
                 <p>
@@ -1475,7 +1454,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
                   <Image
                     src="/img/js-components/frame_structure_example.svg"
@@ -1498,7 +1477,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     use descriptive names
                   </RoughAnnotate>{' '}
@@ -1605,7 +1584,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               color="emerald"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <div className="Image__Container flex flex-col items-center justify-center w-full">
                   <Image
                     src="/img/js-components/FigmaComponentProps.svg"
@@ -1630,7 +1609,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     reduces the development effort
                   </RoughAnnotate>{' '}
@@ -1659,13 +1638,13 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   <table className="min-w-full border border-stone-300 rounded-xl bg-white text-stone-900 text-sm">
                     <thead>
                       <tr className="bg-amber-100">
-                        <th className="px-4 py-2 border-b border-stone-300 text-left font-semibold">
+                        <th className="px-4 py-2 border-b border-stone-300 text-justify lg:text-left font-semibold">
                           Figma Property
                         </th>
-                        <th className="px-4 py-2 border-b border-stone-300 text-left font-semibold">
+                        <th className="px-4 py-2 border-b border-stone-300 text-justify lg:text-left font-semibold">
                           Frontend Equivalent
                         </th>
-                        <th className="px-4 py-2 border-b border-stone-300 text-left font-semibold">
+                        <th className="px-4 py-2 border-b border-stone-300 text-justify lg:text-left font-semibold">
                           Example Use Case
                         </th>
                       </tr>
@@ -1723,7 +1702,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <p>
                   Front-end development has been around for a long time. Over the years, certain
                   conventions have emerged that enhance code readability and maintainability.
@@ -1741,7 +1720,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                       padding={2}
                       animationDuration={1600}
                       showWhenVisible={true}
-                      delay={4000}
+                      delay={200}
                     >
                       <b>camelCase</b>
                     </RoughAnnotate>{' '}
@@ -1821,7 +1800,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <p>
                   Figma component properties translate naturally across frameworks. Here's how a
                   button component with well-named props looks in React (TypeScript):
@@ -1846,7 +1825,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     React, Vue, Angular, and Svelte
                   </RoughAnnotate>{' '}
@@ -1875,14 +1854,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     >
                       React (TypeScript)
                     </CodeHeader>
-                    <CodeBlock
-                      lang="tsx"
-                      theme="dark"
-                      writing
-                      duration={8000}
-                      inView={true}
-                      cursor={true}
-                    />
+                    <CodeBlock lang="tsx" theme="dark" />
                   </Code>
                   <p className="text-sm text-stone-600 lg:mb-4">
                     In React, component properties are defined in an interface.
@@ -1907,15 +1879,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     >
                       Vue 3 (TypeScript)
                     </CodeHeader>
-                    <CodeBlock
-                      lang="tsx"
-                      theme="dark"
-                      writing
-                      duration={8000}
-                      delay={1000}
-                      inView={true}
-                      cursor={true}
-                    />
+                    <CodeBlock lang="tsx" theme="dark" writing />
                   </Code>
                   <p className="text-sm text-stone-600 lg:mb-4">
                     In Vue, component properties are defined in an interface.
@@ -1945,15 +1909,7 @@ export class ButtonComponent {
                     >
                       Angular (TypeScript)
                     </CodeHeader>
-                    <CodeBlock
-                      lang="tsx"
-                      theme="dark"
-                      writing
-                      duration={8000}
-                      delay={1000}
-                      inView={true}
-                      cursor={true}
-                    />
+                    <CodeBlock lang="tsx" theme="dark" />
                   </Code>
                   <p className="text-sm text-stone-600 lg:mb-4">
                     In Angular, component properties are defined in a class.
@@ -1978,15 +1934,7 @@ export class ButtonComponent {
                     >
                       Svelte (TypeScript)
                     </CodeHeader>
-                    <CodeBlock
-                      lang="ts"
-                      theme="dark"
-                      writing
-                      duration={8000}
-                      delay={1000}
-                      inView={true}
-                      cursor={true}
-                    />
+                    <CodeBlock lang="ts" theme="dark" />
                   </Code>
                   <p className="text-sm text-stone-600 ">
                     In Svelte, component properties are defined in a script tag.
@@ -2005,7 +1953,7 @@ export class ButtonComponent {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     smoother handoff
                   </RoughAnnotate>{' '}
@@ -2022,7 +1970,7 @@ export class ButtonComponent {
               color="emerald"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <p>
                   A token, as used in web development and design, is typically a standardized value
                   that denotes a particular configuration or design element. Tokens are frequently
@@ -2060,7 +2008,7 @@ export class ButtonComponent {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     using variables instead of hard-coded values.
                   </RoughAnnotate>{' '}
@@ -2082,7 +2030,7 @@ export class ButtonComponent {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     TailwindCSS.
                   </RoughAnnotate>{' '}
@@ -2148,7 +2096,7 @@ export class ButtonComponent {
               color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-8">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-8">
                 <div className="Image__Container flex flex-col items-center justify-center w-full">
                   <Image
                     src="/img/js-components/button_tokens.svg"
@@ -2169,7 +2117,7 @@ export class ButtonComponent {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     reusable variable
                   </RoughAnnotate>{' '}
@@ -2242,7 +2190,7 @@ export class ButtonComponent {
                   <CodeHeader icon={CodeRoundedIcon} copyButton className="text-amber-50 h-16 px-6">
                     Design Token Documentation
                   </CodeHeader>
-                  <CodeBlock lang="json" theme="dark" inView={true} cursor={true} />
+                  <CodeBlock lang="json" theme="dark" />
                 </Code>
                 <p>
                   Managing design tokens is a crucial part of components and design systems
@@ -2312,7 +2260,7 @@ export class ButtonComponent {
               color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 ">
                   <Image
                     src="/img/js-components/primitive_tokens.svg"
@@ -2333,7 +2281,7 @@ export class ButtonComponent {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     <b>Color</b>, <b>Number</b>, <b>String</b>, and <b>Boolean</b>.
                   </RoughAnnotate>{' '}
@@ -2408,7 +2356,7 @@ export class ButtonComponent {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     use them in every aspect of your design system.
                   </RoughAnnotate>{' '}
@@ -2454,7 +2402,7 @@ export class ButtonComponent {
               color="emerald"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <p>
                   Prototyping is one of the must-haves for delivering a production-ready component.
                   It allows us to{' '}
@@ -2464,7 +2412,7 @@ export class ButtonComponent {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     mimic real-time behaviors
                   </RoughAnnotate>{' '}
@@ -2499,7 +2447,7 @@ export class ButtonComponent {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     Dev Mode in Figma,
                   </RoughAnnotate>{' '}
@@ -2524,7 +2472,7 @@ export class ButtonComponent {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     reveals the component's faults
                   </RoughAnnotate>{' '}
@@ -2550,7 +2498,7 @@ export class ButtonComponent {
               color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <p>
                   Almost all of the components{' '}
                   <RoughAnnotate
@@ -2559,7 +2507,7 @@ export class ButtonComponent {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     need to define various states.
                   </RoughAnnotate>{' '}
@@ -2792,7 +2740,7 @@ export class ButtonComponent {
               color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <p>
                   Changing states of a component or assigning an onclick function requires{' '}
                   <RoughAnnotate
@@ -2801,7 +2749,7 @@ export class ButtonComponent {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     defining triggers and actions.
                   </RoughAnnotate>{' '}
@@ -2829,7 +2777,7 @@ export class ButtonComponent {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     ten distinct triggers
                   </RoughAnnotate>{' '}
@@ -2860,7 +2808,7 @@ export class ButtonComponent {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     eleven distinct actions
                   </RoughAnnotate>{' '}
@@ -2915,7 +2863,7 @@ export class ButtonComponent {
               color="lime"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <p>
                   The principles outlined in this article, <b>Structure</b>, <b>Properties</b>,{' '}
                   <b>Tokens</b>, and
@@ -2978,7 +2926,7 @@ export class ButtonComponent {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     It's the evolution of our discipline.
                   </RoughAnnotate>{' '}
@@ -3024,7 +2972,7 @@ export class ButtonComponent {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     thoughtfully structured, clearly documented, and ready to become excellent in
                     development.
@@ -3057,7 +3005,7 @@ export class ButtonComponent {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     valuable team member,
                   </RoughAnnotate>{' '}
@@ -3088,7 +3036,7 @@ export class ButtonComponent {
               color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <a
                   href="https://www.sap-press.com/javascript_5554/?srsltid=AfmBOoqQj4XvAyc5MbhgoFjwT5gvatvbKQG061LEGNubgN7iUH5b4Ain?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
                   target="_blank"
