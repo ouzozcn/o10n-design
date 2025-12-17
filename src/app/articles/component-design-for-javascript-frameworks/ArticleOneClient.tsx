@@ -791,7 +791,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 </code>
                 <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-24 lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
                   <Button
-                    label="I am label"
+                    label="label"
                     type="primary"
                     size="medium"
                     className="w-[200px]"
@@ -807,7 +807,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 </code>
                 <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-auto p-4   lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
                   <Button
-                    label="I am primary"
+                    label="primary"
                     type="primary"
                     size="medium"
                     isDisabled={false}
@@ -815,7 +815,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     onClick={buttonFactsTwo}
                   />
                   <Button
-                    label="I am secondary"
+                    label="secondary"
                     type="secondary"
                     size="medium"
                     isDisabled={false}
@@ -823,7 +823,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     onClick={buttonFactsThree}
                   />
                   <Button
-                    label="I am tertiary"
+                    label="tertiary"
                     type="tertiary"
                     size="medium"
                     isDisabled={false}
@@ -838,7 +838,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 </code>
                 <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-auto p-4 lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
                   <Button
-                    label="I am small"
+                    label="small"
                     type="primary"
                     size="small"
                     isDisabled={false}
@@ -846,7 +846,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     onClick={buttonFactsFive}
                   />
                   <Button
-                    label="I am medium"
+                    label="medium"
                     type="primary"
                     size="medium"
                     isDisabled={false}
@@ -854,7 +854,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     onClick={buttonFactsSix}
                   />
                   <Button
-                    label="I am large"
+                    label="large"
                     type="primary"
                     size="xlarge"
                     isDisabled={false}
@@ -869,7 +869,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 </code>
                 <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-24 lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
                   <Button
-                    label="I am disabled"
+                    label="disabled"
                     type="primary"
                     size="medium"
                     className="w-[200px]"
@@ -884,7 +884,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 </code>
                 <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-24 lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
                   <Button
-                    label="I am loading"
+                    label="loading"
                     type="primary"
                     size="medium"
                     className="w-[200px]"
@@ -899,7 +899,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 </code>
                 <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-24 lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
                   <Button
-                    label="I have a start icon"
+                    label="start icon"
                     type="primary"
                     size="medium"
                     isDisabled={false}
@@ -915,7 +915,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 </code>
                 <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-24 lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
                   <Button
-                    label="I have an end icon"
+                    label="end icon"
                     type="primary"
                     size="medium"
                     isDisabled={false}
@@ -931,7 +931,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 </code>
                 <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-24 lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
                   <Button
-                    label="What would happen when clicked?"
+                    label="see a fact"
                     type="primary"
                     size="medium"
                     isDisabled={false}
