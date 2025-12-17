@@ -2583,7 +2583,7 @@ export class ButtonComponent {
                   <Input
                     value={defaultValue}
                     state={defaultState}
-                    placeholder="I am on default state"
+                    placeholder="Type something..."
                     startIcon={<CodeRoundedIcon />}
                     onFocus={handleFocus}
                     onBlur={handleBlur}
@@ -2604,7 +2604,7 @@ export class ButtonComponent {
                   <Input
                     value={hoverValue}
                     state="hover"
-                    placeholder="I am on hover state"
+                    placeholder="Type something..."
                     startIcon={<CodeRoundedIcon />}
                     onChange={newValue => setHoverValue(newValue)}
                     className="bg-amber-200"
@@ -2624,7 +2624,7 @@ export class ButtonComponent {
                   <Input
                     value={focusValue}
                     state="focus"
-                    placeholder="I am on focus state"
+                    placeholder="Type something..."
                     startIcon={<CodeRoundedIcon />}
                     onChange={newValue => setFocusValue(newValue)}
                   />
@@ -2643,7 +2643,7 @@ export class ButtonComponent {
                   <Input
                     value={activeValue}
                     state="active"
-                    placeholder="I am on active state"
+                    placeholder="Type something..."
                     startIcon={<CodeRoundedIcon />}
                     onChange={newValue => setActiveValue(newValue)}
                   />
@@ -2662,7 +2662,7 @@ export class ButtonComponent {
                   <Input
                     value={disabledValue}
                     state="disabled"
-                    placeholder="I am on disabled state"
+                    placeholder="You cannot type here..."
                     startIcon={<CodeRoundedIcon />}
                     onChange={newValue => setDisabledValue(newValue)}
                     className="cursor-not-allowed"
@@ -2682,7 +2682,7 @@ export class ButtonComponent {
                   <Input
                     value={loadingValue}
                     state="loading"
-                    placeholder="I am on loading state"
+                    placeholder="Loading..."
                     startIcon={<CodeRoundedIcon />}
                     onChange={newValue => setLoadingValue(newValue)}
                   />
@@ -2701,7 +2701,7 @@ export class ButtonComponent {
                   <Input
                     value={errorValue}
                     state="error"
-                    placeholder="I am on error state"
+                    placeholder="Something went wrong..."
                     startIcon={<CodeRoundedIcon />}
                     onChange={newValue => setErrorValue(newValue)}
                   />
@@ -2719,7 +2719,7 @@ export class ButtonComponent {
                   <Input
                     value={successValue}
                     state="success"
-                    placeholder="I am on success state"
+                    placeholder="Success!"
                     startIcon={<CodeRoundedIcon />}
                     onChange={newValue => setSuccessValue(newValue)}
                   />
