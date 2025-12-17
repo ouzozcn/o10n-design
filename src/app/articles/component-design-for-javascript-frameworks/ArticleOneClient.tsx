@@ -188,7 +188,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
         </div>
       </div>
 
-      <div className="Summary__Content flex flex-col w-full  gap-4 lg:gap-12 p-6 lg:py-12 lg:px-40 text-lg lg:text-xl items-center justify-center text-left font-regular text-stone-900">
+      <div className="Summary__Content flex flex-col w-full  gap-4 lg:gap-12 p-6 lg:py-12 lg:px-40 text-lg lg:text-xl items-center justify-center text-justify lg:text-left font-regular text-stone-900">
         <p>
           The landscape of product design nowadays requires many more skills, knowledge, and
           expertise. We designers have learned about research methods for understanding user needs,
@@ -425,7 +425,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               color="emerald"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-12">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-12">
                 <p>
                   The history of human-computer interaction and user interface design (graphical
                   user interface, GUI) spans over 70 years. There were only text-based command-line
@@ -507,7 +507,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               className="md:sticky md:top-[87px] md:self-start"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <div className="Component__Samples flex flex-col  md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-60 rounded-lg border border-stone-900 hover:bg-stone-50">
                   <Button
                     label="I am a primary button"
@@ -554,7 +554,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   components into their most basic parts to create a more efficient and scalable
                   design process.
                 </p>
-                <h2 className="SectionImage w-full flex font-bold text-start ">
+                <h2 className="SectionImage w-full flex font-bold text-justify lg:text-left ">
                   Component hierarchy follows atomic design principles:
                 </h2>
                 <ul className="list-disc list-inside ml-4 space-y-4 marker:text-stone-600">
@@ -588,7 +588,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   effective components, design systems, and products. By leveraging atomic design
                   principles, you can ensure consistency and scalability across your projects.
                 </p>
-                <h2 className="SectionImage w-full flex font-bold text-start ">
+                <h2 className="SectionImage w-full flex font-bold text-justify lg:text-left ">
                   Common component examples:
                 </h2>
                 <ul className="list-disc list-inside ml-4 space-y-4 marker:text-stone-600">
@@ -624,7 +624,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-12 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <p>
                   Despite syntactic differences,{' '}
                   <RoughAnnotate
@@ -683,7 +683,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent w-full items-center justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent w-full items-center justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <div className="Animated___Code__Block flex flex-col w-full lg:w-1/2 items-center justify-center lg:mx-auto lg:mb-4">
                   <Code
                     className="w-full lg:w-[430px] h-[620px]"
@@ -865,7 +865,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 {/*  button block for prop showcase} */}
                 {/*  button block for prop showcase} */}
                 <code>
-                  <b>isDisabled:</b> boolean
+                  <b>isDisabled?:</b> boolean
                 </code>
                 <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-24 lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
                   <Button
@@ -880,7 +880,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 {/*  button block for prop showcase} */}
                 {/*  button block for prop showcase} */}
                 <code>
-                  <b>isLoading:</b> boolean
+                  <b>isLoading?:</b> boolean
                 </code>
                 <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-24 lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
                   <Button
@@ -895,7 +895,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 {/*  button block for prop showcase} */}
                 {/*  button block for prop showcase} */}
                 <code>
-                  <b>startIcon:</b> component instance
+                  <b>startIcon?:</b> component instance
                 </code>
                 <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-24 lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
                   <Button
@@ -911,7 +911,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 {/*  button block for prop showcase} */}
                 {/*  button block for prop showcase} */}
                 <code>
-                  <b>endIcon:</b> component instance
+                  <b>endIcon?:</b> component instance
                 </code>
                 <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-24 lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
                   <Button
@@ -969,7 +969,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               className="md:sticky md:top-[87px] md:self-start"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent w-full items-center justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent w-full items-center justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
                   <Image
                     src="/img/js-components/fundamentals_of_component.svg"
@@ -1024,7 +1024,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               color="emerald"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent w-full items-center justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent w-full items-center justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <p>
                   The arrangement and organization of HTML elements within a document is referred to
                   as its{' '}
@@ -1145,7 +1145,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               className="md:sticky md:top-[87px] md:self-start"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <p>
                   Figma offers two ways to nest objects:{' '}
                   <RoughAnnotate
@@ -1337,7 +1337,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               className="md:sticky md:top-[87px] md:self-start"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-8">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-8">
                 <p>
                   A simple button needs only three frames which wrapped by a container. These frames
                   are used for start icon, button label, and end icon.
@@ -1454,7 +1454,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
                   <Image
                     src="/img/js-components/frame_structure_example.svg"
@@ -1584,7 +1584,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               color="emerald"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <div className="Image__Container flex flex-col items-center justify-center w-full">
                   <Image
                     src="/img/js-components/FigmaComponentProps.svg"
@@ -1638,13 +1638,13 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   <table className="min-w-full border border-stone-300 rounded-xl bg-white text-stone-900 text-sm">
                     <thead>
                       <tr className="bg-amber-100">
-                        <th className="px-4 py-2 border-b border-stone-300 text-left font-semibold">
+                        <th className="px-4 py-2 border-b border-stone-300 text-justify lg:text-left font-semibold">
                           Figma Property
                         </th>
-                        <th className="px-4 py-2 border-b border-stone-300 text-left font-semibold">
+                        <th className="px-4 py-2 border-b border-stone-300 text-justify lg:text-left font-semibold">
                           Frontend Equivalent
                         </th>
-                        <th className="px-4 py-2 border-b border-stone-300 text-left font-semibold">
+                        <th className="px-4 py-2 border-b border-stone-300 text-justify lg:text-left font-semibold">
                           Example Use Case
                         </th>
                       </tr>
@@ -1702,7 +1702,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <p>
                   Front-end development has been around for a long time. Over the years, certain
                   conventions have emerged that enhance code readability and maintainability.
@@ -1800,7 +1800,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
               color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <p>
                   Figma component properties translate naturally across frameworks. Here's how a
                   button component with well-named props looks in React (TypeScript):
@@ -1970,7 +1970,7 @@ export class ButtonComponent {
               color="emerald"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <p>
                   A token, as used in web development and design, is typically a standardized value
                   that denotes a particular configuration or design element. Tokens are frequently
@@ -2096,7 +2096,7 @@ export class ButtonComponent {
               color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-8">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-8">
                 <div className="Image__Container flex flex-col items-center justify-center w-full">
                   <Image
                     src="/img/js-components/button_tokens.svg"
@@ -2260,7 +2260,7 @@ export class ButtonComponent {
               color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 ">
                   <Image
                     src="/img/js-components/primitive_tokens.svg"
@@ -2402,7 +2402,7 @@ export class ButtonComponent {
               color="emerald"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <p>
                   Prototyping is one of the must-haves for delivering a production-ready component.
                   It allows us to{' '}
@@ -2498,7 +2498,7 @@ export class ButtonComponent {
               color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <p>
                   Almost all of the components{' '}
                   <RoughAnnotate
@@ -2740,7 +2740,7 @@ export class ButtonComponent {
               color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <p>
                   Changing states of a component or assigning an onclick function requires{' '}
                   <RoughAnnotate
@@ -2863,7 +2863,7 @@ export class ButtonComponent {
               color="lime"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <p>
                   The principles outlined in this article, <b>Structure</b>, <b>Properties</b>,{' '}
                   <b>Tokens</b>, and
@@ -3036,7 +3036,7 @@ export class ButtonComponent {
               color="neutral"
             />
             <div className="flex flex-col md:flex-row gap-4 p-4 md:px-16 md:py-8 items-center justify-center">
-              <div className="SectionContent flex flex-col w-full items-start justify-center text-start text-stone-900 text-lg gap-4">
+              <div className="SectionContent flex flex-col w-full items-start justify-center text-justify lg:text-left text-stone-900 text-lg gap-4">
                 <a
                   href="https://www.sap-press.com/javascript_5554/?srsltid=AfmBOoqQj4XvAyc5MbhgoFjwT5gvatvbKQG061LEGNubgN7iUH5b4Ain?utm_source=o10n-design&utm_medium=referral&utm_campaign=o10n-component-design-for-js-frameworks&utm_id=2510001"
                   target="_blank"
