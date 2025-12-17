@@ -13,7 +13,7 @@ import { ToastContainer } from 'react-toastify';
 import { showCustomToast } from '@/components/CustomToast';
 import EditRoundedIcon from '@mui/icons-material/EditRounded';
 export default function ArticleOneSample() {
-  const [label, setLabel] = React.useState('Button.tsx');
+  const [label, setLabel] = React.useState('Type a label...');
   const [type, setType] = React.useState<ButtonType>('primary');
   const [size, setSize] = React.useState<ButtonSize>('medium');
   const [hasStartIcon, setHasStartIcon] = React.useState(true);
