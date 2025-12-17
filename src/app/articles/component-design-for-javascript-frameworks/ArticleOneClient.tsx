@@ -35,55 +35,55 @@ import ArticleOneSample from '@/components/examples/ArticleOneSample';
 // Moved inside component function
 /* */
 const handleClickOne = () => {
-  showCustomToast('You clicked the Primary Button.');
+  showCustomToast('Primary Buttons are the main action buttons in a UI.');
 };
 const handleClickTwo = () => {
-  showCustomToast('You clicked the Icon Button.');
+  showCustomToast('Icon Buttons are used to represent an action or a state.');
 };
 
 const handleClickFour = () => {
   showCustomToast(
-    'This button container shows the default, hover, focus, loading, and disabled states of a button component.'
+    'Info: This button container shows the default, hover, focus, loading, and disabled states of a button component.'
   );
 };
 const buttonFactsOne = () => {
   showCustomToast(
-    'The first web button was created in 1993. The Mosaic browser introduced the <input type="button"> element. Before that, all web interactions were just hyperlinked text!'
+    'Fun Fact: The first web button was created in 1993. The Mosaic browser introduced the <input type="button"> element. Before that, all web interactions were just hyperlinked text!'
   );
 };
 const buttonFactsTwo = () => {
   showCustomToast(
-    'The word "button" in UI comes from actual clothing buttons. Early computer interfaces borrowed heavily from physical metaphors. Buttons were designed to look "pushable" with beveled edges and shadows, mimicking real-world buttons you could press.'
+    'Fun Fact: The word "button" in UI comes from actual clothing buttons. Early computer interfaces borrowed heavily from physical metaphors. Buttons were designed to look "pushable" with beveled edges and shadows, mimicking real-world buttons you could press.'
   );
 };
 const buttonFactsThree = () => {
   showCustomToast(
-    'The optimal button border-radius is 4-8 pixels. Studies show that slightly rounded corners (4-8px) are processed 17% faster by our brains than sharp corners, which our minds perceive as slightly threatening.'
+    'Fun Fact: The optimal button border-radius is 4-8 pixels. Studies show that slightly rounded corners (4-8px) are processed 17% faster by our brains than sharp corners, which our minds perceive as slightly threatening.'
   );
 };
 const buttonFactsFour = () => {
   showCustomToast(
-    'Ghost buttons increase cart abandonment by 20-30%. Despite being trendy, ghost buttons perform significantly worse than solid buttons for primary actions.'
+    'Fun Fact: Ghost buttons increase cart abandonment by 20-30%. Despite being trendy, ghost buttons perform significantly worse than solid buttons for primary actions.'
   );
 };
 const buttonFactsFive = () => {
   showCustomToast(
-    'Japanese websites have 3x more buttons. Japanese web design typically features significantly more buttons and options on a single page compared to Western minimalist designs.'
+    'Fun Fact: Japanese websites have 3x more buttons. Japanese web design typically features significantly more buttons and options on a single page compared to Western minimalist designs.'
   );
 };
 const buttonFactsSix = () => {
   showCustomToast(
-    'The average button click takes 200ms. Studies show that the average time it takes for a user to click a button is 200ms, which is a significant amount of time.'
+    'Fun Fact: The average button click takes 200ms. Studies show that the average time it takes for a user to click a button is 200ms, which is a significant amount of time.'
   );
 };
 const buttonFactsSeven = () => {
   showCustomToast(
-    'The average user encounters 100+ buttons daily. From elevator buttons to smartphone apps, the average person interacts with over 100 buttons per day, yet only consciously notices about 10% of them.'
+    'Fun Fact: The average user encounters 100+ buttons daily. From elevator buttons to smartphone apps, the average person interacts with over 100 buttons per day, yet only consciously notices about 10% of them.'
   );
 };
 const buttonFactsEight = () => {
   showCustomToast(
-    'Buttons cause "decision fatigue". Studies show that presenting users with more than 3-5 button options significantly increases abandonment rates. This is why good UX design emphasizes primary, secondary, and tertiary button hierarchies.'
+    'Fun Fact: Buttons cause "decision fatigue". Studies show that presenting users with more than 3-5 button options significantly increases abandonment rates. This is why good UX design emphasizes primary, secondary, and tertiary button hierarchies.'
   );
 };
 const buttonFactsNine = () => {
@@ -93,7 +93,7 @@ const buttonFactsNine = () => {
 };
 const buttonFactsTen = () => {
   showCustomToast(
-    '"Sign Up" beats "Register" by 60%. Changing button copy from "Register" to "Sign Up" can increase conversions by up to 60%. "Register" feels formal and commitment-heavy, while "Sign Up" feels casual and reversible.'
+    'Fun Fact: "Sign Up" beats "Register" by 60%. Changing button copy from "Register" to "Sign Up" can increase conversions by up to 60%. "Register" feels formal and commitment-heavy, while "Sign Up" feels casual and reversible.'
   );
 };
 const buttonExample = () => {
