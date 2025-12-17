@@ -233,7 +233,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             padding={2}
             animationDuration={1600}
             showWhenVisible={true}
-            delay={4000}
+            delay={200}
           >
             fundamentals of component design,
           </RoughAnnotate>{' '}
@@ -295,7 +295,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             padding={2}
             animationDuration={1600}
             showWhenVisible={true}
-            delay={4000}
+            delay={200}
           >
             speak the same language,
           </RoughAnnotate>{' '}
@@ -322,7 +322,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
             padding={2}
             animationDuration={1600}
             showWhenVisible={true}
-            delay={4000}
+            delay={200}
           >
             designing components for JavaScript frameworks and libraries.
           </RoughAnnotate>{' '}
@@ -544,7 +544,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     A component is a single, reusable UI element
                   </RoughAnnotate>{' '}
@@ -633,7 +633,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     all modern JavaScript frameworks and libraries
                   </RoughAnnotate>{' '}
@@ -718,14 +718,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     >
                       Button.tsx
                     </CodeHeader>
-                    <CodeBlock
-                      lang="tsx"
-                      theme="dark"
-                      writing
-                      duration={12000}
-                      inView={true}
-                      cursor={true}
-                    />
+                    <CodeBlock lang="tsx" theme="dark" />
                   </Code>
                   <p className="text-center text-sm text-stone-600 lg:my-6">
                     Basic properties for a button component in TypeScript
@@ -740,7 +733,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     a name and a value
                   </RoughAnnotate>{' '}
@@ -786,7 +779,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     any UI component has properties
                   </RoughAnnotate>{' '}
@@ -996,7 +989,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     four fundamental principles:
                   </RoughAnnotate>
@@ -1041,7 +1034,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={3}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     structure.
                   </RoughAnnotate>{' '}
@@ -1065,7 +1058,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   <CodeHeader icon={CodeRoundedIcon} copyButton className="text-amber-50 h-16 px-6">
                     Basic HTML Structure
                   </CodeHeader>
-                  <CodeBlock lang="html" theme="dark" cursor={true} />
+                  <CodeBlock lang="html" theme="dark" />
                 </Code>
                 <p>
                   HTML uses various elements to structure the content of a page. These elements are
@@ -1076,7 +1069,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     Each tag has a specific purpose
                   </RoughAnnotate>{' '}
@@ -1105,7 +1098,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={3}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     frames.
                   </RoughAnnotate>{' '}
@@ -1161,7 +1154,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     <b>Groups</b>{' '}
                   </RoughAnnotate>{' '}
@@ -1172,7 +1165,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     <b>Frames</b>.
                   </RoughAnnotate>{' '}
@@ -1198,7 +1191,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     CSS Flexbox properties.
                   </RoughAnnotate>{' '}
@@ -1245,7 +1238,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     Gap
                   </RoughAnnotate>{' '}
@@ -1256,7 +1249,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     Padding
                   </RoughAnnotate>{' '}
@@ -1289,7 +1282,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     Your frame structure defines the HTML structure.
                   </RoughAnnotate>{' '}
@@ -1387,14 +1380,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     >
                       index.html
                     </CodeHeader>
-                    <CodeBlock
-                      lang="html"
-                      theme="dark"
-                      writing
-                      duration={8000}
-                      inView={true}
-                      cursor={true}
-                    />
+                    <CodeBlock lang="html" theme="dark" />
                   </Code>
                   <Code
                     className="w-full h-auto lg:w-1/2 lg:h-[330px]"
@@ -1437,14 +1423,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     >
                       style.css
                     </CodeHeader>
-                    <CodeBlock
-                      lang="css"
-                      theme="dark"
-                      writing
-                      duration={8000}
-                      inView={true}
-                      cursor={true}
-                    />
+                    <CodeBlock lang="css" theme="dark" />
                   </Code>
                 </div>
                 <p>
@@ -1498,7 +1477,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     use descriptive names
                   </RoughAnnotate>{' '}
@@ -1630,7 +1609,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     reduces the development effort
                   </RoughAnnotate>{' '}
@@ -1741,7 +1720,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                       padding={2}
                       animationDuration={1600}
                       showWhenVisible={true}
-                      delay={4000}
+                      delay={200}
                     >
                       <b>camelCase</b>
                     </RoughAnnotate>{' '}
@@ -1846,7 +1825,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     React, Vue, Angular, and Svelte
                   </RoughAnnotate>{' '}
@@ -1875,14 +1854,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     >
                       React (TypeScript)
                     </CodeHeader>
-                    <CodeBlock
-                      lang="tsx"
-                      theme="dark"
-                      writing
-                      duration={8000}
-                      inView={true}
-                      cursor={true}
-                    />
+                    <CodeBlock lang="tsx" theme="dark" />
                   </Code>
                   <p className="text-sm text-stone-600 lg:mb-4">
                     In React, component properties are defined in an interface.
@@ -1907,15 +1879,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     >
                       Vue 3 (TypeScript)
                     </CodeHeader>
-                    <CodeBlock
-                      lang="tsx"
-                      theme="dark"
-                      writing
-                      duration={8000}
-                      delay={1000}
-                      inView={true}
-                      cursor={true}
-                    />
+                    <CodeBlock lang="tsx" theme="dark" writing />
                   </Code>
                   <p className="text-sm text-stone-600 lg:mb-4">
                     In Vue, component properties are defined in an interface.
@@ -1945,15 +1909,7 @@ export class ButtonComponent {
                     >
                       Angular (TypeScript)
                     </CodeHeader>
-                    <CodeBlock
-                      lang="tsx"
-                      theme="dark"
-                      writing
-                      duration={8000}
-                      delay={1000}
-                      inView={true}
-                      cursor={true}
-                    />
+                    <CodeBlock lang="tsx" theme="dark" />
                   </Code>
                   <p className="text-sm text-stone-600 lg:mb-4">
                     In Angular, component properties are defined in a class.
@@ -1978,15 +1934,7 @@ export class ButtonComponent {
                     >
                       Svelte (TypeScript)
                     </CodeHeader>
-                    <CodeBlock
-                      lang="ts"
-                      theme="dark"
-                      writing
-                      duration={8000}
-                      delay={1000}
-                      inView={true}
-                      cursor={true}
-                    />
+                    <CodeBlock lang="ts" theme="dark" />
                   </Code>
                   <p className="text-sm text-stone-600 ">
                     In Svelte, component properties are defined in a script tag.
@@ -2005,7 +1953,7 @@ export class ButtonComponent {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     smoother handoff
                   </RoughAnnotate>{' '}
@@ -2060,7 +2008,7 @@ export class ButtonComponent {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     using variables instead of hard-coded values.
                   </RoughAnnotate>{' '}
@@ -2082,7 +2030,7 @@ export class ButtonComponent {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     TailwindCSS.
                   </RoughAnnotate>{' '}
@@ -2169,7 +2117,7 @@ export class ButtonComponent {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     reusable variable
                   </RoughAnnotate>{' '}
@@ -2242,7 +2190,7 @@ export class ButtonComponent {
                   <CodeHeader icon={CodeRoundedIcon} copyButton className="text-amber-50 h-16 px-6">
                     Design Token Documentation
                   </CodeHeader>
-                  <CodeBlock lang="json" theme="dark" inView={true} cursor={true} />
+                  <CodeBlock lang="json" theme="dark" />
                 </Code>
                 <p>
                   Managing design tokens is a crucial part of components and design systems
@@ -2333,7 +2281,7 @@ export class ButtonComponent {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     <b>Color</b>, <b>Number</b>, <b>String</b>, and <b>Boolean</b>.
                   </RoughAnnotate>{' '}
@@ -2408,7 +2356,7 @@ export class ButtonComponent {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     use them in every aspect of your design system.
                   </RoughAnnotate>{' '}
@@ -2464,7 +2412,7 @@ export class ButtonComponent {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     mimic real-time behaviors
                   </RoughAnnotate>{' '}
@@ -2499,7 +2447,7 @@ export class ButtonComponent {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     Dev Mode in Figma,
                   </RoughAnnotate>{' '}
@@ -2524,7 +2472,7 @@ export class ButtonComponent {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     reveals the component's faults
                   </RoughAnnotate>{' '}
@@ -2559,7 +2507,7 @@ export class ButtonComponent {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     need to define various states.
                   </RoughAnnotate>{' '}
@@ -2801,7 +2749,7 @@ export class ButtonComponent {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     defining triggers and actions.
                   </RoughAnnotate>{' '}
@@ -2829,7 +2777,7 @@ export class ButtonComponent {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     ten distinct triggers
                   </RoughAnnotate>{' '}
@@ -2860,7 +2808,7 @@ export class ButtonComponent {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     eleven distinct actions
                   </RoughAnnotate>{' '}
@@ -2978,7 +2926,7 @@ export class ButtonComponent {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     It's the evolution of our discipline.
                   </RoughAnnotate>{' '}
@@ -3024,7 +2972,7 @@ export class ButtonComponent {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     thoughtfully structured, clearly documented, and ready to become excellent in
                     development.
@@ -3057,7 +3005,7 @@ export class ButtonComponent {
                     padding={2}
                     animationDuration={1600}
                     showWhenVisible={true}
-                    delay={4000}
+                    delay={200}
                   >
                     valuable team member,
                   </RoughAnnotate>{' '}
