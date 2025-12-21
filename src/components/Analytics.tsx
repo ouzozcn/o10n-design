@@ -41,7 +41,7 @@ export function Analytics() {
     c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
     })(document);
     smartlook('init', '46e9f9cecb01be252cad8a4e8af612aaec201bcc', { region: 'eu' });
-    `}
+        `}
       </Script>
     </>
   );
