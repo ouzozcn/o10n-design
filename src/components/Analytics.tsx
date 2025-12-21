@@ -32,15 +32,14 @@ export function Analytics() {
           })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
         `}
       </Script>
-      {/* Smartlook Web Analytics */}
-      <Script id="smartlook" strategy="afterInteractive">
+      {/* Clarity */}
+      <Script id="clarity" strategy="afterInteractive">
         {`
-  window.smartlook||(function(d) {
-    var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
-    var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
-    c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
-    })(document);
-    smartlook('init', '46e9f9cecb01be252cad8a4e8af612aaec201bcc', { region: 'eu' });
+          (function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+          })(window, document, "clarity", "script", "up83tvx4g2");
         `}
       </Script>
     </>
