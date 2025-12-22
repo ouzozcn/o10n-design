@@ -4,12 +4,16 @@ import { Analytics as VercelAnalytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@/components/Analytics';
 import StructuredData from '@/components/StructuredData';
+import Clarity from '@microsoft/clarity';
 import './globals.css';
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
   variable: '--font-space-grotesk',
 });
+const projectId = 'up83tvx4g2';
+
+Clarity.init(projectId);
 
 export const metadata: Metadata = {
   title: 'Oğuzhan Özcan | Product Designer & Design Engineer',

@@ -368,6 +368,7 @@ export default function HomeClient() {
           </div>
           {/* Brifl DS Section Ends */}
           {/* Jotform Logbook v2  Starts */}
+          {/*
           <div className="JotformLogbook__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center border-b border-stone-900">
             <div className="JotformLogbook__Placeholder w-full lg:w-1/2 ">
               <div className="flex flex-col w-full h-full p-4 lg:p-24 ">
@@ -405,11 +406,12 @@ export default function HomeClient() {
               </div>
             </div>
           </div>
+          {/*
           {/* Jotform Logbook v2 Ends */}
 
           {/* Brifl v2 Section Starts */}
           <div className="Brifl__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center ">
-            <div className="Brifl__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4 order-2 lg:order-1">
+            <div className="Brifl__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4 order-2 lg:order-2">
               <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
                 brifl | Collaborative Form Builder
               </h2>
@@ -445,7 +447,7 @@ export default function HomeClient() {
                 />
               </div>
             </div>
-            <div className="Brifl__Placeholder w-full lg:w-1/2 order-1 lg:order-2">
+            <div className="Brifl__Placeholder w-full lg:w-1/2 order-1 lg:order-1">
               <div className="flex flex-col w-auto h-full p-4 lg:p-24 ">
                 <BriflSample />
               </div>
