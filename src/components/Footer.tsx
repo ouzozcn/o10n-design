@@ -100,7 +100,7 @@ export const Footer: React.FC = () => {
 
       <div className="FooterBottom">
         <div className="FooterBottomText text-stone-900 text-lg text-center font-sans font-normal p-4">
-          Designed and developed with love in Ankara | Oğuzhan Özcan © 2025
+          Designed and developed with love in Ankara | Oğuzhan Özcan © 2026
         </div>
       </div>
     </div>
