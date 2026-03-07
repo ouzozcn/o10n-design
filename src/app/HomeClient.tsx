@@ -40,16 +40,16 @@ export default function HomeClient() {
       </div>
 
       <div className="flex flex-col lg:flex-row w-full">
-        <div className="w-full lg:w-auto h-full lg:h-[536px] lg:border-b border-stone-900">
+        <div className="w-full lg:w-1/2 h-full lg:h-[536px] lg:border-b border-stone-900">
           <InfoCard />
         </div>
 
-        <nav className="grid grid-cols-2 w-full" aria-label="Portfolio Navigation">
+        <nav className="Menu__Nav grid grid-cols-4 lg:w-1/2" aria-label="Portfolio Menu Navigation">
           <h2 className="sr-only">Portfolio Sections</h2>
 
           <MenuItem
             to="/product"
-            className="lg:h-[268px] border-stone-900"
+            className=" border-stone-900"
             title="Products"
             titleClassName="text-md md:text-xl lg:text-2xl"
             svg={
@@ -71,7 +71,7 @@ export default function HomeClient() {
 
           <MenuItem
             to="/case-study"
-            className="lg:h-[268px] border-r-0"
+            className=""
             title="Case Studies"
             titleClassName="text-md md:text-xl lg:text-2xl"
             svg={
@@ -93,7 +93,7 @@ export default function HomeClient() {
 
           <MenuItem
             to="/ideas"
-            className="lg:h-[268px] border-stone-900"
+            className=" border-stone-900"
             title="Ideas"
             titleClassName="text-md md:text-xl lg:text-2xl"
             svg={
@@ -115,7 +115,7 @@ export default function HomeClient() {
 
           <MenuItem
             to="/articles"
-            className="lg:h-[268px] border-r-0 "
+            className=" border-r-0 "
             title="Articles"
             titleClassName="text-md md:text-xl lg:text-2xl"
             svg={
@@ -137,10 +137,10 @@ export default function HomeClient() {
         </nav>
       </div>
 
-      <main className="flex flex-col w-full">
+      <main className="Main__Content flex flex-col w-full">
         <section className="flex flex-col w-full">
           {/* ArticleOne Section Starts */}
-          <div className="ArticleOne__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center border-b border-stone-900">
+          <div className="ArticleOne__Section group flex flex-col lg:flex-row lg:h-[600px] w-full p-6 items-center justify-center border-b border-stone-900">
             <div className="ArticleOne__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4 order-2 lg:order-1">
               <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
                 Component Design for JavaScript Frameworks
@@ -184,7 +184,7 @@ export default function HomeClient() {
           </div>
           {/* ArticleOne Section Ends */}
           {/* Kroma Section Starts */}
-          <div className="Kroma__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center border-b border-stone-900">
+          <div className="Kroma__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  p-6 items-center justify-center border-b border-stone-900">
             <div className="Kroma__Placeholder w-full lg:w-1/2 ">
               <div className="flex flex-col w-full h-full p-4 lg:p-24 ">
                 <KromaSimulator />
@@ -227,7 +227,7 @@ export default function HomeClient() {
           </div>
           {/* Kroma Section Ends */}
           {/* 2FA v2 Section Starts */}
-          <div className="Jotform2FA__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center border-b border-stone-900">
+          <div className="Jotform2FA__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  p-6 items-center justify-center border-b border-stone-900">
             <div className="Jotform2FA__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4 order-2 lg:order-1">
               <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
                 Enhancing Security Through Two-Factor Authentication
@@ -325,7 +325,7 @@ export default function HomeClient() {
           </div>
           {/* GitHub Activity Map Section Ends */}
           {/* Brifl DS Section Starts */}
-          <div className="BriflDS__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center border-b border-stone-900">
+          <div className="BriflDS__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  p-6 items-center justify-center border-b border-stone-900">
             <div className="BriflDS__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4 order-2 lg:order-1">
               <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
                 brifl Design System
@@ -410,7 +410,7 @@ export default function HomeClient() {
           {/* Jotform Logbook v2 Ends */}
 
           {/* Brifl v2 Section Starts */}
-          <div className="Brifl__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center ">
+          <div className="Brifl__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  p-6 items-center justify-center ">
             <div className="Brifl__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4 order-2 lg:order-2">
               <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
                 brifl | Collaborative Form Builder

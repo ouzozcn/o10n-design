@@ -10,8 +10,8 @@ interface InfoCardProps {
 
 const InfoCard: React.FC<InfoCardProps> = () => {
   return (
-    <div className="w-full lg:w-[500px] h-full flex flex-col justify-start items-start border-b lg:border-r lg:border-b-0 border-stone-900">
-      <div className="flex ml-4 mt-4 justify-start items-start">
+    <div className="Info__Card w-full  h-full flex flex-col justify-start items-start border-b lg:border-r lg:border-b-0 border-stone-900">
+      <div className="Info__Card__Image flex ml-4 mt-4 justify-start items-start">
         <Image
           src="/assets/images/braille_logo.svg"
           alt="The letters O and Ö in the Braille alphabet"
@@ -35,7 +35,7 @@ const InfoCard: React.FC<InfoCardProps> = () => {
         <br />
         Nice to meet you.
       </div>
-      <div className="flex mt-auto w-full divide-x-1 border-t border-stone-900 gap-0">
+      <div className="Social__Tabs hidden min-[500px]:flex mt-auto w-full divide-x-1 border-t border-stone-900 gap-0">
         <SimpleTab
           icon={
             <Image src="/assets/images/LinkedinLogo.svg" alt="LinkedIn" width={24} height={24} />

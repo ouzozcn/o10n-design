@@ -4,16 +4,16 @@ import MenuItem from '@/components/MenuItem';
 import { Footer } from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'About Me | Product Designer & Design Engineer | Oğuzhan Özcan',
+  title: 'About Me | Senior Product Designer & Design Engineer | Oğuzhan Özcan',
   description:
-    'Self-taught product designer now transitioning to design engineering. 5+ years designing SaaS B2B products. Passionate about accessibility, design systems, and building bridges between design and code. Currently at Jotform Enterprise.',
+    'Senior Product Designer transitioning to design engineering. 7+ years designing enterprise SaaS products at Jotform and Enocta. Building accessible, data-driven products with React, TypeScript, and design systems. From research to production code.',
   alternates: {
     canonical: 'https://o10n.design/about-me',
   },
   openGraph: {
-    title: 'About Oğuzhan Özcan | Product Designer & Design Engineer',
+    title: 'About Oğuzhan Özcan | Senior Product Designer & Design Engineer',
     description:
-      'Self-taught product designer now transitioning to design engineering. 5+ years designing SaaS B2B products. Passionate about accessibility, design systems, and building bridges between design and code. Currently at Jotform Enterprise.',
+      'Senior Product Designer transitioning to design engineering. 7+ years designing enterprise SaaS products at Jotform and Enocta. Building accessible, data-driven products with React, TypeScript, and design systems. From research to production code.',
     url: 'https://o10n.design/about-me',
     images: [
       {
@@ -29,9 +29,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About Oğuzhan Özcan | Product Designer → Design Engineer',
+    title: 'About Oğuzhan Özcan | Senior Product Designer → Design Engineer',
     description:
-      'Self-taught product designer now transitioning to design engineering. 5+ years designing SaaS B2B products. Passionate about accessibility, design systems, and building bridges between design and code. Currently at Jotform Enterprise.',
+      'Senior Product Designer transitioning to design engineering. 7+ years designing enterprise SaaS products at Jotform and Enocta. Building accessible, data-driven products with React, TypeScript, and design systems. From research to production code.',
     images: ['https://o10n.design/img/og_images/about_me_open_graph.png'],
     creator: '@ouzozcn',
     site: '@ouzozcn',
@@ -58,17 +58,20 @@ export const metadata: Metadata = {
     'Who is Oğuzhan Özcan',
 
     // Current Role
+    'Senior Product Designer',
     'Product Designer',
     'Design Engineer',
     'UX Designer',
     'Self-Taught Designer',
 
     // Company & Experience
+    'Jotform Senior Product Designer',
     'Jotform Product Designer',
     'Jotform Enterprise',
-    '5 Years Experience',
+    '7 Years Experience',
     'SaaS Product Designer',
     'B2B Product Design',
+    'Enterprise Product Design',
 
     // Background
     'Physics Background Designer',
@@ -160,139 +163,151 @@ export default function AboutMe() {
           Hi, I&apos;m Oğuzhan Özcan
         </h1>
         <h2 className="text-xl text-center font-sans text-stone-900 flex items-center justify-center">
-          Self-taught product designer, transitioning into design engineering. I build accessible
-          SaaS products, design systems, and bridges between design and code. Currently at Jotform
-          Enterprise.
+          Senior Product Designer at Jotform. I started in physics, taught myself design, and
+          somewhere along the way started writing production code too.
         </h2>
         <h2 className="text-xl text-center font-sans text-stone-900 flex items-center justify-center">
-          Nice to meet you!
+          Nice to meet you.
         </h2>
       </div>
 
+      {/* TL;DR */}
       <div className="PageContent flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900 lg:min-h-96">
         <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center md:border-r border-b border-stone-900">
           <p className="text-2xl m-8 font-sans">TL;DR</p>
         </div>
         <div className="SectionContent flex flex-col grow-1 w-full h-auto p-8 border-b border-stone-900 gap-4">
           <p className="text-lg font-sans">
-            <b>Self-taught designer</b> with a physics background and systems thinking mindset
+            <b>Senior Product Designer</b> with 7+ years designing enterprise SaaS — currently at
+            Jotform, previously at Enocta.
           </p>
           <p className="text-lg font-sans">
-            <b>5+ years</b> designing complex SaaS B2B products
+            I work across the full product lifecycle: research, strategy, design systems, usability
+            testing, and increasingly — <b>writing the code myself</b> with React, TypeScript,
+            Next.js, and Storybook. This portfolio is built with Next.js 15.
           </p>
           <p className="text-lg font-sans">
-            Currently transitioning into <b>design engineering</b> — learning React, TypeScript, and
-            modern frontend workflows
+            I&apos;ve shipped features used by <b>millions of people</b>: two-factor authentication,
+            OAuth integrations, internal operations platforms, growth experiments across 430,000
+            users.
           </p>
           <p className="text-lg font-sans">
-            Passionate about <b>accessibility, design systems, and AI-driven workflows</b>
+            On the side: <b>Kroma</b>, a free color blindness checker for designers. The{' '}
+            <b>Brifl Design System</b>, 30+ components with Storybook docs. And a published article
+            on designing components for JavaScript frameworks.
           </p>
           <p className="text-lg font-sans">
-            {' '}
-            Built <b>Kroma</b> (free accessibility checker) and <b>Brifl Design System</b> (30+
-            components)
+            Based in <b>Ankara, Turkey.</b> Open to remote work worldwide.
           </p>
           <p className="text-lg font-sans">
-            Based in <b>Ankara, Turkey</b> · Open to remote collaboration worldwide
-          </p>
-          <p className="text-lg font-sans">
-            You can view my resume if you like:{' '}
+            Want the full picture?{' '}
             <a
               href="./assets/documents/oguzhan_ozcan_curriculum_vitae.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 font-bold hover:text-blue-800 hover:underline"
             >
-              View Resume →
+              View my resume →
             </a>
           </p>
         </div>
       </div>
 
+      {/* My Story */}
       <div className="PageContent flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900 lg:min-h-96">
         <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center md:border-r border-b border-stone-900">
           <p className="text-2xl m-8 font-sans">My Story</p>
         </div>
         <div className="SectionContent flex flex-col grow-1 w-full h-auto p-8 border-b border-stone-900 gap-4">
           <p className="text-lg font-sans">
-            I started in science, studying <b>Physics at Middle East Technical University</b>.
-            Though I didn&apos;t complete the degree, the problem-solving mindset, experimental
-            rigor, and systems thinking I developed there continue to shape how I approach design
-            challenges today.
+            I studied <b>Physics at Middle East Technical University</b> — optics concentration, 203
+            credits deep. I never finished the degree, but I came away with something more useful
+            than a diploma: a stubborn habit of asking why things work the way they do.
           </p>
           <p className="text-lg font-sans">
-            I taught myself design out of necessity in 2019—and stayed because I discovered it was
-            the perfect intersection of <b>logic, creativity, and human behavior</b>. What began as
-            self-learning turned into a career designing products used by millions.
+            I taught myself design in 2019, mostly out of curiosity. I had no portfolio, no formal
+            training, and no obvious reason to believe it would go anywhere. But design turned out
+            to be the exact intersection of <b>logic, creativity, and human behavior</b> I had been
+            looking for without knowing it. So I kept going.
           </p>
           <p className="text-lg font-sans">
-            Since 2020, I&apos;ve been designing <b>SaaS B2B products</b>—first at Enocta (learning
-            management systems), and now at <b>Jotform Enterprise</b>, where I work in the
-            Enterprise Division designing secure, scalable experiences for large organizations and
-            government institutions.
+            My first real product role was at Enocta, designing a learning platform used by over 2
+            million people across 374 enterprise clients — as the only designer on the team. That
+            forced a kind of ownership I&apos;m grateful for. In 2023 I joined Jotform Enterprise,
+            and in January 2026 I was promoted to <b>Senior Product Designer</b>.
+          </p>
+          <p className="text-lg font-sans">
+            The physics background never really left. It just showed up differently — in how I model
+            information architecture, structure experiments, and refuse to stop at the first answer
+            that seems to work.
           </p>
         </div>
       </div>
 
+      {/* What I Do Now */}
       <div className="PageContent flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900 lg:min-h-96">
         <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center md:border-r border-b border-stone-900">
           <p className="text-2xl m-8 font-sans">What I Do Now</p>
         </div>
         <div className="SectionContent flex flex-col grow-1 w-full h-auto p-8 border-b border-stone-900 gap-4">
           <p className="text-lg font-sans">
-            At <b>Jotform Enterprise</b>, I design complex features used by thousands of enterprise
-            users—from <b>two-factor authentication</b> (15K+ active users) to secure form
-            encryption, account management, and analytics dashboards.
+            At <b>Jotform</b>, I currently split my time between two things I care about equally.
           </p>
           <p className="text-lg font-sans">
-            I collaborate closely with researchers, developers, product managers, and stakeholders
-            across the company to ship features that are both{' '}
-            <b>thoughtful and technically feasible</b>. My role bridges product thinking, UX design,
-            and technical implementation.
+            The first is <b>Zeus</b> — an internal revenue operations platform I designed and
+            product-managed from scratch. It processes millions of user records, powers the CRM and
+            sales workflow for a 65-person team, and has contributed to significant enterprise
+            revenue growth. Building something that your colleagues depend on every single day is a
+            different kind of responsibility than designing for end users. I like that.
           </p>
           <p className="text-lg font-sans">
-            Beyond UI, I&apos;m deeply interested in <b>how design systems scale</b>, how to
-            automate design-to-code workflows with tools like Storybook and Chromatic, and how to
-            integrate AI into human-centered products without losing sight of usability.
+            The second is <b>growth experimentation</b> — running A/B tests across Jotform&apos;s
+            core user flows to improve conversion, onboarding, and enterprise lead generation. This
+            is where I get to be the most data-driven: forming hypotheses, designing variants,
+            reading results, and iterating fast.
+          </p>
+          <p className="text-lg font-sans">
+            Across both, my workflow looks like this: research and SQL analysis, Figma for design,
+            Storybook for documentation, Chromatic for visual regression testing, and increasingly —{' '}
+            <b>React and TypeScript</b> to ship the thing myself. I am not trying to replace
+            engineers. I am trying to close the gap.
           </p>
         </div>
       </div>
 
+      {/* Beyond Work */}
       <div className="PageContent flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900 lg:min-h-96">
         <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center md:border-r border-b border-stone-900">
           <p className="text-2xl m-8 font-sans">Beyond Work</p>
         </div>
         <div className="SectionContent flex flex-col grow-1 w-full h-auto p-8 border-b border-stone-900 gap-4">
           <p className="text-lg font-sans">
-            I&apos;m passionate about building tools that solve real problems. Side projects like{' '}
-            <b>Kroma</b> (a free color blindness accessibility checker) and{' '}
-            <b>Brifl Design System</b> (React component library) let me explore ideas outside of
-            work constraints.
+            I build things when something bothers me enough. <b>Kroma</b> started because
+            accessibility tools were either paywalled or frustrating to use — so I built a free,
+            no-limit color blindness simulator with React and Vite and put it online. It supports 8
+            vision deficiency types and has no upload limits. That&apos;s it. Simple problems
+            deserve simple solutions.
           </p>
           <p className="text-lg font-sans">
-            I also volunteer in <b>accessibility causes</b>—I taught Braille to visually impaired
-            students during university and continue advocating for inclusive design practices in the
-            Turkish design community.
+            Accessibility is not a checklist item for me. During university, I taught Braille to
+            visually impaired students. That experience made inclusive design feel personal in a way
+            that a WCAG spec sheet never could. I integrate accessibility from the start — not as a
+            pass at the end.
           </p>
           <p className="text-lg font-sans">
-            I occasionally dream of reviving
+            I also wrote a science newsletter during my physics years called{' '}
             <b>
-              {' '}
               <a
                 href="./assets/documents/observare_scientia_issue.1.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 font-bold hover:text-blue-800 hover:underline"
               >
-                ObserveraScientia
+                ObservareScientia
               </a>
             </b>
-            , a science newsletter I started years ago when I was in university.
-          </p>
-          <p className="text-lg font-sans">
-            Currently learning React, TypeScript, and modern frontend workflows to bridge the gap
-            between design and code—because the best way to design for developers is to{' '}
-            <b>think like one</b>.
+            . It never reached many readers, but it taught me something I still use: complex ideas
+            deserve clear explanations, not impressive-sounding ones.
           </p>
         </div>
       </div>
