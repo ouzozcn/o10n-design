@@ -49,7 +49,7 @@ export default function HomeClient() {
 
           <MenuItem
             to="/product"
-            className=" border-stone-900"
+            className=" border-stone-900 justify-center"
             title="Products"
             titleClassName="text-md md:text-xl lg:text-2xl"
             svg={
@@ -71,7 +71,7 @@ export default function HomeClient() {
 
           <MenuItem
             to="/case-study"
-            className=""
+            className="justify-center"
             title="Case Studies"
             titleClassName="text-md md:text-xl lg:text-2xl"
             svg={
@@ -83,7 +83,7 @@ export default function HomeClient() {
                   height={iconConfig.lg.height}
                   style={{ height: iconConfig.lg.height, width: 'auto' }}
                   data-tooltip-id="case-study-tooltip"
-                  data-tooltip-content="Braille letter C – represents Case Studies"
+                  data-tooltip-content="Braille letter C and S – represents Case Studies"
                   data-tooltip-place="right"
                 />
                 <Tooltip id="case-study-tooltip" />
@@ -93,7 +93,7 @@ export default function HomeClient() {
 
           <MenuItem
             to="/ideas"
-            className=" border-stone-900"
+            className=" border-stone-900 justify-center"
             title="Ideas"
             titleClassName="text-md md:text-xl lg:text-2xl"
             svg={
@@ -115,7 +115,7 @@ export default function HomeClient() {
 
           <MenuItem
             to="/articles"
-            className=" border-r-0 "
+            className=" border-r-0 justify-center"
             title="Articles"
             titleClassName="text-md md:text-xl lg:text-2xl"
             svg={
