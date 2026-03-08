@@ -51,17 +51,13 @@ export default function BriflSample() {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleTypefaceSelect = (typefaceId: TypefaceStyle) => {
-    setSelectedTypeface(selectedTypeface === typefaceId ? null : typefaceId);
+    setSelectedTypeface(typefaceId);
+    setIsSubmitted(true);
   };
 
-  const handleSubmit = () => {
-    if (isSubmitted) {
-      // Reset the component
-      setIsSubmitted(false);
-      setSelectedTypeface(null);
-    } else if (selectedTypeface) {
-      setIsSubmitted(true);
-    }
+  const handleSubmitAgain = () => {
+    setIsSubmitted(false);
+    setSelectedTypeface(null);
   };
 
   return (
@@ -73,8 +69,8 @@ export default function BriflSample() {
 
       {/* Content Section */}
       <div
-        className={`Brifl__Content border-t border-stone-900 flex flex-col gap-5 items-center p-5 w-full ${
-          isSubmitted ? 'flex-1 justify-center' : 'h-fit justify-start'
+        className={`Brifl__Content border-t border-stone-900 flex flex-col gap-5 items-center p-5 w-full h-full justify-center ${
+          isSubmitted ? 'flex-1 justify-center' : 'flex-1 justify-center'
         }`}
       >
         {!isSubmitted && (
@@ -89,47 +85,38 @@ export default function BriflSample() {
               <p className="leading-normal">{getTypefaceMessage(selectedTypeface)}</p>
             </div>
           ) : (
-            typefaceOptions.map(option => {
-              const isSelected = selectedTypeface === option.id;
-              return (
-                <button
-                  key={option.id}
-                  type="button"
-                  onClick={() => handleTypefaceSelect(option.id)}
-                  className={`flex items-center justify-center shrink-0 w-16 h-16 border rounded transition-colors ${
-                    isSelected
-                      ? 'border-[#1F4FDE] bg-[#1F4FDE]/30 border-2'
-                      : 'border-stone-700 bg-transparent hover:bg-[#1F4FDE]/20'
-                  }`}
-                  aria-label={`Select ${option.name} typeface`}
-                  aria-pressed={isSelected}
+            typefaceOptions.map(option => (
+              <button
+                key={option.id}
+                type="button"
+                onClick={() => handleTypefaceSelect(option.id)}
+                className="flex items-center justify-center shrink-0 w-16 h-16 border border-stone-700 rounded transition-colors bg-transparent hover:bg-[#1F4FDE]/20 hover:border-[#1F4FDE]"
+                aria-label={`Select ${option.name} typeface`}
+              >
+                <span
+                  className="text-[36px] text-stone-900 text-center leading-none"
+                  style={{ fontFamily: option.fontFamily }}
                 >
-                  <span
-                    className="text-[36px] text-stone-900 text-center leading-none"
-                    style={{ fontFamily: option.fontFamily }}
-                  >
-                    Aa
-                  </span>
-                </button>
-              );
-            })
+                  Aa
+                </span>
+              </button>
+            ))
           )}
         </div>
 
-        {/* Submit Button */}
-        <div className="flex items-center justify-center w-auto min-w-72 ">
-          <Button
-            label={isSubmitted ? 'Submit Again' : 'Submit'}
-            type="primary"
-            size="small"
-            onClick={handleSubmit}
-            isDisabled={!isSubmitted && !selectedTypeface}
-            ariaLabel={
-              isSubmitted ? 'Restart typeface selection' : 'Submit selected typeface preference'
-            }
-            className="bg-[#1F4FDE] hover:bg-[#1F4FDE]/90 min-w-[150px]"
-          />
-        </div>
+        {/* Submit Again - only shown after a typeface has been selected */}
+        {isSubmitted && (
+          <div className="flex items-center justify-center w-auto min-w-72">
+            <Button
+              label="Submit Again"
+              type="primary"
+              size="small"
+              onClick={handleSubmitAgain}
+              ariaLabel="Restart typeface selection"
+              className="bg-[#1F4FDE] hover:bg-[#1F4FDE]/90 min-w-[150px]"
+            />
+          </div>
+        )}
       </div>
     </div>
   );

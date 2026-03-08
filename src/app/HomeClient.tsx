@@ -177,7 +177,7 @@ export default function HomeClient() {
               </div>
             </div>
             <div className="ArticleOne__Placeholder w-full lg:w-1/2 order-1 lg:order-2">
-              <div className="flex flex-col w-auto h-full p-4 lg:p-24 ">
+              <div className="flex flex-col w-auto h-full p-4 lg:p-24 items-center justify-center">
                 <ArticleOneSample />
               </div>
             </div>
@@ -186,7 +186,7 @@ export default function HomeClient() {
           {/* Kroma Section Starts */}
           <div className="Kroma__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  p-6 items-center justify-center border-b border-stone-900">
             <div className="Kroma__Placeholder w-full lg:w-1/2 ">
-              <div className="flex flex-col w-full h-full p-4 lg:p-24 ">
+              <div className="flex flex-col w-full h-full p-4 lg:p-24 items-center justify-center">
                 <KromaSimulator />
               </div>
             </div>
@@ -263,7 +263,7 @@ export default function HomeClient() {
               </div>
             </div>
             <div className="Jotform2FA__Placeholder w-full lg:w-1/2 order-1 lg:order-2">
-              <div className="flex flex-col w-auto h-full p-4 lg:p-24 ">
+              <div className="flex flex-col w-auto h-full p-4 lg:p-24 items-center justify-center">
                 <TwoFactorAuth />
               </div>
             </div>
@@ -361,7 +361,7 @@ export default function HomeClient() {
               </div>
             </div>
             <div className="BriflDS__Placeholder w-full lg:w-1/2 order-1 lg:order-2">
-              <div className="flex flex-col w-auto h-full p-4 lg:p-24 ">
+              <div className="flex flex-col w-auto h-full p-4 lg:p-24 items-center justify-center">
                 <BriflDSSample />
               </div>
             </div>
@@ -448,7 +448,7 @@ export default function HomeClient() {
               </div>
             </div>
             <div className="Brifl__Placeholder w-full lg:w-1/2 order-1 lg:order-1">
-              <div className="flex flex-col w-auto h-full p-4 lg:p-24 ">
+              <div className="flex flex-col w-auto h-full p-4 lg:p-24 items-center justify-center">
                 <BriflSample />
               </div>
             </div>
