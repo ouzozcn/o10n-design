@@ -6,8 +6,6 @@ import PrintIcon from '@mui/icons-material/Print';
 import SearchIcon from '@mui/icons-material/Search';
 import Image from 'next/image';
 import IconButton from '@/components/IconButton';
-import ChevronLeftRoundedIcon from '@mui/icons-material/ChevronLeftRounded';
-import ChevronRightRoundedIcon from '@mui/icons-material/ChevronRightRounded';
 import ArrowBackIosNewRoundedIcon from '@mui/icons-material/ArrowBackIosNewRounded';
 import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
 type ColorBlindnessType =
@@ -222,7 +220,7 @@ export default function KromaSimulator() {
             onClick={goPrev}
             className="shrink-0"
           />
-          <div className="ColorBlindnessTitle min-w-[140px] text-center md:text-xl font-bold font-sans text-base font-normal text-stone-900">
+          <div className="ColorBlindnessTitle min-w-[140px] text-center md:text-xl font-bold font-sans text-base text-stone-900">
             {currentLabel}
           </div>
           <IconButton

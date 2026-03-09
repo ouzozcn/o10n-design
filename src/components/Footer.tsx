@@ -5,8 +5,9 @@ import SimpleTab from './SimpleTab';
 import TextLink from './TextLink';
 import MailIcon from '@mui/icons-material/Mail';
 import Image from 'next/image';
-
+import { FlipWords } from '@/components/ui/flip-words';
 export const Footer: React.FC = () => {
+  const words = ['Figma', 'Next.js', 'Tailwind CSS', 'TypeScript', 'Claude', 'Cursor'];
   return (
     <div className="Footer flex flex-col w-full">
       <div className="FooterTop flex flex-col md:flex-row lg:px-20 w-full md:justify-between items-center bg-teal-50 border-t border-b border-stone-900">
@@ -99,8 +100,10 @@ export const Footer: React.FC = () => {
       </div>
 
       <div className="FooterBottom">
-        <div className="FooterBottomText text-stone-900 text-lg text-center font-sans font-normal p-4">
-          Designed and developed with love in Ankara | Oğuzhan Özcan © 2026
+        <div className="FooterBottomText text-stone-900 text-md md:text-lg text-center font-sans font-normal p-4">
+          Designed and developed with
+          <FlipWords words={words} duration={1000} />
+          in Ankara ❖ Oğuzhan Özcan © 2026
         </div>
       </div>
     </div>
