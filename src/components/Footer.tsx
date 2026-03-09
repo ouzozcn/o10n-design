@@ -6,6 +6,7 @@ import TextLink from './TextLink';
 import MailIcon from '@mui/icons-material/Mail';
 import Image from 'next/image';
 import { FlipWords } from '@/components/ui/flip-words';
+import { TextMorph } from '@/components/forgeui/text-morph';
 export const Footer: React.FC = () => {
   const words = ['Figma', 'Next.js', 'Tailwind CSS', 'TypeScript', 'Claude', 'Cursor'];
   return (
@@ -100,10 +101,9 @@ export const Footer: React.FC = () => {
       </div>
 
       <div className="FooterBottom">
-        <div className="FooterBottomText text-stone-900 text-md md:text-lg text-center font-sans font-normal p-4">
-          Designed and developed with
-          <FlipWords words={words} duration={1000} />
-          in Ankara ❖ Oğuzhan Özcan © 2026
+        <div className="FooterBottomText flex flex-col md:flex-row items-center justify-center gap-2 text-stone-900 text-md md:text-lg text-center font-sans font-normal p-4">
+          Designed and developed with <TextMorph words={words} interval={2000} /> in Ankara ❖
+          Oğuzhan Özcan © 2026
         </div>
       </div>
     </div>
