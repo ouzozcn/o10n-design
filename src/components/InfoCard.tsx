@@ -43,6 +43,7 @@ const InfoCard: React.FC<InfoCardProps> = () => {
               'turns data into decisions.',
               'tests assumptions, not hunches.',
               'writes components that scale.',
+              'works at Jotform.',
             ]}
             typingSpeed={100}
             pauseDuration={1200}
