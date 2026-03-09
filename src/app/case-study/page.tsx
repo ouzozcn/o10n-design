@@ -1,9 +1,7 @@
 import type { Metadata } from 'next';
 import React from 'react';
 import MenuItem from '@/components/MenuItem';
-import RowCard from '@/components/RowCard';
 import { Footer } from '@/components/Footer';
-import Image from 'next/image';
 import RoughAnnotate from '@/components/rough-notation/RoughAnnotate';
 import Tag from '@/components/Tag';
 import Button from '@/components/Button';
