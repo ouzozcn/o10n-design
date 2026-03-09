@@ -18,7 +18,7 @@ import BriflDSSample from '@/components/examples/BriflDSSample';
 import ArticleOneSample from '@/components/examples/ArticleOneSample';
 const iconConfig = {
   sm: { height: 24, sizes: '24px' },
-  md: { height: 32, sizes: '32px' },
+  md: { height: 64, sizes: '64px' },
   lg: { height: 72, sizes: '72px' },
 };
 /* Date formatter for GitHub Calendar */
@@ -40,18 +40,18 @@ export default function HomeClient() {
       </div>
 
       <div className="flex flex-col lg:flex-row w-full">
-        <div className="w-full lg:w-auto h-full lg:h-[536px] lg:border-b border-stone-900">
+        <div className="w-full lg:w-1/2 h-full lg:h-[536px] lg:border-b border-stone-900">
           <InfoCard />
         </div>
 
-        <nav className="grid grid-cols-2 w-full" aria-label="Portfolio Navigation">
+        <nav className="Menu__Nav grid grid-cols-4 lg:w-1/2" aria-label="Portfolio Menu Navigation">
           <h2 className="sr-only">Portfolio Sections</h2>
 
           <MenuItem
             to="/product"
-            className="lg:h-[268px] border-stone-900"
+            className=" border-stone-900 justify-center"
             title="Products"
-            titleClassName="text-md md:text-xl lg:text-2xl"
+            titleClassName="text-md md:text-lg lg:text-xl"
             svg={
               <>
                 <Image
@@ -71,9 +71,9 @@ export default function HomeClient() {
 
           <MenuItem
             to="/case-study"
-            className="lg:h-[268px] border-r-0"
+            className="justify-center md:pl-6 md:pr-0"
             title="Case Studies"
-            titleClassName="text-md md:text-xl lg:text-2xl"
+            titleClassName="text-md md:text-lg lg:text-xl"
             svg={
               <>
                 <Image
@@ -83,7 +83,7 @@ export default function HomeClient() {
                   height={iconConfig.lg.height}
                   style={{ height: iconConfig.lg.height, width: 'auto' }}
                   data-tooltip-id="case-study-tooltip"
-                  data-tooltip-content="Braille letter C – represents Case Studies"
+                  data-tooltip-content="Braille letter C and S – represents Case Studies"
                   data-tooltip-place="right"
                 />
                 <Tooltip id="case-study-tooltip" />
@@ -93,9 +93,9 @@ export default function HomeClient() {
 
           <MenuItem
             to="/ideas"
-            className="lg:h-[268px] border-stone-900"
+            className=" border-stone-900 justify-center"
             title="Ideas"
-            titleClassName="text-md md:text-xl lg:text-2xl"
+            titleClassName="text-md md:text-lg lg:text-xl"
             svg={
               <>
                 <Image
@@ -115,9 +115,9 @@ export default function HomeClient() {
 
           <MenuItem
             to="/articles"
-            className="lg:h-[268px] border-r-0 "
+            className=" border-r-0 justify-center"
             title="Articles"
-            titleClassName="text-md md:text-xl lg:text-2xl"
+            titleClassName="text-md md:text-lg lg:text-xl"
             svg={
               <>
                 <Image
@@ -137,10 +137,10 @@ export default function HomeClient() {
         </nav>
       </div>
 
-      <main className="flex flex-col w-full">
+      <main className="Main__Content flex flex-col w-full">
         <section className="flex flex-col w-full">
           {/* ArticleOne Section Starts */}
-          <div className="ArticleOne__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center border-b border-stone-900">
+          <div className="ArticleOne__Section group flex flex-col lg:flex-row lg:h-[600px] w-full p-6 items-center justify-center border-b border-stone-900">
             <div className="ArticleOne__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4 order-2 lg:order-1">
               <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
                 Component Design for JavaScript Frameworks
@@ -177,16 +177,16 @@ export default function HomeClient() {
               </div>
             </div>
             <div className="ArticleOne__Placeholder w-full lg:w-1/2 order-1 lg:order-2">
-              <div className="flex flex-col w-auto h-full p-4 lg:p-24 ">
+              <div className="flex flex-col w-auto h-full p-4 lg:p-24 items-center justify-center">
                 <ArticleOneSample />
               </div>
             </div>
           </div>
           {/* ArticleOne Section Ends */}
           {/* Kroma Section Starts */}
-          <div className="Kroma__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center border-b border-stone-900">
+          <div className="Kroma__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  p-6 items-center justify-center border-b border-stone-900">
             <div className="Kroma__Placeholder w-full lg:w-1/2 ">
-              <div className="flex flex-col w-full h-full p-4 lg:p-24 ">
+              <div className="flex flex-col w-full h-full p-4 lg:p-24 items-center justify-center">
                 <KromaSimulator />
               </div>
             </div>
@@ -227,7 +227,7 @@ export default function HomeClient() {
           </div>
           {/* Kroma Section Ends */}
           {/* 2FA v2 Section Starts */}
-          <div className="Jotform2FA__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center border-b border-stone-900">
+          <div className="Jotform2FA__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  p-6 items-center justify-center border-b border-stone-900">
             <div className="Jotform2FA__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4 order-2 lg:order-1">
               <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
                 Enhancing Security Through Two-Factor Authentication
@@ -263,7 +263,7 @@ export default function HomeClient() {
               </div>
             </div>
             <div className="Jotform2FA__Placeholder w-full lg:w-1/2 order-1 lg:order-2">
-              <div className="flex flex-col w-auto h-full p-4 lg:p-24 ">
+              <div className="flex flex-col w-auto h-full p-4 lg:p-24 items-center justify-center">
                 <TwoFactorAuth />
               </div>
             </div>
@@ -325,7 +325,7 @@ export default function HomeClient() {
           </div>
           {/* GitHub Activity Map Section Ends */}
           {/* Brifl DS Section Starts */}
-          <div className="BriflDS__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center border-b border-stone-900">
+          <div className="BriflDS__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  p-6 items-center justify-center border-b border-stone-900">
             <div className="BriflDS__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4 order-2 lg:order-1">
               <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
                 brifl Design System
@@ -361,7 +361,7 @@ export default function HomeClient() {
               </div>
             </div>
             <div className="BriflDS__Placeholder w-full lg:w-1/2 order-1 lg:order-2">
-              <div className="flex flex-col w-auto h-full p-4 lg:p-24 ">
+              <div className="flex flex-col w-auto h-full p-4 lg:p-24 items-center justify-center">
                 <BriflDSSample />
               </div>
             </div>
@@ -410,7 +410,7 @@ export default function HomeClient() {
           {/* Jotform Logbook v2 Ends */}
 
           {/* Brifl v2 Section Starts */}
-          <div className="Brifl__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center ">
+          <div className="Brifl__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  p-6 items-center justify-center ">
             <div className="Brifl__Text flex flex-col w-full lg:w-1/2 p-4 lg:p-20 gap-4 order-2 lg:order-2">
               <h2 className="text-stone-900 text-xl font-sans font-normal lg:text-3xl">
                 brifl | Collaborative Form Builder
@@ -448,7 +448,7 @@ export default function HomeClient() {
               </div>
             </div>
             <div className="Brifl__Placeholder w-full lg:w-1/2 order-1 lg:order-1">
-              <div className="flex flex-col w-auto h-full p-4 lg:p-24 ">
+              <div className="flex flex-col w-auto h-full p-4 lg:p-24 items-center justify-center">
                 <BriflSample />
               </div>
             </div>

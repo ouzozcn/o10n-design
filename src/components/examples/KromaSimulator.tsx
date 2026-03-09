@@ -1,12 +1,15 @@
 'use client';
 
 import React, { useState } from 'react';
-import Button from '@/components/Button';
 import HomeIcon from '@mui/icons-material/Home';
 import PrintIcon from '@mui/icons-material/Print';
 import SearchIcon from '@mui/icons-material/Search';
 import Image from 'next/image';
-
+import IconButton from '@/components/IconButton';
+import ChevronLeftRoundedIcon from '@mui/icons-material/ChevronLeftRounded';
+import ChevronRightRoundedIcon from '@mui/icons-material/ChevronRightRounded';
+import ArrowBackIosNewRoundedIcon from '@mui/icons-material/ArrowBackIosNewRounded';
+import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
 type ColorBlindnessType =
   | 'protanomaly'
   | 'deuteranomaly'
@@ -70,9 +73,20 @@ const colorBlindnessTypes: ColorBlindnessType[] = [
   'achromatopsia',
 ];
 
+const SLIDER_OPTIONS: ColorBlindnessType[] = [null, ...colorBlindnessTypes];
+
 export default function KromaSimulator() {
-  const [selectedType, setSelectedType] = useState<ColorBlindnessType>(null);
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const selectedType = SLIDER_OPTIONS[selectedIndex];
   const selectedFilter = selectedType ? colorBlindnessFilters[selectedType] : null;
+
+  const goPrev = () => {
+    setSelectedIndex(prev => (prev - 1 + SLIDER_OPTIONS.length) % SLIDER_OPTIONS.length);
+  };
+  const goNext = () => {
+    setSelectedIndex(prev => (prev + 1) % SLIDER_OPTIONS.length);
+  };
+  const currentLabel = selectedIndex === 0 ? 'Normal' : (selectedFilter?.name ?? 'Normal');
 
   const iconFilterStyle: React.CSSProperties = selectedFilter
     ? { filter: selectedFilter.filter }
@@ -150,7 +164,7 @@ export default function KromaSimulator() {
         </defs>
       </svg>
 
-      <div className="flex flex-col h-auto gap-0 items-center  rounded-lg ">
+      <div className="flex flex-col lg:w-[600px] h-auto gap-0 items-center  rounded-lg ">
         {/* Title Section */}
         <div className=" flex flex-col gap-0 items-center justify-center p-7 shrink-0 w-full">
           <div className=" relative shrink-0 ">
@@ -189,29 +203,35 @@ export default function KromaSimulator() {
         {/* CTA Section */}
         <div className=" flex gap-2 items-center justify-center pt-4 px-1 relative shrink-0 w-full">
           <div className="flex flex-col font-sans font-normal justify-center  text-base text-stone-900 text-center ">
-            <p className="leading-normal">Select a type to see how color blindness affects</p>
+            <p className="leading-normal">
+              Select a type to see how color blindness affects the color perception
+            </p>
           </div>
         </div>
 
-        {/* Buttons Wrapper */}
-        <div className=" gap-2 grid grid-cols-2 md:grid-cols-4 grid-rows-2 h-auto p-4 relative shrink-0 w-full">
-          {colorBlindnessTypes.map((type, index) => {
-            if (!type) return null;
-            const filter = colorBlindnessFilters[type];
-            const isSelected = selectedType === type;
-
-            return (
-              <Button
-                key={type}
-                label={filter.name}
-                type={isSelected ? 'primary' : 'secondary'}
-                size="small"
-                onClick={() => setSelectedType(isSelected ? null : type)}
-                className="min-w-[58px]"
-                ariaLabel={`Select ${filter.name} color blindness type`}
-              />
-            );
-          })}
+        {/* Control */}
+        <div
+          className="Control flex gap-2 items-center justify-center p-4 relative shrink-0 w-full"
+          role="group"
+          aria-label="Color blindness type"
+        >
+          <IconButton
+            type="tertiary"
+            size="small"
+            icon={<ArrowBackIosNewRoundedIcon />}
+            onClick={goPrev}
+            className="shrink-0"
+          />
+          <div className="ColorBlindnessTitle min-w-[140px] text-center md:text-xl font-bold font-sans text-base font-normal text-stone-900">
+            {currentLabel}
+          </div>
+          <IconButton
+            type="tertiary"
+            size="small"
+            icon={<ArrowForwardIosRoundedIcon />}
+            onClick={goNext}
+            className="shrink-0"
+          />
         </div>
       </div>
     </div>
