@@ -14,7 +14,7 @@ export interface MenuItemProps {
 const MenuItem: React.FC<MenuItemProps> = ({ title, svg, className, to, titleClassName }) => {
   const content = (
     <div
-      className={`Menu__Item w-full  p-3 md:p-6 lg:p-8 bg-neutral hover:bg-amber-200 border-b border-r border-stone-900 flex flex-col h-full justify-end gap-12  ${
+      className={`Menu__Item w-full  p-3 md:p-6 bg-neutral hover:bg-amber-200 border-b border-r border-stone-900 flex flex-col h-full justify-end gap-6  ${
         className?.includes('flex-1') ? '!min-h-0 !p-6 h-full' : ''
       } ${className}`}
     >

@@ -18,7 +18,7 @@ import BriflDSSample from '@/components/examples/BriflDSSample';
 import ArticleOneSample from '@/components/examples/ArticleOneSample';
 const iconConfig = {
   sm: { height: 24, sizes: '24px' },
-  md: { height: 32, sizes: '32px' },
+  md: { height: 64, sizes: '64px' },
   lg: { height: 72, sizes: '72px' },
 };
 /* Date formatter for GitHub Calendar */
@@ -51,7 +51,7 @@ export default function HomeClient() {
             to="/product"
             className=" border-stone-900 justify-center"
             title="Products"
-            titleClassName="text-md md:text-xl lg:text-2xl"
+            titleClassName="text-md md:text-lg lg:text-xl"
             svg={
               <>
                 <Image
@@ -71,9 +71,9 @@ export default function HomeClient() {
 
           <MenuItem
             to="/case-study"
-            className="justify-center"
+            className="justify-center md:pl-6 md:pr-0"
             title="Case Studies"
-            titleClassName="text-md md:text-xl lg:text-2xl"
+            titleClassName="text-md md:text-lg lg:text-xl"
             svg={
               <>
                 <Image
@@ -95,7 +95,7 @@ export default function HomeClient() {
             to="/ideas"
             className=" border-stone-900 justify-center"
             title="Ideas"
-            titleClassName="text-md md:text-xl lg:text-2xl"
+            titleClassName="text-md md:text-lg lg:text-xl"
             svg={
               <>
                 <Image
@@ -117,7 +117,7 @@ export default function HomeClient() {
             to="/articles"
             className=" border-r-0 justify-center"
             title="Articles"
-            titleClassName="text-md md:text-xl lg:text-2xl"
+            titleClassName="text-md md:text-lg lg:text-xl"
             svg={
               <>
                 <Image

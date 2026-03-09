@@ -27,7 +27,7 @@ const InfoCard: React.FC<InfoCardProps> = () => {
       </div>
       */}
       <Tooltip id="braille-tooltip" />
-      <div className="Info__Card__Content flex flex-col h-full p-4 md:p-12 gap-4 justify-center items-start my-auto">
+      <div className="Info__Card__Content flex flex-col h-full p-4  md:py-12 md:pr-0 md:pl-12 gap-4 justify-center items-start my-auto">
         <div className=" self-stretch font-sans text-black text-3xl md:text-4xl">
           Hi there, it&apos;s Oğuz.
         </div>
