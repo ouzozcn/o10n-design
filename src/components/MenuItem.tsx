@@ -14,7 +14,7 @@ export interface MenuItemProps {
 const MenuItem: React.FC<MenuItemProps> = ({ title, svg, className, to, titleClassName }) => {
   const content = (
     <div
-      className={`Menu__Item w-full  p-3 md:p-6 bg-neutral hover:bg-amber-200 border-b border-r border-stone-900 flex flex-col h-full justify-end gap-6  ${
+      className={`Menu__Item w-full   bg-neutral hover:bg-amber-200 border-b border-r border-stone-900 flex flex-col h-full   ${
         className?.includes('flex-1') ? '!min-h-0 !p-6 h-full' : ''
       } ${className}`}
     >
@@ -22,7 +22,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ title, svg, className, to, titleCla
         {svg}
       </div>
       <div
-        className={`Menu__Item__Title text-stone-900 font-sans font-medium self-start text-left ${
+        className={`Menu__Item__Title text-stone-900 font-sans font-medium  ${
           className?.includes('flex-1') ? 'text-md lg:text-xl' : 'text-md lg:text-2xl'
         } ${titleClassName}`}
       >

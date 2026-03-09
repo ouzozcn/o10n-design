@@ -114,7 +114,7 @@ export default function CaseStudy() {
         />
         <MenuItem
           to="/product"
-          className="flex-1 text-center md:border-b-0 border-r-0 md:border-r border-stone-900"
+          className="flex-1 text-center md:border-b-0 border-r-0 md:border-r border-stone-900 hover:bg-red-200"
           title="Products"
         />
         <MenuItem
@@ -124,12 +124,12 @@ export default function CaseStudy() {
         />
         <MenuItem
           to="/ideas"
-          className="flex-1 text-center md:border-b-0 border-r-0 md:border-r border-stone-900"
+          className="flex-1 text-center md:border-b-0 border-r-0 md:border-r border-stone-900 hover:bg-purple-200"
           title="Ideas"
         />
         <MenuItem
           to="/articles"
-          className="flex-1 text-center md:border-b-0 border-b-0 border-r-0 md:border-r border-stone-900"
+          className="flex-1 text-center md:border-b-0 border-b-0 border-r-0 md:border-r border-stone-900 hover:bg-emerald-200"
           title="Articles"
         />
       </div>
@@ -183,7 +183,7 @@ export default function CaseStudy() {
             </div>
           </div>
           <div className="2FA__Placeholder w-full lg:w-1/2 ">
-            <div className="flex flex-col w-auto h-full p-4 lg:p-24 ">
+            <div className="flex flex-col w-auto h-full p-4 lg:p-24 items-center justify-center ">
               <TwoFactorAuth />
             </div>
           </div>
