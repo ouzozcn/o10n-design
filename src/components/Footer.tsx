@@ -5,7 +5,6 @@ import SimpleTab from './SimpleTab';
 import TextLink from './TextLink';
 import MailIcon from '@mui/icons-material/Mail';
 import Image from 'next/image';
-import { FlipWords } from '@/components/ui/flip-words';
 import { TextMorph } from '@/components/forgeui/text-morph';
 export const Footer: React.FC = () => {
   const words = ['Figma', 'Next.js', 'Tailwind CSS', 'TypeScript', 'Claude', 'Cursor'];

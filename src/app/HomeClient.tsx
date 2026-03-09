@@ -49,7 +49,7 @@ export default function HomeClient() {
 
           <MenuItem
             to="/product"
-            className=" border-stone-900 justify-center"
+            className=" border-stone-900 justify-center items-center p-2 md:p-4 gap-6 hover:bg-red-200"
             title="Products"
             titleClassName="text-md md:text-lg lg:text-xl"
             svg={
@@ -71,7 +71,7 @@ export default function HomeClient() {
 
           <MenuItem
             to="/case-study"
-            className="justify-center md:pl-6 md:pr-0"
+            className="justify-center items-center p-2 md:p-4 gap-6 hover:bg-lime-200"
             title="Case Studies"
             titleClassName="text-md md:text-lg lg:text-xl"
             svg={
@@ -93,7 +93,7 @@ export default function HomeClient() {
 
           <MenuItem
             to="/ideas"
-            className=" border-stone-900 justify-center"
+            className=" border-stone-900 justify-center items-center p-2 md:p-4 gap-6 hover:bg-purple-200"
             title="Ideas"
             titleClassName="text-md md:text-lg lg:text-xl"
             svg={
@@ -115,7 +115,7 @@ export default function HomeClient() {
 
           <MenuItem
             to="/articles"
-            className=" border-r-0 justify-center"
+            className=" border-r-0 justify-center items-center p-2 md:p-4 gap-6 hover:bg-emerald-200"
             title="Articles"
             titleClassName="text-md md:text-lg lg:text-xl"
             svg={

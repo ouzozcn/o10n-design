@@ -220,7 +220,7 @@ export default function KromaSimulator() {
             onClick={goPrev}
             className="shrink-0"
           />
-          <div className="ColorBlindnessTitle min-w-[140px] text-center md:text-xl font-bold font-sans text-base text-stone-900">
+          <div className="ColorBlindnessTitle min-w-[140px] text-center md:text-xl font-medium font-sans text-base text-stone-900">
             {currentLabel}
           </div>
           <IconButton

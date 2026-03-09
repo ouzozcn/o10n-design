@@ -101,30 +101,30 @@ export const metadata: Metadata = {
 export default function Products() {
   return (
     <div className="w-[calc(100%-1rem)] md:w-[calc(100%-4rem)] mx-2 md:mx-8 border-collapse border border-stone-900 min-h-screen bg-theme-primary">
-      <div className="md:sticky md:top-0 md:z-10 flex flex-col md:flex-row w-auto border-b border-stone-900 bg-theme-primary">
+      <div className="md:sticky md:top-0 md:z-10 flex flex-col md:flex-row w-full border-b border-stone-900 bg-theme-primary">
         <MenuItem
           to="/"
-          className="flex-1 md:border-b-0 border-r-0 md:border-r border-stone-900 text-center"
+          className="flex-1 md:border-b-0 border-r-0 md:border-r border-stone-900 text-center w-full "
           title="Home"
         />
         <MenuItem
           to="/product"
-          className="flex-1 text-center md:border-b-0 border-r-0 md:border-r border-stone-900 bg-red-200 hover:bg-red-200 cursor-default"
+          className="flex-1 text-center md:border-b-0 border-r-0 md:border-r border-stone-900 bg-red-200 hover:bg-red-200 cursor-default w-full"
           title="Products"
         />
         <MenuItem
           to="/case-study"
-          className="flex-1 text-center md:border-b-0 border-r-0 md:border-r border-stone-900"
+          className="flex-1 text-center md:border-b-0 border-r-0 md:border-r border-stone-900 w-full hover:bg-lime-200"
           title="Case Studies"
         />
         <MenuItem
           to="/ideas"
-          className="flex-1 text-center md:border-b-0 border-r-0 md:border-r border-stone-900"
+          className="flex-1 text-center md:border-b-0 border-r-0 md:border-r border-stone-900 w-full hover:bg-purple-200"
           title="Ideas"
         />
         <MenuItem
           to="/articles"
-          className="flex-1 text-center md:border-b-0 border-b-0 border-r-0 md:border-r border-stone-900"
+          className="flex-1 text-center md:border-b-0 border-b-0 border-r-0 md:border-r border-stone-900 w-full hover:bg-emerald-200"
           title="Articles"
         />
       </div>
@@ -143,8 +143,8 @@ export default function Products() {
       <div className="PageContent flex flex-col w-full h-full border-stone-900">
         {/* Kroma Section Starts */}
         <div className="Kroma__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center border-b border-stone-900">
-          <div className="Kroma__Placeholder w-full lg:w-1/2 ">
-            <div className="flex flex-col w-full h-full p-4 lg:p-24 ">
+          <div className="Kroma__Placeholder w-full lg:w-1/2  ">
+            <div className="flex flex-col w-full h-full p-4 lg:p-24 items-center justify-center ">
               <KromaSimulator />
             </div>
           </div>
@@ -221,7 +221,7 @@ export default function Products() {
             </div>
           </div>
           <div className="BriflDS__Placeholder w-full lg:w-1/2 ">
-            <div className="flex flex-col w-auto h-full p-4 lg:p-24 ">
+            <div className="flex flex-col w-auto h-full p-4 lg:p-24  items-center justify-center">
               <BriflDSSample />
             </div>
           </div>

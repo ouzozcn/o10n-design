@@ -116,12 +116,12 @@ export default function Ideas() {
         />
         <MenuItem
           to="/product"
-          className="flex-1 text-center md:border-b-0 border-r-0 md:border-r border-stone-900"
+          className="flex-1 text-center md:border-b-0 border-r-0 md:border-r border-stone-900 hover:bg-red-200"
           title="Products"
         />
         <MenuItem
           to="/case-study"
-          className="flex-1 text-center md:border-b-0 border-r-0 md:border-r border-stone-900"
+          className="flex-1 text-center md:border-b-0 border-r-0 md:border-r border-stone-900 hover:bg-lime-200"
           title="Case Studies"
         />
         <MenuItem
@@ -131,7 +131,7 @@ export default function Ideas() {
         />
         <MenuItem
           to="/articles"
-          className="flex-1 text-center md:border-b-0 border-b-0 border-r-0 md:border-r border-stone-900"
+          className="flex-1 text-center md:border-b-0 border-b-0 border-r-0 md:border-r border-stone-900 hover:bg-emerald-200"
           title="Articles"
         />
       </div>
@@ -150,7 +150,7 @@ export default function Ideas() {
         {/* Jotform Logbook v2  Starts */}
         <div className="JotformLogbook__Section group flex flex-col lg:flex-row lg:h-[600px] w-full  items-center justify-center border-b border-stone-900">
           <div className="JotformLogbook__Placeholder w-full lg:w-1/2 ">
-            <div className="flex flex-col w-full h-full p-4 lg:p-24 ">
+            <div className="flex flex-col w-full h-full p-4 lg:p-24 items-center justify-center">
               <Image
                 src="/img/thumbs/thumb-logbook.svg"
                 alt="Jotform Logbook interface showing company updates and notifications"
@@ -226,7 +226,7 @@ export default function Ideas() {
             </div>
           </div>
           <div className="Brifl__Placeholder w-full lg:w-1/2 ">
-            <div className="flex flex-col w-auto h-full p-4 lg:p-24 ">
+            <div className="flex flex-col w-auto h-full p-4 lg:p-24 items-center justify-center">
               <BriflSample />
             </div>
           </div>
