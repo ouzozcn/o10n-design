@@ -616,10 +616,10 @@ export default function ComponentDesignForJavaScriptFrameworks() {
           </div>
           <div
             className="BlogContent flex flex-col w-full gap-4 scroll-mt-[87px]"
-            id="the-universal-component-model"
+            id="the-basic-component-model"
           >
             <SectionTitle
-              title="1.1 The Universal Component Model"
+              title="1.1 The Basic Component Model"
               className="md:sticky md:top-[87px] md:self-start"
               color="neutral"
             />
@@ -656,19 +656,19 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <div className="Image__Container flex flex-col items-center justify-center w-full gap-6 my-4 lg:my-6">
                   <Image
                     src="/img/js-components/universal_component_model.svg"
-                    alt="Universal Component Model"
+                    alt="Basic Component Model"
                     width={600}
                     height={1}
                   />
                   <p className="text-center text-sm text-stone-600">
-                    Universal Component Model Diagram
+                    Basic Component Model Diagram
                   </p>
                 </div>
                 <p>
-                  When you design components with these universal concepts in mind, your work
-                  translates smoothly across most popular frameworks. A well-designed button in
-                  Figma becomes an equally well-implemented button in React (technically a library,
-                  not a full framework), Vue, Angular, or Svelte.
+                  When you design components with these basic concepts in mind, your work translates
+                  smoothly across most popular frameworks. A well-designed button in Figma becomes
+                  an equally well-implemented button in React (technically a library, not a full
+                  framework), Vue, Angular, or Svelte.
                 </p>
               </div>
             </div>
@@ -3169,8 +3169,8 @@ export class ButtonComponent {
             />
             <TextLink
               className="ml-4  text-sm"
-              label="1.1. The Universal Component Model"
-              to="#the-universal-component-model"
+              label="1.1. The Basic Component Model"
+              to="#the-basic-component-model"
             />
             <TextLink
               className="ml-4  text-sm"

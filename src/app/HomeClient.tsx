@@ -153,7 +153,7 @@ export default function HomeClient() {
                   padding={2}
                   animationDuration={1200}
                   showWhenVisible={true}
-                  delay={1000}
+                  delay={2500}
                 >
                   Structure, Properties, Tokens, and Interaction
                 </RoughAnnotate>{' '}
@@ -197,12 +197,12 @@ export default function HomeClient() {
               <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
                 A free, no-limits{' '}
                 <RoughAnnotate
-                  type="highlight"
-                  color="#a7f3d0"
+                  type="box"
+                  color="#ef4444"
                   padding={2}
                   animationDuration={1200}
                   showWhenVisible={true}
-                  delay={1000}
+                  delay={2500}
                 >
                   color blindness simulator
                 </RoughAnnotate>{' '}
@@ -238,7 +238,7 @@ export default function HomeClient() {
                   type="underline"
                   color="#0ea5e9"
                   padding={2}
-                  delay={1000}
+                  delay={2500}
                   animationDuration={1200}
                   showWhenVisible={true}
                 >
@@ -282,7 +282,7 @@ export default function HomeClient() {
                 padding={2}
                 animationDuration={1200}
                 showWhenVisible={true}
-                delay={1000}
+                delay={2500}
               >
                 one commit at a time.
               </RoughAnnotate>{' '}
@@ -333,14 +333,14 @@ export default function HomeClient() {
               <p className="text-stone-900 text-sm font-normal font-sans lg:text-base">
                 A modular,{' '}
                 <RoughAnnotate
-                  type="highlight"
-                  color="#a7f3d0"
+                  type="underline"
+                  color="#ef4444"
                   padding={2}
                   animationDuration={1200}
                   showWhenVisible={true}
-                  delay={1000}
+                  delay={2500}
                 >
-                  React-friendly component library
+                  component library for React
                 </RoughAnnotate>{' '}
                 based on atomic design principles. Contains over 30 components and 200+ states and
                 variants.
@@ -423,7 +423,7 @@ export default function HomeClient() {
                   padding={2}
                   animationDuration={1200}
                   showWhenVisible={true}
-                  delay={1000}
+                  delay={2500}
                 >
                   {' '}
                   designed for creatives

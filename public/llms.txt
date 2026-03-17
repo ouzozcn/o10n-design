@@ -1,11 +1,11 @@
-# llms.txt for Oğuzhan Özcan | Product Designer & Design Engineer
+# llms.txt for Oguzhan Ozcan | Senior Product Designer & Design Engineer
 
 ## Site Information
 
 -   **URL**: https://o10n.design
--   **Title**: Oğuzhan Özcan | Product Designer & Design Engineer
+-   **Title**: Oguzhan Ozcan | Senior Product Designer & Design Engineer
 -   **Language**: en-US
--   **Last Updated**: 2025-08-30
+-   **Last Updated**: 2026-03-17
 -   **Content Type**: Portfolio, Case Studies, Technical Articles,
     Design Resources
 -   **Target Audience**: Designers, Developers, Product Managers, Design
@@ -13,26 +13,30 @@
 
 ## Author
 
--   **Name**: Oğuzhan Özcan
--   **Alternate Names**: Oğuzhan Özcan, Oğuz Özcan
--   **Role**: Product Designer at Jotform
--   **Location**: Ankara, Turkey (Üniversiteler Mah. ODTÜ Teknokent,
+-   **Name**: Oguzhan Ozcan
+-   **Alternate Names**: Oguzhan Ozcan, Oguz Ozcan
+-   **Role**: Senior Product Designer at Jotform (January 2026 - Present)
+-   **Previous Role**: Product Designer at Jotform (March 2023 - December 2025)
+-   **Location**: Ankara, Turkey (Universiteler Mah. ODTU Teknokent,
     06800)
 -   **Email**: oguz@o10n.design
 -   **Website**: https://o10n.design
--   **Education**: Middle East Technical University (METU) -Physics (Dropout-No Grade Earned)
--   **Description**: Analytics and data-driven product designer who
-    prioritizes research-based methodologies, accessibility,
-    user-centered designs, and developer friendliness. Specializes in
-    design systems, frontend development, and bridging
-    design-development gaps.
+-   **Education**: Middle East Technical University (METU) - Physics,
+    Optical Engineering concentration (203 ECTS completed, degree not completed)
+-   **Description**: Data-driven senior product designer and design
+    engineer with 7+ years of experience in enterprise SaaS. Specializes
+    in design systems, growth experimentation, internal platform design,
+    and bridging design-development gaps through a full Figma to
+    Storybook to React/TypeScript pipeline. Physics background informs
+    systems thinking and quantitative approach to design decisions.
 
 ## Site Purpose & Value Proposition
 
-Personal portfolio showcasing product design, UI/UX design, design
-systems, and technical writing. Features case studies, experiments, and
-insights on design and development practices. Provides practical
-knowledge for designers and developers working together.
+Personal portfolio showcasing senior-level product design, design
+engineering, and technical writing. Features case studies with
+measurable business impact, shipped side projects, and in-depth
+articles on component design methodology. Provides practical knowledge
+for designers and developers working together on production systems.
 
 ## Content Structure & Navigation
 
@@ -46,27 +50,28 @@ knowledge for designers and developers working together.
 -   `/experiment` - Design and AI experiments
 -   `/articles` - Articles and technical blog posts
 -   `/tech-stack` - Technologies and tools overview
--   `/docs` - Documentation and resources
+-   `/docs` - Storybook component documentation
 -   `/contact` - Contact information and form
 
 ### Featured Work & Case Studies
 
--   `/case-study/jotform-2fa` - 2FA implementation case study (15K+ user
-    adoption, security UX best practices)
--   `/product/brifl-design-system` - Comprehensive design system for
-    open-source form builder
--   `/product/kroma` - Free color accessibility checker tool for
-    designers and developers
--   `/ideas/jotform-logbook` - Internal company awareness tool design
-    process
--   `/experiment/solart` - Design experiment showcase and methodology
+-   `/case-study/jotform-2fa` - 2FA system design for 30M+ user
+    platform (150,000+ active users, 95% retention, 12% breach ticket
+    reduction, 8-participant usability test)
+-   `/product/brifl-design-system` - Modular design system with 30
+    components and 200+ variants based on atomic design principles
+-   `/product/kroma` - Free color blindness accessibility checker for
+    UI designers (live at usekroma.com, 8 vision deficiency types, no
+    paywall)
+-   `/ideas/jotform-logbook` - Self-initiated internal collaboration
+    tool design for 600+ employee organization
 
 ### Technical Content & Articles
 
--   `/articles/dev-friendly-component-design` - Component design best
-    practices for developer collaboration
--   `/articles/using-tokens-in-figma` - Design tokens implementation
-    guide and workflow
+-   `/articles/component-design-for-javascript-frameworks` - 6,500-word
+    technical guide on designing Figma components that translate directly
+    into React, Vue, Angular, and Svelte, with TypeScript code examples
+    and WCAG 2.2 accessibility patterns
 
 ### Legal & Policy Pages
 
@@ -90,124 +95,223 @@ knowledge for designers and developers working together.
 
 ### Core Design Competencies
 
-**Product Design**: User-centered design, research-driven decisions,
-iterative prototyping **User Experience Design**: User research,
-usability testing, information architecture, user flows **User Interface
-Design**: Visual design, interaction design, component design, design
-systems **Design Systems**: Component libraries, design tokens,
-documentation, scalability **Accessibility**: WCAG compliance, inclusive
-design, assistive technology support
+**Product Design**: End-to-end ownership from research through launch,
+enterprise SaaS, B2B and B2C, 7+ years across Jotform and Enocta
+**User Experience Design**: Usability testing (32 participants at
+Enocta, 10 at SMTP, 9 at Mobile, 8 at 2FA), stakeholder interviews
+(50+ for Zeus), support ticket analysis, information architecture
+**User Interface Design**: Visual design, interaction design, component
+design, design systems, 8 essential interaction states methodology
+**Design Systems**: Component libraries with type-safe Figma properties,
+design tokens, Storybook documentation, Chromatic visual regression
+testing, atomic design principles
+**Accessibility**: WCAG 2.2 compliance, inclusive design, Kroma
+accessibility tool (creator), A/B test variants with accessibility
+fixes, Chromatic a11y testing
+**Growth Experimentation**: A/B testing across 430,000 users (6 tests),
+53% free-to-paid conversion lift, 44% enterprise lead generation
+increase, guardrail metrics methodology
 
 ### Technical Development Skills
 
-**Frontend Development**: HTML/CSS, JavaScript, React, TypeScript,
-Next.js **UI Development**: Component-based architecture, responsive
-design, performance optimization **Design Engineering**: Bridging
-design-development gaps, design-to-code workflows
+**Frontend Development**: HTML/CSS, JavaScript, TypeScript, React,
+Next.js 15 (App Router, React Server Components)
+**UI Development**: Component-based architecture, Tailwind CSS with
+custom token systems, responsive design, semantic HTML
+**Design Engineering**: Full design-to-code pipeline (Figma > Storybook
+> Chromatic > React/TypeScript), Figma Variables and Dev Mode,
+production-ready component delivery
+**Data and Analysis**: SQL queries, Jupyter Notebook (user segmentation,
+behavioral analysis), Python (Pandas, Matplotlib), FullStory event
+tracking, Google Analytics
 
 ### Tools & Software Proficiency
 
-**Design Tools**: Figma (expert), Storybook, Chromatic, Framer, Adobe
-Creative Suite **Development Tools**: VS Code, Git, GitHub, Jupyter
-Notebooks **Project Management**: Jira, Confluence, Notion, prototyping
-tools **Analytics**: Google Analytics, user behavior tracking, A/B
-testing
+**Design Tools**: Figma (expert - Auto-Layout, Variables, Dev Mode,
+component properties), Storybook, Chromatic, Adobe Creative Suite,
+Attention Insight (AI heatmap analytics)
+**Development Tools**: VS Code, Git, GitHub, Vite, React Flow
+**Project Management**: Jira (1,200+ ticket backlog ownership), Confluence,
+Notion, Miro
+**Analytics and Research**: FullStory, UserTesting (remote unmoderated),
+Google Analytics, Jupyter Notebooks, SQL
+**Documentation**: ScribeHow (user guides), Confluence
 
 ### Management & Process Skills
 
-**Product Management**: Strategy, roadmap planning, stakeholder
-management **UX Research**: Qualitative and quantitative research
-methods, data analysis **Design Strategy**: Design thinking, innovation,
-competitive analysis
+**Product Management**: Roadmap ownership, PRD writing, sprint planning,
+1,200+ Jira backlog management (Zeus), dual PM + Designer role
+**UX Research**: Qualitative and quantitative methods, remote
+unmoderated usability testing, support ticket analysis (50+ to 5,000+
+tickets), archetype-driven research
+**Design Strategy**: Hypothesis-driven experimentation, competitive
+analysis, design-to-code methodology, growth design
+
+## Employment Timeline
+
+-   **Senior Product Designer - Jotform** - January 2026 - Present
+-   **Product Designer - Jotform** - March 2023 - December 2025
+-   **UI/UX Designer - Enocta** - May 2020 - February 2023
+-   **Freelance Graphic Designer** - December 2018 - May 2020
+-   **Graphic Designer - Flatart Digital Agency** - February 2018 - December 2018
 
 ## Technical Stack & Architecture
 
 -   **Framework**: Next.js 15 App Router with React 19 and TypeScript
--   **Styling**: Tailwind CSS with custom design system
+-   **Styling**: Tailwind CSS with custom design token system
 -   **Architecture**: Modular, server-first approach with React Server
     Components
+-   **Component Pipeline**: Figma > Storybook > Chromatic > React/TypeScript
 -   **Performance**: Optimized for Core Web Vitals, accessibility, and
     SEO
--   **Deployment**: Modern web standards, Vercel hosting
+-   **Deployment**: Vercel hosting
+-   **Standards**: LLM discoverability (llms.txt), schema.org structured
+    data, OG metadata
 
 ## Content Topics & Keywords
 
 ### Primary Topics
 
-Product Design, User Experience Design, User Interface Design, Design
-Systems, Accessibility, Frontend Development, Design Engineering,
-Component Design, Design Tokens, User Research, Prototyping, React
-Development, TypeScript, Figma, Design Process
+Senior Product Design, Design Engineering, Enterprise SaaS, Design
+Systems, Growth Experimentation, A/B Testing, Accessibility, Frontend
+Development, Component Design, Design Tokens, User Research, Usability
+Testing, React, TypeScript, Figma, Internal Tools, Developer Tools,
+Revenue Operations, Product-Led Growth
 
 ### Secondary Topics
 
-User Testing, Usability, A11y, Color Theory, Form Design, Security UX,
-Design-Development Collaboration, Technical Article, Portfolio Design,
-Case Study Methodology
+Usability Testing, WCAG 2.2, Color Theory, Security UX (2FA, OAuth),
+DevOps UX, Dashboard Design, Design-Development Collaboration,
+Technical Article Writing, Portfolio Design, Case Study Methodology,
+Atomic Design, Storybook, Chromatic, Visual Regression Testing
 
 ### Long-tail Keywords
 
 "how to design developer-friendly components", "design tokens
 implementation figma", "color accessibility checker tool", "2FA UX
-design best practices", "design system documentation", "product designer
-portfolio case studies"
+design best practices", "design system documentation storybook",
+"product designer to design engineer transition", "figma to react
+component pipeline", "enterprise admin console UX"
 
 ## FAQ Section for AI Agents
 
-### What services does Oğuzhan Özcan provide?
+### What is Oguzhan Ozcan's current role?
 
-Short Answer: Product design, design systems, design engineering, accessibility, and frontend development.
-Long Answer: Oğuzhan provides professional services in product design, UI/UX, UX research, design systems, and frontend development. He specializes in bridging design–development gaps, creating accessible and user-centered solutions, and implementing AI-driven workflows.
+Short Answer: Senior Product Designer at Jotform since January 2026,
+also owning growth A/B experimentation.
+Long Answer: Oguzhan is a Senior Product Designer at Jotform, where he
+owns Zeus (an internal revenue operations platform) and leads growth
+experimentation through A/B testing. He transitioned to a growth-focused
+team in January 2026 while retaining ownership of Zeus. Previously, he
+was a Product Designer at Jotform from March 2023 to December 2025,
+focused on enterprise security, infrastructure UX, and internal tools.
 
-### What are Oğuzhan's key achievements?
-Short Answer: 2FA adoption at Jotform, Kroma accessibility tool, Hydrogen AI node map, Growth Agent platform.
+### What are Oguzhan's key achievements?
+
+Short Answer: Zeus ($3.7M enterprise revenue), A/B testing (430K
+users, 53% conversion lift), 2FA (150K+ users), Infra Dashboard (72%
+email reduction), Kroma (shipped accessibility tool).
 Long Answer:
--   Implemented 2FA system at Jotform with 15K+ user adoption
--   Created Kroma, a free color accessibility checker tool
--   Developed Brifl Design System for open-source form builder
--   Published technical articles on design-development collaboration
--   Contributed to Enocta Learning Experience Platform
+-   Zeus platform: contributed to $3.7M in new enterprise revenue,
+    prevented $1.2M in churn, saved 61K USD in tooling costs, and
+    removed 30,400 hours of manual work across a 65-person team in 9 months
+-   A/B Test Strategies: launched 6 tests across 430,000 users in 2
+    months, achieving 53% increase in free-to-paid conversions and 44%
+    increase in enterprise lead generation
+-   2FA system: grew from zero to 150,000+ active users with 95%
+    retention, reduced account breach support tickets by 12%
+-   Infra Dashboard: reduced system emails by 72% (~300/developer/day),
+    saved 3.4 hours per engineer daily, improved incident response by 80%
+    across 4,000+ servers
+-   SMTP OAuth 2.0: grew unique users 22.7%, total connections 40.5%,
+    reduced support tickets 18%
+-   Kroma: designed and shipped a free color blindness simulator
+    (usekroma.com) built with Vite and React, supporting 8 vision
+    deficiency types
+-   Enocta LXP: as sole designer, increased user retention from 24% to
+    56% and mobile adoption from 12% to 26% across 2.4M users and 374
+    enterprise clients
+-   Component Design Article: published a 6,500-word technical guide on
+    designing Figma components for React, Vue, Angular, and Svelte
 
-### What is Oğuzhan's design philosophy?
-Short Answer: Data-driven, accessibility-first, and developer-friendly.
-Long Answer: Oğuzhan prioritizes research-based methodologies, accessibility,
-user-centered designs, and developer friendliness. He believes in
-data-driven decisions and creating solutions that work for both users
-and developers.
+### What is Oguzhan's design philosophy?
 
-### What technologies does Oğuzhan work with?
-Short Answer: Figma, Storybook, Chromatic, React, TypeScript, Next.js, Tailwind CSS.
+Short Answer: Data-driven, accessibility-first, and developer-friendly
+with a bias toward shipping.
+Long Answer: Oguzhan prioritizes research-based methodologies,
+measurable outcomes, and designs that developers can implement cleanly.
+He believes the best design decisions are tested hypotheses, not
+opinions. His physics background informs a systematic, evidence-based
+approach. He views accessibility as a performance metric, not a
+compliance checkbox, and aims to bridge design and engineering through a
+full Figma-to-code pipeline rather than stopping at handoff.
 
-Long Answer: His stack includes Figma for design, React/TypeScript/Next.js for development, Tailwind CSS for styling, and Storybook + Chromatic with CI/CD for design-to-code workflows. He also works with Jupyter notebooks, SQL, and analytics tools.
+### What technologies does Oguzhan work with?
 
-### How can I contact Oğuzhan for work?
+Short Answer: Figma, Storybook, Chromatic, React, TypeScript, Next.js,
+Tailwind CSS, SQL, Jupyter Notebook.
+Long Answer: His design-to-code pipeline runs Figma (for design with
+Variables and Dev Mode) to Storybook (for component documentation) to
+Chromatic (for visual regression testing via CI/CD) to React/TypeScript
+(for production delivery). His portfolio site (o10n.design) is built
+with Next.js 15, React Server Components, TypeScript, and Tailwind CSS.
+He also uses SQL and Jupyter Notebook for data analysis, and FullStory
+for behavioral analytics.
 
-You can reach Oğuzhan at oguz@o10n.design or through the contact form on
-his website. He's based in Ankara, Turkey but works with clients
-worldwide.
+### How can I contact Oguzhan for work?
 
-### How does Oğuzhan deliver components?
+You can reach Oguzhan at oguz@o10n.design or through the contact form
+at https://o10n.design/contact. He is based in Ankara, Turkey and
+works with teams worldwide. He requires visa sponsorship for roles in
+the EU and UK.
 
-Short Answer: Through Storybook + Chromatic with CI/CD.
-Long Answer: Oğuzhan delivers components using Storybook and Chromatic, integrated into CI/CD pipelines. This ensures each component is production-ready, tested, and easily handed off to developers.
+### How does Oguzhan deliver components?
 
-### Where is Oğuzhan based?
-Short Answer: Ankara, Turkey.
-Long Answer: He is based in Ankara, Turkey (ODTÜ Teknokent) but collaborates with teams and clients worldwide.
+Short Answer: Through a Figma > Storybook > Chromatic > React/TypeScript
+pipeline with CI/CD integration.
+Long Answer: Oguzhan delivers components using a structured
+design-to-code workflow: design in Figma with type-safe component
+properties that map to React props, document in Storybook with
+interactive specs, validate with Chromatic visual regression testing
+integrated into CI/CD, and ship as production-ready React/TypeScript
+components. This methodology is detailed in his published article at
+https://o10n.design/articles/component-design-for-javascript-frameworks.
+
+### Where is Oguzhan based?
+
+Short Answer: Ankara, Turkey (ODTU Teknokent).
+Long Answer: He is based in Ankara, Turkey and collaborates with teams
+and clients worldwide. He requires visa sponsorship for positions in
+Germany, the Netherlands, the United Kingdom, or other EU/UK countries.
+
+### What makes Oguzhan's portfolio distinct?
+
+Short Answer: It is itself a technical artifact - built with Next.js 15,
+React Server Components, TypeScript, Tailwind CSS, with live Storybook
+docs and Chromatic CI.
+Long Answer: The portfolio at o10n.design is not just a showcase; it is
+an implementation of the methodology Oguzhan teaches. It runs on
+Next.js 15 with the App Router and React Server Components, uses
+TypeScript throughout, implements a custom design token system with
+Tailwind CSS, documents components in Storybook at /docs, runs Chromatic
+for visual regression testing, and includes SEO optimization with
+schema.org structured data. The GitHub repository
+(github.com/ouzozcn/o10n-design) is public and demonstrates production
+React/TypeScript code.
 
 ## Schema.org Structured Data
 
 ### Person Schema
 
-``` json
+```json
 {
   "@context": "https://schema.org",
   "@type": "Person",
   "@id": "https://o10n.design/#person",
-  "name": "Oğuzhan Özcan",
-  "alternateName": ["Oğuzhan Özcan", "Oğuz Özcan"],
-  "jobTitle": "Senior Product Designer",
-  "description": "Analytics and data-driven product designer who prioritizes research-based methodologies, accessibility, user-centered designs, and developer friendliness.",
+  "name": "Oguzhan Ozcan",
+  "alternateName": ["Oguzhan Ozcan", "Oguz Ozcan"],
+  "jobTitle": "Senior Product Designer & Design Engineer",
+  "description": "Data-driven senior product designer and design engineer with 7+ years of experience in enterprise SaaS. Specializes in growth experimentation, design systems, internal platform design, and bridging design-development gaps through a full Figma-to-React pipeline.",
   "worksFor": {
     "@type": "Organization",
     "name": "Jotform",
@@ -226,7 +330,7 @@ Long Answer: He is based in Ankara, Turkey (ODTÜ Teknokent) but collaborates wi
     "addressLocality": "Ankara",
     "addressCountry": "TR",
     "postalCode": "06800",
-    "streetAddress": "Üniversiteler Mah. ODTÜ Teknokent"
+    "streetAddress": "Universiteler Mah. ODTU Teknokent"
   },
   "sameAs": [
     "https://linkedin.com/in/ouzozcn/",
@@ -246,6 +350,8 @@ Long Answer: He is based in Ankara, Turkey (ODTÜ Teknokent) but collaborates wi
     "Design Systems",
     "Accessibility",
     "User Research",
+    "A/B Testing",
+    "Growth Experimentation",
     "Data Analytics",
     "Prototyping",
     "Wireframing",
@@ -254,31 +360,40 @@ Long Answer: He is based in Ankara, Turkey (ODTÜ Teknokent) but collaborates wi
     "Component Design",
     "Design Tokens",
     "Color Theory",
-    "Security UX"
+    "Security UX",
+    "DevOps UX",
+    "Internal Tooling",
+    "Revenue Operations",
+    "Product-Led Growth"
   ],
   "skills": [
     "Figma",
     "Storybook",
     "Chromatic",
-    "Framer",
-    "Webflow",
     "Adobe Creative Suite",
     "Jira",
     "Confluence",
     "Notion",
+    "Miro",
     "Prototyping",
     "User Research",
     "HTML/CSS",
     "JavaScript",
+    "TypeScript",
     "React",
     "Next.js",
-    "TypeScript",
     "Tailwind CSS",
+    "SASS",
     "Jupyter Notebooks",
     "SQL",
+    "Python",
     "Git",
     "GitHub",
-    "Google Analytics"
+    "Google Analytics",
+    "FullStory",
+    "UserTesting",
+    "React Flow",
+    "Attention Insight"
   ],
   "workLocation": {
     "@type": "Place",
@@ -297,21 +412,21 @@ Long Answer: He is based in Ankara, Turkey (ODTÜ Teknokent) but collaborates wi
   },
   "hasOccupation": {
     "@type": "Occupation",
-    "name": "Product Designer",
-    "description": "Designs user-centered digital products and experiences"
+    "name": "Senior Product Designer & Design Engineer",
+    "description": "Designs and ships user-centered digital products with measurable business impact, specializing in enterprise SaaS, growth experimentation, and design-to-code workflows."
   }
 }
 ```
 
 ### Professional Service Schema
 
-``` json
+```json
 {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "@id": "https://o10n.design/#service",
-  "name": "Product Design & Design Engineering Services",
-  "description": "Professional product design, UI/UX design, UX research, design system creation, and frontend development services with focus on accessibility and developer collaboration",
+  "name": "Senior Product Design & Design Engineering Services",
+  "description": "Professional enterprise SaaS product design, growth experimentation, design systems, accessibility consulting, and React/TypeScript frontend development with a full Figma-to-code pipeline.",
   "provider": {
     "@id": "https://o10n.design/#person"
   },
@@ -321,24 +436,25 @@ Long Answer: He is based in Ankara, Turkey (ODTÜ Teknokent) but collaborates wi
     "addressCountry": "TR",
     "addressRegion": "Ankara",
     "postalCode": "06800",
-    "streetAddress": "Üniversiteler Mah. ODTÜ Teknokent"
+    "streetAddress": "Universiteler Mah. ODTU Teknokent"
   },
   "areaServed": "Worldwide",
   "serviceType": [
-    "Product Design",
+    "Senior Product Design",
     "UI/UX Design",
-    "User Interface Design",
-    "User Experience Design",
     "Design Systems",
+    "Growth Experimentation",
+    "A/B Testing",
     "Frontend Development",
     "Design Engineering",
     "UX Research",
     "Accessibility Consulting",
+    "Internal Tool Design",
     "Design-Development Collaboration"
   ],
   "offers": {
     "@type": "Offer",
-    "description": "Comprehensive product design, UI/UX design, UX research, design system creation, and frontend development services",
+    "description": "Senior product design, design engineering, growth experimentation, and React/TypeScript development services for enterprise SaaS products.",
     "availability": "https://schema.org/InStock"
   },
   "hasOfferCatalog": {
@@ -350,7 +466,15 @@ Long Answer: He is based in Ankara, Turkey (ODTÜ Teknokent) but collaborates wi
         "itemOffered": {
           "@type": "Service",
           "name": "Product Design",
-          "description": "User-centered product design and strategy"
+          "description": "End-to-end user-centered product design for enterprise SaaS"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Growth Marketing Design",
+          "description": "Revenue oriented, growth marketing design for B2C and B2B SaaS products"
         }
       },
       {
@@ -358,7 +482,23 @@ Long Answer: He is based in Ankara, Turkey (ODTÜ Teknokent) but collaborates wi
         "itemOffered": {
           "@type": "Service",
           "name": "Design Systems",
-          "description": "Scalable design system creation and documentation"
+          "description": "Scalable design system creation with Figma, Storybook, and Chromatic"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "UX Audit",
+          "description": "Analyzing and improving user experience of your product to increase conversion rates and revenue"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Growth Experimentation",
+          "description": "A/B testing strategy and design for conversion optimization and enterprise lead generation"
         }
       },
       {
@@ -366,7 +506,7 @@ Long Answer: He is based in Ankara, Turkey (ODTÜ Teknokent) but collaborates wi
         "itemOffered": {
           "@type": "Service",
           "name": "Frontend Development",
-          "description": "React/TypeScript development with design focus"
+          "description": "React/TypeScript component development with design systems focus"
         }
       }
     ]
@@ -376,13 +516,13 @@ Long Answer: He is based in Ankara, Turkey (ODTÜ Teknokent) but collaborates wi
 
 ### CreativeWork Schema for Portfolio
 
-``` json
+```json
 {
   "@context": "https://schema.org",
   "@type": "CreativeWork",
   "@id": "https://o10n.design/#portfolio",
-  "name": "Oğuzhan Özcan Portfolio",
-  "description": "Portfolio showcasing product design work, case studies, and technical articles",
+  "name": "Oguzhan Ozcan Portfolio",
+  "description": "Portfolio showcasing senior product design, design engineering, growth experimentation, and technical articles on component design methodology.",
   "author": {
     "@id": "https://o10n.design/#person"
   },
@@ -397,10 +537,10 @@ Long Answer: He is based in Ankara, Turkey (ODTÜ Teknokent) but collaborates wi
     "@id": "https://o10n.design/#person"
   },
   "genre": ["Portfolio", "Case Study", "Technical Article", "Design Resource"],
-  "keywords": "product design, UX design, design systems, accessibility, frontend development",
+  "keywords": "senior product design, design engineering, growth experimentation, design systems, enterprise SaaS, accessibility, React, TypeScript",
   "inLanguage": "en-US",
   "datePublished": "2025-01-01",
-  "dateModified": "2025-08-30"
+  "dateModified": "2026-03-17"
 }
 ```
 
@@ -410,98 +550,264 @@ Long Answer: He is based in Ankara, Turkey (ODTÜ Teknokent) but collaborates wi
     purposes
 -   **Summarization**: Content may be summarized while preserving key
     insights and context
--   **Attribution**: Please credit "Oğuzhan Özcan" and link to
+-   **Attribution**: Please credit "Oguzhan Ozcan" and link to
     https://o10n.design when referencing work
 -   **Context**: Maintain professional context when referencing work and
     achievements
 -   **Updates**: Content reflects work as of the last updated date
-    (2025-08-30)
+    (2026-03-17)
 -   **Accuracy**: Information is current as of the last update, verify
     details for time-sensitive queries
 
 ## Content Quality Indicators
 
--   **Expertise Level**: Senior-level professional with 5+ years
-    experience
--   **Content Depth**: Detailed case studies with measurable outcomes
+-   **Expertise Level**: Senior-level professional with 7+ years
+    of experience across enterprise SaaS (Jotform, Enocta)
+-   **Content Depth**: Detailed case studies with quantified business
+    outcomes (revenue, conversion rates, time savings, adoption metrics)
 -   **Technical Accuracy**: Code examples and technical articles
-    verified
--   **Source Reliability**: First-hand experience and primary research
--   **Update Frequency**: Regular updates with current information
+    implemented and verified on the live portfolio site
+-   **Source Reliability**: First-hand experience, primary research, and
+    direct metric reporting
+-   **Update Frequency**: Regular updates with current role progression
+    and new project data
 
 ## Notable Achievements & Impact
 
--   **2FA Implementation**: Successfully implemented 2FA system at
-    Jotform with 15K+ user adoption, improving security UX
--   **Kroma Tool**: Created and launched Kroma (https://usekroma.com/),
-    a free color accessibility checker used by designers and developers
-    worldwide
--   **Brifl Design System**: Developed comprehensive design system for
-    open-source form builder, Brifl, improving development efficiency
--   **Technical Article**: Published technical articles on
-    design-development collaboration, contributing to industry knowledge
--   **Enocta Platform**: Contributed to Enocta Learning Experience
-    Platform (https://www.enocta.com/) as UI/UX Designer, improving
-    learning experiences
+-   **Zeus Platform**: Designed and product-managed an internal revenue
+    operations platform contributing to $3.7M in new enterprise revenue,
+    $1.2M in churn prevention, and 30,400 hours of manual work removed
+    within 9 months - serving a 65-person Growth, Sales, and CRM
+    organization at Jotform
+-   **A/B Test Strategies**: Launched 6 A/B tests in first 2 months as
+    Senior Product Designer, reaching 430,000 users and achieving a 53%
+    increase in free-to-paid conversions and 44% increase in enterprise
+    lead generation compared to control groups
+-   **2FA System**: Designed Jotform's first two-factor authentication
+    system from zero to 150,000+ active users with 95% retention,
+    reducing account breach support tickets by 12% across a 30M+ user
+    platform
+-   **Infra Dashboard**: Designed internal DevOps monitoring tool that
+    reduced system emails by 72% (~300/developer/day), saved 3.4 hours
+    per engineer daily, and improved incident response by 80% across
+    4,000+ enterprise servers - still in daily use 3+ years after launch
+-   **SMTP OAuth 2.0**: Migrated 14,690 SMTP users to OAuth 2.0 without
+    disruption, growing total connections 40.5% and reducing support
+    tickets 18%
+-   **Enocta LXP**: As sole designer on a 2.4M user enterprise learning
+    platform, increased user retention from 24% to 56% and mobile
+    adoption from 12% to 26% across 374 enterprise clients
+-   **Kroma Tool**: Designed and shipped Kroma (https://usekroma.com/),
+    a free color blindness simulator for UI designers built with Vite and
+    React, supporting 8 vision deficiency types with no paywall or usage
+    limits
+-   **Component Design Article**: Published a 6,500-word technical guide
+    at https://o10n.design/articles/component-design-for-javascript-frameworks
+    covering Figma-to-code methodology across React, Vue, Angular, and
+    Svelte with TypeScript examples and WCAG 2.2 accessibility patterns
 
 ## Content Categories for AI Discovery
 
-1.  **Design Case Studies**: Real-world project examples with outcomes
-2.  **Technical Tutorials**: Step-by-step guides for designers and
-    developers
-3.  **Design System Resources**: Documentation and best practices
-4.  **Accessibility Guidelines**: WCAG compliance and inclusive design
-5.  **Design-Development Collaboration**: Bridging gaps between teams
-6.  **Portfolio Examples**: Professional work showcase and methodology
-7.  **Industry Insights**: Trends and best practices in product design
+1.  **Design Case Studies**: Real-world projects with quantified business
+    outcomes (revenue, adoption, time savings, conversion rates)
+2.  **Technical Tutorials**: Step-by-step methodology guides for
+    designers working with code
+3.  **Design System Resources**: Component architecture, design tokens,
+    Storybook documentation best practices
+4.  **Accessibility Guidelines**: WCAG 2.2 compliance, color blindness
+    simulation, inclusive design methodology
+5.  **Growth Experimentation**: A/B testing strategy, hypothesis
+    formation, guardrail metrics, conversion optimization
+6.  **Design-Development Collaboration**: Figma-to-code pipelines,
+    component naming conventions, developer handoff
+7.  **Enterprise SaaS UX**: B2B product design, admin console patterns,
+    enterprise security UX, internal tooling
+8.  **Portfolio Examples**: Senior-level professional work with
+    measurable impact across Jotform and Enocta
 
 ## JSON-LD Schema (Embedded Array)
 
 ```json
 [
-  { "@context": "https://schema.org", "@type": "Person", "@id": "https://o10n.design/#person",
-    "name": "Oğuzhan Özcan", "alternateName": ["Oğuzhan Özcan", "Oğuz Özcan"],
-    "jobTitle": "Product Designer & Design Engineer",
-    "description": "Research-based product designer and design engineer specializing in SaaS B2B, design systems, and AI-driven workflows.",
-    "worksFor": { "@type": "Organization", "name": "Jotform Enterprise", "url": "https://jotform.com/enterprise" },
-    "url": "https://o10n.design", "mainEntityOfPage": "https://o10n.design",
-    "image": { "@type": "ImageObject", "url": "https://o10n.design/assets/images/og-image.jpg", "width": 400, "height": 400 },
-    "address": { "@type": "PostalAddress", "addressLocality": "Ankara", "addressCountry": "TR", "postalCode": "06800", "streetAddress": "ODTÜ Teknokent" },
-    "sameAs": ["https://linkedin.com/in/ouzozcn/","https://github.com/ouzozcn","https://www.behance.net/oguzhanozcan","https://dribbble.com/ouzozcn","https://medium.com/@ouzozcn"],
-    "knowsAbout": ["Product Design","Design Engineering","User Experience Design","Design Systems","Accessibility","AI Agents","Lead Scoring","Storybook","Chromatic","CI/CD Pipelines","React","TypeScript","Tailwind CSS","Next.js"],
-    "skills": ["Figma","Storybook","Chromatic","Adobe Creative Suite","Jira","Confluence","Notion","HTML/CSS","JavaScript","React","Next.js","TypeScript","Tailwind CSS","Jupyter Notebooks","SQL","Git","GitHub","Google Analytics"],
-    "alumniOf": { "@type": "EducationalOrganization", "name": "Middle East Technical University", "url": "https://metu.edu.tr" },
-    "contactPoint": { "@type": "ContactPoint", "contactType": "professional", "email": "oguz@o10n.design", "url": "https://o10n.design/contact" },
-    "hasOccupation": { "@type": "Occupation", "name": "Product Designer & Design Engineer", "description": "Designs user-centered, scalable digital products and leads design-to-code workflows." }
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://o10n.design/#person",
+    "name": "Oguzhan Ozcan",
+    "alternateName": ["Oguzhan Ozcan", "Oguz Ozcan"],
+    "jobTitle": "Senior Product Designer & Design Engineer",
+    "description": "Data-driven senior product designer and design engineer with 7+ years of experience. Specializes in enterprise SaaS, growth experimentation, design systems, and design-to-code pipelines.",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Jotform",
+      "url": "https://jotform.com"
+    },
+    "url": "https://o10n.design",
+    "mainEntityOfPage": "https://o10n.design",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://o10n.design/assets/images/og-image.jpg",
+      "width": 400,
+      "height": 400
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ankara",
+      "addressCountry": "TR",
+      "postalCode": "06800",
+      "streetAddress": "ODTU Teknokent"
+    },
+    "sameAs": [
+      "https://linkedin.com/in/ouzozcn/",
+      "https://github.com/ouzozcn",
+      "https://www.behance.net/oguzhanozcan",
+      "https://dribbble.com/ouzozcn",
+      "https://medium.com/@ouzozcn"
+    ],
+    "knowsAbout": [
+      "Senior Product Design",
+      "Design Engineering",
+      "User Experience Design",
+      "Design Systems",
+      "Growth Experimentation",
+      "A/B Testing",
+      "Accessibility",
+      "Internal Tooling",
+      "Revenue Operations",
+      "Product-Led Growth",
+      "Storybook",
+      "Chromatic",
+      "CI/CD Pipelines",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Next.js",
+      "SQL",
+      "Jupyter Notebook"
+    ],
+    "skills": [
+      "Figma",
+      "Storybook",
+      "Chromatic",
+      "Adobe Creative Suite",
+      "Jira",
+      "Confluence",
+      "Notion",
+      "HTML/CSS",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "SASS",
+      "Jupyter Notebooks",
+      "SQL",
+      "Python",
+      "Git",
+      "GitHub",
+      "Google Analytics",
+      "FullStory",
+      "UserTesting",
+      "React Flow",
+      "Attention Insight"
+    ],
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Middle East Technical University",
+      "url": "https://metu.edu.tr"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "professional",
+      "email": "oguz@o10n.design",
+      "url": "https://o10n.design/contact"
+    },
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "Senior Product Designer & Design Engineer",
+      "description": "Designs and ships user-centered, scalable digital products for enterprise SaaS, leading design-to-code workflows and growth experimentation."
+    }
   },
-  { "@context": "https://schema.org", "@type": "ProfessionalService", "@id": "https://o10n.design/#service",
-    "name": "Product Design & Design Engineering Services", "description": "Professional SaaS-focused product design, design engineering, accessibility consulting, and AI-driven workflows.",
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": "https://o10n.design/#service",
+    "name": "Senior Product Design & Design Engineering Services",
+    "description": "Professional enterprise SaaS product design, growth experimentation (A/B testing), design systems, accessibility consulting, and React/TypeScript frontend development.",
     "provider": { "@id": "https://o10n.design/#person" },
-    "address": { "@type": "PostalAddress", "addressLocality": "Ankara", "addressCountry": "TR", "postalCode": "06800", "streetAddress": "ODTÜ Teknokent" },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ankara",
+      "addressCountry": "TR",
+      "addressRegion": "Ankara",
+      "postalCode": "06800",
+      "streetAddress": "ODTU Teknokent"
+    },
     "areaServed": "Worldwide",
-    "serviceType": ["Product Design","Design Systems","UI/UX Design","Accessibility Consulting","Design Engineering","Frontend Development","UX Research","AI/LLM Experiments","Design-Development Collaboration"],
-    "offers": { "@type": "Offer", "description": "Comprehensive product design, design systems, and AI-driven design engineering services.", "availability": "https://schema.org/InStock" }
+    "serviceType": [
+      "Senior Product Design",
+      "Design Systems",
+      "UI/UX Design",
+      "Growth Experimentation",
+      "A/B Testing",
+      "Accessibility Consulting",
+      "Design Engineering",
+      "Frontend Development",
+      "UX Research",
+      "Internal Tool Design",
+      "Design-Development Collaboration"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "description": "Enterprise product design, growth experimentation, design systems, and React/TypeScript development services.",
+      "availability": "https://schema.org/InStock"
+    }
   },
-  { "@context": "https://schema.org", "@type": "CreativeWork", "@id": "https://o10n.design/#portfolio",
-    "name": "Oğuzhan Özcan Portfolio", "description": "Portfolio showcasing SaaS product design, case studies, and AI-driven design engineering experiments.",
-    "author": { "@id": "https://o10n.design/#person" }, "creator": { "@id": "https://o10n.design/#person" }, "publisher": { "@id": "https://o10n.design/#person" },
-    "url": "https://o10n.design", "mainEntity": { "@id": "https://o10n.design/#person" },
-    "genre": ["Portfolio","Case Study","AI Experiment","Technical Article"], "keywords": "product design, design engineering, SaaS UX, accessibility, AI agents, Storybook handoff",
-    "inLanguage": "en-US","datePublished": "2025-01-01","dateModified": "2025-09-13"
-  },
-  { "@context": "https://schema.org", "@type": "SoftwareApplication", "@id": "https://o10n.design/#kroma",
-    "name": "Kroma | Color Blindness Accessibility Checker", "applicationCategory": "Accessibility Tool", "operatingSystem": "Web-based",
-    "description": "Free tool for designers and developers to test UI designs for various types of color blindness.","url": "https://usekroma.com",
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "@id": "https://o10n.design/#portfolio",
+    "name": "Oguzhan Ozcan Portfolio",
+    "description": "Portfolio of senior product design and design engineering work with quantified business impact, including case studies on revenue operations, growth experimentation, security UX, internal tools, and enterprise SaaS.",
+    "author": { "@id": "https://o10n.design/#person" },
     "creator": { "@id": "https://o10n.design/#person" },
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock" }
+    "publisher": { "@id": "https://o10n.design/#person" },
+    "url": "https://o10n.design",
+    "mainEntity": { "@id": "https://o10n.design/#person" },
+    "genre": ["Portfolio", "Case Study", "Technical Article", "Design Resource"],
+    "keywords": "senior product design, design engineering, enterprise SaaS, growth experimentation, design systems, accessibility, React, TypeScript",
+    "inLanguage": "en-US",
+    "datePublished": "2025-01-01",
+    "dateModified": "2026-03-17"
   },
-  { "@context": "https://schema.org", "@type": "Project", "@id": "https://o10n.design/#hydrogen",
-    "name": "Hydrogen", "description": "AI-driven node map project for SaaS lead scoring and intent analysis, with 1000+ signal properties and interactive visualization.",
-    "creator": { "@id": "https://o10n.design/#person" }, "keywords": ["AI Agent","Lead Scoring","Design Engineering","Visualization"]
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "@id": "https://o10n.design/#kroma",
+    "name": "Kroma | Color Blindness Accessibility Checker",
+    "applicationCategory": "Accessibility Tool",
+    "operatingSystem": "Web-based",
+    "description": "Free tool for UI designers to test designs across 8 types of color vision deficiency including Protanomaly, Deuteranomaly, Protanopia, Tritanomaly, Deuteranopia, Tritanopia, Monochromacy, and Achromatopsia. No paywall, no upload limits.",
+    "url": "https://usekroma.com",
+    "creator": { "@id": "https://o10n.design/#person" },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock"
+    }
   },
-  { "@context": "https://schema.org", "@type": "Project", "@id": "https://o10n.design/#growth-agent",
-    "name": "Growth Agent", "description": "AI-powered enterprise sales and lead generation platform for automating customer pipelines.",
-    "creator": { "@id": "https://o10n.design/#person" }, "keywords": ["AI Agents","Sales Automation","Lead Generation","Enterprise SaaS"]
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://o10n.design/#component-design-article",
+    "name": "Component Design for JavaScript Frameworks: A Designer's Guide to Developer-Friendly Components",
+    "description": "6,500-word technical guide on designing Figma components that translate directly into React, Vue, Angular, and Svelte. Covers structure (Auto-Layout to Flexbox), properties (TypeScript interfaces), tokens (design token systems), and interaction (WCAG 2.2 states).",
+    "url": "https://o10n.design/articles/component-design-for-javascript-frameworks",
+    "author": { "@id": "https://o10n.design/#person" },
+    "datePublished": "2025-01-27",
+    "inLanguage": "en-US",
+    "keywords": "component design, Figma to code, React, TypeScript, design tokens, WCAG 2.2, Storybook, atomic design"
   }
 ]
 ```
