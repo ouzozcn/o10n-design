@@ -2,7 +2,8 @@ import type { Metadata } from 'next';
 import React from 'react';
 import MenuItem from '@/components/MenuItem';
 import { Footer } from '@/components/Footer';
-
+import Button from '@/components/Button';
+import ArrowOutwardRoundedIcon from '@mui/icons-material/ArrowOutwardRounded';
 export const metadata: Metadata = {
   title: 'About Me | Senior Product Designer & Design Engineer | Oğuzhan Özcan',
   description:
@@ -173,10 +174,10 @@ export default function AboutMe() {
 
       {/* TL;DR */}
       <div className="PageContent flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900 lg:min-h-96">
-        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center md:border-r border-b border-stone-900">
+        <div className="SectionTitle flex grow-1 w-full md:w-1/4 h-auto items-center justify-center md:border-r border-b border-stone-900">
           <p className="text-2xl m-8 font-sans">TL;DR</p>
         </div>
-        <div className="SectionContent flex flex-col grow-1 w-full h-auto p-8 border-b border-stone-900 gap-4">
+        <div className="SectionContent flex flex-col grow-1 w-full md:w-3/4 h-auto p-8 border-b border-stone-900 gap-4">
           <p className="text-lg font-sans">
             <b>Senior Product Designer</b> with 7+ years designing enterprise SaaS — currently at
             Jotform, previously at Enocta.
@@ -199,26 +200,29 @@ export default function AboutMe() {
           <p className="text-lg font-sans">
             Based in <b>Ankara, Turkey.</b> Open to remote work worldwide.
           </p>
-          <p className="text-lg font-sans">
-            Want the full picture?{' '}
-            <a
-              href="./assets/documents/oguzhan_ozcan_curriculum_vitae.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 font-bold hover:text-blue-800 hover:underline"
-            >
-              View my resume →
-            </a>
-          </p>
         </div>
       </div>
-
+      {/* Resume Promo */}
+      <div className="PageContent flex flex-col md:flex-row w-full h-auto text-stone-900 border-stone-900 bg-orange-100">
+        <div className="SectionTitle flex flex-col grow-1 p-4 md:p-8 w-full h-auto items-center justify-center border-b gap-4 md:gap-8 border-stone-900">
+          <p className="text-lg md:text-xl text-center font-sans">
+            Would you like to see my resume?
+          </p>
+          <Button
+            label="Resume - Oğuzhan Özcan"
+            type="primary"
+            size="medium"
+            endIcon={<ArrowOutwardRoundedIcon />}
+            to="./assets/documents/oguzhan_ozcan_curriculum_vitae.pdf"
+          />
+        </div>
+      </div>
       {/* My Story */}
       <div className="PageContent flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900 lg:min-h-96">
-        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center md:border-r border-b border-stone-900">
+        <div className="SectionTitle flex grow-1 w-full md:w-1/4 h-auto items-center justify-center md:border-r border-b border-stone-900">
           <p className="text-2xl m-8 font-sans">My Story</p>
         </div>
-        <div className="SectionContent flex flex-col grow-1 w-full h-auto p-8 border-b border-stone-900 gap-4">
+        <div className="SectionContent flex flex-col grow-1 w-full md:w-3/4 h-auto p-8 border-b border-stone-900 gap-4">
           <p className="text-lg font-sans">
             I studied <b>Physics at Middle East Technical University</b> — optics concentration, 203
             credits deep. I never finished the degree, but I came away with something more useful
@@ -246,10 +250,10 @@ export default function AboutMe() {
 
       {/* What I Do Now */}
       <div className="PageContent flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900 lg:min-h-96">
-        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center md:border-r border-b border-stone-900">
+        <div className="SectionTitle flex grow-1 w-full md:w-1/4 h-auto items-center justify-center md:border-r border-b border-stone-900">
           <p className="text-2xl m-8 font-sans">What I Do Now</p>
         </div>
-        <div className="SectionContent flex flex-col grow-1 w-full h-auto p-8 border-b border-stone-900 gap-4">
+        <div className="SectionContent flex flex-col grow-1 w-full md:w-3/4 h-auto p-8 border-b border-stone-900 gap-4">
           <p className="text-lg font-sans">
             At <b>Jotform</b>, I currently split my time between two things I care about equally.
           </p>
@@ -277,10 +281,10 @@ export default function AboutMe() {
 
       {/* Beyond Work */}
       <div className="PageContent flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900 lg:min-h-96">
-        <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center md:border-r border-b border-stone-900">
+        <div className="SectionTitle flex grow-1 w-full md:w-1/4 h-auto items-center justify-center md:border-r border-b border-stone-900">
           <p className="text-2xl m-8 font-sans">Beyond Work</p>
         </div>
-        <div className="SectionContent flex flex-col grow-1 w-full h-auto p-8 border-b border-stone-900 gap-4">
+        <div className="SectionContent flex flex-col grow-1 w-full md:w-3/4 h-auto p-8 border-b border-stone-900 gap-4">
           <p className="text-lg font-sans">
             I build things when something bothers me enough. <b>Kroma</b> started because
             accessibility tools were either paywalled or frustrating to use — so I built a free,
