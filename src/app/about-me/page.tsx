@@ -177,7 +177,7 @@ export default function AboutMe() {
         <div className="SectionTitle flex grow-1 w-full md:w-1/4 h-auto items-center justify-center md:border-r border-b border-stone-900">
           <p className="text-2xl m-8 font-sans">TL;DR</p>
         </div>
-        <div className="SectionContent flex flex-col grow-1 w-full md:w-3/4 h-auto p-8 border-b border-stone-900 gap-4">
+        <div className="SectionContent flex flex-col grow-1 w-full md:w-3/4 h-auto p-8 border-b justify-center border-stone-900 gap-4">
           <p className="text-lg font-sans">
             <b>Senior Product Designer</b> with 7+ years designing enterprise SaaS — currently at
             Jotform, previously at Enocta.
@@ -223,7 +223,7 @@ export default function AboutMe() {
         <div className="SectionTitle flex grow-1 w-full md:w-1/4 h-auto items-center justify-center md:border-r border-b border-stone-900">
           <p className="text-2xl m-8 font-sans">My Story</p>
         </div>
-        <div className="SectionContent flex flex-col grow-1 w-full md:w-3/4 h-auto p-8 border-b border-stone-900 gap-4">
+        <div className="SectionContent flex flex-col grow-1 w-full md:w-3/4 h-auto p-8 border-b justify-center border-stone-900 gap-4">
           <p className="text-lg font-sans">
             I studied <b>Physics at Middle East Technical University</b> — optics concentration, 203
             credits deep. I never finished the degree, but I came away with something more useful
@@ -254,7 +254,7 @@ export default function AboutMe() {
         <div className="SectionTitle flex grow-1 w-full md:w-1/4 h-auto items-center justify-center md:border-r border-b border-stone-900">
           <p className="text-2xl m-8 font-sans">What I Do Now</p>
         </div>
-        <div className="SectionContent flex flex-col grow-1 w-full md:w-3/4 h-auto p-8 border-b border-stone-900 gap-4">
+        <div className="SectionContent flex flex-col grow-1 w-full md:w-3/4 h-auto p-8 border-b justify-center border-stone-900 gap-4">
           <p className="text-lg font-sans">
             At <b>Jotform</b>, I currently split my time between two things I care about equally.
           </p>
@@ -285,7 +285,7 @@ export default function AboutMe() {
         <div className="SectionTitle flex grow-1 w-full md:w-1/4 h-auto items-center justify-center md:border-r border-b border-stone-900">
           <p className="text-2xl m-8 font-sans">Beyond Work</p>
         </div>
-        <div className="SectionContent flex flex-col grow-1 w-full md:w-3/4 h-auto p-8 border-b border-stone-900 gap-4">
+        <div className="SectionContent flex flex-col grow-1 w-full md:w-3/4 h-auto p-8 border-b justify-center border-stone-900 gap-4">
           <p className="text-lg font-sans">
             I build things when something bothers me enough. <b>Kroma</b> started because
             accessibility tools were either paywalled or frustrating to use — so I built a free,
