@@ -213,7 +213,8 @@ export default function AboutMe() {
             type="primary"
             size="medium"
             endIcon={<ArrowOutwardRoundedIcon />}
-            to="./assets/documents/oguzhan_ozcan_curriculum_vitae.pdf"
+            target="_blank"
+            to="https://o10n.design/assets/documents/oguzhan_ozcan_curriculum_vitae.pdf"
           />
         </div>
       </div>
