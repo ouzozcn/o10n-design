@@ -324,6 +324,7 @@ export default function TechStack() {
         </div>
       </div>
 
+      {/*
       <div className="TechStackItem flex flex-col md:flex-row w-full h-full text-stone-900 border-stone-900 lg:min-h-80">
         <div className="SectionTitle flex grow-1 w-full h-auto items-center justify-center  md:border-r border-b border-stone-900 min-h-20">
           <Image
@@ -346,6 +347,7 @@ export default function TechStack() {
           </p>
         </div>
       </div>
+      */}
       <div className="SectionHeader p-6 md:p-8 border-b border-stone-900 content-center lg:h-60 bg-amber-50">
         <h2 className="text-2xl font-sans font-medium text-stone-900 text-center">
           Design System & Documentation

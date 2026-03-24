@@ -177,24 +177,24 @@ export default function KromaSimulator() {
         </div>
 
         {/* Icons Wrapper */}
-        <div className=" border-y border-stone-900 flex flex-wrap p-4 lg:p-6 gap-8 lg:gap-10  h-auto items-center justify-center relative shrink-0 w-full">
+        <div className=" border-y border-stone-900 flex flex-wrap p-4 lg:p-6 gap-4 lg:gap-10  h-auto items-center justify-center relative shrink-0 w-full">
           <div
-            className="flex h-[96px] items-center justify-center relative shrink-0 w-[96px]"
+            className="flex h-16 items-center justify-center relative shrink-0 w-16"
             style={iconFilterStyle}
           >
-            <HomeIcon sx={{ fontSize: 64, color: '#EF4444' }} aria-hidden="true" />
+            <HomeIcon sx={{ fontSize: 48, color: '#EF4444' }} aria-hidden="true" />
           </div>
           <div
-            className="flex h-[96px] items-center justify-center relative shrink-0 w-[96px]"
+            className="flex h-16 items-center justify-center relative shrink-0 w-16"
             style={iconFilterStyle}
           >
-            <PrintIcon sx={{ fontSize: 64, color: '#65A30D' }} aria-hidden="true" />
+            <PrintIcon sx={{ fontSize: 48, color: '#65A30D' }} aria-hidden="true" />
           </div>
           <div
-            className="flex h-[96px] items-center justify-center relative shrink-0 w-[96px]"
+            className="flex h-16 items-center justify-center relative shrink-0 w-16"
             style={iconFilterStyle}
           >
-            <SearchIcon sx={{ fontSize: 64, color: '#2563EB' }} aria-hidden="true" />
+            <SearchIcon sx={{ fontSize: 48, color: '#2563EB' }} aria-hidden="true" />
           </div>
         </div>
 

@@ -31,6 +31,7 @@ import { showCustomToast } from '@/components/CustomToast';
 import RoughAnnotate from '@/components/rough-notation/RoughAnnotate';
 import Input from '@/components/Input';
 import ArticleOneSample from '@/components/examples/ArticleOneSample';
+import ChatGPTIcon from '@/components/icons/ChatGPTIcon';
 /* Input Constants */
 // Moved inside component function
 /* */
@@ -789,12 +790,12 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <code>
                   <b>label:</b> string
                 </code>
-                <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-24 lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
+                <div className="Button__Samples flex flex-col md:flex-row py-12 px-8 gap-4 md:gap-12 items-center justify-center w-full h-auto lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
                   <Button
                     label="label"
                     type="primary"
                     size="medium"
-                    className="w-[200px]"
+                    className="w-48"
                     isDisabled={false}
                     isLoading={false}
                     onClick={buttonFactsOne}
@@ -805,7 +806,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <code>
                   <b>type:</b> enum ('primary' | 'secondary' | 'tertiary')
                 </code>
-                <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-auto p-4   lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
+                <div className="Button__Samples flex flex-col md:flex-row py-12 px-8 gap-8 md:gap-12 items-center justify-center w-full h-auto  lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
                   <Button
                     label="primary"
                     type="primary"
@@ -813,6 +814,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     isDisabled={false}
                     isLoading={false}
                     onClick={buttonFactsTwo}
+                    className="w-48"
                   />
                   <Button
                     label="secondary"
@@ -821,6 +823,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     isDisabled={false}
                     isLoading={false}
                     onClick={buttonFactsThree}
+                    className="w-48"
                   />
                   <Button
                     label="tertiary"
@@ -829,6 +832,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     isDisabled={false}
                     isLoading={false}
                     onClick={buttonFactsFour}
+                    className="w-48"
                   />
                 </div>
                 {/*  button block for prop showcase} */}
@@ -836,7 +840,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <code>
                   <b>size:</b> enum ('small' | 'medium' | 'large')
                 </code>
-                <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-auto p-4 lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
+                <div className="Button__Samples flex flex-col md:flex-row py-12 px-8 gap-8 md:gap-12 items-center justify-center w-full h-auto  lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
                   <Button
                     label="small"
                     type="primary"
@@ -844,6 +848,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     isDisabled={false}
                     isLoading={false}
                     onClick={buttonFactsFive}
+                    className="w-48"
                   />
                   <Button
                     label="medium"
@@ -852,6 +857,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     isDisabled={false}
                     isLoading={false}
                     onClick={buttonFactsSix}
+                    className="w-48"
                   />
                   <Button
                     label="large"
@@ -860,6 +866,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     isDisabled={false}
                     isLoading={false}
                     onClick={buttonFactsSeven}
+                    className="w-48"
                   />
                 </div>
                 {/*  button block for prop showcase} */}
@@ -867,12 +874,12 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <code>
                   <b>isDisabled?:</b> boolean
                 </code>
-                <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-24 lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
+                <div className="Button__Samples flex flex-col md:flex-row py-12 px-8 gap-4 md:gap-12 items-center justify-center w-full h-auto lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
                   <Button
                     label="disabled"
                     type="primary"
                     size="medium"
-                    className="w-[200px]"
+                    className="w-48"
                     isDisabled={true}
                     isLoading={false}
                   />
@@ -882,12 +889,12 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <code>
                   <b>isLoading?:</b> boolean
                 </code>
-                <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-24 lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
+                <div className="Button__Samples flex flex-col md:flex-row py-12 px-8 gap-8 md:gap-12 items-center justify-center w-full h-auto lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
                   <Button
                     label="loading"
                     type="primary"
                     size="medium"
-                    className="w-[200px]"
+                    className="w-48"
                     isDisabled={false}
                     isLoading={true}
                   />
@@ -897,7 +904,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <code>
                   <b>startIcon?:</b> component instance
                 </code>
-                <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-24 lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
+                <div className="Button__Samples flex flex-col md:flex-row py-12 px-8 gap-8 md:gap-12 items-center justify-center w-full h-auto lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
                   <Button
                     label="start icon"
                     type="primary"
@@ -906,6 +913,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     isLoading={false}
                     startIcon={<CodeRoundedIcon />}
                     onClick={buttonFactsEight}
+                    className="w-48"
                   />
                 </div>
                 {/*  button block for prop showcase} */}
@@ -913,7 +921,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <code>
                   <b>endIcon?:</b> component instance
                 </code>
-                <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-24 lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
+                <div className="Button__Samples flex flex-col md:flex-row py-12 px-8 gap-8 md:gap-12 items-center justify-center w-full h-auto lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
                   <Button
                     label="end icon"
                     type="primary"
@@ -922,6 +930,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     isLoading={false}
                     endIcon={<CodeRoundedIcon />}
                     onClick={buttonFactsNine}
+                    className="w-48"
                   />
                 </div>
                 {/*  button block for prop showcase} */}
@@ -929,7 +938,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                 <code>
                   <b>onClick:</b> function
                 </code>
-                <div className="Button__Samples flex flex-col md:flex-row gap-4 md:gap-12 items-center justify-center w-full h-24 lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
+                <div className="Button__Samples flex flex-col md:flex-row py-12 px-8 gap-8 md:gap-12 items-center justify-center w-full h-auto lg:h-60 mt-2 lg:mt-4 mb-4 lg:mb-8 rounded-lg border border-stone-900 hover:bg-stone-50">
                   <Button
                     label="see a fact"
                     type="primary"
@@ -937,6 +946,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     isDisabled={false}
                     isLoading={false}
                     onClick={buttonFactsTen}
+                    className="w-48"
                   />
                 </div>
                 {/*  button block for prop showcase} */}
@@ -1076,7 +1086,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                   and is used to create different types of content.
                 </p>
                 <div className="HTML__Tags__Samples__Placeholder flex flex-col gap-4 items-center justify-center w-full my-4 lg:my-8">
-                  <div className="HTML__Tags__Samples__List flex flex-wrap gap-4 lg:gap-6 p-4 lg:p-8 items-center justify-center w-full md:h-60 h-auto rounded-lg border border-stone-900 hover:bg-stone-50">
+                  <div className="HTML__Tags__Samples__List flex flex-wrap gap-6 lg:gap-6 p-6 lg:p-8 items-center justify-center w-full lg:h-60 h-auto rounded-lg border border-stone-900 hover:bg-stone-50">
                     <Tag label="<header>" size="large" type="lime" />
                     <Tag label="<nav>" size="large" type="red" />
                     <Tag label="<main>" size="large" type="amber" />
@@ -1980,15 +1990,15 @@ export class ButtonComponent {
                 <div className="flex w-auto items-center justify-center">
                   <InfoContainer
                     color="orange"
-                    icon={<PriorityHighRoundedIcon />}
-                    content="Depending on the industry context, the term 'token' has many meanings. In this article, we are using the term 'token' to refer to design tokens."
-                    to="https://www.figma.com/design/kY09M2r2lZgP3hZ0l34D4I/Design-Tokens?node-id=0-1&t=1730533200209-0"
+                    icon={<ChatGPTIcon />}
+                    content="Depending on the industry context, the term 'token' has many meanings. In this article, we are using the term 'token' to refer to design tokens. Ask ChatGPT to explain the different meanings of the word 'token'"
+                    to="https://chatgpt.com/?q=Explain%20the%20different%20meanings%20of%20the%20word%20%22token%22%20in%20software%20and%20computer%20science%2C%20including%20design%20tokens%2C%20authentication%20tokens%2C%20API%20tokens%2C%20language%20model%20tokens%2C%20and%20any%20other%20common%20usages."
                     target="_blank"
                     className="mt-6 mb-6"
                   />
                 </div>
                 <div className="Token__Samples__Placeholder flex flex-col gap-4 items-center justify-center w-full mb-4">
-                  <div className="Token__Samples__List flex flex-col lg:flex-row gap-4 lg:gap-6 p-4 lg:p-8 items-center justify-center w-full h-60 rounded-lg border border-stone-900 hover:bg-stone-50">
+                  <div className="Token__Samples__List flex flex-col lg:flex-row gap-8 lg:gap-6 py-8 px-6 lg:p-8 items-center justify-center w-full h-auto lg:h-60 rounded-lg border border-stone-900 hover:bg-stone-50">
                     <Tag label="--color-primary-600" size="large" type="lime" />
                     <Tag label="--spacing-4" size="large" type="red" />
                     <Tag label="--font-family-sans" size="large" type="amber" />
@@ -2147,7 +2157,7 @@ export class ButtonComponent {
                   </li>
                 </ul>
                 <div className="Token__Samples__Placeholder flex flex-col gap-4 items-center justify-center w-full mb-4">
-                  <div className="Token__Samples__List flex flex-col lg:flex-row gap-4 lg:gap-8 p-4 lg:p-16 items-center justify-center w-full h-60 rounded-lg border border-stone-900 hover:bg-stone-50">
+                  <div className="Token__Samples__List flex flex-col lg:flex-row gap-8 lg:gap-8 py-8 px-6 lg:p-16 items-center justify-center w-full h-60 rounded-lg border border-stone-900 hover:bg-stone-50">
                     <Tag label="--amber-500" size="large" type="amber" />
                     <Tag label="--button-surface-primary" size="large" type="red" />
                     <Tag label="--system-theme-primary" size="large" type="teal" />
@@ -2518,7 +2528,7 @@ export class ButtonComponent {
                   us to a different location.
                 </p>
                 <div className="flex flex-col items-center justify-center w-full">
-                  <div className="Button__Samples flex flex-col md:flex-row gap-4 p-4 md:gap-12 items-center justify-center w-full md:h-60 h-auto lg:my-8 rounded-lg border border-stone-900 hover:bg-stone-50">
+                  <div className="Button__Samples flex flex-col lg:flex-row gap-8 py-10 px-6 md:gap-12 items-center justify-center w-full lg:h-60 h-auto lg:my-8 rounded-lg border border-stone-900 hover:bg-stone-50">
                     <Button
                       label="Default"
                       type="secondary"
@@ -2526,6 +2536,7 @@ export class ButtonComponent {
                       isDisabled={false}
                       isLoading={false}
                       onClick={handleClickFour}
+                      className="w-48"
                     />
                     <Button
                       label="Hover"
@@ -2534,7 +2545,7 @@ export class ButtonComponent {
                       isDisabled={false}
                       isLoading={false}
                       onClick={handleClickFour}
-                      className="bg-amber-100"
+                      className="important:bg-amber-100 w-48"
                     />
                     <Button
                       label="Focus"
@@ -2543,7 +2554,7 @@ export class ButtonComponent {
                       isDisabled={false}
                       isLoading={false}
                       onClick={handleClickFour}
-                      className="outline outline-2 outline-stone-900"
+                      className="outline outline-2 outline-stone-900 w-48 important:bg-amber-100"
                     />
                     <Button
                       label="Loading"
@@ -2551,7 +2562,7 @@ export class ButtonComponent {
                       size="medium"
                       isDisabled={false}
                       isLoading={true}
-                      className="h-[52px]"
+                      className="h-[52px] w-48"
                     />
                     <Button
                       label="Disabled"
@@ -2559,6 +2570,7 @@ export class ButtonComponent {
                       size="medium"
                       isDisabled={true}
                       isLoading={false}
+                      className="w-48"
                     />
                   </div>
 
