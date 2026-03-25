@@ -799,6 +799,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     isDisabled={false}
                     isLoading={false}
                     onClick={buttonFactsOne}
+                    fullWidth={true}
                   />
                 </div>
                 {/*  button block for prop showcase} */}
@@ -815,6 +816,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     isLoading={false}
                     onClick={buttonFactsTwo}
                     className="w-48"
+                    fullWidth={true}
                   />
                   <Button
                     label="secondary"
@@ -824,6 +826,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     isLoading={false}
                     onClick={buttonFactsThree}
                     className="w-48"
+                    fullWidth={true}
                   />
                   <Button
                     label="tertiary"
@@ -833,6 +836,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     isLoading={false}
                     onClick={buttonFactsFour}
                     className="w-48"
+                    fullWidth={true}
                   />
                 </div>
                 {/*  button block for prop showcase} */}
@@ -849,6 +853,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     isLoading={false}
                     onClick={buttonFactsFive}
                     className="w-48"
+                    fullWidth={true}
                   />
                   <Button
                     label="medium"
@@ -858,6 +863,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     isLoading={false}
                     onClick={buttonFactsSix}
                     className="w-48"
+                    fullWidth={true}
                   />
                   <Button
                     label="large"
@@ -867,6 +873,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     isLoading={false}
                     onClick={buttonFactsSeven}
                     className="w-48"
+                    fullWidth={true}
                   />
                 </div>
                 {/*  button block for prop showcase} */}
@@ -882,6 +889,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     className="w-48"
                     isDisabled={true}
                     isLoading={false}
+                    fullWidth={true}
                   />
                 </div>
                 {/*  button block for prop showcase} */}
@@ -897,6 +905,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     className="w-48"
                     isDisabled={false}
                     isLoading={true}
+                    fullWidth={true}
                   />
                 </div>
                 {/*  button block for prop showcase} */}
@@ -914,6 +923,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     startIcon={<CodeRoundedIcon />}
                     onClick={buttonFactsEight}
                     className="w-48"
+                    fullWidth={true}
                   />
                 </div>
                 {/*  button block for prop showcase} */}
@@ -931,6 +941,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     endIcon={<CodeRoundedIcon />}
                     onClick={buttonFactsNine}
                     className="w-48"
+                    fullWidth={true}
                   />
                 </div>
                 {/*  button block for prop showcase} */}
@@ -947,6 +958,7 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     isLoading={false}
                     onClick={buttonFactsTen}
                     className="w-48"
+                    fullWidth={true}
                   />
                 </div>
                 {/*  button block for prop showcase} */}
@@ -2537,6 +2549,7 @@ export class ButtonComponent {
                       isLoading={false}
                       onClick={handleClickFour}
                       className="w-48"
+                      fullWidth={true}
                     />
                     <Button
                       label="Hover"
@@ -2546,6 +2559,7 @@ export class ButtonComponent {
                       isLoading={false}
                       onClick={handleClickFour}
                       className="important:bg-amber-100 w-48"
+                      fullWidth={true}
                     />
                     <Button
                       label="Focus"
@@ -2555,6 +2569,7 @@ export class ButtonComponent {
                       isLoading={false}
                       onClick={handleClickFour}
                       className="outline outline-2 outline-stone-900 w-48 important:bg-amber-100"
+                      fullWidth={true}
                     />
                     <Button
                       label="Loading"
@@ -2563,6 +2578,7 @@ export class ButtonComponent {
                       isDisabled={false}
                       isLoading={true}
                       className="h-[52px] w-48"
+                      fullWidth={true}
                     />
                     <Button
                       label="Disabled"
@@ -2571,6 +2587,7 @@ export class ButtonComponent {
                       isDisabled={true}
                       isLoading={false}
                       className="w-48"
+                      fullWidth={true}
                     />
                   </div>
 
