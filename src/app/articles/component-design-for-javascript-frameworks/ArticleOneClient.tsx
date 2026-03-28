@@ -795,11 +795,12 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     label="label"
                     type="primary"
                     size="medium"
-                    className="w-48"
+                    className="w-[192px]"
                     isDisabled={false}
                     isLoading={false}
                     onClick={buttonFactsOne}
                     fullWidth={false}
+                    ariaLabel="label button"
                   />
                 </div>
                 {/*  button block for prop showcase} */}
@@ -815,8 +816,9 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     isDisabled={false}
                     isLoading={false}
                     onClick={buttonFactsTwo}
-                    className="w-48"
+                    className="w-[192px]"
                     fullWidth={false}
+                    ariaLabel="primary button"
                   />
                   <Button
                     label="secondary"
@@ -825,8 +827,9 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     isDisabled={false}
                     isLoading={false}
                     onClick={buttonFactsThree}
-                    className="w-48"
+                    className="w-[192px]"
                     fullWidth={false}
+                    ariaLabel="secondary button"
                   />
                   <Button
                     label="tertiary"
@@ -835,8 +838,9 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     isDisabled={false}
                     isLoading={false}
                     onClick={buttonFactsFour}
-                    className="w-48"
+                    className="w-[192px]"
                     fullWidth={false}
+                    ariaLabel="tertiary button"
                   />
                 </div>
                 {/*  button block for prop showcase} */}
@@ -852,8 +856,9 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     isDisabled={false}
                     isLoading={false}
                     onClick={buttonFactsFive}
-                    className="w-48"
+                    className="w-[192px]"
                     fullWidth={false}
+                    ariaLabel="small button"
                   />
                   <Button
                     label="medium"
@@ -862,8 +867,9 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     isDisabled={false}
                     isLoading={false}
                     onClick={buttonFactsSix}
-                    className="w-48"
+                    className="w-[192px]"
                     fullWidth={false}
+                    ariaLabel="medium button"
                   />
                   <Button
                     label="large"
@@ -872,8 +878,9 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     isDisabled={false}
                     isLoading={false}
                     onClick={buttonFactsSeven}
-                    className="w-48"
+                    className="w-[192px]"
                     fullWidth={false}
+                    ariaLabel="large button"
                   />
                 </div>
                 {/*  button block for prop showcase} */}
@@ -886,10 +893,11 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     label="disabled"
                     type="primary"
                     size="medium"
-                    className="w-48"
+                    className="w-[192px]"
                     isDisabled={true}
                     isLoading={false}
                     fullWidth={false}
+                    ariaLabel="disabled button"
                   />
                 </div>
                 {/*  button block for prop showcase} */}
@@ -902,10 +910,11 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     label="loading"
                     type="primary"
                     size="medium"
-                    className="w-48"
+                    className="w-[192px]"
                     isDisabled={false}
                     isLoading={true}
                     fullWidth={false}
+                    ariaLabel="loading button"
                   />
                 </div>
                 {/*  button block for prop showcase} */}
@@ -922,8 +931,9 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     isLoading={false}
                     startIcon={<CodeRoundedIcon />}
                     onClick={buttonFactsEight}
-                    className="w-48"
+                    className="w-[192px]"
                     fullWidth={false}
+                    ariaLabel="start icon button"
                   />
                 </div>
                 {/*  button block for prop showcase} */}
@@ -940,8 +950,9 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     isLoading={false}
                     endIcon={<CodeRoundedIcon />}
                     onClick={buttonFactsNine}
-                    className="w-48"
+                    className="w-[192px]"
                     fullWidth={false}
+                    ariaLabel="end icon button"
                   />
                 </div>
                 {/*  button block for prop showcase} */}
@@ -957,8 +968,9 @@ export default function ComponentDesignForJavaScriptFrameworks() {
                     isDisabled={false}
                     isLoading={false}
                     onClick={buttonFactsTen}
-                    className="w-48"
+                    className="w-[192px]"
                     fullWidth={false}
+                    ariaLabel="click me button"
                   />
                 </div>
                 {/*  button block for prop showcase} */}
@@ -2548,7 +2560,7 @@ export class ButtonComponent {
                       isDisabled={false}
                       isLoading={false}
                       onClick={handleClickFour}
-                      className="w-48"
+                      className="w-[192px]"
                       fullWidth={true}
                     />
                     <Button
@@ -2558,7 +2570,7 @@ export class ButtonComponent {
                       isDisabled={false}
                       isLoading={false}
                       onClick={handleClickFour}
-                      className="important:bg-amber-100 w-48"
+                      className="important:bg-amber-100 w-[192px]"
                       fullWidth={true}
                     />
                     <Button
@@ -2568,7 +2580,7 @@ export class ButtonComponent {
                       isDisabled={false}
                       isLoading={false}
                       onClick={handleClickFour}
-                      className="outline outline-2 outline-stone-900 w-48 important:bg-amber-100"
+                      className="outline outline-2 outline-stone-900 w-[192px] important:bg-amber-100"
                       fullWidth={true}
                     />
                     <Button
@@ -2577,7 +2589,7 @@ export class ButtonComponent {
                       size="medium"
                       isDisabled={false}
                       isLoading={true}
-                      className="h-[52px] w-48"
+                      className="h-[52px] w-[192px]"
                       fullWidth={true}
                     />
                     <Button
@@ -2586,7 +2598,7 @@ export class ButtonComponent {
                       size="medium"
                       isDisabled={true}
                       isLoading={false}
-                      className="w-48"
+                      className="w-[192px]"
                       fullWidth={true}
                     />
                   </div>
