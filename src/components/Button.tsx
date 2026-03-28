@@ -58,7 +58,7 @@ const Button: React.FC<ButtonProps> = ({
     const classes = [
       'inline-flex items-center justify-center',
       rounded ? 'rounded-full' : 'rounded-md',
-      fullWidth ? 'w-full' : 'w-auto',
+      fullWidth ? 'w-full' : '',
       typeClasses[type],
       sizeClasses[size],
       isDisabled ? 'opacity-50 cursor-not-allowed' : '',
