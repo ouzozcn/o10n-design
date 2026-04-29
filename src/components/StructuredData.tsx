@@ -145,7 +145,7 @@ export default function StructuredData() {
           name: 'Who is Oğuzhan Özcan?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Oğuzhan Özcan is a product designer and design engineer based in Ankara which likes to solve complex problems with data analysis, research, and test.',
+            text: 'Oğuzhan Özcan is a product designer and design engineer who likes to solve complex problems with data analysis, research, and testing.',
           },
         },
         {
@@ -153,7 +153,7 @@ export default function StructuredData() {
           name: 'What services does Oğuzhan Özcan provide?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Oğuzhan provides product design, design systems, design engineering, accessibility, and frontend development services.',
+            text: 'Oğuzhan provides product design, design systems, design engineering, accessibility auditing, AI-driven workflows, A/B testing, and product growth services.',
           },
         },
         {
@@ -169,7 +169,7 @@ export default function StructuredData() {
           name: "What is Oğuzhan's design philosophy?",
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Data-driven, accessibility-first, and developer-friendly. He bridges design and engineering with scalable, real-world solutions.',
+            text: 'Data-driven, accessibility-first, and user-centered. He bridges design and engineering with scalable, real-world solutions.',
           },
         },
         {
@@ -209,18 +209,6 @@ export default function StructuredData() {
       description:
         'Free tool for designers and developers to test UI designs for various types of color blindness.',
       url: 'https://usekroma.com',
-
-      offers: {
-        '@type': 'Offer',
-        price: '0',
-        priceCurrency: 'USD',
-        availability: 'https://schema.org/InStock',
-      },
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: '4.7',
-        ratingCount: '72',
-      },
     },
     {
       '@context': 'https://schema.org',
